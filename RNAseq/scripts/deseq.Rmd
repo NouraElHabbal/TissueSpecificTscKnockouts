@@ -1,0 +1,109 @@
+DESeq Analysis
+========================================================
+
+```{r setup}
+input_directory <- "../data/raw/htseq-counts"
+sample_mapping_file <- '../data/raw/sample_mapping.csv'
+```
+
+This file uses the counts table in `r input_directory` from `r sample_mapping_file`.  This script was most recently run on `r date()`
+
+```{r data-entry, echo=FALSE, message=FALSE}
+sampleFiles <- list.files(input_directory)
+mappings <- read.csv(sample_mapping_file)
+sampleTable <- data.frame(sampleName = mappings$File,
+  fileName = mappings$File,
+  condition = mappings$Genotype)
+library(DESeq2)
+
+dds.binary <- DESeqDataSetFromHTSeqCount(sampleTable = sampleTable,
+  directory = input_directory,
+  design= ~ condition)
+dds.binary$condition <- relevel(dds.binary$condition,"Wild-Type")
+
+dds.binary <- DESeq(dds.binary)
+res.binary <- results(dds.binary)
+resOrdered.binary <- res.binary[order(res.binary$padj),]
+```
+
+```{r annotation, echo=FALSE}
+library(biomaRt)
+#download gene name annotation data for results sets.
+ensembl <- useMart("ensembl",dataset = 'mmusculus_gene_ensembl')
+transcriptInfo <- getBM(
+    attributes=c('external_gene_id','ensembl_gene_id'), 
+    values = 'protein_coding',
+    filter = 'biotype',
+    mart=ensembl)
+annotated_data <- merge(as.data.frame(resOrdered.binary), transcriptInfo, by.x='row.names', by.y='ensembl_gene_id')
+ordered_annotated_data <- annotated_data[order(annotated_data$log2FoldChange),]
+
+output_file_binary <- "../data/processed/Binary DESeq Results.csv"
+write.csv(as.data.frame(annotated_data),
+  file=output_file_binary)
+
+summary.table <- table(ordered_annotated_data$padj<0.05, ordered_annotated_data$log2FoldChange>0)
+rownames(summary.table) <- paste("Significant", rownames(summary.table))
+colnames(summary.table) <- paste("Upregulated", colnames(summary.table))
+```
+
+The calculated data was exported to `r output_file_binary`.  There was a total of **`r table(ordered_annotated_data$padj<0.05)[2]`** significantly different genes out of `r table(ordered_annotated_data$padj<0.05)[1] + table(ordered_annotated_data$padj<0.05)[2]` that met our testing criteria.  These are broken down into up and downregulated genes below:
+
+```{r summary-table, echo=FALSE, results='asis', message=FALSE}
+library(xtable)
+print(xtable(summary.table, caption="Number of Genes Up/Downregulated and Significant or Not"),type='html')
+```
+
+Diagnostic Plots
+----------------
+
+```{r ma-plots, echo=FALSE, dev=c('png','pdf')}
+plotMA(res.binary, main="DESeq2", ylim=c(-4,4), title="MA Plot for Binary Comparison")
+```
+
+```{r heatmap, echo=FALSE, dev=c('png','pdf')}
+library("RColorBrewer")
+library("gplots")
+select <- rownames(subset(as.data.frame(res.binary), padj<0.05))
+hmcol <- colorRampPalette(brewer.pal(9, "GnBu"))(100)
+heatmap.2(counts(dds.binary,normalized=TRUE)[select,], col = hmcol,
+Rowv = F, Colv = T, scale="row", trace="none", margin=c(10,6))
+
+rld.binary <- rlog(dds.binary)
+vsd.binary <- varianceStabilizingTransformation(dds.binary)
+rlogMat.binary <- assay(rld.binary)
+vstMat.binary <- assay(vsd.binary)
+
+#rld transformed heatmap
+heatmap.2(assay(rld.binary)[select,], col = hmcol,
+  Rowv = FALSE, Colv = FALSE, scale="row",
+  dendrogram="none", trace="row", margin=c(10, 6))
+
+#vsd stabilized heatmap
+heatmap.2(assay(vsd.binary)[select,], col = hmcol,
+  Rowv = FALSE, Colv = FALSE, scale="row",
+  dendrogram="none", trace="none", margin=c(10, 6))
+
+```
+
+Plotting Estimated Dispersions
+-------------------------------
+```{r dispersion-plot, echo=FALSE, dev=c('png','pdf')}
+plotDispEsts(dds.binary)
+```
+
+
+Principal Component Analysis
+------------------------------
+
+```{r pca-plot, echo=FALSE, dev=c('png','pdf')}
+plotPCA(rld.binary, intgroup=c("condition"))
+```
+
+
+Session Information
+-------------------
+
+```{r session-info}
+sessionInfo()
+```

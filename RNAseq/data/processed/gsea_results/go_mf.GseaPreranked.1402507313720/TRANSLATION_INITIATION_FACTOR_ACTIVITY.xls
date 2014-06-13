@@ -1,0 +1,16 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	EIF2B5	EIF2B5	eukaryotic translation initiation factor 2B, subunit 5 epsilon, 82kDa	3873	0.1776701956987381	-0.24971434	No	
+row_1	EIF2B4	EIF2B4	eukaryotic translation initiation factor 2B, subunit 4 delta, 67kDa	4551	0.1196189671754837	-0.26057577	No	
+row_2	EIF2S1	EIF2S1	eukaryotic translation initiation factor 2, subunit 1 alpha, 35kDa	4787	0.09717004746198654	-0.24374329	No	
+row_3	EIF2B1	EIF2B1	eukaryotic translation initiation factor 2B, subunit 1 alpha, 26kDa	5668	0.02761157415807247	-0.30520517	No	
+row_4	EIF4G2	EIF4G2	eukaryotic translation initiation factor 4 gamma, 2	5686	0.02633068524301052	-0.2968415	No	
+row_5	COPS5	COPS5	COP9 constitutive photomorphogenic homolog subunit 5 (Arabidopsis)	5831	0.014356358908116817	-0.3032565	No	
+row_6	EIF5A	EIF5A	eukaryotic translation initiation factor 5A	6380	-0.027750583365559578	-0.33762228	No	
+row_7	EIF4E	EIF4E	eukaryotic translation initiation factor 4E	6479	-0.0355447493493557	-0.33244553	No	
+row_8	EIF2B3	EIF2B3	eukaryotic translation initiation factor 2B, subunit 3 gamma, 58kDa	7540	-0.1111387088894844	-0.3776457	No	
+row_9	EIF4G1	EIF4G1	eukaryotic translation initiation factor 4 gamma, 1	7707	-0.12176862359046936	-0.3460853	No	
+row_10	EIF2S2	EIF2S2	eukaryotic translation initiation factor 2, subunit 2 beta, 38kDa	9325	-0.261792927980423	-0.38088146	Yes	
+row_11	EIF2B2	EIF2B2	eukaryotic translation initiation factor 2B, subunit 2 beta, 39kDa	9753	-0.30164164304733276	-0.3039872	Yes	
+row_12	EIF2A	EIF2A	eukaryotic translation initiation factor 2A, 65kDa	9848	-0.31251755356788635	-0.19594024	Yes	
+row_13	EIF4A2	EIF4A2	eukaryotic translation initiation factor 4A, isoform 2	11249	-0.5267813801765442	-0.11495226	Yes	
+row_14	EIF4B	EIF4B	eukaryotic translation initiation factor 4B	11293	-0.5393107533454895	0.08121539	Yes	

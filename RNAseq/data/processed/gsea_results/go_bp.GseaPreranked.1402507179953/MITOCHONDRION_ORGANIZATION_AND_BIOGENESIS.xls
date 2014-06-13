@@ -1,0 +1,45 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CDKN2A	CDKN2A	cyclin-dependent kinase inhibitor 2A (melanoma, p16, inhibits CDK4)	227	1.5689388513565063	0.08883041	Yes	
+row_1	BID	BID	BH3 interacting domain death agonist	318	1.3637800216674805	0.17480782	Yes	
+row_2	PMAIP1	PMAIP1	phorbol-12-myristate-13-acetate-induced protein 1	467	1.1303520202636719	0.24007544	Yes	
+row_3	TSPO	TSPO	translocator protein (18kDa)	693	0.9157544374465942	0.28437045	Yes	
+row_4	MSTO1	MSTO1	misato homolog 1 (Drosophila)	822	0.8313651084899902	0.33081087	Yes	
+row_5	SFN	SFN	stratifin	889	0.7890581488609314	0.3794186	Yes	
+row_6	BCL2	BCL2	B-cell CLL/lymphoma 2	1226	0.6442302465438843	0.39606926	Yes	
+row_7	BCL2L1	BCL2L1	BCL2-like 1	1434	0.5672777891159058	0.41798708	Yes	
+row_8	MTX2	MTX2	metaxin 2	1484	0.5485435724258423	0.45152402	Yes	
+row_9	TOMM22	TOMM22	translocase of outer mitochondrial membrane 22 homolog (yeast)	1489	0.5471086502075195	0.48863712	Yes	
+row_10	BNIP3	BNIP3	BCL2/adenovirus E1B 19kDa interacting protein 3	1864	0.4570109248161316	0.48937318	Yes	
+row_11	MRPL12	MRPL12	mitochondrial ribosomal protein L12	1984	0.43306469917297363	0.509292	Yes	
+row_12	GPX1	GPX1	glutathione peroxidase 1	2214	0.3822890520095825	0.5167543	Yes	
+row_13	BAX	BAX	BCL2-associated X protein	2376	0.35417914390563965	0.52784544	Yes	
+row_14	DNM1L	DNM1L	dynamin 1-like	2735	0.30028972029685974	0.5191632	No	
+row_15	TIMM17A	TIMM17A	translocase of inner mitochondrial membrane 17 homolog A (yeast)	3082	0.2593894600868225	0.5086619	No	
+row_16	TIMM50	TIMM50	translocase of inner mitochondrial membrane 50 homolog (S. cerevisiae)	3390	0.22491689026355743	0.49898604	No	
+row_17	BBC3	BBC3	BCL2 binding component 3	3549	0.2087680548429489	0.50037134	No	
+row_18	BAK1	BAK1	BCL2-antagonist/killer 1	4179	0.15007902681827545	0.459282	No	
+row_19	MFN2	MFN2	mitofusin 2	4211	0.1465664952993393	0.4667806	No	
+row_20	SLC25A15	SLC25A15	solute carrier family 25 (mitochondrial carrier; ornithine transporter) member 15	4297	0.13821811974048615	0.46929866	No	
+row_21	TOMM34	TOMM34	translocase of outer mitochondrial membrane 34	4420	0.1289123147726059	0.46815878	No	
+row_22	OPA1	OPA1	optic atrophy 1 (autosomal dominant)	4453	0.12623853981494904	0.47418463	No	
+row_23	TRNT1	TRNT1	tRNA nucleotidyl transferase, CCA-adding, 1	4859	0.09026646614074707	0.44729242	No	
+row_24	STARD3	STARD3	START domain containing 3	5012	0.0788801833987236	0.44027916	No	
+row_25	HSP90AA1	HSP90AA1	heat shock protein 90kDa alpha (cytosolic), class A member 1	5120	0.07019387930631638	0.43634582	No	
+row_26	TIMM44	TIMM44	translocase of inner mitochondrial membrane 44 homolog (yeast)	5532	0.0402473546564579	0.4055408	No	
+row_27	COX18	COX18	COX18 cytochrome c oxidase assembly homolog (S. cerevisiae)	5599	0.034278955310583115	0.4024975	No	
+row_28	MTERF	MTERF	mitochondrial transcription termination factor	5667	0.02763141132891178	0.39891765	No	
+row_29	FIS1	FIS1	fission 1 (mitochondrial outer membrane) homolog (S. cerevisiae)	5936	0.005198523867875338	0.37739047	No	
+row_30	TFAM	TFAM	transcription factor A, mitochondrial	6171	-0.01167348399758339	0.35908258	No	
+row_31	NDUFS8	NDUFS8	NADH dehydrogenase (ubiquinone) Fe-S protein 8, 23kDa (NADH-coenzyme Q reductase)	6449	-0.03255777433514595	0.33869278	No	
+row_32	TFB2M	TFB2M	transcription factor B2, mitochondrial	6756	-0.057402513921260834	0.31763524	No	
+row_33	POLRMT	POLRMT	polymerase (RNA) mitochondrial (DNA directed)	7083	-0.08298677206039429	0.29669544	No	
+row_34	TIMM17B	TIMM17B	translocase of inner mitochondrial membrane 17 homolog B (yeast)	7215	-0.09031743556261063	0.29217952	No	
+row_35	MIPEP	MIPEP	mitochondrial intermediate peptidase	7392	-0.10199379175901413	0.2847883	No	
+row_36	NDUFS5	NDUFS5	NADH dehydrogenase (ubiquinone) Fe-S protein 5, 15kDa (NADH-coenzyme Q reductase)	7665	-0.11892881989479065	0.27071732	No	
+row_37	SLC25A4	SLC25A4	solute carrier family 25 (mitochondrial carrier; adenine nucleotide translocator), member 4	7902	-0.13424214720726013	0.26063374	No	
+row_38	MPV17	MPV17	MpV17 mitochondrial inner membrane protein	8104	-0.15142053365707397	0.25458357	No	
+row_39	NDUFS4	NDUFS4	NADH dehydrogenase (ubiquinone) Fe-S protein 4, 18kDa (NADH-coenzyme Q reductase)	8526	-0.1884787380695343	0.23310576	No	
+row_40	TAZ	TAZ	tafazzin (cardiomyopathy, dilated 3A (X-linked); endocardial fibroelastosis 2; Barth syndrome)	8562	-0.1913243532180786	0.24334063	No	
+row_41	TIMM23	TIMM23	translocase of inner mitochondrial membrane 23 homolog (yeast)	8888	-0.21788828074932098	0.23171404	No	
+row_42	SLC25A1	SLC25A1	solute carrier family 25 (mitochondrial carrier; citrate transporter), member 1	10027	-0.33395397663116455	0.16164644	No	
+row_43	NDUFS7	NDUFS7	NADH dehydrogenase (ubiquinone) Fe-S protein 7, 20kDa (NADH-coenzyme Q reductase)	10052	-0.33685895800590515	0.1827387	No	

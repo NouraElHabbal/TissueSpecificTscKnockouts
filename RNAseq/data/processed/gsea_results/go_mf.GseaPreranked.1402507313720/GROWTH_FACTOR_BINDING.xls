@@ -1,0 +1,30 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CTGF	CTGF	connective tissue growth factor	399	1.2294875383377075	0.094019614	No	
+row_1	IL7R	IL7R	interleukin 7 receptor	2383	0.3533822000026703	-0.031323593	No	
+row_2	IL10RA	IL10RA	interleukin 10 receptor, alpha	2621	0.3162904679775238	-0.01809376	No	
+row_3	IL2RB	IL2RB	interleukin 2 receptor, beta	2766	0.2991555333137512	9.566701E-4	No	
+row_4	IL3RA	IL3RA	interleukin 3 receptor, alpha (low affinity)	3333	0.2323286235332489	-0.021287097	No	
+row_5	HAX1	HAX1	HCLS1 associated protein X-1	3947	0.1710803061723709	-0.053668533	No	
+row_6	IGF1R	IGF1R	insulin-like growth factor 1 receptor	4066	0.16024377942085266	-0.04679682	No	
+row_7	IL10RB	IL10RB	interleukin 10 receptor, beta	5182	0.06518924981355667	-0.1310178	No	
+row_8	NTRK3	NTRK3	neurotrophic tyrosine kinase, receptor, type 3	5685	0.026398783549666405	-0.1692399	No	
+row_9	CSF2RB	CSF2RB	colony stimulating factor 2 receptor, beta, low-affinity (granulocyte-macrophage)	6524	-0.03874313831329346	-0.23359303	No	
+row_10	IL9R	IL9R	interleukin 9 receptor	6960	-0.07315435260534286	-0.26153824	No	
+row_11	NRD1	NRD1	nardilysin (N-arginine dibasic convertase)	6969	-0.07415666431188583	-0.25455722	No	
+row_12	API5	API5	apoptosis inhibitor 5	7431	-0.10498319566249847	-0.28134644	No	
+row_13	CEP57	CEP57	centrosomal protein 57kDa	7676	-0.12011738121509552	-0.28888085	No	
+row_14	ACVR1B	ACVR1B	activin A receptor, type IB	8034	-0.14393538236618042	-0.303179	Yes	
+row_15	IL5RA	IL5RA	interleukin 5 receptor, alpha	8143	-0.15453319251537323	-0.29607958	Yes	
+row_16	ACVR1	ACVR1	activin A receptor, type I	8304	-0.16745933890342712	-0.29189032	Yes	
+row_17	ACVRL1	ACVRL1	activin A receptor type II-like 1	8621	-0.19718900322914124	-0.29736307	Yes	
+row_18	IGFBP1	IGFBP1	insulin-like growth factor binding protein 1	8646	-0.19883903861045837	-0.27885252	Yes	
+row_19	IL2RG	IL2RG	interleukin 2 receptor, gamma (severe combined immunodeficiency)	8799	-0.2105422019958496	-0.26957607	Yes	
+row_20	NTRK1	NTRK1	neurotrophic tyrosine kinase, receptor, type 1	9177	-0.24603211879730225	-0.27499577	Yes	
+row_21	ACVR2B	ACVR2B	activin A receptor, type IIB	9335	-0.262542188167572	-0.26077437	Yes	
+row_22	TGFBR1	TGFBR1	transforming growth factor, beta receptor I (activin A receptor type II-like kinase, 53kDa)	9495	-0.2773571312427521	-0.2451911	Yes	
+row_23	IL1R1	IL1R1	interleukin 1 receptor, type I	9742	-0.3011033535003662	-0.23425855	Yes	
+row_24	IL6ST	IL6ST	interleukin 6 signal transducer (gp130, oncostatin M receptor)	10491	-0.3906121850013733	-0.25505176	Yes	
+row_25	NTRK2	NTRK2	neurotrophic tyrosine kinase, receptor, type 2	11922	-0.8243857026100159	-0.2868128	Yes	
+row_26	IGFALS	IGFALS	insulin-like growth factor binding protein, acid labile subunit	11969	-0.8560216426849365	-0.20244837	Yes	
+row_27	A2M	A2M	alpha-2-macroglobulin	12014	-0.905893087387085	-0.1127872	Yes	
+row_28	IL2RA	IL2RA	interleukin 2 receptor, alpha	12235	-1.313568115234375	0.004485306	Yes	

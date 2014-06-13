@@ -1,0 +1,17 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	STAG3	STAG3	stromal antigen 3	1211	0.6496984362602234	0.038818166	No	
+row_1	DMC1	DMC1	DMC1 dosage suppressor of mck1 homolog, meiosis-specific homologous recombination (yeast)	1407	0.5761865377426147	0.14485133	No	
+row_2	RGS12	RGS12	regulator of G-protein signalling 12	2022	0.4230513274669647	0.18434717	No	
+row_3	MKI67IP	MKI67IP	MKI67 (FHA domain) interacting nucleolar phosphoprotein	4737	0.10165040194988251	-0.0152437445	No	
+row_4	RCC1	RCC1	regulator of chromosome condensation 1	6061	-0.004219375550746918	-0.12213098	No	
+row_5	LRPPRC	LRPPRC	leucine-rich PPR-motif containing	6299	-0.021649939939379692	-0.13685746	No	
+row_6	UBE2I	UBE2I	ubiquitin-conjugating enzyme E2I (UBC9 homolog, yeast)	6415	-0.029913930222392082	-0.13989641	No	
+row_7	NOL6	NOL6	nucleolar protein family 6 (RNA-associated)	6644	-0.04809286817908287	-0.14829446	No	
+row_8	TUBG1	TUBG1	tubulin, gamma 1	6883	-0.06743795424699783	-0.15341382	No	
+row_9	SMC1A	SMC1A	structural maintenance of chromosomes 1A	8500	-0.1850317418575287	-0.24591143	Yes	
+row_10	SUV39H1	SUV39H1	suppressor of variegation 3-9 homolog 1 (Drosophila)	9068	-0.235319584608078	-0.24231005	Yes	
+row_11	SYCE1	SYCE1	synaptonemal complex central element protein 1	9112	-0.2390739470720291	-0.19522588	Yes	
+row_12	RAD51	RAD51	RAD51 homolog (RecA homolog, E. coli) (S. cerevisiae)	9445	-0.2727096676826477	-0.16456828	Yes	
+row_13	TTN	TTN	titin	10864	-0.4460809826850891	-0.18569842	Yes	
+row_14	CHEK1	CHEK1	CHK1 checkpoint homolog (S. pombe)	11729	-0.7008258104324341	-0.10779303	Yes	
+row_15	SYCE2	SYCE2	synaptonemal complex central element protein 2	11776	-0.725031852722168	0.04187378	Yes	

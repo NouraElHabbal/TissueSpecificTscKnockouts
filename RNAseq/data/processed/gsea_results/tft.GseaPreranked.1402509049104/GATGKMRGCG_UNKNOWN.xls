@@ -1,0 +1,54 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SUV39H2	SUV39H2	suppressor of variegation 3-9 homolog 2 (Drosophila)	1149	0.6749415993690491	-0.044654284	No	
+row_1	DUSP6	DUSP6	dual specificity phosphatase 6	1810	0.469857394695282	-0.06431092	No	
+row_2	ZNRF2	ZNRF2	zinc and ring finger 2	3174	0.24798884987831116	-0.15759578	No	
+row_3	PPP1R12B	PPP1R12B	protein phosphatase 1, regulatory (inhibitor) subunit 12B	3193	0.24548928439617157	-0.1411594	No	
+row_4	SNX13	SNX13	sorting nexin 13	3257	0.2407940924167633	-0.12874258	No	
+row_5	LIMD1	LIMD1	LIM domains containing 1	3472	0.21690547466278076	-0.13040693	No	
+row_6	E2F3	E2F3	E2F transcription factor 3	3683	0.19538724422454834	-0.13331407	No	
+row_7	STRN4	STRN4	striatin, calmodulin binding protein 4	4208	0.14687204360961914	-0.16541795	No	
+row_8	TIA1	TIA1	TIA1 cytotoxic granule-associated RNA binding protein	4373	0.13236285746097565	-0.16916363	No	
+row_9	RBM3	RBM3	RNA binding motif (RNP1, RRM) protein 3	4573	0.1176695004105568	-0.17684105	No	
+row_10	PCNT	PCNT	pericentrin (kendrin)	4853	0.09056830406188965	-0.1930324	No	
+row_11	NEUROD2	NEUROD2	neurogenic differentiation 2	4879	0.08874467760324478	-0.18860173	No	
+row_12	H3F3B	H3F3B	H3 histone, family 3B (H3.3B)	5145	0.0687817856669426	-0.20523831	No	
+row_13	RAB22A	RAB22A	RAB22A, member RAS oncogene family	5387	0.050814587622880936	-0.2212244	No	
+row_14	ATF1	ATF1	activating transcription factor 1	5397	0.05014687031507492	-0.21830185	No	
+row_15	ZBTB22	ZBTB22	zinc finger and BTB domain containing 22	5560	0.0377303883433342	-0.22878706	No	
+row_16	EIF5	EIF5	eukaryotic translation initiation factor 5	6108	-0.00691432086750865	-0.27297956	No	
+row_17	DPH1	DPH1	DPH1 homolog (S. cerevisiae)	6121	-0.007655053865164518	-0.2734017	No	
+row_18	CLSTN1	CLSTN1	calsyntenin 1	7106	-0.0848800539970398	-0.34761542	No	
+row_19	REM2	REM2	RAS (RAD and GEM) like GTP binding 2	7208	-0.09025482088327408	-0.34928477	No	
+row_20	PPP2R2A	PPP2R2A	protein phosphatase 2 (formerly 2A), regulatory subunit B (PR 52), alpha isoform	7301	-0.09576781094074249	-0.34981656	No	
+row_21	REPS2	REPS2	RALBP1 associated Eps domain containing 2	7325	-0.09754365682601929	-0.34458062	No	
+row_22	SART3	SART3	squamous cell carcinoma antigen recognised by T cells 3	7444	-0.10588915646076202	-0.34649864	No	
+row_23	CIZ1	CIZ1	CDKN1A interacting zinc finger protein 1	7519	-0.11073067039251328	-0.34446815	No	
+row_24	RPL24	RPL24	ribosomal protein L24	7670	-0.11969628930091858	-0.3479938	No	
+row_25	YWHAQ	YWHAQ	tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein, theta polypeptide	7732	-0.12318907678127289	-0.34399223	No	
+row_26	WNT3	WNT3	wingless-type MMTV integration site family, member 3	7891	-0.1335366815328598	-0.347162	No	
+row_27	HPS5	HPS5	Hermansky-Pudlak syndrome 5	8035	-0.14434599876403809	-0.34831762	No	
+row_28	REXO1	REXO1	REX1, RNA exonuclease 1 homolog (S. cerevisiae)	8062	-0.1472618132829666	-0.33970013	No	
+row_29	SPCS2	SPCS2	signal peptidase complex subunit 2 homolog (S. cerevisiae)	8156	-0.15488781034946442	-0.33600113	No	
+row_30	CNOT3	CNOT3	CCR4-NOT transcription complex, subunit 3	8496	-0.18464268743991852	-0.35023296	No	
+row_31	FRY	FRY	furry homolog (Drosophila)	8837	-0.2134002149105072	-0.3624488	No	
+row_32	RAD23A	RAD23A	RAD23 homolog A (S. cerevisiae)	9225	-0.252210408449173	-0.37567413	No	
+row_33	IRAK1	IRAK1	interleukin-1 receptor-associated kinase 1	9462	-0.2739335298538208	-0.37497625	No	
+row_34	MRPL38	MRPL38	mitochondrial ribosomal protein L38	9779	-0.30340903997421265	-0.3786653	Yes	
+row_35	RPL27	RPL27	ribosomal protein L27	9784	-0.3039148449897766	-0.3568231	Yes	
+row_36	YWHAE	YWHAE	tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein, epsilon polypeptide	9885	-0.31660914421081543	-0.3418993	Yes	
+row_37	RNF26	RNF26	ring finger protein 26	9972	-0.3270719051361084	-0.32506835	Yes	
+row_38	ZADH2	ZADH2	zinc binding alcohol dehydrogenase, domain containing 2	10021	-0.3330080509185791	-0.30469927	Yes	
+row_39	RBM5	RBM5	RNA binding motif protein 5	10109	-0.3429591953754425	-0.28679115	Yes	
+row_40	C1QL2	C1QL2	complement component 1, q subcomponent-like 2	10245	-0.3588791489601135	-0.2716439	Yes	
+row_41	GTF2H1	GTF2H1	general transcription factor IIH, polypeptide 1, 62kDa	10281	-0.36484280228614807	-0.2478904	Yes	
+row_42	UBTF	UBTF	upstream binding transcription factor, RNA polymerase I	10298	-0.36624521017074585	-0.22248206	Yes	
+row_43	RPL7A	RPL7A	ribosomal protein L7a	10303	-0.3665750026702881	-0.19606909	Yes	
+row_44	YY1	YY1	YY1 transcription factor	10349	-0.37233445048332214	-0.17258623	Yes	
+row_45	CACNA2D1	CACNA2D1	calcium channel, voltage-dependent, alpha 2/delta subunit 1	10407	-0.3804030120372772	-0.14949536	Yes	
+row_46	PATZ1	PATZ1	POZ (BTB) and AT hook containing zinc finger 1	10430	-0.3837718665599823	-0.12329881	Yes	
+row_47	EP300	EP300	E1A binding protein p300	10663	-0.415991872549057	-0.11191163	Yes	
+row_48	EEF2	EEF2	eukaryotic translation elongation factor 2	10994	-0.4733838438987732	-0.10434584	Yes	
+row_49	DNM1	DNM1	dynamin 1	11124	-0.4993203580379486	-0.07846386	Yes	
+row_50	FKRP	FKRP	fukutin related protein	11213	-0.5183748602867126	-0.04784173	Yes	
+row_51	PHF12	PHF12	PHD finger protein 12	11225	-0.5205233097076416	-0.010771004	Yes	
+row_52	TSC1	TSC1	tuberous sclerosis 1	12240	-1.3395458459854126	0.004085476	Yes	

@@ -1,0 +1,20 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GNAI1	GNAI1	guanine nucleotide binding protein (G protein), alpha inhibiting activity polypeptide 1	447	1.1589679718017578	0.12816022	Yes	
+row_1	SRC	SRC	v-src sarcoma (Schmidt-Ruppin A-2) viral oncogene homolog (avian)	572	1.0246644020080566	0.26356813	Yes	
+row_2	F2R	F2R	coagulation factor II (thrombin) receptor	882	0.7933543920516968	0.35105282	Yes	
+row_3	ITGB1	ITGB1	integrin, beta 1 (fibronectin receptor, beta polypeptide, antigen CD29 includes MDF2, MSK12)	1157	0.6715113520622253	0.42408666	Yes	
+row_4	SYK	SYK	spleen tyrosine kinase	1698	0.49717041850090027	0.45068702	Yes	
+row_5	GNB1	GNB1	guanine nucleotide binding protein (G protein), beta polypeptide 1	3013	0.2693782448768616	0.38186833	No	
+row_6	PLA2G4A	PLA2G4A	phospholipase A2, group IVA (cytosolic, calcium-dependent)	4862	0.09010213613510132	0.244077	No	
+row_7	RAF1	RAF1	v-raf-1 murine leukemia viral oncogene homolog 1	5206	0.06353603303432465	0.22514991	No	
+row_8	TBXAS1	TBXAS1	thromboxane A synthase 1 (platelet, cytochrome P450, family 5, subfamily A)	5276	0.05812450498342514	0.22778161	No	
+row_9	MAP2K1	MAP2K1	mitogen-activated protein kinase kinase 1	5362	0.052492935210466385	0.22830977	No	
+row_10	MAPK1	MAPK1	mitogen-activated protein kinase 1	7170	-0.08996947109699249	0.09384054	No	
+row_11	HRAS	HRAS	v-Ha-ras Harvey rat sarcoma viral oncogene homolog	7212	-0.09028203040361404	0.10332052	No	
+row_12	MAPK3	MAPK3	mitogen-activated protein kinase 3	7277	-0.09331737458705902	0.11135736	No	
+row_13	PTK2	PTK2	PTK2 protein tyrosine kinase 2	7700	-0.12127107381820679	0.0941918	No	
+row_14	PLCB1	PLCB1	phospholipase C, beta 1 (phosphoinositide-specific)	8918	-0.2206127792596817	0.0263521	No	
+row_15	PTGS1	PTGS1	prostaglandin-endoperoxide synthase 1 (prostaglandin G/H synthase and cyclooxygenase)	9009	-0.23008669912815094	0.05169286	No	
+row_16	PRKCA	PRKCA	protein kinase C, alpha	9564	-0.28363507986068726	0.046828352	No	
+row_17	ITGA1	ITGA1	integrin, alpha 1	10979	-0.46999192237854004	-0.001649913	No	
+row_18	F2RL3	F2RL3	coagulation factor II (thrombin) receptor-like 3	11846	-0.7633068561553955	0.036179863	No	

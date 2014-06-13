@@ -1,0 +1,127 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GYS2	GYS2	glycogen synthase 2 (liver)	147	1.8074191808700562	0.0252188	No	
+row_1	CBLC	CBLC	Cas-Br-M (murine) ecotropic retroviral transforming sequence c	151	1.7936601638793945	0.06199087	No	
+row_2	GCK	GCK	glucokinase (hexokinase 4, maturity onset diabetes of the young 2)	158	1.7635290622711182	0.09789447	No	
+row_3	SHC4	SHC4	SHC (Src homology 2 domain containing) family, member 4	275	1.4429272413253784	0.118138954	No	
+row_4	HK1	HK1	hexokinase 1	460	1.1393324136734009	0.12652785	No	
+row_5	PRKAA1	PRKAA1	protein kinase, AMP-activated, alpha 1 catalytic subunit	546	1.0453916788101196	0.14111604	No	
+row_6	CALML3	CALML3	calmodulin-like 3	795	0.849294126033783	0.13825795	No	
+row_7	AKT3	AKT3	v-akt murine thymoma viral oncogene homolog 3 (protein kinase B, gamma)	935	0.7669395804405212	0.1426603	No	
+row_8	PIK3R3	PIK3R3	phosphoinositide-3-kinase, regulatory subunit 3 (p55, gamma)	986	0.7433410882949829	0.15389168	No	
+row_9	NRAS	NRAS	neuroblastoma RAS viral (v-ras) oncogene homolog	1179	0.6611142158508301	0.15175319	No	
+row_10	PRKX	PRKX	protein kinase, X-linked	1350	0.5929673910140991	0.15001671	No	
+row_11	PRKAR1A	PRKAR1A	protein kinase, cAMP-dependent, regulatory, type I, alpha (tissue specific extinguisher 1)	1362	0.5887793898582458	0.16126408	No	
+row_12	PRKAR1B	PRKAR1B	protein kinase, cAMP-dependent, regulatory, type I, beta	1368	0.5875228643417358	0.17297871	No	
+row_13	HK3	HK3	hexokinase 3 (white cell)	1398	0.5789765119552612	0.18254411	No	
+row_14	PYGB	PYGB	phosphorylase, glycogen; brain	1751	0.4867185652256012	0.16365385	No	
+row_15	PRKCZ	PRKCZ	protein kinase C, zeta	1791	0.4749027192592621	0.17024927	No	
+row_16	MKNK2	MKNK2	MAP kinase interacting serine/threonine kinase 2	1856	0.4599025547504425	0.17448002	No	
+row_17	SHC1	SHC1	SHC (Src homology 2 domain containing) transforming protein 1	2088	0.4082055687904358	0.16391593	No	
+row_18	SORBS1	SORBS1	sorbin and SH3 domain containing 1	2229	0.3800608217716217	0.16025144	No	
+row_19	RAPGEF1	RAPGEF1	Rap guanine nucleotide exchange factor (GEF) 1	2254	0.37552639842033386	0.1660289	No	
+row_20	PDPK1	PDPK1	3-phosphoinositide dependent protein kinase-1	2466	0.3411215841770172	0.15572435	No	
+row_21	PIK3R1	PIK3R1	phosphoinositide-3-kinase, regulatory subunit 1 (p85 alpha)	2516	0.33521708846092224	0.15861481	No	
+row_22	PPP1CA	PPP1CA	protein phosphatase 1, catalytic subunit, alpha isoform	2670	0.31041234731674194	0.15244424	No	
+row_23	G6PC	G6PC	glucose-6-phosphatase, catalytic subunit	2976	0.2730918228626251	0.13300855	No	
+row_24	IKBKB	IKBKB	inhibitor of kappa light polypeptide gene enhancer in B-cells, kinase beta	3050	0.2629248797893524	0.13243413	No	
+row_25	FLOT1	FLOT1	flotillin 1	3068	0.2608749270439148	0.13642079	No	
+row_26	SH2B2	SH2B2	SH2B adaptor protein 2	3074	0.26025235652923584	0.14138103	No	
+row_27	PRKAG1	PRKAG1	protein kinase, AMP-activated, gamma 1 non-catalytic subunit	3136	0.25301799178123474	0.14158858	No	
+row_28	INPP5D	INPP5D	inositol polyphosphate-5-phosphatase, 145kDa	3158	0.2497066706418991	0.14501591	No	
+row_29	PHKG2	PHKG2	phosphorylase kinase, gamma 2 (testis)	3173	0.24799716472625732	0.14898339	No	
+row_30	GRB2	GRB2	growth factor receptor-bound protein 2	3207	0.24376051127910614	0.15130158	No	
+row_31	PIK3R5	PIK3R5	phosphoinositide-3-kinase, regulatory subunit 5, p101	3283	0.23876677453517914	0.15006417	No	
+row_32	MAPK8	MAPK8	mitogen-activated protein kinase 8	3334	0.23227322101593018	0.15074782	No	
+row_33	PRKACA	PRKACA	protein kinase, cAMP-dependent, catalytic, alpha	3783	0.18711382150650024	0.11778262	No	
+row_34	GYS1	GYS1	glycogen synthase 1 (muscle)	3795	0.18562230467796326	0.12070938	No	
+row_35	HK2	HK2	hexokinase 2	4023	0.16438941657543182	0.10544206	No	
+row_36	FLOT2	FLOT2	flotillin 2	4083	0.15889188647270203	0.10387139	No	
+row_37	TSC2	TSC2	tuberous sclerosis 2	4090	0.15826117992401123	0.10664447	No	
+row_38	PTPN1	PTPN1	protein tyrosine phosphatase, non-receptor type 1	4167	0.15099065005779266	0.10351328	No	
+row_39	KRAS	KRAS	v-Ki-ras2 Kirsten rat sarcoma viral oncogene homolog	4212	0.14652371406555176	0.10292039	No	
+row_40	SOCS1	SOCS1	suppressor of cytokine signaling 1	4318	0.1361125111579895	0.097098246	No	
+row_41	EIF4E2	EIF4E2	eukaryotic translation initiation factor 4E member 2	4413	0.12942537665367126	0.09204232	No	
+row_42	SOCS3	SOCS3	suppressor of cytokine signaling 3	4495	0.12266936153173447	0.0879156	No	
+row_43	SOS1	SOS1	son of sevenless homolog 1 (Drosophila)	4619	0.11320989578962326	0.08014113	No	
+row_44	BAD	BAD	BCL2-antagonist of cell death	4717	0.1038234606385231	0.074310206	No	
+row_45	SOCS4	SOCS4	suppressor of cytokine signaling 4	4726	0.10259073972702026	0.07576991	No	
+row_46	RHOQ	RHOQ	ras homolog gene family, member Q	4727	0.10239677131175995	0.077883236	No	
+row_47	EXOC7	EXOC7	exocyst complex component 7	4868	0.08977847546339035	0.068227716	No	
+row_48	AKT1	AKT1	v-akt murine thymoma viral oncogene homolog 1	4939	0.08401542901992798	0.064207464	No	
+row_49	ELK1	ELK1	ELK1, member of ETS oncogene family	5038	0.07626048475503922	0.05772548	No	
+row_50	RAF1	RAF1	v-raf-1 murine leukemia viral oncogene homolog 1	5206	0.06353603303432465	0.04530887	No	
+row_51	MAP2K1	MAP2K1	mitogen-activated protein kinase kinase 1	5362	0.052492935210466385	0.03365078	No	
+row_52	PPP1R3C	PPP1R3C	protein phosphatase 1, regulatory (inhibitor) subunit 3C	5467	0.0451166070997715	0.02603281	No	
+row_53	PRKAB1	PRKAB1	protein kinase, AMP-activated, beta 1 non-catalytic subunit	5496	0.04329316318035126	0.024624635	No	
+row_54	PIK3CG	PIK3CG	phosphoinositide-3-kinase, catalytic, gamma polypeptide	5556	0.03785887360572815	0.02055601	No	
+row_55	PIK3CA	PIK3CA	phosphoinositide-3-kinase, catalytic, alpha polypeptide	5561	0.037434644997119904	0.020999799	No	
+row_56	CRKL	CRKL	v-crk sarcoma virus CT10 oncogene homolog (avian)-like	5819	0.015276739373803139	1.8890708E-4	No	
+row_57	GSK3B	GSK3B	glycogen synthase kinase 3 beta	6025	-6.142998463474214E-4	-0.016650038	No	
+row_58	BRAF	BRAF	v-raf murine sarcoma viral oncogene homolog B1	6226	-0.015274535864591599	-0.032775402	No	
+row_59	PRKACB	PRKACB	protein kinase, cAMP-dependent, catalytic, beta	6240	-0.016568588092923164	-0.033502087	No	
+row_60	EIF4E	EIF4E	eukaryotic translation initiation factor 4E	6479	-0.0355447493493557	-0.05233282	No	
+row_61	EIF4EBP1	EIF4EBP1	eukaryotic translation initiation factor 4E binding protein 1	7005	-0.07611780613660812	-0.09391845	No	
+row_62	MAP2K2	MAP2K2	mitogen-activated protein kinase kinase 2	7063	-0.08120370656251907	-0.09692809	No	
+row_63	MKNK1	MKNK1	MAP kinase interacting serine/threonine kinase 1	7073	-0.08207142353057861	-0.09597407	No	
+row_64	ARAF	ARAF	v-raf murine sarcoma 3611 viral oncogene homolog	7107	-0.08493132144212723	-0.09693391	No	
+row_65	AKT2	AKT2	v-akt murine thymoma viral oncogene homolog 2	7131	-0.08686044067144394	-0.0970319	No	
+row_66	MAPK1	MAPK1	mitogen-activated protein kinase 1	7170	-0.08996947109699249	-0.098298766	No	
+row_67	PKLR	PKLR	pyruvate kinase, liver and RBC	7177	-0.09025482088327408	-0.09692925	No	
+row_68	HRAS	HRAS	v-Ha-ras Harvey rat sarcoma viral oncogene homolog	7212	-0.09028203040361404	-0.09786086	No	
+row_69	PCK2	PCK2	phosphoenolpyruvate carboxykinase 2 (mitochondrial)	7218	-0.09040765464305878	-0.09640598	No	
+row_70	PRKCI	PRKCI	protein kinase C, iota	7259	-0.09255791455507278	-0.097783834	No	
+row_71	MAPK3	MAPK3	mitogen-activated protein kinase 3	7277	-0.09331737458705902	-0.09725534	No	
+row_72	ACACA	ACACA	acetyl-Coenzyme A carboxylase alpha	7401	-0.10267909616231918	-0.10524716	No	
+row_73	RPS6KB1	RPS6KB1	ribosomal protein S6 kinase, 70kDa, polypeptide 1	7472	-0.10743426531553268	-0.10878408	No	
+row_74	PRKAR2A	PRKAR2A	protein kinase, cAMP-dependent, regulatory, type II, alpha	7562	-0.11238298565149307	-0.11378072	No	
+row_75	ACACB	ACACB	acetyl-Coenzyme A carboxylase beta	7777	-0.1260986179113388	-0.12876967	No	
+row_76	CRK	CRK	v-crk sarcoma virus CT10 oncogene homolog (avian)	7903	-0.1342596858739853	-0.13627411	No	
+row_77	PRKAG2	PRKAG2	protein kinase, AMP-activated, gamma 2 non-catalytic subunit	8081	-0.14886388182640076	-0.1477517	No	
+row_78	CBLB	CBLB	Cas-Br-M (murine) ecotropic retroviral transforming sequence b	8134	-0.1539580225944519	-0.14884879	No	
+row_79	PHKA2	PHKA2	phosphorylase kinase, alpha 2 (liver)	8267	-0.1648239642381668	-0.15629785	No	
+row_80	PPP1CB	PPP1CB	protein phosphatase 1, catalytic subunit, beta isoform	8478	-0.18304237723350525	-0.16978274	No	
+row_81	PRKAA2	PRKAA2	protein kinase, AMP-activated, alpha 2 catalytic subunit	8552	-0.1905457228422165	-0.17185096	No	
+row_82	PDE3B	PDE3B	phosphodiesterase 3B, cGMP-inhibited	8829	-0.21295605599880219	-0.19014388	No	
+row_83	PIK3CB	PIK3CB	phosphoinositide-3-kinase, catalytic, beta polypeptide	8946	-0.22313624620437622	-0.1950742	No	
+row_84	MAPK9	MAPK9	mitogen-activated protein kinase 9	9167	-0.24532784521579742	-0.20809564	No	
+row_85	SHC2	SHC2	SHC (Src homology 2 domain containing) transforming protein 2	9252	-0.25477609038352966	-0.20974247	No	
+row_86	SOS2	SOS2	son of sevenless homolog 2 (Drosophila)	9529	-0.2802294194698334	-0.22664696	No	
+row_87	PIK3R2	PIK3R2	phosphoinositide-3-kinase, regulatory subunit 2 (p85 beta)	9536	-0.28081628680229187	-0.22134452	No	
+row_88	INSR	INSR	insulin receptor	9557	-0.2831428050994873	-0.2171449	No	
+row_89	SLC2A4	SLC2A4	solute carrier family 2 (facilitated glucose transporter), member 4	9623	-0.28893527388572693	-0.21652487	No	
+row_90	RPS6	RPS6	ribosomal protein S6	9642	-0.2911451458930969	-0.21199569	No	
+row_91	FBP1	FBP1	fructose-1,6-bisphosphatase 1	9674	-0.29411041736602783	-0.20847395	No	
+row_92	PPP1R3D	PPP1R3D	protein phosphatase 1, regulatory subunit 3D	9863	-0.31396570801734924	-0.21744831	No	
+row_93	PPP1CC	PPP1CC	protein phosphatase 1, catalytic subunit, gamma isoform	10157	-0.3482663929462433	-0.23434605	No	
+row_94	RHEB	RHEB	Ras homolog enriched in brain	10299	-0.36625152826309204	-0.23837775	Yes	
+row_95	PPARGC1A	PPARGC1A	peroxisome proliferative activated receptor, gamma, coactivator 1, alpha	10320	-0.3688315451145172	-0.23240964	Yes	
+row_96	PHKA1	PHKA1	phosphorylase kinase, alpha 1 (muscle)	10321	-0.36898860335350037	-0.22479422	Yes	
+row_97	FASN	FASN	fatty acid synthase	10381	-0.37694746255874634	-0.22186452	Yes	
+row_98	PTPRF	PTPRF	protein tyrosine phosphatase, receptor type, F	10605	-0.40591177344322205	-0.23181835	Yes	
+row_99	PDE3A	PDE3A	phosphodiesterase 3A, cGMP-inhibited	10636	-0.4109102487564087	-0.2258038	Yes	
+row_100	SHC3	SHC3	SHC (Src homology 2 domain containing) transforming protein 3	10682	-0.4189128577709198	-0.22085716	Yes	
+row_101	PHKB	PHKB	phosphorylase kinase, beta	10711	-0.4249134063720703	-0.21438922	Yes	
+row_102	TRIP10	TRIP10	thyroid hormone receptor interactor 10	10805	-0.43751323223114014	-0.21300443	Yes	
+row_103	PIK3CD	PIK3CD	phosphoinositide-3-kinase, catalytic, delta polypeptide	10931	-0.4595138430595398	-0.21379608	Yes	
+row_104	PPP1R3A	PPP1R3A	protein phosphatase 1, regulatory (inhibitor) subunit 3A (glycogen and sarcoplasmic reticulum binding subunit, skeletal muscle)	11027	-0.4801362454891205	-0.21169601	Yes	
+row_105	PRKAG3	PRKAG3	protein kinase, AMP-activated, gamma 3 non-catalytic subunit	11098	-0.49337077140808105	-0.20726773	Yes	
+row_106	PYGM	PYGM	phosphorylase, glycogen; muscle (McArdle syndrome, glycogen storage disease type V)	11104	-0.49489280581474304	-0.19746484	Yes	
+row_107	LIPE	LIPE	lipase, hormone-sensitive	11325	-0.5481476783752441	-0.20423649	Yes	
+row_108	CALM2	CALM2	calmodulin 2 (phosphorylase kinase, delta)	11338	-0.5512831807136536	-0.1938452	Yes	
+row_109	CBL	CBL	Cas-Br-M (murine) ecotropic retroviral transforming sequence	11359	-0.5573105812072754	-0.18398714	Yes	
+row_110	CALM3	CALM3	calmodulin 3 (phosphorylase kinase, delta)	11364	-0.5584386587142944	-0.17279054	Yes	
+row_111	PYGL	PYGL	phosphorylase, glycogen; liver (Hers disease, glycogen storage disease type VI)	11400	-0.5704571008682251	-0.1638942	Yes	
+row_112	PHKG1	PHKG1	phosphorylase kinase, gamma 1 (muscle)	11405	-0.5715990662574768	-0.15242599	Yes	
+row_113	SOCS2	SOCS2	suppressor of cytokine signaling 2	11467	-0.5914822816848755	-0.14523299	Yes	
+row_114	CALM1	CALM1	calmodulin 1 (phosphorylase kinase, delta)	11512	-0.6065794229507446	-0.13633096	Yes	
+row_115	PRKAB2	PRKAB2	protein kinase, AMP-activated, beta 2 non-catalytic subunit	11563	-0.6249308586120605	-0.1275434	Yes	
+row_116	IRS2	IRS2	insulin receptor substrate 2	11599	-0.6440510153770447	-0.11712818	Yes	
+row_117	RPS6KB2	RPS6KB2	ribosomal protein S6 kinase, 70kDa, polypeptide 2	11614	-0.6501569151878357	-0.10486068	Yes	
+row_118	SREBF1	SREBF1	sterol regulatory element binding transcription factor 1	11650	-0.6613648533821106	-0.09408812	Yes	
+row_119	IRS1	IRS1	insulin receptor substrate 1	11771	-0.7211410999298096	-0.08906913	Yes	
+row_120	PPP1R3B	PPP1R3B	protein phosphatase 1, regulatory (inhibitor) subunit 3B	11816	-0.7455763220787048	-0.077298395	Yes	
+row_121	PCK1	PCK1	phosphoenolpyruvate carboxykinase 1 (soluble)	12029	-0.9177280068397522	-0.075784795	Yes	
+row_122	MAPK10	MAPK10	mitogen-activated protein kinase 10	12034	-0.9228354096412659	-0.05706755	Yes	
+row_123	FBP2	FBP2	fructose-1,6-bisphosphatase 2	12133	-1.039509654045105	-0.043669395	Yes	
+row_124	TSC1	TSC1	tuberous sclerosis 1	12240	-1.3395458459854126	-0.024736533	Yes	
+row_125	PRKAR2B	PRKAR2B	protein kinase, cAMP-dependent, regulatory, type II, beta	12250	-1.393729567527771	0.003288302	Yes	

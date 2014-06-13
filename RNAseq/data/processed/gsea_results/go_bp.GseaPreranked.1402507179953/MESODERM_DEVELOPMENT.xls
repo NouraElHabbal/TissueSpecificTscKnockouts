@@ -1,0 +1,21 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SLIT2	SLIT2	slit homolog 2 (Drosophila)	2389	0.35178273916244507	-0.1457746	No	
+row_1	BTK	BTK	Bruton agammaglobulinemia tyrosine kinase	2398	0.349757581949234	-0.09779606	No	
+row_2	SMAD2	SMAD2	SMAD, mothers against DPP homolog 2 (Drosophila)	3373	0.22722217440605164	-0.1455771	No	
+row_3	KLF4	KLF4	Kruppel-like factor 4 (gut)	3890	0.17627568542957306	-0.16311799	No	
+row_4	TBX3	TBX3	T-box 3 (ulnar mammary syndrome)	6574	-0.04277758672833443	-0.37581578	No	
+row_5	GDF11	GDF11	growth differentiation factor 11	7256	-0.09213974326848984	-0.41850132	No	
+row_6	TCF21	TCF21	transcription factor 21	7467	-0.10722845047712326	-0.42070574	No	
+row_7	HCK	HCK	hemopoietic cell kinase	7648	-0.11738114058971405	-0.4190537	No	
+row_8	MEST	MEST	mesoderm specific transcript homolog (mouse)	8856	-0.21442195773124695	-0.48760235	Yes	
+row_9	TBX6	TBX6	T-box 6	9060	-0.23462876677513123	-0.4715225	Yes	
+row_10	TIE1	TIE1	tyrosine kinase with immunoglobulin-like and EGF-like domains 1	9208	-0.25030627846717834	-0.44869927	Yes	
+row_11	EYA2	EYA2	eyes absent homolog 2 (Drosophila)	9658	-0.2928677201271057	-0.4445691	Yes	
+row_12	IKZF1	IKZF1	IKAROS family zinc finger 1 (Ikaros)	10719	-0.4260019361972809	-0.4717201	Yes	
+row_13	BMX	BMX	BMX non-receptor tyrosine kinase	10884	-0.4492216408252716	-0.42262492	Yes	
+row_14	SNAI2	SNAI2	snail homolog 2 (Drosophila)	11050	-0.4844082295894623	-0.36871886	Yes	
+row_15	TRIM15	TRIM15	tripartite motif-containing 15	11207	-0.5173164010047913	-0.30950382	Yes	
+row_16	JAK2	JAK2	Janus kinase 2 (a protein tyrosine kinase)	11343	-0.5532121658325195	-0.24358645	Yes	
+row_17	TCF15	TCF15	transcription factor 15 (basic helix-loop-helix)	11415	-0.5763685703277588	-0.16923384	Yes	
+row_18	MATK	MATK	megakaryocyte-associated tyrosine kinase	11937	-0.8303238153457642	-0.096242994	Yes	
+row_19	IKZF3	IKZF3	IKAROS family zinc finger 3 (Aiolos)	12010	-0.8985048532485962	0.022818113	Yes	

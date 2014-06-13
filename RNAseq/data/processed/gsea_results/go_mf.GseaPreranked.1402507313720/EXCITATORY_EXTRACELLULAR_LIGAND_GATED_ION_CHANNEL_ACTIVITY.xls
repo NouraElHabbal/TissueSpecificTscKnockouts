@@ -1,0 +1,17 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GLRB	GLRB	glycine receptor, beta	115	1.9951262474060059	0.20810936	Yes	
+row_1	CHRND	CHRND	cholinergic receptor, nicotinic, delta	228	1.567962884902954	0.36990032	Yes	
+row_2	CHRNA1	CHRNA1	cholinergic receptor, nicotinic, alpha 1 (muscle)	819	0.8340219855308533	0.4127474	Yes	
+row_3	CHRNB2	CHRNB2	cholinergic receptor, nicotinic, beta 2 (neuronal)	831	0.8249995112419128	0.50178003	Yes	
+row_4	CHRNA7	CHRNA7	cholinergic receptor, nicotinic, alpha 7	1165	0.667223334312439	0.5473822	Yes	
+row_5	P2RX1	P2RX1	purinergic receptor P2X, ligand-gated ion channel, 1	1391	0.580509603023529	0.59233046	Yes	
+row_6	P2RX7	P2RX7	purinergic receptor P2X, ligand-gated ion channel, 7	2228	0.3801809251308441	0.565666	No	
+row_7	P2RX4	P2RX4	purinergic receptor P2X, ligand-gated ion channel, 4	2927	0.2784673869609833	0.53915673	No	
+row_8	GLRA1	GLRA1	glycine receptor, alpha 1 (startle disease/hyperekplexia, stiff man syndrome)	3561	0.20765839517116547	0.5102242	No	
+row_9	CHRNB4	CHRNB4	cholinergic receptor, nicotinic, beta 4	4739	0.10133534669876099	0.42538428	No	
+row_10	CHRNA2	CHRNA2	cholinergic receptor, nicotinic, alpha 2 (neuronal)	5118	0.07058773934841156	0.40228438	No	
+row_11	CHRNA4	CHRNA4	cholinergic receptor, nicotinic, alpha 4	5163	0.06689576804637909	0.40599182	No	
+row_12	P2RX3	P2RX3	purinergic receptor P2X, ligand-gated ion channel, 3	7558	-0.11201635748147964	0.22317156	No	
+row_13	GLRA2	GLRA2	glycine receptor, alpha 2	7800	-0.12719281017780304	0.21740277	No	
+row_14	CHRNE	CHRNE	cholinergic receptor, nicotinic, epsilon	11665	-0.6678483486175537	-0.024584826	No	
+row_15	HTR3B	HTR3B	5-hydroxytryptamine (serotonin) receptor 3B	11715	-0.6918957829475403	0.046843164	No	

@@ -1,0 +1,53 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ZAP70	ZAP70	zeta-chain (TCR) associated protein kinase 70kDa	353	1.3082386255264282	0.033619907	No	
+row_1	CD276	CD276	CD276 molecule	1053	0.7155925631523132	0.010673518	No	
+row_2	EREG	EREG	epiregulin	1209	0.6501333713531494	0.029049844	No	
+row_3	MAP3K7	MAP3K7	mitogen-activated protein kinase kinase kinase 7	1502	0.5436956882476807	0.031150553	No	
+row_4	IL4	IL4	interleukin 4	1723	0.49308034777641296	0.036717456	No	
+row_5	CD28	CD28	CD28 molecule	1725	0.4924767017364502	0.060149156	No	
+row_6	IL27	IL27	interleukin 27	1798	0.47250139713287354	0.076826	No	
+row_7	SPINK5	SPINK5	serine peptidase inhibitor, Kazal type 5	1825	0.46625202894210815	0.09696294	No	
+row_8	NCK1	NCK1	NCK adaptor protein 1	1919	0.44604194164276123	0.11066066	No	
+row_9	FYN	FYN	FYN oncogene related to SRC, FGR, YES	1939	0.4431076943874359	0.13026452	No	
+row_10	INHA	INHA	inhibin, alpha	1998	0.4287140965461731	0.14599462	No	
+row_11	SOCS5	SOCS5	suppressor of cytokine signaling 5	2426	0.34630459547042847	0.12764053	No	
+row_12	UBE2N	UBE2N	ubiquitin-conjugating enzyme E2N (UBC13 homolog, yeast)	2612	0.31816619634628296	0.12771583	No	
+row_13	CD47	CD47	CD47 molecule	2722	0.3018093705177307	0.13321982	No	
+row_14	TRAF6	TRAF6	TNF receptor-associated factor 6	2799	0.29361844062805176	0.14102904	No	
+row_15	IKBKG	IKBKG	inhibitor of kappa light polypeptide gene enhancer in B-cells, kinase gamma	2908	0.2816805839538574	0.1456537	No	
+row_16	SLA2	SLA2	Src-like-adaptor 2	3026	0.26656681299209595	0.14882137	No	
+row_17	KRT1	KRT1	keratin 1 (epidermolytic hyperkeratosis)	3316	0.23514682054519653	0.13643546	No	
+row_18	NFAM1	NFAM1	NFAT activating protein with ITAM motif 1	3434	0.2206689417362213	0.13741176	No	
+row_19	TGFB1	TGFB1	transforming growth factor, beta 1 (Camurati-Engelmann disease)	4588	0.11633426696062088	0.048759114	No	
+row_20	FOXP3	FOXP3	forkhead box P3	4824	0.09322461485862732	0.03400923	No	
+row_21	TLR8	TLR8	toll-like receptor 8	5032	0.07710734754800797	0.020777589	No	
+row_22	PTPRC	PTPRC	protein tyrosine phosphatase, receptor type, C	5116	0.0707264393568039	0.017372837	No	
+row_23	SART1	SART1	squamous cell carcinoma antigen recognised by T cells	5298	0.05657706782221794	0.0052853324	No	
+row_24	BCAR1	BCAR1	breast cancer anti-estrogen resistance 1	5578	0.035701505839824677	-0.015806071	No	
+row_25	CD3E	CD3E	CD3e molecule, epsilon (CD3-TCR complex)	5687	0.02632281742990017	-0.023373533	No	
+row_26	LAT	LAT	linker for activation of T cells	5745	0.02095096744596958	-0.027030468	No	
+row_27	CRTAM	CRTAM	cytotoxic and regulatory T cell molecule	5855	0.012145026586949825	-0.03535656	No	
+row_28	MALT1	MALT1	mucosa associated lymphoid tissue lymphoma translocation gene 1	6241	-0.01679912768304348	-0.066011295	No	
+row_29	MIA3	MIA3	melanoma inhibitory activity family, member 3	6557	-0.041186463087797165	-0.08978224	No	
+row_30	GLMN	GLMN	glomulin, FKBP associated protein	7028	-0.07872568070888519	-0.12442529	No	
+row_31	TRAT1	TRAT1	T cell receptor associated transmembrane adaptor 1	7685	-0.1201692447066307	-0.17228694	No	
+row_32	INHBA	INHBA	inhibin, beta A (activin A, activin AB alpha polypeptide)	7871	-0.13153895735740662	-0.1811222	No	
+row_33	TARBP2	TARBP2	Tar (HIV-1) RNA binding protein 2	8083	-0.14898346364498138	-0.19124892	No	
+row_34	NCK2	NCK2	NCK adaptor protein 2	8431	-0.1789495050907135	-0.21105692	No	
+row_35	IL12B	IL12B	interleukin 12B (natural killer cell stimulatory factor 2, cytotoxic lymphocyte maturation factor 2, p40)	8463	-0.18096403777599335	-0.20494965	No	
+row_36	LAT2	LAT2	linker for activation of T cells family, member 2	8503	-0.18538525700569153	-0.19928493	No	
+row_37	IL12A	IL12A	interleukin 12A (natural killer cell stimulatory factor 1, cytotoxic lymphocyte maturation factor 1, p35)	8739	-0.20546065270900726	-0.20867607	No	
+row_38	NCR1	NCR1	natural cytotoxicity triggering receptor 1	9840	-0.3117762506008148	-0.28366688	No	
+row_39	TGFB2	TGFB2	transforming growth factor, beta 2	10068	-0.3384527862071991	-0.28605464	No	
+row_40	LST1	LST1	leukocyte specific transcript 1	10096	-0.340902179479599	-0.27198425	No	
+row_41	IL21	IL21	interleukin 21	11041	-0.4824608266353607	-0.32607955	Yes	
+row_42	EBI3	EBI3	Epstein-Barr virus induced gene 3	11282	-0.5367217659950256	-0.32006308	Yes	
+row_43	IL18	IL18	interleukin 18 (interferon-gamma-inducing factor)	11474	-0.5942220091819763	-0.30729768	Yes	
+row_44	TRAF2	TRAF2	TNF receptor-associated factor 2	11597	-0.6436774134635925	-0.2865333	Yes	
+row_45	THY1	THY1	Thy-1 cell surface antigen	11781	-0.726487398147583	-0.2667992	Yes	
+row_46	SIT1	SIT1	signaling threshold regulating transmembrane adaptor 1	11960	-0.8476235270500183	-0.2408729	Yes	
+row_47	LCK	LCK	lymphocyte-specific protein tyrosine kinase	12035	-0.9228755235671997	-0.20285627	Yes	
+row_48	LAX1	LAX1	lymphocyte transmembrane adaptor 1	12062	-0.9524835348129272	-0.1595041	Yes	
+row_49	CD79A	CD79A	CD79a molecule, immunoglobulin-associated alpha	12118	-1.0089730024337769	-0.11582429	Yes	
+row_50	TNFSF13	TNFSF13	tumor necrosis factor (ligand) superfamily, member 13	12202	-1.1723095178604126	-0.06663372	Yes	
+row_51	IL7	IL7	interleukin 7	12266	-1.5444931983947754	0.0019609577	Yes	

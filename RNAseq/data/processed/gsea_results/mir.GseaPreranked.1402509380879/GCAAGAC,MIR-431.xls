@@ -1,0 +1,35 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	NRCAM	NRCAM	neuronal cell adhesion molecule	39	2.615525722503662	0.16553105	Yes	
+row_1	BICD1	BICD1	bicaudal D homolog 1 (Drosophila)	118	1.96888267993927	0.28616893	Yes	
+row_2	MAP1A	MAP1A	microtubule-associated protein 1A	121	1.955222249031067	0.41212618	Yes	
+row_3	LAMC2	LAMC2	laminin, gamma 2	678	0.9282324910163879	0.42663944	Yes	
+row_4	ESRRG	ESRRG	estrogen-related receptor gamma	1128	0.682935357093811	0.43405965	Yes	
+row_5	PTPN2	PTPN2	protein tyrosine phosphatase, non-receptor type 2	1765	0.48252254724502563	0.41329575	No	
+row_6	BTF3L4	BTF3L4	basic transcription factor 3-like 4	3006	0.2701132893562317	0.32955256	No	
+row_7	COL12A1	COL12A1	collagen, type XII, alpha 1	3741	0.18969132006168365	0.28190434	No	
+row_8	MSI2	MSI2	musashi homolog 2 (Drosophila)	4364	0.13274095952510834	0.23972021	No	
+row_9	RBCK1	RBCK1	RanBP-type and C3HC4-type zinc finger containing 1	4424	0.12855254113674164	0.24319883	No	
+row_10	ALG8	ALG8	asparagine-linked glycosylation 8 homolog (S. cerevisiae, alpha-1,3-glucosyltransferase)	5031	0.07716058939695358	0.1987349	No	
+row_11	NR3C2	NR3C2	nuclear receptor subfamily 3, group C, member 2	5224	0.062327928841114044	0.1870908	No	
+row_12	TBX15	TBX15	T-box 15	5299	0.05652432516217232	0.1846995	No	
+row_13	CAMTA1	CAMTA1	calmodulin binding transcription activator 1	6101	-0.006398980505764484	0.119761854	No	
+row_14	MAP2K4	MAP2K4	mitogen-activated protein kinase kinase 4	6335	-0.024980932474136353	0.10236368	No	
+row_15	BTBD1	BTBD1	BTB (POZ) domain containing 1	6925	-0.07033237814903259	0.05884626	No	
+row_16	CHST2	CHST2	carbohydrate (N-acetylglucosamine-6-O) sulfotransferase 2	7021	-0.07795988023281097	0.05612434	No	
+row_17	RAB24	RAB24	RAB24, member RAS oncogene family	7253	-0.09200417995452881	0.04321264	No	
+row_18	CEP170	CEP170	centrosomal protein 170kDa	8187	-0.15794992446899414	-0.02271866	No	
+row_19	KCNJ2	KCNJ2	potassium inwardly-rectifying channel, subfamily J, member 2	8287	-0.1664130985736847	-0.020061301	No	
+row_20	SMAD4	SMAD4	SMAD, mothers against DPP homolog 4 (Drosophila)	8367	-0.17324766516685486	-0.015331361	No	
+row_21	TOR2A	TOR2A	torsin family 2, member A	8730	-0.20459739863872528	-0.031668074	No	
+row_22	DHX30	DHX30	DEAH (Asp-Glu-Ala-His) box polypeptide 30	8861	-0.21494899690151215	-0.028409103	No	
+row_23	N4BP1	N4BP1	-	9615	-0.2880713939666748	-0.07126152	No	
+row_24	AMIGO1	AMIGO1	adhesion molecule with Ig-like domain 1	9720	-0.2980312407016754	-0.060522135	No	
+row_25	CHODL	CHODL	chondrolectin	9730	-0.2990932762622833	-0.04196358	No	
+row_26	CD34	CD34	CD34 molecule	10329	-0.3704623281955719	-0.06685558	No	
+row_27	PITPNA	PITPNA	phosphatidylinositol transfer protein, alpha	10374	-0.37550705671310425	-0.04622351	No	
+row_28	PTPRF	PTPRF	protein tyrosine phosphatase, receptor type, F	10605	-0.40591177344322205	-0.0388052	No	
+row_29	NRG2	NRG2	neuregulin 2	10672	-0.4170570969581604	-0.017287863	No	
+row_30	PDLIM7	PDLIM7	PDZ and LIM domain 7 (enigma)	10782	-0.43488234281539917	0.0018710826	No	
+row_31	LHX8	LHX8	LIM homeobox 8	11373	-0.5614901781082153	-0.01004609	No	
+row_32	UBE2D1	UBE2D1	ubiquitin-conjugating enzyme E2D 1 (UBC4/5 homolog, yeast)	11547	-0.6183788180351257	0.015727682	No	
+row_33	NR4A3	NR4A3	nuclear receptor subfamily 4, group A, member 3	11719	-0.6946688890457153	0.046585668	No	

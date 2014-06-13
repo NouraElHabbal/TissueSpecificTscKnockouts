@@ -1,0 +1,24 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MSTO1	MSTO1	misato homolog 1 (Drosophila)	822	0.8313651084899902	0.06359265	Yes	
+row_1	RAB11FIP5	RAB11FIP5	RAB11 family interacting protein 5 (class I)	973	0.745856523513794	0.1685297	Yes	
+row_2	BCL2	BCL2	B-cell CLL/lymphoma 2	1226	0.6442302465438843	0.24918833	Yes	
+row_3	MTX2	MTX2	metaxin 2	1484	0.5485435724258423	0.3144083	Yes	
+row_4	TOMM22	TOMM22	translocase of outer mitochondrial membrane 22 homolog (yeast)	1489	0.5471086502075195	0.40002564	Yes	
+row_5	BNIP3	BNIP3	BCL2/adenovirus E1B 19kDa interacting protein 3	1864	0.4570109248161316	0.44133008	Yes	
+row_6	RETSAT	RETSAT	retinol saturase (all-trans-retinol 13,14-reductase)	2079	0.4094568192958832	0.48820645	Yes	
+row_7	MCL1	MCL1	myeloid cell leukemia sequence 1 (BCL2-related)	2099	0.4059388041496277	0.55042523	Yes	
+row_8	RAE1	RAE1	RAE1 RNA export 1 homolog (S. pombe)	3010	0.269447922706604	0.51857513	No	
+row_9	MFN2	MFN2	mitofusin 2	4211	0.1465664952993393	0.44378328	No	
+row_10	TOMM34	TOMM34	translocase of outer mitochondrial membrane 34	4420	0.1289123147726059	0.44707897	No	
+row_11	OPA1	OPA1	optic atrophy 1 (autosomal dominant)	4453	0.12623853981494904	0.46430093	No	
+row_12	RAF1	RAF1	v-raf-1 murine leukemia viral oncogene homolog 1	5206	0.06353603303432465	0.4129839	No	
+row_13	FIS1	FIS1	fission 1 (mitochondrial outer membrane) homolog (S. cerevisiae)	5936	0.005198523867875338	0.35437763	No	
+row_14	RHOT1	RHOT1	ras homolog gene family, member T1	6088	-0.005744821857661009	0.34297162	No	
+row_15	GUCY2D	GUCY2D	guanylate cyclase 2D, membrane (retina-specific)	6687	-0.05176737904548645	0.30235887	No	
+row_16	VDAC1	VDAC1	voltage-dependent anion channel 1	7468	-0.10729498416185379	0.2556334	No	
+row_17	RHOT2	RHOT2	ras homolog gene family, member T2	7671	-0.11984916776418686	0.2579945	No	
+row_18	VDAC3	VDAC3	voltage-dependent anion channel 3	7859	-0.13053002953529358	0.2632561	No	
+row_19	GUCY2F	GUCY2F	guanylate cyclase 2F, retinal	7885	-0.1332855522632599	0.28215563	No	
+row_20	PSEN1	PSEN1	presenilin 1 (Alzheimer disease 3)	7901	-0.13423648476600647	0.3020197	No	
+row_21	DHCR7	DHCR7	7-dehydrocholesterol reductase	8393	-0.1757509559392929	0.28960496	No	
+row_22	VDAC2	VDAC2	voltage-dependent anion channel 2	8423	-0.17805004119873047	0.31521034	No	

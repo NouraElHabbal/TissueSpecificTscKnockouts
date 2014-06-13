@@ -1,0 +1,47 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	VWC2	VWC2	von Willebrand factor C domain containing 2	22	2.933091402053833	0.11150663	Yes	
+row_1	GDF15	GDF15	growth differentiation factor 15	29	2.7838382720947266	0.21855439	Yes	
+row_2	HPGD	HPGD	hydroxyprostaglandin dehydrogenase 15-(NAD)	87	2.2248029708862305	0.29984203	Yes	
+row_3	GDF5	GDF5	growth differentiation factor 5 (cartilage-derived morphogenetic protein-1)	117	1.9787050485610962	0.3739097	Yes	
+row_4	PEG10	PEG10	paternally expressed 10	389	1.247983694076538	0.39998698	Yes	
+row_5	GDF9	GDF9	growth differentiation factor 9	392	1.2427339553833008	0.4478296	Yes	
+row_6	CIDEA	CIDEA	cell death-inducing DFFA-like effector a	409	1.2162264585494995	0.4935049	Yes	
+row_7	CITED2	CITED2	Cbp/p300-interacting transactivator, with Glu/Asp-rich carboxy-terminal domain, 2	480	1.1208491325378418	0.5310859	Yes	
+row_8	LTBP2	LTBP2	latent transforming growth factor beta binding protein 2	716	0.8990917801856995	0.54662573	Yes	
+row_9	MAP3K7	MAP3K7	mitogen-activated protein kinase kinase kinase 7	1502	0.5436956882476807	0.5035205	No	
+row_10	EID2	EID2	EP300 interacting inhibitor of differentiation 2	1644	0.5092359781265259	0.511677	No	
+row_11	SMURF1	SMURF1	SMAD specific E3 ubiquitin protein ligase 1	1850	0.4614405035972595	0.51276064	No	
+row_12	LEFTY2	LEFTY2	left-right determination factor 2	2481	0.33788537979125977	0.47436333	No	
+row_13	FOXH1	FOXH1	forkhead box H1	2972	0.2730918228626251	0.44489634	No	
+row_14	CDKN2B	CDKN2B	cyclin-dependent kinase inhibitor 2B (p15, inhibits CDK4)	3319	0.23456524312496185	0.425701	No	
+row_15	SMAD2	SMAD2	SMAD, mothers against DPP homolog 2 (Drosophila)	3373	0.22722217440605164	0.43015015	No	
+row_16	SMAD1	SMAD1	SMAD, mothers against DPP homolog 1 (Drosophila)	3621	0.20202726125717163	0.4177828	No	
+row_17	HIPK2	HIPK2	homeodomain interacting protein kinase 2	4490	0.12290184944868088	0.35164437	No	
+row_18	TGFB1	TGFB1	transforming growth factor, beta 1 (Camurati-Engelmann disease)	4588	0.11633426696062088	0.34821665	No	
+row_19	BMPR2	BMPR2	bone morphogenetic protein receptor, type II (serine/threonine kinase)	5327	0.054635483771562576	0.2900577	No	
+row_20	TGFBRAP1	TGFBRAP1	transforming growth factor, beta receptor associated protein 1	5492	0.04356027767062187	0.27834716	No	
+row_21	SMAD5	SMAD5	SMAD, mothers against DPP homolog 5 (Drosophila)	5792	0.017359433695673943	0.25459963	No	
+row_22	SMAD7	SMAD7	SMAD, mothers against DPP homolog 7 (Drosophila)	6345	-0.025653529912233353	0.21051098	No	
+row_23	BMPR1A	BMPR1A	bone morphogenetic protein receptor, type IA	6605	-0.046065252274274826	0.19113895	No	
+row_24	FNTA	FNTA	farnesyltransferase, CAAX box, alpha	6810	-0.06216132268309593	0.17688034	No	
+row_25	ZFYVE9	ZFYVE9	zinc finger, FYVE domain containing 9	7279	-0.09347072243690491	0.14227137	No	
+row_26	SNX6	SNX6	sorting nexin 6	7551	-0.1117163822054863	0.124455415	No	
+row_27	TGFBR3	TGFBR3	transforming growth factor, beta receptor III (betaglycan, 300kDa)	7601	-0.11506696790456772	0.12489874	No	
+row_28	ACVR2A	ACVR2A	activin A receptor, type IIA	7737	-0.12366505712270737	0.11865093	No	
+row_29	STUB1	STUB1	STIP1 homology and U-box containing protein 1	7752	-0.1250310093164444	0.12233747	No	
+row_30	CDKN1C	CDKN1C	cyclin-dependent kinase inhibitor 1C (p57, Kip2)	7787	-0.1267361342906952	0.12445655	No	
+row_31	INHBA	INHBA	inhibin, beta A (activin A, activin AB alpha polypeptide)	7871	-0.13153895735740662	0.12275953	No	
+row_32	ACVR1B	ACVR1B	activin A receptor, type IB	8034	-0.14393538236618042	0.11508977	No	
+row_33	ACVR1	ACVR1	activin A receptor, type I	8304	-0.16745933890342712	0.09959045	No	
+row_34	SMAD4	SMAD4	SMAD, mothers against DPP homolog 4 (Drosophila)	8367	-0.17324766516685486	0.1012196	No	
+row_35	ACVRL1	ACVRL1	activin A receptor type II-like 1	8621	-0.19718900322914124	0.08817538	No	
+row_36	RGMB	RGMB	RGM domain family, member B	8897	-0.218766450881958	0.07416803	No	
+row_37	ACVR2B	ACVR2B	activin A receptor, type IIB	9335	-0.262542188167572	0.04862181	No	
+row_38	TGFBR1	TGFBR1	transforming growth factor, beta receptor I (activin A receptor type II-like kinase, 53kDa)	9495	-0.2773571312427521	0.046351034	No	
+row_39	ENG	ENG	endoglin (Osler-Rendu-Weber syndrome 1)	10549	-0.3984212279319763	-0.024252517	No	
+row_40	GDF10	GDF10	growth differentiation factor 10	11271	-0.5334523916244507	-0.0625268	No	
+row_41	IL17F	IL17F	interleukin 17F	11495	-0.600967526435852	-0.057523355	No	
+row_42	SMAD3	SMAD3	SMAD, mothers against DPP homolog 3 (Drosophila)	11774	-0.7222996950149536	-0.052324563	No	
+row_43	LEFTY1	LEFTY1	left-right determination factor 1	11801	-0.7371283173561096	-0.025973124	No	
+row_44	FMOD	FMOD	fibromodulin	11903	-0.8063929677009583	-0.0030709878	No	
+row_45	KLF10	KLF10	Kruppel-like factor 10	12003	-0.8955426812171936	0.023438273	No	

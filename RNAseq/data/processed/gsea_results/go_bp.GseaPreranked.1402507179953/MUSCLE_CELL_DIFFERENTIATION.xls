@@ -1,0 +1,21 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	EREG	EREG	epiregulin	1209	0.6501333713531494	0.0052261963	No	
+row_1	IGFBP3	IGFBP3	insulin-like growth factor binding protein 3	3180	0.2474539875984192	-0.11582511	No	
+row_2	MYEF2	MYEF2	myelin expression factor 2	3381	0.22641628980636597	-0.09599119	No	
+row_3	KCNH1	KCNH1	potassium voltage-gated channel, subfamily H (eag-related), member 1	3629	0.2010015994310379	-0.08404322	No	
+row_4	BOC	BOC	Boc homolog (mouse)	4702	0.10567270219326019	-0.15453994	No	
+row_5	TBX3	TBX3	T-box 3 (ulnar mammary syndrome)	6574	-0.04277758672833443	-0.3001866	No	
+row_6	GLMN	GLMN	glomulin, FKBP associated protein	7028	-0.07872568070888519	-0.32453954	No	
+row_7	BMP4	BMP4	bone morphogenetic protein 4	7924	-0.13635985553264618	-0.3757148	No	
+row_8	NOTCH1	NOTCH1	Notch homolog 1, translocation-associated (Drosophila)	8098	-0.15079958736896515	-0.3657478	No	
+row_9	SYNE1	SYNE1	spectrin repeat containing, nuclear envelope 1	8871	-0.216131329536438	-0.39416918	Yes	
+row_10	IFRD1	IFRD1	interferon-related developmental regulator 1	8969	-0.22590774297714233	-0.36602265	Yes	
+row_11	MAPK12	MAPK12	mitogen-activated protein kinase 12	9338	-0.2629132866859436	-0.35405517	Yes	
+row_12	ADAM12	ADAM12	ADAM metallopeptidase domain 12 (meltrin alpha)	9671	-0.2939475178718567	-0.33420137	Yes	
+row_13	MBNL1	MBNL1	muscleblind-like (Drosophila)	9765	-0.3025530278682709	-0.29349747	Yes	
+row_14	KRT19	KRT19	keratin 19	10856	-0.4450884759426117	-0.3112956	Yes	
+row_15	TTN	TTN	titin	10864	-0.4460809826850891	-0.24067846	Yes	
+row_16	ACTA1	ACTA1	actin, alpha 1, skeletal muscle	10899	-0.4515491724014282	-0.171389	Yes	
+row_17	MYOZ1	MYOZ1	myozenin 1	11077	-0.48848751187324524	-0.10785824	Yes	
+row_18	MYH11	MYH11	myosin, heavy chain 11, smooth muscle	11598	-0.6437281370162964	-0.047505576	Yes	
+row_19	CACNA1H	CACNA1H	calcium channel, voltage-dependent, alpha 1H subunit	11618	-0.6505458354949951	0.054763053	Yes	

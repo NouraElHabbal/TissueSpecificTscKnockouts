@@ -1,0 +1,17 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ARPC3	ARPC3	actin related protein 2/3 complex, subunit 3, 21kDa	1732	0.4908948242664337	-0.009821653	Yes	
+row_1	ACTR3	ACTR3	ARP3 actin-related protein 3 homolog (yeast)	1912	0.4466519355773926	0.095042296	Yes	
+row_2	CDC42	CDC42	cell division cycle 42 (GTP binding protein, 25kDa)	2263	0.37424948811531067	0.16661318	Yes	
+row_3	PIK3R1	PIK3R1	phosphoinositide-3-kinase, regulatory subunit 1 (p85 alpha)	2516	0.33521708846092224	0.23572949	Yes	
+row_4	ARPC2	ARPC2	actin related protein 2/3 complex, subunit 2, 34kDa	2776	0.2975964844226837	0.2942148	Yes	
+row_5	ARPC4	ARPC4	actin related protein 2/3 complex, subunit 4, 20kDa	3113	0.2558991611003876	0.33527622	Yes	
+row_6	ACTR2	ACTR2	ARP2 actin-related protein 2 homolog (yeast)	3116	0.2551158368587494	0.40333796	Yes	
+row_7	RHOA	RHOA	ras homolog gene family, member A	3276	0.2392435222864151	0.45436478	Yes	
+row_8	ARPC1A	ARPC1A	actin related protein 2/3 complex, subunit 1A, 41kDa	3641	0.19985072314739227	0.47815633	Yes	
+row_9	WASL	WASL	Wiskott-Aldrich syndrome-like	4624	0.11278034001588821	0.42831674	No	
+row_10	ARPC1B	ARPC1B	actin related protein 2/3 complex, subunit 1B, 41kDa	5537	0.03980686888098717	0.3646648	No	
+row_11	PIK3CA	PIK3CA	phosphoinositide-3-kinase, catalytic, alpha polypeptide	5561	0.037434644997119904	0.37280208	No	
+row_12	PAK1	PAK1	p21/Cdc42/Rac1-activated kinase 1 (STE20 homolog, yeast)	6642	-0.04797454550862312	0.297648	No	
+row_13	ARPC5	ARPC5	actin related protein 2/3 complex, subunit 5, 16kDa	8189	-0.1581382155418396	0.21399127	No	
+row_14	PDGFRA	PDGFRA	platelet-derived growth factor receptor, alpha polypeptide	8645	-0.1988086849451065	0.23009071	No	
+row_15	RAC1	RAC1	ras-related C3 botulinum toxin substrate 1 (rho family, small GTP binding protein Rac1)	9204	-0.24968712031841278	0.25140533	No	

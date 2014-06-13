@@ -1,0 +1,33 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	IL5	IL5	interleukin 5 (colony-stimulating factor, eosinophil)	1136	0.6808469295501709	-0.037784465	No	
+row_1	IL4	IL4	interleukin 4	1723	0.49308034777641296	-0.04583954	No	
+row_2	CD28	CD28	CD28 molecule	1725	0.4924767017364502	-0.0062232325	No	
+row_3	TNFRSF13B	TNFRSF13B	tumor necrosis factor receptor superfamily, member 13B	2467	0.34087085723876953	-0.03919148	No	
+row_4	AICDA	AICDA	activation-induced cytidine deaminase	2519	0.33479371666908264	-0.016364422	No	
+row_5	IL6	IL6	interleukin 6 (interferon, beta 2)	2764	0.299298495054245	-0.012142119	No	
+row_6	IL2	IL2	interleukin 2	2855	0.28648731112480164	0.0036096913	No	
+row_7	LTBR	LTBR	lymphotoxin beta receptor (TNFR superfamily, member 3)	3153	0.2504984140396118	-4.2507003E-4	No	
+row_8	CCL25	CCL25	chemokine (C-C motif) ligand 25	3944	0.17116929590702057	-0.051069796	No	
+row_9	MADCAM1	MADCAM1	mucosal vascular addressin cell adhesion molecule 1	4242	0.1436278223991394	-0.06371925	No	
+row_10	CXCR4	CXCR4	chemokine (C-X-C motif) receptor 4	4580	0.11681875586509705	-0.08179266	No	
+row_11	TGFB1	TGFB1	transforming growth factor, beta 1 (Camurati-Engelmann disease)	4588	0.11633426696062088	-0.07298612	No	
+row_12	ICOS	ICOS	inducible T-cell co-stimulator	4761	0.09902509301900864	-0.07903435	No	
+row_13	IL10	IL10	interleukin 10	5782	0.018016226589679718	-0.16078627	No	
+row_14	PIGR	PIGR	polymeric immunoglobulin receptor	7202	-0.09025482088327408	-0.26926264	No	
+row_15	CD40LG	CD40LG	CD40 ligand (TNF superfamily, member 5, hyper-IgM syndrome)	7461	-0.10722845047712326	-0.28166488	No	
+row_16	CD80	CD80	CD80 molecule	8567	-0.1923946738243103	-0.35629407	No	
+row_17	IL15	IL15	interleukin 15	9709	-0.2969321012496948	-0.42543325	Yes	
+row_18	TNFRSF13C	TNFRSF13C	tumor necrosis factor receptor superfamily, member 13C	9854	-0.3130815923213959	-0.41194263	Yes	
+row_19	CD40	CD40	CD40 molecule, TNF receptor superfamily member 5	9872	-0.3147928714752197	-0.38795432	Yes	
+row_20	CCL28	CCL28	chemokine (C-C motif) ligand 28	9900	-0.3181532323360443	-0.3645109	Yes	
+row_21	IL15RA	IL15RA	interleukin 15 receptor, alpha	10018	-0.3322465717792511	-0.34727296	Yes	
+row_22	CD86	CD86	CD86 molecule	10392	-0.37807324528694153	-0.3472236	Yes	
+row_23	TNFRSF17	TNFRSF17	tumor necrosis factor receptor superfamily, member 17	10872	-0.44722381234169006	-0.35024685	Yes	
+row_24	CXCL12	CXCL12	chemokine (C-X-C motif) ligand 12 (stromal cell-derived factor 1)	11034	-0.4818746745586395	-0.32453677	Yes	
+row_25	MAP3K14	MAP3K14	mitogen-activated protein kinase kinase kinase 14	11257	-0.5296101570129395	-0.29995477	Yes	
+row_26	ITGB7	ITGB7	integrin, beta 7	11334	-0.5501035451889038	-0.2618112	Yes	
+row_27	CCR9	CCR9	chemokine (C-C motif) receptor 9	11610	-0.6497068405151367	-0.2318717	Yes	
+row_28	TNFSF13B	TNFSF13B	tumor necrosis factor (ligand) superfamily, member 13b	11655	-0.665086567401886	-0.18184917	Yes	
+row_29	ITGA4	ITGA4	integrin, alpha 4 (antigen CD49D, alpha 4 subunit of VLA-4 receptor)	11857	-0.7709968686103821	-0.13609627	Yes	
+row_30	CCR10	CCR10	chemokine (C-C motif) receptor 10	12061	-0.9522041082382202	-0.075899646	Yes	
+row_31	TNFSF13	TNFSF13	tumor necrosis factor (ligand) superfamily, member 13	12202	-1.1723095178604126	0.0071784537	Yes	

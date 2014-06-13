@@ -1,0 +1,49 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GABRB3	GABRB3	gamma-aminobutyric acid (GABA) A receptor, beta 3	18	2.9603376388549805	0.110704646	Yes	
+row_1	KCNJ3	KCNJ3	potassium inwardly-rectifying channel, subfamily J, member 3	20	2.941471815109253	0.22208297	Yes	
+row_2	GABRB2	GABRB2	gamma-aminobutyric acid (GABA) A receptor, beta 2	128	1.9251182079315186	0.286291	Yes	
+row_3	GABRA5	GABRA5	gamma-aminobutyric acid (GABA) A receptor, alpha 5	401	1.22615647315979	0.31053647	Yes	
+row_4	GNAI1	GNAI1	guanine nucleotide binding protein (G protein), alpha inhibiting activity polypeptide 1	447	1.1589679718017578	0.3507772	Yes	
+row_5	GABRG2	GABRG2	gamma-aminobutyric acid (GABA) A receptor, gamma 2	726	0.8930580019950867	0.36191064	Yes	
+row_6	GABRA4	GABRA4	gamma-aminobutyric acid (GABA) A receptor, alpha 4	764	0.8716499209403992	0.3919176	Yes	
+row_7	KCNJ6	KCNJ6	potassium inwardly-rectifying channel, subfamily J, member 6	865	0.8027473092079163	0.41416782	Yes	
+row_8	GABBR2	GABBR2	gamma-aminobutyric acid (GABA) B receptor, 2	880	0.79390949010849	0.4431076	Yes	
+row_9	KCNJ4	KCNJ4	potassium inwardly-rectifying channel, subfamily J, member 4	1010	0.7297524213790894	0.4602232	Yes	
+row_10	GNG10	GNG10	guanine nucleotide binding protein (G protein), gamma 10	1803	0.47145214676856995	0.4133977	No	
+row_11	GNAL	GNAL	guanine nucleotide binding protein (G protein), alpha activating activity polypeptide, olfactory type	1906	0.44776561856269836	0.42203343	No	
+row_12	GNG8	GNG8	guanine nucleotide binding protein (G protein), gamma 8	2090	0.4081042408943176	0.42255023	No	
+row_13	GNB3	GNB3	guanine nucleotide binding protein (G protein), beta polypeptide 3	2319	0.36481621861457825	0.4177512	No	
+row_14	ADCY7	ADCY7	adenylate cyclase 7	2948	0.2762853503227234	0.37692574	No	
+row_15	GNB1	GNB1	guanine nucleotide binding protein (G protein), beta polypeptide 1	3013	0.2693782448768616	0.3819057	No	
+row_16	GABBR1	GABBR1	gamma-aminobutyric acid (GABA) B receptor, 1	3742	0.1896820366382599	0.3296307	No	
+row_17	GNG12	GNG12	guanine nucleotide binding protein (G protein), gamma 12	4034	0.16302785277366638	0.31203955	No	
+row_18	GNG7	GNG7	guanine nucleotide binding protein (G protein), gamma 7	4054	0.161452054977417	0.31660548	No	
+row_19	GABRR1	GABRR1	gamma-aminobutyric acid (GABA) receptor, rho 1	4558	0.11878883093595505	0.280022	No	
+row_20	ADCY1	ADCY1	adenylate cyclase 1 (brain)	5569	0.03637872263789177	0.19890437	No	
+row_21	KCNJ15	KCNJ15	potassium inwardly-rectifying channel, subfamily J, member 15	6183	-0.012412374839186668	0.14930528	No	
+row_22	KCNJ9	KCNJ9	potassium inwardly-rectifying channel, subfamily J, member 9	6536	-0.03968996927142143	0.122058116	No	
+row_23	GABRA1	GABRA1	gamma-aminobutyric acid (GABA) A receptor, alpha 1	6648	-0.04878583550453186	0.11484033	No	
+row_24	GNB2	GNB2	guanine nucleotide binding protein (G protein), beta polypeptide 2	7520	-0.11093927174806595	0.047901414	No	
+row_25	ADCY9	ADCY9	adenylate cyclase 9	7701	-0.1214536800980568	0.03780133	No	
+row_26	GNG5	GNG5	guanine nucleotide binding protein (G protein), gamma 5	7966	-0.13918505609035492	0.021512073	No	
+row_27	KCNJ2	KCNJ2	potassium inwardly-rectifying channel, subfamily J, member 2	8287	-0.1664130985736847	0.0016805117	No	
+row_28	KCNJ12	KCNJ12	potassium inwardly-rectifying channel, subfamily J, member 12	8316	-0.16846373677253723	0.0057770186	No	
+row_29	ADCY8	ADCY8	adenylate cyclase 8 (brain)	8389	-0.17553122341632843	0.006547441	No	
+row_30	GNAI2	GNAI2	guanine nucleotide binding protein (G protein), alpha inhibiting activity polypeptide 2	8723	-0.20422033965587616	-0.012913336	No	
+row_31	ADCY4	ADCY4	adenylate cyclase 4	8770	-0.208020880818367	-0.008788135	No	
+row_32	GNAI3	GNAI3	guanine nucleotide binding protein (G protein), alpha inhibiting activity polypeptide 3	8922	-0.22086411714553833	-0.012752598	No	
+row_33	GNG3	GNG3	guanine nucleotide binding protein (G protein), gamma 3	9148	-0.24320463836193085	-0.021914791	No	
+row_34	ADCY6	ADCY6	adenylate cyclase 6	9303	-0.2585071325302124	-0.024697902	No	
+row_35	GNGT2	GNGT2	guanine nucleotide binding protein (G protein), gamma transducing activity polypeptide 2	9566	-0.2838563621044159	-0.035341833	No	
+row_36	ADCY2	ADCY2	adenylate cyclase 2 (brain)	9613	-0.2879406809806824	-0.028188262	No	
+row_37	GABRA3	GABRA3	gamma-aminobutyric acid (GABA) A receptor, alpha 3	9657	-0.2928025722503662	-0.020605423	No	
+row_38	GNG2	GNG2	guanine nucleotide binding protein (G protein), gamma 2	10307	-0.3672279417514801	-0.059700087	No	
+row_39	GABRA2	GABRA2	gamma-aminobutyric acid (GABA) A receptor, alpha 2	10691	-0.42062070965766907	-0.075044855	No	
+row_40	ARHGEF9	ARHGEF9	Cdc42 guanine nucleotide exchange factor (GEF) 9	10705	-0.42361679673194885	-0.06005475	No	
+row_41	GABRG3	GABRG3	gamma-aminobutyric acid (GABA) A receptor, gamma 3	11270	-0.5334466695785522	-0.08590821	No	
+row_42	GNG4	GNG4	guanine nucleotide binding protein (G protein), gamma 4	11296	-0.5401594042778015	-0.06748215	No	
+row_43	ADCY3	ADCY3	adenylate cyclase 3	11500	-0.6021361947059631	-0.06124655	No	
+row_44	GABRR2	GABRR2	gamma-aminobutyric acid (GABA) receptor, rho 2	11693	-0.6820504665374756	-0.05108432	No	
+row_45	ADCY5	ADCY5	adenylate cyclase 5	11786	-0.7279127836227417	-0.031016316	No	
+row_46	KCNJ16	KCNJ16	potassium inwardly-rectifying channel, subfamily J, member 16	12053	-0.9403830170631409	-0.017109463	No	
+row_47	KCNJ10	KCNJ10	potassium inwardly-rectifying channel, subfamily J, member 10	12067	-0.9602371454238892	0.018214582	No	

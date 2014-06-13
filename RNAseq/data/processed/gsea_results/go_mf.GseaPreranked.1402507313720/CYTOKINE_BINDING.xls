@@ -1,0 +1,45 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	XCR1	XCR1	chemokine (C motif) receptor 1	1032	0.7240061163902283	-0.039022308	No	
+row_1	CD74	CD74	CD74 molecule, major histocompatibility complex, class II invariant chain	1155	0.6729493737220764	-0.00693124	No	
+row_2	PLP2	PLP2	proteolipid protein 2 (colonic epithelium-enriched)	1706	0.49567803740501404	-0.020865219	No	
+row_3	IL7R	IL7R	interleukin 7 receptor	2383	0.3533822000026703	-0.053979512	No	
+row_4	IL22RA1	IL22RA1	interleukin 22 receptor, alpha 1	2564	0.3258039951324463	-0.048317462	No	
+row_5	IL10RA	IL10RA	interleukin 10 receptor, alpha	2621	0.3162904679775238	-0.03312498	No	
+row_6	CRLF1	CRLF1	cytokine receptor-like factor 1	2736	0.30027827620506287	-0.023668954	No	
+row_7	IL2RB	IL2RB	interleukin 2 receptor, beta	2766	0.2991555333137512	-0.007342614	No	
+row_8	TNFRSF1A	TNFRSF1A	tumor necrosis factor receptor superfamily, member 1A	3287	0.2382979542016983	-0.034910724	No	
+row_9	IL3RA	IL3RA	interleukin 3 receptor, alpha (low affinity)	3333	0.2323286235332489	-0.024066849	No	
+row_10	IL18BP	IL18BP	interleukin 18 binding protein	3469	0.21702003479003906	-0.021528348	No	
+row_11	HAX1	HAX1	HCLS1 associated protein X-1	3947	0.1710803061723709	-0.049785834	No	
+row_12	IFNAR1	IFNAR1	interferon (alpha, beta and omega) receptor 1	4268	0.1411529928445816	-0.06709401	No	
+row_13	IL10RB	IL10RB	interleukin 10 receptor, beta	5182	0.06518924981355667	-0.1375692	No	
+row_14	TNFRSF25	TNFRSF25	tumor necrosis factor receptor superfamily, member 25	5292	0.057005178183317184	-0.14290708	No	
+row_15	IFNAR2	IFNAR2	interferon (alpha, beta and omega) receptor 2	6193	-0.012927250936627388	-0.21558665	No	
+row_16	CSF2RB	CSF2RB	colony stimulating factor 2 receptor, beta, low-affinity (granulocyte-macrophage)	6524	-0.03874313831329346	-0.24011095	No	
+row_17	IL9R	IL9R	interleukin 9 receptor	6960	-0.07315435260534286	-0.27105844	No	
+row_18	IL12RB2	IL12RB2	interleukin 12 receptor, beta 2	7333	-0.09806400537490845	-0.2953052	No	
+row_19	IFNGR1	IFNGR1	interferon gamma receptor 1	7386	-0.10153945535421371	-0.29320592	No	
+row_20	TNFRSF18	TNFRSF18	tumor necrosis factor receptor superfamily, member 18	7440	-0.10568322986364365	-0.29092935	No	
+row_21	CMKLR1	CMKLR1	chemokine-like receptor 1	8105	-0.1514773964881897	-0.33568087	No	
+row_22	IL5RA	IL5RA	interleukin 5 receptor, alpha	8143	-0.15453319251537323	-0.3290452	No	
+row_23	ACVR1	ACVR1	activin A receptor, type I	8304	-0.16745933890342712	-0.33164507	No	
+row_24	TNFRSF1B	TNFRSF1B	tumor necrosis factor receptor superfamily, member 1B	8485	-0.1836770921945572	-0.33486456	No	
+row_25	ACVRL1	ACVRL1	activin A receptor type II-like 1	8621	-0.19718900322914124	-0.3335653	No	
+row_26	IL12A	IL12A	interleukin 12A (natural killer cell stimulatory factor 1, cytotoxic lymphocyte maturation factor 1, p35)	8739	-0.20546065270900726	-0.3302794	No	
+row_27	IL22RA2	IL22RA2	interleukin 22 receptor, alpha 2	8779	-0.2088623046875	-0.320412	No	
+row_28	IL2RG	IL2RG	interleukin 2 receptor, gamma (severe combined immunodeficiency)	8799	-0.2105422019958496	-0.30880663	No	
+row_29	IFNGR2	IFNGR2	interferon gamma receptor 2 (interferon gamma transducer 1)	9075	-0.23567317426204681	-0.31653383	No	
+row_30	TGFBR1	TGFBR1	transforming growth factor, beta receptor I (activin A receptor type II-like kinase, 53kDa)	9495	-0.2773571312427521	-0.33341423	No	
+row_31	IL1R1	IL1R1	interleukin 1 receptor, type I	9742	-0.3011033535003662	-0.3346848	No	
+row_32	IL15RA	IL15RA	interleukin 15 receptor, alpha	10018	-0.3322465717792511	-0.33637714	No	
+row_33	GPR17	GPR17	G protein-coupled receptor 17	10443	-0.38540148735046387	-0.34691408	Yes	
+row_34	IL6ST	IL6ST	interleukin 6 signal transducer (gp130, oncostatin M receptor)	10491	-0.3906121850013733	-0.32634234	Yes	
+row_35	TNFRSF14	TNFRSF14	tumor necrosis factor receptor superfamily, member 14 (herpesvirus entry mediator)	10816	-0.4393354058265686	-0.3253437	Yes	
+row_36	TNFRSF4	TNFRSF4	tumor necrosis factor receptor superfamily, member 4	11210	-0.518267035484314	-0.3250466	Yes	
+row_37	EBI3	EBI3	Epstein-Barr virus induced gene 3	11282	-0.5367217659950256	-0.29730415	Yes	
+row_38	IL13RA2	IL13RA2	interleukin 13 receptor, alpha 2	11438	-0.5837133526802063	-0.273484	Yes	
+row_39	IL17F	IL17F	interleukin 17F	11495	-0.600967526435852	-0.240502	Yes	
+row_40	IL12RB1	IL12RB1	interleukin 12 receptor, beta 1	11954	-0.8436339497566223	-0.22518013	Yes	
+row_41	A2M	A2M	alpha-2-macroglobulin	12014	-0.905893087387085	-0.17338826	Yes	
+row_42	IL2RA	IL2RA	interleukin 2 receptor, alpha	12235	-1.313568115234375	-0.10926682	Yes	
+row_43	CNTFR	CNTFR	ciliary neurotrophic factor receptor	12281	-1.8191044330596924	7.3486764E-4	Yes	

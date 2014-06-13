@@ -1,0 +1,28 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CCR1	CCR1	chemokine (C-C motif) receptor 1	489	1.1134686470031738	0.07642564	Yes	
+row_1	CCR7	CCR7	chemokine (C-C motif) receptor 7	817	0.8350382447242737	0.13697946	Yes	
+row_2	CCR2	CCR2	chemokine (C-C motif) receptor 2	941	0.7637183666229248	0.20671819	Yes	
+row_3	IL5	IL5	interleukin 5 (colony-stimulating factor, eosinophil)	1136	0.6808469295501709	0.26201195	Yes	
+row_4	CCL3	CCL3	chemokine (C-C motif) ligand 3	1169	0.6649017930030823	0.32884967	Yes	
+row_5	IL4	IL4	interleukin 4	1723	0.49308034777641296	0.3352591	Yes	
+row_6	CD28	CD28	CD28 molecule	1725	0.4924767017364502	0.38661528	Yes	
+row_7	IL2	IL2	interleukin 2	2855	0.28648731112480164	0.32447997	No	
+row_8	TGFB3	TGFB3	transforming growth factor, beta 3	3972	0.16864076256752014	0.25109592	No	
+row_9	IL18R1	IL18R1	interleukin 18 receptor 1	4400	0.13035719096660614	0.229894	No	
+row_10	CXCR4	CXCR4	chemokine (C-X-C motif) receptor 4	4580	0.11681875586509705	0.2274998	No	
+row_11	TGFB1	TGFB1	transforming growth factor, beta 1 (Camurati-Engelmann disease)	4588	0.11633426696062088	0.23907979	No	
+row_12	CCL4	CCL4	chemokine (C-C motif) ligand 4	4591	0.11594817042350769	0.25102714	No	
+row_13	IL12RB2	IL12RB2	interleukin 12 receptor, beta 2	7333	-0.09806400537490845	0.03776995	No	
+row_14	IFNGR1	IFNGR1	interferon gamma receptor 1	7386	-0.10153945535421371	0.044135388	No	
+row_15	CD40LG	CD40LG	CD40 ligand (TNF superfamily, member 5, hyper-IgM syndrome)	7461	-0.10722845047712326	0.04930116	No	
+row_16	IFNG	IFNG	interferon, gamma	8149	-0.15453319251537323	0.00942407	No	
+row_17	CCR4	CCR4	chemokine (C-C motif) receptor 4	8303	-0.16742335259914398	0.014435396	No	
+row_18	IL12B	IL12B	interleukin 12B (natural killer cell stimulatory factor 2, cytotoxic lymphocyte maturation factor 2, p40)	8463	-0.18096403777599335	0.02037177	No	
+row_19	IL12A	IL12A	interleukin 12A (natural killer cell stimulatory factor 1, cytotoxic lymphocyte maturation factor 1, p35)	8739	-0.20546065270900726	0.019408163	No	
+row_20	IFNGR2	IFNGR2	interferon gamma receptor 2 (interferon gamma transducer 1)	9075	-0.23567317426204681	0.016707795	No	
+row_21	CD4	CD4	CD4 molecule	9215	-0.25102847814559937	0.031592976	No	
+row_22	CCR3	CCR3	chemokine (C-C motif) receptor 3	9288	-0.2571353316307068	0.052579146	No	
+row_23	CXCR3	CXCR3	chemokine (C-X-C motif) receptor 3	9366	-0.264883428812027	0.07396688	No	
+row_24	TGFB2	TGFB2	transforming growth factor, beta 2	10068	-0.3384527862071991	0.05215809	No	
+row_25	CCR5	CCR5	chemokine (C-C motif) receptor 5	10484	-0.39009714126586914	0.059063688	No	
+row_26	IL12RB1	IL12RB1	interleukin 12 receptor, beta 1	11954	-0.8436339497566223	0.02739723	No	

@@ -1,0 +1,26 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SLC25A13	SLC25A13	solute carrier family 25, member 13 (citrin)	61	2.4399642944335938	0.13987276	Yes	
+row_1	SLC1A1	SLC1A1	solute carrier family 1 (neuronal/epithelial high affinity glutamate transporter, system Xag), member 1	82	2.27948260307312	0.27356127	Yes	
+row_2	SLC3A1	SLC3A1	 1	125	1.9347538948059082	0.38499177	Yes	
+row_3	SLC7A5	SLC7A5	solute carrier family 7 (cationic amino acid transporter, y+ system), member 5	237	1.5441818237304688	0.46761104	Yes	
+row_4	SLC1A4	SLC1A4	solute carrier family 1 (glutamate/neutral amino acid transporter), member 4	328	1.3417869806289673	0.5399274	Yes	
+row_5	SLC7A11	SLC7A11	solute carrier family 7, (cationic amino acid transporter, y+ system) member 11	676	0.9308793544769287	0.5668985	Yes	
+row_6	SLC1A2	SLC1A2	solute carrier family 1 (glial high affinity glutamate transporter), member 2	687	0.919242799282074	0.6206531	Yes	
+row_7	SLC7A6	SLC7A6	solute carrier family 7 (cationic amino acid transporter, y+ system), member 6	1623	0.5137868523597717	0.57492656	No	
+row_8	SLC1A7	SLC1A7	solute carrier family 1 (glutamate transporter), member 7	2027	0.4222312569618225	0.5671368	No	
+row_9	CTNS	CTNS	cystinosis, nephropathic	3610	0.20367930829524994	0.4502536	No	
+row_10	SLC25A15	SLC25A15	solute carrier family 25 (mitochondrial carrier; ornithine transporter) member 15	4297	0.13821811974048615	0.40253183	No	
+row_11	SLC6A9	SLC6A9	solute carrier family 6 (neurotransmitter transporter, glycine), member 9	4313	0.13652637600898743	0.4094137	No	
+row_12	SLC6A5	SLC6A5	solute carrier family 6 (neurotransmitter transporter, glycine), member 5	5550	0.03850359469652176	0.31093308	No	
+row_13	SLC43A1	SLC43A1	solute carrier family 43, member 1	5553	0.038123417645692825	0.31303316	No	
+row_14	SLC25A22	SLC25A22	solute carrier family 25 (mitochondrial carrier: glutamate), member 22	5813	0.015940219163894653	0.29286417	No	
+row_15	SLC25A12	SLC25A12	solute carrier family 25 (mitochondrial carrier, Aralar), member 12	6298	-0.021501021459698677	0.2546819	No	
+row_16	PDPN	PDPN	podoplanin	7001	-0.07593614608049393	0.20195839	No	
+row_17	SERINC1	SERINC1	serine incorporator 1	7292	-0.09512939304113388	0.18396306	No	
+row_18	SLC7A8	SLC7A8	solute carrier family 7 (cationic amino acid transporter, y+ system), member 8	7364	-0.10050253570079803	0.18414092	No	
+row_19	SLC7A4	SLC7A4	solute carrier family 7 (cationic amino acid transporter, y+ system), member 4	9159	-0.24472032487392426	0.05241054	No	
+row_20	SLC38A3	SLC38A3	solute carrier family 38, member 3	9847	-0.3122371435165405	0.014937687	No	
+row_21	SLC7A2	SLC7A2	solute carrier family 7 (cationic amino acid transporter, y+ system), member 2	10441	-0.3853503465652466	-0.010531421	No	
+row_22	SLC1A5	SLC1A5	solute carrier family 1 (neutral amino acid transporter), member 5	11953	-0.8426119685173035	-0.08369671	No	
+row_23	SLC1A3	SLC1A3	solute carrier family 1 (glial high affinity glutamate transporter), member 3	11986	-0.8736655712127686	-0.034441322	No	
+row_24	SLC7A10	SLC7A10	solute carrier family 7, (neutral amino acid transporter, y+ system) member 10	12101	-0.9962906837463379	0.015408419	No	

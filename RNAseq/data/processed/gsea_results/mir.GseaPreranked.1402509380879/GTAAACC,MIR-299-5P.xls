@@ -1,0 +1,41 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ERC2	ERC2	ELKS/RAB6-interacting/CAST family member 2	152	1.7917898893356323	0.12523112	Yes	
+row_1	HSPA2	HSPA2	heat shock 70kDa protein 2	220	1.5876742601394653	0.24172108	Yes	
+row_2	MAP3K8	MAP3K8	mitogen-activated protein kinase kinase kinase 8	553	1.037533164024353	0.29432046	Yes	
+row_3	ABR	ABR	active BCR-related gene	760	0.8740221261978149	0.34464446	Yes	
+row_4	SOX4	SOX4	SRY (sex determining region Y)-box 4	1342	0.5959936380386353	0.34300166	Yes	
+row_5	NAV3	NAV3	neuron navigator 3	1378	0.5839692950248718	0.38500297	Yes	
+row_6	TIPARP	TIPARP	TCDD-inducible poly(ADP-ribose) polymerase	1564	0.5295507907867432	0.4105802	Yes	
+row_7	CALU	CALU	calumenin	1911	0.4467366635799408	0.41665414	Yes	
+row_8	PURB	PURB	purine-rich element binding protein B	2462	0.34139642119407654	0.3979846	No	
+row_9	TCEAL8	TCEAL8	transcription elongation factor A (SII)-like 8	2924	0.27919700741767883	0.3818018	No	
+row_10	ABCD3	ABCD3	ATP-binding cassette, sub-family D (ALD), member 3	3053	0.2627476751804352	0.39153695	No	
+row_11	TEAD1	TEAD1	TEA domain family member 1 (SV40 transcriptional enhancer factor)	3071	0.2603924572467804	0.41015163	No	
+row_12	ATG5	ATG5	ATG5 autophagy related 5 homolog (S. cerevisiae)	3609	0.20371583104133606	0.38196713	No	
+row_13	RAP2C	RAP2C	RAP2C, member of RAS oncogene family	4419	0.12891416251659393	0.32583436	No	
+row_14	MYF6	MYF6	myogenic factor 6 (herculin)	4676	0.10824286192655563	0.3132529	No	
+row_15	H3F3B	H3F3B	H3 histone, family 3B (H3.3B)	5145	0.0687817856669426	0.2803355	No	
+row_16	INPP5A	INPP5A	inositol polyphosphate-5-phosphatase, 40kDa	5283	0.05743524804711342	0.27356467	No	
+row_17	DALRD3	DALRD3	DALR anticodon binding domain containing 3	5579	0.03568588197231293	0.25222626	No	
+row_18	PPP2R5A	PPP2R5A	protein phosphatase 2, regulatory subunit B (B56), alpha isoform	5625	0.03187897428870201	0.2510019	No	
+row_19	ETF1	ETF1	eukaryotic translation termination factor 1	5802	0.016703374683856964	0.23791882	No	
+row_20	GOLGA1	GOLGA1	golgi autoantigen, golgin subfamily a, 1	6151	-0.010280545800924301	0.21030268	No	
+row_21	PUM2	PUM2	pumilio homolog 2 (Drosophila)	6182	-0.01237607840448618	0.20880459	No	
+row_22	CPEB2	CPEB2	cytoplasmic polyadenylation element binding protein 2	6383	-0.027924038469791412	0.19462441	No	
+row_23	CS	CS	citrate synthase	7278	-0.09333957731723785	0.12882075	No	
+row_24	TNPO1	TNPO1	transportin 1	7326	-0.09755924344062805	0.13247845	No	
+row_25	ROBO1	ROBO1	roundabout, axon guidance receptor, homolog 1 (Drosophila)	7329	-0.09778835624456406	0.13982691	No	
+row_26	MAT2A	MAT2A	methionine adenosyltransferase II, alpha	7705	-0.12167098373174667	0.11856345	No	
+row_27	RSBN1	RSBN1	round spermatid basic protein 1	7754	-0.12508295476436615	0.12425379	No	
+row_28	UBE2J2	UBE2J2	ubiquitin-conjugating enzyme E2, J2 (UBC6 homolog, yeast)	8251	-0.16337445378303528	0.096317075	No	
+row_29	MAFG	MAFG	v-maf musculoaponeurotic fibrosarcoma oncogene homolog G (avian)	8266	-0.16471333801746368	0.10782695	No	
+row_30	ZFX	ZFX	zinc finger protein, X-linked	8310	-0.16808411478996277	0.11722859	No	
+row_31	HDAC4	HDAC4	histone deacetylase 4	8483	-0.18360033631324768	0.117292374	No	
+row_32	CNOT3	CNOT3	CCR4-NOT transcription complex, subunit 3	8496	-0.18464268743991852	0.1304964	No	
+row_33	CTCF	CTCF	CCCTC-binding factor (zinc finger protein)	8571	-0.19284240901470184	0.13926947	No	
+row_34	IPO13	IPO13	importin 13	9003	-0.22958891093730927	0.12172478	No	
+row_35	CAB39	CAB39	calcium binding protein 39	9393	-0.26818743348121643	0.110573374	No	
+row_36	MECP2	MECP2	methyl CpG binding protein 2 (Rett syndrome)	9465	-0.27422213554382324	0.1258426	No	
+row_37	PATZ1	PATZ1	POZ (BTB) and AT hook containing zinc finger 1	10430	-0.3837718665599823	0.07663499	No	
+row_38	TSPAN2	TSPAN2	tetraspanin 2	10917	-0.45617491006851196	0.07200632	No	
+row_39	PHF12	PHF12	PHD finger protein 12	11225	-0.5205233097076416	0.086931705	No	

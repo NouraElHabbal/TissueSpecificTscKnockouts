@@ -1,0 +1,17 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	STAT4	STAT4	signal transducer and activator of transcription 4	2286	0.36990126967430115	-0.11400462	No	
+row_1	TYK2	TYK2	tyrosine kinase 2	2851	0.2869299054145813	-0.103925236	No	
+row_2	CD3D	CD3D	CD3d molecule, delta (CD3-TCR complex)	4227	0.14483845233917236	-0.18766011	No	
+row_3	CD2	CD2	CD2 molecule	5500	0.04306364431977272	-0.2828767	No	
+row_4	CD3E	CD3E	CD3e molecule, epsilon (CD3-TCR complex)	5687	0.02632281742990017	-0.2928896	No	
+row_5	IL12RB2	IL12RB2	interleukin 12 receptor, beta 2	7333	-0.09806400537490845	-0.40775368	No	
+row_6	IFNG	IFNG	interferon, gamma	8149	-0.15453319251537323	-0.44397438	Yes	
+row_7	IL12B	IL12B	interleukin 12B (natural killer cell stimulatory factor 2, cytotoxic lymphocyte maturation factor 2, p40)	8463	-0.18096403777599335	-0.434138	Yes	
+row_8	IL12A	IL12A	interleukin 12A (natural killer cell stimulatory factor 1, cytotoxic lymphocyte maturation factor 1, p35)	8739	-0.20546065270900726	-0.41642267	Yes	
+row_9	CD4	CD4	CD4 molecule	9215	-0.25102847814559937	-0.40610293	Yes	
+row_10	CXCR3	CXCR3	chemokine (C-X-C motif) receptor 3	9366	-0.264883428812027	-0.3666013	Yes	
+row_11	CCR5	CCR5	chemokine (C-C motif) receptor 5	10484	-0.39009714126586914	-0.3814282	Yes	
+row_12	JAK2	JAK2	Janus kinase 2 (a protein tyrosine kinase)	11343	-0.5532121658325195	-0.34330523	Yes	
+row_13	CD3G	CD3G	CD3g molecule, gamma (CD3-TCR complex)	11468	-0.5918381214141846	-0.23784372	Yes	
+row_14	CD247	CD247	CD247 molecule	11758	-0.7165600657463074	-0.12147075	Yes	
+row_15	IL12RB1	IL12RB1	interleukin 12 receptor, beta 1	11954	-0.8436339497566223	0.027372733	Yes	

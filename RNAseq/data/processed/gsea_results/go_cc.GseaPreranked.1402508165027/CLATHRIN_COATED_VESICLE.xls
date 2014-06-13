@@ -1,0 +1,35 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MT3	MT3	metallothionein 3 (growth inhibitory factor (neurotrophic))	16	3.0261754989624023	0.20716529	Yes	
+row_1	SVOP	SVOP	SV2 related protein homolog (rat)	431	1.1860769987106323	0.2550965	Yes	
+row_2	AMPH	AMPH	amphiphysin (Stiff-Man syndrome with breast cancer 128kDa autoantigen)	665	0.9431192874908447	0.30105764	Yes	
+row_3	PPT1	PPT1	palmitoyl-protein thioesterase 1 (ceroid-lipofuscinosis, neuronal 1, infantile)	791	0.8522133827209473	0.34956765	Yes	
+row_4	DMXL2	DMXL2	Dmx-like 2	871	0.7995785474777222	0.39820462	Yes	
+row_5	SEPT5	SEPT5	septin 5	875	0.7964971661567688	0.4528299	Yes	
+row_6	AP1G2	AP1G2	adaptor-related protein complex 1, gamma 2 subunit	1005	0.7329139709472656	0.4927951	Yes	
+row_7	SLC30A3	SLC30A3	solute carrier family 30 (zinc transporter), member 3	1164	0.6679034233093262	0.5259158	Yes	
+row_8	NECAP2	NECAP2	NECAP endocytosis associated 2	1568	0.5285957455635071	0.52945113	Yes	
+row_9	IGF2R	IGF2R	insulin-like growth factor 2 receptor	1719	0.49350062012672424	0.5512101	Yes	
+row_10	AP1S1	AP1S1	adaptor-related protein complex 1, sigma 1 subunit	1780	0.4777923822402954	0.57922965	Yes	
+row_11	SYN3	SYN3	synapsin III	2964	0.2748842239379883	0.5016499	No	
+row_12	RAB35	RAB35	RAB35, member RAS oncogene family	3036	0.26512181758880615	0.5141213	No	
+row_13	HCRT	HCRT	hypocretin (orexin) neuropeptide precursor	3219	0.2412804663181305	0.51589423	No	
+row_14	SPG21	SPG21	spastic paraplegia 21, maspardin (autosomal recessive, Mast syndrome)	3455	0.21825942397117615	0.51175725	No	
+row_15	AP2S1	AP2S1	adaptor-related protein complex 2, sigma 1 subunit	3633	0.20058543980121613	0.5111347	No	
+row_16	RAB3A	RAB3A	RAB3A, member RAS oncogene family	4398	0.1303718537092209	0.45778415	No	
+row_17	TRAPPC4	TRAPPC4	trafficking protein particle complex 4	4568	0.11803242564201355	0.45212728	No	
+row_18	MALL	MALL	mal, T-cell differentiation protein-like	4710	0.10485801100730896	0.44784722	No	
+row_19	GOPC	GOPC	golgi associated PDZ and coiled-coil motif containing	5555	0.038073357194662094	0.38161144	No	
+row_20	ATP7A	ATP7A	ATPase, Cu++ transporting, alpha polypeptide (Menkes syndrome)	6236	-0.01618620939552784	0.327248	No	
+row_21	CLN3	CLN3	ceroid-lipofuscinosis, neuronal 3, juvenile (Batten, Spielmeyer-Vogt disease)	6407	-0.029385719448328018	0.31540272	No	
+row_22	STX6	STX6	syntaxin 6	6934	-0.07079699635505676	0.27736562	No	
+row_23	LDLRAP1	LDLRAP1	low density lipoprotein receptor adaptor protein 1	7068	-0.08157922327518463	0.2721346	No	
+row_24	STEAP2	STEAP2	six transmembrane epithelial antigen of the prostate 2	7086	-0.08323262631893158	0.27648145	No	
+row_25	EGFR	EGFR	epidermal growth factor receptor (erythroblastic leukemia viral (v-erb-b) oncogene homolog, avian)	7141	-0.08783623576164246	0.27812678	No	
+row_26	FURIN	FURIN	furin (paired basic amino acid cleaving enzyme)	7550	-0.11145303398370743	0.25251758	No	
+row_27	AFTPH	AFTPH	aftiphilin	7595	-0.11452317237854004	0.2568172	No	
+row_28	RAB14	RAB14	RAB14, member RAS oncogene family	7856	-0.13033391535282135	0.24458343	No	
+row_29	MYO6	MYO6	myosin VI	8314	-0.1684446781873703	0.21890262	No	
+row_30	AP1G1	AP1G1	adaptor-related protein complex 1, gamma 1 subunit	8997	-0.22895853221416473	0.1790337	No	
+row_31	VWF	VWF	von Willebrand factor	9301	-0.2582661807537079	0.17210487	No	
+row_32	APBA1	APBA1	amyloid beta (A4) precursor protein-binding, family A, member 1 (X11)	10907	-0.4542282223701477	0.07245068	No	
+row_33	ICA1	ICA1	islet cell autoantigen 1, 69kDa	11444	-0.5850154757499695	0.06902179	No	

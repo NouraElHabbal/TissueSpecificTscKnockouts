@@ -1,0 +1,39 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MRPS22	MRPS22	mitochondrial ribosomal protein S22	1198	0.6546869277954102	-0.023995956	No	
+row_1	MRPS12	MRPS12	mitochondrial ribosomal protein S12	1612	0.517754852771759	6.432908E-4	No	
+row_2	MRPL12	MRPL12	mitochondrial ribosomal protein L12	1984	0.43306469917297363	0.01916662	No	
+row_3	MRPS35	MRPS35	mitochondrial ribosomal protein S35	3335	0.2321173995733261	-0.0648534	No	
+row_4	MRPL41	MRPL41	mitochondrial ribosomal protein L41	3574	0.20698389410972595	-0.060952403	No	
+row_5	MRPS18C	MRPS18C	mitochondrial ribosomal protein S18C	3595	0.20522920787334442	-0.039457582	No	
+row_6	RRBP1	RRBP1	ribosome binding protein 1 homolog 180kDa (dog)	4248	0.14278610050678253	-0.07657862	No	
+row_7	MRPS11	MRPS11	mitochondrial ribosomal protein S11	4255	0.14227454364299774	-0.061035514	No	
+row_8	MRPS18A	MRPS18A	mitochondrial ribosomal protein S18A	4275	0.14056281745433807	-0.046746273	No	
+row_9	NUFIP2	NUFIP2	nuclear fragile X mental retardation protein interacting protein 2	4456	0.12599828839302063	-0.04723793	No	
+row_10	MRPS10	MRPS10	mitochondrial ribosomal protein S10	4826	0.09313242882490158	-0.066858	No	
+row_11	MRPL40	MRPL40	mitochondrial ribosomal protein L40	5079	0.07346747070550919	-0.07914542	No	
+row_12	MRPL10	MRPL10	mitochondrial ribosomal protein L10	5287	0.05730966106057167	-0.08958107	No	
+row_13	MRPS24	MRPS24	mitochondrial ribosomal protein S24	5719	0.023369817063212395	-0.12212261	No	
+row_14	MRPL52	MRPL52	mitochondrial ribosomal protein L52	5780	0.01813448965549469	-0.12497581	No	
+row_15	APEX1	APEX1	APEX nuclease (multifunctional DNA repair enzyme) 1	6288	-0.020912641659379005	-0.1639968	No	
+row_16	MRPS16	MRPS16	mitochondrial ribosomal protein S16	6366	-0.026927586644887924	-0.16724654	No	
+row_17	RPL9	RPL9	ribosomal protein L9	6985	-0.0751677080988884	-0.20921259	No	
+row_18	MRPS28	MRPS28	mitochondrial ribosomal protein S28	7631	-0.11627636849880219	-0.24874969	No	
+row_19	MRPL23	MRPL23	mitochondrial ribosomal protein L23	8154	-0.1546495407819748	-0.2739242	Yes	
+row_20	MRPL55	MRPL55	mitochondrial ribosomal protein L55	8299	-0.16715162992477417	-0.26684028	Yes	
+row_21	MRPS21	MRPS21	mitochondrial ribosomal protein S21	8344	-0.170641228556633	-0.25120184	Yes	
+row_22	MRPL42	MRPL42	mitochondrial ribosomal protein L42	8608	-0.19635897874832153	-0.25053847	Yes	
+row_23	SRP68	SRP68	signal recognition particle 68kDa	8712	-0.20350773632526398	-0.23601149	Yes	
+row_24	MRPL51	MRPL51	mitochondrial ribosomal protein L51	8817	-0.21183381974697113	-0.22062786	Yes	
+row_25	FMR1	FMR1	fragile X mental retardation 1	8880	-0.21709156036376953	-0.20122401	Yes	
+row_26	RPL13A	RPL13A	ribosomal protein L13a	9091	-0.23704637587070465	-0.19165015	Yes	
+row_27	MRPS15	MRPS15	mitochondrial ribosomal protein S15	9211	-0.2505650222301483	-0.17312615	Yes	
+row_28	FAU	FAU	Finkel-Biskis-Reilly murine sarcoma virus (FBR-MuSV) ubiquitously expressed (fox derived); ribosomal protein S30	9503	-0.2782452404499054	-0.16552025	Yes	
+row_29	RPS11	RPS11	ribosomal protein S11	9652	-0.29213735461235046	-0.14467825	Yes	
+row_30	MRPS36	MRPS36	mitochondrial ribosomal protein S36	9738	-0.30030837655067444	-0.11777388	Yes	
+row_31	RPL27	RPL27	ribosomal protein L27	9784	-0.3039148449897766	-0.08719859	Yes	
+row_32	SERP1	SERP1	-	10177	-0.3508116602897644	-0.07965814	Yes	
+row_33	RPL15	RPL15	ribosomal protein L15	10197	-0.3531638979911804	-0.041411094	Yes	
+row_34	RPL7A	RPL7A	ribosomal protein L7a	10303	-0.3665750026702881	-0.008671455	Yes	
+row_35	RPS7	RPS7	ribosomal protein S7	10625	-0.4094153046607971	0.011267482	Yes	
+row_36	RPL3L	RPL3L	ribosomal protein L3-like	11194	-0.5143265128135681	0.022870433	Yes	
+row_37	RPS4X	RPS4X	ribosomal protein S4, X-linked	11460	-0.5900787115097046	0.06773846	Yes	

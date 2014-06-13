@@ -1,0 +1,44 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	KRT18	KRT18	keratin 18	40	2.6140546798706055	0.12637696	Yes	
+row_1	TUBB3	TUBB3	tubulin, beta 3	303	1.402047872543335	0.17451961	Yes	
+row_2	TLR4	TLR4	toll-like receptor 4	484	1.1175684928894043	0.21524861	Yes	
+row_3	CTTN	CTTN	cortactin	567	1.0268934965133667	0.25948194	Yes	
+row_4	ARHGEF2	ARHGEF2	rho/rac guanine nucleotide exchange factor (GEF) 2	569	1.0262657403945923	0.31029746	Yes	
+row_5	HCLS1	HCLS1	hematopoietic cell-specific Lyn substrate 1	596	1.007765531539917	0.35815433	Yes	
+row_6	TUBB2B	TUBB2B	tubulin, beta 2B	839	0.8197571039199829	0.37905148	Yes	
+row_7	TUBB2A	TUBB2A	tubulin, beta 2A	1125	0.6843944191932678	0.38972458	Yes	
+row_8	ITGB1	ITGB1	integrin, beta 1 (fibronectin receptor, beta polypeptide, antigen CD29 includes MDF2, MSK12)	1157	0.6715113520622253	0.42049685	Yes	
+row_9	ARPC3	ARPC3	actin related protein 2/3 complex, subunit 3, 21kDa	1732	0.4908948242664337	0.39797774	Yes	
+row_10	NCK1	NCK1	NCK adaptor protein 1	1919	0.44604194164276123	0.40491283	Yes	
+row_11	FYN	FYN	FYN oncogene related to SRC, FGR, YES	1939	0.4431076943874359	0.42533728	Yes	
+row_12	LY96	LY96	lymphocyte antigen 96	2145	0.3959578275680542	0.4282372	Yes	
+row_13	CDC42	CDC42	cell division cycle 42 (GTP binding protein, 25kDa)	2263	0.37424948811531067	0.43724534	Yes	
+row_14	ARPC2	ARPC2	actin related protein 2/3 complex, subunit 2, 34kDa	2776	0.2975964844226837	0.41020176	No	
+row_15	ARPC4	ARPC4	actin related protein 2/3 complex, subunit 4, 20kDa	3113	0.2558991611003876	0.3954599	No	
+row_16	RHOA	RHOA	ras homolog gene family, member A	3276	0.2392435222864151	0.39409843	No	
+row_17	ARPC1A	ARPC1A	actin related protein 2/3 complex, subunit 1A, 41kDa	3641	0.19985072314739227	0.3742908	No	
+row_18	CD14	CD14	CD14 molecule	3656	0.1985219269990921	0.38299334	No	
+row_19	CTNNB1	CTNNB1	catenin (cadherin-associated protein), beta 1, 88kDa	3664	0.19743089377880096	0.3922133	No	
+row_20	TUBB6	TUBB6	tubulin, beta 6	4280	0.13999305665493011	0.34894392	No	
+row_21	YWHAZ	YWHAZ	tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein, zeta polypeptide	4428	0.1284508854150772	0.34331244	No	
+row_22	WASL	WASL	Wiskott-Aldrich syndrome-like	4624	0.11278034001588821	0.33298475	No	
+row_23	ARPC5L	ARPC5L	actin related protein 2/3 complex, subunit 5-like	5487	0.04383263364434242	0.26477978	No	
+row_24	ARPC1B	ARPC1B	actin related protein 2/3 complex, subunit 1B, 41kDa	5537	0.03980686888098717	0.26275334	No	
+row_25	WAS	WAS	Wiskott-Aldrich syndrome (eczema-thrombocytopenia)	5983	0.002674778923392296	0.22655353	No	
+row_26	ROCK1	ROCK1	Rho-associated, coiled-coil containing protein kinase 1	6221	-0.014354894869029522	0.20791535	No	
+row_27	ACTB	ACTB	actin, beta	6790	-0.06059945747256279	0.16454583	No	
+row_28	YWHAQ	YWHAQ	tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein, theta polypeptide	7732	-0.12318907678127289	0.09382647	No	
+row_29	ROCK2	ROCK2	Rho-associated, coiled-coil containing protein kinase 2	7948	-0.13837270438671112	0.08313511	No	
+row_30	ARPC5	ARPC5	actin related protein 2/3 complex, subunit 5, 16kDa	8189	-0.1581382155418396	0.07138287	No	
+row_31	NCK2	NCK2	NCK adaptor protein 2	8431	-0.1789495050907135	0.060581107	No	
+row_32	ACTG1	ACTG1	actin, gamma 1	8605	-0.196084663271904	0.056181077	No	
+row_33	CDH1	CDH1	cadherin 1, type 1, E-cadherin (epithelial)	9181	-0.24649637937545776	0.02145951	No	
+row_34	NCL	NCL	nucleolin	9267	-0.25609713792800903	0.027220618	No	
+row_35	TUBAL3	TUBAL3	tubulin, alpha-like 3	9537	-0.2809349000453949	0.019190684	No	
+row_36	PRKCA	PRKCA	protein kinase C, alpha	9564	-0.28363507986068726	0.031134635	No	
+row_37	OCLN	OCLN	occludin	10933	-0.45979323983192444	-0.057753835	No	
+row_38	ABL1	ABL1	v-abl Abelson murine leukemia viral oncogene homolog 1	10962	-0.46565118432044983	-0.036946174	No	
+row_39	TUBA8	TUBA8	tubulin, alpha 8	11612	-0.6500883102416992	-0.05769359	No	
+row_40	CLDN1	CLDN1	claudin 1	11704	-0.6856944561004639	-0.031116683	No	
+row_41	TLR5	TLR5	toll-like receptor 5	11778	-0.7255643606185913	-0.0010928183	No	
+row_42	TUBB1	TUBB1	tubulin, beta 1	11978	-0.8632770776748657	0.025473451	No	

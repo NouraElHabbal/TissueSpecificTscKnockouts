@@ -1,0 +1,25 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	TIMP1	TIMP1	TIMP metallopeptidase inhibitor 1	38	2.670736074447632	0.18828852	Yes	
+row_1	AGT	AGT	angiotensinogen (serpin peptidase inhibitor, clade A, member 8)	341	1.3193260431289673	0.2582132	Yes	
+row_2	SERPINB7	SERPINB7	serpin peptidase inhibitor, clade B (ovalbumin), member 7	358	1.2999447584152222	0.35006356	Yes	
+row_3	SERPINB8	SERPINB8	serpin peptidase inhibitor, clade B (ovalbumin), member 8	374	1.2696696519851685	0.43982592	Yes	
+row_4	APP	APP	amyloid beta (A4) precursor protein (peptidase nexin-II, Alzheimer disease)	593	1.0092499256134033	0.49437803	Yes	
+row_5	CST3	CST3	cystatin C (amyloid angiopathy and cerebral hemorrhage)	1313	0.6073302030563354	0.47928706	Yes	
+row_6	SERPINB12	SERPINB12	serpin peptidase inhibitor, clade B (ovalbumin), member 12	1322	0.605749785900116	0.5220432	Yes	
+row_7	SPINT1	SPINT1	serine peptidase inhibitor, Kunitz type 1	1363	0.5885574221611023	0.5609588	Yes	
+row_8	THBS1	THBS1	thrombospondin 1	1596	0.5212647318840027	0.57940036	Yes	
+row_9	SPINK5	SPINK5	serine peptidase inhibitor, Kazal type 5	1825	0.46625202894210815	0.59422576	Yes	
+row_10	SERPINB9	SERPINB9	serpin peptidase inhibitor, clade B (ovalbumin), member 9	1865	0.45696568489074707	0.6237929	Yes	
+row_11	CST6	CST6	cystatin E/M	2525	0.3339894115924835	0.59400535	No	
+row_12	SPINT2	SPINT2	serine peptidase inhibitor, Kunitz type, 2	3420	0.22204343974590302	0.5370386	No	
+row_13	TIMP2	TIMP2	TIMP metallopeptidase inhibitor 2	4498	0.12240409851074219	0.45801365	No	
+row_14	SERPINA10	SERPINA10	serpin peptidase inhibitor, clade A (alpha-1 antiproteinase, antitrypsin), member 10	6015	0.0	0.33443004	No	
+row_15	PROS1	PROS1	protein S (alpha)	6043	-0.0025827339850366116	0.3324141	No	
+row_16	RENBP	RENBP	renin binding protein	6377	-0.027543524280190468	0.3072419	No	
+row_17	SERPINF1	SERPINF1	serpin peptidase inhibitor, clade F (alpha-2 antiplasmin, pigment epithelium derived factor), member 1	7304	-0.09587212651968002	0.23862505	No	
+row_18	SERPINA5	SERPINA5	serpin peptidase inhibitor, clade A (alpha-1 antiproteinase, antitrypsin), member 5	7517	-0.11050283908843994	0.22926159	No	
+row_19	SERPING1	SERPING1	serpin peptidase inhibitor, clade G (C1 inhibitor), member 1, (angioedema, hereditary)	9005	-0.2297685444355011	0.1245074	No	
+row_20	RECK	RECK	reversion-inducing-cysteine-rich protein with kazal motifs	9069	-0.23534780740737915	0.1362368	No	
+row_21	SERPINH1	SERPINH1	serpin peptidase inhibitor, clade H (heat shock protein 47), member 1, (collagen binding protein 1)	10522	-0.39508649706840515	0.04618255	No	
+row_22	SERPINI1	SERPINI1	serpin peptidase inhibitor, clade I (neuroserpin), member 1	11186	-0.5130677819252014	0.028901799	No	
+row_23	CST7	CST7	cystatin F (leukocystatin)	11965	-0.8514368534088135	0.026493998	No	

@@ -1,0 +1,31 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	PRPF31	PRPF31	PRP31 pre-mRNA processing factor 31 homolog (S. cerevisiae)	2386	0.3523743748664856	-0.1466319	No	
+row_1	RB1	RB1	retinoblastoma 1 (including osteosarcoma)	2805	0.29285746812820435	-0.1408569	No	
+row_2	TIMM50	TIMM50	translocase of inner mitochondrial membrane 50 homolog (S. cerevisiae)	3390	0.22491689026355743	-0.15786958	No	
+row_3	TFIP11	TFIP11	tuftelin interacting protein 11	4088	0.15854576230049133	-0.19313358	No	
+row_4	ISG20	ISG20	interferon stimulated exonuclease gene 20kDa	4393	0.13068795204162598	-0.20013703	No	
+row_5	HIPK2	HIPK2	homeodomain interacting protein kinase 2	4490	0.12290184944868088	-0.19123606	No	
+row_6	OIP5	OIP5	Opa interacting protein 5	4814	0.09435806423425674	-0.20473474	No	
+row_7	TOPORS	TOPORS	topoisomerase I binding, arginine/serine-rich	4968	0.08206009119749069	-0.20604245	No	
+row_8	RPA1	RPA1	replication protein A1, 70kDa	5227	0.06223156303167343	-0.21861318	No	
+row_9	TOPBP1	TOPBP1	topoisomerase (DNA) II binding protein 1	5288	0.05730491876602173	-0.2157058	No	
+row_10	SLU7	SLU7	-	5659	0.028054742142558098	-0.24206369	No	
+row_11	RPAIN	RPAIN	RPA interacting protein	6073	-0.005204652436077595	-0.2750392	No	
+row_12	UBE2I	UBE2I	ubiquitin-conjugating enzyme E2I (UBC9 homolog, yeast)	6415	-0.029913930222392082	-0.29877877	No	
+row_13	GEMIN7	GEMIN7	gem (nuclear organelle) associated protein 7	6738	-0.05549750477075577	-0.31748602	No	
+row_14	DYRK1A	DYRK1A	dual-specificity tyrosine-(Y)-phosphorylation regulated kinase 1A	7319	-0.0971047505736351	-0.35157156	No	
+row_15	COIL	COIL	coilin	7748	-0.12465429306030273	-0.36950973	No	
+row_16	GEMIN5	GEMIN5	gem (nuclear organelle) associated protein 5	8262	-0.16458046436309814	-0.3889453	No	
+row_17	ZBTB16	ZBTB16	zinc finger and BTB domain containing 16	8511	-0.18688516318798065	-0.38373128	No	
+row_18	U2AF1	U2AF1	U2 small nuclear RNA auxiliary factor 1	8963	-0.22523559629917145	-0.38985315	Yes	
+row_19	NUAK2	NUAK2	NUAK family, SNF1-like kinase, 2	9401	-0.2690747380256653	-0.38886535	Yes	
+row_20	PML	PML	promyelocytic leukemia	9654	-0.2924780249595642	-0.36960316	Yes	
+row_21	CPSF6	CPSF6	cleavage and polyadenylation specific factor 6, 68kDa	9834	-0.3108217120170593	-0.34189	Yes	
+row_22	GEMIN6	GEMIN6	gem (nuclear organelle) associated protein 6	10009	-0.3311920166015625	-0.31099603	Yes	
+row_23	ELF4	ELF4	E74-like factor 4 (ets domain transcription factor)	10536	-0.3966844081878662	-0.29989547	Yes	
+row_24	CHEK2	CHEK2	CHK2 checkpoint homolog (S. pombe)	10647	-0.4130597710609436	-0.25263697	Yes	
+row_25	NUDT21	NUDT21	nudix (nucleoside diphosphate linked moiety X)-type motif 21	10972	-0.46882501244544983	-0.21524087	Yes	
+row_26	SPTBN4	SPTBN4	spectrin, beta, non-erythrocytic 4	11072	-0.487722247838974	-0.1569214	Yes	
+row_27	SP100	SP100	SP100 nuclear antigen	11170	-0.5098577737808228	-0.09542551	Yes	
+row_28	LRCH4	LRCH4	leucine-rich repeats and calponin homology (CH) domain containing 4	11432	-0.5811852216720581	-0.037595514	Yes	
+row_29	GLIS2	GLIS2	GLIS family zinc finger 2	11876	-0.789624035358429	0.033765536	Yes	

@@ -1,0 +1,49 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	NPAS4	NPAS4	neuronal PAS domain protein 4	662	0.9443489909172058	0.022522766	No	
+row_1	DLGAP1	DLGAP1	discs, large (Drosophila) homolog-associated protein 1	685	0.9205594658851624	0.095390774	No	
+row_2	TRAF6	TRAF6	TNF receptor-associated factor 6	2799	0.29361844062805176	-0.05338277	No	
+row_3	NRP2	NRP2	neuropilin 2	2909	0.2814778983592987	-0.03945564	No	
+row_4	PTGFRN	PTGFRN	prostaglandin F2 receptor negative regulator	2912	0.281037837266922	-0.016824516	No	
+row_5	IVNS1ABP	IVNS1ABP	influenza virus NS1A binding protein	3337	0.23185594379901886	-0.032651126	No	
+row_6	USP3	USP3	ubiquitin specific peptidase 3	3745	0.18949070572853088	-0.050525352	No	
+row_7	HMBOX1	HMBOX1	homeobox containing 1	4055	0.16132107377052307	-0.0626798	No	
+row_8	HIPK1	HIPK1	homeodomain interacting protein kinase 1	4466	0.12579770386219025	-0.08596509	No	
+row_9	BIVM	BIVM	basic, immunoglobulin-like variable motif containing	4597	0.11498992890119553	-0.087256774	No	
+row_10	SEC23IP	SEC23IP	SEC23 interacting protein	4850	0.0907173603773117	-0.10048204	No	
+row_11	LRRC15	LRRC15	leucine rich repeat containing 15	4855	0.09042435139417648	-0.0934746	No	
+row_12	DTNA	DTNA	dystrobrevin, alpha	5001	0.07980923354625702	-0.098844916	No	
+row_13	PSMD3	PSMD3	proteasome (prosome, macropain) 26S subunit, non-ATPase, 3	5629	0.03169959783554077	-0.14748675	No	
+row_14	PTPRA	PTPRA	protein tyrosine phosphatase, receptor type, A	5682	0.026587650179862976	-0.1495776	No	
+row_15	EIF4G2	EIF4G2	eukaryotic translation initiation factor 4 gamma, 2	5686	0.02633068524301052	-0.147687	No	
+row_16	ELAVL1	ELAVL1	ELAV (embryonic lethal, abnormal vision, Drosophila)-like 1 (Hu antigen R)	5771	0.018629398196935654	-0.15303707	No	
+row_17	CCDC117	CCDC117	coiled-coil domain containing 117	5826	0.014611294493079185	-0.15626265	No	
+row_18	POLR3H	POLR3H	polymerase (RNA) III (DNA directed) polypeptide H (22.9kD)	6057	-0.003999968059360981	-0.17472447	No	
+row_19	ARHGAP6	ARHGAP6	Rho GTPase activating protein 6	6096	-0.006163310259580612	-0.1773284	No	
+row_20	VASN	VASN	vasorin	6493	-0.03642836585640907	-0.20671876	No	
+row_21	PRX	PRX	periaxin	6606	-0.046066366136074066	-0.21213049	No	
+row_22	BCORL1	BCORL1	BCL6 co-repressor-like 1	7010	-0.07651160657405853	-0.23884153	No	
+row_23	NOVA1	NOVA1	neuro-oncological ventral antigen 1	7316	-0.09672363102436066	-0.25590864	No	
+row_24	RARB	RARB	retinoic acid receptor, beta	7426	-0.10469230264425278	-0.25632027	No	
+row_25	STX3	STX3	syntaxin 3	8044	-0.1452481597661972	-0.2949356	No	
+row_26	THRB	THRB	thyroid hormone receptor, beta (erythroblastic leukemia viral (v-erb-a) oncogene homolog 2, avian)	8227	-0.16095103323459625	-0.2967468	Yes	
+row_27	ZFX	ZFX	zinc finger protein, X-linked	8310	-0.16808411478996277	-0.2898115	Yes	
+row_28	JAZF1	JAZF1	JAZF zinc finger 1	8365	-0.17316307127475739	-0.2801772	Yes	
+row_29	SMAD4	SMAD4	SMAD, mothers against DPP homolog 4 (Drosophila)	8367	-0.17324766516685486	-0.2662071	Yes	
+row_30	KLF7	KLF7	Kruppel-like factor 7 (ubiquitous)	8412	-0.17697691917419434	-0.2554467	Yes	
+row_31	KCTD15	KCTD15	potassium channel tetramerisation domain containing 15	8964	-0.22541023790836334	-0.28216937	Yes	
+row_32	STC1	STC1	stanniocalcin 1	9111	-0.2390499860048294	-0.27470565	Yes	
+row_33	MMP16	MMP16	matrix metallopeptidase 16 (membrane-inserted)	9201	-0.24928534030914307	-0.261756	Yes	
+row_34	PHF20L1	PHF20L1	PHD finger protein 20-like 1	9326	-0.26184898614883423	-0.2506461	Yes	
+row_35	IRAK1	IRAK1	interleukin-1 receptor-associated kinase 1	9462	-0.2739335298538208	-0.23945457	Yes	
+row_36	HIC2	HIC2	hypermethylated in cancer 2	10362	-0.37400364875793457	-0.2825495	Yes	
+row_37	NUMB	NUMB	numb homolog (Drosophila)	10433	-0.3838855028152466	-0.2571308	Yes	
+row_38	RUNX1T1	RUNX1T1	runt-related transcription factor 1; translocated to, 1 (cyclin D-related)	10514	-0.39384907484054565	-0.23172073	Yes	
+row_39	RNF31	RNF31	ring finger protein 31	10568	-0.40077927708625793	-0.20354325	Yes	
+row_40	CASK	CASK	calcium/calmodulin-dependent serine protein kinase (MAGUK family)	10598	-0.4053826630115509	-0.17303208	Yes	
+row_41	TM6SF2	TM6SF2	transmembrane 6 superfamily member 2	10624	-0.4093737006187439	-0.14187047	Yes	
+row_42	CD79B	CD79B	CD79b molecule, immunoglobulin-associated beta	11000	-0.47443151473999023	-0.13401993	Yes	
+row_43	STRBP	STRBP	spermatid perinuclear RNA binding protein	11062	-0.48636627197265625	-0.09955405	Yes	
+row_44	SNX22	SNX22	sorting nexin 22	11276	-0.5351266860961914	-0.07354856	Yes	
+row_45	PCDH1	PCDH1	protocadherin 1 (cadherin-like 1)	11561	-0.6243099570274353	-0.046108816	Yes	
+row_46	RPS6KB2	RPS6KB2	ribosomal protein S6 kinase, 70kDa, polypeptide 2	11614	-0.6501569151878357	0.002376938	Yes	
+row_47	SYT1	SYT1	synaptotagmin I	11616	-0.6504489183425903	0.055052023	Yes	

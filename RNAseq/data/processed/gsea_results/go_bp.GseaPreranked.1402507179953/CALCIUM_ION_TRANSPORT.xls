@@ -1,0 +1,25 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SLN	SLN	sarcolipin	8	3.327117681503296	0.2340295	Yes	
+row_1	RYR3	RYR3	ryanodine receptor 3	263	1.467926025390625	0.3168652	Yes	
+row_2	CCL8	CCL8	chemokine (C-C motif) ligand 8	434	1.1753321886062622	0.38591015	Yes	
+row_3	NPY	NPY	neuropeptide Y	482	1.1190159320831299	0.46100965	Yes	
+row_4	PLN	PLN	phospholamban	587	1.0133854150772095	0.5240118	Yes	
+row_5	CHRNA7	CHRNA7	cholinergic receptor, nicotinic, alpha 7	1165	0.667223334312439	0.5240383	Yes	
+row_6	TRPC5	TRPC5	transient receptor potential cation channel, subfamily C, member 5	1530	0.5363293886184692	0.53219575	Yes	
+row_7	TRPC3	TRPC3	transient receptor potential cation channel, subfamily C, member 3	1666	0.5038100481033325	0.5567274	Yes	
+row_8	TRPC4	TRPC4	transient receptor potential cation channel, subfamily C, member 4	2197	0.3861551284790039	0.54075986	Yes	
+row_9	CACNB3	CACNB3	calcium channel, voltage-dependent, beta 3 subunit	2267	0.3736141324043274	0.5614883	Yes	
+row_10	TRPC1	TRPC1	transient receptor potential cation channel, subfamily C, member 1	2406	0.34859907627105713	0.5748274	Yes	
+row_11	STIM1	STIM1	stromal interaction molecule 1	2702	0.3054925501346588	0.5723274	No	
+row_12	TRPM2	TRPM2	transient receptor potential cation channel, subfamily M, member 2	4048	0.1620662808418274	0.4741151	No	
+row_13	NMUR1	NMUR1	neuromedin U receptor 1	6066	-0.004646714311093092	0.310018	No	
+row_14	CACNB4	CACNB4	calcium channel, voltage-dependent, beta 4 subunit	6438	-0.031763989478349686	0.28201476	No	
+row_15	SLC8A1	SLC8A1	solute carrier family 8 (sodium/calcium exchanger), member 1	6455	-0.033022619783878326	0.28303972	No	
+row_16	STIM2	STIM2	stromal interaction molecule 2	7999	-0.14142799377441406	0.16723087	No	
+row_17	CSN2	CSN2	casein beta	8151	-0.15453319251537323	0.16582158	No	
+row_18	CACNA1D	CACNA1D	calcium channel, voltage-dependent, L type, alpha 1D subunit	9123	-0.24089235067367554	0.103657715	No	
+row_19	ATP2C1	ATP2C1	ATPase, Ca++ transporting, type 2C, member 1	10034	-0.33451834321022034	0.053070545	No	
+row_20	CACNA2D1	CACNA2D1	calcium channel, voltage-dependent, alpha 2/delta subunit 1	10407	-0.3804030120372772	0.0495774	No	
+row_21	ATP2A3	ATP2A3	ATPase, Ca++ transporting, ubiquitous	10696	-0.42197299003601074	0.055864073	No	
+row_22	RYR1	RYR1	ryanodine receptor 1 (skeletal)	10992	-0.4731961786746979	0.06519319	No	
+row_23	ATP2A1	ATP2A1	ATPase, Ca++ transporting, cardiac muscle, fast twitch 1	11411	-0.5747072100639343	0.071655594	No	

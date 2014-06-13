@@ -1,0 +1,31 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	KIF11	KIF11	kinesin family member 11	511	1.0918127298355103	0.06518835	Yes	
+row_1	ARHGEF2	ARHGEF2	rho/rac guanine nucleotide exchange factor (GEF) 2	569	1.0262657403945923	0.16098902	Yes	
+row_2	ZW10	ZW10	ZW10, kinetochore associated, homolog (Drosophila)	848	0.8122687339782715	0.21781932	Yes	
+row_3	BIRC5	BIRC5	baculoviral IAP repeat-containing 5 (survivin)	898	0.7859161496162415	0.29074734	Yes	
+row_4	SEPT9	SEPT9	septin 9	1346	0.5942705869674683	0.31245673	Yes	
+row_5	TBCE	TBCE	tubulin-specific chaperone e	1371	0.5868319869041443	0.36793765	Yes	
+row_6	HDAC6	HDAC6	histone deacetylase 6	1669	0.5034772753715515	0.3929942	Yes	
+row_7	TBCC	TBCC	tubulin-specific chaperone c	1730	0.49103352427482605	0.43616235	Yes	
+row_8	CLASP1	CLASP1	cytoplasmic linker associated protein 1	1841	0.46360281109809875	0.47256768	Yes	
+row_9	CDC27	CDC27	cell division cycle 27	2200	0.38577139377593994	0.48112822	Yes	
+row_10	MAPRE1	MAPRE1	microtubule-associated protein, RP/EB family, member 1	2552	0.32798051834106445	0.48460317	Yes	
+row_11	MAP1S	MAP1S	microtubule-associated protein 1S	3481	0.21600428223609924	0.43005824	No	
+row_12	POLB	POLB	polymerase (DNA directed), beta	4135	0.15461422502994537	0.39193338	No	
+row_13	GAS8	GAS8	growth arrest-specific 8	4146	0.15320256352424622	0.40611306	No	
+row_14	MAPT	MAPT	microtubule-associated protein tau	4544	0.1200605109333992	0.38548532	No	
+row_15	SIRT2	SIRT2	sirtuin (silent mating type information regulation 2 homolog) 2 (S. cerevisiae)	5180	0.06532824039459229	0.34008935	No	
+row_16	TBCD	TBCD	tubulin-specific chaperone d	5499	0.04309094697237015	0.31837112	No	
+row_17	TUBGCP3	TUBGCP3	tubulin, gamma complex associated protein 3	6049	-0.0033852902706712484	0.27392635	No	
+row_18	CLASP2	CLASP2	cytoplasmic linker associated protein 2	6098	-0.006312401965260506	0.27062935	No	
+row_19	KNTC1	KNTC1	kinetochore associated 1	6166	-0.011313844472169876	0.26627225	No	
+row_20	TUBGCP2	TUBGCP2	tubulin, gamma complex associated protein 2	6806	-0.06193596124649048	0.220218	No	
+row_21	TUBG1	TUBG1	tubulin, gamma 1	6883	-0.06743795424699783	0.22062023	No	
+row_22	CEP57	CEP57	centrosomal protein 57kDa	7676	-0.12011738121509552	0.1677821	No	
+row_23	NUMA1	NUMA1	nuclear mitotic apparatus protein 1	7844	-0.12940339744091034	0.16682751	No	
+row_24	PRC1	PRC1	protein regulator of cytokinesis 1	8188	-0.15811610221862793	0.15432884	No	
+row_25	PAFAH1B1	PAFAH1B1	platelet-activating factor acetylhydrolase, isoform Ib, alpha subunit 45kDa	8891	-0.2180870771408081	0.1184202	No	
+row_26	CDC16	CDC16	CDC16 cell division cycle 16 homolog (S. cerevisiae)	9008	-0.2300824373960495	0.13147947	No	
+row_27	MAP3K11	MAP3K11	mitogen-activated protein kinase kinase kinase 11	10150	-0.34729257225990295	0.07241273	No	
+row_28	TPT1	TPT1	tumor protein, translationally-controlled 1	11149	-0.5056573152542114	0.04050951	No	
+row_29	MARK4	MARK4	MAP/microtubule affinity-regulating kinase 4	11279	-0.5360537767410278	0.082456596	No	

@@ -1,0 +1,25 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	VDR	VDR	vitamin D (1,25- dihydroxyvitamin D3) receptor	1655	0.5062451362609863	-0.08045165	No	
+row_1	NR2F6	NR2F6	nuclear receptor subfamily 2, group F, member 6	2673	0.3100892901420593	-0.1299968	No	
+row_2	PGRMC2	PGRMC2	progesterone receptor membrane component 2	2718	0.3024098873138428	-0.101049624	No	
+row_3	PGR	PGR	progesterone receptor	3222	0.2412804663181305	-0.11609637	No	
+row_4	NR1I3	NR1I3	nuclear receptor subfamily 1, group I, member 3	4746	0.10041786730289459	-0.2294474	No	
+row_5	NR3C2	NR3C2	nuclear receptor subfamily 3, group C, member 2	5224	0.062327928841114044	-0.2616268	No	
+row_6	PPARD	PPARD	peroxisome proliferative activated receptor, delta	6932	-0.07064652442932129	-0.39318028	No	
+row_7	RXRA	RXRA	retinoid X receptor, alpha	7338	-0.09853032976388931	-0.41559556	No	
+row_8	RARB	RARB	retinoic acid receptor, beta	7426	-0.10469230264425278	-0.4114247	No	
+row_9	THRB	THRB	thyroid hormone receptor, beta (erythroblastic leukemia viral (v-erb-a) oncogene homolog 2, avian)	8227	-0.16095103323459625	-0.45932478	No	
+row_10	RARA	RARA	retinoic acid receptor, alpha	8604	-0.1960708200931549	-0.46888232	No	
+row_11	NR1D1	NR1D1	nuclear receptor subfamily 1, group D, member 1	9163	-0.24493756890296936	-0.4880192	Yes	
+row_12	BRD8	BRD8	bromodomain containing 8	9435	-0.2719155550003052	-0.4808576	Yes	
+row_13	RARG	RARG	retinoic acid receptor, gamma	9522	-0.27965259552001953	-0.45778254	Yes	
+row_14	NR3C1	NR3C1	nuclear receptor subfamily 3, group C, member 1 (glucocorticoid receptor)	9698	-0.2962699234485626	-0.44017497	Yes	
+row_15	NR2C1	NR2C1	nuclear receptor subfamily 2, group C, member 1	9980	-0.327639102935791	-0.4278337	Yes	
+row_16	THRA	THRA	thyroid hormone receptor, alpha (erythroblastic leukemia viral (v-erb-a) oncogene homolog, avian)	10128	-0.34495028853416443	-0.4027064	Yes	
+row_17	AHR	AHR	aryl hydrocarbon receptor	10894	-0.4511224329471588	-0.41653594	Yes	
+row_18	RXRB	RXRB	retinoid X receptor, beta	11192	-0.513953447341919	-0.3854548	Yes	
+row_19	RXRG	RXRG	retinoid X receptor, gamma	11560	-0.6234237551689148	-0.34830293	Yes	
+row_20	NR4A3	NR4A3	nuclear receptor subfamily 4, group A, member 3	11719	-0.6946688890457153	-0.28644875	Yes	
+row_21	AR	AR	androgen receptor (dihydrotestosterone receptor; testicular feminization; spinal and bulbar muscular atrophy; Kennedy disease)	11873	-0.7874811291694641	-0.21420197	Yes	
+row_22	ESR2	ESR2	estrogen receptor 2 (ER beta)	11987	-0.875952959060669	-0.12917641	Yes	
+row_23	PTGER3	PTGER3	prostaglandin E receptor 3 (subtype EP3)	12256	-1.4295556545257568	0.002771654	Yes	

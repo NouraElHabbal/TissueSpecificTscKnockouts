@@ -1,0 +1,207 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MDFI	MDFI	MyoD family inhibitor	9	3.2249650955200195	0.037751578	Yes	
+row_1	PTPRN	PTPRN	protein tyrosine phosphatase, receptor type, N	37	2.684112548828125	0.067557566	Yes	
+row_2	NR0B2	NR0B2	nuclear receptor subfamily 0, group B, member 2	42	2.5890047550201416	0.09813145	Yes	
+row_3	MAP1A	MAP1A	microtubule-associated protein 1A	121	1.955222249031067	0.11501659	Yes	
+row_4	RIN1	RIN1	Ras and Rab interactor 1	142	1.8471006155014038	0.13541043	Yes	
+row_5	OLR1	OLR1	oxidised low density lipoprotein (lectin-like) receptor 1	163	1.7450270652770996	0.15458581	Yes	
+row_6	CLSTN3	CLSTN3	calsyntenin 3	176	1.7260335683822632	0.17419645	Yes	
+row_7	PAK6	PAK6	p21(CDKN1A)-activated kinase 6	188	1.6995689868927002	0.19357394	Yes	
+row_8	HS3ST2	HS3ST2	heparan sulfate (glucosamine) 3-O-sulfotransferase 2	321	1.3562690019607544	0.19884104	Yes	
+row_9	ADCK4	ADCK4	aarF domain containing kinase 4	381	1.2612382173538208	0.20901431	Yes	
+row_10	GPR3	GPR3	G protein-coupled receptor 3	410	1.2131011486053467	0.22117814	Yes	
+row_11	GAB2	GAB2	GRB2-associated binding protein 2	422	1.1947383880615234	0.23452948	Yes	
+row_12	GNAI1	GNAI1	guanine nucleotide binding protein (G protein), alpha inhibiting activity polypeptide 1	447	1.1589679718017578	0.24637811	Yes	
+row_13	ETV5	ETV5	ets variant gene 5 (ets-related molecule)	451	1.1565148830413818	0.25993514	Yes	
+row_14	PKP3	PKP3	plakophilin 3	498	1.106480598449707	0.2693368	Yes	
+row_15	C3AR1	C3AR1	complement component 3a receptor 1	541	1.0494153499603271	0.27838826	Yes	
+row_16	MARK1	MARK1	MAP/microtubule affinity-regulating kinase 1	554	1.036390781402588	0.28976664	Yes	
+row_17	DMPK	DMPK	dystrophia myotonica-protein kinase	636	0.9687767028808594	0.29462838	Yes	
+row_18	LAMC2	LAMC2	laminin, gamma 2	678	0.9282324910163879	0.30231604	Yes	
+row_19	NRIP3	NRIP3	nuclear receptor interacting protein 3	789	0.8537083864212036	0.3034045	Yes	
+row_20	SFN	SFN	stratifin	889	0.7890581488609314	0.3046315	Yes	
+row_21	HSPB7	HSPB7	heat shock 27kDa protein family, member 7 (cardiovascular)	914	0.7790476083755493	0.31194505	Yes	
+row_22	SCEL	SCEL	sciellin	947	0.7612482905387878	0.31838414	Yes	
+row_23	TRIB1	TRIB1	tribbles homolog 1 (Drosophila)	989	0.7393659949302673	0.32381728	Yes	
+row_24	RNF182	RNF182	ring finger protein 182	1027	0.7253713011741638	0.32941437	Yes	
+row_25	GADD45A	GADD45A	growth arrest and DNA-damage-inducible, alpha	1046	0.7184222340583801	0.3365007	Yes	
+row_26	CMAS	CMAS	cytidine monophosphate N-acetylneuraminic acid synthetase	1062	0.7108961939811707	0.34374544	Yes	
+row_27	TRAF3	TRAF3	TNF receptor-associated factor 3	1088	0.7012725472450256	0.35004783	Yes	
+row_28	PSME4	PSME4	proteasome (prosome, macropain) activator subunit 4	1278	0.621624767780304	0.3418289	Yes	
+row_29	CDKN1A	CDKN1A	cyclin-dependent kinase inhibitor 1A (p21, Cip1)	1302	0.6115239858627319	0.3472255	Yes	
+row_30	LAPTM5	LAPTM5	lysosomal associated multispanning membrane protein 5	1330	0.6027359366416931	0.35218614	Yes	
+row_31	FLNC	FLNC	filamin C, gamma (actin binding protein 280)	1332	0.6022310853004456	0.3592922	Yes	
+row_32	SPATS2	SPATS2	spermatogenesis associated, serine-rich 2	1334	0.6011095643043518	0.3663849	Yes	
+row_33	LMNA	LMNA	lamin A/C	1349	0.593300461769104	0.37230864	Yes	
+row_34	ITPKC	ITPKC	inositol 1,4,5-trisphosphate 3-kinase C	1417	0.5723032355308533	0.37359613	Yes	
+row_35	ABHD2	ABHD2	abhydrolase domain containing 2	1470	0.5523936748504639	0.3758872	Yes	
+row_36	PCDH9	PCDH9	protocadherin 9	1599	0.520690381526947	0.371511	Yes	
+row_37	DIRAS1	DIRAS1	DIRAS family, GTP-binding RAS-like 1	1635	0.5123357772827148	0.3747306	Yes	
+row_38	VDR	VDR	vitamin D (1,25- dihydroxyvitamin D3) receptor	1655	0.5062451362609863	0.3792014	Yes	
+row_39	CCDC64	CCDC64	coiled-coil domain containing 64	1788	0.47634157538414	0.37396488	No	
+row_40	NDRG2	NDRG2	NDRG family member 2	1883	0.45166584849357605	0.37157816	No	
+row_41	SNCB	SNCB	synuclein, beta	1886	0.4510357081890106	0.37679666	No	
+row_42	ROM1	ROM1	retinal outer segment membrane protein 1	1936	0.44369620084762573	0.37803844	No	
+row_43	AK5	AK5	adenylate kinase 5	1993	0.43082311749458313	0.3785473	No	
+row_44	PPP2CA	PPP2CA	protein phosphatase 2 (formerly 2A), catalytic subunit, alpha isoform	2169	0.3920976221561432	0.368747	No	
+row_45	GPX1	GPX1	glutathione peroxidase 1	2214	0.3822890520095825	0.3696695	No	
+row_46	DCHS1	DCHS1	dachsous 1 (Drosophila)	2288	0.3695293664932251	0.36804	No	
+row_47	ATP1B1	ATP1B1	ATPase, Na+/K+ transporting, beta 1 polypeptide	2343	0.3597966730594635	0.36786655	No	
+row_48	AXIN2	AXIN2	axin 2 (conductin, axil)	2375	0.35429099202156067	0.36953053	No	
+row_49	BTK	BTK	Bruton agammaglobulinemia tyrosine kinase	2398	0.349757581949234	0.37188515	No	
+row_50	PSMD2	PSMD2	proteasome (prosome, macropain) 26S subunit, non-ATPase, 2	2443	0.34404468536376953	0.3723511	No	
+row_51	UCHL3	UCHL3	ubiquitin carboxyl-terminal esterase L3 (ubiquitin thiolesterase)	2455	0.3423863351345062	0.37552795	No	
+row_52	GTF2B	GTF2B	general transcription factor IIB	2537	0.3314175307750702	0.37278154	No	
+row_53	GGN	GGN	gametogenetin	2572	0.32501065731048584	0.37384778	No	
+row_54	LTBP3	LTBP3	latent transforming growth factor beta binding protein 3	2619	0.3164794445037842	0.37381923	No	
+row_55	ANXA7	ANXA7	annexin A7	2622	0.3161909580230713	0.37742808	No	
+row_56	ST18	ST18	suppression of tumorigenicity 18 (breast carcinoma) (zinc finger protein)	2871	0.28648731112480164	0.36032656	No	
+row_57	RIPK4	RIPK4	receptor-interacting serine-threonine kinase 4	2938	0.27751752734184265	0.35817796	No	
+row_58	XPOT	XPOT	exportin, tRNA (nuclear export receptor for tRNAs)	3021	0.2672598659992218	0.35458297	No	
+row_59	PTP4A1	PTP4A1	protein tyrosine phosphatase type IVA, member 1	3131	0.25379589200019836	0.3485931	No	
+row_60	PADI4	PADI4	peptidyl arginine deiminase, type IV	3137	0.25294676423072815	0.35119876	No	
+row_61	DHRS3	DHRS3	dehydrogenase/reductase (SDR family) member 3	3162	0.24910090863704681	0.35218632	No	
+row_62	KCNK10	KCNK10	potassium channel, subfamily K, member 10	3170	0.24804197251796722	0.35456797	No	
+row_63	CRYBA2	CRYBA2	crystallin, beta A2	3227	0.2412804663181305	0.3528143	No	
+row_64	REXO2	REXO2	REX2, RNA exonuclease 2 homolog (S. cerevisiae)	3255	0.2409297674894333	0.35345608	No	
+row_65	MAP4	MAP4	microtubule-associated protein 4	3342	0.2313224971294403	0.3491011	No	
+row_66	STK40	STK40	serine/threonine kinase 40	3358	0.2290164977312088	0.35059366	No	
+row_67	RBBP7	RBBP7	retinoblastoma binding protein 7	3400	0.22362416982650757	0.3498704	No	
+row_68	SYT2	SYT2	synaptotagmin II	3402	0.22355371713638306	0.35245624	No	
+row_69	FAM46B	FAM46B	family with sequence similarity 46, member B	3526	0.21136116981506348	0.34480134	No	
+row_70	SCOC	SCOC	short coiled-coil protein	3529	0.21100711822509766	0.34715462	No	
+row_71	DCTN2	DCTN2	dynactin 2 (p50)	3545	0.2093394249677658	0.3484123	No	
+row_72	YIF1A	YIF1A	Yip1 interacting factor homolog A (S. cerevisiae)	3570	0.20719784498214722	0.34889966	No	
+row_73	TRPV3	TRPV3	transient receptor potential cation channel, subfamily V, member 3	3613	0.20324604213237762	0.34785044	No	
+row_74	VIM	VIM	vimentin	3655	0.1985677182674408	0.3468281	No	
+row_75	PITPNC1	PITPNC1	phosphatidylinositol transfer protein, cytoplasmic 1	3733	0.19019906222820282	0.34272698	No	
+row_76	RIT1	RIT1	Ras-like without CAAX 1	3796	0.1855226755142212	0.3398112	No	
+row_77	SYTL1	SYTL1	synaptotagmin-like 1	3804	0.18508045375347137	0.34144127	No	
+row_78	KCNH6	KCNH6	potassium voltage-gated channel, subfamily H (eag-related), member 6	3829	0.18257129192352295	0.3416347	No	
+row_79	LRRFIP2	LRRFIP2	leucine rich repeat (in FLII) interacting protein 2	4087	0.15854845941066742	0.32226124	No	
+row_80	APOBEC1	APOBEC1	apolipoprotein B mRNA editing enzyme, catalytic polypeptide 1	4278	0.1401955485343933	0.3082128	No	
+row_81	RAB3D	RAB3D	RAB3D, member RAS oncogene family	4384	0.1315961629152298	0.3010952	No	
+row_82	YWHAZ	YWHAZ	tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein, zeta polypeptide	4428	0.1284508854150772	0.2990704	No	
+row_83	RAB30	RAB30	RAB30, member RAS oncogene family	4510	0.12173701077699661	0.29382104	No	
+row_84	RTN4	RTN4	reticulon 4	4520	0.12126345932483673	0.2945238	No	
+row_85	AP2A2	AP2A2	adaptor-related protein complex 2, alpha 2 subunit	4525	0.12089871615171432	0.295636	No	
+row_86	CAPNS1	CAPNS1	calpain, small subunit 1	4731	0.1021600216627121	0.2798923	No	
+row_87	DYNC1H1	DYNC1H1	dynein, cytoplasmic 1, heavy chain 1	4764	0.0987192913889885	0.2784228	No	
+row_88	SLC26A1	SLC26A1	solute carrier family 26 (sulfate transporter), member 1	4849	0.09081364423036575	0.27255607	No	
+row_89	TCF12	TCF12	transcription factor 12 (HTF4, helix-loop-helix transcription factors 4)	4916	0.08595259487628937	0.26812077	No	
+row_90	DTNA	DTNA	dystrobrevin, alpha	5001	0.07980923354625702	0.2621227	No	
+row_91	RGS8	RGS8	regulator of G-protein signalling 8	5041	0.07610780745744705	0.25980404	No	
+row_92	BLMH	BLMH	bleomycin hydrolase	5056	0.07514052093029022	0.25954252	No	
+row_93	CPA6	CPA6	carboxypeptidase A6	5126	0.06984710693359375	0.25466672	No	
+row_94	SLC16A6	SLC16A6	solute carrier family 16, member 6 (monocarboxylic acid transporter 7)	5139	0.06913106888532639	0.254499	No	
+row_95	PSMD12	PSMD12	proteasome (prosome, macropain) 26S subunit, non-ATPase, 12	5158	0.06733222305774689	0.25381327	No	
+row_96	PDAP1	PDAP1	PDGFA associated protein 1	5229	0.06209605932235718	0.2487622	No	
+row_97	LAMC1	LAMC1	laminin, gamma 1 (formerly LAMB2)	5237	0.06150529161095619	0.24891716	No	
+row_98	HSPB8	HSPB8	heat shock 22kDa protein 8	5316	0.055133119225502014	0.243121	No	
+row_99	BAZ2A	BAZ2A	bromodomain adjacent to zinc finger domain, 2A	5318	0.05500095337629318	0.2436948	No	
+row_100	ABHD4	ABHD4	abhydrolase domain containing 4	5355	0.05276069790124893	0.2413457	No	
+row_101	PSMD4	PSMD4	proteasome (prosome, macropain) 26S subunit, non-ATPase, 4	5377	0.05157238245010376	0.24022363	No	
+row_102	PSMD11	PSMD11	proteasome (prosome, macropain) 26S subunit, non-ATPase, 11	5428	0.04814665764570236	0.23666099	No	
+row_103	PLCD1	PLCD1	phospholipase C, delta 1	5480	0.04426925629377365	0.23296933	No	
+row_104	SLC35E4	SLC35E4	solute carrier family 35, member E4	5557	0.03781817480921745	0.22713198	No	
+row_105	ICK	ICK	intestinal cell (MAK-like) kinase	5565	0.03693459555506706	0.22699362	No	
+row_106	BMP2	BMP2	bone morphogenetic protein 2	5568	0.03684039041399956	0.22726789	No	
+row_107	PSMD7	PSMD7	proteasome (prosome, macropain) 26S subunit, non-ATPase, 7 (Mov34 homolog)	5580	0.03554118797183037	0.22678193	No	
+row_108	ENO1	ENO1	enolase 1, (alpha)	5614	0.033375438302755356	0.22444968	No	
+row_109	NDP	NDP	Norrie disease (pseudoglioma)	5664	0.02781296707689762	0.22072706	No	
+row_110	NEFH	NEFH	neurofilament, heavy polypeptide 200kDa	5677	0.02687874063849449	0.22005495	No	
+row_111	WDFY3	WDFY3	WD repeat and FYVE domain containing 3	5945	0.004891775548458099	0.19801983	No	
+row_112	NFRKB	NFRKB	nuclear factor related to kappaB binding protein	6040	-0.002505551790818572	0.19027151	No	
+row_113	TGFBR2	TGFBR2	transforming growth factor, beta receptor II (70/80kDa)	6117	-0.0074040996842086315	0.1840711	No	
+row_114	ECM1	ECM1	extracellular matrix protein 1	6128	-0.008574547246098518	0.18334599	No	
+row_115	VASP	VASP	vasodilator-stimulated phosphoprotein	6173	-0.011779692955315113	0.17984572	No	
+row_116	AKT1S1	AKT1S1	AKT1 substrate 1 (proline-rich)	6220	-0.014309524558484554	0.17621017	No	
+row_117	OMG	OMG	oligodendrocyte myelin glycoprotein	6296	-0.02125035971403122	0.17025778	No	
+row_118	SLC4A11	SLC4A11	solute carrier family 4, sodium bicarbonate transporter-like, member 11	6453	-0.032876282930374146	0.15774167	No	
+row_119	EIF4E	EIF4E	eukaryotic translation initiation factor 4E	6479	-0.0355447493493557	0.15609728	No	
+row_120	TFE3	TFE3	transcription factor binding to IGHM enhancer 3	6600	-0.045726414769887924	0.14671345	No	
+row_121	VAMP5	VAMP5	vesicle-associated membrane protein 5 (myobrevin)	6724	-0.05447850748896599	0.13718584	No	
+row_122	TOR1AIP2	TOR1AIP2	torsin A interacting protein 2	6747	-0.056157659739255905	0.13603576	No	
+row_123	AP2B1	AP2B1	adaptor-related protein complex 2, beta 1 subunit	6821	-0.06338565796613693	0.13075185	No	
+row_124	RB1CC1	RB1CC1	RB1-inducible coiled-coil 1	6880	-0.06718567758798599	0.1267545	No	
+row_125	CNTD1	CNTD1	cyclin N-terminal domain containing 1	7016	-0.07722257822751999	0.11650544	No	
+row_126	FBXW11	FBXW11	F-box and WD-40 domain protein 11	7071	-0.081739641726017	0.113012806	No	
+row_127	CYFIP1	CYFIP1	cytoplasmic FMR1 interacting protein 1	7254	-0.09204842895269394	0.099051595	No	
+row_128	IL23A	IL23A	interleukin 23, alpha subunit p19	7263	-0.09279218316078186	0.09949727	No	
+row_129	MAPK3	MAPK3	mitogen-activated protein kinase 3	7277	-0.09331737458705902	0.09953549	No	
+row_130	ABI3	ABI3	ABI gene family, member 3	7382	-0.1013653501868248	0.09213977	No	
+row_131	VGF	VGF	VGF nerve growth factor inducible	7502	-0.10960723459720612	0.08360123	No	
+row_132	LPP	LPP	LIM domain containing preferred translocation partner in lipoma	7614	-0.11592089384794235	0.07580004	No	
+row_133	PHLDA2	PHLDA2	pleckstrin homology-like domain, family A, member 2	7622	-0.1159626916050911	0.07660505	No	
+row_134	IL1RN	IL1RN	interleukin 1 receptor antagonist	7635	-0.11652251332998276	0.07700301	No	
+row_135	ZFAND5	ZFAND5	zinc finger, AN1-type domain 5	7712	-0.12208205461502075	0.07217151	No	
+row_136	EEF1A2	EEF1A2	eukaryotic translation elongation factor 1 alpha 2	7764	-0.12550321221351624	0.06944953	No	
+row_137	NCDN	NCDN	neurochondrin	7766	-0.12574586272239685	0.07086781	No	
+row_138	USP13	USP13	ubiquitin specific peptidase 13 (isopeptidase T-3)	7788	-0.12692540884017944	0.07064522	No	
+row_139	TMEM54	TMEM54	transmembrane protein 54	7809	-0.1272609531879425	0.07050938	No	
+row_140	TLL1	TLL1	tolloid-like 1	7831	-0.1290496289730072	0.07031216	No	
+row_141	HOXA11	HOXA11	homeobox A11	7864	-0.13086184859275818	0.06922634	No	
+row_142	HDAC3	HDAC3	histone deacetylase 3	7887	-0.13329774141311646	0.06899707	No	
+row_143	ABCD1	ABCD1	ATP-binding cassette, sub-family D (ALD), member 1	7910	-0.13507689535617828	0.06878904	No	
+row_144	ROCK2	ROCK2	Rho-associated, coiled-coil containing protein kinase 2	7948	-0.13837270438671112	0.06737915	No	
+row_145	DSTN	DSTN	destrin (actin depolymerizing factor)	8010	-0.14200860261917114	0.06402671	No	
+row_146	SLC9A5	SLC9A5	solute carrier family 9 (sodium/hydrogen exchanger), member 5	8101	-0.15101021528244019	0.05838207	No	
+row_147	TAGLN2	TAGLN2	transgelin 2	8131	-0.15378984808921814	0.057818186	No	
+row_148	TIAL1	TIAL1	TIA1 cytotoxic granule-associated RNA binding protein-like 1	8212	-0.1597079634666443	0.053104836	No	
+row_149	ZBTB2	ZBTB2	zinc finger and BTB domain containing 2	8335	-0.17032934725284576	0.045042895	No	
+row_150	POLR3E	POLR3E	polymerase (RNA) III (DNA directed) polypeptide E (80kD)	8373	-0.1737908124923706	0.044055782	No	
+row_151	UBQLN1	UBQLN1	ubiquilin 1	8419	-0.17786213755607605	0.042455293	No	
+row_152	FGF12	FGF12	fibroblast growth factor 12	8432	-0.17899487912654877	0.043598983	No	
+row_153	STX17	STX17	syntaxin 17	8462	-0.1808224767446518	0.043357786	No	
+row_154	FAP	FAP	fibroblast activation protein, alpha	8530	-0.18880558013916016	0.04006749	No	
+row_155	ABCA2	ABCA2	ATP-binding cassette, sub-family A (ABC1), member 2	8586	-0.19383053481578827	0.03783014	No	
+row_156	SPARC	SPARC	secreted protein, acidic, cysteine-rich (osteonectin)	8594	-0.19456377625465393	0.039573412	No	
+row_157	GAPDH	GAPDH	glyceraldehyde-3-phosphate dehydrogenase	8701	-0.20271804928779602	0.033222046	No	
+row_158	COBL	COBL	cordon-bleu homolog (mouse)	8726	-0.2044198215007782	0.033676267	No	
+row_159	ATXN7L2	ATXN7L2	ataxin 7-like 2	8742	-0.2055017650127411	0.034888126	No	
+row_160	PKN3	PKN3	protein kinase N3	8745	-0.2057291567325592	0.037178416	No	
+row_161	SMARCA2	SMARCA2	SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily a, member 2	8747	-0.20594356954097748	0.039554007	No	
+row_162	IGSF9	IGSF9	immunoglobulin superfamily, member 9	8878	-0.216807022690773	0.03138489	No	
+row_163	TPP1	TPP1	tripeptidyl peptidase I	8935	-0.22204379737377167	0.029401576	No	
+row_164	ZNFX1	ZNFX1	zinc finger, NFX1-type containing 1	9042	-0.2331874817609787	0.023413923	No	
+row_165	NR1D1	NR1D1	nuclear receptor subfamily 1, group D, member 1	9163	-0.24493756890296936	0.016408069	No	
+row_166	EFNA1	EFNA1	ephrin-A1	9274	-0.25648239254951477	0.010367498	No	
+row_167	EPHA2	EPHA2	EPH receptor A2	9275	-0.2565632462501526	0.013430085	No	
+row_168	PRDM1	PRDM1	PR domain containing 1, with ZNF domain	9293	-0.25770625472068787	0.015099614	No	
+row_169	CCDC50	CCDC50	coiled-coil domain containing 50	9376	-0.2657783031463623	0.01148693	No	
+row_170	SBSN	SBSN	suprabasin	9430	-0.27162015438079834	0.010343649	No	
+row_171	PDGFRB	PDGFRB	platelet-derived growth factor receptor, beta polypeptide	9502	-0.2782405614852905	0.0077899457	No	
+row_172	GFAP	GFAP	glial fibrillary acidic protein	9576	-0.2846634089946747	0.0051474175	No	
+row_173	TRIM8	TRIM8	tripartite motif-containing 8	9587	-0.2860407531261444	0.0077344044	No	
+row_174	TBC1D17	TBC1D17	TBC1 domain family, member 17	9708	-0.29684537649154663	0.0013481731	No	
+row_175	PAPPA	PAPPA	pregnancy-associated plasma protein A, pappalysin 1	9774	-0.3030218482017517	-4.1323347E-4	No	
+row_176	NFATC4	NFATC4	nuclear factor of activated T-cells, cytoplasmic, calcineurin-dependent 4	9890	-0.3169959485530853	-0.0061451923	No	
+row_177	UBE2C	UBE2C	ubiquitin-conjugating enzyme E2C	9952	-0.32351624965667725	-0.007330969	No	
+row_178	KCNA2	KCNA2	potassium voltage-gated channel, shaker-related subfamily, member 2	10114	-0.34389275312423706	-0.016548233	No	
+row_179	SCRN1	SCRN1	secernin 1	10318	-0.3686918020248413	-0.028944856	No	
+row_180	TINAGL1	TINAGL1	tubulointerstitial nephritis antigen-like 1	10350	-0.37274959683418274	-0.027060518	No	
+row_181	LAMA3	LAMA3	laminin, alpha 3	10364	-0.3742836117744446	-0.023668421	No	
+row_182	IDS	IDS	iduronate 2-sulfatase (Hunter syndrome)	10565	-0.4001718759536743	-0.035441026	No	
+row_183	CASK	CASK	calcium/calmodulin-dependent serine protein kinase (MAGUK family)	10598	-0.4053826630115509	-0.033249896	No	
+row_184	SHC3	SHC3	SHC (Src homology 2 domain containing) transforming protein 3	10682	-0.4189128577709198	-0.035117365	No	
+row_185	SFTPC	SFTPC	surfactant, pulmonary-associated protein C	10749	-0.4312995970249176	-0.03543027	No	
+row_186	CAMKK1	CAMKK1	calcium/calmodulin-dependent protein kinase kinase 1, alpha	10751	-0.4314602017402649	-0.030362692	No	
+row_187	STAT5B	STAT5B	signal transducer and activator of transcription 5B	10773	-0.43353989720344543	-0.02692523	No	
+row_188	ADORA2A	ADORA2A	adenosine A2a receptor	10806	-0.43765997886657715	-0.024348808	No	
+row_189	COL27A1	COL27A1	collagen, type XXVII, alpha 1	10902	-0.4520725905895233	-0.026813418	No	
+row_190	DCN	DCN	decorin	10944	-0.46167176961898804	-0.024695093	No	
+row_191	ELK3	ELK3	ELK3, ETS-domain protein (SRF accessory protein 2)	11017	-0.4775698781013489	-0.024952155	No	
+row_192	WNT6	WNT6	wingless-type MMTV integration site family, member 6	11037	-0.48214003443717957	-0.020769062	No	
+row_193	FHL3	FHL3	four and a half LIM domains 3	11177	-0.5112395882606506	-0.026168274	No	
+row_194	KBTBD8	KBTBD8	kelch repeat and BTB (POZ) domain containing 8	11217	-0.5196352005004883	-0.023192547	No	
+row_195	S100A5	S100A5	S100 calcium binding protein A5	11222	-0.5202795267105103	-0.017312976	No	
+row_196	ALDOA	ALDOA	aldolase A, fructose-bisphosphate	11434	-0.581885576248169	-0.027826687	No	
+row_197	PVALB	PVALB	parvalbumin	11439	-0.5838376879692078	-0.021188425	No	
+row_198	HOXD3	HOXD3	homeobox D3	11608	-0.6493504643440247	-0.02733868	No	
+row_199	MAP2	MAP2	microtubule-associated protein 2	11636	-0.6569054126739502	-0.021731397	No	
+row_200	UCN2	UCN2	urocortin 2	11763	-0.7176746726036072	-0.023590686	No	
+row_201	NEK6	NEK6	NIMA (never in mitosis gene a)-related kinase 6	12032	-0.9201098680496216	-0.034783617	No	
+row_202	RIMS1	RIMS1	regulating synaptic membrane exocytosis 1	12153	-1.0680692195892334	-0.031963773	No	
+row_203	MMP9	MMP9	matrix metallopeptidase 9 (gelatinase B, 92kDa gelatinase, 92kDa type IV collagenase)	12170	-1.1046720743179321	-0.020101294	No	
+row_204	MYBPH	MYBPH	myosin binding protein H	12211	-1.2185579538345337	-0.008865295	No	
+row_205	PRR7	PRR7	proline rich 7 (synaptic)	12231	-1.2833691835403442	0.004882044	No	

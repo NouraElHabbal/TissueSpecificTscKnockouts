@@ -14,3 +14,7 @@ The normalized counts are not normalized to transcript length.  This normalizati
 ## Generating barplots of the data
 
 The **barplots.Rmd** script is used to generate the barplots from the RPKM data.  These barplots are automatically saved in the scripts/figures folder.
+
+## Performing GSEA Analysis
+
+This is done separately using a standalone program, see the data/processed folder for more details.  To generate the input files for the preranked GSEA analysis the script **GSEA_inputs.Rmd** takes the DESeq results file and puts it in the correct format.  To parse the results, a python script called **MakeGSEATable.py** takes the gsea output and created the summary files.

@@ -1,0 +1,23 @@
+producer_class	xtools.gsea.GseaPreranked
+producer_timestamp	1402507313720
+param	collapse	true
+param	plot_top_x	20
+param	rnk	/Users/davebridges/Documents/Source/TissueSpecificTscKnockouts/RNAseq/data/processed/GSEA_prerank_FC.rnk
+param	norm	meandiv
+param	scoring_scheme	weighted
+param	make_sets	true
+param	mode	Max_probe
+param	gmx	gseaftp.broadinstitute.org://pub/gsea/gene_sets/c5.mf.v4.0.symbols.gmt
+param	gui	false
+param	chip	gseaftp.broadinstitute.org://pub/gsea/annotations/GENE_SYMBOL.chip
+param	rpt_label	go_mf
+param	help	false
+param	out	/Users/davebridges/gsea_home/output/jun11
+param	include_only_symbols	true
+param	set_min	15
+param	nperm	1000
+param	rnd_seed	timestamp
+param	zip_report	false
+param	set_max	500
+
+file	/Users/davebridges/gsea_home/output/jun11/go_mf.GseaPreranked.1402507313720/index.html

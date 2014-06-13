@@ -1,0 +1,43 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MT3	MT3	metallothionein 3 (growth inhibitory factor (neurotrophic))	16	3.0261754989624023	0.18024124	Yes	
+row_1	SVOP	SVOP	SV2 related protein homolog (rat)	431	1.1860769987106323	0.21759816	Yes	
+row_2	AMPH	AMPH	amphiphysin (Stiff-Man syndrome with breast cancer 128kDa autoantigen)	665	0.9431192874908447	0.25515616	Yes	
+row_3	PPT1	PPT1	palmitoyl-protein thioesterase 1 (ceroid-lipofuscinosis, neuronal 1, infantile)	791	0.8522133827209473	0.29607758	Yes	
+row_4	DMXL2	DMXL2	Dmx-like 2	871	0.7995785474777222	0.33759668	Yes	
+row_5	SEPT5	SEPT5	septin 5	875	0.7964971661567688	0.38513553	Yes	
+row_6	AP1G2	AP1G2	adaptor-related protein complex 1, gamma 2 subunit	1005	0.7329139709472656	0.41857332	Yes	
+row_7	AP3B2	AP3B2	adaptor-related protein complex 3, beta 2 subunit	1118	0.6879446506500244	0.45070115	Yes	
+row_8	SLC30A3	SLC30A3	solute carrier family 30 (zinc transporter), member 3	1164	0.6679034233093262	0.4870965	Yes	
+row_9	NECAP2	NECAP2	NECAP endocytosis associated 2	1568	0.5285957455635071	0.48590755	Yes	
+row_10	IGF2R	IGF2R	insulin-like growth factor 2 receptor	1719	0.49350062012672424	0.50326794	Yes	
+row_11	AP1S1	AP1S1	adaptor-related protein complex 1, sigma 1 subunit	1780	0.4777923822402954	0.5270335	Yes	
+row_12	COPB2	COPB2	coatomer protein complex, subunit beta 2 (beta prime)	2062	0.41283029317855835	0.5288595	Yes	
+row_13	COPG2	COPG2	coatomer protein complex, subunit gamma 2	2306	0.36634165048599243	0.5309989	Yes	
+row_14	SYN3	SYN3	synapsin III	2964	0.2748842239379883	0.4938528	No	
+row_15	RAB35	RAB35	RAB35, member RAS oncogene family	3036	0.26512181758880615	0.5039617	No	
+row_16	HCRT	HCRT	hypocretin (orexin) neuropeptide precursor	3219	0.2412804663181305	0.5035783	No	
+row_17	SPG21	SPG21	spastic paraplegia 21, maspardin (autosomal recessive, Mast syndrome)	3455	0.21825942397117615	0.49748698	No	
+row_18	AP2S1	AP2S1	adaptor-related protein complex 2, sigma 1 subunit	3633	0.20058543980121613	0.49507043	No	
+row_19	COPB1	COPB1	coatomer protein complex, subunit beta 1	4345	0.13389356434345245	0.44505748	No	
+row_20	RAB3A	RAB3A	RAB3A, member RAS oncogene family	4398	0.1303718537092209	0.44863355	No	
+row_21	COPE	COPE	coatomer protein complex, subunit epsilon	4513	0.12155569344758987	0.4466191	No	
+row_22	TRAPPC4	TRAPPC4	trafficking protein particle complex 4	4568	0.11803242564201355	0.44929162	No	
+row_23	MALL	MALL	mal, T-cell differentiation protein-like	4710	0.10485801100730896	0.44407114	No	
+row_24	COPZ1	COPZ1	coatomer protein complex, subunit zeta 1	5347	0.053190890699625015	0.39533958	No	
+row_25	GOPC	GOPC	golgi associated PDZ and coiled-coil motif containing	5555	0.038073357194662094	0.38072437	No	
+row_26	ATP7A	ATP7A	ATPase, Cu++ transporting, alpha polypeptide (Menkes syndrome)	6236	-0.01618620939552784	0.32618067	No	
+row_27	CLN3	CLN3	ceroid-lipofuscinosis, neuronal 3, juvenile (Batten, Spielmeyer-Vogt disease)	6407	-0.029385719448328018	0.31406492	No	
+row_28	STX6	STX6	syntaxin 6	6934	-0.07079699635505676	0.2753699	No	
+row_29	COPA	COPA	coatomer protein complex, subunit alpha	7031	-0.07888980954885483	0.27226532	No	
+row_30	LDLRAP1	LDLRAP1	low density lipoprotein receptor adaptor protein 1	7068	-0.08157922327518463	0.27422044	No	
+row_31	STEAP2	STEAP2	six transmembrane epithelial antigen of the prostate 2	7086	-0.08323262631893158	0.2778259	No	
+row_32	EGFR	EGFR	epidermal growth factor receptor (erythroblastic leukemia viral (v-erb-b) oncogene homolog, avian)	7141	-0.08783623576164246	0.27868688	No	
+row_33	FURIN	FURIN	furin (paired basic amino acid cleaving enzyme)	7550	-0.11145303398370743	0.25206438	No	
+row_34	AFTPH	AFTPH	aftiphilin	7595	-0.11452317237854004	0.25534275	No	
+row_35	RAB14	RAB14	RAB14, member RAS oncogene family	7856	-0.13033391535282135	0.24193558	No	
+row_36	MYO6	MYO6	myosin VI	8314	-0.1684446781873703	0.21473181	No	
+row_37	AP1G1	AP1G1	adaptor-related protein complex 1, gamma 1 subunit	8997	-0.22895853221416473	0.17278956	No	
+row_38	VWF	VWF	von Willebrand factor	9301	-0.2582661807537079	0.16354686	No	
+row_39	ARCN1	ARCN1	archain 1	9721	-0.2980605959892273	0.14722134	No	
+row_40	APBA1	APBA1	amyloid beta (A4) precursor protein-binding, family A, member 1 (X11)	10907	-0.4542282223701477	0.077728994	No	
+row_41	ICA1	ICA1	islet cell autoantigen 1, 69kDa	11444	-0.5850154757499695	0.069066785	No	

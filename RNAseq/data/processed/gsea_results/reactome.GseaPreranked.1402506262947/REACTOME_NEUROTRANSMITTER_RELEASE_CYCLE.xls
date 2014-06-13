@@ -1,0 +1,32 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SYN1	SYN1	synapsin I	67	2.3857054710388184	0.11811025	Yes	
+row_1	SLC1A1	SLC1A1	solute carrier family 1 (neuronal/epithelial high affinity glutamate transporter, system Xag), member 1	82	2.27948260307312	0.23504135	Yes	
+row_2	ABAT	ABAT	4-aminobutyrate aminotransferase	134	1.8950647115707397	0.32904235	Yes	
+row_3	SLC17A7	SLC17A7	solute carrier family 17 (sodium-dependent inorganic phosphate cotransporter), member 7	182	1.7039085626602173	0.4134681	Yes	
+row_4	SYN2	SYN2	synapsin II	223	1.5807305574417114	0.49208438	Yes	
+row_5	SNAP25	SNAP25	synaptosomal-associated protein, 25kDa	308	1.3932636976242065	0.55740136	Yes	
+row_6	SLC22A2	SLC22A2	solute carrier family 22 (organic cation transporter), member 2	945	0.762710452079773	0.5450323	No	
+row_7	MAOA	MAOA	monoamine oxidase A	1227	0.6437053084373474	0.555455	No	
+row_8	SLC1A7	SLC1A7	solute carrier family 1 (glutamate transporter), member 7	2027	0.4222312569618225	0.5121545	No	
+row_9	SYN3	SYN3	synapsin III	2964	0.2748842239379883	0.4500472	No	
+row_10	DNAJC5	DNAJC5	DnaJ (Hsp40) homolog, subfamily C, member 5	3062	0.2617722153663635	0.45569462	No	
+row_11	GLS2	GLS2	glutaminase 2 (liver, mitochondrial)	3395	0.22422999143600464	0.4402294	No	
+row_12	STXBP1	STXBP1	syntaxin binding protein 1	3571	0.20712749660015106	0.43668413	No	
+row_13	CHAT	CHAT	choline acetyltransferase	4064	0.16061563789844513	0.40487322	No	
+row_14	RAB3A	RAB3A	RAB3A, member RAS oncogene family	4398	0.1303718537092209	0.38446477	No	
+row_15	GAD2	GAD2	glutamate decarboxylase 2 (pancreatic islets and brain, 65kDa)	4785	0.09737344831228256	0.35802403	No	
+row_16	GLS	GLS	glutaminase	4865	0.08998572826385498	0.3562414	No	
+row_17	UNC13B	UNC13B	unc-13 homolog B (C. elegans)	4973	0.08190888911485672	0.35175657	No	
+row_18	HSPA8	HSPA8	heat shock 70kDa protein 8	4982	0.08126166462898254	0.35531324	No	
+row_19	SLC38A2	SLC38A2	solute carrier family 38, member 2	5673	0.02697053924202919	0.30042967	No	
+row_20	SLC6A12	SLC6A12	solute carrier family 6 (neurotransmitter transporter, betaine/GABA), member 12	5767	0.0192034300416708	0.29383874	No	
+row_21	ALDH5A1	ALDH5A1	aldehyde dehydrogenase 5 family, member A1 (succinate-semialdehyde dehydrogenase)	6047	-0.0033542413730174303	0.27125555	No	
+row_22	SLC18A2	SLC18A2	solute carrier family 18 (vesicular monoamine), member 2	7065	-0.08133203536272049	0.1925157	No	
+row_23	SLC6A11	SLC6A11	solute carrier family 6 (neurotransmitter transporter, GABA), member 11	7410	-0.10353856533765793	0.16982009	No	
+row_24	SLC6A1	SLC6A1	solute carrier family 6 (neurotransmitter transporter, GABA), member 1	7843	-0.12935572862625122	0.14128393	No	
+row_25	VAMP2	VAMP2	vesicle-associated membrane protein 2 (synaptobrevin 2)	10467	-0.38769716024398804	-0.05258186	No	
+row_26	GAD1	GAD1	glutamate decarboxylase 1 (brain, 67kDa)	11163	-0.5082876682281494	-0.08294191	No	
+row_27	SYT1	SYT1	synaptotagmin I	11616	-0.6504489183425903	-0.08611771	No	
+row_28	STX1A	STX1A	syntaxin 1A (brain)	11811	-0.7427799701690674	-0.063466884	No	
+row_29	SLC5A7	SLC5A7	solute carrier family 5 (choline transporter), member 7	12016	-0.9083296060562134	-0.033056553	No	
+row_30	RIMS1	RIMS1	regulating synaptic membrane exocytosis 1	12153	-1.0680692195892334	0.01117449	No	

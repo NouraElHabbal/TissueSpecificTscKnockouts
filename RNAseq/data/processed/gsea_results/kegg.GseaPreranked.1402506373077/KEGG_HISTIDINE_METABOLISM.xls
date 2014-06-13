@@ -1,0 +1,27 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ALDH1B1	ALDH1B1	aldehyde dehydrogenase 1 family, member B1	335	1.3286974430084229	0.105664454	Yes	
+row_1	DDC	DDC	dopa decarboxylase (aromatic L-amino acid decarboxylase)	427	1.1866601705551147	0.21700762	Yes	
+row_2	UROC1	UROC1	urocanase domain containing 1	1029	0.7246866226196289	0.24053407	Yes	
+row_3	MAOA	MAOA	monoamine oxidase A	1227	0.6437053084373474	0.28889507	Yes	
+row_4	HAL	HAL	histidine ammonia-lyase	1694	0.4983961284160614	0.30078095	Yes	
+row_5	ALDH3B1	ALDH3B1	aldehyde dehydrogenase 3 family, member B1	1831	0.46537670493125916	0.33626807	Yes	
+row_6	HDC	HDC	histidine decarboxylase	1857	0.4595446288585663	0.38022164	Yes	
+row_7	MAOB	MAOB	monoamine oxidase B	1914	0.4464569091796875	0.42033786	Yes	
+row_8	ACY3	ACY3	aspartoacylase (aminocyclase) 3	1924	0.4453093111515045	0.46417123	Yes	
+row_9	ASPA	ASPA	aspartoacylase (Canavan disease)	2103	0.40536049008369446	0.49022746	Yes	
+row_10	METTL6	METTL6	methyltransferase like 6	2541	0.33059924840927124	0.48768446	No	
+row_11	HNMT	HNMT	histamine N-methyltransferase	2999	0.2707277238368988	0.4775188	No	
+row_12	AMDHD1	AMDHD1	amidohydrolase domain containing 1	3744	0.18967260420322418	0.43584108	No	
+row_13	ALDH9A1	ALDH9A1	aldehyde dehydrogenase 9 family, member A1	3811	0.18404988944530487	0.4488799	No	
+row_14	ALDH7A1	ALDH7A1	aldehyde dehydrogenase 7 family, member A1	4886	0.08821678161621094	0.37014252	No	
+row_15	ALDH2	ALDH2	aldehyde dehydrogenase 2 family (mitochondrial)	4890	0.08794112503528595	0.37869918	No	
+row_16	ALDH1A3	ALDH1A3	aldehyde dehydrogenase 1 family, member A3	5095	0.07229650765657425	0.36930203	No	
+row_17	LCMT2	LCMT2	leucine carboxyl methyltransferase 2	5386	0.050951410084962845	0.3507568	No	
+row_18	HEMK1	HEMK1	HemK methyltransferase family member 1	5559	0.03774084523320198	0.3405103	No	
+row_19	ALDH3A2	ALDH3A2	aldehyde dehydrogenase 3 family, member A2	5750	0.020385373383760452	0.32705927	No	
+row_20	WBSCR22	WBSCR22	Williams Beuren syndrome chromosome region 22	7148	-0.08835803717374802	0.22200093	No	
+row_21	LCMT1	LCMT1	leucine carboxyl methyltransferase 1	8140	-0.15438610315322876	0.15665309	No	
+row_22	ALDH3B2	ALDH3B2	aldehyde dehydrogenase 3 family, member B2	8812	-0.21155181527137756	0.123116985	No	
+row_23	CNDP1	CNDP1	carnosine dipeptidase 1 (metallopeptidase M20 family)	9635	-0.29061856865882874	0.08518253	No	
+row_24	ALDH3A1	ALDH3A1	aldehyde dehydrogenase 3 family, memberA1	9910	-0.3191046714782715	0.09477899	No	
+row_25	FTCD	FTCD	formiminotransferase cyclodeaminase	12097	-0.9910696744918823	0.015735924	No	

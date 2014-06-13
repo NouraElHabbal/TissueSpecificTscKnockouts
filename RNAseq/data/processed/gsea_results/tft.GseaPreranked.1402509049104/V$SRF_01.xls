@@ -1,0 +1,46 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	FOSB	FOSB	FBJ murine osteosarcoma viral oncogene homolog B	13	3.0559182167053223	0.105216816	Yes	
+row_1	MRVI1	MRVI1	murine retrovirus integration site 1 homolog	74	2.3125550746917725	0.18074304	Yes	
+row_2	FOSL1	FOSL1	FOS-like antigen 1	85	2.251105308532715	0.25821516	Yes	
+row_3	EGR1	EGR1	early growth response 1	120	1.9605927467346191	0.323624	Yes	
+row_4	FOS	FOS	v-fos FBJ murine osteosarcoma viral oncogene homolog	171	1.7316430807113647	0.37976393	Yes	
+row_5	TNNC1	TNNC1	troponin C type 1 (slow)	274	1.4442036151885986	0.42166105	Yes	
+row_6	NPAS4	NPAS4	neuronal PAS domain protein 4	662	0.9443489909172058	0.42290136	Yes	
+row_7	WDR1	WDR1	WD repeat domain 1	719	0.8986099362373352	0.4495802	Yes	
+row_8	ITGB1BP2	ITGB1BP2	integrin beta 1 binding protein (melusin) 2	753	0.8779722452163696	0.47741947	Yes	
+row_9	JUNB	JUNB	jun B proto-oncogene	814	0.8369075059890747	0.5016258	Yes	
+row_10	IER2	IER2	immediate early response 2	1078	0.7043551206588745	0.50464535	Yes	
+row_11	IL17B	IL17B	interleukin 17B	1240	0.6398623585700989	0.51375127	Yes	
+row_12	EGR2	EGR2	early growth response 2 (Krox-20 homolog, Drosophila)	1244	0.6382997035980225	0.53570503	Yes	
+row_13	THBS1	THBS1	thrombospondin 1	1596	0.5212647318840027	0.5251711	No	
+row_14	ACTR3	ACTR3	ARP3 actin-related protein 3 homolog (yeast)	1912	0.4466519355773926	0.514982	No	
+row_15	ANXA6	ANXA6	annexin A6	2220	0.38161543011665344	0.5031844	No	
+row_16	SCOC	SCOC	short coiled-coil protein	3529	0.21100711822509766	0.40371236	No	
+row_17	PLCB3	PLCB3	phospholipase C, beta 3 (phosphatidylinositol-specific)	3554	0.20848292112350464	0.40900314	No	
+row_18	PFN1	PFN1	profilin 1	3875	0.1775016039609909	0.3890453	No	
+row_19	CAP1	CAP1	CAP, adenylate cyclase-associated protein 1 (yeast)	4366	0.132732093334198	0.35364836	No	
+row_20	EGR3	EGR3	early growth response 3	4688	0.10698077082633972	0.33115628	No	
+row_21	MYL6	MYL6	myosin, light chain 6, alkali, smooth muscle and non-muscle	5703	0.02471667155623436	0.24921334	No	
+row_22	ACTN1	ACTN1	actinin, alpha 1	6826	-0.06387874484062195	0.15981315	No	
+row_23	CFL1	CFL1	cofilin 1 (non-muscle)	7425	-0.10460972040891647	0.11461899	No	
+row_24	SLC25A4	SLC25A4	solute carrier family 25 (mitochondrial carrier; adenine nucleotide translocator), member 4	7902	-0.13424214720726013	0.08041781	No	
+row_25	VCL	VCL	vinculin	7938	-0.13756735622882843	0.08234404	No	
+row_26	TAZ	TAZ	tafazzin (cardiomyopathy, dilated 3A (X-linked); endocardial fibroelastosis 2; Barth syndrome)	8562	-0.1913243532180786	0.038124144	No	
+row_27	CNN2	CNN2	calponin 2	8788	-0.20942413806915283	0.027034126	No	
+row_28	TGFB1I1	TGFB1I1	transforming growth factor beta 1 induced transcript 1	8824	-0.21263842284679413	0.031571165	No	
+row_29	TNMD	TNMD	tenomodulin	9062	-0.23493553698062897	0.020388471	No	
+row_30	SETD2	SETD2	SET domain containing 2	9179	-0.2463570237159729	0.019483767	No	
+row_31	ASB2	ASB2	ankyrin repeat and SOCS box-containing 2	9245	-0.25382959842681885	0.023003569	No	
+row_32	ACTG2	ACTG2	actin, gamma 2, smooth muscle, enteric	9362	-0.2646694481372833	0.022735734	No	
+row_33	CALD1	CALD1	caldesmon 1	10053	-0.3369080126285553	-0.021892244	No	
+row_34	DIXDC1	DIXDC1	DIX domain containing 1	10066	-0.3381078541278839	-0.011113479	No	
+row_35	SUSD1	SUSD1	sushi domain containing 1	10218	-0.35561102628707886	-0.011076635	No	
+row_36	MUS81	MUS81	MUS81 endonuclease homolog (S. cerevisiae)	10686	-0.4196154773235321	-0.034618195	No	
+row_37	FLNA	FLNA	filamin A, alpha (actin binding protein 280)	11038	-0.48214009404182434	-0.046512797	No	
+row_38	KCNMB1	KCNMB1	potassium large conductance calcium-activated channel, subfamily M, beta member 1	11086	-0.4910677373409271	-0.03327249	No	
+row_39	TPM1	TPM1	tropomyosin 1 (alpha)	11291	-0.5388087034225464	-0.031192359	No	
+row_40	HOXB4	HOXB4	homeobox B4	11340	-0.5518302917480469	-0.015920512	No	
+row_41	MYH11	MYH11	myosin, heavy chain 11, smooth muscle	11598	-0.6437281370162964	-0.01451945	No	
+row_42	GPR20	GPR20	G protein-coupled receptor 20	11631	-0.6545835137367249	0.005632485	No	
+row_43	CD248	CD248	CD248 molecule, endosialin	11648	-0.6610448360443115	0.02731568	No	
+row_44	PRM1	PRM1	protamine 1	11767	-0.7196511626243591	0.04270783	No	

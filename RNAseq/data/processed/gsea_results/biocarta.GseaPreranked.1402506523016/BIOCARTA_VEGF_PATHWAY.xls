@@ -1,0 +1,27 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SHC1	SHC1	SHC (Src homology 2 domain containing) transforming protein 1	2088	0.4082055687904358	-0.09748677	No	
+row_1	PIK3R1	PIK3R1	phosphoinositide-3-kinase, regulatory subunit 1 (p85 alpha)	2516	0.33521708846092224	-0.072556145	No	
+row_2	EIF2B5	EIF2B5	eukaryotic translation initiation factor 2B, subunit 5 epsilon, 82kDa	3873	0.1776701956987381	-0.1514488	No	
+row_3	EIF2B4	EIF2B4	eukaryotic translation initiation factor 2B, subunit 4 delta, 67kDa	4551	0.1196189671754837	-0.18532705	No	
+row_4	HIF1A	HIF1A	hypoxia-inducible factor 1, alpha subunit (basic helix-loop-helix transcription factor)	4587	0.11641017347574234	-0.16743311	No	
+row_5	EIF2S1	EIF2S1	eukaryotic translation initiation factor 2, subunit 1 alpha, 35kDa	4787	0.09717004746198654	-0.1663397	No	
+row_6	PIK3CG	PIK3CG	phosphoinositide-3-kinase, catalytic, gamma polypeptide	5556	0.03785887360572815	-0.2222094	No	
+row_7	PIK3CA	PIK3CA	phosphoinositide-3-kinase, catalytic, alpha polypeptide	5561	0.037434644997119904	-0.21586362	No	
+row_8	EIF2B1	EIF2B1	eukaryotic translation initiation factor 2B, subunit 1 alpha, 26kDa	5668	0.02761157415807247	-0.21958493	No	
+row_9	ELAVL1	ELAVL1	ELAV (embryonic lethal, abnormal vision, Drosophila)-like 1 (Hu antigen R)	5771	0.018629398196935654	-0.22458099	No	
+row_10	ARNT	ARNT	aryl hydrocarbon receptor nuclear translocator	5966	0.00384687096811831	-0.23971273	No	
+row_11	HRAS	HRAS	v-Ha-ras Harvey rat sarcoma viral oncogene homolog	7212	-0.09028203040361404	-0.32513028	No	
+row_12	EIF2B3	EIF2B3	eukaryotic translation initiation factor 2B, subunit 3 gamma, 58kDa	7540	-0.1111387088894844	-0.33198348	No	
+row_13	PTK2	PTK2	PTK2 protein tyrosine kinase 2	7700	-0.12127107381820679	-0.32333326	No	
+row_14	PLCG1	PLCG1	phospholipase C, gamma 1	8106	-0.15153299272060394	-0.3293466	No	
+row_15	VHL	VHL	von Hippel-Lindau tumor suppressor	8725	-0.20440858602523804	-0.3433025	No	
+row_16	EIF1AX	EIF1AX	eukaryotic translation initiation factor 1A, X-linked	9295	-0.25786542892456055	-0.34373578	Yes	
+row_17	PXN	PXN	paxillin	9312	-0.2595752477645874	-0.29877666	Yes	
+row_18	EIF2S2	EIF2S2	eukaryotic translation initiation factor 2, subunit 2 beta, 38kDa	9325	-0.261792927980423	-0.25309616	Yes	
+row_19	PRKCA	PRKCA	protein kinase C, alpha	9564	-0.28363507986068726	-0.22194922	Yes	
+row_20	EIF2B2	EIF2B2	eukaryotic translation initiation factor 2B, subunit 2 beta, 39kDa	9753	-0.30164164304733276	-0.18351634	Yes	
+row_21	FLT4	FLT4	fms-related tyrosine kinase 4	9950	-0.3234539031982422	-0.14184816	Yes	
+row_22	NOS3	NOS3	nitric oxide synthase 3 (endothelial cell)	10257	-0.36081936955451965	-0.10248901	Yes	
+row_23	EIF1	EIF1	eukaryotic translation initiation factor 1	10585	-0.40319573879241943	-0.057289384	Yes	
+row_24	FLT1	FLT1	fms-related tyrosine kinase 1 (vascular endothelial growth factor/vascular permeability factor receptor)	11221	-0.5199674963951111	-0.016389845	Yes	
+row_25	KDR	KDR	kinase insert domain receptor (a type III receptor tyrosine kinase)	11430	-0.58053058385849	0.070118256	Yes	

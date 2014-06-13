@@ -1,0 +1,19 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ZAP70	ZAP70	zeta-chain (TCR) associated protein kinase 70kDa	353	1.3082386255264282	0.14365843	No	
+row_1	PRKAR1A	PRKAR1A	protein kinase, cAMP-dependent, regulatory, type I, alpha (tissue specific extinguisher 1)	1362	0.5887793898582458	0.13912575	No	
+row_2	PRKAR1B	PRKAR1B	protein kinase, cAMP-dependent, regulatory, type I, beta	1368	0.5875228643417358	0.21615158	No	
+row_3	GNB1	GNB1	guanine nucleotide binding protein (G protein), beta polypeptide 1	3013	0.2693782448768616	0.117702	No	
+row_4	CD3D	CD3D	CD3d molecule, delta (CD3-TCR complex)	4227	0.14483845233917236	0.037956297	No	
+row_5	CSK	CSK	c-src tyrosine kinase	4315	0.13627466559410095	0.048828036	No	
+row_6	GNAS	GNAS	GNAS complex locus	5007	0.07925403118133545	0.0029709532	No	
+row_7	PTPRC	PTPRC	protein tyrosine phosphatase, receptor type, C	5116	0.0707264393568039	0.0034926175	No	
+row_8	ADCY1	ADCY1	adenylate cyclase 1 (brain)	5569	0.03637872263789177	-0.02854162	No	
+row_9	CD3E	CD3E	CD3e molecule, epsilon (CD3-TCR complex)	5687	0.02632281742990017	-0.0346055	No	
+row_10	PRKACB	PRKACB	protein kinase, cAMP-dependent, catalytic, beta	6240	-0.016568588092923164	-0.077398606	No	
+row_11	PRKAR2A	PRKAR2A	protein kinase, cAMP-dependent, regulatory, type II, alpha	7562	-0.11238298565149307	-0.17022161	No	
+row_12	CD4	CD4	CD4 molecule	9215	-0.25102847814559937	-0.27174145	No	
+row_13	CREBBP	CREBBP	CREB binding protein (Rubinstein-Taybi syndrome)	10035	-0.33478039503097534	-0.29435056	No	
+row_14	CD3G	CD3G	CD3g molecule, gamma (CD3-TCR complex)	11468	-0.5918381214141846	-0.33302748	Yes	
+row_15	CD247	CD247	CD247 molecule	11758	-0.7165600657463074	-0.2621353	Yes	
+row_16	LCK	LCK	lymphocyte-specific protein tyrosine kinase	12035	-0.9228755235671997	-0.16299228	Yes	
+row_17	PRKAR2B	PRKAR2B	protein kinase, cAMP-dependent, regulatory, type II, beta	12250	-1.393729567527771	0.0032592076	Yes	

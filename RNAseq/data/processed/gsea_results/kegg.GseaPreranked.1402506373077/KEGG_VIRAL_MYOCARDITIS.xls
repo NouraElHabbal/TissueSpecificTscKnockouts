@@ -1,0 +1,51 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MYH7	MYH7	myosin, heavy chain 7, cardiac muscle, beta	225	1.5741980075836182	0.054404087	Yes	
+row_1	MYH15	MYH15	myosin, heavy chain 15	270	1.4498951435089111	0.11784725	Yes	
+row_2	BID	BID	BH3 interacting domain death agonist	318	1.3637800216674805	0.1770637	Yes	
+row_3	ITGAL	ITGAL	integrin, alpha L (antigen CD11A (p180), lymphocyte function-associated antigen 1; alpha polypeptide)	345	1.3146353960037231	0.23572344	Yes	
+row_4	MYH10	MYH10	myosin, heavy chain 10, non-muscle	463	1.1350065469741821	0.2786438	Yes	
+row_5	CASP3	CASP3	caspase 3, apoptosis-related cysteine peptidase	502	1.1043399572372437	0.32659996	Yes	
+row_6	MYH6	MYH6	myosin, heavy chain 6, cardiac muscle, alpha (cardiomyopathy, hypertrophic 1)	619	0.9886600971221924	0.3628355	Yes	
+row_7	MYH7B	MYH7B	myosin, heavy chain 7B, cardiac muscle, beta	794	0.8505894541740417	0.387949	Yes	
+row_8	CXADR	CXADR	coxsackie virus and adenovirus receptor	1333	0.6011497974395752	0.3717932	Yes	
+row_9	MYH3	MYH3	myosin, heavy chain 3, skeletal muscle, embryonic	1548	0.5326167941093445	0.37893716	Yes	
+row_10	CD28	CD28	CD28 molecule	1725	0.4924767017364502	0.3873295	Yes	
+row_11	CASP9	CASP9	caspase 9, apoptosis-related cysteine peptidase	1848	0.46170568466186523	0.39871052	Yes	
+row_12	FYN	FYN	FYN oncogene related to SRC, FGR, YES	1939	0.4431076943874359	0.4118458	Yes	
+row_13	PRF1	PRF1	perforin 1 (pore forming protein)	2138	0.39797312021255493	0.4140714	Yes	
+row_14	ITGB2	ITGB2	integrin, beta 2 (complement component 3 receptor 3 and 4 subunit)	2240	0.3783566951751709	0.4233142	Yes	
+row_15	SGCD	SGCD	sarcoglycan, delta (35kDa dystrophin-associated glycoprotein)	3332	0.2326190173625946	0.34494293	No	
+row_16	MYH1	MYH1	myosin, heavy chain 1, skeletal muscle, adult	3564	0.20736995339393616	0.33565992	No	
+row_17	MYH9	MYH9	myosin, heavy chain 9, non-muscle	3611	0.2035650908946991	0.34131414	No	
+row_18	MYH14	MYH14	myosin, heavy chain 14	3687	0.19519123435020447	0.34421209	No	
+row_19	ABL2	ABL2	v-abl Abelson murine leukemia viral oncogene homolog 2 (arg, Abelson-related gene)	3738	0.18985874950885773	0.3489058	No	
+row_20	DAG1	DAG1	dystroglycan 1 (dystrophin-associated glycoprotein 1)	4005	0.16558222472667694	0.33483145	No	
+row_21	SGCG	SGCG	sarcoglycan, gamma (35kDa dystrophin-associated glycoprotein)	4948	0.08317629992961884	0.2617227	No	
+row_22	SGCB	SGCB	sarcoglycan, beta (43kDa dystrophin-associated glycoprotein)	4992	0.08034397661685944	0.26192474	No	
+row_23	EIF4G2	EIF4G2	eukaryotic translation initiation factor 4 gamma, 2	5686	0.02633068524301052	0.20652914	No	
+row_24	CCND1	CCND1	cyclin D1	5821	0.01503006648272276	0.19627726	No	
+row_25	LAMA2	LAMA2	laminin, alpha 2 (merosin, congenital muscular dystrophy)	5849	0.012505504302680492	0.19464976	No	
+row_26	MYH8	MYH8	myosin, heavy chain 8, skeletal muscle, perinatal	5994	0.0015812469646334648	0.18295912	No	
+row_27	CYCS	CYCS	cytochrome c, somatic	6753	-0.0569189079105854	0.1236678	No	
+row_28	ACTB	ACTB	actin, beta	6790	-0.06059945747256279	0.123528756	No	
+row_29	ICAM1	ICAM1	intercellular adhesion molecule 1 (CD54), human rhinovirus receptor	6986	-0.07518154382705688	0.11107479	No	
+row_30	RAC2	RAC2	ras-related C3 botulinum toxin substrate 2 (rho family, small GTP binding protein Rac2)	7022	-0.07823500037193298	0.111832835	No	
+row_31	CD55	CD55	CD55 molecule, decay accelerating factor for complement (Cromer blood group)	7054	-0.08057507872581482	0.11302585	No	
+row_32	CD40LG	CD40LG	CD40 ligand (TNF superfamily, member 5, hyper-IgM syndrome)	7461	-0.10722845047712326	0.08481646	No	
+row_33	EIF4G1	EIF4G1	eukaryotic translation initiation factor 4 gamma, 1	7707	-0.12176862359046936	0.07043187	No	
+row_34	EIF4G3	EIF4G3	eukaryotic translation initiation factor 4 gamma, 3	8518	-0.18768185377120972	0.01293851	No	
+row_35	CD80	CD80	CD80 molecule	8567	-0.1923946738243103	0.01791286	No	
+row_36	ACTG1	ACTG1	actin, gamma 1	8605	-0.196084663271904	0.023956442	No	
+row_37	MYH2	MYH2	myosin, heavy chain 2, skeletal muscle, adult	8785	-0.20910054445266724	0.019001469	No	
+row_38	RAC1	RAC1	ras-related C3 botulinum toxin substrate 1 (rho family, small GTP binding protein Rac1)	9204	-0.24968712031841278	-0.003601484	No	
+row_39	DMD	DMD	dystrophin (muscular dystrophy, Duchenne and Becker types)	9756	-0.30182623863220215	-0.034658846	No	
+row_40	CD40	CD40	CD40 molecule, TNF receptor superfamily member 5	9872	-0.3147928714752197	-0.029498676	No	
+row_41	CD86	CD86	CD86 molecule	10392	-0.37807324528694153	-0.054416504	No	
+row_42	RAC3	RAC3	ras-related C3 botulinum toxin substrate 3 (rho family, small GTP binding protein Rac3)	10680	-0.41860294342041016	-0.05850769	No	
+row_43	SGCA	SGCA	sarcoglycan, alpha (50kDa dystrophin-associated glycoprotein)	10734	-0.4282834231853485	-0.0430352	No	
+row_44	ABL1	ABL1	v-abl Abelson murine leukemia viral oncogene homolog 1	10962	-0.46565118432044983	-0.040049497	No	
+row_45	CAV1	CAV1	caveolin 1, caveolae protein, 22kDa	11190	-0.5135194659233093	-0.034850545	No	
+row_46	CASP8	CASP8	caspase 8, apoptosis-related cysteine peptidase	11243	-0.5246571898460388	-0.014840407	No	
+row_47	MYH11	MYH11	myosin, heavy chain 11, smooth muscle	11598	-0.6437281370162964	-0.013996068	No	
+row_48	MYH13	MYH13	myosin, heavy chain 13, skeletal muscle	11683	-0.6751852631568909	0.010359749	No	
+row_49	MYH4	MYH4	myosin, heavy chain 4, skeletal muscle	11959	-0.846651017665863	0.027040193	No	

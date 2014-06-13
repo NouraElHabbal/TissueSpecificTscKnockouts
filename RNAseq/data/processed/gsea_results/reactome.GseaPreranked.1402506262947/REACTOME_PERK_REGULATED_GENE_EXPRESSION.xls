@@ -1,0 +1,25 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ATF3	ATF3	activating transcription factor 3	153	1.789687156677246	0.19588646	Yes	
+row_1	ASNS	ASNS	asparagine synthetase	338	1.3247499465942383	0.3351169	Yes	
+row_2	HSPA5	HSPA5	heat shock 70kDa protein 5 (glucose-regulated protein, 78kDa)	866	0.802093505859375	0.38553742	Yes	
+row_3	DDIT3	DDIT3	DNA-damage-inducible transcript 3	939	0.7640052437782288	0.46861503	Yes	
+row_4	EXOSC9	EXOSC9	exosome component 9	1748	0.48734837770462036	0.45948532	Yes	
+row_5	CCL2	CCL2	chemokine (C-C motif) ligand 2	1867	0.4563421905040741	0.5029943	Yes	
+row_6	ATF6	ATF6	activating transcription factor 6	2131	0.3988533914089203	0.52799	Yes	
+row_7	HERPUD1	HERPUD1	homocysteine-inducible, endoplasmic reticulum stress-inducible, ubiquitin-like domain member 1	4094	0.15791843831539154	0.38643384	No	
+row_8	ATF4	ATF4	activating transcription factor 4 (tax-responsive enhancer element B67)	4138	0.15443101525306702	0.40090767	No	
+row_9	EIF2S1	EIF2S1	eukaryotic translation initiation factor 2, subunit 1 alpha, 35kDa	4787	0.09717004746198654	0.35939574	No	
+row_10	PARN	PARN	poly(A)-specific ribonuclease (deadenylation nuclease)	4900	0.08708199113607407	0.36040384	No	
+row_11	EXOSC4	EXOSC4	exosome component 4	5356	0.052755795419216156	0.32945436	No	
+row_12	EIF2AK3	EIF2AK3	eukaryotic translation initiation factor 2-alpha kinase 3	5460	0.045562561601400375	0.32636234	No	
+row_13	DCP2	DCP2	DCP2 decapping enzyme homolog (S. cerevisiae)	5865	0.011137954890727997	0.29472515	No	
+row_14	EXOSC7	EXOSC7	exosome component 7	5920	0.005996175576001406	0.2910212	No	
+row_15	EXOSC2	EXOSC2	exosome component 2	5991	0.0019152729073539376	0.2855378	No	
+row_16	KHSRP	KHSRP	KH-type splicing regulatory protein (FUSE binding protein 2)	7455	-0.10689426213502884	0.1787196	No	
+row_17	IGFBP1	IGFBP1	insulin-like growth factor binding protein 1	8646	-0.19883903861045837	0.1048606	No	
+row_18	NFYB	NFYB	nuclear transcription factor Y, beta	8942	-0.2230207771062851	0.106776856	No	
+row_19	EXOSC3	EXOSC3	exosome component 3	9021	-0.2310851514339447	0.12732174	No	
+row_20	NFYA	NFYA	nuclear transcription factor Y, alpha	9143	-0.24250948429107666	0.1456913	No	
+row_21	EXOSC8	EXOSC8	exosome component 8	9420	-0.27080023288726807	0.15471902	No	
+row_22	EXOSC5	EXOSC5	exosome component 5	9918	-0.319707453250885	0.1514248	No	
+row_23	EXOSC1	EXOSC1	exosome component 1	10251	-0.359537810087204	0.16621843	No	

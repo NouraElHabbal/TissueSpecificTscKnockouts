@@ -1,0 +1,45 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	RPA3	RPA3	replication protein A3, 14kDa	1923	0.44547370076179504	-0.111557096	No	
+row_1	PURB	PURB	purine-rich element binding protein B	2462	0.34139642119407654	-0.12064645	No	
+row_2	NTHL1	NTHL1	nth endonuclease III-like 1 (E. coli)	2545	0.32900604605674744	-0.09376663	No	
+row_3	XPC	XPC	xeroderma pigmentosum, complementation group C	2642	0.3137061595916748	-0.06959131	No	
+row_4	IGHMBP2	IGHMBP2	immunoglobulin mu binding protein 2	2769	0.2986633777618408	-0.049400713	No	
+row_5	APTX	APTX	aprataxin	3371	0.22738078236579895	-0.075269565	No	
+row_6	SMAD2	SMAD2	SMAD, mothers against DPP homolog 2 (Drosophila)	3373	0.22722217440605164	-0.052163012	No	
+row_7	XRCC6	XRCC6	X-ray repair complementing defective repair in Chinese hamster cells 6 (Ku autoantigen, 70kDa)	3784	0.18707498908042908	-0.06654944	No	
+row_8	MSH6	MSH6	mutS homolog 6 (E. coli)	4310	0.13676120340824127	-0.0954605	No	
+row_9	RBMS1	RBMS1	RNA binding motif, single stranded interacting protein 1	4465	0.12580405175685883	-0.0951966	No	
+row_10	TERF2IP	TERF2IP	telomeric repeat binding factor 2, interacting protein	4750	0.09992305934429169	-0.108188726	No	
+row_11	CGGBP1	CGGBP1	CGG triplet repeat binding protein 1	5010	0.07893071323633194	-0.12128182	No	
+row_12	RPA1	RPA1	replication protein A1, 70kDa	5227	0.06223156303167343	-0.13256802	No	
+row_13	ERCC5	ERCC5	me))	5663	0.0278170146048069	-0.16524817	No	
+row_14	MTERF	MTERF	mitochondrial transcription termination factor	5667	0.02763141132891178	-0.16267331	No	
+row_15	KIN	KIN	KIN, antigenic determinant of recA protein homolog (mouse)	5913	0.006397215183824301	-0.18202537	No	
+row_16	ERCC1	ERCC1	excision repair cross-complementing rodent repair deficiency, complementation group 1 (includes overlapping antisense sequence)	6034	-0.0020981377456337214	-0.19160958	No	
+row_17	MSH3	MSH3	mutS homolog 3 (E. coli)	6273	-0.01989922486245632	-0.20901218	No	
+row_18	ERCC4	ERCC4	excision repair cross-complementing rodent repair deficiency, complementation group 4	6358	-0.026368997991085052	-0.21318002	No	
+row_19	RAD23B	RAD23B	RAD23 homolog B (S. cerevisiae)	6758	-0.057619381695985794	-0.23987933	No	
+row_20	FOXC2	FOXC2	forkhead box C2 (MFH-1, mesenchyme forkhead 1)	6787	-0.06021896377205849	-0.2360202	No	
+row_21	PNKP	PNKP	polynucleotide kinase 3'-phosphatase	6849	-0.06513696163892746	-0.23435374	No	
+row_22	SATB1	SATB1	special AT-rich sequence binding protein 1 (binds to nuclear matrix/scaffold-associating DNA's)	6941	-0.07117563486099243	-0.2345206	No	
+row_23	MRE11A	MRE11A	MRE11 meiotic recombination 11 homolog A (S. cerevisiae)	7658	-0.11830106377601624	-0.28091118	No	
+row_24	MLH1	MLH1	mutL homolog 1, colon cancer, nonpolyposis type 2 (E. coli)	8037	-0.14445698261260986	-0.29703394	No	
+row_25	PURA	PURA	purine-rich element binding protein A	8466	-0.18115876615047455	-0.31349388	No	
+row_26	WBP11	WBP11	WW domain binding protein 11	8983	-0.22733823955059052	-0.33242658	Yes	
+row_27	TERF2	TERF2	telomeric repeat binding factor 2	8994	-0.2284281849861145	-0.3099318	Yes	
+row_28	TERF1	TERF1	telomeric repeat binding factor (NIMA-interacting) 1	9101	-0.23767632246017456	-0.29433194	Yes	
+row_29	RPA2	RPA2	replication protein A2, 32kDa	9180	-0.2464601695537567	-0.2755494	Yes	
+row_30	PMS2	PMS2	PMS2 postmeiotic segregation increased 2 (S. cerevisiae)	9218	-0.2512011229991913	-0.25293526	Yes	
+row_31	RAD23A	RAD23A	RAD23 homolog A (S. cerevisiae)	9225	-0.252210408449173	-0.22768691	Yes	
+row_32	FEN1	FEN1	flap structure-specific endonuclease 1	9239	-0.2532868981361389	-0.20290026	Yes	
+row_33	PCBP1	PCBP1	poly(rC) binding protein 1	9244	-0.2537951171398163	-0.17732687	Yes	
+row_34	FUBP1	FUBP1	far upstream element (FUSE) binding protein 1	9279	-0.2566746771335602	-0.1539092	Yes	
+row_35	RAD51	RAD51	RAD51 homolog (RecA homolog, E. coli) (S. cerevisiae)	9445	-0.2727096676826477	-0.13955165	Yes	
+row_36	HMGB2	HMGB2	high-mobility group box 2	9513	-0.2787192463874817	-0.11657886	Yes	
+row_37	SAFB	SAFB	scaffold attachment factor B	9621	-0.28878167271614075	-0.0958453	Yes	
+row_38	YBX1	YBX1	Y box binding protein 1	9969	-0.32623082399368286	-0.090886645	Yes	
+row_39	XRCC5	XRCC5	X-ray repair complementing defective repair in Chinese hamster cells 5 (double-strand-break rejoining; Ku autoantigen, 80kDa)	10203	-0.35392963886260986	-0.07379291	Yes	
+row_40	SUB1	SUB1	SUB1 homolog (S. cerevisiae)	10679	-0.4179382920265198	-0.06992698	Yes	
+row_41	RAD51AP1	RAD51AP1	RAD51 associated protein 1	10950	-0.4625430405139923	-0.044770308	Yes	
+row_42	MSH2	MSH2	mutS homolog 2, colon cancer, nonpolyposis type 1 (E. coli)	11367	-0.5594112277030945	-0.021649443	Yes	
+row_43	HLF	HLF	hepatic leukemia factor	12057	-0.9498506188392639	0.019024901	Yes	

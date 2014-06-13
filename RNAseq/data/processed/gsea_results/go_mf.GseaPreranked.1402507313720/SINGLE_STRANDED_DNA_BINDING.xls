@@ -1,0 +1,28 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	RPA3	RPA3	replication protein A3, 14kDa	1923	0.44547370076179504	-0.0847205	No	
+row_1	PURB	PURB	purine-rich element binding protein B	2462	0.34139642119407654	-0.073349066	No	
+row_2	XPC	XPC	xeroderma pigmentosum, complementation group C	2642	0.3137061595916748	-0.03718539	No	
+row_3	IGHMBP2	IGHMBP2	immunoglobulin mu binding protein 2	2769	0.2986633777618408	8.658793E-4	No	
+row_4	RBMS1	RBMS1	RNA binding motif, single stranded interacting protein 1	4465	0.12580405175685883	-0.11698779	No	
+row_5	TERF2IP	TERF2IP	telomeric repeat binding factor 2, interacting protein	4750	0.09992305934429169	-0.12397694	No	
+row_6	RPA1	RPA1	replication protein A1, 70kDa	5227	0.06223156303167343	-0.15272035	No	
+row_7	ERCC5	ERCC5	me))	5663	0.0278170146048069	-0.18368907	No	
+row_8	ERCC1	ERCC1	excision repair cross-complementing rodent repair deficiency, complementation group 1 (includes overlapping antisense sequence)	6034	-0.0020981377456337214	-0.21351919	No	
+row_9	MSH3	MSH3	mutS homolog 3 (E. coli)	6273	-0.01989922486245632	-0.2297058	No	
+row_10	ERCC4	ERCC4	excision repair cross-complementing rodent repair deficiency, complementation group 4	6358	-0.026368997991085052	-0.23228846	No	
+row_11	RAD23B	RAD23B	RAD23 homolog B (S. cerevisiae)	6758	-0.057619381695985794	-0.2554996	No	
+row_12	MLH1	MLH1	mutL homolog 1, colon cancer, nonpolyposis type 2 (E. coli)	8037	-0.14445698261260986	-0.3363332	No	
+row_13	PURA	PURA	purine-rich element binding protein A	8466	-0.18115876615047455	-0.34191966	No	
+row_14	WBP11	WBP11	WW domain binding protein 11	8983	-0.22733823955059052	-0.34720954	Yes	
+row_15	TERF2	TERF2	telomeric repeat binding factor 2	8994	-0.2284281849861145	-0.31106412	Yes	
+row_16	RPA2	RPA2	replication protein A2, 32kDa	9180	-0.2464601695537567	-0.2862704	Yes	
+row_17	PMS2	PMS2	PMS2 postmeiotic segregation increased 2 (S. cerevisiae)	9218	-0.2512011229991913	-0.24864177	Yes	
+row_18	RAD23A	RAD23A	RAD23 homolog A (S. cerevisiae)	9225	-0.252210408449173	-0.2083221	Yes	
+row_19	PCBP1	PCBP1	poly(rC) binding protein 1	9244	-0.2537951171398163	-0.16872448	Yes	
+row_20	FUBP1	FUBP1	far upstream element (FUSE) binding protein 1	9279	-0.2566746771335602	-0.12996556	Yes	
+row_21	RAD51	RAD51	RAD51 homolog (RecA homolog, E. coli) (S. cerevisiae)	9445	-0.2727096676826477	-0.09929377	Yes	
+row_22	HMGB2	HMGB2	high-mobility group box 2	9513	-0.2787192463874817	-0.05965873	Yes	
+row_23	YBX1	YBX1	Y box binding protein 1	9969	-0.32623082399368286	-0.04397339	Yes	
+row_24	SUB1	SUB1	SUB1 homolog (S. cerevisiae)	10679	-0.4179382920265198	-0.03416035	Yes	
+row_25	RAD51AP1	RAD51AP1	RAD51 associated protein 1	10950	-0.4625430405139923	0.018665794	Yes	
+row_26	MSH2	MSH2	mutS homolog 2, colon cancer, nonpolyposis type 1 (E. coli)	11367	-0.5594112277030945	0.07526094	Yes	

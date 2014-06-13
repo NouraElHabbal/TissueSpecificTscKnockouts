@@ -1,0 +1,21 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	WASF1	WASF1	WAS protein family, member 1	51	2.4988462924957275	0.29803684	Yes	
+row_1	ABI2	ABI2	abl interactor 2	305	1.398350715637207	0.44652587	Yes	
+row_2	ARPC3	ARPC3	actin related protein 2/3 complex, subunit 3, 21kDa	1732	0.4908948242664337	0.38968232	Yes	
+row_3	ACTR3	ACTR3	ARP3 actin-related protein 3 homolog (yeast)	1912	0.4466519355773926	0.42911005	Yes	
+row_4	NCK1	NCK1	NCK adaptor protein 1	1919	0.44604194164276123	0.48256227	Yes	
+row_5	ARPC2	ARPC2	actin related protein 2/3 complex, subunit 2, 34kDa	2776	0.2975964844226837	0.44879356	Yes	
+row_6	ARPC4	ARPC4	actin related protein 2/3 complex, subunit 4, 20kDa	3113	0.2558991611003876	0.45235857	Yes	
+row_7	ACTR2	ACTR2	ARP2 actin-related protein 2 homolog (yeast)	3116	0.2551158368587494	0.48304752	Yes	
+row_8	ARPC1A	ARPC1A	actin related protein 2/3 complex, subunit 1A, 41kDa	3641	0.19985072314739227	0.46451375	No	
+row_9	NCKAP1	NCKAP1	NCK-associated protein 1	3889	0.17628376185894012	0.46570352	No	
+row_10	PIR	PIR	pirin (iron-binding nuclear protein)	4235	0.14424921572208405	0.45503294	No	
+row_11	PSMA7	PSMA7	proteasome (prosome, macropain) subunit, alpha type, 7	4579	0.1174343079328537	0.44128254	No	
+row_12	WASL	WASL	Wiskott-Aldrich syndrome-like	4624	0.11278034001588821	0.45133573	No	
+row_13	WASF3	WASF3	WAS protein family, member 3	4907	0.08656266331672668	0.43882298	No	
+row_14	ARPC1B	ARPC1B	actin related protein 2/3 complex, subunit 1B, 41kDa	5537	0.03980686888098717	0.39237788	No	
+row_15	ARPC5	ARPC5	actin related protein 2/3 complex, subunit 5, 16kDa	8189	-0.1581382155418396	0.19546421	No	
+row_16	WASF2	WASF2	WAS protein family, member 2	8622	-0.19726896286010742	0.18411557	No	
+row_17	NTRK1	NTRK1	neurotrophic tyrosine kinase, receptor, type 1	9177	-0.24603211879730225	0.16872188	No	
+row_18	RAC1	RAC1	ras-related C3 botulinum toxin substrate 1 (rho family, small GTP binding protein Rac1)	9204	-0.24968712031841278	0.19679849	No	
+row_19	ACTA1	ACTA1	actin, alpha 1, skeletal muscle	10899	-0.4515491724014282	0.11335662	No	

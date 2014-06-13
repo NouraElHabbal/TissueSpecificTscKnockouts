@@ -1,0 +1,16 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CCNE1	CCNE1	cyclin E1	265	1.459452748298645	0.18709761	Yes	
+row_1	E2F1	E2F1	E2F transcription factor 1	566	1.0269697904586792	0.30950418	Yes	
+row_2	GADD45A	GADD45A	growth arrest and DNA-damage-inducible, alpha	1046	0.7184222340583801	0.37321082	Yes	
+row_3	BCL2	BCL2	B-cell CLL/lymphoma 2	1226	0.6442302465438843	0.45074683	Yes	
+row_4	CDKN1A	CDKN1A	cyclin-dependent kinase inhibitor 1A (p21, Cip1)	1302	0.6115239858627319	0.532078	Yes	
+row_5	BAX	BAX	BCL2-associated X protein	2376	0.35417914390563965	0.49531513	No	
+row_6	RB1	RB1	retinoblastoma 1 (including osteosarcoma)	2805	0.29285746812820435	0.5023255	No	
+row_7	PCNA	PCNA	proliferating cell nuclear antigen	4153	0.15234459936618805	0.41438267	No	
+row_8	CDK2	CDK2	cyclin-dependent kinase 2	4487	0.12342748790979385	0.40490523	No	
+row_9	MDM2	MDM2	Mdm2, transformed 3T3 cell double minute 2, p53 binding protein (mouse)	5506	0.04254285618662834	0.32806233	No	
+row_10	CCND1	CCND1	cyclin D1	5821	0.01503006648272276	0.30463308	No	
+row_11	CDK4	CDK4	cyclin-dependent kinase 4	7046	-0.08008620887994766	0.21637772	No	
+row_12	APAF1	APAF1	apoptotic peptidase activating factor	9097	-0.23751068115234375	0.083346434	No	
+row_13	ATM	ATM	ataxia telangiectasia mutated (includes complementation groups A, C and D)	10662	-0.415982186794281	0.015423892	No	
+row_14	TIMP3	TIMP3	TIMP metallopeptidase inhibitor 3 (Sorsby fundus dystrophy, pseudoinflammatory)	11916	-0.8190265893936157	0.030465908	No	

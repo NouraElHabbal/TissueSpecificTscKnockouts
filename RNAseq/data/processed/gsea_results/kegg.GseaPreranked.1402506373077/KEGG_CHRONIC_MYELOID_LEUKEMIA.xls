@@ -1,0 +1,72 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CBLC	CBLC	Cas-Br-M (murine) ecotropic retroviral transforming sequence c	151	1.7936601638793945	0.06155226	Yes	
+row_1	CDKN2A	CDKN2A	cyclin-dependent kinase inhibitor 2A (melanoma, p16, inhibits CDK4)	227	1.5689388513565063	0.120064035	Yes	
+row_2	SHC4	SHC4	SHC (Src homology 2 domain containing) family, member 4	275	1.4429272413253784	0.17567474	Yes	
+row_3	GAB2	GAB2	GRB2-associated binding protein 2	422	1.1947383880615234	0.21295716	Yes	
+row_4	E2F2	E2F2	E2F transcription factor 2	514	1.0880510807037354	0.25034428	Yes	
+row_5	E2F1	E2F1	E2F transcription factor 1	566	1.0269697904586792	0.28848782	Yes	
+row_6	AKT3	AKT3	v-akt murine thymoma viral oncogene homolog 3 (protein kinase B, gamma)	935	0.7669395804405212	0.28997555	Yes	
+row_7	PIK3R3	PIK3R3	phosphoinositide-3-kinase, regulatory subunit 3 (p55, gamma)	986	0.7433410882949829	0.3165138	Yes	
+row_8	NRAS	NRAS	neuroblastoma RAS viral (v-ras) oncogene homolog	1179	0.6611142158508301	0.32804355	Yes	
+row_9	RUNX1	RUNX1	runt-related transcription factor 1 (acute myeloid leukemia 1; aml1 oncogene)	1267	0.6256020069122314	0.34670246	Yes	
+row_10	CDKN1A	CDKN1A	cyclin-dependent kinase inhibitor 1A (p21, Cip1)	1302	0.6115239858627319	0.3691184	Yes	
+row_11	BCL2L1	BCL2L1	BCL2-like 1	1434	0.5672777891159058	0.38177335	Yes	
+row_12	SHC1	SHC1	SHC (Src homology 2 domain containing) transforming protein 1	2088	0.4082055687904358	0.3451568	No	
+row_13	CDK6	CDK6	cyclin-dependent kinase 6	2324	0.3635074198246002	0.3409046	No	
+row_14	PIK3R1	PIK3R1	phosphoinositide-3-kinase, regulatory subunit 1 (p85 alpha)	2516	0.33521708846092224	0.33908734	No	
+row_15	PTPN11	PTPN11	protein tyrosine phosphatase, non-receptor type 11 (Noonan syndrome 1)	2603	0.31949660181999207	0.34521478	No	
+row_16	RB1	RB1	retinoblastoma 1 (including osteosarcoma)	2805	0.29285746812820435	0.34083372	No	
+row_17	IKBKG	IKBKG	inhibitor of kappa light polypeptide gene enhancer in B-cells, kinase gamma	2908	0.2816805839538574	0.34409362	No	
+row_18	IKBKB	IKBKB	inhibitor of kappa light polypeptide gene enhancer in B-cells, kinase beta	3050	0.2629248797893524	0.34338915	No	
+row_19	GRB2	GRB2	growth factor receptor-bound protein 2	3207	0.24376051127910614	0.34066755	No	
+row_20	PIK3R5	PIK3R5	phosphoinositide-3-kinase, regulatory subunit 5, p101	3283	0.23876677453517914	0.3443686	No	
+row_21	E2F3	E2F3	E2F transcription factor 3	3683	0.19538724422454834	0.31976828	No	
+row_22	CHUK	CHUK	conserved helix-loop-helix ubiquitous kinase	3801	0.18526363372802734	0.31782773	No	
+row_23	TGFB3	TGFB3	transforming growth factor, beta 3	3972	0.16864076256752014	0.31086507	No	
+row_24	KRAS	KRAS	v-Ki-ras2 Kirsten rat sarcoma viral oncogene homolog	4212	0.14652371406555176	0.2973446	No	
+row_25	TGFB1	TGFB1	transforming growth factor, beta 1 (Camurati-Engelmann disease)	4588	0.11633426696062088	0.27145085	No	
+row_26	SOS1	SOS1	son of sevenless homolog 1 (Drosophila)	4619	0.11320989578962326	0.27366075	No	
+row_27	BAD	BAD	BCL2-antagonist of cell death	4717	0.1038234606385231	0.27000105	No	
+row_28	NFKBIA	NFKBIA	nuclear factor of kappa light polypeptide gene enhancer in B-cells inhibitor, alpha	4852	0.09059600532054901	0.2627685	No	
+row_29	AKT1	AKT1	v-akt murine thymoma viral oncogene homolog 1	4939	0.08401542901992798	0.25919276	No	
+row_30	RAF1	RAF1	v-raf-1 murine leukemia viral oncogene homolog 1	5206	0.06353603303432465	0.24004322	No	
+row_31	CTBP1	CTBP1	C-terminal binding protein 1	5236	0.06155254319310188	0.24020639	No	
+row_32	MAP2K1	MAP2K1	mitogen-activated protein kinase kinase 1	5362	0.052492935210466385	0.23214026	No	
+row_33	MDM2	MDM2	Mdm2, transformed 3T3 cell double minute 2, p53 binding protein (mouse)	5506	0.04254285618662834	0.22219114	No	
+row_34	HDAC1	HDAC1	histone deacetylase 1	5513	0.042171575129032135	0.22343786	No	
+row_35	PIK3CG	PIK3CG	phosphoinositide-3-kinase, catalytic, gamma polypeptide	5556	0.03785887360572815	0.22156087	No	
+row_36	PIK3CA	PIK3CA	phosphoinositide-3-kinase, catalytic, alpha polypeptide	5561	0.037434644997119904	0.22277606	No	
+row_37	CRKL	CRKL	v-crk sarcoma virus CT10 oncogene homolog (avian)-like	5819	0.015276739373803139	0.20237446	No	
+row_38	CCND1	CCND1	cyclin D1	5821	0.01503006648272276	0.20291194	No	
+row_39	TGFBR2	TGFBR2	transforming growth factor, beta receptor II (70/80kDa)	6117	-0.0074040996842086315	0.17907628	No	
+row_40	BRAF	BRAF	v-raf murine sarcoma viral oncogene homolog B1	6226	-0.015274535864591599	0.17086771	No	
+row_41	MYC	MYC	v-myc myelocytomatosis viral oncogene homolog (avian)	6338	-0.0251094289124012	0.1628189	No	
+row_42	STAT5A	STAT5A	signal transducer and activator of transcription 5A	6506	-0.03736702352762222	0.15069251	No	
+row_43	CDK4	CDK4	cyclin-dependent kinase 4	7046	-0.08008620887994766	0.1098845	No	
+row_44	MAP2K2	MAP2K2	mitogen-activated protein kinase kinase 2	7063	-0.08120370656251907	0.11192123	No	
+row_45	ARAF	ARAF	v-raf murine sarcoma 3611 viral oncogene homolog	7107	-0.08493132144212723	0.11190206	No	
+row_46	AKT2	AKT2	v-akt murine thymoma viral oncogene homolog 2	7131	-0.08686044067144394	0.11359905	No	
+row_47	MAPK1	MAPK1	mitogen-activated protein kinase 1	7170	-0.08996947109699249	0.11419665	No	
+row_48	HRAS	HRAS	v-Ha-ras Harvey rat sarcoma viral oncogene homolog	7212	-0.09028203040361404	0.114561625	No	
+row_49	MAPK3	MAPK3	mitogen-activated protein kinase 3	7277	-0.09331737458705902	0.11316952	No	
+row_50	CRK	CRK	v-crk sarcoma virus CT10 oncogene homolog (avian)	7903	-0.1342596858739853	0.06755613	No	
+row_51	CBLB	CBLB	Cas-Br-M (murine) ecotropic retroviral transforming sequence b	8134	-0.1539580225944519	0.055078473	No	
+row_52	SMAD4	SMAD4	SMAD, mothers against DPP homolog 4 (Drosophila)	8367	-0.17324766516685486	0.043231998	No	
+row_53	CTBP2	CTBP2	C-terminal binding protein 2	8801	-0.21081918478012085	0.01648524	No	
+row_54	PIK3CB	PIK3CB	phosphoinositide-3-kinase, catalytic, beta polypeptide	8946	-0.22313624620437622	0.013895769	No	
+row_55	SHC2	SHC2	SHC (Src homology 2 domain containing) transforming protein 2	9252	-0.25477609038352966	-5.650822E-4	No	
+row_56	TGFBR1	TGFBR1	transforming growth factor, beta receptor I (activin A receptor type II-like kinase, 53kDa)	9495	-0.2773571312427521	-0.008939982	No	
+row_57	SOS2	SOS2	son of sevenless homolog 2 (Drosophila)	9529	-0.2802294194698334	-9.3419425E-5	No	
+row_58	PIK3R2	PIK3R2	phosphoinositide-3-kinase, regulatory subunit 2 (p85 beta)	9536	-0.28081628680229187	0.010986819	No	
+row_59	NFKB1	NFKB1	nuclear factor of kappa light polypeptide gene enhancer in B-cells 1 (p105)	9602	-0.28703105449676514	0.017494991	No	
+row_60	RELA	RELA	v-rel reticuloendotheliosis viral oncogene homolog A, nuclear factor of kappa light polypeptide gene enhancer in B-cells 3, p65 (avian)	9639	-0.29097211360931396	0.026538715	No	
+row_61	HDAC2	HDAC2	histone deacetylase 2	9855	-0.31308791041374207	0.02184562	No	
+row_62	CDKN1B	CDKN1B	cyclin-dependent kinase inhibitor 1B (p27, Kip1)	10026	-0.3338186740875244	0.021689238	No	
+row_63	TGFB2	TGFB2	transforming growth factor, beta 2	10068	-0.3384527862071991	0.032280274	No	
+row_64	SHC3	SHC3	SHC (Src homology 2 domain containing) transforming protein 3	10682	-0.4189128577709198	-6.217862E-4	No	
+row_65	STAT5B	STAT5B	signal transducer and activator of transcription 5B	10773	-0.43353989720344543	0.009877561	No	
+row_66	PIK3CD	PIK3CD	phosphoinositide-3-kinase, catalytic, delta polypeptide	10931	-0.4595138430595398	0.015964368	No	
+row_67	ABL1	ABL1	v-abl Abelson murine leukemia viral oncogene homolog 1	10962	-0.46565118432044983	0.03269687	No	
+row_68	CBL	CBL	Cas-Br-M (murine) ecotropic retroviral transforming sequence	11359	-0.5573105812072754	0.02325536	No	
+row_69	BCR	BCR	breakpoint cluster region	11363	-0.5582876801490784	0.046014506	No	
+row_70	SMAD3	SMAD3	SMAD, mothers against DPP homolog 3 (Drosophila)	11774	-0.7222996950149536	0.04222583	No	

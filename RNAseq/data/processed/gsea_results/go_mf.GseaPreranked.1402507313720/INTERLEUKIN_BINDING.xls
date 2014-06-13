@@ -1,0 +1,23 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	IL7R	IL7R	interleukin 7 receptor	2383	0.3533822000026703	-0.14921996	No	
+row_1	IL10RA	IL10RA	interleukin 10 receptor, alpha	2621	0.3162904679775238	-0.12825182	No	
+row_2	IL2RB	IL2RB	interleukin 2 receptor, beta	2766	0.2991555333137512	-0.10188604	No	
+row_3	IL3RA	IL3RA	interleukin 3 receptor, alpha (low affinity)	3333	0.2323286235332489	-0.11842746	No	
+row_4	IL18BP	IL18BP	interleukin 18 binding protein	3469	0.21702003479003906	-0.10178951	No	
+row_5	HAX1	HAX1	HCLS1 associated protein X-1	3947	0.1710803061723709	-0.118877925	No	
+row_6	IL10RB	IL10RB	interleukin 10 receptor, beta	5182	0.06518924981355667	-0.21115363	No	
+row_7	CSF2RB	CSF2RB	colony stimulating factor 2 receptor, beta, low-affinity (granulocyte-macrophage)	6524	-0.03874313831329346	-0.3155189	No	
+row_8	IL9R	IL9R	interleukin 9 receptor	6960	-0.07315435260534286	-0.3416566	No	
+row_9	IL12RB2	IL12RB2	interleukin 12 receptor, beta 2	7333	-0.09806400537490845	-0.35948676	No	
+row_10	IL5RA	IL5RA	interleukin 5 receptor, alpha	8143	-0.15453319251537323	-0.40574282	No	
+row_11	IL12A	IL12A	interleukin 12A (natural killer cell stimulatory factor 1, cytotoxic lymphocyte maturation factor 1, p35)	8739	-0.20546065270900726	-0.42807	Yes	
+row_12	IL22RA2	IL22RA2	interleukin 22 receptor, alpha 2	8779	-0.2088623046875	-0.4046465	Yes	
+row_13	IL2RG	IL2RG	interleukin 2 receptor, gamma (severe combined immunodeficiency)	8799	-0.2105422019958496	-0.37937889	Yes	
+row_14	IL1R1	IL1R1	interleukin 1 receptor, type I	9742	-0.3011033535003662	-0.41780698	Yes	
+row_15	IL15RA	IL15RA	interleukin 15 receptor, alpha	10018	-0.3322465717792511	-0.3979038	Yes	
+row_16	IL6ST	IL6ST	interleukin 6 signal transducer (gp130, oncostatin M receptor)	10491	-0.3906121850013733	-0.38662347	Yes	
+row_17	EBI3	EBI3	Epstein-Barr virus induced gene 3	11282	-0.5367217659950256	-0.3826525	Yes	
+row_18	IL13RA2	IL13RA2	interleukin 13 receptor, alpha 2	11438	-0.5837133526802063	-0.32093987	Yes	
+row_19	IL12RB1	IL12RB1	interleukin 12 receptor, beta 1	11954	-0.8436339497566223	-0.25546405	Yes	
+row_20	A2M	A2M	alpha-2-macroglobulin	12014	-0.905893087387085	-0.14489162	Yes	
+row_21	IL2RA	IL2RA	interleukin 2 receptor, alpha	12235	-1.313568115234375	0.004482852	Yes	

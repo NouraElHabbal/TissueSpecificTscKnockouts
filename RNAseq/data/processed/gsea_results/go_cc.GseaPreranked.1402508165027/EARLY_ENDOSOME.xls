@@ -1,0 +1,17 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	DNER	DNER	-	191	1.6919721364974976	0.37500885	Yes	
+row_1	ANKRD27	ANKRD27	ankyrin repeat domain 27 (VPS9 domain)	843	0.8149810433387756	0.5101016	Yes	
+row_2	WDFY1	WDFY1	WD repeat and FYVE domain containing 1	1318	0.6063769459724426	0.6114605	Yes	
+row_3	ALS2	ALS2	amyotrophic lateral sclerosis 2 (juvenile)	3581	0.20644740760326385	0.4748391	No	
+row_4	CTNS	CTNS	cystinosis, nephropathic	3610	0.20367930829524994	0.51957464	No	
+row_5	TOM1	TOM1	target of myb1 (chicken)	5301	0.05635150521993637	0.39490443	No	
+row_6	SNX17	SNX17	sorting nexin 17	5360	0.05252474173903465	0.40230402	No	
+row_7	RAB22A	RAB22A	RAB22A, member RAS oncogene family	5387	0.050814587622880936	0.41191575	No	
+row_8	NF2	NF2	neurofibromin 2 (bilateral acoustic neuroma)	5874	0.009939582087099552	0.37461752	No	
+row_9	CLN3	CLN3	ceroid-lipofuscinosis, neuronal 3, juvenile (Batten, Spielmeyer-Vogt disease)	6407	-0.029385719448328018	0.33806068	No	
+row_10	STX6	STX6	syntaxin 6	6934	-0.07079699635505676	0.3115519	No	
+row_11	LDLRAP1	LDLRAP1	low density lipoprotein receptor adaptor protein 1	7068	-0.08157922327518463	0.3195483	No	
+row_12	STEAP2	STEAP2	six transmembrane epithelial antigen of the prostate 2	7086	-0.08323262631893158	0.33737653	No	
+row_13	VAMP8	VAMP8	vesicle-associated membrane protein 8 (endobrevin)	7430	-0.10492385178804398	0.3336538	No	
+row_14	RAB14	RAB14	RAB14, member RAS oncogene family	7856	-0.13033391535282135	0.3291164	No	
+row_15	RABEP1	RABEP1	rabaptin, RAB GTPase binding effector protein 1	7952	-0.1387309581041336	0.35340127	No	

@@ -1,0 +1,31 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MDFI	MDFI	MyoD family inhibitor	9	3.2249650955200195	0.15965754	Yes	
+row_1	VWC2	VWC2	von Willebrand factor C domain containing 2	22	2.933091402053833	0.30455422	Yes	
+row_2	CBLC	CBLC	Cas-Br-M (murine) ecotropic retroviral transforming sequence c	151	1.7936601638793945	0.38332117	Yes	
+row_3	FRZB	FRZB	frizzled-related protein	194	1.6869534254074097	0.4637952	Yes	
+row_4	PEG10	PEG10	paternally expressed 10	389	1.247983694076538	0.51004034	Yes	
+row_5	CIDEA	CIDEA	cell death-inducing DFFA-like effector a	409	1.2162264585494995	0.56897897	Yes	
+row_6	EID2	EID2	EP300 interacting inhibitor of differentiation 2	1644	0.5092359781265259	0.49366117	No	
+row_7	SMURF1	SMURF1	SMAD specific E3 ubiquitin protein ligase 1	1850	0.4614405035972595	0.49989092	No	
+row_8	TAOK3	TAOK3	TAO kinase 3	3002	0.27057310938835144	0.4194728	No	
+row_9	SLA2	SLA2	Src-like-adaptor 2	3026	0.26656681299209595	0.43085447	No	
+row_10	MFN2	MFN2	mitofusin 2	4211	0.1465664952993393	0.3415775	No	
+row_11	SOCS1	SOCS1	suppressor of cytokine signaling 1	4318	0.1361125111579895	0.33970168	No	
+row_12	PTPRC	PTPRC	protein tyrosine phosphatase, receptor type, C	5116	0.0707264393568039	0.27821636	No	
+row_13	OTUD7B	OTUD7B	OTU domain containing 7B	5181	0.06521309912204742	0.2762399	No	
+row_14	PTEN	PTEN	phosphatase and tensin homolog (mutated in multiple advanced cancers 1)	5263	0.05957614257931709	0.27259657	No	
+row_15	NF2	NF2	neurofibromin 2 (bilateral acoustic neuroma)	5874	0.009939582087099552	0.22333965	No	
+row_16	HGS	HGS	hepatocyte growth factor-regulated tyrosine kinase substrate	5877	0.00966604519635439	0.22365727	No	
+row_17	NF1	NF1	neurofibromin 1 (neurofibromatosis, von Recklinghausen disease, Watson disease)	6233	-0.015943491831421852	0.19549662	No	
+row_18	BRAP	BRAP	BRCA1 associated protein	6318	-0.02337479218840599	0.18980815	No	
+row_19	SNX6	SNX6	sorting nexin 6	7551	-0.1117163822054863	0.09488309	No	
+row_20	ADRB2	ADRB2	adrenergic, beta-2-, receptor, surface	8261	-0.16456982493400574	0.04524224	No	
+row_21	NLK	NLK	nemo-like kinase	8275	-0.16551625728607178	0.052413814	No	
+row_22	ACVR1	ACVR1	activin A receptor, type I	8304	-0.16745933890342712	0.05845863	No	
+row_23	TAX1BP3	TAX1BP3	Tax1 (human T-cell leukemia virus type I) binding protein 3	9396	-0.26873013377189636	-0.017157573	No	
+row_24	RHOH	RHOH	ras homolog gene family, member H	10559	-0.3996194899082184	-0.0920548	No	
+row_25	SIGIRR	SIGIRR	single immunoglobulin and toll-interleukin 1 receptor (TIR) domain	11102	-0.49393051862716675	-0.111694686	No	
+row_26	THY1	THY1	Thy-1 cell surface antigen	11781	-0.726487398147583	-0.13086058	No	
+row_27	ADRB3	ADRB3	adrenergic, beta-3-, receptor	12144	-1.05326247215271	-0.10800177	No	
+row_28	TNFAIP3	TNFAIP3	tumor necrosis factor, alpha-induced protein 3	12154	-1.0681720972061157	-0.05561095	No	
+row_29	TSC1	TSC1	tuberous sclerosis 1	12240	-1.3395458459854126	0.004077952	No	

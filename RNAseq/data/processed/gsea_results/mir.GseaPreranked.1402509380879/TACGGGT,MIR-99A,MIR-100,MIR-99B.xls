@@ -1,0 +1,21 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	HS3ST2	HS3ST2	heparan sulfate (glucosamine) 3-O-sulfotransferase 2	321	1.3562690019607544	0.16030754	No	
+row_1	FGFR3	FGFR3	fibroblast growth factor receptor 3 (achondroplasia, thanatophoric dwarfism)	1071	0.7076416611671448	0.19655952	No	
+row_2	FZD8	FZD8	frizzled homolog 8 (Drosophila)	3657	0.19848057627677917	0.013188355	No	
+row_3	ZZEF1	ZZEF1	zinc finger, ZZ-type with EF-hand domain 1	4998	0.07994374632835388	-0.08502112	No	
+row_4	BAZ2A	BAZ2A	bromodomain adjacent to zinc finger domain, 2A	5318	0.05500095337629318	-0.103455566	No	
+row_5	ADCY1	ADCY1	adenylate cyclase 1 (brain)	5569	0.03637872263789177	-0.11882727	No	
+row_6	SLC44A1	SLC44A1	solute carrier family 44, member 1	5702	0.02494964748620987	-0.12615414	No	
+row_7	ICMT	ICMT	isoprenylcysteine carboxyl methyltransferase	5918	0.0062700617127120495	-0.14281309	No	
+row_8	MTMR3	MTMR3	myotubularin related protein 3	6217	-0.014292431063950062	-0.16513298	No	
+row_9	RAVER2	RAVER2	ribonucleoprotein, PTB-binding 2	6454	-0.032907769083976746	-0.179841	No	
+row_10	SMARCA5	SMARCA5	SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily a, member 5	6462	-0.03370918706059456	-0.17577693	No	
+row_11	EPDR1	EPDR1	ependymin related protein 1 (zebrafish)	8424	-0.1780969500541687	-0.31109893	No	
+row_12	TRIB2	TRIB2	tribbles homolog 2 (Drosophila)	8876	-0.21667294204235077	-0.31806296	No	
+row_13	CTDSPL	CTDSPL	CTD (carboxy-terminal domain, RNA polymerase II, polypeptide A) small phosphatase-like	9477	-0.2753460705280304	-0.32910275	Yes	
+row_14	MBNL1	MBNL1	muscleblind-like (Drosophila)	9765	-0.3025530278682709	-0.31089467	Yes	
+row_15	INSM1	INSM1	insulinoma-associated 1	10033	-0.33429965376853943	-0.28669208	Yes	
+row_16	KBTBD8	KBTBD8	kelch repeat and BTB (POZ) domain containing 8	11217	-0.5196352005004883	-0.31165615	Yes	
+row_17	HS3ST3B1	HS3ST3B1	heparan sulfate (glucosamine) 3-O-sulfotransferase 3B1	11619	-0.6507406234741211	-0.25486767	Yes	
+row_18	CYP26B1	CYP26B1	cytochrome P450, family 26, subfamily B, polypeptide 1	12122	-1.0105880498886108	-0.15683633	Yes	
+row_19	HOXA1	HOXA1	homeobox A1	12215	-1.2397390604019165	0.006111965	Yes	

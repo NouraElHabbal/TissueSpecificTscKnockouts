@@ -1,0 +1,48 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ADH7	ADH7	alcohol dehydrogenase 7 (class IV), mu or sigma polypeptide	14	3.03836989402771	0.12925252	Yes	
+row_1	HPGD	HPGD	hydroxyprostaglandin dehydrogenase 15-(NAD)	87	2.2248029708862305	0.21885265	Yes	
+row_2	ME2	ME2	malic enzyme 2, NAD(+)-dependent, mitochondrial	298	1.4101588726043701	0.26222035	Yes	
+row_3	RDH12	RDH12	retinol dehydrogenase 12 (all-trans/9-cis/11-cis)	445	1.1595734357833862	0.30006087	Yes	
+row_4	CBR3	CBR3	carbonyl reductase 3	452	1.1548949480056763	0.34913477	Yes	
+row_5	LDHB	LDHB	lactate dehydrogenase B	479	1.1213654279708862	0.39513627	Yes	
+row_6	RDH16	RDH16	retinol dehydrogenase 16 (all-trans)	580	1.0181186199188232	0.43066302	Yes	
+row_7	BDH1	BDH1	3-hydroxybutyrate dehydrogenase, type 1	798	0.8484405875205994	0.44935206	Yes	
+row_8	IMPDH1	IMPDH1	IMP (inosine monophosphate) dehydrogenase 1	1310	0.6079049706459045	0.43370643	Yes	
+row_9	DHRS9	DHRS9	dehydrogenase/reductase (SDR family) member 9	1340	0.5977249145507812	0.45699015	Yes	
+row_10	MDH1	MDH1	malate dehydrogenase 1, NAD (soluble)	1436	0.5665844082832336	0.473547	Yes	
+row_11	NSDHL	NSDHL	NAD(P) dependent steroid dehydrogenase-like	1447	0.563677191734314	0.4969213	Yes	
+row_12	RDH10	RDH10	retinol dehydrogenase 10 (all-trans)	1642	0.5099343657493591	0.50296134	Yes	
+row_13	IDH1	IDH1	isocitrate dehydrogenase 1 (NADP+), soluble	2357	0.35768991708755493	0.45999783	No	
+row_14	HAO1	HAO1	hydroxyacid oxidase (glycolate oxidase) 1	2418	0.34843921661376953	0.47005123	No	
+row_15	HADH	HADH	hydroxyacyl-Coenzyme A dehydrogenase	2882	0.28562217950820923	0.44449466	No	
+row_16	UGDH	UGDH	UDP-glucose dehydrogenase	2925	0.279156893491745	0.45304483	No	
+row_17	AKR1B10	AKR1B10	aldo-keto reductase family 1, member B10 (aldose reductase)	3093	0.25814443826675415	0.45048413	No	
+row_18	EHHADH	EHHADH	enoyl-Coenzyme A, hydratase/3-hydroxyacyl Coenzyme A dehydrogenase	3470	0.21697579324245453	0.42908704	No	
+row_19	HSD17B4	HSD17B4	hydroxysteroid (17-beta) dehydrogenase 4	3632	0.20078164339065552	0.4245546	No	
+row_20	RDH11	RDH11	retinol dehydrogenase 11 (all-trans/9-cis/11-cis)	3713	0.19204147160053253	0.4262625	No	
+row_21	HADHA	HADHA	hydroxyacyl-Coenzyme A dehydrogenase/3-ketoacyl-Coenzyme A thiolase/enoyl-Coenzyme A hydratase (trifunctional protein), alpha subunit	3897	0.17555929720401764	0.41885078	No	
+row_22	AKR1A1	AKR1A1	aldo-keto reductase family 1, member A1 (aldehyde reductase)	4063	0.16066882014274597	0.41227013	No	
+row_23	HADHB	HADHB	hydroxyacyl-Coenzyme A dehydrogenase/3-ketoacyl-Coenzyme A thiolase/enoyl-Coenzyme A hydratase (trifunctional protein), beta subunit	4497	0.12241993844509125	0.38215968	No	
+row_24	ADH4	ADH4	alcohol dehydrogenase 4 (class II), pi polypeptide	5192	0.06459448486566544	0.32825103	No	
+row_25	IDH3G	IDH3G	isocitrate dehydrogenase 3 (NAD+) gamma	5275	0.05815545842051506	0.32404968	No	
+row_26	HSD3B2	HSD3B2	hydroxy-delta-5-steroid dehydrogenase, 3 beta- and steroid delta-isomerase 2	6327	-0.02418803796172142	0.2392498	No	
+row_27	ME3	ME3	malic enzyme 3, NADP(+)-dependent, mitochondrial	6711	-0.053256403654813766	0.21025474	No	
+row_28	CBR1	CBR1	carbonyl reductase 1	6728	-0.05479979142546654	0.21129979	No	
+row_29	SPR	SPR	sepiapterin reductase (7,8-dihydrobiopterin:NADP+ oxidoreductase)	7414	-0.10395239293575287	0.15981528	No	
+row_30	TSTA3	TSTA3	tissue specific transplantation antigen P35B	7552	-0.11186187714338303	0.15342684	No	
+row_31	BDH2	BDH2	3-hydroxybutyrate dehydrogenase, type 2	7750	-0.12498500943183899	0.14270124	No	
+row_32	MIOX	MIOX	myo-inositol oxygenase	8145	-0.15453319251537323	0.117154226	No	
+row_33	D2HGDH	D2HGDH	D-2-hydroxyglutarate dehydrogenase	8279	-0.16595277190208435	0.113413855	No	
+row_34	H6PD	H6PD	hexose-6-phosphate dehydrogenase (glucose 1-dehydrogenase)	8830	-0.21296033263206482	0.07763339	No	
+row_35	IDH3B	IDH3B	isocitrate dehydrogenase 3 (NAD+) beta	9158	-0.24465535581111908	0.061426163	No	
+row_36	LDHA	LDHA	lactate dehydrogenase A	9308	-0.2588868737220764	0.06036743	No	
+row_37	ALDH3A1	ALDH3A1	aldehyde dehydrogenase 3 family, memberA1	9910	-0.3191046714782715	0.024976997	No	
+row_38	L2HGDH	L2HGDH	L-2-hydroxyglutarate dehydrogenase	9985	-0.3284364938735962	0.033028536	No	
+row_39	IMPDH2	IMPDH2	IMP (inosine monophosphate) dehydrogenase 2	10014	-0.33203306794166565	0.04499137	No	
+row_40	GPD2	GPD2	glycerol-3-phosphate dehydrogenase 2 (mitochondrial)	10153	-0.34794488549232483	0.04865309	No	
+row_41	ME1	ME1	malic enzyme 1, NADP(+)-dependent, cytosolic	10224	-0.35619309544563293	0.058222532	No	
+row_42	RDH5	RDH5	retinol dehydrogenase 5 (11-cis/9-cis)	10437	-0.38482311367988586	0.057423156	No	
+row_43	GRHPR	GRHPR	glyoxylate reductase/hydroxypyruvate reductase	10828	-0.4407365918159485	0.044485655	No	
+row_44	HSD17B7	HSD17B7	hydroxysteroid (17-beta) dehydrogenase 7	11155	-0.5069704055786133	0.03961772	No	
+row_45	GPD1	GPD1	glycerol-3-phosphate dehydrogenase 1 (soluble)	11204	-0.515627384185791	0.05782631	No	
+row_46	PHGDH	PHGDH	phosphoglycerate dehydrogenase	11762	-0.7174121141433716	0.043123394	No	

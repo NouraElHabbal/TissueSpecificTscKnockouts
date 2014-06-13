@@ -1,0 +1,54 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ATP1A1	ATP1A1	ATPase, Na+/K+ transporting, alpha 1 polypeptide	1249	0.635597288608551	-0.0566269	No	
+row_1	TIPARP	TIPARP	TCDD-inducible poly(ADP-ribose) polymerase	1564	0.5295507907867432	-0.04443259	No	
+row_2	ACOT11	ACOT11	acyl-CoA thioesterase 11	1884	0.45161518454551697	-0.038217656	No	
+row_3	MAL2	MAL2	mal, T-cell differentiation protein 2	2391	0.35129278898239136	-0.054454003	No	
+row_4	SEMA3F	SEMA3F	sema domain, immunoglobulin domain (Ig), short basic domain, secreted, (semaphorin) 3F	2442	0.34418991208076477	-0.033937067	No	
+row_5	PDPK1	PDPK1	3-phosphoinositide dependent protein kinase-1	2466	0.3411215841770172	-0.011433212	No	
+row_6	SSR1	SSR1	signal sequence receptor, alpha (translocon-associated protein alpha)	3462	0.21776385605335236	-0.07717167	No	
+row_7	LIMD1	LIMD1	LIM domains containing 1	3472	0.21690547466278076	-0.06240276	No	
+row_8	UBTD1	UBTD1	ubiquitin domain containing 1	3606	0.204057976603508	-0.058684558	No	
+row_9	AHCYL1	AHCYL1	S-adenosylhomocysteine hydrolase-like 1	3750	0.18900354206562042	-0.05685957	No	
+row_10	PCMT1	PCMT1	protein-L-isoaspartate (D-aspartate) O-methyltransferase	3914	0.17430371046066284	-0.057719573	No	
+row_11	HDLBP	HDLBP	high density lipoprotein binding protein (vigilin)	3932	0.17264576256275177	-0.046768036	No	
+row_12	MAPRE3	MAPRE3	microtubule-associated protein, RP/EB family, member 3	4168	0.15089499950408936	-0.0551846	No	
+row_13	CREB5	CREB5	cAMP responsive element binding protein 5	4458	0.12594789266586304	-0.06979686	No	
+row_14	SHOC2	SHOC2	soc-2 suppressor of clear homolog (C. elegans)	4620	0.1130797266960144	-0.07486971	No	
+row_15	DLG4	DLG4	discs, large homolog 4 (Drosophila)	4803	0.09514294564723969	-0.08294064	No	
+row_16	INHBB	INHBB	inhibin, beta B (activin AB beta polypeptide)	5366	0.05238720029592514	-0.12511855	No	
+row_17	SLC44A1	SLC44A1	solute carrier family 44, member 1	5702	0.02494964748620987	-0.15070891	No	
+row_18	CAMTA1	CAMTA1	calmodulin binding transcription activator 1	6101	-0.006398980505764484	-0.18277317	No	
+row_19	PLP1	PLP1	proteolipid protein 1 (Pelizaeus-Merzbacher disease, spastic paraplegia 2, uncomplicated)	6603	-0.0459958054125309	-0.22042347	No	
+row_20	GOLPH3L	GOLPH3L	golgi phosphoprotein 3-like	6685	-0.0516209714114666	-0.22335236	No	
+row_21	RAD23B	RAD23B	RAD23 homolog B (S. cerevisiae)	6758	-0.057619381695985794	-0.22511706	No	
+row_22	DHX57	DHX57	DEAH (Asp-Glu-Ala-Asp/His) box polypeptide 57	7172	-0.09011746197938919	-0.25242284	No	
+row_23	SNRPA	SNRPA	small nuclear ribonucleoprotein polypeptide A	7745	-0.12439867109060287	-0.29027054	No	
+row_24	NFAT5	NFAT5	nuclear factor of activated T-cells 5, tonicity-responsive	8029	-0.14356260001659393	-0.30313343	No	
+row_25	DHDDS	DHDDS	dehydrodolichyl diphosphate synthase	8213	-0.15986278653144836	-0.3066599	No	
+row_26	KLF7	KLF7	Kruppel-like factor 7 (ubiquitous)	8412	-0.17697691917419434	-0.3101888	Yes	
+row_27	PURA	PURA	purine-rich element binding protein A	8466	-0.18115876615047455	-0.3015704	Yes	
+row_28	SMEK1	SMEK1	SMEK homolog 1, suppressor of mek1 (Dictyostelium)	8525	-0.18843349814414978	-0.29284057	Yes	
+row_29	ANK1	ANK1	ankyrin 1, erythrocytic	8689	-0.20166216790676117	-0.291745	Yes	
+row_30	ADIPOR2	ADIPOR2	adiponectin receptor 2	8748	-0.20595282316207886	-0.2817629	Yes	
+row_31	GCN1L1	GCN1L1	GCN1 general control of amino-acid synthesis 1-like 1 (yeast)	8881	-0.2172359973192215	-0.27702105	Yes	
+row_32	MYLK2	MYLK2	myosin light chain kinase 2, skeletal muscle	8943	-0.22307254374027252	-0.26606038	Yes	
+row_33	RECK	RECK	reversion-inducing-cysteine-rich protein with kazal motifs	9069	-0.23534780740737915	-0.2594519	Yes	
+row_34	STC1	STC1	stanniocalcin 1	9111	-0.2390499860048294	-0.2457149	Yes	
+row_35	MECP2	MECP2	methyl CpG binding protein 2 (Rett syndrome)	9465	-0.27422213554382324	-0.25495818	Yes	
+row_36	GRID1	GRID1	glutamate receptor, ionotropic, delta 1	9469	-0.274758517742157	-0.23556368	Yes	
+row_37	CTDSPL	CTDSPL	CTD (carboxy-terminal domain, RNA polymerase II, polypeptide A) small phosphatase-like	9477	-0.2753460705280304	-0.21645403	Yes	
+row_38	ACLY	ACLY	ATP citrate lyase	9585	-0.2857629954814911	-0.20477106	Yes	
+row_39	GPRC5B	GPRC5B	G protein-coupled receptor, family C, group 5, member B	9682	-0.29475247859954834	-0.19154668	Yes	
+row_40	NR3C1	NR3C1	nuclear receptor subfamily 3, group C, member 1 (glucocorticoid receptor)	9698	-0.2962699234485626	-0.1715951	Yes	
+row_41	RGS3	RGS3	regulator of G-protein signalling 3	9999	-0.3296431303024292	-0.17254615	Yes	
+row_42	CREBBP	CREBBP	CREB binding protein (Rubinstein-Taybi syndrome)	10035	-0.33478039503097534	-0.1514761	Yes	
+row_43	CYP20A1	CYP20A1	cytochrome P450, family 20, subfamily A, polypeptide 1	10136	-0.3458422124385834	-0.1349267	Yes	
+row_44	DNMT3A	DNMT3A	DNA (cytosine-5-)-methyltransferase 3 alpha	10386	-0.37751293182373047	-0.12828867	Yes	
+row_45	BCOR	BCOR	BCL6 co-repressor	10451	-0.38670024275779724	-0.1058771	Yes	
+row_46	CAPN6	CAPN6	calpain 6	10681	-0.41864338517189026	-0.09466483	Yes	
+row_47	MNT	MNT	MAX binding protein	10736	-0.4291684627532959	-0.06840051	Yes	
+row_48	PPP2R1B	PPP2R1B	protein phosphatase 2 (formerly 2A), regulatory subunit A (PR 65), beta isoform	11046	-0.4836145341396332	-0.059081145	Yes	
+row_49	TRIOBP	TRIOBP	TRIO and F-actin binding protein	11203	-0.5155962109565735	-0.0349737	Yes	
+row_50	CYP2S1	CYP2S1	cytochrome P450, family 2, subfamily S, polypeptide 1	11317	-0.5455513596534729	-0.005211424	Yes	
+row_51	ROBO2	ROBO2	roundabout, axon guidance receptor, homolog 2 (Drosophila)	11380	-0.5630785226821899	0.029971035	Yes	
+row_52	POGK	POGK	pogo transposable element with KRAB domain	11550	-0.6198371648788452	0.060467325	Yes	

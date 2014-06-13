@@ -1,0 +1,23 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MGAM	MGAM	maltase-glucoamylase (alpha-glucosidase)	252	1.5138577222824097	0.14389165	Yes	
+row_1	HK1	HK1	hexokinase 1	460	1.1393324136734009	0.2507711	Yes	
+row_2	GUSB	GUSB	glucuronidase, beta	834	0.8228306174278259	0.30974296	Yes	
+row_3	PGD	PGD	phosphogluconate dehydrogenase	1019	0.7273844480514526	0.3737524	Yes	
+row_4	TREH	TREH	trehalase (brush-border membrane glycoprotein)	1099	0.6953685879707336	0.44284248	Yes	
+row_5	TKTL1	TKTL1	transketolase-like 1	1135	0.681732714176178	0.5140378	Yes	
+row_6	ALDOB	ALDOB	aldolase B, fructose-bisphosphate	1498	0.5444875359535217	0.5436733	Yes	
+row_7	PYGB	PYGB	phosphorylase, glycogen; brain	1751	0.4867185652256012	0.5759998	Yes	
+row_8	PFKL	PFKL	phosphofructokinase, liver	2115	0.4030945301055908	0.5901961	Yes	
+row_9	GNPDA1	GNPDA1	glucosamine-6-phosphate deaminase 1	3330	0.23301129043102264	0.51655656	No	
+row_10	GBA2	GBA2	glucosidase, beta (bile acid) 2	4193	0.14883577823638916	0.46246436	No	
+row_11	PGLS	PGLS	6-phosphogluconolactonase	5341	0.053616881370544434	0.3748004	No	
+row_12	CHIT1	CHIT1	chitinase 1 (chitotriosidase)	6247	-0.017267219722270966	0.3029128	No	
+row_13	GNS	GNS	glucosamine (N-acetyl)-6-sulfatase (Sanfilippo disease IIID)	6894	-0.06803659349679947	0.25764972	No	
+row_14	ECD	ECD	ecdysoneless homolog (Drosophila)	7144	-0.08811041712760925	0.246925	No	
+row_15	HYAL4	HYAL4	hyaluronoglucosaminidase 4	7175	-0.09025482088327408	0.25428304	No	
+row_16	GAA	GAA	glucosidase, alpha; acid (Pompe disease, glycogen storage disease type II)	7821	-0.12801948189735413	0.21561666	No	
+row_17	PFKM	PFKM	phosphofructokinase, muscle	8004	-0.14164943993091583	0.2161681	No	
+row_18	GAPDHS	GAPDHS	glyceraldehyde-3-phosphate dehydrogenase, spermatogenic	8009	-0.1419958472251892	0.23126529	No	
+row_19	MIOX	MIOX	myo-inositol oxygenase	8145	-0.15453319251537323	0.23704694	No	
+row_20	PFKFB1	PFKFB1	6-phosphofructo-2-kinase/fructose-2,6-biphosphatase 1	10122	-0.344608873128891	0.11342111	No	
+row_21	ALDOA	ALDOA	aldolase A, fructose-bisphosphate	11434	-0.581885576248169	0.0697693	No	

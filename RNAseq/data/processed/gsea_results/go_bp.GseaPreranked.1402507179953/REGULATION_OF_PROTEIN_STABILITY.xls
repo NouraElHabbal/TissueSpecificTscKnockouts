@@ -1,0 +1,16 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	APOA2	APOA2	apolipoprotein A-II	691	0.9162137508392334	0.11911174	No	
+row_1	APTX	APTX	aprataxin	3371	0.22738078236579895	-0.055589058	No	
+row_2	COG3	COG3	component of oligomeric golgi complex 3	4306	0.1373247355222702	-0.10538295	No	
+row_3	STX12	STX12	syntaxin 12	4326	0.13570083677768707	-0.08095205	No	
+row_4	COG7	COG7	component of oligomeric golgi complex 7	4478	0.12435508519411087	-0.06944587	No	
+row_5	PTEN	PTEN	phosphatase and tensin homolog (mutated in multiple advanced cancers 1)	5263	0.05957614257931709	-0.121905036	No	
+row_6	FBXO7	FBXO7	F-box protein 7	5651	0.029278548434376717	-0.14782487	No	
+row_7	GTPBP4	GTPBP4	GTP binding protein 4	6902	-0.06884560734033585	-0.23646972	No	
+row_8	TBRG1	TBRG1	transforming growth factor beta regulator 1	7340	-0.09871941804885864	-0.25316873	No	
+row_9	HPS4	HPS4	Hermansky-Pudlak syndrome 4	8780	-0.20889022946357727	-0.33039927	No	
+row_10	PPARGC1A	PPARGC1A	peroxisome proliferative activated receptor, gamma, coactivator 1, alpha	10320	-0.3688315451145172	-0.38515654	Yes	
+row_11	MDM4	MDM4	Mdm4, transformed 3T3 cell double minute 4, p53 binding protein (mouse)	10404	-0.38006114959716797	-0.3191586	Yes	
+row_12	PEX6	PEX6	peroxisomal biogenesis factor 6	11499	-0.6019647717475891	-0.29303512	Yes	
+row_13	APOA1	APOA1	apolipoprotein A-I	11929	-0.8280869722366333	-0.16945197	Yes	
+row_14	AURKA	AURKA	aurora kinase A	12132	-1.0383243560791016	0.012870511	Yes	

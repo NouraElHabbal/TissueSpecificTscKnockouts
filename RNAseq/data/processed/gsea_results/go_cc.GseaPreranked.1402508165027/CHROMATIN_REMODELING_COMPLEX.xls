@@ -1,0 +1,17 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	NAP1L2	NAP1L2	nucleosome assembly protein 1-like 2	1355	0.5913641452789307	0.0046937647	No	
+row_1	SMARCC1	SMARCC1	SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily c, member 1	1501	0.5438904762268066	0.09872339	No	
+row_2	CHAF1A	CHAF1A	chromatin assembly factor 1, subunit A (p150)	1801	0.47226473689079285	0.16626868	No	
+row_3	SMARCB1	SMARCB1	SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily b, member 1	3111	0.25603607296943665	0.109454334	No	
+row_4	NAP1L3	NAP1L3	nucleosome assembly protein 1-like 3	3848	0.18006587028503418	0.08453627	No	
+row_5	SMARCD1	SMARCD1	SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily d, member 1	3990	0.16712985932826996	0.10557334	No	
+row_6	SMARCA5	SMARCA5	SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily a, member 5	6462	-0.03370918706059456	-0.08917024	No	
+row_7	ASF1A	ASF1A	ASF1 anti-silencing function 1 homolog A (S. cerevisiae)	6518	-0.038402531296014786	-0.08617768	No	
+row_8	NAP1L4	NAP1L4	nucleosome assembly protein 1-like 4	8932	-0.2218237817287445	-0.23958871	Yes	
+row_9	RSF1	RSF1	remodeling and spacing factor 1	9497	-0.2776951193809509	-0.2314957	Yes	
+row_10	NAP1L1	NAP1L1	nucleosome assembly protein 1-like 1	9573	-0.28444430232048035	-0.1822522	Yes	
+row_11	SMARCC2	SMARCC2	SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily c, member 2	9735	-0.29975610971450806	-0.1370351	Yes	
+row_12	NCR1	NCR1	natural cytotoxicity triggering receptor 1	9840	-0.3117762506008148	-0.08483528	Yes	
+row_13	ARID1A	ARID1A	AT rich interactive domain 1A (SWI- like)	10054	-0.3369119465351105	-0.03662383	Yes	
+row_14	ARID1B	ARID1B	AT rich interactive domain 1B (SWI1-like)	10300	-0.36642158031463623	0.014723322	Yes	
+row_15	CHAF1B	CHAF1B	chromatin assembly factor 1, subunit B (p60)	11834	-0.7569979429244995	0.037148755	Yes	

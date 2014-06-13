@@ -1,0 +1,20 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	BID	BID	BH3 interacting domain death agonist	318	1.3637800216674805	0.13549967	Yes	
+row_1	CASP3	CASP3	caspase 3, apoptosis-related cysteine peptidase	502	1.1043399572372437	0.25129354	Yes	
+row_2	BCL2	BCL2	B-cell CLL/lymphoma 2	1226	0.6442302465438843	0.26862782	Yes	
+row_3	BCL2L1	BCL2L1	BCL2-like 1	1434	0.5672777891159058	0.3189012	Yes	
+row_4	BIRC3	BIRC3	baculoviral IAP repeat-containing 3	1508	0.5415138006210327	0.3770444	Yes	
+row_5	CASP9	CASP9	caspase 9, apoptosis-related cysteine peptidase	1848	0.46170568466186523	0.40406644	Yes	
+row_6	DFFA	DFFA	DNA fragmentation factor, 45kDa, alpha polypeptide	2121	0.4020017087459564	0.42948171	Yes	
+row_7	BAX	BAX	BCL2-associated X protein	2376	0.35417914390563965	0.45070362	Yes	
+row_8	CASP6	CASP6	caspase 6, apoptosis-related cysteine peptidase	3292	0.23778347671031952	0.40428686	No	
+row_9	DIABLO	DIABLO	diablo homolog (Drosophila)	3602	0.2047654241323471	0.40334293	No	
+row_10	BAK1	BAK1	BCL2-antagonist/killer 1	4179	0.15007902681827545	0.37416965	No	
+row_11	CYCS	CYCS	cytochrome c, somatic	6753	-0.0569189079105854	0.17124212	No	
+row_12	ENDOG	ENDOG	endonuclease G	7137	-0.0875684842467308	0.15039717	No	
+row_13	BIK	BIK	BCL2-interacting killer (apoptosis-inducing)	8193	-0.15826502442359924	0.08316081	No	
+row_14	APAF1	APAF1	apoptotic peptidase activating factor	9097	-0.23751068115234375	0.03768962	No	
+row_15	BIRC2	BIRC2	baculoviral IAP repeat-containing 2	9372	-0.26559093594551086	0.0467968	No	
+row_16	DFFB	DFFB	DNA fragmentation factor, 40kDa, beta polypeptide (caspase-activated DNase)	10938	-0.4605766534805298	-0.02621701	No	
+row_17	CASP8	CASP8	caspase 8, apoptosis-related cysteine peptidase	11243	-0.5246571898460388	0.01110777	No	
+row_18	CASP7	CASP7	caspase 7, apoptosis-related cysteine peptidase	11565	-0.6263014674186707	0.05907755	No	

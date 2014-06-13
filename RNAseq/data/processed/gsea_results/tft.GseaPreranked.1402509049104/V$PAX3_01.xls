@@ -1,0 +1,19 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MAP1A	MAP1A	microtubule-associated protein 1A	121	1.955222249031067	0.2753395	Yes	
+row_1	ZCCHC12	ZCCHC12	zinc finger, CCHC domain containing 12	744	0.8819631934165955	0.35330677	Yes	
+row_2	PLCXD2	PLCXD2	phosphatidylinositol-specific phospholipase C, X domain containing 2	755	0.8762529492378235	0.48030663	Yes	
+row_3	PHF21B	PHF21B	PHD finger protein 21B	1061	0.7117396593093872	0.55927324	Yes	
+row_4	AP1S1	AP1S1	adaptor-related protein complex 1, sigma 1 subunit	1780	0.4777923822402954	0.5704641	Yes	
+row_5	STXBP1	STXBP1	syntaxin binding protein 1	3571	0.20712749660015106	0.4548281	No	
+row_6	CACNA1G	CACNA1G	calcium channel, voltage-dependent, alpha 1G subunit	4228	0.14476193487644196	0.42249316	No	
+row_7	YARS	YARS	tyrosyl-tRNA synthetase	4946	0.08335661143064499	0.37623104	No	
+row_8	KCNE4	KCNE4	potassium voltage-gated channel, Isk-related family, member 4	5839	0.013501782901585102	0.30552062	No	
+row_9	CRY1	CRY1	cryptochrome 1 (photolyase-like)	6255	-0.01802072674036026	0.27433515	No	
+row_10	RTF1	RTF1	Rtf1, Paf1/RNA polymerase II complex component, homolog (S. cerevisiae)	6698	-0.05249011889100075	0.24597761	No	
+row_11	CLPTM1	CLPTM1	cleft lip and palate associated transmembrane protein 1	6803	-0.06157960370182991	0.24648602	No	
+row_12	FBXO11	FBXO11	F-box protein 11	7124	-0.08652275800704956	0.23303318	No	
+row_13	NOTCH2	NOTCH2	Notch homolog 2 (Drosophila)	7928	-0.13653159141540527	0.18752019	No	
+row_14	CBX8	CBX8	chromobox homolog 8 (Pc class homolog, Drosophila)	8290	-0.166753888130188	0.18242958	No	
+row_15	FGF10	FGF10	fibroblast growth factor 10	8528	-0.18856683373451233	0.1906242	No	
+row_16	MYH2	MYH2	myosin, heavy chain 2, skeletal muscle, adult	8785	-0.20910054445266724	0.20026587	No	
+row_17	ZIC1	ZIC1	Zic family member 1 (odd-paired homolog, Drosophila)	11441	-0.5843687057495117	0.06917631	No	

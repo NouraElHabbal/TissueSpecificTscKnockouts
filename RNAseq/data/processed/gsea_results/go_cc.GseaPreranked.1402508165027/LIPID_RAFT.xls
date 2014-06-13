@@ -1,0 +1,26 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	STOM	STOM	stomatin	376	1.2650829553604126	0.07423043	No	
+row_1	PPT1	PPT1	palmitoyl-protein thioesterase 1 (ceroid-lipofuscinosis, neuronal 1, infantile)	791	0.8522133827209473	0.11113308	No	
+row_2	CD48	CD48	CD48 molecule	1428	0.5691469311714172	0.10646873	No	
+row_3	SORBS1	SORBS1	sorbin and SH3 domain containing 1	2229	0.3800608217716217	0.07275751	No	
+row_4	BTK	BTK	Bruton agammaglobulinemia tyrosine kinase	2398	0.349757581949234	0.08805848	No	
+row_5	FLOT1	FLOT1	flotillin 1	3068	0.2608749270439148	0.05514584	No	
+row_6	PRNP	PRNP	prion protein (p27-30) (Creutzfeldt-Jakob disease, Gerstmann-Strausler-Scheinker syndrome, fatal familial insomnia)	3584	0.2063557356595993	0.030268205	No	
+row_7	STX12	STX12	syntaxin 12	4326	0.13570083677768707	-0.01889213	No	
+row_8	MAL	MAL	mal, T-cell differentiation protein	4505	0.12208914011716843	-0.023281738	No	
+row_9	MALL	MALL	mal, T-cell differentiation protein-like	4710	0.10485801100730896	-0.031219611	No	
+row_10	SHH	SHH	sonic hedgehog homolog (Drosophila)	5073	0.07370024919509888	-0.054621812	No	
+row_11	LAT	LAT	linker for activation of T cells	5745	0.02095096744596958	-0.10758889	No	
+row_12	CLN3	CLN3	ceroid-lipofuscinosis, neuronal 3, juvenile (Batten, Spielmeyer-Vogt disease)	6407	-0.029385719448328018	-0.1590414	No	
+row_13	LYN	LYN	v-yes-1 Yamaguchi sarcoma viral related oncogene homolog	6589	-0.044626910239458084	-0.17009775	No	
+row_14	CD55	CD55	CD55 molecule, decay accelerating factor for complement (Cromer blood group)	7054	-0.08057507872581482	-0.20124565	No	
+row_15	LAT2	LAT2	linker for activation of T cells family, member 2	8503	-0.18538525700569153	-0.3039258	No	
+row_16	CAV1	CAV1	caveolin 1, caveolae protein, 22kDa	11190	-0.5135194659233093	-0.4803307	Yes	
+row_17	ABCA1	ABCA1	ATP-binding cassette, sub-family A (ABC1), member 1	11209	-0.5180714726448059	-0.4388464	Yes	
+row_18	GHSR	GHSR	growth hormone secretagogue receptor	11428	-0.5802134275436401	-0.40851533	Yes	
+row_19	PAG1	PAG1	phosphoprotein associated with glycosphingolipid microdomains 1	11756	-0.7162732481956482	-0.3757903	Yes	
+row_20	CAV2	CAV2	caveolin 2	11890	-0.7998877763748169	-0.32031697	Yes	
+row_21	LCK	LCK	lymphocyte-specific protein tyrosine kinase	12035	-0.9228755235671997	-0.25554386	Yes	
+row_22	LAX1	LAX1	lymphocyte transmembrane adaptor 1	12062	-0.9524835348129272	-0.17869595	Yes	
+row_23	CD79A	CD79A	CD79a molecule, immunoglobulin-associated alpha	12118	-1.0089730024337769	-0.09952893	Yes	
+row_24	CARD11	CARD11	caspase recruitment domain family, member 11	12247	-1.3686407804489136	0.003505672	Yes	

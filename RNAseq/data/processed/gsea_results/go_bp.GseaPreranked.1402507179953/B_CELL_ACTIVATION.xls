@@ -1,0 +1,20 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	NHEJ1	NHEJ1	nonhomologous end-joining factor 1	640	0.9665580987930298	0.053822022	No	
+row_1	HDAC9	HDAC9	histone deacetylase 9	1126	0.6842309236526489	0.089320116	No	
+row_2	IL4	IL4	interleukin 4	1723	0.49308034777641296	0.09481552	No	
+row_3	INHA	INHA	inhibin, alpha	1998	0.4287140965461731	0.11949241	No	
+row_4	SLA2	SLA2	Src-like-adaptor 2	3026	0.26656681299209595	0.06503231	No	
+row_5	NFAM1	NFAM1	NFAT activating protein with ITAM motif 1	3434	0.2206689417362213	0.056061488	No	
+row_6	TPD52	TPD52	tumor protein D52	4110	0.15688946843147278	0.018259564	No	
+row_7	CEBPG	CEBPG	CCAAT/enhancer binding protein (C/EBP), gamma	4442	0.12699651718139648	0.005211472	No	
+row_8	TGFB1	TGFB1	transforming growth factor, beta 1 (Camurati-Engelmann disease)	4588	0.11633426696062088	0.006150826	No	
+row_9	PTPRC	PTPRC	protein tyrosine phosphatase, receptor type, C	5116	0.0707264393568039	-0.029038025	No	
+row_10	CD40LG	CD40LG	CD40 ligand (TNF superfamily, member 5, hyper-IgM syndrome)	7461	-0.10722845047712326	-0.20828542	No	
+row_11	INHBA	INHBA	inhibin, beta A (activin A, activin AB alpha polypeptide)	7871	-0.13153895735740662	-0.22719142	No	
+row_12	HDAC4	HDAC4	histone deacetylase 4	8483	-0.18360033631324768	-0.25684965	No	
+row_13	LAT2	LAT2	linker for activation of T cells family, member 2	8503	-0.18538525700569153	-0.23807228	No	
+row_14	HDAC5	HDAC5	histone deacetylase 5	9785	-0.30399447679519653	-0.30912635	No	
+row_15	LAX1	LAX1	lymphocyte transmembrane adaptor 1	12062	-0.9524835348129272	-0.39015904	Yes	
+row_16	CD79A	CD79A	CD79a molecule, immunoglobulin-associated alpha	12118	-1.0089730024337769	-0.28401718	Yes	
+row_17	TNFSF13	TNFSF13	tumor necrosis factor (ligand) superfamily, member 13	12202	-1.1723095178604126	-0.16224872	Yes	
+row_18	IL7	IL7	interleukin 7	12266	-1.5444931983947754	0.0019556244	Yes	

@@ -1,0 +1,28 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	NTHL1	NTHL1	nth endonuclease III-like 1 (E. coli)	2545	0.32900604605674744	-0.15452504	No	
+row_1	APTX	APTX	aprataxin	3371	0.22738078236579895	-0.18517096	No	
+row_2	SMAD2	SMAD2	SMAD, mothers against DPP homolog 2 (Drosophila)	3373	0.22722217440605164	-0.14865391	No	
+row_3	XRCC6	XRCC6	X-ray repair complementing defective repair in Chinese hamster cells 6 (Ku autoantigen, 70kDa)	3784	0.18707498908042908	-0.15195298	No	
+row_4	MSH6	MSH6	mutS homolog 6 (E. coli)	4310	0.13676120340824127	-0.17273311	No	
+row_5	RBMS1	RBMS1	RNA binding motif, single stranded interacting protein 1	4465	0.12580405175685883	-0.16502698	No	
+row_6	CGGBP1	CGGBP1	CGG triplet repeat binding protein 1	5010	0.07893071323633194	-0.19667111	No	
+row_7	ERCC5	ERCC5	me))	5663	0.0278170146048069	-0.24535435	No	
+row_8	MTERF	MTERF	mitochondrial transcription termination factor	5667	0.02763141132891178	-0.2411484	No	
+row_9	KIN	KIN	KIN, antigenic determinant of recA protein homolog (mouse)	5913	0.006397215183824301	-0.26009518	No	
+row_10	MSH3	MSH3	mutS homolog 3 (E. coli)	6273	-0.01989922486245632	-0.28616267	No	
+row_11	PNKP	PNKP	polynucleotide kinase 3'-phosphatase	6849	-0.06513696163892746	-0.3225563	No	
+row_12	SATB1	SATB1	special AT-rich sequence binding protein 1 (binds to nuclear matrix/scaffold-associating DNA's)	6941	-0.07117563486099243	-0.31851214	No	
+row_13	MRE11A	MRE11A	MRE11 meiotic recombination 11 homolog A (S. cerevisiae)	7658	-0.11830106377601624	-0.35783967	No	
+row_14	MLH1	MLH1	mutL homolog 1, colon cancer, nonpolyposis type 2 (E. coli)	8037	-0.14445698261260986	-0.36539397	No	
+row_15	PURA	PURA	purine-rich element binding protein A	8466	-0.18115876615047455	-0.3711137	No	
+row_16	TERF1	TERF1	telomeric repeat binding factor (NIMA-interacting) 1	9101	-0.23767632246017456	-0.38452724	Yes	
+row_17	PMS2	PMS2	PMS2 postmeiotic segregation increased 2 (S. cerevisiae)	9218	-0.2512011229991913	-0.35352495	Yes	
+row_18	FEN1	FEN1	flap structure-specific endonuclease 1	9239	-0.2532868981361389	-0.3143589	Yes	
+row_19	RAD51	RAD51	RAD51 homolog (RecA homolog, E. coli) (S. cerevisiae)	9445	-0.2727096676826477	-0.28714925	Yes	
+row_20	HMGB2	HMGB2	high-mobility group box 2	9513	-0.2787192463874817	-0.24771917	Yes	
+row_21	SAFB	SAFB	scaffold attachment factor B	9621	-0.28878167271614075	-0.20992991	Yes	
+row_22	YBX1	YBX1	Y box binding protein 1	9969	-0.32623082399368286	-0.18567823	Yes	
+row_23	XRCC5	XRCC5	X-ray repair complementing defective repair in Chinese hamster cells 5 (double-strand-break rejoining; Ku autoantigen, 80kDa)	10203	-0.35392963886260986	-0.1476696	Yes	
+row_24	RAD51AP1	RAD51AP1	RAD51 associated protein 1	10950	-0.4625430405139923	-0.13399638	Yes	
+row_25	MSH2	MSH2	mutS homolog 2, colon cancer, nonpolyposis type 1 (E. coli)	11367	-0.5594112277030945	-0.07781262	Yes	
+row_26	HLF	HLF	hepatic leukemia factor	12057	-0.9498506188392639	0.018998802	Yes	

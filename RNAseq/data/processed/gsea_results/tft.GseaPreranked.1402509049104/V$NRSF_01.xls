@@ -1,0 +1,74 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GABRB3	GABRB3	gamma-aminobutyric acid (GABA) A receptor, beta 3	18	2.9603376388549805	0.059721086	Yes	
+row_1	NPPB	NPPB	natriuretic peptide precursor B	19	2.94516921043396	0.120601855	Yes	
+row_2	HCN1	HCN1	hyperpolarization activated cyclic nucleotide-gated potassium channel 1	26	2.8404018878936768	0.17882586	Yes	
+row_3	PTPRN	PTPRN	protein tyrosine phosphatase, receptor type, N	37	2.684112548828125	0.23349176	Yes	
+row_4	GLRA3	GLRA3	glycine receptor, alpha 3	159	1.7592862844467163	0.25995526	Yes	
+row_5	TRIM9	TRIM9	tripartite motif-containing 9	164	1.7439875602722168	0.29567853	Yes	
+row_6	DNER	DNER	-	191	1.6919721364974976	0.32852596	Yes	
+row_7	SCAMP5	SCAMP5	secretory carrier membrane protein 5	202	1.6711654663085938	0.3622528	Yes	
+row_8	OGDHL	OGDHL	oxoglutarate dehydrogenase-like	255	1.4996157884597778	0.38899595	Yes	
+row_9	SNAP25	SNAP25	synaptosomal-associated protein, 25kDa	308	1.3932636976242065	0.41354066	Yes	
+row_10	ELAVL3	ELAVL3	ELAV (embryonic lethal, abnormal vision, Drosophila)-like 3 (Hu antigen C)	405	1.2191808223724365	0.43088555	Yes	
+row_11	NRSN1	NRSN1	neurensin 1	442	1.1641278266906738	0.45200324	Yes	
+row_12	GRM1	GRM1	glutamate receptor, metabotropic 1	623	0.9827996492385864	0.45758674	Yes	
+row_13	NPAS4	NPAS4	neuronal PAS domain protein 4	662	0.9443489909172058	0.47399756	Yes	
+row_14	GABRG2	GABRG2	gamma-aminobutyric acid (GABA) A receptor, gamma 2	726	0.8930580019950867	0.487302	Yes	
+row_15	CHKA	CHKA	choline kinase alpha	733	0.8914945721626282	0.50523937	Yes	
+row_16	APBB1	APBB1	amyloid beta (A4) precursor protein-binding, family B, member 1 (Fe65)	823	0.8302481770515442	0.5151174	Yes	
+row_17	CHRNB2	CHRNB2	cholinergic receptor, nicotinic, beta 2 (neuronal)	831	0.8249995112419128	0.5315984	Yes	
+row_18	DRD2	DRD2	dopamine receptor D2	910	0.779719352722168	0.54133224	Yes	
+row_19	INA	INA	internexin neuronal intermediate filament protein, alpha	1002	0.7348485589027405	0.5490746	Yes	
+row_20	SLC17A6	SLC17A6	solute carrier family 17 (sodium-dependent inorganic phosphate cotransporter), member 6	1011	0.7297524213790894	0.5635048	Yes	
+row_21	KCNIP2	KCNIP2	Kv channel interacting protein 2	1037	0.7208449244499207	0.5763595	Yes	
+row_22	RNF13	RNF13	ring finger protein 13	1375	0.5852801203727722	0.56087583	No	
+row_23	BARHL1	BARHL1	BarH-like 1 (Drosophila)	1532	0.5359678864479065	0.559187	No	
+row_24	POMC	POMC	proopiomelanocortin (adrenocorticotropin/ beta-lipotropin/ alpha-melanocyte stimulating hormone/ beta-melanocyte stimulating hormone/ beta-endorphin)	1638	0.5113929510116577	0.5611643	No	
+row_25	BDNF	BDNF	brain-derived neurotrophic factor	1980	0.4342997670173645	0.5422323	No	
+row_26	HES1	HES1	hairy and enhancer of split 1, (Drosophila)	2269	0.3734869062900543	0.52638096	No	
+row_27	CDK5R1	CDK5R1	cyclin-dependent kinase 5, regulatory subunit 1 (p35)	2317	0.36506953835487366	0.5300807	No	
+row_28	MGAT5B	MGAT5B	mannosyl (alpha-1,6-)-glycoprotein beta-1,6-N-acetyl-glucosaminyltransferase, isozyme B	2514	0.33562836050987244	0.5209767	No	
+row_29	TAOK3	TAOK3	TAO kinase 3	3002	0.27057310938835144	0.4867106	No	
+row_30	DPH2	DPH2	DPH2 homolog (S. cerevisiae)	3090	0.25848475098609924	0.4849332	No	
+row_31	CRYBA2	CRYBA2	crystallin, beta A2	3227	0.2412804663181305	0.4787897	No	
+row_32	CDKN2B	CDKN2B	cyclin-dependent kinase inhibitor 2B (p15, inhibits CDK4)	3319	0.23456524312496185	0.47619045	No	
+row_33	HCN3	HCN3	hyperpolarization activated cyclic nucleotide-gated potassium channel 3	3320	0.2342914640903473	0.4810336	No	
+row_34	SCN3B	SCN3B	sodium channel, voltage-gated, type III, beta	3498	0.21471090614795685	0.47098514	No	
+row_35	GLRA1	GLRA1	glycine receptor, alpha 1 (startle disease/hyperekplexia, stiff man syndrome)	3561	0.20765839517116547	0.47020325	No	
+row_36	RXFP3	RXFP3	relaxin/insulin-like family peptide receptor 3	3866	0.1785927563905716	0.44901368	No	
+row_37	MAPK11	MAPK11	mitogen-activated protein kinase 11	3971	0.16875571012496948	0.44399008	No	
+row_38	CHAT	CHAT	choline acetyltransferase	4064	0.16061563789844513	0.43978035	No	
+row_39	DDX25	DDX25	DEAD (Asp-Glu-Ala-Asp) box polypeptide 25	4158	0.15207721292972565	0.43531227	No	
+row_40	FGD2	FGD2	FYVE, RhoGEF and PH domain containing 2	4249	0.14272889494895935	0.4308965	No	
+row_41	ATP6V0A1	ATP6V0A1	ATPase, H+ transporting, lysosomal V0 subunit a1	4730	0.10234764963388443	0.39372587	No	
+row_42	PCSK2	PCSK2	proprotein convertase subtilisin/kexin type 2	5433	0.047670867294073105	0.3372551	No	
+row_43	SARM1	SARM1	sterile alpha and TIR motif containing 1	5601	0.03426116332411766	0.32429495	No	
+row_44	COL5A3	COL5A3	collagen, type V, alpha 3	5643	0.030093923211097717	0.32156134	No	
+row_45	NEFH	NEFH	neurofilament, heavy polypeptide 200kDa	5677	0.02687874063849449	0.31941602	No	
+row_46	OMG	OMG	oligodendrocyte myelin glycoprotein	6296	-0.02125035971403122	0.26927418	No	
+row_47	SYT4	SYT4	synaptotagmin IV	7186	-0.09025482088327408	0.19837838	No	
+row_48	RPH3A	RPH3A	rabphilin 3A homolog (mouse)	7252	-0.09200257807970047	0.19496019	No	
+row_49	VGF	VGF	VGF nerve growth factor inducible	7502	-0.10960723459720612	0.17684615	No	
+row_50	PAQR4	PAQR4	progestin and adipoQ receptor family member IV	7654	-0.11797348409891129	0.16692601	No	
+row_51	ATP2B2	ATP2B2	ATPase, Ca++ transporting, plasma membrane 2	7659	-0.11837142705917358	0.16904554	No	
+row_52	VIP	VIP	vasoactive intestinal peptide	7801	-0.12719281017780304	0.16013443	No	
+row_53	CALB1	CALB1	calbindin 1, 28kDa	8362	-0.17266425490379333	0.11786963	No	
+row_54	SFXN3	SFXN3	sideroflexin 3	8409	-0.17672239243984222	0.1177578	No	
+row_55	FGF12	FGF12	fibroblast growth factor 12	8432	-0.17899487912654877	0.11965725	No	
+row_56	GPRIN1	GPRIN1	G protein regulated inducer of neurite outgrowth 1	9057	-0.2344917505979538	0.073432334	No	
+row_57	SYT6	SYT6	synaptotagmin VI	9271	-0.2563386857509613	0.06129792	No	
+row_58	PHYHIPL	PHYHIPL	phytanoyl-CoA 2-hydroxylase interacting protein-like	9715	-0.2975740134716034	0.031191211	No	
+row_59	GRIN1	GRIN1	glutamate receptor, ionotropic, N-methyl D-aspartate 1	10228	-0.35668715834617615	-0.0033409514	No	
+row_60	FAM57B	FAM57B	family with sequence similarity 57, member B	10411	-0.3807266354560852	-0.010366853	No	
+row_61	KCNH4	KCNH4	potassium voltage-gated channel, subfamily H (eag-related), member 4	10621	-0.40903982520103455	-0.019017337	No	
+row_62	SLC12A5	SLC12A5	solute carrier family 12, (potassium-chloride transporter) member 5	10753	-0.4317559599876404	-0.020814221	No	
+row_63	PRG3	PRG3	proteoglycan 3	10914	-0.45550188422203064	-0.024493793	No	
+row_64	L1CAM	L1CAM	L1 cell adhesion molecule	11131	-0.5012791156768799	-0.03181049	No	
+row_65	KCNH8	KCNH8	potassium voltage-gated channel, subfamily H (eag-related), member 8	11258	-0.5298392176628113	-0.031170622	No	
+row_66	GHSR	GHSR	growth hormone secretagogue receptor	11428	-0.5802134275436401	-0.033008847	No	
+row_67	PDZD7	PDZD7	PDZ domain containing 7	11436	-0.5824306607246399	-0.021542117	No	
+row_68	GDAP1L1	GDAP1L1	ganglioside-induced differentiation-associated protein 1-like 1	11587	-0.6370227932929993	-0.020650933	No	
+row_69	STMN2	STMN2	stathmin-like 2	11666	-0.6685166954994202	-0.013215781	No	
+row_70	RASGRF1	RASGRF1	Ras protein-specific guanine nucleotide-releasing factor 1	11674	-0.6701216697692871	6.3646294E-5	No	
+row_71	CHGA	CHGA	chromogranin A (parathyroid secretory protein 1)	11883	-0.7931461930274963	-5.64974E-4	No	
+row_72	SEZ6	SEZ6	seizure related 6 homolog (mouse)	12275	-1.6348540782928467	0.001227786	No	

@@ -1,0 +1,204 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	RRAD	RRAD	Ras-related associated with diabetes	49	2.5375759601593018	0.029640682	Yes	
+row_1	RAB27B	RAB27B	RAB27B, member RAS oncogene family	92	2.192898988723755	0.05528378	Yes	
+row_2	ATP2A2	ATP2A2	ATPase, Ca++ transporting, cardiac muscle, slow twitch 2	187	1.6997262239456177	0.07007668	Yes	
+row_3	MX2	MX2	myxovirus (influenza virus) resistance 2 (mouse)	200	1.6779344081878662	0.09136381	Yes	
+row_4	TOP2A	TOP2A	topoisomerase (DNA) II alpha 170kDa	211	1.6304693222045898	0.11218614	Yes	
+row_5	MYH7	MYH7	myosin, heavy chain 7, cardiac muscle, beta	225	1.5741980075836182	0.13201311	Yes	
+row_6	RAD54B	RAD54B	RAD54 homolog B (S. cerevisiae)	239	1.542661428451538	0.15142134	Yes	
+row_7	GNG11	GNG11	guanine nucleotide binding protein (G protein), gamma 11	322	1.35508131980896	0.16263072	Yes	
+row_8	RHOD	RHOD	ras homolog gene family, member D	330	1.3376425504684448	0.17981304	Yes	
+row_9	RAB31	RAB31	RAB31, member RAS oncogene family	349	1.310416579246521	0.19572385	Yes	
+row_10	RASD1	RASD1	RAS, dexamethasone-induced 1	351	1.309741735458374	0.21303205	Yes	
+row_11	RAB13	RAB13	RAB13, member RAS oncogene family	393	1.242034673690796	0.22613217	Yes	
+row_12	GNAI1	GNAI1	guanine nucleotide binding protein (G protein), alpha inhibiting activity polypeptide 1	447	1.1589679718017578	0.2371366	Yes	
+row_13	ARL4D	ARL4D	ADP-ribosylation factor-like 4D	462	1.1386685371398926	0.25109783	Yes	
+row_14	MYH10	MYH10	myosin, heavy chain 10, non-muscle	463	1.1350065469741821	0.2661686	Yes	
+row_15	PPA1	PPA1	pyrophosphatase (inorganic) 1	506	1.1027828454971313	0.27733698	Yes	
+row_16	ARL4C	ARL4C	ADP-ribosylation factor-like 4C	616	0.9896429181098938	0.2814604	Yes	
+row_17	MYH6	MYH6	myosin, heavy chain 6, cardiac muscle, alpha (cardiomyopathy, hypertrophic 1)	619	0.9886600971221924	0.2944225	Yes	
+row_18	RAP2A	RAP2A	RAP2A, member of RAS oncogene family	697	0.9138056635856628	0.3001862	Yes	
+row_19	ABCC3	ABCC3	ATP-binding cassette, sub-family C (CFTR/MRP), member 3	732	0.8919611573219299	0.30921707	Yes	
+row_20	SEPT5	SEPT5	septin 5	875	0.7964971661567688	0.3080459	Yes	
+row_21	NCF1	NCF1	neutrophil cytosolic factor 1, (chronic granulomatous disease, autosomal 1)	884	0.7918525338172913	0.3178984	Yes	
+row_22	RAB33A	RAB33A	RAB33A, member RAS oncogene family	953	0.7581318020820618	0.32233956	Yes	
+row_23	RHOC	RHOC	ras homolog gene family, member C	967	0.7504849433898926	0.33122918	Yes	
+row_24	RAB3B	RAB3B	RAB3B, member RAS oncogene family	1124	0.6851915121078491	0.32742187	Yes	
+row_25	RND2	RND2	Rho family GTPase 2	1153	0.6735385060310364	0.33404887	Yes	
+row_26	ATP1A1	ATP1A1	ATPase, Na+/K+ transporting, alpha 1 polypeptide	1249	0.635597288608551	0.3346294	Yes	
+row_27	SEPT9	SEPT9	septin 9	1346	0.5942705869674683	0.33457842	Yes	
+row_28	NUDT1	NUDT1	nudix (nucleoside diphosphate linked moiety X)-type motif 1	1425	0.5693415999412537	0.33568555	Yes	
+row_29	GNA12	GNA12	guanine nucleotide binding protein (G protein) alpha 12	1545	0.5334967374801636	0.33292493	Yes	
+row_30	ABCC2	ABCC2	ATP-binding cassette, sub-family C (CFTR/MRP), member 2	1643	0.5094814300537109	0.3316654	Yes	
+row_31	NUDT10	NUDT10	nudix (nucleoside diphosphate linked moiety X)-type motif 10	1704	0.49615713953971863	0.33328983	Yes	
+row_32	RHOB	RHOB	ras homolog gene family, member B	1716	0.49409306049346924	0.3389405	Yes	
+row_33	GNG10	GNG10	guanine nucleotide binding protein (G protein), gamma 10	1803	0.47145214676856995	0.338086	Yes	
+row_34	RALBP1	RALBP1	ralA binding protein 1	1826	0.4658914804458618	0.3424522	Yes	
+row_35	ATP1A3	ATP1A3	ATPase, Na+/K+ transporting, alpha 3 polypeptide	1836	0.46412038803100586	0.3478703	Yes	
+row_36	GNAL	GNAL	guanine nucleotide binding protein (G protein), alpha activating activity polypeptide, olfactory type	1906	0.44776561856269836	0.34810767	Yes	
+row_37	PICK1	PICK1	protein interacting with PRKCA 1	1961	0.43864014744758606	0.34946474	Yes	
+row_38	VCP	VCP	valosin-containing protein	1995	0.43024736642837524	0.35244766	Yes	
+row_39	KATNA1	KATNA1	katanin p60 (ATPase-containing) subunit A 1	1996	0.4295865595340729	0.35815176	Yes	
+row_40	CCT8	CCT8	chaperonin containing TCP1, subunit 8 (theta)	2024	0.42278698086738586	0.36153197	Yes	
+row_41	ATP1B3	ATP1B3	ATPase, Na+/K+ transporting, beta 3 polypeptide	2097	0.40658703446388245	0.36097437	Yes	
+row_42	TTF2	TTF2	transcription termination factor, RNA polymerase II	2134	0.3984474837779999	0.36328685	Yes	
+row_43	ARF4	ARF4	ADP-ribosylation factor 4	2202	0.38547536730766296	0.36286256	Yes	
+row_44	FHIT	FHIT	fragile histidine triad gene	2253	0.3755577802658081	0.36371294	Yes	
+row_45	CDC42	CDC42	cell division cycle 42 (GTP binding protein, 25kDa)	2263	0.37424948811531067	0.3679377	Yes	
+row_46	DDX54	DDX54	DEAD (Asp-Glu-Ala-Asp) box polypeptide 54	2281	0.37083637714385986	0.3714554	Yes	
+row_47	PEX1	PEX1	peroxisome biogenesis factor 1	2297	0.3676023781299591	0.37509558	Yes	
+row_48	GNB3	GNB3	guanine nucleotide binding protein (G protein), beta polypeptide 3	2319	0.36481621861457825	0.37820238	Yes	
+row_49	ATP1B1	ATP1B1	ATPase, Na+/K+ transporting, beta 1 polypeptide	2343	0.3597966730594635	0.3810771	Yes	
+row_50	ABCG1	ABCG1	ATP-binding cassette, sub-family G (WHITE), member 1	2434	0.34529852867126465	0.37821662	Yes	
+row_51	ERCC3	ERCC3	excision repair cross-complementing rodent repair deficiency, complementation group 3 (xeroderma pigmentosum group B complementing)	2448	0.342898964881897	0.38169423	Yes	
+row_52	MYO1E	MYO1E	myosin IE	2450	0.34281671047210693	0.38616347	Yes	
+row_53	MYO3A	MYO3A	myosin IIIA	2489	0.33788537979125977	0.38750637	Yes	
+row_54	ABCD4	ABCD4	ATP-binding cassette, sub-family D (ALD), member 4	2503	0.33714115619659424	0.39090753	Yes	
+row_55	ENPP2	ENPP2	ectonucleotide pyrophosphatase/phosphodiesterase 2 (autotaxin)	2517	0.3349779546260834	0.39427996	Yes	
+row_56	RND3	RND3	Rho family GTPase 3	2597	0.3202308714389801	0.39199662	Yes	
+row_57	RRAGC	RRAGC	Ras-related GTP binding C	2638	0.31401950120925903	0.39285713	Yes	
+row_58	ARF5	ARF5	ADP-ribosylation factor 5	2666	0.31081950664520264	0.39475062	Yes	
+row_59	PSMC5	PSMC5	proteasome (prosome, macropain) 26S subunit, ATPase, 5	2698	0.30610334873199463	0.39625058	Yes	
+row_60	DNM1L	DNM1L	dynamin 1-like	2735	0.30028972029685974	0.3972597	Yes	
+row_61	PSMC4	PSMC4	proteasome (prosome, macropain) 26S subunit, ATPase, 4	2744	0.2996238172054291	0.40057635	Yes	
+row_62	ARF3	ARF3	ADP-ribosylation factor 3	2765	0.2992112636566162	0.4028948	Yes	
+row_63	GNA13	GNA13	guanine nucleotide binding protein (G protein), alpha 13	2788	0.2962176501750946	0.40500802	Yes	
+row_64	MRAS	MRAS	muscle RAS oncogene homolog	2904	0.2820986211299896	0.3992402	No	
+row_65	GNB1	GNB1	guanine nucleotide binding protein (G protein), beta polypeptide 1	3013	0.2693782448768616	0.39388257	No	
+row_66	RAB35	RAB35	RAB35, member RAS oncogene family	3036	0.26512181758880615	0.39558288	No	
+row_67	ABCD3	ABCD3	ATP-binding cassette, sub-family D (ALD), member 3	3053	0.2627476751804352	0.39774808	No	
+row_68	PSMC6	PSMC6	proteasome (prosome, macropain) 26S subunit, ATPase, 6	3066	0.2610546350479126	0.40022168	No	
+row_69	RAB7L1	RAB7L1	RAB7, member RAS oncogene family-like 1	3084	0.2590770423412323	0.4022554	No	
+row_70	ATP7B	ATP7B	ATPase, Cu++ transporting, beta polypeptide	3179	0.24750977754592896	0.39776555	No	
+row_71	RHOA	RHOA	ras homolog gene family, member A	3276	0.2392435222864151	0.39300048	No	
+row_72	KATNB1	KATNB1	katanin p80 (WD repeat containing) subunit B 1	3315	0.23526287078857422	0.39298072	No	
+row_73	NUDT11	NUDT11	nudix (nucleoside diphosphate linked moiety X)-type motif 11	3344	0.2309509515762329	0.39373097	No	
+row_74	ATP6V1C1	ATP6V1C1	ATPase, H+ transporting, lysosomal 42kDa, V1 subunit C1	3345	0.23080392181873322	0.39679563	No	
+row_75	NUDT5	NUDT5	nudix (nucleoside diphosphate linked moiety X)-type motif 5	3483	0.21593758463859558	0.38832933	No	
+row_76	RAB28	RAB28	RAB28, member RAS oncogene family	3489	0.2155476212501526	0.39077777	No	
+row_77	MYH9	MYH9	myosin, heavy chain 9, non-muscle	3611	0.2035650908946991	0.3834708	No	
+row_78	PPP2R4	PPP2R4	protein phosphatase 2A, regulatory subunit B' (PR 53)	3706	0.19296209514141083	0.37825668	No	
+row_79	ARL4A	ARL4A	ADP-ribosylation factor-like 4A	3722	0.19118572771549225	0.37955436	No	
+row_80	CLPX	CLPX	ClpX caseinolytic peptidase X homolog (E. coli)	3723	0.19110892713069916	0.38209194	No	
+row_81	XRCC6	XRCC6	X-ray repair complementing defective repair in Chinese hamster cells 6 (Ku autoantigen, 70kDa)	3784	0.18707498908042908	0.37961236	No	
+row_82	RAB5A	RAB5A	RAB5A, member RAS oncogene family	3814	0.18395929038524628	0.3796559	No	
+row_83	ENPP1	ENPP1	ectonucleotide pyrophosphatase/phosphodiesterase 1	3837	0.18174894154071808	0.3802492	No	
+row_84	DHX38	DHX38	DEAH (Asp-Glu-Ala-His) box polypeptide 38	3950	0.1706864833831787	0.37325022	No	
+row_85	PSMC1	PSMC1	proteasome (prosome, macropain) 26S subunit, ATPase, 1	3975	0.1684386432170868	0.37350133	No	
+row_86	RBBP4	RBBP4	retinoblastoma binding protein 4	3980	0.1677326261997223	0.3753976	No	
+row_87	WRNIP1	WRNIP1	Werner helicase interacting protein 1	3988	0.16722255945205688	0.37703893	No	
+row_88	SMARCAL1	SMARCAL1	SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily a-like 1	4020	0.1648055762052536	0.3766627	No	
+row_89	ERCC8	ERCC8	excision repair cross-complementing rodent repair deficiency, complementation group 8	4037	0.16279855370521545	0.37750074	No	
+row_90	ABCG2	ABCG2	ATP-binding cassette, sub-family G (WHITE), member 2	4041	0.1624031364917755	0.379409	No	
+row_91	NUDT3	NUDT3	nudix (nucleoside diphosphate linked moiety X)-type motif 3	4078	0.15926913917064667	0.3785456	No	
+row_92	ATP6V0C	ATP6V0C	ATPase, H+ transporting, lysosomal 16kDa, V0 subunit c	4120	0.1560567021369934	0.37722597	No	
+row_93	DDX25	DDX25	DEAD (Asp-Glu-Ala-Asp) box polypeptide 25	4158	0.15207721292972565	0.37618437	No	
+row_94	RAN	RAN	RAN, member RAS oncogene family	4209	0.14672408998012543	0.37399626	No	
+row_95	MSH6	MSH6	mutS homolog 6 (E. coli)	4310	0.13676120340824127	0.36753953	No	
+row_96	EFTUD2	EFTUD2	elongation factor Tu GTP binding domain containing 2	4319	0.13606083393096924	0.36868435	No	
+row_97	ATP1A2	ATP1A2	ATPase, Na+/K+ transporting, alpha 2 (+) polypeptide	4324	0.1357567012310028	0.37015605	No	
+row_98	RAB3D	RAB3D	RAB3D, member RAS oncogene family	4384	0.1315961629152298	0.3670225	No	
+row_99	RAB3A	RAB3A	RAB3A, member RAS oncogene family	4398	0.1303718537092209	0.36767817	No	
+row_100	GNA15	GNA15	guanine nucleotide binding protein (G protein), alpha 15 (Gq class)	4404	0.13000720739364624	0.36899078	No	
+row_101	OPA1	OPA1	optic atrophy 1 (autosomal dominant)	4453	0.12623853981494904	0.36669612	No	
+row_102	RAB30	RAB30	RAB30, member RAS oncogene family	4510	0.12173701077699661	0.36367986	No	
+row_103	ATP11B	ATP11B	ATPase, Class VI, type 11B	4532	0.12054356932640076	0.3635432	No	
+row_104	KIF1B	KIF1B	kinesin family member 1B	4563	0.11854767054319382	0.3626355	No	
+row_105	RAB5B	RAB5B	RAB5B, member RAS oncogene family	4783	0.09745603054761887	0.34581238	No	
+row_106	SKIV2L	SKIV2L	superkiller viralicidic activity 2-like (S. cerevisiae)	5002	0.07979072630405426	0.32883745	No	
+row_107	GNAS	GNAS	GNAS complex locus	5007	0.07925403118133545	0.32955888	No	
+row_108	DHX9	DHX9	DEAH (Asp-Glu-Ala-His) box polypeptide 9	5083	0.07330483198165894	0.32432774	No	
+row_109	NUDT2	NUDT2	nudix (nucleoside diphosphate linked moiety X)-type motif 2	5309	0.055639151483774185	0.30645302	No	
+row_110	RAB22A	RAB22A	RAB22A, member RAS oncogene family	5387	0.050814587622880936	0.3007578	No	
+row_111	RAB6A	RAB6A	RAB6A, member RAS oncogene family	5400	0.04999320209026337	0.3004289	No	
+row_112	ABCC6	ABCC6	ATP-binding cassette, sub-family C (CFTR/MRP), member 6	5404	0.04976911097764969	0.30084154	No	
+row_113	RAB11B	RAB11B	RAB11B, member RAS oncogene family	5421	0.04880211502313614	0.30016592	No	
+row_114	RHOG	RHOG	ras homolog gene family, member G (rho G)	5564	0.03697265312075615	0.28890967	No	
+row_115	ABCF1	ABCF1	ATP-binding cassette, sub-family F (GCN20), member 1	5597	0.03435536473989487	0.28671858	No	
+row_116	DDX56	DDX56	DEAD (Asp-Glu-Ala-Asp) box polypeptide 56	5678	0.026817725971341133	0.28045654	No	
+row_117	MYL6	MYL6	myosin, light chain 6, alkali, smooth muscle and non-muscle	5703	0.02471667155623436	0.2787993	No	
+row_118	DHX8	DHX8	DEAH (Asp-Glu-Ala-His) box polypeptide 8	5721	0.02327752485871315	0.27770203	No	
+row_119	RAP1A	RAP1A	RAP1A, member of RAS oncogene family	5731	0.022277040407061577	0.27725327	No	
+row_120	ATP1A4	ATP1A4	ATPase, Na+/K+ transporting, alpha 4 polypeptide	5810	0.01610218733549118	0.27101442	No	
+row_121	RUVBL1	RUVBL1	RuvB-like 1 (E. coli)	5860	0.01158576924353838	0.26711464	No	
+row_122	ABCB7	ABCB7	ATP-binding cassette, sub-family B (MDR/TAP), member 7	6029	-0.0015373717760667205	0.25323698	No	
+row_123	EIF5	EIF5	eukaryotic translation initiation factor 5	6108	-0.00691432086750865	0.2468761	No	
+row_124	CHD1	CHD1	chromodomain helicase DNA binding protein 1	6131	-0.00882637593895197	0.24517332	No	
+row_125	ARL1	ARL1	ADP-ribosylation factor-like 1	6232	-0.01571076549589634	0.23710926	No	
+row_126	ATP7A	ATP7A	ATPase, Cu++ transporting, alpha polypeptide (Menkes syndrome)	6236	-0.01618620939552784	0.237076	No	
+row_127	ATP8B1	ATP8B1	ATPase, Class I, type 8B, member 1	6311	-0.022521624341607094	0.23125327	No	
+row_128	NUDT4	NUDT4	nudix (nucleoside diphosphate linked moiety X)-type motif 4	6363	-0.02677922137081623	0.22738978	No	
+row_129	SMARCA5	SMARCA5	SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily a, member 5	6462	-0.03370918706059456	0.21973017	No	
+row_130	ATP2B1	ATP2B1	ATPase, Ca++ transporting, plasma membrane 1	6515	-0.03820429742336273	0.21593566	No	
+row_131	RRAS	RRAS	related RAS viral (r-ras) oncogene homolog	6542	-0.040112413465976715	0.2143174	No	
+row_132	VPS4B	VPS4B	vacuolar protein sorting 4 homolog B (S. cerevisiae)	6591	-0.044698406010866165	0.21094002	No	
+row_133	ATP6V1B2	ATP6V1B2	ATPase, H+ transporting, lysosomal 56/58kDa, V1 subunit B2	6652	-0.04918375238776207	0.20662948	No	
+row_134	DUT	DUT	dUTP pyrophosphatase	6667	-0.05012333020567894	0.20613687	No	
+row_135	MYO9B	MYO9B	myosin IXB	6736	-0.0553041435778141	0.20124578	No	
+row_136	GSPT1	GSPT1	G1 to S phase transition 1	6762	-0.057860687375068665	0.1999459	No	
+row_137	ARF6	ARF6	ADP-ribosylation factor 6	6781	-0.05964113771915436	0.19924875	No	
+row_138	RRAS2	RRAS2	related RAS viral (r-ras) oncogene homolog 2	6864	-0.06621072441339493	0.19334431	No	
+row_139	GTPBP4	GTPBP4	GTP binding protein 4	6902	-0.06884560734033585	0.19119756	No	
+row_140	RAC2	RAC2	ras-related C3 botulinum toxin substrate 2 (rho family, small GTP binding protein Rac2)	7022	-0.07823500037193298	0.18239191	No	
+row_141	RAB27A	RAB27A	RAB27A, member RAS oncogene family	7142	-0.08795569837093353	0.17371532	No	
+row_142	DDX23	DDX23	DEAD (Asp-Glu-Ala-Asp) box polypeptide 23	7447	-0.10626018792390823	0.14997736	No	
+row_143	GNB2	GNB2	guanine nucleotide binding protein (G protein), beta polypeptide 2	7520	-0.11093927174806595	0.1454941	No	
+row_144	ABCA3	ABCA3	ATP-binding cassette, sub-family A (ABC1), member 3	7574	-0.11274278908967972	0.1426066	No	
+row_145	DDX21	DDX21	DEAD (Asp-Glu-Ala-Asp) box polypeptide 21	7588	-0.11415502429008484	0.14304692	No	
+row_146	RFC3	RFC3	replication factor C (activator 1) 3, 38kDa	7604	-0.11547255516052246	0.14333928	No	
+row_147	GTPBP2	GTPBP2	GTP binding protein 2	7629	-0.11604253202676773	0.14289467	No	
+row_148	RAB4A	RAB4A	RAB4A, member RAS oncogene family	7792	-0.12715665996074677	0.13118134	No	
+row_149	ABCC1	ABCC1	ATP-binding cassette, sub-family C (CFTR/MRP), member 1	7829	-0.12888194620609283	0.1299145	No	
+row_150	DDX18	DDX18	DEAD (Asp-Glu-Ala-Asp) box polypeptide 18	7982	-0.14051499962806702	0.119205825	No	
+row_151	SMARCA1	SMARCA1	SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily a, member 1	7985	-0.1405733823776245	0.12090693	No	
+row_152	DDX17	DDX17	DEAD (Asp-Glu-Ala-Asp) box polypeptide 17	8011	-0.14218227565288544	0.120726675	No	
+row_153	GNAQ	GNAQ	guanine nucleotide binding protein (G protein), q polypeptide	8022	-0.14297468960285187	0.121797845	No	
+row_154	ENPP3	ENPP3	ectonucleotide pyrophosphatase/phosphodiesterase 3	8084	-0.14911502599716187	0.11873149	No	
+row_155	TRIM23	TRIM23	tripartite motif-containing 23	8092	-0.15027394890785217	0.120147765	No	
+row_156	ENTPD4	ENTPD4	ectonucleoside triphosphate diphosphohydrolase 4	8167	-0.15594743192195892	0.11609668	No	
+row_157	CHD3	CHD3	chromodomain helicase DNA binding protein 3	8366	-0.17324396967887878	0.10201716	No	
+row_158	TAPBP	TAPBP	TAP binding protein (tapasin)	8493	-0.18445196747779846	0.09404278	No	
+row_159	DDX20	DDX20	DEAD (Asp-Glu-Ala-Asp) box polypeptide 20	8497	-0.18475216627120972	0.09624776	No	
+row_160	GNA11	GNA11	guanine nucleotide binding protein (G protein), alpha 11 (Gq class)	8548	-0.19034355878829956	0.09463884	No	
+row_161	ABCA2	ABCA2	ATP-binding cassette, sub-family A (ABC1), member 2	8586	-0.19383053481578827	0.09415166	No	
+row_162	GNAI2	GNAI2	guanine nucleotide binding protein (G protein), alpha inhibiting activity polypeptide 2	8723	-0.20422033965587616	0.0856125	No	
+row_163	THTPA	THTPA	thiamine triphosphatase	8773	-0.20815113186836243	0.08432275	No	
+row_164	GNAZ	GNAZ	guanine nucleotide binding protein (G protein), alpha z polypeptide	8841	-0.21350260078907013	0.081614986	No	
+row_165	GNAI3	GNAI3	guanine nucleotide binding protein (G protein), alpha inhibiting activity polypeptide 3	8922	-0.22086411714553833	0.07792951	No	
+row_166	RAB5C	RAB5C	RAB5C, member RAS oncogene family	8930	-0.2214910387992859	0.08029141	No	
+row_167	RUVBL2	RUVBL2	RuvB-like 2 (E. coli)	9087	-0.23677228391170502	0.07052995	No	
+row_168	UPF1	UPF1	UPF1 regulator of nonsense transcripts homolog (yeast)	9096	-0.23743665218353271	0.07302085	No	
+row_169	GNG3	GNG3	guanine nucleotide binding protein (G protein), gamma 3	9148	-0.24320463836193085	0.0720311	No	
+row_170	RAC1	RAC1	ras-related C3 botulinum toxin substrate 1 (rho family, small GTP binding protein Rac1)	9204	-0.24968712031841278	0.07079651	No	
+row_171	CHD4	CHD4	chromodomain helicase DNA binding protein 4	9207	-0.2502933740615845	0.07395449	No	
+row_172	ARFRP1	ARFRP1	ADP-ribosylation factor related protein 1	9276	-0.2566247582435608	0.071736574	No	
+row_173	SEPT4	SEPT4	septin 4	9412	-0.26991817355155945	0.06415249	No	
+row_174	RAD51	RAD51	RAD51 homolog (RecA homolog, E. coli) (S. cerevisiae)	9445	-0.2727096676826477	0.065126315	No	
+row_175	ARF1	ARF1	ADP-ribosylation factor 1	9483	-0.27606505155563354	0.065731056	No	
+row_176	RSF1	RSF1	remodeling and spacing factor 1	9497	-0.2776951193809509	0.06834288	No	
+row_177	DDX3X	DDX3X	DEAD (Asp-Glu-Ala-Asp) box polypeptide 3, X-linked	9755	-0.30177295207977295	0.05108911	No	
+row_178	ATP4A	ATP4A	ATPase, H+/K+ exchanging, alpha polypeptide	9897	-0.3176517188549042	0.043642476	No	
+row_179	RECQL	RECQL	RecQ protein-like (DNA helicase Q1-like)	9906	-0.3187224268913269	0.047212705	No	
+row_180	ATP2C1	ATP2C1	ATPase, Ca++ transporting, type 2C, member 1	10034	-0.33451834321022034	0.041148197	No	
+row_181	ATP4B	ATP4B	ATPase, H+/K+ exchanging, beta polypeptide	10104	-0.3420981466770172	0.039982483	No	
+row_182	CHD2	CHD2	chromodomain helicase DNA binding protein 2	10130	-0.34538331627845764	0.042500366	No	
+row_183	XRCC5	XRCC5	X-ray repair complementing defective repair in Chinese hamster cells 5 (double-strand-break rejoining; Ku autoantigen, 80kDa)	10203	-0.35392963886260986	0.04124357	No	
+row_184	ARHGAP5	ARHGAP5	Rho GTPase activating protein 5	10237	-0.3574671149253845	0.04326009	No	
+row_185	RHEB	RHEB	Ras homolog enriched in brain	10299	-0.36625152826309204	0.043076903	No	
+row_186	ATP2B4	ATP2B4	ATPase, Ca++ transporting, plasma membrane 4	10382	-0.37696021795272827	0.041298646	No	
+row_187	ERCC6	ERCC6	excision repair cross-complementing rodent repair deficiency, complementation group 6	10535	-0.39659783244132996	0.033990275	No	
+row_188	RAC3	RAC3	ras-related C3 botulinum toxin substrate 3 (rho family, small GTP binding protein Rac3)	10680	-0.41860294342041016	0.027635902	No	
+row_189	ATP2A3	ATP2A3	ATPase, Ca++ transporting, ubiquitous	10696	-0.42197299003601074	0.03199802	No	
+row_190	FXYD2	FXYD2	FXYD domain containing ion transport regulator 2	10721	-0.42630553245544434	0.035673123	No	
+row_191	DOLPP1	DOLPP1	dolichyl pyrophosphate phosphatase 1	10767	-0.4324463903903961	0.037692506	No	
+row_192	RERG	RERG	RAS-like, estrogen-regulated, growth inhibitor	11049	-0.48433199524879456	0.02087734	No	
+row_193	ATP1B2	ATP1B2	ATPase, Na+/K+ transporting, beta 2 polypeptide	11073	-0.487821489572525	0.02545199	No	
+row_194	TGM3	TGM3	transglutaminase 3 (E polypeptide, protein-glutamine-gamma-glutamyltransferase)	11080	-0.4898112118244171	0.031459413	No	
+row_195	ABCB11	ABCB11	ATP-binding cassette, sub-family B (MDR/TAP), member 11	11083	-0.49052974581718445	0.037807282	No	
+row_196	DNM1	DNM1	dynamin 1	11124	-0.4993203580379486	0.04112826	No	
+row_197	MSH2	MSH2	mutS homolog 2, colon cancer, nonpolyposis type 1 (E. coli)	11367	-0.5594112277030945	0.028536346	No	
+row_198	ATP2A1	ATP2A1	ATPase, Ca++ transporting, cardiac muscle, fast twitch 1	11411	-0.5747072100639343	0.03261014	No	
+row_199	PEX6	PEX6	peroxisomal biogenesis factor 6	11499	-0.6019647717475891	0.033405896	No	
+row_200	GNAO1	GNAO1	guanine nucleotide binding protein (G protein), alpha activating activity polypeptide O	11523	-0.6110510230064392	0.0396168	No	
+row_201	ATP2B3	ATP2B3	ATPase, Ca++ transporting, plasma membrane 3	11539	-0.6166698932647705	0.046564132	No	
+row_202	GNA14	GNA14	guanine nucleotide binding protein (G protein), alpha 14	12200	-1.165891408920288	0.0074453983	No	

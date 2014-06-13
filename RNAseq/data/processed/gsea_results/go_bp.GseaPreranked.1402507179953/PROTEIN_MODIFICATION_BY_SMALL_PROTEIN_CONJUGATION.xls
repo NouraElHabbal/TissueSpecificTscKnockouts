@@ -1,0 +1,40 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SMURF1	SMURF1	SMAD specific E3 ubiquitin protein ligase 1	1850	0.4614405035972595	-0.10603146	No	
+row_1	DZIP3	DZIP3	-	2028	0.42187976837158203	-0.079368725	No	
+row_2	UBE2N	UBE2N	ubiquitin-conjugating enzyme E2N (UBC13 homolog, yeast)	2612	0.31816619634628296	-0.09594963	No	
+row_3	TRAF6	TRAF6	TNF receptor-associated factor 6	2799	0.29361844062805176	-0.082519665	No	
+row_4	SAE1	SAE1	-	3349	0.23027785122394562	-0.10488964	No	
+row_5	CAND1	CAND1	cullin-associated and neddylation-dissociated 1	3474	0.21667328476905823	-0.093897074	No	
+row_6	UBE3C	UBE3C	ubiquitin protein ligase E3C	3676	0.19659915566444397	-0.091145284	No	
+row_7	ERCC8	ERCC8	excision repair cross-complementing rodent repair deficiency, complementation group 8	4037	0.16279855370521545	-0.10466462	No	
+row_8	FBXW7	FBXW7	F-box and WD-40 domain protein 7 (archipelago homolog, Drosophila)	4260	0.14195847511291504	-0.1089512	No	
+row_9	ATG3	ATG3	ATG3 autophagy related 3 homolog (S. cerevisiae)	4360	0.1329037994146347	-0.10408093	No	
+row_10	SUMO1	SUMO1	SMT3 suppressor of mif two 3 homolog 1 (S. cerevisiae)	5017	0.07870122790336609	-0.1499543	No	
+row_11	UBE2V2	UBE2V2	ubiquitin-conjugating enzyme E2 variant 2	5282	0.05746275186538696	-0.16590244	No	
+row_12	ANAPC11	ANAPC11	APC11 anaphase promoting complex subunit 11 homolog (yeast)	5352	0.05303522199392319	-0.16636625	No	
+row_13	UBB	UBB	ubiquitin B	5504	0.042900800704956055	-0.17451037	No	
+row_14	MDM2	MDM2	Mdm2, transformed 3T3 cell double minute 2, p53 binding protein (mouse)	5506	0.04254285618662834	-0.17044647	No	
+row_15	BCL10	BCL10	B-cell CLL/lymphoma 10	5566	0.036869924515485764	-0.17166929	No	
+row_16	HUWE1	HUWE1	HECT, UBA and WWE domain containing 1	5695	0.025312410667538643	-0.17965004	No	
+row_17	TRAF7	TRAF7	TNF receptor-associated factor 7	6139	-0.009619384072721004	-0.21487005	No	
+row_18	GTPBP4	GTPBP4	GTP binding protein 4	6902	-0.06884560734033585	-0.27035543	No	
+row_19	WWP1	WWP1	WW domain containing E3 ubiquitin protein ligase 1	7110	-0.0850016325712204	-0.2789678	No	
+row_20	PCNP	PCNP	PEST proteolytic signal containing nuclear protein	7406	-0.1031041070818901	-0.2929987	No	
+row_21	UBE4B	UBE4B	ubiquitination factor E4B (UFD2 homolog, yeast)	7449	-0.1065971851348877	-0.28603953	No	
+row_22	STUB1	STUB1	STIP1 homology and U-box containing protein 1	7752	-0.1250310093164444	-0.29850513	No	
+row_23	RNF11	RNF11	ring finger protein 11	7822	-0.1280544251203537	-0.29165882	No	
+row_24	TRIM23	TRIM23	tripartite motif-containing 23	8092	-0.15027394890785217	-0.2989712	No	
+row_25	AMFR	AMFR	autocrine motility factor receptor	8585	-0.19381840527057648	-0.32024163	No	
+row_26	VHL	VHL	von Hippel-Lindau tumor suppressor	8725	-0.20440858602523804	-0.31166846	No	
+row_27	UHRF2	UHRF2	ubiquitin-like, containing PHD and RING finger domains, 2	8914	-0.2204367071390152	-0.3055328	No	
+row_28	BRCA1	BRCA1	breast cancer 1, early onset	9716	-0.29762497544288635	-0.3419083	Yes	
+row_29	UBE2C	UBE2C	ubiquitin-conjugating enzyme E2C	9952	-0.32351624965667725	-0.32956436	Yes	
+row_30	RNF139	RNF139	ring finger protein 139	10015	-0.33203747868537903	-0.30226994	Yes	
+row_31	UBE2V1	UBE2V1	ubiquitin-conjugating enzyme E2 variant 1	10256	-0.3608096241950989	-0.2867001	Yes	
+row_32	MYLIP	MYLIP	myosin regulatory light chain interacting protein	10599	-0.40545937418937683	-0.27510458	Yes	
+row_33	DDB2	DDB2	damage-specific DNA binding protein 2, 48kDa	11026	-0.47996437549591064	-0.2631051	Yes	
+row_34	CBL	CBL	Cas-Br-M (murine) ecotropic retroviral transforming sequence	11359	-0.5573105812072754	-0.23589653	Yes	
+row_35	PARK2	PARK2	Parkinson disease (autosomal recessive, juvenile) 2, parkin	11472	-0.5923870801925659	-0.18731374	Yes	
+row_36	UBE2D1	UBE2D1	ubiquitin-conjugating enzyme E2D 1 (UBC4/5 homolog, yeast)	11547	-0.6183788180351257	-0.1330967	Yes	
+row_37	SENP7	SENP7	SUMO1/sentrin specific peptidase 7	11604	-0.6470102667808533	-0.074620545	Yes	
+row_38	TSC1	TSC1	tuberous sclerosis 1	12240	-1.3395458459854126	0.0040809745	Yes	

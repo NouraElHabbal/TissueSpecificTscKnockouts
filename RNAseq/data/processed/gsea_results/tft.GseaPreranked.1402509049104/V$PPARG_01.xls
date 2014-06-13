@@ -1,0 +1,36 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	AGPS	AGPS	alkylglycerone phosphate synthase	2522	0.33433225750923157	-0.17353113	No	
+row_1	ZSWIM3	ZSWIM3	zinc finger, SWIM-type containing 3	2661	0.31135547161102295	-0.15476134	No	
+row_2	NR2F6	NR2F6	nuclear receptor subfamily 2, group F, member 6	2673	0.3100892901420593	-0.1257514	No	
+row_3	AP1B1	AP1B1	adaptor-related protein complex 1, beta 1 subunit	2790	0.29582083225250244	-0.10668486	No	
+row_4	PAK4	PAK4	p21(CDKN1A)-activated kinase 4	2829	0.28889498114585876	-0.08192208	No	
+row_5	APOM	APOM	apolipoprotein M	3058	0.2621971368789673	-0.07523685	No	
+row_6	ESRRA	ESRRA	estrogen-related receptor alpha	3256	0.24089115858078003	-0.06807717	No	
+row_7	ASXL1	ASXL1	additional sex combs like 1 (Drosophila)	3541	0.20988045632839203	-0.07100696	No	
+row_8	ACOT8	ACOT8	acyl-CoA thioesterase 8	4164	0.151383638381958	-0.107156985	No	
+row_9	GRPEL1	GRPEL1	GrpE-like 1, mitochondrial (E. coli)	4181	0.1497391313314438	-0.09402045	No	
+row_10	SNRPF	SNRPF	small nuclear ribonucleoprotein polypeptide F	4307	0.13731110095977783	-0.09097617	No	
+row_11	ZIC4	ZIC4	Zic family member 4	4524	0.12102755159139633	-0.09692734	No	
+row_12	SMYD5	SMYD5	SMYD family member 5	4650	0.11075881868600845	-0.09644397	No	
+row_13	EMG1	EMG1	EMG1 nucleolar protein homolog (S. cerevisiae)	5054	0.07526302337646484	-0.12206686	No	
+row_14	GOLGA4	GOLGA4	golgi autoantigen, golgin subfamily a, 4	6010	6.29753980319947E-4	-0.19992715	No	
+row_15	SCNM1	SCNM1	sodium channel modifier 1	6386	-0.02806149795651436	-0.22781794	No	
+row_16	CCDC71	CCDC71	coiled-coil domain containing 71	6508	-0.03768843412399292	-0.23405568	No	
+row_17	RQCD1	RQCD1	RCD1 required for cell differentiation1 homolog (S. pombe)	6713	-0.05330338329076767	-0.24555959	No	
+row_18	NOVA1	NOVA1	neuro-oncological ventral antigen 1	7316	-0.09672363102436066	-0.2853496	No	
+row_19	MRPS28	MRPS28	mitochondrial ribosomal protein S28	7631	-0.11627636849880219	-0.2997551	No	
+row_20	SYT6	SYT6	synaptotagmin VI	9271	-0.2563386857509613	-0.4087622	Yes	
+row_21	DNAJA2	DNAJA2	DnaJ (Hsp40) homolog, subfamily A, member 2	9441	-0.2724404036998749	-0.39627504	Yes	
+row_22	NDUFS1	NDUFS1	NADH dehydrogenase (ubiquinone) Fe-S protein 1, 75kDa (NADH-coenzyme Q reductase)	9448	-0.2729482650756836	-0.37043932	Yes	
+row_23	PRRX2	PRRX2	paired related homeobox 2	9740	-0.3005198538303375	-0.36519828	Yes	
+row_24	RPL27	RPL27	ribosomal protein L27	9784	-0.3039148449897766	-0.33939484	Yes	
+row_25	USP37	USP37	ubiquitin specific peptidase 37	9812	-0.3068312704563141	-0.31200463	Yes	
+row_26	GPR124	GPR124	G protein-coupled receptor 124	9914	-0.3193598687648773	-0.28944388	Yes	
+row_27	EEF1B2	EEF1B2	eukaryotic translation elongation factor 1 beta 2	9924	-0.32021480798721313	-0.25929418	Yes	
+row_28	NR2C1	NR2C1	nuclear receptor subfamily 2, group C, member 1	9980	-0.327639102935791	-0.23218168	Yes	
+row_29	ZBTB40	ZBTB40	zinc finger and BTB domain containing 40	10183	-0.3511708974838257	-0.21479371	Yes	
+row_30	PPARGC1A	PPARGC1A	peroxisome proliferative activated receptor, gamma, coactivator 1, alpha	10320	-0.3688315451145172	-0.1903173	Yes	
+row_31	PPTC7	PPTC7	PTC7 protein phosphatase homolog (S. cerevisiae)	10800	-0.4366588294506073	-0.18728538	Yes	
+row_32	PAX7	PAX7	paired box gene 7	11559	-0.6228811144828796	-0.18905708	Yes	
+row_33	RTP3	RTP3	receptor transporter protein 3	11840	-0.7578104138374329	-0.13881381	Yes	
+row_34	CNTFR	CNTFR	ciliary neurotrophic factor receptor	12281	-1.8191044330596924	7.3417556E-4	Yes	

@@ -1,0 +1,26 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	DYNC1I1	DYNC1I1	dynein, cytoplasmic 1, intermediate chain 1	46	2.549955129623413	0.1813978	Yes	
+row_1	MYL6B	MYL6B	myosin, light chain 6B, alkali, smooth muscle and non-muscle	122	1.9491595029830933	0.31680858	Yes	
+row_2	KIF5C	KIF5C	kinesin family member 5C	346	1.3144994974136353	0.39407185	Yes	
+row_3	MYH10	MYH10	myosin, heavy chain 10, non-muscle	463	1.1350065469741821	0.46702576	Yes	
+row_4	KIF11	KIF11	kinesin family member 11	511	1.0918127298355103	0.5424687	Yes	
+row_5	CENPE	CENPE	centromere protein E, 312kDa	1300	0.6127893328666687	0.52271974	Yes	
+row_6	KIF3B	KIF3B	kinesin family member 3B	1337	0.5997408628463745	0.563331	Yes	
+row_7	MYO1E	MYO1E	myosin IE	2450	0.34281671047210693	0.49756524	No	
+row_8	MYO3A	MYO3A	myosin IIIA	2489	0.33788537979125977	0.51900053	No	
+row_9	BBS4	BBS4	Bardet-Biedl syndrome 4	2929	0.2783077359199524	0.503418	No	
+row_10	MYH9	MYH9	myosin, heavy chain 9, non-muscle	3611	0.2035650908946991	0.4626792	No	
+row_11	KIF2C	KIF2C	kinesin family member 2C	3786	0.18700557947158813	0.46207184	No	
+row_12	APPBP2	APPBP2	amyloid beta precursor protein (cytoplasmic tail) binding protein 2	4075	0.15943953394889832	0.45016894	No	
+row_13	KIF1B	KIF1B	kinesin family member 1B	4563	0.11854767054319382	0.41907325	No	
+row_14	KIF22	KIF22	kinesin family member 22	4646	0.1109192743897438	0.42044175	No	
+row_15	MYL6	MYL6	myosin, light chain 6, alkali, smooth muscle and non-muscle	5703	0.02471667155623436	0.33614478	No	
+row_16	KIF5B	KIF5B	kinesin family member 5B	5896	0.007639010902494192	0.32104638	No	
+row_17	KIFC3	KIFC3	kinesin family member C3	6491	-0.03634144738316536	0.27525854	No	
+row_18	MYO9B	MYO9B	myosin IXB	6736	-0.0553041435778141	0.2593817	No	
+row_19	MYO6	MYO6	myosin VI	8314	-0.1684446781873703	0.14304543	No	
+row_20	MYH2	MYH2	myosin, heavy chain 2, skeletal muscle, adult	8785	-0.20910054445266724	0.11991057	No	
+row_21	DNALI1	DNALI1	dynein, axonemal, light intermediate chain 1	9323	-0.26087847352027893	0.09507297	No	
+row_22	GRIN1	GRIN1	glutamate receptor, ionotropic, N-methyl D-aspartate 1	10228	-0.35668715834617615	0.04727178	No	
+row_23	MYH13	MYH13	myosin, heavy chain 13, skeletal muscle	11683	-0.6751852631568909	-0.022243187	No	
+row_24	KIF23	KIF23	kinesin family member 23	12091	-0.9867745041847229	0.016223717	No	

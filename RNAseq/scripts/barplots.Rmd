@@ -22,7 +22,7 @@ rownames(rpkm.data.unique) <- rpkm.data.unique$external_gene_id
 rpkm.data.unique <- rpkm.data.unique[,-1]
 
 #paste gene here
-genes.of.interest <- c("Tsc1",'Tsc2')
+genes.of.interest <- c("Tsc1",'Tsc2','Ppp1r3c')
 
 
 

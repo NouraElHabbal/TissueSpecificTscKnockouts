@@ -5,4 +5,4 @@ Once the counts tables are generated for both gene counts and exon counts, all t
 
 ## Running the Differential Expression Analyses
 
-We use DESeq2 to do the differential expression analysis.  This takes the htseq-counts file (**../data/raw/htseq-counts**) along with the sample mapping file (**../data/raw/sample_mapping.csv**) and generates the results file (**../data/processed/Binary DESeq Results.csv**).  This script also generates the diagnostic MA and PCA plots as well as the heatmap.
+We use DESeq2 to do the differential expression analysis.  This takes the htseq-counts file (**../data/raw/htseq-counts**) along with the sample mapping file (**../data/raw/sample_mapping.csv**) and generates the results file (**../data/processed/Binary DESeq Results.csv**).  It also generates the normalized counts file used in other scripts.  This file is found at **../data/processed/Binary Normalized Counts.csv**.  This script also generates the diagnostic dispersion, MA and PCA plots as well as the heatmap.

@@ -1,0 +1,51 @@
+Making the RPKM table
+========================================================
+
+
+Making the RPKM Table
+----------------------
+
+The counts table was from DESeq2 using **deseq.Rmd**.  
+
+```{r Read data, echo=FALSE}
+normalized_counts_file <- '../data/processed/Binary Normalized Counts.csv'
+normalized.counts <- read.csv(normalized_counts_file, row.names="X")
+
+#Divide each column (sample) by the total number of reads (sum of that column)
+rpm.table <- sweep(normalized.counts, 2, colSums(normalized.counts), '/')
+rpm.table <- sweep(rpm.table, 2, 10^9, '*')
+annotation_file <- "../data/raw/Mus_musculus.GRCm38.75.gtf"
+```
+
+The normalized counts are read in from the `r normalized_counts_file` file.  The transcript database is made from biomart.
+
+```{r getting-gene-length, echo=FALSE, message=FALSE}
+#calculate length for each gene
+library(GenomicFeatures)
+txdb <- makeTranscriptDbFromGFF(annotation_file,format="gtf")
+txdb <- makeTranscriptDbFromBiomart(dataset='mmusculus_gene_ensembl')
+#save(txdb,file="txdb.RData")
+#load('txdb.RData')
+# then collect the exons per gene id
+exons.list.per.gene <- exonsBy(txdb,by="gene")
+# then for each gene, reduce all the exons to a set of non overlapping exons, calculate their lengths (widths) and sum then
+library(multicore)
+exonic.gene.sizes <- mclapply(exons.list.per.gene,function(x){sum(width(reduce(x)))}, mc.cores=7)
+gene_lengths <- unlist(exonic.gene.sizes)
+comvals <- intersect(names(gene_lengths),rownames(normalized.counts))
+
+counts.rpkm <-  sweep(rpm.table[comvals,], 1, unlist(gene_lengths[comvals]),  "/")
+rpkm_output_file <- "../data/processed/RPKM_count.csv"
+write.csv(counts.rpkm, file=rpkm_output_file)
+```
+
+This script writes the RPKM table out to the file `r rpkm_output_file`
+
+
+Session Information
+---------------------
+
+```{r session-information}
+sessionInfo()
+```
+

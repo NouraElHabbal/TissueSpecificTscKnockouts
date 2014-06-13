@@ -1,0 +1,111 @@
+Barplot Analysis of Results
+=======================================
+
+Used Analysed DESeq results.
+
+```{r file-input, echo=FALSE, warning=FALSE}
+filename <- "../data/processed/RPKM_count.csv"
+deseq.filename <- "../data/processed/Binary DESeq Results.csv"
+#read in the file
+normalized.data <- read.csv(filename, row.names='X')
+deseq.data <- read.csv(deseq.filename, row.names='X')
+mapping <- read.csv("../data/raw/sample_mapping.csv")
+
+mapping$Genotype <- relevel(mapping$Genotype, ref="Wild-Type")
+
+
+#change rownames to gene names
+rpkm.data <- merge(normalized.data, deseq.data[,c('Row.names','external_gene_id')], by.x='row.names', by.y='Row.names') 
+rpkm.data.unique <- rpkm.data[!duplicated(rpkm.data$external_gene_id),]
+
+rownames(rpkm.data.unique) <- rpkm.data.unique$external_gene_id
+rpkm.data.unique <- rpkm.data.unique[,-1]
+
+#paste gene here
+genes.of.interest <- c("Tsc1",'Tsc2')
+
+
+
+genes.of.interest.data <- rpkm.data.unique[genes.of.interest,]
+#put the data in long format
+library(reshape2)  
+genes.of.interest.long <- melt(genes.of.interest.data, id.var='external_gene_id',variable.name='Sample',value.name='Expression')
+genes.of.interest.long <- reshape(genes.of.interest.data, direction="long", varying=list(names(genes.of.interest.data)[1:16]), v.names="Expression", idvar="Genes", timevar="Genotype", ids=rownames(genes.of.interest.data))
+
+rpkm.long <- reshape(rpkm.data.unique, direction="long", varying=list(names(rpkm.data.unique)[1:27]), v.names="Expression", idvar="external_gene_id", timevar="Genotype", ids=rownames(rpkm.data.unique))
+
+rpkm.long <- melt(rpkm.data.unique, id.var='external_gene_id',variable.name='Sample',value.name='Expression')
+mapping$Sample <- paste("X",mapping$File,sep="")
+mapping$Sample <- gsub('-','.',mapping$Sample, fixed=T)
+rpkm.long.genotyped <- merge(rpkm.long, mapping[,c('Sample','Genotype')], by='Sample')
+
+#calculate standard error
+library(plyr)
+rpkm.long.cal <- ddply(rpkm.long.genotyped, .(external_gene_id,Genotype), summarise, se = sd(Expression, na.rm=T)/sqrt(length(Expression)), mean_Expression = mean(Expression, na.rm=T))
+
+rpkm.long.cal$Genotype <- factor(rpkm.long.cal$Genotype)
+
+#rpkm.long.cal <- rpkm.long.cal[order(rev(rpkm.long.cal$external_gene_id), rpkm.long.cal$Genotype, decreasing=T),]
+```
+
+```{r barplots, dev=c('png','pdf'), echo=FALSE, fig.show='asis', warning=FALSE}
+library(reshape2)
+library(ggplot2)
+for (gene in genes.of.interest) {
+  #pdf(sprintf('../figures/%s-barplot.pdf', gene))
+  gene.data <- rpkm.long.cal[rpkm.long.cal$external_gene_id==gene,]
+  #pdf(paste('../figures/',gene,'-barplot.pdf',sep=""))
+  ggplot(gene.data, aes(x=Genotype,y=mean_Expression)) + geom_bar(stat="identity") + geom_errorbar(aes(ymin=mean_Expression-se, ymax=mean_Expression+se), width=.1) + xlab("") + ylab("mRNA Expression (RPKM)")+ theme_bw() + ggtitle(gene) + theme(panel.grid.minor = element_blank()) + theme(panel.grid.major = element_blank()) + theme(panel.border=element_blank()) + scale_x_discrete(labels=gene.data$Genotype) + theme(axis.line = element_line(color = 'black'))+scale_colour_grey(start = 0.5, end = .9)
+  ggsave(filename=paste('figure/',gene,'-barplot.pdf',sep=""))
+}
+
+```
+
+
+```{r grouped-plots, echo=FALSE, fig.show='asis' }
+tsc_isoforms <- c('Tsc1','Tsc2')
+glycogen_genes <- c('Gys1','Gys2','Pygm','Pygl','Pygb')
+pp1_regulatory_subunits <- c('Ppp1r3a','Ppp1r3b','Ppp1r3c','Ppp1r3d','Ppp1r3e','Ppp1r3f','Ppp1r3g')
+interleukins <- paste('Il',seq(1,36), sep="")
+srebp <- c('Srebf1','Srebf2','Fasn','Acaca1','Hmgcr','Ldlr')
+linoleate_metabolism <- c('Pla2g2f','Akr1b10','Pla2g4a','Pla2g10','Pla2g12a','Pla2g12b','Pla2g2e','Cyp2e1','Pla2g4e','Pla2g6','Pla2g5','Alox15','Pla2g2d','Pla2g2c','Pla2g3')
+tg_synthesis <- c('Dgat1','Dgat2','Lpin1','Lpin2','Lpin3','Agpat1','Agpat2','Agpat3','Gpam','Gpat1','Gpat2','Gpat3','Gpat4','Fasn','Acaca1')
+myokines <- c('Il6','Il7','Il8','Il15','Fndc5','Fgf21','Serpine1','Bdnf','Lif','Fam132b','Angptl4','Fstl1','Ccl2','Mstn','Serpinf1','Vegfa','Vegfb','Metrnl')
+lipolysis <- c('Lpl','Lipe','Pnpla2','Abhd5')
+oglnac_metabolisn <- c('Oga','Ogt','Uap1','Uap1l1','Pgm1','Pgm2','Pgm3','Gnpnat1','Amdhd2','Gfpt1','Gfpt2','Gnpda1','Gnpda2','Gpi1','Mpi','Hk1','Hk2','Hk3','Gck')
+
+gene.data.name <- c('tsc_isoforms','glycogen_genes','pp1_regulatory_subunits','interleukins','srebp','linoleate_metabolism','myokines','tg_synthesis','lipolysis','oglnac_metabolisn')
+for (name in gene.data.name){
+  #name <- as.name(name) #convert string to variable name
+  gene.data <- rpkm.long.cal[rpkm.long.cal$external_gene_id%in%eval(as.name(name)),]
+  gene.data$external_gene_id <- factor(gene.data$external_gene_id, levels=eval(as.name(name)))
+  
+  ggplot(gene.data, aes(x=external_gene_id, y=mean_Expression, fill=Genotype))+ 
+    #this line together with show_guide=F and the element_rect=black get rid of the slash in legend box
+    geom_bar(stat="identity", width=.8, position=position_dodge(width=.8)) +
+    geom_bar(stat="identity",width=.8, position=position_dodge(width=.8), col="black", show_guide=F) +
+    geom_errorbar(position=position_dodge(width=.8), aes(ymin=mean_Expression-se, ymax=mean_Expression+se), width=.2)+
+    theme_bw()+theme(axis.text.x=element_text(angle=90))+xlab("")+ ylab("mRNA Expression (RPKM)") +
+    theme(panel.grid.minor = element_blank()) + theme(panel.grid.major = element_blank()) + 
+    theme(panel.border=element_blank())+ 
+    theme(axis.line = element_line(color = 'black')) +
+    scale_fill_grey(start = 0.3, end = .9, guide=guide_legend()) +
+    #guides(fill = guide_legend(keywidth = .5, keyheight = .5)) +
+    theme(text = element_text(size=20), axis.text.x = element_text(angle=70,hjust=.5,vjust=.5)) +
+    theme(legend.position=c(.25,.90), legend.title=element_blank(), legend.key=element_rect(color="black"))   + ggtitle(name)
+    
+  ggsave(filename=paste('figure/', name, '-barplot.pdf',sep=""))
+}
+
+```
+
+
+The data used is in the file **`r filename`**.  This file was most recently processed on ```r date()```.
+
+
+Session Information
+---------------------
+
+```{r session-information}
+sessionInfo()
+```

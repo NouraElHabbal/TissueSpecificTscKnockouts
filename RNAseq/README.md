@@ -33,8 +33,8 @@ Each run had to be manually submitted and directed to a free node using qsub -l 
 
 Generated exon and transcript counts tables using HTSeq version 0.5.4p5:
 
-HTSeq-counts-table.sh
-HTSeq-counts-table-exons.sh
+* HTSeq-counts-table.sh
+* HTSeq-counts-table-exons.sh
 
 Locally run analyses
 ----------------------

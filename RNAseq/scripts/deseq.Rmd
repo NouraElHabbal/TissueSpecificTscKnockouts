@@ -41,7 +41,9 @@ ordered_annotated_data <- annotated_data[order(annotated_data$log2FoldChange),]
 output_file_binary <- "../data/processed/Binary DESeq Results.csv"
 write.csv(as.data.frame(annotated_data),
   file=output_file_binary)
-
+#write out normalized counts
+normalized_counts_file <- '../data/processed/Binary Normalized Counts.csv'
+write.csv(counts(dds.binary,normalized=TRUE), file=normalized_counts_file)
 summary.table <- table(ordered_annotated_data$padj<0.05, ordered_annotated_data$log2FoldChange>0)
 rownames(summary.table) <- paste("Significant", rownames(summary.table))
 colnames(summary.table) <- paste("Upregulated", colnames(summary.table))
@@ -58,31 +60,39 @@ Diagnostic Plots
 ----------------
 
 ```{r ma-plots, echo=FALSE, dev=c('png','pdf')}
-plotMA(res.binary, main="DESeq2", ylim=c(-4,4), title="MA Plot for Binary Comparison")
+plotMA(res.binary, ylim=c(-4,4), main="MA Plot for Binary Comparison")
 ```
 
 ```{r heatmap, echo=FALSE, dev=c('png','pdf')}
 library("RColorBrewer")
 library("gplots")
-select <- rownames(subset(as.data.frame(res.binary), padj<0.05))
-hmcol <- colorRampPalette(brewer.pal(9, "GnBu"))(100)
-heatmap.2(counts(dds.binary,normalized=TRUE)[select,], col = hmcol,
-Rowv = F, Colv = T, scale="row", trace="none", margin=c(10,6))
+#subset for differentially expressed genes
+differential.genes <- rownames(subset(as.data.frame(res.binary), padj<0.05))
+#get normalized counts for differentially expressed genes
+diff.counts <- counts(dds.binary,normalized=TRUE)[differential.genes,]
+
+#reordered based on fold change
+ordered.counts <- diff.counts[order(subset(as.data.frame(res.binary), padj<0.05)$log2FoldChange),]
+
+#generate horizontal bar
+bars <- brewer.pal(2, "Set1")
+color.map <- function(x) { if (x=="Wild-Type") bars[1] else bars[2] }
+diagnosis.colors <- sapply(mappings[order(match(mappings$File,colnames(ordered.counts))),]$Genotype, FUN=color.map)
+
+#set heatmap colors
+heatmap.colors <- brewer.pal(11, "BrBG")
+
+#make dendrogram
+diff.dendrogram <- as.dendrogram(hclust(dist(t(ordered.counts))))
+
+heatmap.2(ordered.counts, col = heatmap.colors,ColSideColors=diagnosis.colors,
+          dendrogram='column',Colv=diff.dendrogram, Rowv=F,
+          scale="row", trace="none", margin=c(6,10))
 
 rld.binary <- rlog(dds.binary)
 vsd.binary <- varianceStabilizingTransformation(dds.binary)
 rlogMat.binary <- assay(rld.binary)
 vstMat.binary <- assay(vsd.binary)
-
-#rld transformed heatmap
-heatmap.2(assay(rld.binary)[select,], col = hmcol,
-  Rowv = FALSE, Colv = FALSE, scale="row",
-  dendrogram="none", trace="row", margin=c(10, 6))
-
-#vsd stabilized heatmap
-heatmap.2(assay(vsd.binary)[select,], col = hmcol,
-  Rowv = FALSE, Colv = FALSE, scale="row",
-  dendrogram="none", trace="none", margin=c(10, 6))
 
 ```
 

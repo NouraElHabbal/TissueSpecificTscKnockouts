@@ -1,0 +1,29 @@
+Making input files for GSEA
+========================================================
+
+Making the input file
+----------------------
+
+```{r Read-data, echo=FALSE}
+
+deseq2_file <- "../data/processed/Binary DESeq Results.csv"
+deseq2.results <- read.csv(deseq2_file, row.names="X")
+
+#order by pvalue and get rid of those with NA foldchange
+results.noNA <- deseq2.results[which(deseq2.results$log2FoldChange != 'NA'),]
+results.noNA <- results.noNA[order(results.noNA$log2FoldChange),c(8,3)]
+#get rid of duplicate genes
+results.noDup <- results.noNA[!duplicated(results.noNA$external_gene_id),]
+result_data_file <- "../data/processed/GSEA_prerank_FC.rnk"
+write.table(results.noDup, file=result_data_file, sep="\t", quote=FALSE, row.names=FALSE)
+```
+
+This script takes the input file `r deseq2_file`.  This script was most recently run on `r date()`.  It writes out a data files `r result_data_file`.
+
+
+Session Information
+---------------------
+
+```{r session-information}
+sessionInfo()
+```

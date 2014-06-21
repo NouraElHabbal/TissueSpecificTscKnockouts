@@ -9,6 +9,11 @@ Used Analysed DESeq results.
 ```
 ## Saving 7 x 7 in image
 ## Saving 7 x 7 in image
+## Saving 7 x 7 in image
+```
+
+```
+## Error: 'data' must be of a vector type, was 'NULL'
 ```
 
 
@@ -41,10 +46,13 @@ Used Analysed DESeq results.
 ## Saving 7 x 7 in image
 ## Saving 7 x 7 in image
 ## Saving 7 x 7 in image
+## Saving 7 x 7 in image
+## Saving 7 x 7 in image
+## Saving 7 x 7 in image
 ```
 
 
-The data used is in the file **../data/processed/RPKM_count.csv**.  This file was most recently processed on ``Fri Jun 13 10:21:58 2014``.
+The data used is in the file **../data/processed/RPKM_count.csv**.  This file was most recently processed on ``Sat Jun 21 08:33:25 2014``.
 
 
 Session Information

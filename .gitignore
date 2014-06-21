@@ -5,4 +5,14 @@
 *-Ex.R
 
 # R data files from past sessions
-.Rdata
+*.Rdata
+
+DS_Store files from a mac
+.DS_Store
+
+#gff and gtf files (too large)
+*.gtf
+*.gff
+
+#compiled python packages
+*.pyc

@@ -1,0 +1,136 @@
+DESeq Analysis
+========================================================
+
+```{r setup}
+input_directory <- "../data/raw/htseq-counts-exons"
+sample_mapping_file <- '../data/raw/sample_mapping.csv'
+annotation_file <- '../data/raw/Mus_musculus.GRCm38.75.gff'
+```
+
+This file uses the counts table in `r input_directory` from `r sample_mapping_file`.  This script was most recently run on `r date()`
+
+```{r data-entry, echo=FALSE, message=FALSE}
+sampleFiles <- list.files(input_directory, full.names=T)
+mappings <- read.csv(sample_mapping_file, row.names='X')
+
+sampleTable <- data.frame(sampleName = mappings$File,
+  fileName = mappings$File,
+  condition = mappings$Genotype)
+library(DEXSeq)
+
+
+dxd.binary <- DEXSeqDataSetFromHTSeq(sampleData = sampleTable,
+  countfiles = sampleFiles,
+  design= ~ sample + exon + condition:exon,
+  flattenedfile = annotation_file)
+dxd.binary <- estimateSizeFactors( dxd.binary )
+dxd.binary <- estimateDispersions( dxd.binary )
+dxd.binary$condition <- relevel(dxd.binary$condition,"Wild-Type")
+
+library(BiocParallel)
+res.binary <- DEXSeq(dxd.binary, BPPARAM=MulticoreParam(workers=7), quiet=F)
+resOrdered.binary <- res.binary[order(res.binary$padj),]
+
+res.sig <- subset(res.binary, padj<0.05)
+res.sig.ordered <- res.sig[order(-res.sig$log2fold_Knockout_Wild.Type),]
+```
+
+```{r annotation, echo=FALSE}
+library(biomaRt)
+#download gene name annotation data for results sets.
+ensembl <- useMart("ensembl",dataset = 'mmusculus_gene_ensembl')
+transcriptInfo <- getBM(
+    attributes=c('external_gene_id','ensembl_gene_id'), 
+    values = 'protein_coding',
+    filter = 'biotype',
+    mart=ensembl)
+annotated_data <- merge(res.binary, transcriptInfo, by.x='groupID', by.y='ensembl_gene_id')
+
+output_file_binary <- "../data/processed/Binary Annotated DEXSeq Results.csv"
+write.csv(as.data.frame(annotated_data), file=output_file_binary)
+#write out results to html files
+DEXSeqHTML( res.binary, FDR=0.05, color=c("#FF000080", "#0000FF80") )
+```
+
+The calculated data was exported to `r output_file_binary`.  There was a total of **`r table(res.binary$padj<0.05)[2]`** significantly different exons out of `r table(res.binary$padj<0.05)[2]+ table(res.binary$padj<0.05)[1]` exons that met our testing criteria.  This includes `r table ( tapply(res.binary$padj< 0.05, res.binary$groupID, any ) )[2]` different genes.   These are broken down into up and downregulated genes below:
+
+```{r summary-table, echo=FALSE, results='asis', message=FALSE}
+library(xtable)
+print(xtable(summary.table, caption="Number of Genes Up/Downregulated and Significant or Not"),type='html')
+```
+
+Diagnostic Plots
+----------------
+
+```{r ma-plots, echo=FALSE, dev=c('png','pdf')}
+plotMA(res.binary, main="Exon MA Plot for Binary Comparison", ylim=c(-4,4))
+```
+
+Plotting Estimated Dispersions
+-------------------------------
+```{r dispersion-plot, echo=FALSE, dev=c('png','pdf')}
+plotDispEsts(dxd.binary)
+```
+
+
+Plots for Genes of Interest
+-----------------------------
+
+```{r tsc1-plots, echo=FALSE, dev=c('png','pdf')}
+plotDEXSeq( res.binary, "ENSMUSG00000026812", legend=TRUE, cex.axis=1.2, cex=1.3, lwd=2 )
+plotDEXSeq( res.binary, "ENSMUSG00000026812", displayTranscripts=TRUE, legend=TRUE, cex.axis=1.2, cex=1.3, lwd=2 )
+plotDEXSeq( res.binary, "ENSMUSG00000026812", expression=FALSE, norCounts=TRUE,legend=TRUE, cex.axis=1.2, cex=1.3, lwd=2 )
+plotDEXSeq( res.binary, "ENSMUSG00000026812", expression=FALSE, splicing=TRUE,legend=TRUE, cex.axis=1.2, cex=1.3, lwd=2 )
+```
+
+```{r srebp2-plots, echo=FALSE, dev=c('png','pdf')}
+#no counts for srebp1
+plotDEXSeq( res.binary, "ENSMUSG00000022463", legend=TRUE, cex.axis=1.2, cex=1.3, lwd=2 )
+plotDEXSeq( res.binary, "ENSMUSG00000022463", displayTranscripts=TRUE, legend=TRUE, cex.axis=1.2, cex=1.3, lwd=2 )
+plotDEXSeq( res.binary, "ENSMUSG00000022463", expression=FALSE, norCounts=TRUE,legend=TRUE, cex.axis=1.2, cex=1.3, lwd=2 )
+plotDEXSeq( res.binary, "ENSMUSG00000022463", expression=FALSE, splicing=TRUE,legend=TRUE, cex.axis=1.2, cex=1.3, lwd=2 )
+```
+
+
+Col3a1
+-------
+
+This was the e xon with the most downregulated exon (#34)
+
+```{r col3a1-plots, echo=FALSE, dev=c('png','pdf')}
+plotDEXSeq( res.binary, "ENSMUSG00000026043", displayTranscripts=TRUE, splicing=TRUE, legend=TRUE, cex.axis=1.2, cex=1.3, lwd=2 )
+```
+
+Myosin, heavy polypeptide 8, skeletal muscle
+----------------------------------------------
+
+This was the exons with the highest upregulation
+```{r myh8-plots, echo=FALSE, dev=c('png','pdf')}
+plotDEXSeq( res.binary, "ENSMUSG00000055775", displayTranscripts=TRUE, splicing=TRUE, legend=TRUE, cex.axis=1.2, cex=1.3, lwd=2 )
+```
+
+Myosin, heavy polypeptide 3, skeletal muscle
+----------------------------------------------
+
+This was the exons with the highest upregulation
+```{r myh3-plots, echo=FALSE, dev=c('png','pdf')}
+plotDEXSeq( res.binary, "ENSMUSG00000020908", displayTranscripts=TRUE, splicing=TRUE, legend=TRUE, cex.axis=1.2, cex=1.3, lwd=2 )
+```
+
+
+PTG Plots
+------------
+
+```{r srebp2-plots, echo=FALSE, dev=c('png','pdf')}
+#no counts for srebp1
+plotDEXSeq( res.binary, "ENSMUSG00000067279", legend=TRUE, cex.axis=1.2, cex=1.3, lwd=2 )
+plotDEXSeq( res.binary, "ENSMUSG00000067279", displayTranscripts=TRUE, legend=TRUE, cex.axis=1.2, cex=1.3, lwd=2 )
+plotDEXSeq( res.binary, "ENSMUSG00000067279", expression=FALSE, norCounts=TRUE,legend=TRUE, cex.axis=1.2, cex=1.3, lwd=2 )
+plotDEXSeq( res.binary, "ENSMUSG00000067279", expression=FALSE, splicing=TRUE,legend=TRUE, cex.axis=1.2, cex=1.3, lwd=2 )
+```
+Session Information
+-------------------
+
+```{r session-info}
+sessionInfo()
+```

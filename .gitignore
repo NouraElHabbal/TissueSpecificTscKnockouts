@@ -16,3 +16,4 @@ DS_Store files from a mac
 
 #compiled python packages
 *.pyc
+.Rproj.user

@@ -21,12 +21,6 @@ rpkm.data.unique <- rpkm.data[!duplicated(rpkm.data$external_gene_id),]
 rownames(rpkm.data.unique) <- rpkm.data.unique$external_gene_id
 rpkm.data.unique <- rpkm.data.unique[,-1]
 
-#paste gene here
-<<<<<<< HEAD
-=======
-genes.of.interest <- c("Tsc1",'Tsc2')
->>>>>>> b220571ba32b9bc353962d3da398465f13830b35
-
 genes.of.interest <- c("Tsc1",'Tsc2','Ppp1r3c')
 
 

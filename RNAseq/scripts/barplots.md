@@ -4,6 +4,17 @@ Barplot Analysis of Results
 Used Analysed DESeq results.
 
 
+```
+## Error: there is no package called 'doMC'
+```
+
+```
+## Error: could not find function "registerDoMC"
+```
+
+```
+## Loading required package: foreach
+```
 
 
 ```
@@ -50,7 +61,7 @@ Used Analysed DESeq results.
 ```
 
 
-The data used is in the file **../data/processed/RPKM_count.csv**.  This file was most recently processed on ``Wed Jul 30 09:36:09 2014``.
+The data used is in the file **../data/processed/RPKM_count.csv**.  This file was most recently processed on ``Wed Jul 30 09:42:21 2014``.
 
 
 Session Information
@@ -74,13 +85,15 @@ sessionInfo()
 ## 
 ## other attached packages:
 ## [1] Hmisc_3.14-4    Formula_1.1-1   survival_2.37-7 lattice_0.20-29
-## [5] ggplot2_1.0.0   plyr_1.8.1      reshape2_1.4    knitr_1.6      
+## [5] ggplot2_1.0.0   foreach_1.4.2   plyr_1.8.1      reshape2_1.4   
+## [9] knitr_1.6      
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] cluster_1.15.2      colorspace_1.2-4    digest_0.6.4       
-##  [4] evaluate_0.5.5      formatR_0.10        gtable_0.1.2       
-##  [7] labeling_0.2        latticeExtra_0.6-26 MASS_7.3-33        
-## [10] munsell_0.4.2       proto_0.3-10        RColorBrewer_1.0-5 
-## [13] Rcpp_0.11.2         scales_0.2.4        stringr_0.6.2      
-## [16] tools_3.1.0
+##  [1] cluster_1.15.2      codetools_0.2-8     colorspace_1.2-4   
+##  [4] compiler_3.1.0      digest_0.6.4        evaluate_0.5.5     
+##  [7] formatR_0.10        gtable_0.1.2        iterators_1.0.7    
+## [10] labeling_0.2        latticeExtra_0.6-26 MASS_7.3-33        
+## [13] munsell_0.4.2       proto_0.3-10        RColorBrewer_1.0-5 
+## [16] Rcpp_0.11.2         scales_0.2.4        stringr_0.6.2      
+## [19] tools_3.1.0
 ```

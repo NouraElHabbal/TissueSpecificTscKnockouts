@@ -22,6 +22,10 @@ rownames(rpkm.data.unique) <- rpkm.data.unique$external_gene_id
 rpkm.data.unique <- rpkm.data.unique[,-1]
 
 #paste gene here
+<<<<<<< HEAD
+=======
+genes.of.interest <- c("Tsc1",'Tsc2')
+>>>>>>> b220571ba32b9bc353962d3da398465f13830b35
 
 genes.of.interest <- c("Tsc1",'Tsc2','Ppp1r3c')
 
@@ -41,7 +45,9 @@ rpkm.long.genotyped <- merge(rpkm.long, mapping[,c('Sample','Genotype')], by='Sa
 
 #calculate standard error
 library(plyr)
-rpkm.long.cal <- ddply(rpkm.long.genotyped, .(external_gene_id,Genotype), summarise, se = sd(Expression, na.rm=T)/sqrt(length(Expression)), mean_Expression = mean(Expression, na.rm=T))
+library(doMC)
+registerDoMC()
+rpkm.long.cal <- ddply(rpkm.long.genotyped, .(external_gene_id,Genotype), summarise, se = sd(Expression, na.rm=T)/sqrt(length(Expression)), mean_Expression = mean(Expression, na.rm=T), .parallel=TRUE)
 
 rpkm.long.cal$Genotype <- factor(rpkm.long.cal$Genotype)
 

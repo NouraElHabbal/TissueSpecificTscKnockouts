@@ -5,6 +5,7 @@
 *-Ex.R
 
 # R data files from past sessions
+<<<<<<< HEAD
 *.Rdata
 
 DS_Store files from a mac
@@ -16,4 +17,7 @@ DS_Store files from a mac
 
 #compiled python packages
 *.pyc
+=======
+.Rdata
+>>>>>>> b220571ba32b9bc353962d3da398465f13830b35
 .Rproj.user

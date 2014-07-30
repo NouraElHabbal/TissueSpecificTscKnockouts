@@ -82,6 +82,9 @@ myosin_heavy_chain_main <- c('Myh1','Myh2','Myh4','Myh7')
 
 slow_twitch_genes <- c('Mb','Tnni1','Ppp3ca','Ckmt2','Ppargc1a','Myh7')
 fast_twitch_genes <- c('Pvalb','Tnni2','Ckm','Myh4','Myh1')
+myotubular_degradation <- c('Trim63','Fbxo32')
+muscle_differentiation <- c('Cdkn1a','Myog','Myod1','Myf4','Myf5','Myf6','Mef2c')
+autophagy <- c('Gabarap','Gabarapl1','Gabrapl2','Map1lc3a','Map1lc3b')
 
 
 library(Hmisc)
@@ -89,7 +92,7 @@ ribosomes <- c('RPL7','RPL13A','RPL34','RPS28','RPS24','RPS5','FAU','RPS6','RPS1
 #convert to mouse gene format
 ribosomes <- capitalize(tolower(ribosomes))
 
-gene.data.name <- c('tsc_isoforms','glycogen_genes','pp1_regulatory_subunits','interleukins','srebp','linoleate_metabolism','myokines','tg_synthesis','lipolysis','oglnac_metabolisn','ribosomes','ppar_isoforms','b_oxidation','ppard_targets','myosin_heavy_chain','myosin_heavy_chain_main','slow_twitch_genes','fast_twitch_genes')
+gene.data.name <- c('tsc_isoforms','glycogen_genes','pp1_regulatory_subunits','interleukins','srebp','linoleate_metabolism','myokines','tg_synthesis','lipolysis','oglnac_metabolisn','ribosomes','ppar_isoforms','b_oxidation','ppard_targets','myosin_heavy_chain','myosin_heavy_chain_main','slow_twitch_genes','fast_twitch_genes','myotubular_degradation','muscle_differentiation','autophagy')
 for (name in gene.data.name){
   #name <- as.name(name) #convert string to variable name
   gene.data <- rpkm.long.cal[rpkm.long.cal$external_gene_id%in%eval(as.name(name)),]

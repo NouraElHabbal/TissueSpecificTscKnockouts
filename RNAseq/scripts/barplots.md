@@ -5,15 +5,9 @@ Used Analysed DESeq results.
 
 
 ```
-## Error: there is no package called 'doMC'
-```
-
-```
-## Error: could not find function "registerDoMC"
-```
-
-```
 ## Loading required package: foreach
+## Loading required package: iterators
+## Loading required package: parallel
 ```
 
 
@@ -58,10 +52,15 @@ Used Analysed DESeq results.
 ## Saving 7 x 7 in image
 ## Saving 7 x 7 in image
 ## Saving 7 x 7 in image
+## Saving 7 x 7 in image
+## Saving 7 x 7 in image
+## Saving 7 x 7 in image
+## Saving 7 x 7 in image
+## Saving 7 x 7 in image
 ```
 
 
-The data used is in the file **../data/processed/RPKM_count.csv**.  This file was most recently processed on ``Wed Jul 30 09:42:21 2014``.
+The data used is in the file **../data/processed/RPKM_count.csv**.  This file was most recently processed on ``Wed Jul 30 12:38:39 2014``.
 
 
 Session Information
@@ -80,20 +79,19 @@ sessionInfo()
 ## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
 ## 
 ## attached base packages:
-## [1] splines   grid      stats     graphics  grDevices utils     datasets 
-## [8] methods   base     
+##  [1] splines   grid      parallel  stats     graphics  grDevices utils    
+##  [8] datasets  methods   base     
 ## 
 ## other attached packages:
-## [1] Hmisc_3.14-4    Formula_1.1-1   survival_2.37-7 lattice_0.20-29
-## [5] ggplot2_1.0.0   foreach_1.4.2   plyr_1.8.1      reshape2_1.4   
-## [9] knitr_1.6      
+##  [1] Hmisc_3.14-4    Formula_1.1-1   survival_2.37-7 lattice_0.20-29
+##  [5] ggplot2_1.0.0   doMC_1.3.3      iterators_1.0.7 foreach_1.4.2  
+##  [9] plyr_1.8.1      reshape2_1.4    knitr_1.6      
 ## 
 ## loaded via a namespace (and not attached):
 ##  [1] cluster_1.15.2      codetools_0.2-8     colorspace_1.2-4   
 ##  [4] compiler_3.1.0      digest_0.6.4        evaluate_0.5.5     
-##  [7] formatR_0.10        gtable_0.1.2        iterators_1.0.7    
-## [10] labeling_0.2        latticeExtra_0.6-26 MASS_7.3-33        
-## [13] munsell_0.4.2       proto_0.3-10        RColorBrewer_1.0-5 
-## [16] Rcpp_0.11.2         scales_0.2.4        stringr_0.6.2      
-## [19] tools_3.1.0
+##  [7] formatR_0.10        gtable_0.1.2        labeling_0.2       
+## [10] latticeExtra_0.6-26 MASS_7.3-33         munsell_0.4.2      
+## [13] proto_0.3-10        RColorBrewer_1.0-5  Rcpp_0.11.2        
+## [16] scales_0.2.4        stringr_0.6.2       tools_3.1.0
 ```

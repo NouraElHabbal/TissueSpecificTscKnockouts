@@ -3,6 +3,12 @@ Barplot Analysis of Results
 
 Used Analysed DESeq results.
 
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.path='figure/',
+               echo=FALSE, warning=FALSE, message=FALSE,dev=c('png','pdf'))
+```
+
 ```{r file-input, echo=FALSE, warning=FALSE}
 filename <- "../data/processed/RPKM_count.csv"
 deseq.filename <- "../data/processed/Binary DESeq Results.csv"
@@ -21,7 +27,7 @@ rpkm.data.unique <- rpkm.data[!duplicated(rpkm.data$external_gene_id),]
 rownames(rpkm.data.unique) <- rpkm.data.unique$external_gene_id
 rpkm.data.unique <- rpkm.data.unique[,-1]
 
-genes.of.interest <- c("Tsc1",'Tsc2','Ppp1r3c')
+genes.of.interest <- c("Tsc1",'Tsc2','Ppp1r3c','Cd36','Fabp3')
 
 
 genes.of.interest.data <- rpkm.data.unique[genes.of.interest,]
@@ -67,10 +73,12 @@ tsc_isoforms <- c('Tsc1','Tsc2')
 glycogen_genes <- c('Gys1','Gys2','Pygm','Pygl','Pygb')
 pp1_regulatory_subunits <- c('Ppp1r3a','Ppp1r3b','Ppp1r3c','Ppp1r3d','Ppp1r3e','Ppp1r3f','Ppp1r3g')
 interleukins <- paste('Il',seq(1,36), sep="")
-srebp <- c('Srebf1','Srebf2','Fasn','Acaca1','Hmgcr','Ldlr')
+srebp <- c('Srebf1','Srebf2','Fasn','Acaca1','Hmgcr','Ldlr','Gpam')
 linoleate_metabolism <- c('Pla2g2f','Akr1b10','Pla2g4a','Pla2g10','Pla2g12a','Pla2g12b','Pla2g2e','Cyp2e1','Pla2g4e','Pla2g6','Pla2g5','Alox15','Pla2g2d','Pla2g2c','Pla2g3')
 tg_synthesis <- c('Dgat1','Dgat2','Lpin1','Lpin2','Lpin3','Agpat1','Agpat2','Agpat3','Gpam','Gpat1','Gpat2','Gpat3','Gpat4','Fasn','Acaca1')
-myokines <- c('Il6','Il7','Il8','Il15','Fndc5','Fgf21','Serpine1','Bdnf','Lif','Fam132b','Angptl4','Fstl1','Ccl2','Mstn','Serpinf1','Vegfa','Vegfb','Metrnl')
+
+myokines <- c('Igf1','Il4','Il6','Il7','Il8','Il15','Fndc5','Fgf2','Fgf21','Serpine1','Bdnf','Lif','Fam132b','Angptl4','Fst','Fstl1','Cxcl1','Ccl2','Mstn','Serpinf1','Vegfa','Vegfb','Metrnl')
+
 lipolysis <- c('Lpl','Lipe','Pnpla2','Abhd5')
 oglnac_metabolisn <- c('Oga','Ogt','Uap1','Uap1l1','Pgm1','Pgm2','Pgm3','Gnpnat1','Amdhd2','Gfpt1','Gfpt2','Gnpda1','Gnpda2','Gpi1','Mpi','Hk1','Hk2','Hk3','Gck')
 ppar_isoforms <- c('Ppara','Pparb','Pparg','Ppargc1a','Ppargc1b')
@@ -85,8 +93,10 @@ fast_twitch_genes <- c('Pvalb','Tnni2','Ckm','Myh4','Myh1')
 myotubular_degradation <- c('Trim63','Fbxo32')
 muscle_differentiation <- c('Cdkn1a','Myog','Myod1','Myf4','Myf5','Myf6','Mef2c')
 autophagy <- c('Gabarap','Gabarapl1','Gabrapl2','Map1lc3a','Map1lc3b')
-fatty_acid_uptake <- c('Ldlr','Scarb1','Lpl','Abcc1','Cd36','Fatp1','Fabp3','Got2')
-fatty_acid_uptake_no_FABP3 <- c('Ldlr','Scarb1','Lpl','Abcc1','Cd36','Fatp1','Got2')
+fatty_acid_uptake <- c('Ldlr','Scarb1','Lpl','Abcc1','Cd36','Fatp1','Fabp3','Got2','Slc27a1')
+fatty_acid_uptake_no_FABP3 <- c('Ldlr','Scarb1','Lpl','Abcc1','Cd36','Fatp1','Got2','Slc27a1')
+
+fabp_cd36 <- c('Fabp3','Cd36')
 
 mitochondrial_genes <- c('mt-Nd1','mt-Nd2','mt-Nd4','mt-Nd4l','mt-Nd5','mt-Co1','mt-Co2','mt-Co3','mt-Atp6','mt-Atp8','mt-Cytb','mt-Rnr1','mt-Rnr2')
 
@@ -96,7 +106,7 @@ ribosomes <- c('RPL7','RPL13A','RPL34','RPS28','RPS24','RPS5','FAU','RPS6','RPS1
 #convert to mouse gene format
 ribosomes <- capitalize(tolower(ribosomes))
 
-gene.data.name <- c('tsc_isoforms','glycogen_genes','pp1_regulatory_subunits','interleukins','srebp','linoleate_metabolism','myokines','tg_synthesis','lipolysis','oglnac_metabolisn','ribosomes','ppar_isoforms','b_oxidation','ppard_targets','myosin_heavy_chain','myosin_heavy_chain_main','slow_twitch_genes','fast_twitch_genes','myotubular_degradation','muscle_differentiation','autophagy','mitochondrial_genes','fatty_acid_uptake','fatty_acid_uptake_no_FABP3')
+gene.data.name <- c('tsc_isoforms','glycogen_genes','pp1_regulatory_subunits','interleukins','srebp','linoleate_metabolism','myokines','tg_synthesis','lipolysis','oglnac_metabolisn','ribosomes','ppar_isoforms','b_oxidation','ppard_targets','myosin_heavy_chain','myosin_heavy_chain_main','slow_twitch_genes','fast_twitch_genes','myotubular_degradation','muscle_differentiation','autophagy','mitochondrial_genes','fatty_acid_uptake','fatty_acid_uptake_no_FABP3','fabp_cd36')
 for (name in gene.data.name){
   #name <- as.name(name) #convert string to variable name
   gene.data <- rpkm.long.cal[rpkm.long.cal$external_gene_id%in%eval(as.name(name)),]

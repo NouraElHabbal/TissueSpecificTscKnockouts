@@ -258,7 +258,7 @@ This is generated via GEO2R based on the Duvel et al paper.
 "1453304_s_at"	1.92041953441221e-10	1.06025246462083e-12	-35.0781061462876	19.8070715050513	-2.439585772	"Ly6e"	"lymphocyte antigen 6 complex, locus E"
 "1418350_at"	1.96608505284708e-10	1.09195464952978e-12	-34.984102275214	19.7773339109807	-2.63899518133333	"Hbegf"	"heparin-binding EGF-like growth factor"
 
-Duvel et al identified 9607 in their analysis out of a total of 21679 genes assessed.  Of these differentially expressed genes. 1401 genes overlapped with our 2306 significantly different genes.
+Duvel et al identified 9607 in their analysis out of a total of 21679 genes assessed.  Of these differentially expressed genes. 2607 genes overlapped with our 4451 significantly different genes.
 
 ![](figure/duvel-mtsc-venn-1.png) ![](figure/duvel-mtsc-venn-2.png) 
 

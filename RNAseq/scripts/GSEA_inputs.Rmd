@@ -13,7 +13,7 @@ deseq2.results <- read.csv(deseq2_file, row.names="X")
 results.noNA <- deseq2.results[which(deseq2.results$log2FoldChange != 'NA'),]
 results.noNA <- results.noNA[order(results.noNA$log2FoldChange),c(8,3)]
 #get rid of duplicate genes
-results.noDup <- results.noNA[!duplicated(results.noNA$external_gene_id),]
+results.noDup <- results.noNA[!duplicated(results.noNA$external_gene_name),]
 result_data_file <- "../data/processed/GSEA_prerank_FC.rnk"
 write.table(results.noDup, file=result_data_file, sep="\t", quote=FALSE, row.names=FALSE)
 ```

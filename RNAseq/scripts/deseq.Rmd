@@ -1,5 +1,19 @@
-DESeq Analysis
-========================================================
+---
+title: "DESeq Analysis of Mck-TSC Quadriceps"
+author: "Dave Bridges"
+date: "June 13, 2014"
+output:
+  html_document:
+    keep_md: yes
+  pdf_document:
+    keep_tex: yes
+---
+
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.path='figure/',
+               echo=FALSE, warning=FALSE, message=FALSE,dev=c('png','pdf'))
+```
 
 ```{r setup}
 input_directory <- "../data/raw/htseq-counts"

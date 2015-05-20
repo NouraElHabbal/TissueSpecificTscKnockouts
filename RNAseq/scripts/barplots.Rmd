@@ -21,10 +21,10 @@ mapping$Genotype <- relevel(mapping$Genotype, ref="Wild-Type")
 
 
 #change rownames to gene names
-rpkm.data <- merge(normalized.data, deseq.data[,c('Row.names','external_gene_id')], by.x='row.names', by.y='Row.names') 
-rpkm.data.unique <- rpkm.data[!duplicated(rpkm.data$external_gene_id),]
+rpkm.data <- merge(normalized.data, deseq.data[,c('Row.names','external_gene_name')], by.x='row.names', by.y='Row.names') 
+rpkm.data.unique <- rpkm.data[!duplicated(rpkm.data$external_gene_name),]
 
-rownames(rpkm.data.unique) <- rpkm.data.unique$external_gene_id
+rownames(rpkm.data.unique) <- rpkm.data.unique$external_gene_name
 rpkm.data.unique <- rpkm.data.unique[,-1]
 
 genes.of.interest <- c("Tsc1",'Tsc2','Ppp1r3c','Cd36','Fabp3')
@@ -33,12 +33,12 @@ genes.of.interest <- c("Tsc1",'Tsc2','Ppp1r3c','Cd36','Fabp3')
 genes.of.interest.data <- rpkm.data.unique[genes.of.interest,]
 #put the data in long format
 library(reshape2)  
-genes.of.interest.long <- melt(genes.of.interest.data, id.var='external_gene_id',variable.name='Sample',value.name='Expression')
+genes.of.interest.long <- melt(genes.of.interest.data, id.var='external_gene_name',variable.name='Sample',value.name='Expression')
 genes.of.interest.long <- reshape(genes.of.interest.data, direction="long", varying=list(names(genes.of.interest.data)[1:16]), v.names="Expression", idvar="Genes", timevar="Genotype", ids=rownames(genes.of.interest.data))
 
-rpkm.long <- reshape(rpkm.data.unique, direction="long", varying=list(names(rpkm.data.unique)[1:27]), v.names="Expression", idvar="external_gene_id", timevar="Genotype", ids=rownames(rpkm.data.unique))
+rpkm.long <- reshape(rpkm.data.unique, direction="long", varying=list(names(rpkm.data.unique)[1:27]), v.names="Expression", idvar="external_gene_name", timevar="Genotype", ids=rownames(rpkm.data.unique))
 
-rpkm.long <- melt(rpkm.data.unique, id.var='external_gene_id',variable.name='Sample',value.name='Expression')
+rpkm.long <- melt(rpkm.data.unique, id.var='external_gene_name',variable.name='Sample',value.name='Expression')
 mapping$Sample <- paste("X",mapping$File,sep="")
 mapping$Sample <- gsub('-','.',mapping$Sample, fixed=T)
 rpkm.long.genotyped <- merge(rpkm.long, mapping[,c('Sample','Genotype')], by='Sample')
@@ -47,11 +47,11 @@ rpkm.long.genotyped <- merge(rpkm.long, mapping[,c('Sample','Genotype')], by='Sa
 library(plyr)
 library(doMC)
 registerDoMC()
-rpkm.long.cal <- ddply(rpkm.long.genotyped, .(external_gene_id,Genotype), summarise, se = sd(Expression, na.rm=T)/sqrt(length(Expression)), mean_Expression = mean(Expression, na.rm=T), .parallel=TRUE)
+rpkm.long.cal <- ddply(rpkm.long.genotyped, .(external_gene_name,Genotype), summarise, se = sd(Expression, na.rm=T)/sqrt(length(Expression)), mean_Expression = mean(Expression, na.rm=T), .parallel=TRUE)
 
 rpkm.long.cal$Genotype <- factor(rpkm.long.cal$Genotype)
 
-#rpkm.long.cal <- rpkm.long.cal[order(rev(rpkm.long.cal$external_gene_id), rpkm.long.cal$Genotype, decreasing=T),]
+#rpkm.long.cal <- rpkm.long.cal[order(rev(rpkm.long.cal$external_gene_name), rpkm.long.cal$Genotype, decreasing=T),]
 ```
 
 ```{r barplots, dev=c('png','pdf'), echo=FALSE, fig.show='asis', warning=FALSE}
@@ -59,7 +59,7 @@ library(reshape2)
 library(ggplot2)
 for (gene in genes.of.interest) {
   #pdf(sprintf('../figures/%s-barplot.pdf', gene))
-  gene.data <- rpkm.long.cal[rpkm.long.cal$external_gene_id==gene,]
+  gene.data <- rpkm.long.cal[rpkm.long.cal$external_gene_name==gene,]
   #pdf(paste('../figures/',gene,'-barplot.pdf',sep=""))
   ggplot(gene.data, aes(x=Genotype,y=mean_Expression)) + geom_bar(stat="identity") + geom_errorbar(aes(ymin=mean_Expression-se, ymax=mean_Expression+se), width=.1) + xlab("") + ylab("mRNA Expression (RPKM)")+ theme_bw() + ggtitle(gene) + theme(panel.grid.minor = element_blank()) + theme(panel.grid.major = element_blank()) + theme(panel.border=element_blank()) + scale_x_discrete(labels=gene.data$Genotype) + theme(axis.line = element_line(color = 'black'))+scale_colour_grey(start = 0.5, end = .9)
   ggsave(filename=paste('figure/',gene,'-barplot.pdf',sep=""))
@@ -109,10 +109,10 @@ ribosomes <- capitalize(tolower(ribosomes))
 gene.data.name <- c('tsc_isoforms','glycogen_genes','pp1_regulatory_subunits','interleukins','srebp','linoleate_metabolism','myokines','tg_synthesis','lipolysis','oglnac_metabolisn','ribosomes','ppar_isoforms','b_oxidation','ppard_targets','myosin_heavy_chain','myosin_heavy_chain_main','slow_twitch_genes','fast_twitch_genes','myotubular_degradation','muscle_differentiation','autophagy','mitochondrial_genes','fatty_acid_uptake','fatty_acid_uptake_no_FABP3','fabp_cd36')
 for (name in gene.data.name){
   #name <- as.name(name) #convert string to variable name
-  gene.data <- rpkm.long.cal[rpkm.long.cal$external_gene_id%in%eval(as.name(name)),]
-  gene.data$external_gene_id <- factor(gene.data$external_gene_id, levels=eval(as.name(name)))
+  gene.data <- rpkm.long.cal[rpkm.long.cal$external_gene_name%in%eval(as.name(name)),]
+  gene.data$external_gene_name <- factor(gene.data$external_gene_name, levels=eval(as.name(name)))
   
-  ggplot(gene.data, aes(x=external_gene_id, y=mean_Expression, fill=Genotype))+ 
+  ggplot(gene.data, aes(x=external_gene_name, y=mean_Expression, fill=Genotype))+ 
     #this line together with show_guide=F and the element_rect=black get rid of the slash in legend box
     geom_bar(stat="identity", width=.8, position=position_dodge(width=.8)) +
     geom_bar(stat="identity",width=.8, position=position_dodge(width=.8), col="black", show_guide=F) +

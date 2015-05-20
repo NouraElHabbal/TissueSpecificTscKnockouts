@@ -122,7 +122,7 @@ mTsc.datafile <- '../data/processed/Binary DESeq Results.csv'
 mtsc.data <- read.csv(mTsc.datafile)
 sig.mtsc.data <- droplevels(subset(mtsc.data, padj<0.05))
 
-sig.mtsc.genes <- sig.mtsc.data$external_gene_id
+sig.mtsc.genes <- sig.mtsc.data$external_gene_name
 sig.overlap <- intersect(sig.duvel.genes, sig.mtsc.genes)
 ```
 

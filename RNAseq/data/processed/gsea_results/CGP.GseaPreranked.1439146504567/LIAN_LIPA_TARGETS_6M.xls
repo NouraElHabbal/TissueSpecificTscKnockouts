@@ -1,0 +1,66 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GDF15	GDF15	growth differentiation factor 15	13	4.566884994506836	0.08110939	Yes	
+row_1	MMP12	MMP12	matrix metallopeptidase 12 (macrophage elastase)	51	3.3144888877868652	0.1376911	Yes	
+row_2	MPEG1	MPEG1	-	145	2.429623603820801	0.17370701	Yes	
+row_3	TREM2	TREM2	triggering receptor expressed on myeloid cells 2	151	2.4217073917388916	0.21687427	Yes	
+row_4	GPNMB	GPNMB	glycoprotein (transmembrane) nmb	152	2.4202520847320557	0.26042977	Yes	
+row_5	ADAM8	ADAM8	ADAM metallopeptidase domain 8	228	2.0784361362457275	0.29161754	Yes	
+row_6	SLC37A2	SLC37A2	solute carrier family 37 (glycerol-3-phosphate transporter), member 2	239	2.0467381477355957	0.32762235	Yes	
+row_7	CD68	CD68	CD68 molecule	245	2.0261223316192627	0.36367056	Yes	
+row_8	CD84	CD84	CD84 molecule	325	1.7908344268798828	0.38935104	Yes	
+row_9	CLEC4D	CLEC4D	C-type lectin domain family 4, member D	346	1.7603627443313599	0.4193733	Yes	
+row_10	GALC	GALC	galactosylceramidase	508	1.4957231283187866	0.43294635	Yes	
+row_11	CCR1	CCR1	chemokine (C-C motif) receptor 1	613	1.3506501913070679	0.44863304	Yes	
+row_12	HMOX1	HMOX1	heme oxygenase (decycling) 1	736	1.2308728694915771	0.46067226	Yes	
+row_13	C3AR1	C3AR1	complement component 3a receptor 1	737	1.229721188545227	0.48280266	Yes	
+row_14	ATP6V0D2	ATP6V0D2	ATPase, H+ transporting, lysosomal 38kDa, V0 subunit d2	851	1.1485282182693481	0.49410594	Yes	
+row_15	MMP8	MMP8	matrix metallopeptidase 8 (neutrophil collagenase)	882	1.1263724565505981	0.51188993	Yes	
+row_16	MYO5A	MYO5A	myosin VA (heavy chain 12, myoxin)	886	1.1229031085968018	0.5318493	Yes	
+row_17	MMP13	MMP13	matrix metallopeptidase 13 (collagenase 3)	937	1.0981990098953247	0.5474686	Yes	
+row_18	SLC40A1	SLC40A1	solute carrier family 40 (iron-regulated transporter), member 1	1083	1.0110855102539062	0.55364615	Yes	
+row_19	CTSB	CTSB	cathepsin B	1122	0.9887266159057617	0.56828994	Yes	
+row_20	KIF1A	KIF1A	kinesin family member 1A	1253	0.9120447039604187	0.57392836	Yes	
+row_21	FCGR2B	FCGR2B	Fc fragment of IgG, low affinity IIb, receptor (CD32)	1384	0.8508457541465759	0.5784654	Yes	
+row_22	MMP19	MMP19	matrix metallopeptidase 19	1479	0.8133391737937927	0.58531135	Yes	
+row_23	TLR7	TLR7	toll-like receptor 7	1606	0.7730423212051392	0.5887798	Yes	
+row_24	FABP7	FABP7	fatty acid binding protein 7, brain	1658	0.7500585913658142	0.59805095	Yes	
+row_25	C1QC	C1QC	complement component 1, q subcomponent, C chain	1686	0.7408087849617004	0.60914487	Yes	
+row_26	FCER1G	FCER1G	Fc fragment of IgE, high affinity I, receptor for; gamma polypeptide	1945	0.6501557230949402	0.5994611	Yes	
+row_27	C1QB	C1QB	complement component 1, q subcomponent, B chain	2000	0.6322093605995178	0.6063627	Yes	
+row_28	C1QA	C1QA	complement component 1, q subcomponent, A chain	2060	0.6152810454368591	0.6125453	Yes	
+row_29	SLC15A3	SLC15A3	solute carrier family 15, member 3	2262	0.5731812119483948	0.6062007	Yes	
+row_30	SLC11A1	SLC11A1	solute carrier family 11 (proton-coupled divalent metal ion transporters), member 1	2402	0.5358603596687317	0.6043232	Yes	
+row_31	APOBEC1	APOBEC1	apolipoprotein B mRNA editing enzyme, catalytic polypeptide 1	2465	0.5250300168991089	0.608633	Yes	
+row_32	MSR1	MSR1	macrophage scavenger receptor 1	2485	0.5207036733627319	0.6164289	Yes	
+row_33	LY9	LY9	lymphocyte antigen 9	2702	0.47468671202659607	0.6070685	No	
+row_34	RP1	RP1	retinitis pigmentosa 1 (autosomal dominant)	3333	0.3654190003871918	0.5614275	No	
+row_35	IGSF6	IGSF6	immunoglobulin superfamily, member 6	3654	0.3221984803676605	0.5407029	No	
+row_36	BEX1	BEX1	brain expressed, X-linked 1	3973	0.27746859192848206	0.519339	No	
+row_37	RGS1	RGS1	regulator of G-protein signalling 1	4043	0.26891788840293884	0.5184595	No	
+row_38	CD244	CD244	CD244 molecule, natural killer cell receptor 2B4	5153	0.12956206500530243	0.42887238	No	
+row_39	CLEC4E	CLEC4E	C-type lectin domain family 4, member E	5327	0.10893714427947998	0.41649383	No	
+row_40	NEU1	NEU1	sialidase 1 (lysosomal sialidase)	5490	0.0912516862154007	0.40470877	No	
+row_41	FKBP5	FKBP5	FK506 binding protein 5	5968	0.03839566931128502	0.3658639	No	
+row_42	DST	DST	dystonin	6151	0.017666511237621307	0.35109687	No	
+row_43	CLCA1	CLCA1	chloride channel, calcium activated, family member 1	6192	0.011955591849982738	0.34799665	No	
+row_44	UTRN	UTRN	utrophin (homologous to dystrophin)	6285	3.8115467759780586E-5	0.34037197	No	
+row_45	CFP	CFP	complement factor properdin	6525	-0.02480573020875454	0.321009	No	
+row_46	PAPPA	PAPPA	pregnancy-associated plasma protein A, pappalysin 1	7196	-0.10080557316541672	0.26729062	No	
+row_47	S100A9	S100A9	S100 calcium binding protein A9	7447	-0.12853866815567017	0.24888273	No	
+row_48	SNX6	SNX6	sorting nexin 6	7642	-0.14808765053749084	0.23546818	No	
+row_49	CD5L	CD5L	CD5 molecule-like	7819	-0.1630837321281433	0.22381544	No	
+row_50	CAMP	CAMP	cathelicidin antimicrobial peptide	7887	-0.16649335622787476	0.22125845	No	
+row_51	LIPF	LIPF	lipase, gastric	8604	-0.2366599142551422	0.16617222	No	
+row_52	IL1R2	IL1R2	interleukin 1 receptor, type II	8707	-0.2497882843017578	0.16221327	No	
+row_53	MARCO	MARCO	macrophage receptor with collagenous structure	8782	-0.2595881521701813	0.16075145	No	
+row_54	MS4A7	MS4A7	membrane-spanning 4-domains, subfamily A, member 7	9251	-0.3202001750469208	0.12772396	No	
+row_55	TNFAIP2	TNFAIP2	tumor necrosis factor, alpha-induced protein 2	9535	-0.35465678572654724	0.11065018	No	
+row_56	ACP5	ACP5	acid phosphatase 5, tartrate resistant	9937	-0.41681718826293945	0.08491471	No	
+row_57	SEMA7A	SEMA7A	semaphorin 7A, GPI membrane anchor (John Milton Hagen blood group)	10046	-0.4334152042865753	0.08376305	No	
+row_58	DNMT3A	DNMT3A	DNA (cytosine-5-)-methyltransferase 3 alpha	10231	-0.466694176197052	0.07691108	No	
+row_59	SPIC	SPIC	Spi-C transcription factor (Spi-1/PU.1 related)	10253	-0.47140568494796753	0.083654046	No	
+row_60	STEAP4	STEAP4	STEAP family member 4	10673	-0.5574609637260437	0.05895771	No	
+row_61	MAFB	MAFB	v-maf musculoaponeurotic fibrosarcoma oncogene homolog B (avian)	10954	-0.6241534352302551	0.046982516	No	
+row_62	MYRIP	MYRIP	myosin VIIA and Rab interacting protein	11499	-0.822841227054596	0.016701486	No	
+row_63	PLA2G7	PLA2G7	phospholipase A2, group VII (platelet-activating factor acetylhydrolase, plasma)	11577	-0.8795566558837891	0.026148126	No	
+row_64	SLC6A2	SLC6A2	solute carrier family 6 (neurotransmitter transporter, noradrenalin), member 2	11824	-1.0847394466400146	0.02527983	No	

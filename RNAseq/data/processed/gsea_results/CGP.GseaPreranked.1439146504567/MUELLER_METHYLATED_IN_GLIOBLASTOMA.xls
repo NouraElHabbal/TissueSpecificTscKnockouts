@@ -1,0 +1,31 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CLDN4	CLDN4	claudin 4	112	2.6730775833129883	0.083291784	Yes	
+row_1	TLR2	TLR2	toll-like receptor 2	161	2.3516128063201904	0.16074298	Yes	
+row_2	FBXO2	FBXO2	F-box protein 2	212	2.1204872131347656	0.23002681	Yes	
+row_3	S100A4	S100A4	S100 calcium binding protein A4	230	2.0748298168182373	0.30045715	Yes	
+row_4	CDA	CDA	cytidine deaminase	315	1.8218294382095337	0.35659084	Yes	
+row_5	LCN2	LCN2	lipocalin 2 (oncogene 24p3)	327	1.7875066995620728	0.41756928	Yes	
+row_6	SFN	SFN	stratifin	357	1.733259677886963	0.47518194	Yes	
+row_7	SERPINB5	SERPINB5	serpin peptidase inhibitor, clade B (ovalbumin), member 5	438	1.5879305601119995	0.5235481	Yes	
+row_8	STAG3	STAG3	stromal antigen 3	703	1.2556368112564087	0.5452029	Yes	
+row_9	AREG	AREG	amphiregulin (schwannoma-derived growth factor)	911	1.1087177991867065	0.56648177	Yes	
+row_10	MMP13	MMP13	matrix metallopeptidase 13 (collagenase 3)	937	1.0981990098953247	0.6024378	Yes	
+row_11	SERPIND1	SERPIND1	serpin peptidase inhibitor, clade D (heparin cofactor), member 1	1008	1.0570051670074463	0.63324857	Yes	
+row_12	NPTX2	NPTX2	neuronal pentraxin II	1052	1.0338908433914185	0.6654905	Yes	
+row_13	SPINT1	SPINT1	serine peptidase inhibitor, Kunitz type 1	1096	1.0025975704193115	0.69664896	Yes	
+row_14	LAPTM5	LAPTM5	lysosomal associated multispanning membrane protein 5	1163	0.9617063999176025	0.7244909	Yes	
+row_15	RUNX3	RUNX3	runt-related transcription factor 3	1649	0.755956768989563	0.7105812	No	
+row_16	TKTL1	TKTL1	transketolase-like 1	2864	0.44265830516815186	0.62557644	No	
+row_17	IER3	IER3	immediate early response 3	3425	0.35141170024871826	0.5914621	No	
+row_18	KRT17	KRT17	keratin 17	3821	0.29764723777770996	0.5691227	No	
+row_19	MAST3	MAST3	microtubule associated serine/threonine kinase 3	6393	-0.0099027743563056	0.3569862	No	
+row_20	TES	TES	testis derived transcript (3 LIM domains)	6890	-0.06700941175222397	0.3183145	No	
+row_21	SERPINF1	SERPINF1	serpin peptidase inhibitor, clade F (alpha-2 antiplasmin, pigment epithelium derived factor), member 1	6997	-0.07817529886960983	0.31226078	No	
+row_22	COX7A1	COX7A1	cytochrome c oxidase subunit VIIa polypeptide 1 (muscle)	7441	-0.12799394130706787	0.28008065	No	
+row_23	DAZL	DAZL	deleted in azoospermia-like	7768	-0.1594468057155609	0.2586589	No	
+row_24	LXN	LXN	latexin	8150	-0.1874937117099762	0.23366275	No	
+row_25	F11R	F11R	F11 receptor	8447	-0.219607874751091	0.21680325	No	
+row_26	LSR	LSR	lipolysis stimulated lipoprotein receptor	9017	-0.2899783253669739	0.17981817	No	
+row_27	KRT19	KRT19	keratin 19	10458	-0.5083672404289246	0.07841073	No	
+row_28	KRT4	KRT4	keratin 4	11110	-0.666358232498169	0.047679905	No	
+row_29	GZMM	GZMM	granzyme M (lymphocyte met-ase 1)	11792	-1.0528604984283447	0.027851323	No	

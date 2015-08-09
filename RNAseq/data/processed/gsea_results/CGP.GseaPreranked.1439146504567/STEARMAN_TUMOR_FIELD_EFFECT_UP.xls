@@ -1,0 +1,31 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ITIH4	ITIH4	inter-alpha (globulin) inhibitor H4 (plasma Kallikrein-sensitive glycoprotein)	102	2.7501637935638428	0.09680712	Yes	
+row_1	MPEG1	MPEG1	-	145	2.429623603820801	0.18630724	Yes	
+row_2	ITGAX	ITGAX	integrin, alpha X (complement component 3 receptor 4 subunit)	216	2.1051716804504395	0.26107794	Yes	
+row_3	CD68	CD68	CD68 molecule	245	2.0261223316192627	0.33629483	Yes	
+row_4	CTSS	CTSS	cathepsin S	316	1.815683364868164	0.39998806	Yes	
+row_5	LCN2	LCN2	lipocalin 2 (oncogene 24p3)	327	1.7875066995620728	0.46756175	Yes	
+row_6	SOCS3	SOCS3	suppressor of cytokine signaling 3	685	1.2763375043869019	0.48689753	Yes	
+row_7	SPP1	SPP1	secreted phosphoprotein 1 (osteopontin, bone sialoprotein I, early T-lymphocyte activation 1)	745	1.2243901491165161	0.5288736	Yes	
+row_8	SAT1	SAT1	spermidine/spermine N1-acetyltransferase 1	803	1.1786357164382935	0.5692642	Yes	
+row_9	PLD3	PLD3	phospholipase D family, member 3	947	1.088969111442566	0.59911615	Yes	
+row_10	LAPTM5	LAPTM5	lysosomal associated multispanning membrane protein 5	1163	0.9617063999176025	0.61814785	Yes	
+row_11	CTSK	CTSK	cathepsin K (pycnodysostosis)	1348	0.8679182529449463	0.63615274	Yes	
+row_12	SIRPA	SIRPA	signal-regulatory protein alpha	1476	0.8139726519584656	0.6568041	Yes	
+row_13	CTSD	CTSD	cathepsin D (lysosomal aspartyl peptidase)	1851	0.6782536506652832	0.65184885	Yes	
+row_14	CSTB	CSTB	cystatin B (stefin B)	1962	0.644828736782074	0.6674327	Yes	
+row_15	LY75	LY75	lymphocyte antigen 75	2256	0.5737625956535339	0.66517323	Yes	
+row_16	IQGAP1	IQGAP1	IQ motif containing GTPase activating protein 1	2429	0.5285413265228271	0.67118335	Yes	
+row_17	CTSZ	CTSZ	cathepsin Z	2500	0.5165387988090515	0.685164	Yes	
+row_18	WDR81	WDR81	WD repeat domain 81	4257	0.23838819563388824	0.5491621	No	
+row_19	CSF2RB	CSF2RB	colony stimulating factor 2 receptor, beta, low-affinity (granulocyte-macrophage)	5535	0.08578786253929138	0.4469076	No	
+row_20	CMIP	CMIP	-	6635	-0.037497907876968384	0.35751605	No	
+row_21	MYO7A	MYO7A	myosin VIIA	6749	-0.05095122382044792	0.3501269	No	
+row_22	SCARB2	SCARB2	scavenger receptor class B, member 2	6797	-0.05580170452594757	0.34837788	No	
+row_23	LRG1	LRG1	leucine-rich alpha-2-glycoprotein 1	7422	-0.12529951333999634	0.3016023	No	
+row_24	LPL	LPL	lipoprotein lipase	8483	-0.22254818677902222	0.22251497	No	
+row_25	APOC1	APOC1	apolipoprotein C-I	9220	-0.31560516357421875	0.17376536	No	
+row_26	CD200	CD200	CD200 molecule	9757	-0.38743332028388977	0.14429325	No	
+row_27	ACP5	ACP5	acid phosphatase 5, tartrate resistant	9937	-0.41681718826293945	0.14544964	No	
+row_28	PTGS1	PTGS1	prostaglandin-endoperoxide synthase 1 (prostaglandin G/H synthase and cyclooxygenase)	10115	-0.44659435749053955	0.14791077	No	
+row_29	NOV	NOV	nephroblastoma overexpressed gene	10317	-0.48222973942756653	0.14975207	No	

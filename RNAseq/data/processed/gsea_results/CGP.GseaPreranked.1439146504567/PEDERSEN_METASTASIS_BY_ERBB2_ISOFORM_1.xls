@@ -1,0 +1,39 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MAP1B	MAP1B	microtubule-associated protein 1B	46	3.338003396987915	0.08202791	Yes	
+row_1	EGR1	EGR1	early growth response 1	61	3.1635630130767822	0.16221672	Yes	
+row_2	FOSL1	FOSL1	FOS-like antigen 1	138	2.4760935306549072	0.21960086	Yes	
+row_3	DUSP5	DUSP5	dual specificity phosphatase 5	208	2.1458044052124023	0.26907095	Yes	
+row_4	SHC4	SHC4	SHC (Src homology 2 domain containing) family, member 4	213	2.119974374771118	0.32325232	Yes	
+row_5	GAL	GAL	galanin	274	1.9284623861312866	0.36787808	Yes	
+row_6	PHLDA1	PHLDA1	pleckstrin homology-like domain, family A, member 1	322	1.7948793172836304	0.41014403	Yes	
+row_7	RASD1	RASD1	RAS, dexamethasone-induced 1	349	1.7570446729660034	0.4531738	Yes	
+row_8	EREG	EREG	epiregulin	426	1.611751914024353	0.48833257	Yes	
+row_9	NAV2	NAV2	neuron navigator 2	551	1.4297428131103516	0.5148417	Yes	
+row_10	CTGF	CTGF	connective tissue growth factor	582	1.4011127948760986	0.54838836	Yes	
+row_11	HBEGF	HBEGF	heparin-binding EGF-like growth factor	824	1.1649587154388428	0.55841315	Yes	
+row_12	AREG	AREG	amphiregulin (schwannoma-derived growth factor)	911	1.1087177991867065	0.5798101	Yes	
+row_13	TRIB1	TRIB1	tribbles homolog 1 (Drosophila)	967	1.078410267829895	0.60299146	Yes	
+row_14	SLC7A11	SLC7A11	solute carrier family 7, (cationic amino acid transporter, y+ system) member 11	1124	0.9876813292503357	0.6154872	Yes	
+row_15	PLK3	PLK3	polo-like kinase 3 (Drosophila)	1158	0.967444658279419	0.63763463	Yes	
+row_16	GEM	GEM	GTP binding protein overexpressed in skeletal muscle	1353	0.865803599357605	0.64385384	Yes	
+row_17	STAMBPL1	STAMBPL1	STAM binding protein-like 1	1388	0.847467303276062	0.6628335	Yes	
+row_18	ITGA2	ITGA2	integrin, alpha 2 (CD49B, alpha 2 subunit of VLA-2 receptor)	1454	0.8232912421226501	0.67862785	Yes	
+row_19	DUSP4	DUSP4	dual specificity phosphatase 4	1642	0.7587890028953552	0.6826743	Yes	
+row_20	SPRY4	SPRY4	sprouty homolog 4 (Drosophila)	2048	0.6197332143783569	0.6651166	No	
+row_21	DUSP6	DUSP6	dual specificity phosphatase 6	2124	0.5983901023864746	0.67430097	No	
+row_22	RUNX2	RUNX2	runt-related transcription factor 2	2277	0.5702788233757019	0.6763946	No	
+row_23	ERRFI1	ERRFI1	ERBB receptor feedback inhibitor 1	2487	0.5204762816429138	0.67249376	No	
+row_24	MAP3K5	MAP3K5	mitogen-activated protein kinase kinase kinase 5	2660	0.4844827651977539	0.67072725	No	
+row_25	MAFF	MAFF	v-maf musculoaponeurotic fibrosarcoma oncogene homolog F (avian)	2732	0.4681912362575531	0.6768945	No	
+row_26	MALL	MALL	mal, T-cell differentiation protein-like	3062	0.4109371304512024	0.6602531	No	
+row_27	LIF	LIF	leukemia inhibitory factor (cholinergic differentiation factor)	4487	0.20808467268943787	0.5478399	No	
+row_28	EGR3	EGR3	early growth response 3	5159	0.1286514550447464	0.49565673	No	
+row_29	RASGEF1A	RASGEF1A	RasGEF domain family, member 1A	6712	-0.04739737510681152	0.3685262	No	
+row_30	STRN3	STRN3	striatin, calmodulin binding protein 3	7035	-0.0828847661614418	0.34402826	No	
+row_31	MXD1	MXD1	MAX dimerization protein 1	7086	-0.08893244713544846	0.34218007	No	
+row_32	EPHA2	EPHA2	EPH receptor A2	7300	-0.11355570703744888	0.32748505	No	
+row_33	GPR126	GPR126	G protein-coupled receptor 126	9250	-0.32000964879989624	0.1745327	No	
+row_34	TNFRSF21	TNFRSF21	tumor necrosis factor receptor superfamily, member 21	9635	-0.3673548102378845	0.15222219	No	
+row_35	ELK3	ELK3	ELK3, ETS-domain protein (SRF accessory protein 2)	9868	-0.4036981165409088	0.14341648	No	
+row_36	REEP1	REEP1	receptor accessory protein 1	9946	-0.4178348481655121	0.14779267	No	
+row_37	PLEK2	PLEK2	pleckstrin 2	11950	-1.2700368165969849	0.014803175	No	

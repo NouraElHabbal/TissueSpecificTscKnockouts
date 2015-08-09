@@ -1,0 +1,28 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ZFP36	ZFP36	zinc finger protein 36, C3H type, homolog (mouse)	2413	0.5335074067115784	-0.14964575	No	
+row_1	DKK4	DKK4	dickkopf homolog 4 (Xenopus laevis)	2861	0.44265830516815186	-0.14532013	No	
+row_2	TEP1	TEP1	telomerase-associated protein 1	2929	0.43511509895324707	-0.11030043	No	
+row_3	RB1	RB1	retinoblastoma 1 (including osteosarcoma)	3510	0.3414557874202728	-0.12639657	No	
+row_4	TERT	TERT	telomerase reverse transcriptase	3512	0.3414134979248047	-0.09465726	No	
+row_5	DVL3	DVL3	dishevelled, dsh homolog 3 (Drosophila)	4292	0.23392091691493988	-0.13721853	No	
+row_6	BAD	BAD	BCL2-antagonist of cell death	4299	0.2334836721420288	-0.1159521	No	
+row_7	IGF1R	IGF1R	insulin-like growth factor 1 receptor	4801	0.1660754233598709	-0.1418675	No	
+row_8	APC	APC	adenomatosis polyposis coli	6038	0.030856776982545853	-0.24111488	No	
+row_9	PTEN	PTEN	phosphatase and tensin homolog (mutated in multiple advanced cancers 1)	6243	0.005244560074061155	-0.2574814	No	
+row_10	GSK3B	GSK3B	glycogen synthase kinase 3 beta	6556	-0.029070846736431122	-0.28055054	No	
+row_11	DICER1	DICER1	Dicer1, Dcr-1 homolog (Drosophila)	6722	-0.047951556742191315	-0.28971413	No	
+row_12	STAT6	STAT6	signal transducer and activator of transcription 6, interleukin-4 induced	7787	-0.16138093173503876	-0.36258447	No	
+row_13	RARG	RARG	retinoic acid receptor, gamma	8046	-0.1804725080728531	-0.3670803	No	
+row_14	GLI2	GLI2	GLI-Kruppel family member GLI2	8214	-0.19488632678985596	-0.36271387	No	
+row_15	NOTCH4	NOTCH4	Notch homolog 4 (Drosophila)	8397	-0.21362446248531342	-0.3578403	No	
+row_16	MAX	MAX	MYC associated factor X	8614	-0.2375873476266861	-0.35354245	No	
+row_17	XRCC3	XRCC3	X-ray repair complementing defective repair in Chinese hamster cells 3	8697	-0.24877943098545074	-0.3371298	No	
+row_18	CDKN1C	CDKN1C	cyclin-dependent kinase inhibitor 1C (p57, Kip2)	8773	-0.25847044587135315	-0.3192355	No	
+row_19	DVL1	DVL1	dishevelled, dsh homolog 1 (Drosophila)	9908	-0.4117528796195984	-0.37455326	Yes	
+row_20	PML	PML	promyelocytic leukemia	10038	-0.43256518244743347	-0.34489393	Yes	
+row_21	BCL6	BCL6	B-cell CLL/lymphoma 6 (zinc finger protein 51)	10908	-0.6083967685699463	-0.35998783	Yes	
+row_22	IL6ST	IL6ST	interleukin 6 signal transducer (gp130, oncostatin M receptor)	10983	-0.6332394480705261	-0.30708003	Yes	
+row_23	NOTCH3	NOTCH3	Notch homolog 3 (Drosophila)	11039	-0.6482247114181519	-0.25120565	Yes	
+row_24	TRAF4	TRAF4	TNF receptor-associated factor 4	11233	-0.7065017223358154	-0.2013016	Yes	
+row_25	PTCH1	PTCH1	patched homolog 1 (Drosophila)	11793	-1.0530956983566284	-0.14933322	Yes	
+row_26	WNT4	WNT4	wingless-type MMTV integration site family, member 4	12103	-1.8991427421569824	0.0021482268	Yes	

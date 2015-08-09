@@ -1,0 +1,14 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	NNT	NNT	nicotinamide nucleotide transhydrogenase	1391	0.8469334244728088	-0.011331207	No	
+row_1	TNFRSF11B	TNFRSF11B	tumor necrosis factor receptor superfamily, member 11b (osteoprotegerin)	1446	0.825849711894989	0.08510272	No	
+row_2	CTNNA2	CTNNA2	catenin (cadherin-associated protein), alpha 2	2045	0.6207889914512634	0.11158968	No	
+row_3	HMGB3	HMGB3	high-mobility group box 3	2528	0.5117530226707458	0.1343295	No	
+row_4	RYR2	RYR2	ryanodine receptor 2 (cardiac)	4573	0.19830605387687683	-0.010132921	No	
+row_5	EPHA5	EPHA5	EPH receptor A5	5451	0.09562362730503082	-0.07082865	No	
+row_6	FGF13	FGF13	fibroblast growth factor 13	5557	0.08288179337978363	-0.06936885	No	
+row_7	FGL2	FGL2	fibrinogen-like 2	6893	-0.06749110668897629	-0.17129953	No	
+row_8	BCL2L11	BCL2L11	BCL2-like 11 (apoptosis facilitator)	7366	-0.11954762041568756	-0.19564846	No	
+row_9	CST7	CST7	cystatin F (leukocystatin)	11476	-0.8103019595146179	-0.4357677	Yes	
+row_10	TIMP3	TIMP3	TIMP metallopeptidase inhibitor 3 (Sorsby fundus dystrophy, pseudoinflammatory)	11825	-1.0860011577606201	-0.33181563	Yes	
+row_11	MAF	MAF	v-maf musculoaponeurotic fibrosarcoma oncogene homolog (avian)	11966	-1.2994818687438965	-0.18461758	Yes	
+row_12	HLF	HLF	hepatic leukemia factor	12064	-1.6206457614898682	0.0053644115	Yes	

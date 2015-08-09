@@ -1,0 +1,20 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MYL7	MYL7	myosin, light chain 7, regulatory	2145	0.594371497631073	-0.13379054	No	
+row_1	PDLIM3	PDLIM3	PDZ and LIM domain 3	3877	0.28881096839904785	-0.25566825	No	
+row_2	PAK1	PAK1	p21/Cdc42/Rac1-activated kinase 1 (STE20 homolog, yeast)	6499	-0.022254178300499916	-0.4704611	No	
+row_3	VCL	VCL	vinculin	6536	-0.02661130763590336	-0.47149402	No	
+row_4	MYH8	MYH8	myosin, heavy chain 8, skeletal muscle, perinatal	8289	-0.20136113464832306	-0.60147953	No	
+row_5	PPP3CA	PPP3CA	protein phosphatase 3 (formerly 2B), catalytic subunit, alpha isoform (calcineurin A alpha)	9808	-0.39531490206718445	-0.69800735	Yes	
+row_6	TMOD1	TMOD1	tropomodulin 1	9972	-0.42212116718292236	-0.6806996	Yes	
+row_7	TNNC2	TNNC2	troponin C type 2 (fast)	10326	-0.4833693206310272	-0.6746159	Yes	
+row_8	SOS2	SOS2	son of sevenless homolog 2 (Drosophila)	10606	-0.5408231019973755	-0.65823454	Yes	
+row_9	TNNI2	TNNI2	troponin I type 2 (skeletal, fast)	11271	-0.7225109338760376	-0.66040003	Yes	
+row_10	TNNT3	TNNT3	troponin T type 3 (skeletal, fast)	11361	-0.758861780166626	-0.61243856	Yes	
+row_11	MYOM2	MYOM2	myomesin (M-protein) 2, 165kDa	11383	-0.7672351002693176	-0.55825204	Yes	
+row_12	ITPR1	ITPR1	inositol 1,4,5-triphosphate receptor, type 1	11521	-0.8424565196037292	-0.508161	Yes	
+row_13	CALM3	CALM3	calmodulin 3 (phosphorylase kinase, delta)	11522	-0.8429415225982666	-0.44672263	Yes	
+row_14	MYOZ1	MYOZ1	myozenin 1	11809	-1.0704965591430664	-0.39231363	Yes	
+row_15	PVALB	PVALB	parvalbumin	11940	-1.249545693397522	-0.31197363	Yes	
+row_16	ACTN3	ACTN3	actinin, alpha 3	11967	-1.3002028465270996	-0.21935424	Yes	
+row_17	MYBPH	MYBPH	myosin binding protein H	12030	-1.4768705368041992	-0.1168308	Yes	
+row_18	MYH4	MYH4	myosin, heavy chain 4, skeletal muscle	12079	-1.7139517068862915	0.004128436	Yes	

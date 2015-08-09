@@ -1,0 +1,25 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CX3CL1	CX3CL1	chemokine (C-X3-C motif) ligand 1	895	1.1186625957489014	0.024794566	No	
+row_1	LGALS2	LGALS2	lectin, galactoside-binding, soluble, 2 (galectin 2)	1571	0.7805917263031006	0.03792631	No	
+row_2	UCK2	UCK2	uridine-cytidine kinase 2	2297	0.5645082592964172	0.027857956	No	
+row_3	PSMD2	PSMD2	proteasome (prosome, macropain) 26S subunit, non-ATPase, 2	2595	0.4994853436946869	0.04740553	No	
+row_4	PLEKHM2	PLEKHM2	pleckstrin homology domain containing, family M (with RUN domain) member 2	2761	0.46273505687713623	0.07461348	No	
+row_5	SGTA	SGTA	small glutamine-rich tetratricopeptide repeat (TPR)-containing, alpha	3933	0.28185856342315674	0.0027593286	No	
+row_6	DNAJC17	DNAJC17	DnaJ (Hsp40) homolog, subfamily C, member 17	3944	0.2800181806087494	0.026645616	No	
+row_7	ARMC9	ARMC9	armadillo repeat containing 9	4160	0.25144162774086	0.031076197	No	
+row_8	SCN1B	SCN1B	sodium channel, voltage-gated, type I, beta	4999	0.14479181170463562	-0.02536743	No	
+row_9	COL5A3	COL5A3	collagen, type V, alpha 3	5830	0.053291793912649155	-0.08922534	No	
+row_10	PRKACB	PRKACB	protein kinase, cAMP-dependent, catalytic, beta	6225	0.008203152567148209	-0.121047236	No	
+row_11	OAZ1	OAZ1	ornithine decarboxylase antizyme 1	6462	-0.01885068230330944	-0.13887808	No	
+row_12	REXO1	REXO1	REX1, RNA exonuclease 1 homolog (S. cerevisiae)	7116	-0.09252964705228806	-0.1846523	No	
+row_13	COL20A1	COL20A1	collagen, type XX, alpha 1	7293	-0.11306428909301758	-0.18921232	No	
+row_14	CALCOCO1	CALCOCO1	calcium binding and coiled-coil domain 1	8023	-0.17814528942108154	-0.23370862	No	
+row_15	NEK4	NEK4	NIMA (never in mitosis gene a)-related kinase 4	8206	-0.19406910240650177	-0.2316154	No	
+row_16	ITGB4	ITGB4	integrin, beta 4	9994	-0.4257829785346985	-0.3416517	Yes	
+row_17	AFF3	AFF3	AF4/FMR2 family, member 3	10092	-0.44185519218444824	-0.31066942	Yes	
+row_18	ZSCAN2	ZSCAN2	zinc finger and SCAN domain containing 2	11164	-0.6869869232177734	-0.3385096	Yes	
+row_19	TEX9	TEX9	testis expressed sequence 9	11183	-0.6938835978507996	-0.27875945	Yes	
+row_20	TTN	TTN	titin	11479	-0.8113627433776855	-0.23152268	Yes	
+row_21	GNAO1	GNAO1	guanine nucleotide binding protein (G protein), alpha activating activity polypeptide O	11781	-1.0369125604629517	-0.16487618	Yes	
+row_22	RSPO1	RSPO1	R-spondin homolog (Xenopus laevis)	11785	-1.0412267446517944	-0.07323305	Yes	
+row_23	TRPC6	TRPC6	transient receptor potential cation channel, subfamily C, member 6	11880	-1.1508562564849854	0.020568227	Yes	

@@ -1,0 +1,74 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	FOSB	FOSB	FBJ murine osteosarcoma viral oncogene homolog B	29	3.7042295932769775	0.07847997	No	
+row_1	RUNX1	RUNX1	runt-related transcription factor 1 (acute myeloid leukemia 1; aml1 oncogene)	514	1.4863508939743042	0.07079313	No	
+row_2	ELOVL2	ELOVL2	elongation of very long chain fatty acids (FEN1/Elo2, SUR4/Elo3, yeast)-like 2	532	1.4653949737548828	0.10138139	No	
+row_3	FHL1	FHL1	four and a half LIM domains 1	709	1.249607801437378	0.11407038	No	
+row_4	CILP	CILP	cartilage intermediate layer protein, nucleotide pyrophosphohydrolase	805	1.178065299987793	0.13191526	No	
+row_5	MFAP4	MFAP4	microfibrillar-associated protein 4	898	1.1179206371307373	0.14869565	No	
+row_6	AREG	AREG	amphiregulin (schwannoma-derived growth factor)	911	1.1087177991867065	0.17191023	No	
+row_7	SCUBE2	SCUBE2	signal peptide, CUB domain, EGF-like 2	940	1.0972893238067627	0.19354823	No	
+row_8	BTG2	BTG2	BTG family, member 2	1202	0.9396564960479736	0.1924193	No	
+row_9	PCSK5	PCSK5	proprotein convertase subtilisin/kexin type 5	1371	0.8558104038238525	0.1971729	No	
+row_10	PNMA2	PNMA2	paraneoplastic antigen MA2	1442	0.826208770275116	0.20940815	No	
+row_11	MAOA	MAOA	monoamine oxidase A	1496	0.803373396396637	0.22255476	No	
+row_12	ENPP2	ENPP2	ectonucleotide pyrophosphatase/phosphodiesterase 2 (autotaxin)	1643	0.7584166526794434	0.22700632	No	
+row_13	TNN	TNN	tenascin N	2754	0.4640379250049591	0.1450763	No	
+row_14	PGR	PGR	progesterone receptor	2883	0.44265830516815186	0.14412591	No	
+row_15	DUSP1	DUSP1	dual specificity phosphatase 1	3176	0.39338400959968567	0.12849751	No	
+row_16	ITGA7	ITGA7	integrin, alpha 7	3834	0.2958828806877136	0.080467224	No	
+row_17	ASPN	ASPN	asporin (LRR class 1)	4090	0.2631680965423584	0.0650642	No	
+row_18	STC2	STC2	stanniocalcin 2	4480	0.2096116542816162	0.03737784	No	
+row_19	ATRNL1	ATRNL1	attractin-like 1	4862	0.1596064418554306	0.009263094	No	
+row_20	SPTAN1	SPTAN1	spectrin, alpha, non-erythrocytic 1 (alpha-fodrin)	4949	0.14992184937000275	0.0054039876	No	
+row_21	ATP1A2	ATP1A2	ATPase, Na+/K+ transporting, alpha 2 (+) polypeptide	5250	0.11716416478157043	-0.016919438	No	
+row_22	SVEP1	SVEP1	sushi, von Willebrand factor type A, EGF and pentraxin domain containing 1	5278	0.11339211463928223	-0.016682781	No	
+row_23	COL14A1	COL14A1	collagen, type XIV, alpha 1 (undulin)	5301	0.11085449159145355	-0.01608684	No	
+row_24	PTN	PTN	pleiotrophin (heparin binding growth factor 8, neurite growth-promoting factor 1)	5886	0.04709800332784653	-0.063495	No	
+row_25	PDCD4	PDCD4	programmed cell death 4 (neoplastic transformation inhibitor)	5995	0.03511689230799675	-0.07168564	No	
+row_26	TAT	TAT	tyrosine aminotransferase	5999	0.03490184247493744	-0.07117235	No	
+row_27	MAP3K12	MAP3K12	mitogen-activated protein kinase kinase kinase 12	6205	0.010490130633115768	-0.087945856	No	
+row_28	RBP4	RBP4	retinol binding protein 4, plasma	6271	0.002229055156931281	-0.09328824	No	
+row_29	WISP2	WISP2	WNT1 inducible signaling pathway protein 2	6432	-0.014778322540223598	-0.10623585	No	
+row_30	HOXB6	HOXB6	homeobox B6	6484	-0.020773252472281456	-0.11001215	No	
+row_31	LAMA2	LAMA2	laminin, alpha 2 (merosin, congenital muscular dystrophy)	6697	-0.04483434185385704	-0.1266163	No	
+row_32	RAI2	RAI2	retinoic acid induced 2	6734	-0.04885406419634819	-0.12853535	No	
+row_33	CXCL14	CXCL14	chemokine (C-X-C motif) ligand 14	6824	-0.059580884873867035	-0.13461594	No	
+row_34	LRRC17	LRRC17	leucine rich repeat containing 17	7021	-0.08132064342498779	-0.14909635	No	
+row_35	SLC26A3	SLC26A3	solute carrier family 26, member 3	8216	-0.19498518109321594	-0.24386828	No	
+row_36	F13A1	F13A1	coagulation factor XIII, A1 polypeptide	8247	-0.19665539264678955	-0.24206232	No	
+row_37	MYB	MYB	v-myb myeloblastosis viral oncogene homolog (avian)	8280	-0.2000160962343216	-0.24034883	No	
+row_38	ADRA2A	ADRA2A	adrenergic, alpha-2A-, receptor	8333	-0.20532333850860596	-0.24017826	No	
+row_39	RTN1	RTN1	reticulon 1	8398	-0.21415917575359344	-0.24081002	No	
+row_40	PPARG	PPARG	peroxisome proliferative activated receptor, gamma	8578	-0.23371298611164093	-0.25055283	No	
+row_41	NAT1	NAT1	N-acetyltransferase 1 (arylamine N-acetyltransferase)	9065	-0.296904981136322	-0.28437817	No	
+row_42	CYP4B1	CYP4B1	cytochrome P450, family 4, subfamily B, polypeptide 1	9227	-0.3162418007850647	-0.290826	No	
+row_43	ITIH5	ITIH5	inter-alpha (globulin) inhibitor H5	9532	-0.35435083508491516	-0.308302	No	
+row_44	HOXB2	HOXB2	homeobox B2	9600	-0.3623906672000885	-0.30594578	No	
+row_45	CFD	CFD	complement factor D (adipsin)	9658	-0.3710888922214508	-0.30257028	No	
+row_46	ZBTB16	ZBTB16	zinc finger and BTB domain containing 16	9778	-0.3901687562465668	-0.3039204	No	
+row_47	FABP4	FABP4	fatty acid binding protein 4, adipocyte	10026	-0.43096524477005005	-0.31499588	No	
+row_48	G0S2	G0S2	G0/G1switch 2	10235	-0.46734747290611267	-0.32204232	No	
+row_49	DPT	DPT	dermatopontin	10430	-0.5033679008483887	-0.32714105	Yes	
+row_50	FBLN1	FBLN1	fibulin 1	10554	-0.5294539332389832	-0.3257815	Yes	
+row_51	SFRP4	SFRP4	secreted frizzled-related protein 4	10705	-0.5637928247451782	-0.32591146	Yes	
+row_52	CHRDL1	CHRDL1	chordin-like 1	10757	-0.5750649571418762	-0.3175843	Yes	
+row_53	TIMP4	TIMP4	TIMP metallopeptidase inhibitor 4	10839	-0.5948202013969421	-0.31131396	Yes	
+row_54	LIPE	LIPE	lipase, hormone-sensitive	10971	-0.630313515663147	-0.30841556	Yes	
+row_55	HMGCS2	HMGCS2	3-hydroxy-3-methylglutaryl-Coenzyme A synthase 2 (mitochondrial)	10990	-0.634658694267273	-0.29605013	Yes	
+row_56	CIDEC	CIDEC	cell death-inducing DFFA-like effector c	11029	-0.6462570428848267	-0.2850902	Yes	
+row_57	MYH11	MYH11	myosin, heavy chain 11, smooth muscle	11147	-0.6811233162879944	-0.27992117	Yes	
+row_58	ESR1	ESR1	estrogen receptor 1	11212	-0.6998805403709412	-0.26994675	Yes	
+row_59	OMD	OMD	osteomodulin	11250	-0.7135285139083862	-0.25743496	Yes	
+row_60	ADIPOQ	ADIPOQ	adiponectin, C1Q and collagen domain containing	11337	-0.7462906241416931	-0.24827184	Yes	
+row_61	PSD3	PSD3	pleckstrin and Sec7 domain containing 3	11465	-0.8063725233078003	-0.24119726	Yes	
+row_62	GPD1	GPD1	glycerol-3-phosphate dehydrogenase 1 (soluble)	11560	-0.8672621250152588	-0.2300561	Yes	
+row_63	LMOD1	LMOD1	leiomodin 1 (smooth muscle)	11605	-0.8967587351799011	-0.21412389	Yes	
+row_64	OGN	OGN	osteoglycin (osteoinductive factor, mimecan)	11675	-0.9480200409889221	-0.19914584	Yes	
+row_65	PTHLH	PTHLH	parathyroid hormone-like hormone	11791	-1.0522886514663696	-0.18570618	Yes	
+row_66	GFRA1	GFRA1	GDNF family receptor alpha 1	11869	-1.134416103363037	-0.16732152	Yes	
+row_67	LEPR	LEPR	leptin receptor	11923	-1.2240867614746094	-0.14498825	Yes	
+row_68	IGF1	IGF1	insulin-like growth factor 1 (somatomedin C)	11926	-1.228389024734497	-0.11833115	Yes	
+row_69	CPA3	CPA3	carboxypeptidase A3 (mast cell)	11977	-1.320584774017334	-0.09364196	Yes	
+row_70	PTGER3	PTGER3	prostaglandin E receptor 3 (subtype EP3)	12025	-1.4566073417663574	-0.06573376	Yes	
+row_71	HLF	HLF	hepatic leukemia factor	12064	-1.6206457614898682	-0.033497192	Yes	
+row_72	LEP	LEP	leptin (obesity homolog, mouse)	12089	-1.7771224975585938	0.0033173424	Yes	

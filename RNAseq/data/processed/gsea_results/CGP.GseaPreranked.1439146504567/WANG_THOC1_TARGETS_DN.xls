@@ -1,0 +1,18 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GATA1	GATA1	GATA binding protein 1 (globin transcription factor 1)	291	1.8952113389968872	0.1322908	Yes	
+row_1	GATA4	GATA4	GATA binding protein 4	308	1.8262526988983154	0.28159684	Yes	
+row_2	SOX9	SOX9	SRY (sex determining region Y)-box 9 (campomelic dysplasia, autosomal sex-reversal)	623	1.3377152681350708	0.3660073	Yes	
+row_3	MTL5	MTL5	metallothionein-like 5, testis-specific (tesmin)	710	1.2493199110031128	0.4619498	Yes	
+row_4	GDNF	GDNF	glial cell derived neurotrophic factor	729	1.238537073135376	0.5626167	Yes	
+row_5	VDR	VDR	vitamin D (1,25- dihydroxyvitamin D3) receptor	789	1.1887117624282837	0.6557893	Yes	
+row_6	PPT1	PPT1	palmitoyl-protein thioesterase 1 (ceroid-lipofuscinosis, neuronal 1, infantile)	790	1.1877626180648804	0.75375444	Yes	
+row_7	AMHR2	AMHR2	anti-Mullerian hormone receptor, type II	1660	0.7491901516914368	0.7438056	No	
+row_8	DHH	DHH	desert hedgehog homolog (Drosophila)	4691	0.18303391337394714	0.5087575	No	
+row_9	WT1	WT1	Wilms tumor 1	4764	0.17281419038772583	0.51706696	No	
+row_10	INHBB	INHBB	inhibin, beta B (activin AB beta polypeptide)	4773	0.1718808114528656	0.530583	No	
+row_11	SOX8	SOX8	SRY (sex determining region Y)-box 8	5067	0.13844837248325348	0.51781315	No	
+row_12	MAGEA4	MAGEA4	melanoma antigen family A, 4	5070	0.13817435503005981	0.5290445	No	
+row_13	CLDN11	CLDN11	claudin 11 (oligodendrocyte transmembrane protein)	5904	0.0452185682952404	0.46400496	No	
+row_14	NOTCH1	NOTCH1	Notch homolog 1, translocation-associated (Drosophila)	7259	-0.10869000852108002	0.36118886	No	
+row_15	KIT	KIT	v-kit Hardy-Zuckerman 4 feline sarcoma viral oncogene homolog	7647	-0.1484750658273697	0.34148574	No	
+row_16	CLU	CLU	clusterin	9452	-0.344905823469162	0.22100222	No	

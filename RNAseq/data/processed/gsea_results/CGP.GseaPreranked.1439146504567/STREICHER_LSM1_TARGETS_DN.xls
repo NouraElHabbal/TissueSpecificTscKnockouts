@@ -1,0 +1,18 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	TGFB1	TGFB1	transforming growth factor, beta 1 (Camurati-Engelmann disease)	1801	0.6947240829467773	-0.061207317	No	
+row_1	IL6	IL6	interleukin 6 (interferon, beta 2)	2275	0.5704829096794128	-0.02842413	No	
+row_2	ITGB6	ITGB6	integrin, beta 6	3524	0.33946365118026733	-0.088710494	No	
+row_3	FST	FST	follistatin	3536	0.33783185482025146	-0.04708064	No	
+row_4	TNFRSF10B	TNFRSF10B	tumor necrosis factor receptor superfamily, member 10b	3775	0.30643031001091003	-0.028144894	No	
+row_5	FOXC2	FOXC2	forkhead box C2 (MFH-1, mesenchyme forkhead 1)	5629	0.0760093405842781	-0.17155035	No	
+row_6	FZD8	FZD8	frizzled homolog 8 (Drosophila)	5706	0.06598422676324844	-0.16951622	No	
+row_7	IL1RAP	IL1RAP	interleukin 1 receptor accessory protein	7358	-0.11869321018457413	-0.29087085	No	
+row_8	ETS1	ETS1	v-ets erythroblastosis virus E26 oncogene homolog 1 (avian)	7703	-0.15378794074058533	-0.29990596	No	
+row_9	ID1	ID1	inhibitor of DNA binding 1, dominant negative helix-loop-helix protein	8629	-0.23996222019195557	-0.34605542	No	
+row_10	IL1R2	IL1R2	interleukin 1 receptor, type II	8707	-0.2497882843017578	-0.32096025	No	
+row_11	IL15RA	IL15RA	interleukin 15 receptor, alpha	9982	-0.4228891134262085	-0.37288857	No	
+row_12	SFRP1	SFRP1	secreted frizzled-related protein 1	11150	-0.682152509689331	-0.38333836	Yes	
+row_13	E2F7	E2F7	E2F transcription factor 7	11223	-0.7034347653388977	-0.30070966	Yes	
+row_14	FGF2	FGF2	fibroblast growth factor 2 (basic)	11261	-0.7195872664451599	-0.21315768	Yes	
+row_15	RBL1	RBL1	retinoblastoma-like 1 (p107)	11796	-1.0560358762741089	-0.12427219	Yes	
+row_16	DUSP7	DUSP7	dual specificity phosphatase 7	11911	-1.204630970954895	0.017997084	Yes	

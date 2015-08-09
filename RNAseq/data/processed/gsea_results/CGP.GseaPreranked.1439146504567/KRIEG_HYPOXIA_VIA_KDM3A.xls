@@ -1,0 +1,47 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GDF15	GDF15	growth differentiation factor 15	13	4.566884994506836	0.13486817	Yes	
+row_1	KIF2C	KIF2C	kinesin family member 2C	384	1.6899769306182861	0.15455528	Yes	
+row_2	SERPINB8	SERPINB8	serpin peptidase inhibitor, clade B (ovalbumin), member 8	389	1.684641718864441	0.20437154	Yes	
+row_3	CBR3	CBR3	carbonyl reductase 3	497	1.5102651119232178	0.24047342	Yes	
+row_4	LAMC2	LAMC2	laminin, gamma 2	544	1.4477328062057495	0.27976188	Yes	
+row_5	SLC7A1	SLC7A1	solute carrier family 7 (cationic amino acid transporter, y+ system), member 1	570	1.41266930103302	0.3197444	Yes	
+row_6	SERPINE1	SERPINE1	serpin peptidase inhibitor, clade E (nexin, plasminogen activator inhibitor type 1), member 1	587	1.3932085037231445	0.35989246	Yes	
+row_7	TGM2	TGM2	transglutaminase 2 (C polypeptide, protein-glutamine-gamma-glutamyltransferase)	638	1.3156416416168213	0.39491788	Yes	
+row_8	TM4SF19	TM4SF19	transmembrane 4 L six family member 19	657	1.2958626747131348	0.4320027	Yes	
+row_9	ADM	ADM	adrenomedullin	676	1.2831382751464844	0.46870872	Yes	
+row_10	LAMB3	LAMB3	laminin, beta 3	686	1.2752269506454468	0.50592405	Yes	
+row_11	HMOX1	HMOX1	heme oxygenase (decycling) 1	736	1.2308728694915771	0.5385089	Yes	
+row_12	CXCL1	CXCL1	chemokine (C-X-C motif) ligand 1 (melanoma growth stimulating activity, alpha)	939	1.097488522529602	0.55446184	Yes	
+row_13	JUNB	JUNB	jun B proto-oncogene	1254	0.9115976691246033	0.5556129	Yes	
+row_14	FAM64A	FAM64A	family with sequence similarity 64, member A	1357	0.8637807369232178	0.57288444	Yes	
+row_15	NECAP2	NECAP2	NECAP endocytosis associated 2	1640	0.7596908807754517	0.5721618	Yes	
+row_16	SEC14L2	SEC14L2	SEC14-like 2 (S. cerevisiae)	1673	0.7440093755722046	0.5916608	Yes	
+row_17	SYTL3	SYTL3	synaptotagmin-like 3	1719	0.7289495468139648	0.6096358	Yes	
+row_18	BIRC3	BIRC3	baculoviral IAP repeat-containing 3	1787	0.6983059644699097	0.6248779	Yes	
+row_19	NRP2	NRP2	neuropilin 2	2251	0.5750030279159546	0.6036791	No	
+row_20	ZC3H12A	ZC3H12A	zinc finger CCCH-type containing 12A	2284	0.5684660077095032	0.6179527	No	
+row_21	MARCH3	MARCH3	membrane-associated ring finger (C3HC4) 3	2396	0.5372607111930847	0.62475985	No	
+row_22	FABP6	FABP6	fatty acid binding protein 6, ileal (gastrotropin)	2891	0.44265830516815186	0.5970561	No	
+row_23	NFKBIE	NFKBIE	nuclear factor of kappa light polypeptide gene enhancer in B-cells inhibitor, epsilon	3008	0.42071259021759033	0.5999801	No	
+row_24	INSIG1	INSIG1	insulin induced gene 1	3480	0.3441917300224304	0.5712486	No	
+row_25	TYMS	TYMS	thymidylate synthetase	3763	0.30742132663726807	0.5570631	No	
+row_26	PLAUR	PLAUR	plasminogen activator, urokinase receptor	3985	0.27540481090545654	0.5469725	No	
+row_27	YWHAG	YWHAG	tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein, gamma polypeptide	4658	0.1870325803756714	0.49692923	No	
+row_28	RBM3	RBM3	RNA binding motif (RNP1, RRM) protein 3	5080	0.13701386749744415	0.4661683	No	
+row_29	CLEC4E	CLEC4E	C-type lectin domain family 4, member E	5327	0.10893714427947998	0.4490536	No	
+row_30	RRAGD	RRAGD	Ras-related GTP binding D	6020	0.0331699512898922	0.39277515	No	
+row_31	EBP	EBP	emopamil binding protein (sterol isomerase)	7005	-0.07925727218389511	0.31370443	No	
+row_32	PPP1R15A	PPP1R15A	protein phosphatase 1, regulatory (inhibitor) subunit 15A	7042	-0.08387026935815811	0.3132219	No	
+row_33	IL1RAP	IL1RAP	interleukin 1 receptor accessory protein	7358	-0.11869321018457413	0.29068753	No	
+row_34	CXCL5	CXCL5	chemokine (C-X-C motif) ligand 5	7532	-0.13946035504341125	0.28052244	No	
+row_35	COL7A1	COL7A1	collagen, type VII, alpha 1 (epidermolysis bullosa, dystrophic, dominant and recessive)	7610	-0.1446474939584732	0.27845615	No	
+row_36	PHLDA2	PHLDA2	pleckstrin homology-like domain, family A, member 2	7919	-0.1693863570690155	0.2580101	No	
+row_37	VEZT	VEZT	vezatin, adherens junctions transmembrane protein	8375	-0.21104499697685242	0.22663924	No	
+row_38	TM4SF1	TM4SF1	transmembrane 4 L six family member 1	8500	-0.22441460192203522	0.22305796	No	
+row_39	HMGA2	HMGA2	high mobility group AT-hook 2	8534	-0.2279469519853592	0.22711244	No	
+row_40	ASPH	ASPH	aspartate beta-hydroxylase	8810	-0.2627214789390564	0.2121756	No	
+row_41	MAP3K14	MAP3K14	mitogen-activated protein kinase kinase kinase 14	8845	-0.2656711935997009	0.21727028	No	
+row_42	ANP32E	ANP32E	acidic (leucine-rich) nuclear phosphoprotein 32 family, member E	9076	-0.2983570694923401	0.20711814	No	
+row_43	FBXO32	FBXO32	F-box protein 32	9360	-0.33342835307121277	0.19362402	No	
+row_44	EDN1	EDN1	endothelin 1	10528	-0.5240901708602905	0.1126508	No	
+row_45	STEAP3	STEAP3	STEAP family member 3	11098	-0.663666844367981	0.085319325	No	

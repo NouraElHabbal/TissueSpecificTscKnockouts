@@ -1,0 +1,19 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	THRSP	THRSP	thyroid hormone responsive (SPOT14 homolog, rat)	285	1.9049407243728638	0.11428917	No	
+row_1	PEMT	PEMT	phosphatidylethanolamine N-methyltransferase	1824	0.6857957243919373	0.03692394	No	
+row_2	RGS2	RGS2	regulator of G-protein signalling 2, 24kDa	2056	0.6173893809318542	0.062519126	No	
+row_3	SELENBP1	SELENBP1	selenium binding protein 1	2607	0.4969618320465088	0.053064045	No	
+row_4	AP3S1	AP3S1	adaptor-related protein complex 3, sigma 1 subunit	2840	0.4446600377559662	0.06607997	No	
+row_5	HK2	HK2	hexokinase 2	4403	0.21883800625801086	-0.047050454	No	
+row_6	AK2	AK2	adenylate kinase 2	4485	0.20859724283218384	-0.038646344	No	
+row_7	IDH3G	IDH3G	isocitrate dehydrogenase 3 (NAD+) gamma	6120	0.020816178992390633	-0.17204785	No	
+row_8	TST	TST	thiosulfate sulfurtransferase (rhodanese)	7178	-0.09901781380176544	-0.2521529	No	
+row_9	PPARG	PPARG	peroxisome proliferative activated receptor, gamma	8578	-0.23371298611164093	-0.3507494	No	
+row_10	SOD2	SOD2	superoxide dismutase 2, mitochondrial	9951	-0.41871610283851624	-0.43373203	No	
+row_11	PLA2G6	PLA2G6	phospholipase A2, group VI (cytosolic, calcium-independent)	11126	-0.672356903553009	-0.4820167	Yes	
+row_12	ADIPOQ	ADIPOQ	adiponectin, C1Q and collagen domain containing	11337	-0.7462906241416931	-0.44536188	Yes	
+row_13	IRX3	IRX3	iroquois homeobox protein 3	11532	-0.8517186045646667	-0.39975852	Yes	
+row_14	AOC3	AOC3	amine oxidase, copper containing 3 (vascular adhesion protein 1)	11808	-1.0698665380477905	-0.34506005	Yes	
+row_15	NRIP1	NRIP1	nuclear receptor interacting protein 1	11845	-1.0998408794403076	-0.2684605	Yes	
+row_16	CDKN2C	CDKN2C	cyclin-dependent kinase inhibitor 2C (p18, inhibits CDK4)	12099	-1.8665074110031128	-0.1543099	Yes	
+row_17	ORM1	ORM1	orosomucoid 1	12113	-2.1659646034240723	0.0013210283	Yes	

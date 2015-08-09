@@ -1,0 +1,29 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MLPH	MLPH	melanophilin	10	4.747903823852539	0.1938528	Yes	
+row_1	KRT18	KRT18	keratin 18	42	3.4316630363464355	0.33200032	Yes	
+row_2	ERBB4	ERBB4	v-erb-a erythroblastic leukemia viral oncogene homolog 4 (avian)	173	2.2860445976257324	0.41499338	Yes	
+row_3	ABAT	ABAT	4-aminobutyrate aminotransferase	188	2.2312376499176025	0.50532436	Yes	
+row_4	GREB1	GREB1	-	333	1.7711617946624756	0.56604874	Yes	
+row_5	MAGED2	MAGED2	melanoma antigen family D, 2	446	1.580257773399353	0.62158966	Yes	
+row_6	WFS1	WFS1	Wolfram syndrome 1 (wolframin)	876	1.129683017730713	0.63246155	Yes	
+row_7	SCUBE2	SCUBE2	signal peptide, CUB domain, EGF-like 2	940	1.0972893238067627	0.6722481	Yes	
+row_8	TBC1D9	TBC1D9	TBC1 domain family, member 9 (with GRAM domain)	1541	0.7891228199005127	0.6550261	No	
+row_9	SCNN1A	SCNN1A	sodium channel, nonvoltage-gated 1 alpha	2370	0.5440248847007751	0.60891443	No	
+row_10	INPP4B	INPP4B	inositol polyphosphate-4-phosphatase, type II, 105kDa	2527	0.5117669701576233	0.61700803	No	
+row_11	BBS4	BBS4	Bardet-Biedl syndrome 4	3768	0.30705884099006653	0.527136	No	
+row_12	XBP1	XBP1	X-box binding protein 1	4266	0.23689855635166168	0.49578202	No	
+row_13	ANXA9	ANXA9	annexin A9	4303	0.23314400017261505	0.50236696	No	
+row_14	MAPT	MAPT	microtubule-associated protein tau	5290	0.1122777983546257	0.42549658	No	
+row_15	TENC1	TENC1	tensin like C1 domain containing phosphatase (tensin 2)	5622	0.07654368877410889	0.40128425	No	
+row_16	APBB2	APBB2	amyloid beta (A4) precursor protein-binding, family B, member 2 (Fe65-like)	6343	-0.005206497851759195	0.34200343	No	
+row_17	AHNAK	AHNAK	AHNAK nucleoprotein (desmoyokin)	6609	-0.034920576959848404	0.3215381	No	
+row_18	GATA3	GATA3	GATA binding protein 3	6679	-0.0433427095413208	0.31761372	No	
+row_19	NUMA1	NUMA1	nuclear mitotic apparatus protein 1	7008	-0.080025315284729	0.29379207	No	
+row_20	LRBA	LRBA	LPS-responsive vesicle trafficking, beach and anchor containing	7503	-0.1366814523935318	0.25857675	No	
+row_21	CIRBP	CIRBP	cold inducible RNA binding protein	8983	-0.285113662481308	0.1480561	No	
+row_22	GSTM3	GSTM3	glutathione S-transferase M3 (brain)	9040	-0.29281526803970337	0.15543513	No	
+row_23	NAT1	NAT1	N-acetyltransferase 1 (arylamine N-acetyltransferase)	9065	-0.296904981136322	0.16562602	No	
+row_24	WWP1	WWP1	WW domain containing E3 ubiquitin protein ligase 1	9561	-0.35758447647094727	0.13938579	No	
+row_25	SLC7A8	SLC7A8	solute carrier family 7 (cationic amino acid transporter, y+ system), member 8	9938	-0.41682520508766174	0.12540771	No	
+row_26	FBP1	FBP1	fructose-1,6-bisphosphatase 1	11055	-0.6529766321182251	0.059965655	No	
+row_27	ESR1	ESR1	estrogen receptor 1	11212	-0.6998805403709412	0.075772546	No	

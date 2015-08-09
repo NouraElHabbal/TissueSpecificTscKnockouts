@@ -1,0 +1,56 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	NEIL2	NEIL2	nei like 2 (E. coli)	1794	0.6970052719116211	-0.11221337	No	
+row_1	RECQL4	RECQL4	RecQ protein-like 4	2357	0.5480237007141113	-0.13016912	No	
+row_2	DDB1	DDB1	damage-specific DNA binding protein 1, 127kDa	2679	0.48074862360954285	-0.13167556	No	
+row_3	LIG4	LIG4	ligase IV, DNA, ATP-dependent	2914	0.4389197528362274	-0.12815896	No	
+row_4	UBE2N	UBE2N	ubiquitin-conjugating enzyme E2N (UBC13 homolog, yeast)	2917	0.43806612491607666	-0.105473645	No	
+row_5	MSH6	MSH6	mutS homolog 6 (E. coli)	3010	0.4204055666923523	-0.09116297	No	
+row_6	MUTYH	MUTYH	mutY homolog (E. coli)	3338	0.3648029565811157	-0.09921441	No	
+row_7	XPC	XPC	xeroderma pigmentosum, complementation group C	3492	0.3429204225540161	-0.093997374	No	
+row_8	APTX	APTX	aprataxin	3507	0.34166067838668823	-0.077334665	No	
+row_9	FANCB	FANCB	Fanconi anemia, complementation group B	3858	0.29108425974845886	-0.09113627	No	
+row_10	NTHL1	NTHL1	nth endonuclease III-like 1 (E. coli)	3938	0.2803957164287567	-0.08305237	No	
+row_11	BRCA1	BRCA1	breast cancer 1, early onset	4223	0.2428845763206482	-0.09390239	No	
+row_12	FEN1	FEN1	flap structure-specific endonuclease 1	4364	0.224866583943367	-0.093766816	No	
+row_13	SHFM1	SHFM1	split hand/foot malformation (ectrodactyly) type 1	4425	0.21612100303173065	-0.08746219	No	
+row_14	RECQL5	RECQL5	RecQ protein-like 5	4800	0.16616998612880707	-0.1097673	No	
+row_15	POLB	POLB	polymerase (DNA directed), beta	4959	0.14921516180038452	-0.115068644	No	
+row_16	FANCG	FANCG	Fanconi anemia, complementation group G	5023	0.14311723411083221	-0.11282057	No	
+row_17	RAD18	RAD18	RAD18 homolog (S. cerevisiae)	5782	0.05885481834411621	-0.17252484	No	
+row_18	EXO1	EXO1	exonuclease 1	6034	0.031500816345214844	-0.1916684	No	
+row_19	ERCC8	ERCC8	excision repair cross-complementing rodent repair deficiency, complementation group 8	6306	-0.0016938779735937715	-0.21402311	No	
+row_20	APEX1	APEX1	APEX nuclease (multifunctional DNA repair enzyme) 1	6613	-0.03561104089021683	-0.23750715	No	
+row_21	RAD50	RAD50	RAD50 homolog (S. cerevisiae)	6788	-0.055128857493400574	-0.24904138	No	
+row_22	RAD23B	RAD23B	RAD23 homolog B (S. cerevisiae)	6789	-0.05517904832959175	-0.24616307	No	
+row_23	GTF2H4	GTF2H4	general transcription factor IIH, polypeptide 4, 52kDa	6857	-0.06338538229465485	-0.24840534	No	
+row_24	ERCC1	ERCC1	excision repair cross-complementing rodent repair deficiency, complementation group 1 (includes overlapping antisense sequence)	7016	-0.08083090931177139	-0.25727382	No	
+row_25	PMS1	PMS1	PMS1 postmeiotic segregation increased 1 (S. cerevisiae)	7053	-0.08538385480642319	-0.2558013	No	
+row_26	ERCC4	ERCC4	excision repair cross-complementing rodent repair deficiency, complementation group 4	7114	-0.09244506061077118	-0.25594798	No	
+row_27	MSH5	MSH5	mutS homolog 5 (E. coli)	7499	-0.136040598154068	-0.2806529	No	
+row_28	MSH3	MSH3	mutS homolog 3 (E. coli)	7701	-0.15328459441661835	-0.28930306	No	
+row_29	MSH4	MSH4	mutS homolog 4 (E. coli)	7824	-0.16357490420341492	-0.29087397	No	
+row_30	POLI	POLI	polymerase (DNA directed) iota	7900	-0.1679990440607071	-0.2883218	No	
+row_31	CHEK2	CHEK2	CHK2 checkpoint homolog (S. pombe)	8246	-0.19646786153316498	-0.3066448	No	
+row_32	RAD52	RAD52	RAD52 homolog (S. cerevisiae)	8259	-0.19799073040485382	-0.29731077	No	
+row_33	RAD1	RAD1	RAD1 homolog (S. pombe)	8286	-0.20069319009780884	-0.28899515	No	
+row_34	MRE11A	MRE11A	MRE11 meiotic recombination 11 homolog A (S. cerevisiae)	8348	-0.20721276104450226	-0.28323802	No	
+row_35	GTF2H5	GTF2H5	general transcription factor IIH, polypeptide 5	8486	-0.2233525663614273	-0.282933	No	
+row_36	POLE	POLE	polymerase (DNA directed), epsilon	9151	-0.3074224889278412	-0.32188648	Yes	
+row_37	RAD51	RAD51	RAD51 homolog (RecA homolog, E. coli) (S. cerevisiae)	9174	-0.31025391817092896	-0.30752456	Yes	
+row_38	PRKDC	PRKDC	protein kinase, DNA-activated, catalytic polypeptide	9187	-0.31165260076522827	-0.29226154	Yes	
+row_39	FANCD2	FANCD2	Fanconi anemia, complementation group D2	9519	-0.3532213568687439	-0.3012484	Yes	
+row_40	RRM2B	RRM2B	ribonucleotide reductase M2 B (TP53 inducible)	9591	-0.3612120747566223	-0.2882863	Yes	
+row_41	RAD23A	RAD23A	RAD23 homolog A (S. cerevisiae)	9674	-0.37421083450317383	-0.27555716	Yes	
+row_42	RECQL	RECQL	RecQ protein-like (DNA helicase Q1-like)	9823	-0.3969731628894806	-0.26710647	Yes	
+row_43	PMS2	PMS2	PMS2 postmeiotic segregation increased 2 (S. cerevisiae)	9922	-0.4141210615634918	-0.2536205	Yes	
+row_44	TDP1	TDP1	tyrosyl-DNA phosphodiesterase 1	10031	-0.4314415156841278	-0.24005923	Yes	
+row_45	TDG	TDG	thymine-DNA glycosylase	10313	-0.48146042227745056	-0.23821591	Yes	
+row_46	POLD1	POLD1	polymerase (DNA directed), delta 1, catalytic subunit 125kDa	10337	-0.48486581444740295	-0.21482849	Yes	
+row_47	MUS81	MUS81	MUS81 endonuclease homolog (S. cerevisiae)	10571	-0.5326095819473267	-0.2063419	Yes	
+row_48	FANCL	FANCL	Fanconi anemia, complementation group L	10707	-0.5641551613807678	-0.18809387	Yes	
+row_49	RAD9A	RAD9A	RAD9 homolog A (S. pombe)	11089	-0.660969614982605	-0.18516834	Yes	
+row_50	CHEK1	CHEK1	CHK1 checkpoint homolog (S. pombe)	11306	-0.7357904314994812	-0.16467533	Yes	
+row_51	MSH2	MSH2	mutS homolog 2, colon cancer, nonpolyposis type 1 (E. coli)	11459	-0.8041089177131653	-0.13531838	Yes	
+row_52	FANCE	FANCE	Fanconi anemia, complementation group E	11528	-0.8487844467163086	-0.096674494	Yes	
+row_53	REV3L	REV3L	REV3-like, catalytic subunit of DNA polymerase zeta (yeast)	11995	-1.3636853694915771	-0.06413238	Yes	
+row_54	POLK	POLK	polymerase (DNA directed) kappa	12021	-1.4406158924102783	0.008944435	Yes	

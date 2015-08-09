@@ -1,0 +1,28 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	TMEM158	TMEM158	transmembrane protein 158	223	2.08705735206604	0.10176754	No	
+row_1	PBX3	PBX3	pre-B-cell leukemia transcription factor 3	1282	0.8978103995323181	0.0660557	No	
+row_2	CCNB1	CCNB1	cyclin B1	1294	0.8915682435035706	0.116491854	No	
+row_3	CDC25B	CDC25B	cell division cycle 25B	1951	0.6497086882591248	0.09970686	No	
+row_4	TPX2	TPX2	TPX2, microtubule-associated, homolog (Xenopus laevis)	2002	0.6315190196037292	0.13194455	No	
+row_5	ZFP36L2	ZFP36L2	zinc finger protein 36, C3H type-like 2	2392	0.5382099151611328	0.13079904	No	
+row_6	ZFP36	ZFP36	zinc finger protein 36, C3H type, homolog (mouse)	2413	0.5335074067115784	0.15987101	No	
+row_7	PKIG	PKIG	protein kinase (cAMP-dependent, catalytic) inhibitor gamma	2634	0.4914824366569519	0.16999796	No	
+row_8	MGRN1	MGRN1	mahogunin, ring finger 1	2839	0.4449083209037781	0.1787647	No	
+row_9	TNC	TNC	tenascin C (hexabrachion)	4219	0.2437206655740738	0.07886178	No	
+row_10	CDC42EP4	CDC42EP4	CDC42 effector protein (Rho GTPase binding) 4	5252	0.117072194814682	3.3579674E-4	No	
+row_11	UBE2S	UBE2S	ubiquitin-conjugating enzyme E2S	5503	0.08971811085939407	-0.015153413	No	
+row_12	FCHO1	FCHO1	FCH domain only 1	6482	-0.020631998777389526	-0.09477164	No	
+row_13	LARP1	LARP1	La ribonucleoprotein domain family, member 1	6889	-0.06679745018482208	-0.124470204	No	
+row_14	LTBP1	LTBP1	latent transforming growth factor beta binding protein 1	7098	-0.0903155580163002	-0.13645479	No	
+row_15	CIC	CIC	capicua homolog (Drosophila)	8043	-0.18038588762283325	-0.20406364	No	
+row_16	ADCY9	ADCY9	adenylate cyclase 9	8358	-0.20794396102428436	-0.21803223	No	
+row_17	MME	MME	membrane metallo-endopeptidase (neutral endopeptidase, enkephalinase)	10105	-0.4447295665740967	-0.3366822	No	
+row_18	DNM1	DNM1	dynamin 1	10290	-0.47816047072410583	-0.324348	No	
+row_19	MYO1D	MYO1D	myosin ID	10465	-0.5095639824867249	-0.309379	No	
+row_20	IRS1	IRS1	insulin receptor substrate 1	11554	-0.8647452592849731	-0.3494738	Yes	
+row_21	SREBF1	SREBF1	sterol regulatory element binding transcription factor 1	11636	-0.9153377413749695	-0.30345246	Yes	
+row_22	PPL	PPL	periplakin	11744	-0.9980698227882385	-0.25481483	Yes	
+row_23	CLEC3B	CLEC3B	C-type lectin domain family 3, member B	11747	-1.0007933378219604	-0.19734482	Yes	
+row_24	NT5E	NT5E	5'-nucleotidase, ecto (CD73)	11870	-1.1361392736434937	-0.1419952	Yes	
+row_25	MAF	MAF	v-maf musculoaponeurotic fibrosarcoma oncogene homolog (avian)	11966	-1.2994818687438965	-0.075007915	Yes	
+row_26	MOXD1	MOXD1	monooxygenase, DBH-like 1	12045	-1.534878134727478	0.0069403625	Yes	

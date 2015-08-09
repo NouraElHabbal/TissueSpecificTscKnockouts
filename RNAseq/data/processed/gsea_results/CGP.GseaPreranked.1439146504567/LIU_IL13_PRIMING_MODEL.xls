@@ -1,0 +1,12 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	EGR1	EGR1	early growth response 1	61	3.1635630130767822	0.30731824	Yes	
+row_1	FOS	FOS	v-fos FBJ murine osteosarcoma viral oncogene homolog	133	2.5163488388061523	0.5499092	Yes	
+row_2	ETV5	ETV5	ets variant gene 5 (ets-related molecule)	505	1.498098611831665	0.6672095	Yes	
+row_3	PLK3	PLK3	polo-like kinase 3 (Drosophila)	1158	0.967444658279419	0.70892954	Yes	
+row_4	SERTAD1	SERTAD1	SERTA domain containing 1	1201	0.9402933716773987	0.79830295	Yes	
+row_5	EMP3	EMP3	epithelial membrane protein 3	5422	0.09796847403049469	0.45976222	No	
+row_6	RAB5B	RAB5B	RAB5B, member RAS oncogene family	5730	0.06405527144670486	0.44075453	No	
+row_7	JAG1	JAG1	jagged 1 (Alagille syndrome)	5810	0.056013792753219604	0.43976632	No	
+row_8	CLCA1	CLCA1	chloride channel, calcium activated, family member 1	6192	0.011955591849982738	0.40950853	No	
+row_9	EGFR	EGFR	epidermal growth factor receptor (erythroblastic leukemia viral (v-erb-b) oncogene homolog, avian)	8562	-0.23173780739307404	0.23691078	No	
+row_10	CDYL	CDYL	chromodomain protein, Y-like	10783	-0.5807303190231323	0.11106525	No	

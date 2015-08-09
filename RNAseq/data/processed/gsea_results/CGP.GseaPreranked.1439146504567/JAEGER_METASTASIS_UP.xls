@@ -1,0 +1,38 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	UCHL1	UCHL1	ubiquitin carboxyl-terminal esterase L1 (ubiquitin thiolesterase)	8	4.819223403930664	0.12821382	Yes	
+row_1	DDAH1	DDAH1	dimethylarginine dimethylaminohydrolase 1	144	2.434784173965454	0.18216118	Yes	
+row_2	RRM2	RRM2	ribonucleotide reductase M2 polypeptide	182	2.2513649463653564	0.2393074	Yes	
+row_3	NCAM1	NCAM1	neural cell adhesion molecule 1	218	2.0979480743408203	0.29251638	Yes	
+row_4	CKS2	CKS2	CDC28 protein kinase regulatory subunit 2	250	2.009206771850586	0.34368297	Yes	
+row_5	CENPF	CENPF	centromere protein F, 350/400ka (mitosin)	286	1.9046634435653687	0.39172313	Yes	
+row_6	SNAP25	SNAP25	synaptosomal-associated protein, 25kDa	312	1.8244311809539795	0.43844464	Yes	
+row_7	KIF2C	KIF2C	kinesin family member 2C	384	1.6899769306182861	0.47776672	Yes	
+row_8	DTL	DTL	denticleless homolog (Drosophila)	451	1.5682849884033203	0.514248	Yes	
+row_9	PLOD2	PLOD2	procollagen-lysine, 2-oxoglutarate 5-dioxygenase 2	679	1.281298279762268	0.5297412	Yes	
+row_10	TUBB2B	TUBB2B	tubulin, beta 2B	702	1.2558763027191162	0.5615065	Yes	
+row_11	SPP1	SPP1	secreted phosphoprotein 1 (osteopontin, bone sialoprotein I, early T-lymphocyte activation 1)	745	1.2243901491165161	0.590776	Yes	
+row_12	EPS8	EPS8	epidermal growth factor receptor pathway substrate 8	807	1.1775327920913696	0.6172213	Yes	
+row_13	THBS4	THBS4	thrombospondin 4	1147	0.9759137630462646	0.61528635	Yes	
+row_14	NNT	NNT	nicotinamide nucleotide transhydrogenase	1391	0.8469334244728088	0.6178407	Yes	
+row_15	BGN	BGN	biglycan	1526	0.7941939234733582	0.62799823	Yes	
+row_16	ADAM12	ADAM12	ADAM metallopeptidase domain 12 (meltrin alpha)	1754	0.7118138074874878	0.6282623	Yes	
+row_17	NCBP2	NCBP2	nuclear cap binding protein subunit 2, 20kDa	3044	0.41508933901786804	0.532772	No	
+row_18	ENPP1	ENPP1	ectonucleotide pyrophosphatase/phosphodiesterase 1	3125	0.4023018479347229	0.53691494	No	
+row_19	TACC3	TACC3	transforming, acidic coiled-coil containing protein 3	3649	0.3229396939277649	0.5023028	No	
+row_20	CDC6	CDC6	CDC6 cell division cycle 6 homolog (S. cerevisiae)	4053	0.2677684426307678	0.4761384	No	
+row_21	NUDT9	NUDT9	nudix (nucleoside diphosphate linked moiety X)-type motif 9	4398	0.2195274978876114	0.4535628	No	
+row_22	FN1	FN1	fibronectin 1	4609	0.19332291185855865	0.44136718	No	
+row_23	MERTK	MERTK	c-mer proto-oncogene tyrosine kinase	5550	0.08348189294338226	0.36586875	No	
+row_24	STC1	STC1	stanniocalcin 1	5899	0.045680221170186996	0.33831334	No	
+row_25	TBC1D1	TBC1D1	TBC1 (tre-2/USP6, BUB2, cdc16) domain family, member 1	6916	-0.06944329291582108	0.25615484	No	
+row_26	SCHIP1	SCHIP1	schwannomin interacting protein 1	7473	-0.13304978609085083	0.21373583	No	
+row_27	H2AFV	H2AFV	H2A histone family, member V	7878	-0.16599099338054657	0.18476701	No	
+row_28	GINS4	GINS4	GINS complex subunit 4 (Sld5 homolog)	7883	-0.16642725467681885	0.18888682	No	
+row_29	SULF1	SULF1	sulfatase 1	8021	-0.1776612102985382	0.18230896	No	
+row_30	PAPSS2	PAPSS2	3'-phosphoadenosine 5'-phosphosulfate synthase 2	9597	-0.3618491590023041	0.061744872	No	
+row_31	MME	MME	membrane metallo-endopeptidase (neutral endopeptidase, enkephalinase)	10105	-0.4447295665740967	0.031712722	No	
+row_32	SMC4	SMC4	structural maintenance of chromosomes 4	10957	-0.6248236894607544	-0.021949572	No	
+row_33	NCAPG	NCAPG	non-SMC condensin I complex, subunit G	11051	-0.6518037915229797	-0.012209477	No	
+row_34	MET	MET	met proto-oncogene (hepatocyte growth factor receptor)	11721	-0.981544554233551	-0.041282337	No	
+row_35	SLC16A3	SLC16A3	solute carrier family 16, member 3 (monocarboxylic acid transporter 4)	11973	-1.3103525638580322	-0.026996782	No	
+row_36	AURKA	AURKA	aurora kinase A	12034	-1.4888306856155396	0.007855885	No	

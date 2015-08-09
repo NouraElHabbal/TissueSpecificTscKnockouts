@@ -1,0 +1,78 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SLC7A5	SLC7A5	solute carrier family 7 (cationic amino acid transporter, y+ system), member 5	172	2.2902958393096924	0.019941691	Yes	
+row_1	RRM2	RRM2	ribonucleotide reductase M2 polypeptide	182	2.2513649463653564	0.052825447	Yes	
+row_2	APLP1	APLP1	amyloid beta (A4) precursor-like protein 1	194	2.214277744293213	0.084989265	Yes	
+row_3	NCAM1	NCAM1	neural cell adhesion molecule 1	218	2.0979480743408203	0.114419766	Yes	
+row_4	KIF11	KIF11	kinesin family member 11	219	2.0977134704589844	0.14575501	Yes	
+row_5	GTSE1	GTSE1	G-2 and S-phase expressed 1	249	2.0106592178344727	0.1733838	Yes	
+row_6	CKS2	CKS2	CDC28 protein kinase regulatory subunit 2	250	2.009206771850586	0.20339695	Yes	
+row_7	BIRC5	BIRC5	baculoviral IAP repeat-containing 5 (survivin)	254	1.9982331991195679	0.23299727	Yes	
+row_8	BUB1	BUB1	BUB1 budding uninhibited by benzimidazoles 1 homolog (yeast)	280	1.920560598373413	0.25961205	Yes	
+row_9	CENPF	CENPF	centromere protein F, 350/400ka (mitosin)	286	1.9046634435653687	0.28764874	Yes	
+row_10	TOP2A	TOP2A	topoisomerase (DNA) II alpha 170kDa	335	1.769565463066101	0.31009975	Yes	
+row_11	CENPE	CENPE	centromere protein E, 312kDa	365	1.7253456115722656	0.3334666	Yes	
+row_12	KIF2C	KIF2C	kinesin family member 2C	384	1.6899769306182861	0.35721773	Yes	
+row_13	TPBG	TPBG	trophoblast glycoprotein	405	1.6559830904006958	0.38029516	Yes	
+row_14	CCNB2	CCNB2	cyclin B2	412	1.647059440612793	0.4044008	Yes	
+row_15	MKI67	MKI67	antigen identified by monoclonal antibody Ki-67	463	1.555503010749817	0.42348826	Yes	
+row_16	MELK	MELK	maternal embryonic leucine zipper kinase	542	1.4502997398376465	0.43868116	Yes	
+row_17	LEF1	LEF1	lymphoid enhancer-binding factor 1	675	1.283383846282959	0.44690046	Yes	
+row_18	GPSM2	GPSM2	G-protein signalling modulator 2 (AGS3-like, C. elegans)	718	1.24628746509552	0.46203265	Yes	
+row_19	MSX2	MSX2	msh homeobox homolog 2 (Drosophila)	833	1.156116008758545	0.46984425	Yes	
+row_20	PBK	PBK	PDZ binding kinase	847	1.1499205827713013	0.485943	Yes	
+row_21	FGF9	FGF9	fibroblast growth factor 9 (glia-activating factor)	1046	1.0381381511688232	0.48502305	Yes	
+row_22	NPTX2	NPTX2	neuronal pentraxin II	1052	1.0338908433914185	0.5000523	Yes	
+row_23	WISP1	WISP1	WNT1 inducible signaling pathway protein 1	1114	0.9938910603523254	0.50983787	Yes	
+row_24	ESPL1	ESPL1	extra spindle poles like 1 (S. cerevisiae)	1131	0.9842066168785095	0.52321225	Yes	
+row_25	FGFR3	FGFR3	fibroblast growth factor receptor 3 (achondroplasia, thanatophoric dwarfism)	1189	0.9465484023094177	0.5326225	Yes	
+row_26	WIF1	WIF1	WNT inhibitory factor 1	1256	0.9113332033157349	0.54076004	Yes	
+row_27	CCNB1	CCNB1	cyclin B1	1294	0.8915682435035706	0.55100834	Yes	
+row_28	NEK2	NEK2	NIMA (never in mitosis gene a)-related kinase 2	1322	0.8797582387924194	0.56190985	Yes	
+row_29	CENPA	CENPA	centromere protein A	1368	0.8568474054336548	0.5709758	Yes	
+row_30	FBN2	FBN2	fibrillin 2 (congenital contractural arachnodactyly)	1469	0.8165015578269958	0.57487583	Yes	
+row_31	ASPM	ASPM	asp (abnormal spindle) homolog, microcephaly associated (Drosophila)	1568	0.782130241394043	0.5784284	Yes	
+row_32	CDCA8	CDCA8	cell division cycle associated 8	1653	0.7527047395706177	0.58270293	Yes	
+row_33	TPX2	TPX2	TPX2, microtubule-associated, homolog (Xenopus laevis)	2002	0.6315190196037292	0.56326395	No	
+row_34	PLP2	PLP2	proteolipid protein 2 (colonic epithelium-enriched)	2075	0.6109408140182495	0.56641644	No	
+row_35	SCG5	SCG5	secretogranin V (7B2 protein)	2208	0.5815169811248779	0.5641514	No	
+row_36	NRP2	NRP2	neuropilin 2	2251	0.5750030279159546	0.56925607	No	
+row_37	ENO2	ENO2	enolase 2 (gamma, neuronal)	2376	0.5429486632347107	0.56707865	No	
+row_38	CDKN3	CDKN3	cyclin-dependent kinase inhibitor 3 (CDK2-associated dual specificity phosphatase)	2704	0.4743778705596924	0.5470347	No	
+row_39	NCAPH	NCAPH	non-SMC condensin I complex, subunit H	2712	0.4731050729751587	0.55352104	No	
+row_40	ROR2	ROR2	receptor tyrosine kinase-like orphan receptor 2	2787	0.45650485157966614	0.55420065	No	
+row_41	CRLF1	CRLF1	cytokine receptor-like factor 1	2790	0.4560943841934204	0.56084776	No	
+row_42	CCNA2	CCNA2	cyclin A2	2804	0.45314931869506836	0.5665383	No	
+row_43	KIF20A	KIF20A	kinesin family member 20A	2838	0.44501250982284546	0.57044786	No	
+row_44	FZD1	FZD1	frizzled homolog 1 (Drosophila)	3232	0.3821008503437042	0.54354966	No	
+row_45	EFNA3	EFNA3	ephrin-A3	3297	0.37212666869163513	0.5437985	No	
+row_46	SHOX2	SHOX2	short stature homeobox 2	3327	0.3664708733558655	0.5468667	No	
+row_47	CDC20	CDC20	CDC20 cell division cycle 20 homolog (S. cerevisiae)	3549	0.33626338839530945	0.5335541	No	
+row_48	CEP55	CEP55	centrosomal protein 55kDa	3668	0.3202856779098511	0.52854836	No	
+row_49	TNC	TNC	tenascin C (hexabrachion)	4219	0.2437206655740738	0.48655725	No	
+row_50	GREM1	GREM1	gremlin 1, cysteine knot superfamily, homolog (Xenopus laevis)	4240	0.2413444072008133	0.48850304	No	
+row_51	MLLT11	MLLT11	myeloid/lymphoid or mixed-lineage leukemia (trithorax homolog, Drosophila); translocated to, 11	4265	0.23692944645881653	0.49005106	No	
+row_52	FOXF2	FOXF2	forkhead box F2	4625	0.19160029292106628	0.46312803	No	
+row_53	SV2A	SV2A	synaptic vesicle glycoprotein 2A	4717	0.1788066029548645	0.458249	No	
+row_54	HMMR	HMMR	hyaluronan-mediated motility receptor (RHAMM)	4833	0.16263380646705627	0.4511372	No	
+row_55	CRABP1	CRABP1	cellular retinoic acid binding protein 1	5074	0.13784483075141907	0.43328425	No	
+row_56	UBE2S	UBE2S	ubiquitin-conjugating enzyme E2S	5503	0.08971811085939407	0.3991146	No	
+row_57	CENPN	CENPN	centromere protein N	6468	-0.01931002177298069	0.319423	No	
+row_58	CDH11	CDH11	cadherin 11, type 2, OB-cadherin (osteoblast)	7308	-0.11491028964519501	0.25153026	No	
+row_59	TBL1X	TBL1X	transducin (beta)-like 1X-linked	7589	-0.1424177587032318	0.23042695	No	
+row_60	PITX1	PITX1	paired-like homeodomain transcription factor 1	7711	-0.15452447533607483	0.22269621	No	
+row_61	HMGA2	HMGA2	high mobility group AT-hook 2	8534	-0.2279469519853592	0.15790245	No	
+row_62	COL2A1	COL2A1	collagen, type II, alpha 1 (primary osteoarthritis, spondyloepiphyseal dysplasia, congenital)	8638	-0.24117158353328705	0.15295944	No	
+row_63	INHBA	INHBA	inhibin, beta A (activin A, activin AB alpha polypeptide)	8709	-0.24988825619220734	0.15088454	No	
+row_64	NUSAP1	NUSAP1	nucleolar and spindle associated protein 1	8812	-0.26274919509887695	0.14634681	No	
+row_65	COL11A1	COL11A1	collagen, type XI, alpha 1	9008	-0.2884107828140259	0.1344765	No	
+row_66	MCM4	MCM4	MCM4 minichromosome maintenance deficient 4 (S. cerevisiae)	10272	-0.47383421659469604	0.03676735	No	
+row_67	UBE2C	UBE2C	ubiquitin-conjugating enzyme E2C	10597	-0.5388720631599426	0.017935643	No	
+row_68	PRPH	PRPH	peripherin	10749	-0.5731537938117981	0.013969302	No	
+row_69	COL9A3	COL9A3	collagen, type IX, alpha 3	10820	-0.5900310277938843	0.01697539	No	
+row_70	CDH3	CDH3	cadherin 3, type 1, P-cadherin (placental)	10882	-0.6033539772033691	0.020927195	No	
+row_71	GLT8D2	GLT8D2	glycosyltransferase 8 domain containing 2	10969	-0.629668116569519	0.023197902	No	
+row_72	TRPS1	TRPS1	trichorhinophalangeal syndrome I	11148	-0.6812690496444702	0.018606462	No	
+row_73	PSD3	PSD3	pleckstrin and Sec7 domain containing 3	11465	-0.8063725233078003	0.004434361	No	
+row_74	MICAL2	MICAL2	microtubule associated monoxygenase, calponin and LIM domain containing 2	11496	-0.8225846290588379	0.014232965	No	
+row_75	HS3ST3A1	HS3ST3A1	heparan sulfate (glucosamine) 3-O-sulfotransferase 3A1	11933	-1.241513729095459	-0.0033951069	No	
+row_76	SLC16A3	SLC16A3	solute carrier family 16, member 3 (monocarboxylic acid transporter 4)	11973	-1.3103525638580322	0.012942979	No	

@@ -1,0 +1,50 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	FOSB	FOSB	FBJ murine osteosarcoma viral oncogene homolog B	29	3.7042295932769775	0.07564452	Yes	
+row_1	ARC	ARC	activity-regulated cytoskeleton-associated protein	31	3.591947078704834	0.15124103	Yes	
+row_2	EGR1	EGR1	early growth response 1	61	3.1635630130767822	0.21549417	Yes	
+row_3	FOS	FOS	v-fos FBJ murine osteosarcoma viral oncogene homolog	133	2.5163488388061523	0.26263452	Yes	
+row_4	FOSL1	FOSL1	FOS-like antigen 1	138	2.4760935306549072	0.31447262	Yes	
+row_5	F2RL1	F2RL1	coagulation factor II (thrombin) receptor-like 1	174	2.2856967449188232	0.3597332	Yes	
+row_6	ATF3	ATF3	activating transcription factor 3	203	2.184798240661621	0.40344736	Yes	
+row_7	DUSP5	DUSP5	dual specificity phosphatase 5	208	2.1458044052124023	0.44832656	Yes	
+row_8	PHLDA1	PHLDA1	pleckstrin homology-like domain, family A, member 1	322	1.7948793172836304	0.4767896	Yes	
+row_9	TNFRSF12A	TNFRSF12A	tumor necrosis factor receptor superfamily, member 12A	507	1.4971283674240112	0.4931023	Yes	
+row_10	NAB2	NAB2	NGFI-A binding protein 2 (EGR1 binding protein 2)	558	1.424387812614441	0.51897424	Yes	
+row_11	CTGF	CTGF	connective tissue growth factor	582	1.4011127948760986	0.5465907	Yes	
+row_12	HBEGF	HBEGF	heparin-binding EGF-like growth factor	824	1.1649587154388428	0.5511867	Yes	
+row_13	IER2	IER2	immediate early response 2	903	1.1133939027786255	0.56818855	Yes	
+row_14	AREG	AREG	amphiregulin (schwannoma-derived growth factor)	911	1.1087177991867065	0.59096885	Yes	
+row_15	TRIB1	TRIB1	tribbles homolog 1 (Drosophila)	967	1.078410267829895	0.6091374	Yes	
+row_16	EGR2	EGR2	early growth response 2 (Krox-20 homolog, Drosophila)	1036	1.0438190698623657	0.62550116	Yes	
+row_17	JUNB	JUNB	jun B proto-oncogene	1254	0.9115976691246033	0.62674564	Yes	
+row_18	GEM	GEM	GTP binding protein overexpressed in skeletal muscle	1353	0.865803599357605	0.6368755	Yes	
+row_19	TNFRSF11B	TNFRSF11B	tumor necrosis factor receptor superfamily, member 11b (osteoprotegerin)	1446	0.825849711894989	0.6466602	Yes	
+row_20	CYR61	CYR61	cysteine-rich, angiogenic inducer, 61	1602	0.7742303013801575	0.6501425	Yes	
+row_21	HES1	HES1	hairy and enhancer of split 1, (Drosophila)	2011	0.6290721893310547	0.6296245	No	
+row_22	ZFP36	ZFP36	zinc finger protein 36, C3H type, homolog (mouse)	2413	0.5335074067115784	0.6076724	No	
+row_23	MCL1	MCL1	myeloid cell leukemia sequence 1 (BCL2-related)	2664	0.48312443494796753	0.5971578	No	
+row_24	MAFF	MAFF	v-maf musculoaponeurotic fibrosarcoma oncogene homolog F (avian)	2732	0.4681912362575531	0.6014763	No	
+row_25	DUSP1	DUSP1	dual specificity phosphatase 1	3176	0.39338400959968567	0.5730954	No	
+row_26	MYC	MYC	v-myc myelocytomatosis viral oncogene homolog (avian)	3331	0.36615869402885437	0.5680628	No	
+row_27	DUSP2	DUSP2	dual specificity phosphatase 2	3401	0.3556675612926483	0.56984496	No	
+row_28	TIPARP	TIPARP	TCDD-inducible poly(ADP-ribose) polymerase	3404	0.35510098934173584	0.5771611	No	
+row_29	IER3	IER3	immediate early response 3	3425	0.35141170024871826	0.5829095	No	
+row_30	LIF	LIF	leukemia inhibitory factor (cholinergic differentiation factor)	4487	0.20808467268943787	0.49946985	No	
+row_31	KLF6	KLF6	Kruppel-like factor 6	4928	0.1519639641046524	0.46625075	No	
+row_32	NEDD9	NEDD9	neural precursor cell expressed, developmentally down-regulated 9	4990	0.14558058977127075	0.46426877	No	
+row_33	BCL10	BCL10	B-cell CLL/lymphoma 10	5018	0.14354392886161804	0.4650582	No	
+row_34	ID3	ID3	inhibitor of DNA binding 3, dominant negative helix-loop-helix protein	5114	0.13432729244232178	0.46002477	No	
+row_35	EGR3	EGR3	early growth response 3	5159	0.1286514550447464	0.45909327	No	
+row_36	KBTBD2	KBTBD2	kelch repeat and BTB (POZ) domain containing 2	5183	0.12583531439304352	0.45984071	No	
+row_37	SPRED2	SPRED2	sprouty-related, EVH1 domain containing 2	6920	-0.06970027834177017	0.3176125	No	
+row_38	EPHA2	EPHA2	EPH receptor A2	7300	-0.11355570703744888	0.28863347	No	
+row_39	ID1	ID1	inhibitor of DNA binding 1, dominant negative helix-loop-helix protein	8629	-0.23996222019195557	0.18376459	No	
+row_40	ETS2	ETS2	v-ets erythroblastosis virus E26 oncogene homolog 2 (avian)	8974	-0.2837757170200348	0.16126904	No	
+row_41	DNAJB1	DNAJB1	DnaJ (Hsp40) homolog, subfamily B, member 1	9191	-0.312046080827713	0.14996427	No	
+row_42	RYBP	RYBP	RING1 and YY1 binding protein	10021	-0.43004119396209717	0.09040473	No	
+row_43	NR4A3	NR4A3	nuclear receptor subfamily 4, group A, member 3	10166	-0.4551786184310913	0.088075414	No	
+row_44	EDN1	EDN1	endothelin 1	10528	-0.5240901708602905	0.06923592	No	
+row_45	JUN	JUN	jun oncogene	10534	-0.5250408053398132	0.07988421	No	
+row_46	NR4A2	NR4A2	nuclear receptor subfamily 4, group A, member 2	10966	-0.6281360387802124	0.05744265	No	
+row_47	NR4A1	NR4A1	nuclear receptor subfamily 4, group A, member 1	11512	-0.8332525491714478	0.029886419	No	
+row_48	KLF10	KLF10	Kruppel-like factor 10	11748	-1.001595139503479	0.03153715	No	

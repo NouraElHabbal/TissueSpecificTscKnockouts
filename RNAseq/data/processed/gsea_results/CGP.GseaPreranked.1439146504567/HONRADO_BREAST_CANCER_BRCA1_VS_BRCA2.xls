@@ -1,0 +1,18 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	KRT8	KRT8	keratin 8	3	5.075984477996826	0.25585097	Yes	
+row_1	CCNE1	CCNE1	cyclin E1	127	2.5449490547180176	0.37409687	Yes	
+row_2	BIRC5	BIRC5	baculoviral IAP repeat-containing 5 (survivin)	254	1.9982331991195679	0.4645117	Yes	
+row_3	CDKN2A	CDKN2A	cyclin-dependent kinase inhibitor 2A (melanoma, p16, inhibits CDK4)	263	1.9775166511535645	0.5636229	Yes	
+row_4	TOP2A	TOP2A	topoisomerase (DNA) II alpha 170kDa	335	1.769565463066101	0.64704126	Yes	
+row_5	MKI67	MKI67	antigen identified by monoclonal antibody Ki-67	463	1.555503010749817	0.71503645	Yes	
+row_6	KRT5	KRT5	keratin 5 (epidermolysis bullosa simplex, Dowling-Meara/Kobner/Weber-Cockayne types)	1215	0.9330321550369263	0.7001112	Yes	
+row_7	CCNB1	CCNB1	cyclin B1	1294	0.8915682435035706	0.73865414	Yes	
+row_8	BCL2	BCL2	B-cell CLL/lymphoma 2	1574	0.7798110246658325	0.7549648	Yes	
+row_9	CCND1	CCND1	cyclin D1	2350	0.5497704148292542	0.71872157	No	
+row_10	CCNA2	CCNA2	cyclin A2	2804	0.45314931869506836	0.70418644	No	
+row_11	PGR	PGR	progesterone receptor	2883	0.44265830516815186	0.72008055	No	
+row_12	VIM	VIM	vimentin	3371	0.36006373167037964	0.6980421	No	
+row_13	MDM2	MDM2	Mdm2, transformed 3T3 cell double minute 2, p53 binding protein (mouse)	5233	0.11916505545377731	0.5504177	No	
+row_14	SKP2	SKP2	S-phase kinase-associated protein 2 (p45)	5562	0.08259426802396774	0.52750653	No	
+row_15	RAD50	RAD50	RAD50 homolog (S. cerevisiae)	6788	-0.055128857493400574	0.42915693	No	
+row_16	EGFR	EGFR	epidermal growth factor receptor (erythroblastic leukemia viral (v-erb-b) oncogene homolog, avian)	8562	-0.23173780739307404	0.2944771	No	

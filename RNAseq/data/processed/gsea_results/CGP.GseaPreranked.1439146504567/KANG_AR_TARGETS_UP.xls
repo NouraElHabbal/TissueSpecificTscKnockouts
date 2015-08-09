@@ -1,0 +1,18 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	VDR	VDR	vitamin D (1,25- dihydroxyvitamin D3) receptor	789	1.1887117624282837	0.063984774	No	
+row_1	TUFT1	TUFT1	tuftelin 1	2210	0.5802801251411438	0.009787108	No	
+row_2	COL4A1	COL4A1	collagen, type IV, alpha 1	2905	0.44111427664756775	4.084325E-4	No	
+row_3	AHSG	AHSG	alpha-2-HS-glycoprotein	3143	0.39895421266555786	0.024178267	No	
+row_4	COL4A2	COL4A2	collagen, type IV, alpha 2	4055	0.2676517367362976	-0.02195706	No	
+row_5	TGFB3	TGFB3	transforming growth factor, beta 3	4611	0.1930106282234192	-0.046810217	No	
+row_6	COL5A1	COL5A1	collagen, type V, alpha 1	5103	0.13513684272766113	-0.07266621	No	
+row_7	MMP2	MMP2	matrix metallopeptidase 2 (gelatinase A, 72kDa gelatinase, 72kDa type IV collagenase)	5829	0.05345767363905907	-0.12671253	No	
+row_8	COL6A1	COL6A1	collagen, type VI, alpha 1	6166	0.016125570982694626	-0.15269972	No	
+row_9	FGFR2	FGFR2	ffer syndrome, Jackson-Weiss syndrome)	8565	-0.23191608488559723	-0.32547742	No	
+row_10	COL2A1	COL2A1	collagen, type II, alpha 1 (primary osteoarthritis, spondyloepiphyseal dysplasia, congenital)	8638	-0.24117158353328705	-0.3052247	No	
+row_11	BMP1	BMP1	bone morphogenetic protein 1	8928	-0.2765769064426422	-0.29904073	No	
+row_12	TGFB2	TGFB2	transforming growth factor, beta 2	9967	-0.4214416742324829	-0.33895555	No	
+row_13	PDGFA	PDGFA	platelet-derived growth factor alpha polypeptide	11497	-0.8227242827415466	-0.37581682	Yes	
+row_14	MMP9	MMP9	matrix metallopeptidase 9 (gelatinase B, 92kDa gelatinase, 92kDa type IV collagenase)	11820	-1.0827150344848633	-0.2847921	Yes	
+row_15	PHEX	PHEX	phosphate regulating endopeptidase homolog, X-linked (hypophosphatemia, vitamin D resistant rickets)	11925	-1.225205421447754	-0.16029246	Yes	
+row_16	BMP5	BMP5	bone morphogenetic protein 5	12066	-1.6299618482589722	0.0052010175	Yes	

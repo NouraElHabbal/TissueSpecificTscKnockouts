@@ -1,0 +1,28 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	TFAP2B	TFAP2B	transcription factor AP-2 beta (activating enhancer binding protein 2 beta)	1842	0.6814939379692078	-0.10742591	No	
+row_1	KCND3	KCND3	potassium voltage-gated channel, Shal-related subfamily, member 3	2041	0.6214034557342529	-0.082965106	No	
+row_2	SLC15A3	SLC15A3	solute carrier family 15, member 3	2262	0.5731812119483948	-0.06348979	No	
+row_3	DCC	DCC	deleted in colorectal carcinoma	2859	0.44265830516815186	-0.083655275	No	
+row_4	INSRR	INSRR	insulin receptor-related receptor	3715	0.3138316869735718	-0.13368312	No	
+row_5	CCDC67	CCDC67	coiled-coil domain containing 67	4937	0.15098907053470612	-0.22464862	No	
+row_6	PCDHB15	PCDHB15	protocadherin beta 15	5481	0.09225817024707794	-0.26345304	No	
+row_7	KCNS1	KCNS1	potassium voltage-gated channel, delayed-rectifier, subfamily S, member 1	5510	0.08884887397289276	-0.25992998	No	
+row_8	NR2F1	NR2F1	nuclear receptor subfamily 2, group F, member 1	6245	0.005087312310934067	-0.32024193	No	
+row_9	PCDHB12	PCDHB12	protocadherin beta 12	6305	-0.0016800316516309977	-0.32500637	No	
+row_10	KCNIP1	KCNIP1	Kv channel interacting protein 1	6850	-0.06268243491649628	-0.36583626	No	
+row_11	ELOVL3	ELOVL3	elongation of very long chain fatty acids (FEN1/Elo2, SUR4/Elo3, yeast)-like 3	8111	-0.18343748152256012	-0.45789257	No	
+row_12	PCDHB11	PCDHB11	protocadherin beta 11	8532	-0.2278154343366623	-0.47762936	No	
+row_13	TAL1	TAL1	T-cell acute lymphocytic leukemia 1	9449	-0.3447117805480957	-0.53066874	No	
+row_14	PCDHB7	PCDHB7	protocadherin beta 7	10113	-0.4462396502494812	-0.5561348	No	
+row_15	HOXA3	HOXA3	homeobox A3	10564	-0.5309498906135559	-0.5584372	Yes	
+row_16	PCDHA10	PCDHA10	protocadherin alpha 10	10976	-0.6318217515945435	-0.550891	Yes	
+row_17	SLITRK3	SLITRK3	SLIT and NTRK-like family, member 3	11014	-0.6406968235969543	-0.5118603	Yes	
+row_18	PRDM8	PRDM8	PR domain containing 8	11252	-0.7142890095710754	-0.48452014	Yes	
+row_19	PCDHB16	PCDHB16	protocadherin beta 16	11274	-0.723037838935852	-0.43875843	Yes	
+row_20	NR2F2	NR2F2	nuclear receptor subfamily 2, group F, member 2	11350	-0.7517975568771362	-0.39556918	Yes	
+row_21	ARX	ARX	aristaless related homeobox	11394	-0.7757762670516968	-0.3481608	Yes	
+row_22	PCDHB14	PCDHB14	protocadherin beta 14	11784	-1.0405082702636719	-0.31194994	Yes	
+row_23	CACNA1E	CACNA1E	calcium channel, voltage-dependent, alpha 1E subunit	11802	-1.0640448331832886	-0.24345678	Yes	
+row_24	TBX5	TBX5	T-box 5	11855	-1.1147692203521729	-0.17452335	Yes	
+row_25	HOXD8	HOXD8	homeobox D8	11972	-1.3044489622116089	-0.09841768	Yes	
+row_26	ALOX12B	ALOX12B	arachidonate 12-lipoxygenase, 12R type	12077	-1.6944129467010498	0.0042964565	Yes	

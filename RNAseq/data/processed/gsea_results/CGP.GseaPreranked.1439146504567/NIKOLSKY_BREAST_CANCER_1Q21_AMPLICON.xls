@@ -1,0 +1,31 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CKS1B	CKS1B	CDC28 protein kinase regulatory subunit 1B	1539	0.7895042300224304	-0.07214847	No	
+row_1	THBS3	THBS3	thrombospondin 3	1968	0.6419076919555664	-0.0627687	No	
+row_2	SHC1	SHC1	SHC (Src homology 2 domain containing) transforming protein 1	2005	0.630021870136261	-0.021820875	No	
+row_3	HCN3	HCN3	hyperpolarization activated cyclic nucleotide-gated potassium channel 3	2012	0.6289287209510803	0.021530077	No	
+row_4	EFNA4	EFNA4	ephrin-A4	2043	0.6209525465965271	0.06234149	No	
+row_5	GBA	GBA	glucosidase, beta; acid (includes glucosylceramidase)	2337	0.5540167689323425	0.07675082	No	
+row_6	PYGO2	PYGO2	pygopus homolog 2 (Drosophila)	3078	0.4091639816761017	0.04411935	No	
+row_7	EFNA3	EFNA3	ephrin-A3	3297	0.37212666869163513	0.052046258	No	
+row_8	FDPS	FDPS	farnesyl diphosphate synthase (farnesyl pyrophosphate synthetase, dimethylallyltranstransferase, geranyltranstransferase)	4183	0.2486637830734253	-0.0037582242	No	
+row_9	RUSC1	RUSC1	RUN and SH3 domain containing 1	4714	0.17950397729873657	-0.035045456	No	
+row_10	TRIM46	TRIM46	tripartite motif-containing 46	5142	0.13056446611881256	-0.06123219	No	
+row_11	ZBTB7B	ZBTB7B	zinc finger and BTB domain containing 7B	5532	0.086400605738163	-0.08735739	No	
+row_12	MRPL9	MRPL9	mitochondrial ribosomal protein L9	5627	0.0760732963681221	-0.089822404	No	
+row_13	PBXIP1	PBXIP1	pre-B-cell leukemia transcription factor interacting protein 1	6066	0.02729925327003002	-0.12411754	No	
+row_14	THEM4	THEM4	thioesterase superfamily member 4	6073	0.026596881449222565	-0.122759156	No	
+row_15	MTX1	MTX1	metaxin 1	6910	-0.06891182065010071	-0.18704577	No	
+row_16	CLK2	CLK2	CDC-like kinase 2	7603	-0.14416101574897766	-0.23418541	No	
+row_17	EFNA1	EFNA1	ephrin-A1	7607	-0.1445121467113495	-0.22435844	No	
+row_18	FLAD1	FLAD1	FAD1 flavin adenine dinucleotide synthetase homolog (S. cerevisiae)	8138	-0.1858396679162979	-0.25520396	No	
+row_19	DPM3	DPM3	dolichyl-phosphate mannosyltransferase polypeptide 3	8373	-0.21094658970832825	-0.25983632	No	
+row_20	SCAMP3	SCAMP3	secretory carrier membrane protein 3	8517	-0.2262275665998459	-0.25588268	No	
+row_21	PMVK	PMVK	phosphomevalonate kinase	8696	-0.24861203134059906	-0.253261	No	
+row_22	RORC	RORC	RAR-related orphan receptor C	9890	-0.4089898467063904	-0.32334262	Yes	
+row_23	ADAM15	ADAM15	ADAM metallopeptidase domain 15 (metargidin)	9983	-0.4234873652458191	-0.3014218	Yes	
+row_24	KRTCAP2	KRTCAP2	keratinocyte associated protein 2	10014	-0.42941978573799133	-0.27396342	Yes	
+row_25	MUC1	MUC1	mucin 1, cell surface associated	11189	-0.6953001022338867	-0.3225142	Yes	
+row_26	THEM5	THEM5	thioesterase superfamily member 5	11959	-1.2871731519699097	-0.29633048	Yes	
+row_27	OAZ3	OAZ3	ornithine decarboxylase antizyme 3	11984	-1.3430590629577637	-0.20468034	Yes	
+row_28	DCST1	DCST1	DC-STAMP domain containing 1	12041	-1.5269631147384644	-0.10285364	Yes	
+row_29	TDRKH	TDRKH	tudor and KH domain containing	12057	-1.578440546989441	0.0059503214	Yes	

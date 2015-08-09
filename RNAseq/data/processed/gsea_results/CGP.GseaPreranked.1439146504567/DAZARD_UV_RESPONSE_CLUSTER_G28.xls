@@ -1,0 +1,14 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	PMAIP1	PMAIP1	phorbol-12-myristate-13-acetate-induced protein 1	135	2.4894676208496094	0.14438014	Yes	
+row_1	ATF3	ATF3	activating transcription factor 3	203	2.184798240661621	0.275339	Yes	
+row_2	PTGS2	PTGS2	prostaglandin-endoperoxide synthase 2 (prostaglandin G/H synthase and cyclooxygenase)	215	2.1088814735412598	0.4061768	Yes	
+row_3	ANXA2	ANXA2	annexin A2	520	1.4768800735473633	0.47335145	Yes	
+row_4	CTGF	CTGF	connective tissue growth factor	582	1.4011127948760986	0.5558472	Yes	
+row_5	CITED2	CITED2	Cbp/p300-interacting transactivator, with Glu/Asp-rich carboxy-terminal domain, 2	591	1.38559091091156	0.64174736	Yes	
+row_6	TACSTD2	TACSTD2	tumor-associated calcium signal transducer 2	793	1.1862560510635376	0.6992666	Yes	
+row_7	GADD45A	GADD45A	growth arrest and DNA-damage-inducible, alpha	1009	1.0567742586135864	0.74754155	Yes	
+row_8	H1FX	H1FX	H1 histone family, member X	1227	0.9283153414726257	0.7876264	Yes	
+row_9	IER3	IER3	immediate early response 3	3425	0.35141170024871826	0.6282642	No	
+row_10	PHLDA2	PHLDA2	pleckstrin homology-like domain, family A, member 2	7919	-0.1693863570690155	0.2680447	No	
+row_11	CCDC85B	CCDC85B	coiled-coil domain containing 85B	9035	-0.29221564531326294	0.19428046	No	
+row_12	GADD45B	GADD45B	growth arrest and DNA-damage-inducible, beta	11713	-0.9761322140693665	0.034331925	No	

@@ -1,0 +1,15 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	PGD	PGD	phosphogluconate dehydrogenase	877	1.1289979219436646	0.03669131	No	
+row_1	RCBTB2	RCBTB2	regulator of chromosome condensation (RCC1) and BTB (POZ) domain containing protein 2	1993	0.6339470148086548	0.0059112394	No	
+row_2	ALAS1	ALAS1	aminolevulinate, delta-, synthase 1	2265	0.5724431872367859	0.0388491	No	
+row_3	WAS	WAS	Wiskott-Aldrich syndrome (eczema-thrombocytopenia)	2681	0.4804137051105499	0.051010683	No	
+row_4	PTK2B	PTK2B	PTK2B protein tyrosine kinase 2 beta	4202	0.2457994818687439	-0.050696038	No	
+row_5	ITM2B	ITM2B	integral membrane protein 2B	4944	0.15018565952777863	-0.09734507	No	
+row_6	REL	REL	v-rel reticuloendotheliosis viral oncogene homolog (avian)	5697	0.06766446679830551	-0.15287454	No	
+row_7	ELF4	ELF4	E74-like factor 4 (ets domain transcription factor)	8625	-0.23915286362171173	-0.37135085	No	
+row_8	WIPF1	WIPF1	WAS/WASL interacting protein family, member 1	10054	-0.4348732531070709	-0.44719747	No	
+row_9	PSMB9	PSMB9	proteasome (prosome, macropain) subunit, beta type, 9 (large multifunctional peptidase 2)	11471	-0.8075845241546631	-0.48604524	Yes	
+row_10	ADD3	ADD3	adducin 3 (gamma)	11704	-0.96883225440979	-0.41159248	Yes	
+row_11	COL9A2	COL9A2	collagen, type IX, alpha 2	11766	-1.0207029581069946	-0.31801483	Yes	
+row_12	PIM1	PIM1	pim-1 oncogene	12082	-1.7335586547851562	-0.17653066	Yes	
+row_13	CDKN2C	CDKN2C	cyclin-dependent kinase inhibitor 2C (p18, inhibits CDK4)	12099	-1.8665074110031128	0.0024761045	Yes	

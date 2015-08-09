@@ -1,0 +1,82 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	NDRG4	NDRG4	NDRG family member 4	20	4.1847662925720215	0.07423851	Yes	
+row_1	EGR1	EGR1	early growth response 1	61	3.1635630130767822	0.12829575	Yes	
+row_2	FOS	FOS	v-fos FBJ murine osteosarcoma viral oncogene homolog	133	2.5163488388061523	0.16804174	Yes	
+row_3	PTGS2	PTGS2	prostaglandin-endoperoxide synthase 2 (prostaglandin G/H synthase and cyclooxygenase)	215	2.1088814735412598	0.19956762	Yes	
+row_4	CDKN2A	CDKN2A	cyclin-dependent kinase inhibitor 2A (melanoma, p16, inhibits CDK4)	263	1.9775166511535645	0.23153277	Yes	
+row_5	PHLDA1	PHLDA1	pleckstrin homology-like domain, family A, member 1	322	1.7948793172836304	0.25927252	Yes	
+row_6	CCL7	CCL7	chemokine (C-C motif) ligand 7	387	1.6855260133743286	0.28453097	Yes	
+row_7	SKAP2	SKAP2	src kinase associated phosphoprotein 2	433	1.599311351776123	0.30980265	Yes	
+row_8	MAGED2	MAGED2	melanoma antigen family D, 2	446	1.580257773399353	0.33746758	Yes	
+row_9	CITED2	CITED2	Cbp/p300-interacting transactivator, with Glu/Asp-rich carboxy-terminal domain, 2	591	1.38559091091156	0.35064662	Yes	
+row_10	GALK2	GALK2	galactokinase 2	621	1.3402674198150635	0.37254798	Yes	
+row_11	NME4	NME4	non-metastatic cells 4, protein expressed in	662	1.2914968729019165	0.3926519	Yes	
+row_12	SPP1	SPP1	secreted phosphoprotein 1 (osteopontin, bone sialoprotein I, early T-lymphocyte activation 1)	745	1.2243901491165161	0.4080529	Yes	
+row_13	TPD52L1	TPD52L1	tumor protein D52-like 1	797	1.1829547882080078	0.4252752	Yes	
+row_14	CXCL1	CXCL1	chemokine (C-X-C motif) ligand 1 (melanoma growth stimulating activity, alpha)	939	1.097488522529602	0.43347797	Yes	
+row_15	F2R	F2R	coagulation factor II (thrombin) receptor	963	1.0809717178344727	0.4511745	Yes	
+row_16	GRN	GRN	granulin	1013	1.0551106929779053	0.46624413	Yes	
+row_17	CCL2	CCL2	chemokine (C-C motif) ligand 2	1092	1.0058143138885498	0.47801286	Yes	
+row_18	HCFC1R1	HCFC1R1	host cell factor C1 regulator 1 (XPO1 dependent)	1159	0.9647039771080017	0.4900319	Yes	
+row_19	GEM	GEM	GTP binding protein overexpressed in skeletal muscle	1353	0.865803599357605	0.48971692	Yes	
+row_20	DOK1	DOK1	docking protein 1, 62kDa (downstream of tyrosine kinase 1)	1359	0.8622593283653259	0.50494057	Yes	
+row_21	RASSF5	RASSF5	Ras association (RalGDS/AF-6) domain family 5	1381	0.8530598878860474	0.5186695	Yes	
+row_22	MAOA	MAOA	monoamine oxidase A	1496	0.803373396396637	0.5237788	Yes	
+row_23	JUP	JUP	junction plakoglobin	1533	0.7906509637832642	0.5351309	Yes	
+row_24	THBS1	THBS1	thrombospondin 1	1556	0.785448431968689	0.54755056	Yes	
+row_25	CYR61	CYR61	cysteine-rich, angiogenic inducer, 61	1602	0.7742303013801575	0.5578579	Yes	
+row_26	RNF13	RNF13	ring finger protein 13	1868	0.6721859574317932	0.5480557	Yes	
+row_27	HEBP1	HEBP1	heme binding protein 1	1922	0.6564712524414062	0.5555633	Yes	
+row_28	TSPYL4	TSPYL4	TSPY-like 4	2057	0.6170805096626282	0.5556339	Yes	
+row_29	CDKN2B	CDKN2B	cyclin-dependent kinase inhibitor 2B (p15, inhibits CDK4)	2062	0.6145572662353516	0.5664481	Yes	
+row_30	ID2	ID2	inhibitor of DNA binding 2, dominant negative helix-loop-helix protein	2249	0.5753424167633057	0.561446	No	
+row_31	GPC4	GPC4	glypican 4	2360	0.5458280444145203	0.5622162	No	
+row_32	PLA2G4A	PLA2G4A	phospholipase A2, group IVA (cytosolic, calcium-dependent)	2715	0.472551167011261	0.54140675	No	
+row_33	PLK2	PLK2	polo-like kinase 2 (Drosophila)	2833	0.44570112228393555	0.53978	No	
+row_34	SPG20	SPG20	spastic paraplegia 20, spartin (Troyer syndrome)	2949	0.4301816523075104	0.5380378	No	
+row_35	ANXA1	ANXA1	annexin A1	3013	0.4199979305267334	0.54042655	No	
+row_36	EPHX1	EPHX1	epoxide hydrolase 1, microsomal (xenobiotic)	4405	0.21830369532108307	0.42894062	No	
+row_37	FADS1	FADS1	fatty acid desaturase 1	4939	0.15072529017925262	0.38743827	No	
+row_38	NEDD9	NEDD9	neural precursor cell expressed, developmentally down-regulated 9	4990	0.14558058977127075	0.38592893	No	
+row_39	ARMCX2	ARMCX2	armadillo repeat containing, X-linked 2	5087	0.13618867099285126	0.38043147	No	
+row_40	ID3	ID3	inhibitor of DNA binding 3, dominant negative helix-loop-helix protein	5114	0.13432729244232178	0.3807099	No	
+row_41	CSF1	CSF1	colony stimulating factor 1 (macrophage)	5236	0.11896287649869919	0.37282518	No	
+row_42	BCAR1	BCAR1	breast cancer anti-estrogen resistance 1	5293	0.11178022623062134	0.37020484	No	
+row_43	IFI30	IFI30	interferon, gamma-inducible protein 30	5421	0.09809786081314087	0.36144373	No	
+row_44	EXOC4	EXOC4	exocyst complex component 4	5639	0.07475747913122177	0.3447898	No	
+row_45	PLAT	PLAT	plasminogen activator, tissue	5769	0.06034545972943306	0.335178	No	
+row_46	CNN3	CNN3	calponin 3, acidic	5877	0.04783780500292778	0.32716522	No	
+row_47	KLF4	KLF4	Kruppel-like factor 4 (gut)	5903	0.04547528177499771	0.32591513	No	
+row_48	TOR1AIP2	TOR1AIP2	torsin A interacting protein 2	5938	0.04159495234489441	0.3238477	No	
+row_49	CDK4	CDK4	cyclin-dependent kinase 4	5989	0.0355912409722805	0.3203435	No	
+row_50	SIRT2	SIRT2	sirtuin (silent mating type information regulation 2 homolog) 2 (S. cerevisiae)	6153	0.01750466413795948	0.3071329	No	
+row_51	CTNND1	CTNND1	catenin (cadherin-associated protein), delta 1	6229	0.00788141880184412	0.30105126	No	
+row_52	RASA4	RASA4	RAS p21 protein activator 4	6519	-0.024381613358855247	0.27750805	No	
+row_53	DPP7	DPP7	dipeptidyl-peptidase 7	6915	-0.06920181214809418	0.24598035	No	
+row_54	CSRP1	CSRP1	cysteine and glycine-rich protein 1	7037	-0.08301576972007751	0.23744367	No	
+row_55	PCGF5	PCGF5	polycomb group ring finger 5	7089	-0.08917752653360367	0.23482835	No	
+row_56	CNN2	CNN2	calponin 2	7125	-0.09319962561130524	0.2336139	No	
+row_57	LGALS9	LGALS9	lectin, galactoside-binding, soluble, 9 (galectin 9)	7224	-0.10356809198856354	0.22735883	No	
+row_58	SNX6	SNX6	sorting nexin 6	7642	-0.14808765053749084	0.195436	No	
+row_59	SFRP2	SFRP2	secreted frizzled-related protein 2	7670	-0.15134507417678833	0.19594006	No	
+row_60	MFSD1	MFSD1	major facilitator superfamily domain containing 1	7871	-0.16547566652297974	0.18234238	No	
+row_61	ROCK2	ROCK2	Rho-associated, coiled-coil containing protein kinase 2	7995	-0.1759980469942093	0.17532611	No	
+row_62	DDAH2	DDAH2	dimethylarginine dimethylaminohydrolase 2	8031	-0.17884060740470886	0.17566492	No	
+row_63	ACVR2A	ACVR2A	activin A receptor, type IIA	8210	-0.1945536881685257	0.16442049	No	
+row_64	RECK	RECK	reversion-inducing-cysteine-rich protein with kazal motifs	8467	-0.22171075642108917	0.14719504	No	
+row_65	AKAP12	AKAP12	A kinase (PRKA) anchor protein (gravin) 12	8573	-0.2326650470495224	0.14270043	No	
+row_66	KIFAP3	KIFAP3	kinesin-associated protein 3	8587	-0.23465970158576965	0.14587748	No	
+row_67	FZD2	FZD2	frizzled homolog 2 (Drosophila)	8924	-0.27615299820899963	0.1229999	No	
+row_68	VCAM1	VCAM1	vascular cell adhesion molecule 1	8976	-0.2843268811702728	0.123923965	No	
+row_69	LATS2	LATS2	LATS, large tumor suppressor, homolog 2 (Drosophila)	9165	-0.3092581331729889	0.11392998	No	
+row_70	SLC8A1	SLC8A1	solute carrier family 8 (sodium/calcium exchanger), member 1	10119	-0.4469558894634247	0.04294264	No	
+row_71	DNM1	DNM1	dynamin 1	10290	-0.47816047072410583	0.0375059	No	
+row_72	GAS2	GAS2	growth arrest-specific 2	10399	-0.4971785247325897	0.037559744	No	
+row_73	CXCL12	CXCL12	chemokine (C-X-C motif) ligand 12 (stromal cell-derived factor 1)	10409	-0.4997013211250305	0.04587579	No	
+row_74	THBS2	THBS2	thrombospondin 2	10473	-0.5115010738372803	0.04992415	No	
+row_75	GSTM1	GSTM1	glutathione S-transferase M1	10768	-0.5762991905212402	0.035976026	No	
+row_76	AMOTL2	AMOTL2	angiomotin like 2	10781	-0.5804578065872192	0.04550776	No	
+row_77	ANXA11	ANXA11	annexin A11	11386	-0.7705820798873901	0.009355036	No	
+row_78	GSTT1	GSTT1	glutathione S-transferase theta 1	11520	-0.8419969081878662	0.013587931	No	
+row_79	TPM1	TPM1	tropomyosin 1 (alpha)	11571	-0.8726797103881836	0.025265854	No	
+row_80	PRKCD	PRKCD	protein kinase C, delta	11887	-1.1557705402374268	0.020084621	No	

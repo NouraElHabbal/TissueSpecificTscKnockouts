@@ -1,0 +1,18 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	FKBP8	FKBP8	FK506 binding protein 8, 38kDa	4213	0.24432162940502167	-0.30179587	No	
+row_1	EVI5	EVI5	ecotropic viral integration site 5	4373	0.22333407402038574	-0.2728625	No	
+row_2	EHD1	EHD1	EH-domain containing 1	6399	-0.0109660429880023	-0.43797305	No	
+row_3	HPS5	HPS5	Hermansky-Pudlak syndrome 5	6724	-0.048219867050647736	-0.45564008	No	
+row_4	ARHGEF7	ARHGEF7	Rho guanine nucleotide exchange factor (GEF) 7	6983	-0.07697226107120514	-0.4624436	No	
+row_5	PRPF6	PRPF6	PRP6 pre-mRNA processing factor 6 homolog (S. cerevisiae)	7044	-0.08396577090024948	-0.45158395	No	
+row_6	CASD1	CASD1	CAS1 domain containing 1	7288	-0.11271512508392334	-0.45041776	No	
+row_7	SVIL	SVIL	supervillin	8337	-0.20584551990032196	-0.49817017	Yes	
+row_8	SYNCRIP	SYNCRIP	synaptotagmin binding, cytoplasmic RNA interacting protein	8929	-0.27662304043769836	-0.49486524	Yes	
+row_9	MLLT4	MLLT4	myeloid/lymphoid or mixed-lineage leukemia (trithorax homolog, Drosophila); translocated to, 4	9173	-0.31000155210494995	-0.45654476	Yes	
+row_10	METAP2	METAP2	methionyl aminopeptidase 2	9310	-0.3265627324581146	-0.40627187	Yes	
+row_11	BANP	BANP	BTG3 associated nuclear protein	9960	-0.4206423759460449	-0.3806325	Yes	
+row_12	NAP1L1	NAP1L1	nucleosome assembly protein 1-like 1	10002	-0.4268164336681366	-0.30363637	Yes	
+row_13	CEPT1	CEPT1	choline/ethanolamine phosphotransferase 1	10086	-0.4409024119377136	-0.22745481	Yes	
+row_14	OCIAD1	OCIAD1	OCIA domain containing 1	10252	-0.4710787236690521	-0.15235984	Yes	
+row_15	EP300	EP300	E1A binding protein p300	10861	-0.5987852215766907	-0.089786604	Yes	
+row_16	FTCD	FTCD	formiminotransferase cyclodeaminase	11775	-1.0321687459945679	0.029224759	Yes	

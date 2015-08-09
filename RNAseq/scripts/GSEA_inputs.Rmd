@@ -11,7 +11,7 @@ deseq2.results <- read.csv(deseq2_file, row.names="X")
 
 #order by pvalue and get rid of those with NA foldchange
 results.noNA <- deseq2.results[which(deseq2.results$log2FoldChange != 'NA'),]
-results.noNA <- results.noNA[order(results.noNA$log2FoldChange),c(8,3)]
+results.noNA <- results.noNA[order(results.noNA$log2FoldChange),c('external_gene_name','log2FoldChange')]
 #get rid of duplicate genes
 results.noDup <- results.noNA[!duplicated(results.noNA$external_gene_name),]
 result_data_file <- "../data/processed/GSEA_prerank_FC.rnk"

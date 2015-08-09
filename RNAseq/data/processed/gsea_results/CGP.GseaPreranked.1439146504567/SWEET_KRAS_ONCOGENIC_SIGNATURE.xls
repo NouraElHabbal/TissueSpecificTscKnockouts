@@ -1,0 +1,78 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	KRT8	KRT8	keratin 8	3	5.075984477996826	0.07909125	Yes	
+row_1	MDFI	MDFI	MyoD family inhibitor	12	4.567900657653809	0.14982606	Yes	
+row_2	PDK3	PDK3	pyruvate dehydrogenase kinase, isozyme 3	26	3.8414878845214844	0.20879185	Yes	
+row_3	KRT18	KRT18	keratin 18	42	3.4316630363464355	0.26118594	Yes	
+row_4	PCBD1	PCBD1	pterin-4 alpha-carbinolamine dehydratase/dimerization cofactor of hepatocyte nuclear factor 1 alpha (TCF1)	54	3.283813714981079	0.31160095	Yes	
+row_5	LGALS3	LGALS3	lectin, galactoside-binding, soluble, 3 (galectin 3)	171	2.290645122528076	0.3377807	Yes	
+row_6	CD68	CD68	CD68 molecule	245	2.0261223316192627	0.36339343	Yes	
+row_7	MYH7	MYH7	myosin, heavy chain 7, cardiac muscle, beta	307	1.8274660110473633	0.38689664	Yes	
+row_8	CTSS	CTSS	cathepsin S	316	1.815683364868164	0.41461295	Yes	
+row_9	PHLDA1	PHLDA1	pleckstrin homology-like domain, family A, member 1	322	1.7948793172836304	0.44225296	Yes	
+row_10	LCN2	LCN2	lipocalin 2 (oncogene 24p3)	327	1.7875066995620728	0.4698607	Yes	
+row_11	GLRX	GLRX	glutaredoxin (thioltransferase)	550	1.431154727935791	0.47381172	Yes	
+row_12	CITED2	CITED2	Cbp/p300-interacting transactivator, with Glu/Asp-rich carboxy-terminal domain, 2	591	1.38559091091156	0.49215052	Yes	
+row_13	TNNT1	TNNT1	troponin T type 1 (skeletal, slow)	597	1.3775783777236938	0.51326793	Yes	
+row_14	PAFAH1B3	PAFAH1B3	platelet-activating factor acetylhydrolase, isoform Ib, gamma subunit 29kDa	656	1.2959578037261963	0.5287123	Yes	
+row_15	PON2	PON2	paraoxonase 2	727	1.2388118505477905	0.54226786	Yes	
+row_16	GADD45A	GADD45A	growth arrest and DNA-damage-inducible, alpha	1009	1.0567742586135864	0.53547204	Yes	
+row_17	SLC25A5	SLC25A5	solute carrier family 25 (mitochondrial carrier; adenine nucleotide translocator), member 5	1072	1.0198768377304077	0.5462693	Yes	
+row_18	RPL3	RPL3	ribosomal protein L3	1218	0.9308555126190186	0.54878885	Yes	
+row_19	CDKN1A	CDKN1A	cyclin-dependent kinase inhibitor 1A (p21, Cip1)	1414	0.8330228328704834	0.5456309	Yes	
+row_20	SIRPA	SIRPA	signal-regulatory protein alpha	1476	0.8139726519584656	0.55329263	Yes	
+row_21	CST3	CST3	cystatin C (amyloid angiopathy and cerebral hemorrhage)	1558	0.78521329164505	0.55884564	Yes	
+row_22	FAM3C	FAM3C	family with sequence similarity 3, member C	1681	0.7424718141555786	0.56032884	Yes	
+row_23	ITGAM	ITGAM	integrin, alpha M (complement component 3 receptor 3 subunit)	1780	0.6995064616203308	0.56313175	Yes	
+row_24	ITGB2	ITGB2	integrin, beta 2 (complement component 3 receptor 3 and 4 subunit)	1781	0.6993411779403687	0.57406276	Yes	
+row_25	SHC1	SHC1	SHC (Src homology 2 domain containing) transforming protein 1	2005	0.630021870136261	0.5654087	No	
+row_26	DUSP6	DUSP6	dual specificity phosphatase 6	2124	0.5983901023864746	0.56497175	No	
+row_27	ID2	ID2	inhibitor of DNA binding 2, dominant negative helix-loop-helix protein	2249	0.5753424167633057	0.5636768	No	
+row_28	CCND1	CCND1	cyclin D1	2350	0.5497704148292542	0.56397325	No	
+row_29	TROVE2	TROVE2	TROVE domain family, member 2	2457	0.526637077331543	0.56341034	No	
+row_30	S100A1	S100A1	S100 calcium binding protein A1	2491	0.519859254360199	0.5687981	No	
+row_31	ATP1B1	ATP1B1	ATPase, Na+/K+ transporting, beta 1 polypeptide	2687	0.4787927269935608	0.56010336	No	
+row_32	BOP1	BOP1	block of proliferation 1	2954	0.42953574657440186	0.544748	No	
+row_33	HPN	HPN	hepsin (transmembrane protease, serine 1)	3065	0.4106382429599762	0.5420401	No	
+row_34	NPC2	NPC2	Niemann-Pick disease, type C2	3204	0.3870365619659424	0.5366402	No	
+row_35	FEZ2	FEZ2	fasciculation and elongation protein zeta 2 (zygin II)	3353	0.36349356174468994	0.53004277	No	
+row_36	FKBP2	FKBP2	FK506 binding protein 2, 13kDa	3518	0.3405146896839142	0.52175856	No	
+row_37	VASP	VASP	vasodilator-stimulated phosphoprotein	3570	0.3341967463493347	0.5227509	No	
+row_38	SND1	SND1	-	3805	0.30083948373794556	0.50803894	No	
+row_39	TANK	TANK	TRAF family member-associated NFKB activator	4186	0.24794499576091766	0.48038703	No	
+row_40	HIF1A	HIF1A	hypoxia-inducible factor 1, alpha subunit (basic helix-loop-helix transcription factor)	4516	0.20461101830005646	0.45628908	No	
+row_41	AXIN1	AXIN1	axin 1	4592	0.195736825466156	0.45312604	No	
+row_42	MTIF2	MTIF2	mitochondrial translational initiation factor 2	4695	0.18258993327617645	0.4475174	No	
+row_43	MRC1	MRC1	mannose receptor, C type 1	4812	0.1654246747493744	0.4404789	No	
+row_44	ATP5F1	ATP5F1	ATP synthase, H+ transporting, mitochondrial F0 complex, subunit B1	5140	0.13085393607616425	0.41539404	No	
+row_45	LAMC1	LAMC1	laminin, gamma 1 (formerly LAMB2)	5202	0.12311673164367676	0.41225743	No	
+row_46	NUP88	NUP88	nucleoporin 88kDa	5224	0.12020450830459595	0.412394	No	
+row_47	BTG1	BTG1	B-cell translocation gene 1, anti-proliferative	5318	0.10940825939178467	0.40638816	No	
+row_48	NMT1	NMT1	N-myristoyltransferase 1	6154	0.01750420592725277	0.3373844	No	
+row_49	RABGGTB	RABGGTB	Rab geranylgeranyltransferase, beta subunit	6541	-0.02742857299745083	0.30578792	No	
+row_50	PSEN1	PSEN1	presenilin 1 (Alzheimer disease 3)	6709	-0.04665619507431984	0.2926617	No	
+row_51	TSTA3	TSTA3	tissue specific transplantation antigen P35B	6825	-0.05961451679468155	0.2840523	No	
+row_52	RPS2	RPS2	ribosomal protein S2	6899	-0.06823853403329849	0.27906233	No	
+row_53	GNS	GNS	glucosamine (N-acetyl)-6-sulfatase (Sanfilippo disease IIID)	7094	-0.0896160751581192	0.2643675	No	
+row_54	RPL6	RPL6	ribosomal protein L6	7361	-0.1191999539732933	0.24416146	No	
+row_55	ACLY	ACLY	ATP citrate lyase	7549	-0.14015516638755798	0.23083735	No	
+row_56	TGFBI	TGFBI	transforming growth factor, beta-induced, 68kDa	7636	-0.14713312685489655	0.22600196	No	
+row_57	MAPK1	MAPK1	mitogen-activated protein kinase 1	7694	-0.15220962464809418	0.22365196	No	
+row_58	PHLDA2	PHLDA2	pleckstrin homology-like domain, family A, member 2	7919	-0.1693863570690155	0.20771496	No	
+row_59	SFTPB	SFTPB	surfactant, pulmonary-associated protein B	7929	-0.17026132345199585	0.20962954	No	
+row_60	SLC12A2	SLC12A2	solute carrier family 12 (sodium/potassium/chloride transporters), member 2	7941	-0.17148901522159576	0.21139735	No	
+row_61	PHB2	PHB2	prohibitin 2	8039	-0.1796025037765503	0.20615683	No	
+row_62	NPR2	NPR2	natriuretic peptide receptor B/guanylate cyclase B (atrionatriuretic peptide receptor B)	8557	-0.23111416399478912	0.16687539	No	
+row_63	EEF1B2	EEF1B2	eukaryotic translation elongation factor 1 beta 2	9070	-0.29769206047058105	0.1290494	No	
+row_64	IL18	IL18	interleukin 18 (interferon-gamma-inducing factor)	9436	-0.3433612883090973	0.104133405	No	
+row_65	PABPC1	PABPC1	poly(A) binding protein, cytoplasmic 1	10433	-0.503948986530304	0.029375348	No	
+row_66	RPL14	RPL14	ribosomal protein L14	10492	-0.5153958797454834	0.032619163	No	
+row_67	GABPB2	GABPB2	GA binding protein transcription factor, beta subunit 2	10497	-0.5169104337692261	0.040366862	No	
+row_68	RPL8	RPL8	ribosomal protein L8	10585	-0.5364057421684265	0.041533027	No	
+row_69	KDELR1	KDELR1	KDEL (Lys-Asp-Glu-Leu) endoplasmic reticulum protein retention receptor 1	10634	-0.5467215776443481	0.046096146	No	
+row_70	EEF1D	EEF1D	eukaryotic translation elongation factor 1 delta (guanine nucleotide exchange protein)	10703	-0.5631980895996094	0.04925746	No	
+row_71	GNB2L1	GNB2L1	guanine nucleotide binding protein (G protein), beta polypeptide 2-like 1	11008	-0.6391687989234924	0.034026053	No	
+row_72	CEACAM1	CEACAM1	carcinoembryonic antigen-related cell adhesion molecule 1 (biliary glycoprotein)	11118	-0.6697878837585449	0.035451777	No	
+row_73	BSG	BSG	basigin (Ok blood group)	11237	-0.7067952752113342	0.036709245	No	
+row_74	TYR	TYR	tyrosinase (oculocutaneous albinism IA)	11404	-0.7800672650337219	0.035129577	No	
+row_75	MYCN	MYCN	v-myc myelocytomatosis viral related oncogene, neuroblastoma derived (avian)	11431	-0.7893920540809631	0.045311026	No	
+row_76	EEF2	EEF2	eukaryotic translation elongation factor 2	11452	-0.8007872104644775	0.056168392	No	

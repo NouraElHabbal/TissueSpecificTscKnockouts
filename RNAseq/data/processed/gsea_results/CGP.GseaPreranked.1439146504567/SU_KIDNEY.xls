@@ -1,0 +1,13 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SLC22A2	SLC22A2	solute carrier family 22 (organic cation transporter), member 2	1857	0.6755385994911194	-0.04828902	No	
+row_1	POU3F4	POU3F4	POU domain, class 3, transcription factor 4	2493	0.5192559957504272	-0.020016942	No	
+row_2	AQP2	AQP2	aquaporin 2 (collecting duct)	3197	0.3892182409763336	-0.01755948	No	
+row_3	CUBN	CUBN	cubilin (intrinsic factor-cobalamin receptor)	3942	0.28027793765068054	-0.035410766	No	
+row_4	CLCN5	CLCN5	chloride channel 5 (nephrolithiasis 2, X-linked, Dent disease)	5689	0.06918446719646454	-0.1687452	No	
+row_5	ENPEP	ENPEP	glutamyl aminopeptidase (aminopeptidase A)	6871	-0.06476779282093048	-0.25614098	No	
+row_6	KCNJ1	KCNJ1	potassium inwardly-rectifying channel, subfamily J, member 1	8078	-0.18282656371593475	-0.32725775	No	
+row_7	HES2	HES2	hairy and enhancer of split 2 (Drosophila)	9476	-0.3486141860485077	-0.38837886	No	
+row_8	KL	KL	klotho	11435	-0.7916330099105835	-0.42696574	Yes	
+row_9	FMO1	FMO1	flavin containing monooxygenase 1	11654	-0.931028425693512	-0.3003076	Yes	
+row_10	XPNPEP2	XPNPEP2	X-prolyl aminopeptidase (aminopeptidase P) 2, membrane-bound	11774	-1.0319993495941162	-0.14979261	Yes	
+row_11	SLC6A13	SLC6A13	solute carrier family 6 (neurotransmitter transporter, GABA), member 13	11881	-1.1521711349487305	0.02046549	Yes	

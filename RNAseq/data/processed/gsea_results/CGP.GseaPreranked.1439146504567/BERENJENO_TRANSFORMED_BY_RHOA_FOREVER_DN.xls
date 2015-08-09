@@ -1,0 +1,30 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ANKRD1	ANKRD1	ankyrin repeat domain 1 (cardiac muscle)	41	3.4523634910583496	0.14479499	Yes	
+row_1	POSTN	POSTN	periostin, osteoblast specific factor	94	2.8193747997283936	0.26151168	Yes	
+row_2	PTGS2	PTGS2	prostaglandin-endoperoxide synthase 2 (prostaglandin G/H synthase and cyclooxygenase)	215	2.1088814735412598	0.34211302	Yes	
+row_3	PHLDA1	PHLDA1	pleckstrin homology-like domain, family A, member 1	322	1.7948793172836304	0.41039366	Yes	
+row_4	EREG	EREG	epiregulin	426	1.611751914024353	0.47106194	Yes	
+row_5	ECT2	ECT2	epithelial cell transforming sequence 2 oncogene	607	1.3619176149368286	0.51464367	Yes	
+row_6	HBEGF	HBEGF	heparin-binding EGF-like growth factor	824	1.1649587154388428	0.54679656	Yes	
+row_7	CXCL1	CXCL1	chemokine (C-X-C motif) ligand 1 (melanoma growth stimulating activity, alpha)	939	1.097488522529602	0.5844825	Yes	
+row_8	F2R	F2R	coagulation factor II (thrombin) receptor	963	1.0809717178344727	0.6289795	Yes	
+row_9	COL3A1	COL3A1	collagen, type III, alpha 1 (Ehlers-Danlos syndrome type IV, autosomal dominant)	1117	0.9922835826873779	0.65892696	Yes	
+row_10	MGP	MGP	matrix Gla protein	1929	0.653985321521759	0.61997825	No	
+row_11	IER3	IER3	immediate early response 3	3425	0.35141170024871826	0.51151806	No	
+row_12	PLAUR	PLAUR	plasminogen activator, urokinase receptor	3985	0.27540481090545654	0.47714454	No	
+row_13	CHD1	CHD1	chromodomain helicase DNA binding protein 1	5833	0.05292067304253578	0.32678398	No	
+row_14	ANXA3	ANXA3	annexin A3	5900	0.04565497487783432	0.3232895	No	
+row_15	LRRFIP1	LRRFIP1	leucine rich repeat (in FLII) interacting protein 1	6880	-0.065845787525177	0.24521334	No	
+row_16	AMOT	AMOT	angiomotin	6924	-0.06989914923906326	0.24466015	No	
+row_17	EPHA2	EPHA2	EPH receptor A2	7300	-0.11355570703744888	0.21854503	No	
+row_18	GJA1	GJA1	gap junction protein, alpha 1, 43kDa (connexin 43)	7631	-0.14661051332950592	0.19756742	No	
+row_19	CCDC80	CCDC80	coiled-coil domain containing 80	8332	-0.20530922710895538	0.14853328	No	
+row_20	AKAP12	AKAP12	A kinase (PRKA) anchor protein (gravin) 12	8573	-0.2326650470495224	0.13868672	No	
+row_21	HSPH1	HSPH1	heat shock 105kDa/110kDa protein 1	8616	-0.23767518997192383	0.14541748	No	
+row_22	NPNT	NPNT	nephronectin	8967	-0.282764196395874	0.12863111	No	
+row_23	GSG2	GSG2	germ cell associated 2 (haspin)	8991	-0.28618472814559937	0.13901414	No	
+row_24	MTMR10	MTMR10	myotubularin related protein 10	9827	-0.397892564535141	0.08709001	No	
+row_25	FLNB	FLNB	filamin B, beta (actin binding protein 278)	10501	-0.5181998014450073	0.05371706	No	
+row_26	TNK2	TNK2	tyrosine kinase, non-receptor, 2	10692	-0.5612314939498901	0.062105183	No	
+row_27	SDPR	SDPR	serum deprivation response (phosphatidylserine binding protein)	11026	-0.6448733806610107	0.062266197	No	
+row_28	TOM1L1	TOM1L1	target of myb1-like 1 (chicken)	11122	-0.6709955930709839	0.083216235	No	

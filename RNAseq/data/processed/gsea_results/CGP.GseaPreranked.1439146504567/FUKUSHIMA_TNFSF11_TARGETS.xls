@@ -1,0 +1,14 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	HES1	HES1	hairy and enhancer of split 1, (Drosophila)	2011	0.6290721893310547	-0.03428486	No	
+row_1	HEY1	HEY1	hairy/enhancer-of-split related with YRPW motif 1	4429	0.21565483510494232	-0.1886148	No	
+row_2	JAG1	JAG1	jagged 1 (Alagille syndrome)	5810	0.056013792753219604	-0.2907793	No	
+row_3	NOTCH2	NOTCH2	Notch homolog 2 (Drosophila)	6267	0.0028675401117652655	-0.32781214	No	
+row_4	ACP1	ACP1	acid phosphatase 1, soluble	6360	-0.007164730690419674	-0.333905	No	
+row_5	NOTCH1	NOTCH1	Notch homolog 1, translocation-associated (Drosophila)	7259	-0.10869000852108002	-0.38526428	No	
+row_6	NOTCH4	NOTCH4	Notch homolog 4 (Drosophila)	8397	-0.21362446248531342	-0.43438253	Yes	
+row_7	JAG2	JAG2	jagged 2	9011	-0.28895139694213867	-0.42448795	Yes	
+row_8	DLL4	DLL4	delta-like 4 (Drosophila)	9038	-0.2924216687679291	-0.36542264	Yes	
+row_9	DLL1	DLL1	delta-like 1 (Drosophila)	9579	-0.35936111211776733	-0.334765	Yes	
+row_10	NFATC1	NFATC1	nuclear factor of activated T-cells, cytoplasmic, calcineurin-dependent 1	10310	-0.48093411326408386	-0.29433957	Yes	
+row_11	NOTCH3	NOTCH3	Notch homolog 3 (Drosophila)	11039	-0.6482247114181519	-0.21873103	Yes	
+row_12	CALCR	CALCR	calcitonin receptor	12029	-1.4742878675460815	0.008252885	Yes	

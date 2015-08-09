@@ -1,0 +1,24 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	LGALS3	LGALS3	lectin, galactoside-binding, soluble, 3 (galectin 3)	171	2.290645122528076	0.124871664	Yes	
+row_1	GNAI1	GNAI1	guanine nucleotide binding protein (G protein), alpha inhibiting activity polypeptide 1	403	1.6593124866485596	0.20647842	Yes	
+row_2	APP	APP	amyloid beta (A4) precursor protein (peptidase nexin-II, Alzheimer disease)	641	1.313327670097351	0.26659533	Yes	
+row_3	ADD2	ADD2	adducin 2 (beta)	701	1.2567250728607178	0.33797985	Yes	
+row_4	SAT1	SAT1	spermidine/spermine N1-acetyltransferase 1	803	1.1786357164382935	0.40115687	Yes	
+row_5	LGALS1	LGALS1	lectin, galactoside-binding, soluble, 1 (galectin 1)	922	1.1040477752685547	0.45840374	Yes	
+row_6	IDH2	IDH2	isocitrate dehydrogenase 2 (NADP+), mitochondrial	1183	0.9476256370544434	0.49443024	Yes	
+row_7	NME1	NME1	non-metastatic cells 1, protein (NM23A) expressed in	1641	0.7594754695892334	0.5027682	Yes	
+row_8	NET1	NET1	neuroepithelial cell transforming gene 1	1672	0.7446852922439575	0.5454776	Yes	
+row_9	FABP5	FABP5	fatty acid binding protein 5 (psoriasis-associated)	1861	0.6742344498634338	0.57086176	Yes	
+row_10	S100A10	S100A10	S100 calcium binding protein A10	1893	0.66342693567276	0.6085578	Yes	
+row_11	SOX4	SOX4	SRY (sex determining region Y)-box 4	1926	0.655589759349823	0.64569575	Yes	
+row_12	MAP4K4	MAP4K4	mitogen-activated protein kinase kinase kinase kinase 4	2132	0.5962703824043274	0.66494495	Yes	
+row_13	ALDOC	ALDOC	aldolase C, fructose-bisphosphate	2156	0.5942098498344421	0.6991017	Yes	
+row_14	CTNNA1	CTNNA1	catenin (cadherin-associated protein), alpha 1, 102kDa	2764	0.4620836675167084	0.6770045	No	
+row_15	DFNA5	DFNA5	deafness, autosomal dominant 5	3185	0.3912521302700043	0.6660549	No	
+row_16	DNAJC7	DNAJC7	DnaJ (Hsp40) homolog, subfamily C, member 7	4366	0.2247329205274582	0.58222735	No	
+row_17	AP2B1	AP2B1	adaptor-related protein complex 2, beta 1 subunit	6025	0.032730430364608765	0.44726786	No	
+row_18	SQRDL	SQRDL	sulfide quinone reductase-like (yeast)	6301	-0.0015672326553612947	0.42464882	No	
+row_19	VAMP8	VAMP8	vesicle-associated membrane protein 8 (endobrevin)	6836	-0.060707662254571915	0.38422585	No	
+row_20	ACLY	ACLY	ATP citrate lyase	7549	-0.14015516638755798	0.33392146	No	
+row_21	RAB4A	RAB4A	RAB4A, member RAS oncogene family	7731	-0.15553347766399384	0.32840917	No	
+row_22	CBX1	CBX1	chromobox homolog 1 (HP1 beta homolog Drosophila )	10748	-0.5729941725730896	0.114066206	No	

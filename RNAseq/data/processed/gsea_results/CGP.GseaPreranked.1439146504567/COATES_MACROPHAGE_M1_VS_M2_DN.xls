@@ -1,0 +1,58 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	UCHL1	UCHL1	ubiquitin carboxyl-terminal esterase L1 (ubiquitin thiolesterase)	8	4.819223403930664	0.118237585	Yes	
+row_1	GDF15	GDF15	growth differentiation factor 15	13	4.566884994506836	0.23058076	Yes	
+row_2	ADAM8	ADAM8	ADAM metallopeptidase domain 8	228	2.0784361362457275	0.2641346	Yes	
+row_3	HSPA1B	HSPA1B	heat shock 70kDa protein 1B	246	2.0257303714752197	0.31270546	Yes	
+row_4	SLC2A1	SLC2A1	solute carrier family 2 (facilitated glucose transporter), member 1	271	1.9320694208145142	0.35838568	Yes	
+row_5	FBLIM1	FBLIM1	filamin binding LIM protein 1	342	1.7640252113342285	0.3961098	Yes	
+row_6	MYO1F	MYO1F	myosin IF	826	1.1641583442687988	0.38482535	Yes	
+row_7	ATP6V0D2	ATP6V0D2	ATPase, H+ transporting, lysosomal 38kDa, V0 subunit d2	851	1.1485282182693481	0.41117403	Yes	
+row_8	HSPA1A	HSPA1A	heat shock 70kDa protein 1A	1073	1.019561767578125	0.4180234	Yes	
+row_9	PRDX2	PRDX2	peroxiredoxin 2	1078	1.0137883424758911	0.44270435	Yes	
+row_10	ERO1L	ERO1L	ERO1-like (S. cerevisiae)	1089	1.006716251373291	0.46671382	Yes	
+row_11	SOAT1	SOAT1	sterol O-acyltransferase (acyl-Coenzyme A: cholesterol acyltransferase) 1	1221	0.9304167628288269	0.47881848	Yes	
+row_12	LRRC27	LRRC27	leucine rich repeat containing 27	1305	0.8868092894554138	0.49382305	Yes	
+row_13	CTSK	CTSK	cathepsin K (pycnodysostosis)	1348	0.8679182529449463	0.51175755	Yes	
+row_14	THBS1	THBS1	thrombospondin 1	1556	0.785448431968689	0.5139905	Yes	
+row_15	C1QC	C1QC	complement component 1, q subcomponent, C chain	1686	0.7408087849617004	0.5215828	Yes	
+row_16	ANKRD37	ANKRD37	ankyrin repeat domain 37	1706	0.7320828437805176	0.53807104	Yes	
+row_17	IGF2R	IGF2R	insulin-like growth factor 2 receptor	1812	0.690284252166748	0.54640466	Yes	
+row_18	IL18BP	IL18BP	interleukin 18 binding protein	1940	0.6519582867622375	0.5519705	Yes	
+row_19	C1QB	C1QB	complement component 1, q subcomponent, B chain	2000	0.6322093605995178	0.5626815	Yes	
+row_20	SH2B2	SH2B2	SH2B adaptor protein 2	2058	0.6164152026176453	0.57316846	Yes	
+row_21	ALDOC	ALDOC	aldolase C, fructose-bisphosphate	2156	0.5942098498344421	0.57979435	Yes	
+row_22	EFHD2	EFHD2	EF-hand domain family, member D2	2295	0.5656841993331909	0.5823205	Yes	
+row_23	BNIP3	BNIP3	BCL2/adenovirus E1B 19kDa interacting protein 3	2577	0.5045322775840759	0.57149327	No	
+row_24	TLR1	TLR1	toll-like receptor 1	2627	0.49284160137176514	0.5795941	No	
+row_25	PADI4	PADI4	peptidyl arginine deiminase, type IV	2824	0.4471677243709564	0.574392	No	
+row_26	RIMBP2	RIMBP2	RIMS binding protein 2	3537	0.33780601620674133	0.52375185	No	
+row_27	TJP2	TJP2	tight junction protein 2 (zona occludens 2)	3641	0.32429665327072144	0.5232215	No	
+row_28	MGST2	MGST2	microsomal glutathione S-transferase 2	4144	0.25501322746276855	0.4879328	No	
+row_29	PSMB1	PSMB1	proteasome (prosome, macropain) subunit, beta type, 1	4163	0.25130772590637207	0.49264213	No	
+row_30	RRAS2	RRAS2	related RAS viral (r-ras) oncogene homolog 2	4721	0.17844201624393463	0.4509087	No	
+row_31	QRICH1	QRICH1	glutamine-rich 1	4892	0.15507663786411285	0.44065374	No	
+row_32	TULP4	TULP4	tubby like protein 4	4963	0.1488845944404602	0.43852895	No	
+row_33	EGLN3	EGLN3	egl nine homolog 3 (C. elegans)	4965	0.14882750809192657	0.44211802	No	
+row_34	HS6ST1	HS6ST1	heparan sulfate 6-O-sulfotransferase 1	5051	0.13954709470272064	0.43852043	No	
+row_35	LIN7C	LIN7C	lin-7 homolog C (C. elegans)	5090	0.1361071765422821	0.43873096	No	
+row_36	FLRT2	FLRT2	fibronectin leucine rich transmembrane protein 2	5310	0.11012207716703415	0.42330825	No	
+row_37	CRIPT	CRIPT	cysteine-rich PDZ-binding protein	5647	0.07369869947433472	0.39729586	No	
+row_38	ITGB3	ITGB3	integrin, beta 3 (platelet glycoprotein IIIa, antigen CD61)	5666	0.07161247730255127	0.39757174	No	
+row_39	ARG1	ARG1	arginase, liver	6269	0.00235853623598814	0.3477666	No	
+row_40	MFGE8	MFGE8	milk fat globule-EGF factor 8 protein	6763	-0.05223774537444115	0.3082205	No	
+row_41	BST1	BST1	bone marrow stromal cell antigen 1	6966	-0.07526024430990219	0.29334578	No	
+row_42	COL20A1	COL20A1	collagen, type XX, alpha 1	7293	-0.11306428909301758	0.2691329	No	
+row_43	PINK1	PINK1	PTEN induced putative kinase 1	7404	-0.12374866753816605	0.26307482	No	
+row_44	LBP	LBP	lipopolysaccharide binding protein	7632	-0.14662297070026398	0.24789001	No	
+row_45	MCOLN3	MCOLN3	mucolipin 3	7676	-0.1513587087392807	0.24806267	No	
+row_46	CD5L	CD5L	CD5 molecule-like	7819	-0.1630837321281433	0.24032451	No	
+row_47	GPRC5B	GPRC5B	G protein-coupled receptor, family C, group 5, member B	8177	-0.1910737305879593	0.21546859	No	
+row_48	CBLB	CBLB	Cas-Br-M (murine) ecotropic retroviral transforming sequence b	8407	-0.21493516862392426	0.20180354	No	
+row_49	ATG4D	ATG4D	ATG4 autophagy related 4 homolog D (S. cerevisiae)	9515	-0.3528708815574646	0.11881738	No	
+row_50	LASP1	LASP1	LIM and SH3 protein 1	10234	-0.4670722782611847	0.070869476	No	
+row_51	PROCR	PROCR	protein C receptor, endothelial (EPCR)	10322	-0.48282578587532043	0.07557563	No	
+row_52	PTGER2	PTGER2	prostaglandin E receptor 2 (subtype EP2), 53kDa	10420	-0.5017746686935425	0.07992099	No	
+row_53	RPGRIP1	RPGRIP1	retinitis pigmentosa GTPase regulator interacting protein 1	10498	-0.5174407362937927	0.086309455	No	
+row_54	XDH	XDH	xanthine dehydrogenase	10717	-0.5663519501686096	0.08222571	No	
+row_55	ARSK	ARSK	arylsulfatase family, member K	11141	-0.680029571056366	0.06396659	No	
+row_56	PPP1R3E	PPP1R3E	protein phosphatase 1, regulatory (inhibitor) subunit 3E	11266	-0.7209008932113647	0.07148185	No	

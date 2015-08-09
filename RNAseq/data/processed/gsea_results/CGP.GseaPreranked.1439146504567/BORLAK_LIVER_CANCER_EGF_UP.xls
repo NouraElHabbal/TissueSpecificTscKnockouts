@@ -1,0 +1,49 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	KRT8	KRT8	keratin 8	3	5.075984477996826	0.11258029	Yes	
+row_1	KRT18	KRT18	keratin 18	42	3.4316630363464355	0.18571387	Yes	
+row_2	EGR1	EGR1	early growth response 1	61	3.1635630130767822	0.25454348	Yes	
+row_3	FOS	FOS	v-fos FBJ murine osteosarcoma viral oncogene homolog	133	2.5163488388061523	0.30460018	Yes	
+row_4	RRM2	RRM2	ribonucleotide reductase M2 polypeptide	182	2.2513649463653564	0.3506705	Yes	
+row_5	ATF3	ATF3	activating transcription factor 3	203	2.184798240661621	0.3975787	Yes	
+row_6	CIDEA	CIDEA	cell death-inducing DFFA-like effector a	434	1.5992876291275024	0.41409093	Yes	
+row_7	MKI67	MKI67	antigen identified by monoclonal antibody Ki-67	463	1.555503010749817	0.44634905	Yes	
+row_8	CPE	CPE	carboxypeptidase E	489	1.5213146209716797	0.4780955	Yes	
+row_9	ANXA2	ANXA2	annexin A2	520	1.4768800735473633	0.50844043	Yes	
+row_10	SERPINE1	SERPINE1	serpin peptidase inhibitor, clade E (nexin, plasminogen activator inhibitor type 1), member 1	587	1.3932085037231445	0.5339459	Yes	
+row_11	ECT2	ECT2	epithelial cell transforming sequence 2 oncogene	607	1.3619176149368286	0.5626459	Yes	
+row_12	SPP1	SPP1	secreted phosphoprotein 1 (osteopontin, bone sialoprotein I, early T-lymphocyte activation 1)	745	1.2243901491165161	0.5785224	Yes	
+row_13	RHOC	RHOC	ras homolog gene family, member C	926	1.1024019718170166	0.5881283	Yes	
+row_14	BTG2	BTG2	BTG family, member 2	1202	0.9396564960479736	0.5862538	Yes	
+row_15	JUNB	JUNB	jun B proto-oncogene	1254	0.9115976691246033	0.6022956	Yes	
+row_16	CCNB1	CCNB1	cyclin B1	1294	0.8915682435035706	0.61888534	Yes	
+row_17	ALCAM	ALCAM	activated leukocyte cell adhesion molecule	1722	0.7270698547363281	0.59970474	No	
+row_18	CD63	CD63	CD63 molecule	2013	0.6280988454818726	0.58966345	No	
+row_19	BLNK	BLNK	B-cell linker	2240	0.5778276920318604	0.58380187	No	
+row_20	CCND1	CCND1	cyclin D1	2350	0.5497704148292542	0.5870004	No	
+row_21	COL4A1	COL4A1	collagen, type IV, alpha 1	2905	0.44111427664756775	0.55095214	No	
+row_22	RAB3D	RAB3D	RAB3D, member RAS oncogene family	3201	0.3881344497203827	0.53516304	No	
+row_23	SLC7A7	SLC7A7	solute carrier family 7 (cationic amino acid transporter, y+ system), member 7	3495	0.34287717938423157	0.5185336	No	
+row_24	WBP5	WBP5	WW domain binding protein 5	3519	0.3404737710952759	0.52419794	No	
+row_25	BEX1	BEX1	brain expressed, X-linked 1	3973	0.27746859192848206	0.4928717	No	
+row_26	RBP1	RBP1	retinol binding protein 1, cellular	4854	0.16042622923851013	0.423602	No	
+row_27	RBM3	RBM3	RNA binding motif (RNP1, RRM) protein 3	5080	0.13701386749744415	0.40802482	No	
+row_28	TLR6	TLR6	toll-like receptor 6	5248	0.11723525077104568	0.39680848	No	
+row_29	ELF3	ELF3	E74-like factor 3 (ets domain transcription factor, epithelial-specific )	5516	0.08795583993196487	0.37666458	No	
+row_30	DDR1	DDR1	discoidin domain receptor family, member 1	6630	-0.03708082437515259	0.2853683	No	
+row_31	FGL2	FGL2	fibrinogen-like 2	6893	-0.06749110668897629	0.26518333	No	
+row_32	PLSCR1	PLSCR1	phospholipid scramblase 1	8427	-0.2169518768787384	0.14312276	No	
+row_33	LPL	LPL	lipoprotein lipase	8483	-0.22254818677902222	0.14351732	No	
+row_34	AEBP1	AEBP1	AE binding protein 1	8564	-0.23190484941005707	0.14205067	No	
+row_35	ID1	ID1	inhibitor of DNA binding 1, dominant negative helix-loop-helix protein	8629	-0.23996222019195557	0.14208739	No	
+row_36	S100A11	S100A11	S100 calcium binding protein A11	8777	-0.2587006986141205	0.13567092	No	
+row_37	ETS2	ETS2	v-ets erythroblastosis virus E26 oncogene homolog 2 (avian)	8974	-0.2837757170200348	0.12575617	No	
+row_38	IGFBP1	IGFBP1	insulin-like growth factor binding protein 1	9036	-0.2922289967536926	0.12720299	No	
+row_39	NID1	NID1	nidogen 1	9345	-0.3315896689891815	0.109081075	No	
+row_40	LTB	LTB	lymphotoxin beta (TNF superfamily, member 3)	9351	-0.33232489228248596	0.116054125	No	
+row_41	LY6D	LY6D	lymphocyte antigen 6 complex, locus D	10681	-0.5590009093284607	0.018481215	No	
+row_42	CLDN7	CLDN7	claudin 7	10689	-0.5603801012039185	0.030357927	No	
+row_43	VIL1	VIL1	villin 1	10725	-0.568077027797699	0.04008823	No	
+row_44	EPS15	EPS15	epidermal growth factor receptor pathway substrate 15	10806	-0.5861319303512573	0.046495304	No	
+row_45	TGFA	TGFA	transforming growth factor, alpha	11357	-0.7565997242927551	0.017790683	No	
+row_46	PDGFA	PDGFA	platelet-derived growth factor alpha polypeptide	11497	-0.8227242827415466	0.02457342	No	
+row_47	BTG3	BTG3	BTG family, member 3	11935	-1.2440671920776367	0.016056944	No	

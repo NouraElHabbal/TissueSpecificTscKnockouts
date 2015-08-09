@@ -1,0 +1,19 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	AGT	AGT	angiotensinogen (serpin peptidase inhibitor, clade A, member 8)	386	1.6857261657714844	0.14380442	No	
+row_1	CEBPA	CEBPA	CCAAT/enhancer binding protein (C/EBP), alpha	2386	0.540042519569397	0.035040624	No	
+row_2	HP	HP	haptoglobin	4167	0.25078877806663513	-0.08578576	No	
+row_3	LUM	LUM	lumican	4840	0.1618228554725647	-0.124403976	No	
+row_4	PANK3	PANK3	pantothenate kinase 3	7425	-0.12551817297935486	-0.32466558	No	
+row_5	ADCYAP1R1	ADCYAP1R1	adenylate cyclase activating polypeptide 1 (pituitary) receptor type I	7575	-0.14104244112968445	-0.32226905	No	
+row_6	VNN3	VNN3	vanin 3	7855	-0.16511334478855133	-0.3280972	No	
+row_7	PPARG	PPARG	peroxisome proliferative activated receptor, gamma	8578	-0.23371298611164093	-0.36335167	No	
+row_8	RETN	RETN	resistin	9039	-0.2926585078239441	-0.3708319	No	
+row_9	SULT1A1	SULT1A1	sulfotransferase family, cytosolic, 1A, phenol-preferring, member 1	9839	-0.39987555146217346	-0.39512753	Yes	
+row_10	FABP4	FABP4	fatty acid binding protein 4, adipocyte	10026	-0.43096524477005005	-0.36557224	Yes	
+row_11	APCDD1	APCDD1	adenomatosis polyposis coli down-regulated 1	10041	-0.4329865574836731	-0.32160556	Yes	
+row_12	SORT1	SORT1	sortilin 1	10055	-0.4353863596916199	-0.2773062	Yes	
+row_13	ADRB3	ADRB3	adrenergic, beta-3-, receptor	10335	-0.4846135675907135	-0.24983844	Yes	
+row_14	RARRES2	RARRES2	retinoic acid receptor responder (tazarotene induced) 2	10588	-0.5373908877372742	-0.21464144	Yes	
+row_15	FFAR2	FFAR2	free fatty acid receptor 2	11701	-0.9671893119812012	-0.20565805	Yes	
+row_16	AOC3	AOC3	amine oxidase, copper containing 3 (vascular adhesion protein 1)	11808	-1.0698665380477905	-0.1029163	Yes	
+row_17	MC2R	MC2R	melanocortin 2 receptor (adrenocorticotropic hormone)	11931	-1.2410832643508911	0.016347358	Yes	

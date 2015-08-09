@@ -1,0 +1,55 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	KRT8	KRT8	keratin 8	3	5.075984477996826	0.105917335	Yes	
+row_1	MT3	MT3	metallothionein 3 (growth inhibitory factor (neurotrophic))	21	4.127350807189941	0.19083437	Yes	
+row_2	MMP12	MMP12	matrix metallopeptidase 12 (macrophage elastase)	51	3.3144888877868652	0.25775647	Yes	
+row_3	MTHFD2	MTHFD2	methylenetetrahydrofolate dehydrogenase (NADP+ dependent) 2, methenyltetrahydrofolate cyclohydrolase	105	2.730266571044922	0.31047195	Yes	
+row_4	GIPC2	GIPC2	GIPC PDZ domain containing family, member 2	187	2.2388052940368652	0.35058972	Yes	
+row_5	SLC1A4	SLC1A4	solute carrier family 1 (glutamate/neutral amino acid transporter), member 4	313	1.8239651918411255	0.3783874	Yes	
+row_6	LCN2	LCN2	lipocalin 2 (oncogene 24p3)	327	1.7875066995620728	0.41469714	Yes	
+row_7	TFRC	TFRC	transferrin receptor (p90, CD71)	330	1.7735973596572876	0.45162684	Yes	
+row_8	ANXA2	ANXA2	annexin A2	520	1.4768800735473633	0.46686536	Yes	
+row_9	APP	APP	amyloid beta (A4) precursor protein (peptidase nexin-II, Alzheimer disease)	641	1.313327670097351	0.48439696	Yes	
+row_10	HTATIP2	HTATIP2	HIV-1 Tat interactive protein 2, 30kDa	712	1.248653531074524	0.5047163	Yes	
+row_11	IGF2	IGF2	insulin-like growth factor 2 (somatomedin A)	773	1.2031692266464233	0.5249124	Yes	
+row_12	ATPIF1	ATPIF1	ATPase inhibitory factor 1	888	1.1217073202133179	0.53893304	Yes	
+row_13	UAP1L1	UAP1L1	UDP-N-acteylglucosamine pyrophosphorylase 1-like 1	1186	0.9470922946929932	0.53414756	Yes	
+row_14	BTG2	BTG2	BTG family, member 2	1202	0.9396564960479736	0.5525586	Yes	
+row_15	MGMT	MGMT	O-6-methylguanine-DNA methyltransferase	1375	0.8543426990509033	0.55618435	Yes	
+row_16	RALB	RALB	v-ral simian leukemia viral oncogene homolog B (ras related; GTP binding protein)	1464	0.8187767863273621	0.5660221	Yes	
+row_17	PSRC1	PSRC1	proline/serine-rich coiled-coil 1	1730	0.7234328389167786	0.5592086	Yes	
+row_18	CYP39A1	CYP39A1	cytochrome P450, family 39, subfamily A, polypeptide 1	1782	0.699337363243103	0.5696122	Yes	
+row_19	CSTB	CSTB	cystatin B (stefin B)	1962	0.644828736782074	0.56827617	Yes	
+row_20	CD63	CD63	CD63 molecule	2013	0.6280988454818726	0.5772726	Yes	
+row_21	SLPI	SLPI	secretory leukocyte peptidase inhibitor	2136	0.5956498980522156	0.5796281	Yes	
+row_22	CCND1	CCND1	cyclin D1	2350	0.5497704148292542	0.5734885	No	
+row_23	TLR1	TLR1	toll-like receptor 1	2627	0.49284160137176514	0.56094116	No	
+row_24	RAB3D	RAB3D	RAB3D, member RAS oncogene family	3201	0.3881344497203827	0.5216096	No	
+row_25	PSPH	PSPH	phosphoserine phosphatase	3470	0.34518492221832275	0.5066365	No	
+row_26	USP18	USP18	ubiquitin specific peptidase 18	3621	0.3274954855442047	0.50106484	No	
+row_27	SLC13A3	SLC13A3	solute carrier family 13 (sodium-dependent dicarboxylate transporter), member 3	4489	0.20749452710151672	0.43360934	No	
+row_28	ICAM1	ICAM1	intercellular adhesion molecule 1 (CD54), human rhinovirus receptor	4960	0.1490505039691925	0.39780658	No	
+row_29	NEDD9	NEDD9	neural precursor cell expressed, developmentally down-regulated 9	4990	0.14558058977127075	0.39845	No	
+row_30	TAGLN2	TAGLN2	transgelin 2	5401	0.1010456308722496	0.36661175	No	
+row_31	CBR1	CBR1	carbonyl reductase 1	5444	0.09611198306083679	0.365144	No	
+row_32	GSTM2	GSTM2	glutathione S-transferase M2 (muscle)	5509	0.08910241723060608	0.36170784	No	
+row_33	ELF3	ELF3	E74-like factor 3 (ets domain transcription factor, epithelial-specific )	5516	0.08795583993196487	0.3630506	No	
+row_34	CNN1	CNN1	calponin 1, basic, smooth muscle	5526	0.08720598369836807	0.36412928	No	
+row_35	PLAT	PLAT	plasminogen activator, tissue	5769	0.06034545972943306	0.34535167	No	
+row_36	ACTG1	ACTG1	actin, gamma 1	5932	0.0420001782476902	0.33281508	No	
+row_37	MFGE8	MFGE8	milk fat globule-EGF factor 8 protein	6763	-0.05223774537444115	0.26517627	No	
+row_38	PLSCR1	PLSCR1	phospholipid scramblase 1	8427	-0.2169518768787384	0.13200273	No	
+row_39	LPL	LPL	lipoprotein lipase	8483	-0.22254818677902222	0.1321029	No	
+row_40	IGFBP6	IGFBP6	insulin-like growth factor binding protein 6	8676	-0.2464112788438797	0.12135737	No	
+row_41	RPS24	RPS24	ribosomal protein S24	8866	-0.26757705211639404	0.11130295	No	
+row_42	ETS2	ETS2	v-ets erythroblastosis virus E26 oncogene homolog 2 (avian)	8974	-0.2837757170200348	0.10837765	No	
+row_43	IGFBP1	IGFBP1	insulin-like growth factor binding protein 1	9036	-0.2922289967536926	0.10943837	No	
+row_44	RPL12	RPL12	ribosomal protein L12	9266	-0.32184016704559326	0.097206526	No	
+row_45	NDRG1	NDRG1	N-myc downstream regulated gene 1	9702	-0.37826797366142273	0.06909625	No	
+row_46	LY6E	LY6E	lymphocyte antigen 6 complex, locus E	10659	-0.5529778599739075	0.0014966698	No	
+row_47	LY6D	LY6D	lymphocyte antigen 6 complex, locus D	10681	-0.5590009093284607	0.011449358	No	
+row_48	VIL1	VIL1	villin 1	10725	-0.568077027797699	0.01977008	No	
+row_49	GSTM1	GSTM1	glutathione S-transferase M1	10768	-0.5762991905212402	0.028345581	No	
+row_50	GNB2L1	GNB2L1	guanine nucleotide binding protein (G protein), beta polypeptide 2-like 1	11008	-0.6391687989234924	0.02192267	No	
+row_51	PPL	PPL	periplakin	11744	-0.9980698227882385	-0.018066918	No	
+row_52	NT5E	NT5E	5'-nucleotidase, ecto (CD73)	11870	-1.1361392736434937	-0.004655328	No	
+row_53	BTG3	BTG3	BTG family, member 3	11935	-1.2440671920776367	0.016064947	No	

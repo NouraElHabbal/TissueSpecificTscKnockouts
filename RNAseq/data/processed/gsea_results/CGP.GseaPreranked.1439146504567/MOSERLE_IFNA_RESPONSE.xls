@@ -1,0 +1,20 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	IFIT2	IFIT2	interferon-induced protein with tetratricopeptide repeats 2	2909	0.4401997923851013	-0.17403036	No	
+row_1	USP18	USP18	ubiquitin specific peptidase 18	3621	0.3274954855442047	-0.1835129	No	
+row_2	IFIT1	IFIT1	interferon-induced protein with tetratricopeptide repeats 1	4726	0.1780465841293335	-0.2479083	No	
+row_3	EPSTI1	EPSTI1	epithelial stromal interaction 1 (breast)	4729	0.17750604450702667	-0.22139327	No	
+row_4	MX1	MX1	myxovirus (influenza virus) resistance 1, interferon-inducible protein p78 (mouse)	4735	0.17653751373291016	-0.19527152	No	
+row_5	RSAD2	RSAD2	radical S-adenosyl methionine domain containing 2	5729	0.06420287489891052	-0.26761305	No	
+row_6	CXCL10	CXCL10	chemokine (C-X-C motif) ligand 10	5808	0.0563901849091053	-0.2655777	No	
+row_7	OAS2	OAS2	2'-5'-oligoadenylate synthetase 2, 69/71kDa	6093	0.023987391963601112	-0.28542203	No	
+row_8	IFIT3	IFIT3	interferon-induced protein with tetratricopeptide repeats 3	6912	-0.06897367537021637	-0.3425968	No	
+row_9	RTP4	RTP4	receptor transporter protein 4	8166	-0.18966884911060333	-0.41754818	Yes	
+row_10	IFITM1	IFITM1	interferon induced transmembrane protein 1 (9-27)	8527	-0.22732499241828918	-0.41310498	Yes	
+row_11	ZC3HAV1	ZC3HAV1	zinc finger CCCH-type, antiviral 1	8882	-0.27080145478248596	-0.40163162	Yes	
+row_12	CD274	CD274	CD274 molecule	8944	-0.2796095907688141	-0.36464146	Yes	
+row_13	DDX58	DDX58	DEAD (Asp-Glu-Ala-Asp) box polypeptide 58	8951	-0.28057533502578735	-0.32296482	Yes	
+row_14	STAT1	STAT1	signal transducer and activator of transcription 1, 91kDa	10085	-0.44080325961112976	-0.3502609	Yes	
+row_15	IFIH1	IFIH1	interferon induced with helicase C domain 1	11347	-0.7501665353775024	-0.34162685	Yes	
+row_16	SAMD9L	SAMD9L	sterile alpha motif domain containing 9-like	11425	-0.7884250283241272	-0.22947998	Yes	
+row_17	IFI44	IFI44	interferon-induced protein 44	11527	-0.8456834554672241	-0.110708505	Yes	
+row_18	TNFSF10	TNFSF10	tumor necrosis factor (ligand) superfamily, member 10	11805	-1.0667121410369873	0.026752599	Yes	

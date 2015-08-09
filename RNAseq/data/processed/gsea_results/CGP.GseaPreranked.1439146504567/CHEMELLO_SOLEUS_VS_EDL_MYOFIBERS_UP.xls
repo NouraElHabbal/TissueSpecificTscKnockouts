@@ -1,0 +1,33 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	TNNT2	TNNT2	troponin T type 2 (cardiac)	103	2.7426884174346924	0.07640385	Yes	
+row_1	CASQ2	CASQ2	calsequestrin 2 (cardiac muscle)	170	2.297332763671875	0.14207718	Yes	
+row_2	ATP2A2	ATP2A2	ATPase, Ca++ transporting, cardiac muscle, slow twitch 2	266	1.9558818340301514	0.19478162	Yes	
+row_3	MYH7	MYH7	myosin, heavy chain 7, cardiac muscle, beta	307	1.8274660110473633	0.2480563	Yes	
+row_4	TNNI1	TNNI1	troponin I type 1 (skeletal, slow)	336	1.7679965496063232	0.30048165	Yes	
+row_5	HSPB1	HSPB1	heat shock 27kDa protein 1	339	1.7649799585342407	0.35496268	Yes	
+row_6	TNNC1	TNNC1	troponin C type 1 (slow)	379	1.6940308809280396	0.4041887	Yes	
+row_7	TNNT1	TNNT1	troponin T type 1 (skeletal, slow)	597	1.3775783777236938	0.42890367	Yes	
+row_8	SMTNL1	SMTNL1	smoothelin-like 1	617	1.343572735786438	0.46893215	Yes	
+row_9	MYL2	MYL2	myosin, light chain 2, regulatory, cardiac, slow	646	1.30535089969635	0.5070333	Yes	
+row_10	FHL1	FHL1	four and a half LIM domains 1	709	1.249607801437378	0.54059815	Yes	
+row_11	CRYAB	CRYAB	crystallin, alpha B	839	1.1539257764816284	0.5656625	Yes	
+row_12	ITGB1BP2	ITGB1BP2	integrin beta 1 binding protein (melusin) 2	871	1.1333231925964355	0.5981894	Yes	
+row_13	PDLIM1	PDLIM1	PDZ and LIM domain 1 (elfin)	896	1.1185959577560425	0.630839	Yes	
+row_14	CSRP3	CSRP3	cysteine and glycine-rich protein 3 (cardiac LIM protein)	976	1.0720524787902832	0.6575013	Yes	
+row_15	MYOZ2	MYOZ2	myozenin 2	1654	0.7522896528244019	0.62483364	No	
+row_16	MYH3	MYH3	myosin, heavy chain 3, skeletal muscle, embryonic	1675	0.7432728409767151	0.64619327	No	
+row_17	MYL3	MYL3	myosin, light chain 3, alkali; ventricular, skeletal, slow	2518	0.5125293731689453	0.5924637	No	
+row_18	ACTN2	ACTN2	actinin, alpha 2	2532	0.5101954936981201	0.6071855	No	
+row_19	MYH6	MYH6	myosin, heavy chain 6, cardiac muscle, alpha (cardiomyopathy, hypertrophic 1)	2621	0.4939512312412262	0.615205	No	
+row_20	SMPX	SMPX	small muscle protein, X-linked	3164	0.39544206857681274	0.5826477	No	
+row_21	NFATC2	NFATC2	nuclear factor of activated T-cells, cytoplasmic, calcineurin-dependent 2	3238	0.3813440203666687	0.5884206	No	
+row_22	PPARA	PPARA	peroxisome proliferative activated receptor, alpha	5440	0.09643717855215073	0.40947554	No	
+row_23	TPM2	TPM2	tropomyosin 2 (beta)	5998	0.034907370805740356	0.36451566	No	
+row_24	ANKRD2	ANKRD2	ankyrin repeat domain 2 (stretch responsive muscle)	7548	-0.14008137583732605	0.24081509	No	
+row_25	FHL2	FHL2	four and a half LIM domains 2	8634	-0.24061691761016846	0.15858069	No	
+row_26	MYF5	MYF5	myogenic factor 5	8862	-0.2670954763889313	0.14808694	No	
+row_27	MYOT	MYOT	myotilin	9719	-0.3822694718837738	0.08916706	No	
+row_28	PPARGC1A	PPARGC1A	peroxisome proliferative activated receptor, gamma, coactivator 1, alpha	10779	-0.5797238349914551	0.019581025	No	
+row_29	CASQ1	CASQ1	calsequestrin 1 (fast-twitch, skeletal muscle)	11531	-0.8507384657859802	-0.016155243	No	
+row_30	ACTA1	ACTA1	actin, alpha 1, skeletal muscle	11553	-0.8646074533462524	0.008878447	No	
+row_31	ATP2A1	ATP2A1	ATPase, Ca++ transporting, cardiac muscle, fast twitch 1	11939	-1.2483255863189697	0.015704991	No	

@@ -1,0 +1,25 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	HAL	HAL	histidine ammonia-lyase	2306	0.5610992312431335	-0.13054907	No	
+row_1	ARHGAP9	ARHGAP9	Rho GTPase activating protein 9	2901	0.4417814612388611	-0.13242583	No	
+row_2	FGF23	FGF23	fibroblast growth factor 23	4216	0.2440008670091629	-0.2149036	No	
+row_3	SNCA	SNCA	synuclein, alpha (non A4 component of amyloid precursor)	4619	0.19237160682678223	-0.22756168	No	
+row_4	KCNK1	KCNK1	potassium channel, subfamily K, member 1	4788	0.16885881125926971	-0.2234021	No	
+row_5	CBX5	CBX5	chromobox homolog 5 (HP1 alpha homolog, Drosophila)	5930	0.042283106595277786	-0.3131363	No	
+row_6	MBP	MBP	myelin basic protein	7226	-0.10363800078630447	-0.40903777	No	
+row_7	KIF5B	KIF5B	kinesin family member 5B	7243	-0.10572434216737747	-0.39906624	No	
+row_8	PANK3	PANK3	pantothenate kinase 3	7425	-0.12551817297935486	-0.40061003	No	
+row_9	ZBTB20	ZBTB20	zinc finger and BTB domain containing 20	7713	-0.15458305180072784	-0.40780517	No	
+row_10	CNOT3	CNOT3	CCR4-NOT transcription complex, subunit 3	8257	-0.1979110836982727	-0.43151867	Yes	
+row_11	DPP4	DPP4	dipeptidyl-peptidase 4 (CD26, adenosine deaminase complexing protein 2)	8436	-0.21802528202533722	-0.4229333	Yes	
+row_12	SAMHD1	SAMHD1	SAM domain and HD domain 1	8584	-0.2345656156539917	-0.4100204	Yes	
+row_13	JAK1	JAK1	Janus kinase 1 (a protein tyrosine kinase)	8590	-0.2350369691848755	-0.38532746	Yes	
+row_14	IL1R2	IL1R2	interleukin 1 receptor, type II	8707	-0.2497882843017578	-0.36822784	Yes	
+row_15	GPC3	GPC3	glypican 3	9602	-0.36308372020721436	-0.40329197	Yes	
+row_16	GDPD3	GDPD3	glycerophosphodiester phosphodiesterase domain containing 3	9680	-0.3748018145561218	-0.3696172	Yes	
+row_17	RBM5	RBM5	RNA binding motif protein 5	9819	-0.39661240577697754	-0.3386515	Yes	
+row_18	CD8A	CD8A	CD8a molecule	9862	-0.4030000567436218	-0.29907358	Yes	
+row_19	DDX6	DDX6	DEAD (Asp-Glu-Ala-Asp) box polypeptide 6	9942	-0.41726553440093994	-0.26102817	Yes	
+row_20	NR2F2	NR2F2	nuclear receptor subfamily 2, group F, member 2	11350	-0.7517975568771362	-0.29694667	Yes	
+row_21	MLF1	MLF1	myeloid leukemia factor 1	11491	-0.819208562374115	-0.22100571	Yes	
+row_22	CLEC3B	CLEC3B	C-type lectin domain family 3, member B	11747	-1.0007933378219604	-0.13516779	Yes	
+row_23	TMEM100	TMEM100	transmembrane protein 100	12053	-1.5600483417510986	0.006277934	Yes	

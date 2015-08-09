@@ -1,0 +1,49 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	KRT18	KRT18	keratin 18	42	3.4316630363464355	0.08935412	Yes	
+row_1	MAP1B	MAP1B	microtubule-associated protein 1B	46	3.338003396987915	0.17940259	Yes	
+row_2	PERP	PERP	PERP, TP53 apoptosis effector	166	2.3357036113739014	0.23273665	Yes	
+row_3	PLXNB2	PLXNB2	plexin B2	248	2.024188995361328	0.28078908	Yes	
+row_4	FBLIM1	FBLIM1	filamin binding LIM protein 1	342	1.7640252113342285	0.32081056	Yes	
+row_5	AGT	AGT	angiotensinogen (serpin peptidase inhibitor, clade A, member 8)	386	1.6857261657714844	0.36285233	Yes	
+row_6	ARL4C	ARL4C	ADP-ribosylation factor-like 4C	541	1.451322078704834	0.389366	Yes	
+row_7	ITGA5	ITGA5	integrin, alpha 5 (fibronectin receptor, alpha polypeptide)	624	1.3360729217529297	0.41872135	Yes	
+row_8	ABHD2	ABHD2	abhydrolase domain containing 2	769	1.205216646194458	0.43940526	Yes	
+row_9	LGALS1	LGALS1	lectin, galactoside-binding, soluble, 1 (galectin 1)	922	1.1040477752685547	0.4566903	Yes	
+row_10	GADD45A	GADD45A	growth arrest and DNA-damage-inducible, alpha	1009	1.0567742586135864	0.47815922	Yes	
+row_11	COTL1	COTL1	coactosin-like 1 (Dictyostelium)	1063	1.027750849723816	0.50157434	Yes	
+row_12	CCL2	CCL2	chemokine (C-C motif) ligand 2	1092	1.0058143138885498	0.52646524	Yes	
+row_13	CTSB	CTSB	cathepsin B	1122	0.9887266159057617	0.5508112	Yes	
+row_14	LMNA	LMNA	lamin A/C	1193	0.9446438550949097	0.5705711	Yes	
+row_15	CDKN1A	CDKN1A	cyclin-dependent kinase inhibitor 1A (p21, Cip1)	1414	0.8330228328704834	0.5748964	Yes	
+row_16	TEC	TEC	tec protein tyrosine kinase	1429	0.830294132232666	0.5961981	Yes	
+row_17	SMARCA4	SMARCA4	SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily a, member 4	2237	0.5783480405807495	0.5450495	No	
+row_18	CTSH	CTSH	cathepsin H	2744	0.4657009243965149	0.51576674	No	
+row_19	PHLDB1	PHLDB1	pleckstrin homology-like domain, family B, member 1	2779	0.45874181389808655	0.5253621	No	
+row_20	HKDC1	HKDC1	hexokinase domain containing 1	3569	0.3342083692550659	0.46909907	No	
+row_21	UBE2H	UBE2H	ubiquitin-conjugating enzyme E2H (UBC8 homolog, yeast)	3580	0.3328505754470825	0.47727537	No	
+row_22	ITGA3	ITGA3	integrin, alpha 3 (antigen CD49C, alpha 3 subunit of VLA-3 receptor)	3781	0.3047839105129242	0.46896657	No	
+row_23	IFI30	IFI30	interferon, gamma-inducible protein 30	5421	0.09809786081314087	0.33596388	No	
+row_24	EMP3	EMP3	epithelial membrane protein 3	5422	0.09796847403049469	0.33861405	No	
+row_25	FOSL2	FOSL2	FOS-like antigen 2	5468	0.0935618206858635	0.33742043	No	
+row_26	EPHB2	EPHB2	EPH receptor B2	5928	0.04265234246850014	0.30058384	No	
+row_27	FADS3	FADS3	fatty acid desaturase 3	6464	-0.01903846114873886	0.25681812	No	
+row_28	LOXL2	LOXL2	lysyl oxidase-like 2	6562	-0.029485728591680527	0.24958727	No	
+row_29	AHNAK	AHNAK	AHNAK nucleoprotein (desmoyokin)	6609	-0.034920576959848404	0.24672459	No	
+row_30	MFGE8	MFGE8	milk fat globule-EGF factor 8 protein	6763	-0.05223774537444115	0.23547421	No	
+row_31	SPOCD1	SPOCD1	SPOC domain containing 1	7138	-0.09501292556524277	0.20708928	No	
+row_32	KRT15	KRT15	keratin 15	7554	-0.14051663875579834	0.17654179	No	
+row_33	S100A2	S100A2	S100 calcium binding protein A2	8094	-0.1828342080116272	0.13687585	No	
+row_34	GPR56	GPR56	G protein-coupled receptor 56	8571	-0.23225243389606476	0.10376109	No	
+row_35	FHL2	FHL2	four and a half LIM domains 2	8634	-0.24061691761016846	0.10513845	No	
+row_36	SMARCA2	SMARCA2	SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily a, member 2	8695	-0.24855303764343262	0.10689603	No	
+row_37	ACTN4	ACTN4	actinin, alpha 4	8826	-0.26415833830833435	0.103282005	No	
+row_38	DCBLD2	DCBLD2	discoidin, CUB and LCCL domain containing 2	9408	-0.3407055139541626	0.06441041	No	
+row_39	IGFBP4	IGFBP4	insulin-like growth factor binding protein 4	9773	-0.3894881010055542	0.044819042	No	
+row_40	ATP2B4	ATP2B4	ATPase, Ca++ transporting, plasma membrane 4	9847	-0.40109091997146606	0.04962696	No	
+row_41	PTPN7	PTPN7	protein tyrosine phosphatase, non-receptor type 7	10421	-0.5019062757492065	0.015778173	No	
+row_42	FLNB	FLNB	filamin B, beta (actin binding protein 278)	10501	-0.5181998014450073	0.023257412	No	
+row_43	JUN	JUN	jun oncogene	10534	-0.5250408053398132	0.03481179	No	
+row_44	SERPINE2	SERPINE2	serpin peptidase inhibitor, clade E (nexin, plasminogen activator inhibitor type 1), member 2	11140	-0.6798207759857178	0.0031272245	No	
+row_45	TPM1	TPM1	tropomyosin 1 (alpha)	11571	-0.8726797103881836	-0.008855933	No	
+row_46	AIM1	AIM1	absent in melanoma 1	11680	-0.9496936202049255	0.007895437	No	
+row_47	THY1	THY1	Thy-1 cell surface antigen	11818	-1.0788657665252686	0.025740795	No	

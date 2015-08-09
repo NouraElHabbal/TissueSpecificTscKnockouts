@@ -1,0 +1,28 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GDF15	GDF15	growth differentiation factor 15	13	4.566884994506836	0.14306217	Yes	
+row_1	MAP1B	MAP1B	microtubule-associated protein 1B	46	3.338003396987915	0.24576955	Yes	
+row_2	NELL2	NELL2	NEL-like 2 (chicken)	53	3.286695718765259	0.34900582	Yes	
+row_3	RPRM	RPRM	reprimo, TP53 dependent G2 arrest mediator candidate	115	2.6514458656311035	0.42764848	Yes	
+row_4	SLC7A5	SLC7A5	solute carrier family 7 (cationic amino acid transporter, y+ system), member 5	172	2.2902958393096924	0.495306	Yes	
+row_5	ASNS	ASNS	asparagine synthetase	296	1.8832995891571045	0.54458237	Yes	
+row_6	SLC1A4	SLC1A4	solute carrier family 1 (glutamate/neutral amino acid transporter), member 4	313	1.8239651918411255	0.6008269	Yes	
+row_7	SDF2L1	SDF2L1	stromal cell-derived factor 2-like 1	400	1.6620875597000122	0.64617866	Yes	
+row_8	SESN2	SESN2	sestrin 2	883	1.1254210472106934	0.6418735	Yes	
+row_9	DDIT3	DDIT3	DNA-damage-inducible transcript 3	913	1.1073392629623413	0.6744263	Yes	
+row_10	MFAP3L	MFAP3L	microfibrillar-associated protein 3-like	953	1.0845692157745361	0.70543426	Yes	
+row_11	GADD45A	GADD45A	growth arrest and DNA-damage-inducible, alpha	1009	1.0567742586135864	0.734243	Yes	
+row_12	SLC7A11	SLC7A11	solute carrier family 7, (cationic amino acid transporter, y+ system) member 11	1124	0.9876813292503357	0.7559962	Yes	
+row_13	SEC24D	SEC24D	SEC24 related gene family, member D (S. cerevisiae)	2566	0.5089130401611328	0.6529967	No	
+row_14	SLC3A2	SLC3A2	solute carrier family 3 (activators of dibasic and neutral amino acid transport), member 2	3214	0.38459330797195435	0.6116771	No	
+row_15	PSPH	PSPH	phosphoserine phosphatase	3470	0.34518492221832275	0.6015024	No	
+row_16	DNAJB9	DNAJB9	DnaJ (Hsp40) homolog, subfamily B, member 9	4126	0.25783082842826843	0.555521	No	
+row_17	HERPUD1	HERPUD1	homocysteine-inducible, endoplasmic reticulum stress-inducible, ubiquitin-like domain member 1	4585	0.19660243391990662	0.5238842	No	
+row_18	ASS1	ASS1	argininosuccinate synthetase 1	5032	0.14159560203552246	0.49150273	No	
+row_19	EGR3	EGR3	early growth response 3	5159	0.1286514550447464	0.48515248	No	
+row_20	MID1	MID1	midline 1 (Opitz/BBB syndrome)	6427	-0.013896630145609379	0.38090628	No	
+row_21	SERTAD2	SERTAD2	SERTA domain containing 2	7773	-0.16002516448497772	0.2748274	No	
+row_22	PHGDH	PHGDH	phosphoglycerate dehydrogenase	9133	-0.3064509332180023	0.17221312	No	
+row_23	INHBE	INHBE	inhibin, beta E	9577	-0.35896414518356323	0.14693996	No	
+row_24	IFRD1	IFRD1	interferon-related developmental regulator 1	9705	-0.37912893295288086	0.14841245	No	
+row_25	SFMBT2	SFMBT2	Scm-like with four mbt domains 2	9895	-0.40979501605033875	0.14573011	No	
+row_26	IGF1	IGF1	insulin-like growth factor 1 (somatomedin C)	11926	-1.228389024734497	0.016772507	No	

@@ -1,0 +1,41 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	RASD1	RASD1	RAS, dexamethasone-induced 1	349	1.7570446729660034	0.05388676	No	
+row_1	PEMT	PEMT	phosphatidylethanolamine N-methyltransferase	1824	0.6857957243919373	-0.035732456	No	
+row_2	CBX4	CBX4	chromobox homolog 4 (Pc class homolog, Drosophila)	1921	0.6566181182861328	-0.012747388	No	
+row_3	RGS2	RGS2	regulator of G-protein signalling 2, 24kDa	2056	0.6173893809318542	0.005246984	No	
+row_4	SELENBP1	SELENBP1	selenium binding protein 1	2607	0.4969618320465088	-0.016839163	No	
+row_5	IDH1	IDH1	isocitrate dehydrogenase 1 (NADP+), soluble	2669	0.48206833004951477	8.198818E-4	No	
+row_6	AP3S1	AP3S1	adaptor-related protein complex 3, sigma 1 subunit	2840	0.4446600377559662	0.0077013494	No	
+row_7	DHRS3	DHRS3	dehydrogenase/reductase (SDR family) member 3	3498	0.34269094467163086	-0.030500965	No	
+row_8	TPP2	TPP2	tripeptidyl peptidase II	3936	0.2809934616088867	-0.053412262	No	
+row_9	HSD17B4	HSD17B4	hydroxysteroid (17-beta) dehydrogenase 4	3999	0.2738986015319824	-0.045640342	No	
+row_10	HK2	HK2	hexokinase 2	4403	0.21883800625801086	-0.06866681	No	
+row_11	HIPK2	HIPK2	homeodomain interacting protein kinase 2	4931	0.15186573565006256	-0.10510395	No	
+row_12	AQP7	AQP7	aquaporin 7	5164	0.12790250778198242	-0.118269384	No	
+row_13	PXMP2	PXMP2	peroxisomal membrane protein 2, 22kDa	5425	0.09776546061038971	-0.13517019	No	
+row_14	GPAM	GPAM	glycerol-3-phosphate acyltransferase, mitochondrial	5778	0.05900277569890022	-0.16150624	No	
+row_15	ALAD	ALAD	aminolevulinate, delta-, dehydratase	5883	0.04734616354107857	-0.16787846	No	
+row_16	IDH3G	IDH3G	isocitrate dehydrogenase 3 (NAD+) gamma	6120	0.020816178992390633	-0.18641832	No	
+row_17	TST	TST	thiosulfate sulfurtransferase (rhodanese)	7178	-0.09901781380176544	-0.26918238	No	
+row_18	APOC4	APOC4	apolipoprotein C-IV	7528	-0.13946035504341125	-0.2914809	No	
+row_19	RNF11	RNF11	ring finger protein 11	8377	-0.21155044436454773	-0.35165787	No	
+row_20	ARAF	ARAF	v-raf murine sarcoma 3611 viral oncogene homolog	8422	-0.2164297103881836	-0.3451038	No	
+row_21	LPL	LPL	lipoprotein lipase	8483	-0.22254818677902222	-0.33958498	No	
+row_22	PPARG	PPARG	peroxisome proliferative activated receptor, gamma	8578	-0.23371298611164093	-0.33635253	No	
+row_23	ABCD2	ABCD2	ATP-binding cassette, sub-family D (ALD), member 2	8624	-0.23894377052783966	-0.3288208	No	
+row_24	RETN	RETN	resistin	9039	-0.2926585078239441	-0.3492803	No	
+row_25	FASN	FASN	fatty acid synthase	9177	-0.310342401266098	-0.34599543	No	
+row_26	CFD	CFD	complement factor D (adipsin)	9658	-0.3710888922214508	-0.36822003	No	
+row_27	ADRB3	ADRB3	adrenergic, beta-3-, receptor	10335	-0.4846135675907135	-0.4013096	Yes	
+row_28	SLC2A4	SLC2A4	solute carrier family 2 (facilitated glucose transporter), member 4	10437	-0.5049959421157837	-0.38587922	Yes	
+row_29	MUT	MUT	methylmalonyl Coenzyme A mutase	10671	-0.5573167204856873	-0.37890276	Yes	
+row_30	PFKFB1	PFKFB1	6-phosphofructo-2-kinase/fructose-2,6-biphosphatase 1	11070	-0.6558091640472412	-0.3809351	Yes	
+row_31	FXYD1	FXYD1	FXYD domain containing ion transport regulator 1 (phospholemman)	11093	-0.6621673107147217	-0.35156792	Yes	
+row_32	PLA2G6	PLA2G6	phospholipase A2, group VI (cytosolic, calcium-independent)	11126	-0.672356903553009	-0.32254794	Yes	
+row_33	ADIPOQ	ADIPOQ	adiponectin, C1Q and collagen domain containing	11337	-0.7462906241416931	-0.30476874	Yes	
+row_34	CIB2	CIB2	calcium and integrin binding family member 2	11445	-0.7973878979682922	-0.27606353	Yes	
+row_35	IRX3	IRX3	iroquois homeobox protein 3	11532	-0.8517186045646667	-0.24306247	Yes	
+row_36	AOC3	AOC3	amine oxidase, copper containing 3 (vascular adhesion protein 1)	11808	-1.0698665380477905	-0.21541977	Yes	
+row_37	NRIP1	NRIP1	nuclear receptor interacting protein 1	11845	-1.0998408794403076	-0.16659695	Yes	
+row_38	CDKN2C	CDKN2C	cyclin-dependent kinase inhibitor 2C (p18, inhibits CDK4)	12099	-1.8665074110031128	-0.09961424	Yes	
+row_39	ORM1	ORM1	orosomucoid 1	12113	-2.1659646034240723	0.0013234649	Yes	

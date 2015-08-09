@@ -1,0 +1,22 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	RRAD	RRAD	Ras-related associated with diabetes	79	2.9876885414123535	0.1532043	Yes	
+row_1	PMAIP1	PMAIP1	phorbol-12-myristate-13-acetate-induced protein 1	135	2.4894676208496094	0.28175464	Yes	
+row_2	ATF3	ATF3	activating transcription factor 3	203	2.184798240661621	0.39302567	Yes	
+row_3	NUPR1	NUPR1	-	603	1.3672730922698975	0.43317237	Yes	
+row_4	SAT1	SAT1	spermidine/spermine N1-acetyltransferase 1	803	1.1786357164382935	0.47975078	Yes	
+row_5	HBEGF	HBEGF	heparin-binding EGF-like growth factor	824	1.1649587154388428	0.54038036	Yes	
+row_6	ACTC1	ACTC1	actin, alpha, cardiac muscle 1	904	1.1132994890213013	0.5933757	Yes	
+row_7	GADD45A	GADD45A	growth arrest and DNA-damage-inducible, alpha	1009	1.0567742586135864	0.6412845	Yes	
+row_8	MMP3	MMP3	matrix metallopeptidase 3 (stromelysin 1, progelatinase)	1116	0.9927090406417847	0.6856031	Yes	
+row_9	HTR6	HTR6	5-hydroxytryptamine (serotonin) receptor 6	1527	0.7933934330940247	0.6941605	Yes	
+row_10	MAFF	MAFF	v-maf musculoaponeurotic fibrosarcoma oncogene homolog F (avian)	2732	0.4681912362575531	0.61976093	No	
+row_11	ISG15	ISG15	ISG15 ubiquitin-like modifier	3168	0.3943147659301758	0.6049181	No	
+row_12	FSTL3	FSTL3	follistatin-like 3 (secreted glycoprotein)	3972	0.2774743437767029	0.5534382	No	
+row_13	SFI1	SFI1	Sfi1 homolog, spindle assembly associated (yeast)	4851	0.1605389267206192	0.48951292	No	
+row_14	TCEB2	TCEB2	transcription elongation factor B (SIII), polypeptide 2 (18kDa, elongin B)	5145	0.13028791546821594	0.47228152	No	
+row_15	TSC22D3	TSC22D3	TSC22 domain family, member 3	6587	-0.03213348239660263	0.35499707	No	
+row_16	LRBA	LRBA	LPS-responsive vesicle trafficking, beach and anchor containing	7503	-0.1366814523935318	0.28674072	No	
+row_17	IL11	IL11	interleukin 11	7810	-0.1630837321281433	0.27018908	No	
+row_18	RPS20	RPS20	ribosomal protein S20	9384	-0.3367219865322113	0.15828758	No	
+row_19	COL13A1	COL13A1	collagen, type XIII, alpha 1	9690	-0.37690141797065735	0.15324968	No	
+row_20	HIST1H2BE	HIST1H2BE	histone cluster 1, H2be	11610	-0.8994804620742798	0.042860717	No	

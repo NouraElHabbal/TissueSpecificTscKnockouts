@@ -1,0 +1,30 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ADD2	ADD2	adducin 2 (beta)	701	1.2567250728607178	0.025821626	No	
+row_1	HYOU1	HYOU1	hypoxia up-regulated 1	1415	0.8329110145568848	0.022407763	No	
+row_2	THBS1	THBS1	thrombospondin 1	1556	0.785448431968689	0.063182354	No	
+row_3	SEMA3B	SEMA3B	sema domain, immunoglobulin domain (Ig), short basic domain, secreted, (semaphorin) 3B	2054	0.6180148720741272	0.063297145	No	
+row_4	TNFAIP6	TNFAIP6	tumor necrosis factor, alpha-induced protein 6	2283	0.5688839554786682	0.08236731	No	
+row_5	STIL	STIL	SCL/TAL1 interrupting locus	2829	0.44622501730918884	0.06706706	No	
+row_6	TJP2	TJP2	tight junction protein 2 (zona occludens 2)	3641	0.32429665327072144	0.021659588	No	
+row_7	GLUD1	GLUD1	glutamate dehydrogenase 1	4227	0.24219411611557007	-0.010543216	No	
+row_8	NONO	NONO	non-POU domain containing, octamer-binding	4636	0.19044697284698486	-0.031567663	No	
+row_9	LAMC1	LAMC1	laminin, gamma 1 (formerly LAMB2)	5202	0.12311673164367676	-0.07005327	No	
+row_10	BAG1	BAG1	BCL2-associated athanogene	5658	0.07253628969192505	-0.1028195	No	
+row_11	PKN2	PKN2	protein kinase N2	5915	0.04434813931584358	-0.12101933	No	
+row_12	EBI3	EBI3	Epstein-Barr virus induced gene 3	6344	-0.0053655365481972694	-0.15603074	No	
+row_13	SMAD5	SMAD5	SMAD, mothers against DPP homolog 5 (Drosophila)	6408	-0.012213537469506264	-0.16042298	No	
+row_14	MAN1A2	MAN1A2	mannosidase, alpha, class 1A, member 2	6410	-0.012297138571739197	-0.15968612	No	
+row_15	CAD	CAD	carbamoyl-phosphate synthetase 2, aspartate transcarbamylase, and dihydroorotase	6854	-0.06326357275247574	-0.19207865	No	
+row_16	NUMA1	NUMA1	nuclear mitotic apparatus protein 1	7008	-0.080025315284729	-0.19938919	No	
+row_17	IREB2	IREB2	iron-responsive element binding protein 2	7186	-0.09990746527910233	-0.20735803	No	
+row_18	MYB	MYB	v-myb myeloblastosis viral oncogene homolog (avian)	8280	-0.2000160962343216	-0.28435168	No	
+row_19	CYP27A1	CYP27A1	cytochrome P450, family 27, subfamily A, polypeptide 1	8412	-0.21553896367549896	-0.28081328	No	
+row_20	JAK1	JAK1	Janus kinase 1 (a protein tyrosine kinase)	8590	-0.2350369691848755	-0.2797768	No	
+row_21	CRAT	CRAT	carnitine acetyltransferase	9538	-0.35486865043640137	-0.33438563	No	
+row_22	TKT	TKT	transketolase (Wernicke-Korsakoff syndrome)	9726	-0.3833214044570923	-0.32429358	No	
+row_23	TCOF1	TCOF1	Treacher Collins-Franceschetti syndrome 1	10798	-0.5836021900177002	-0.37390622	Yes	
+row_24	NPM1	NPM1	nucleophosmin (nucleolar phosphoprotein B23, numatrin)	10914	-0.6099134683609009	-0.3427637	Yes	
+row_25	TJP1	TJP1	tight junction protein 1 (zona occludens 1)	10927	-0.6137488484382629	-0.30285388	Yes	
+row_26	HIPK3	HIPK3	homeodomain interacting protein kinase 3	11059	-0.6541606187820435	-0.27008483	Yes	
+row_27	TNFAIP3	TNFAIP3	tumor necrosis factor, alpha-induced protein 3	11439	-0.792885959148407	-0.24856503	Yes	
+row_28	AQP4	AQP4	aquaporin 4	12129	-4.584230899810791	3.2647222E-8	Yes	

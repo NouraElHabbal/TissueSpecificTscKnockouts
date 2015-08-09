@@ -1,0 +1,23 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SH3BP2	SH3BP2	SH3-domain binding protein 2	302	1.85358464717865	0.111837536	No	
+row_1	SDC4	SDC4	syndecan 4 (amphiglycan, ryudocan)	822	1.1687729358673096	0.15521942	No	
+row_2	CCL2	CCL2	chemokine (C-C motif) ligand 2	1092	1.0058143138885498	0.20722377	No	
+row_3	DCHS1	DCHS1	dachsous 1 (Drosophila)	1949	0.6498022079467773	0.18447691	No	
+row_4	EZH2	EZH2	enhancer of zeste homolog 2 (Drosophila)	4593	0.19570425152778625	-0.019367099	No	
+row_5	CACNB1	CACNB1	calcium channel, voltage-dependent, beta 1 subunit	5146	0.13021384179592133	-0.05534805	No	
+row_6	HSF4	HSF4	heat shock transcription factor 4	5952	0.04026172310113907	-0.118862025	No	
+row_7	VRK2	VRK2	vaccinia related kinase 2	6071	0.026854559779167175	-0.126626	No	
+row_8	STK3	STK3	serine/threonine kinase 3 (STE20 homolog, yeast)	6104	0.02245352603495121	-0.12761198	No	
+row_9	MKNK1	MKNK1	MAP kinase interacting serine/threonine kinase 1	6489	-0.021583521738648415	-0.15773386	No	
+row_10	DOC2A	DOC2A	double C2-like domains, alpha	7836	-0.16357490420341492	-0.2568295	No	
+row_11	VRK1	VRK1	vaccinia related kinase 1	7962	-0.17385809123516083	-0.25432393	No	
+row_12	ATP2B1	ATP2B1	ATPase, Ca++ transporting, plasma membrane 1	7980	-0.17475953698158264	-0.2428321	No	
+row_13	PLSCR1	PLSCR1	phospholipid scramblase 1	8427	-0.2169518768787384	-0.26365793	No	
+row_14	ELF4	ELF4	E74-like factor 4 (ets domain transcription factor)	8625	-0.23915286362171173	-0.26228058	No	
+row_15	CCRL2	CCRL2	chemokine (C-C motif) receptor-like 2	8968	-0.2827673554420471	-0.2696604	No	
+row_16	GTPBP1	GTPBP1	GTP binding protein 1	10190	-0.45975545048713684	-0.33657655	No	
+row_17	PFKFB4	PFKFB4	6-phosphofructo-2-kinase/fructose-2,6-biphosphatase 4	11540	-0.8585307598114014	-0.38463777	Yes	
+row_18	FRMPD4	FRMPD4	FERM and PDZ domain containing 4	11856	-1.1162467002868652	-0.32828355	Yes	
+row_19	UPK2	UPK2	uroplakin 2	11924	-1.2251571416854858	-0.24341029	Yes	
+row_20	PIM1	PIM1	pim-1 oncogene	12082	-1.7335586547851562	-0.12845415	Yes	
+row_21	HIST1H4I	HIST1H4I	histone cluster 1, H4i	12091	-1.792244553565979	0.0031384553	Yes	

@@ -1,0 +1,48 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ALX4	ALX4	aristaless-like homeobox 4	1143	0.9790715575218201	-0.03615679	No	
+row_1	EMP1	EMP1	epithelial membrane protein 1	1753	0.7121267318725586	-0.044052687	No	
+row_2	AKAP13	AKAP13	A kinase (PRKA) anchor protein 13	2334	0.5549412965774536	-0.058930617	No	
+row_3	RPLP0	RPLP0	ribosomal protein, large, P0	3417	0.35282397270202637	-0.12741852	No	
+row_4	FXYD5	FXYD5	FXYD domain containing ion transport regulator 5	3522	0.3400653004646301	-0.115727805	No	
+row_5	VAMP3	VAMP3	vesicle-associated membrane protein 3 (cellubrevin)	4046	0.26869481801986694	-0.14297387	No	
+row_6	STAM	STAM	signal transducing adaptor molecule (SH3 domain and ITAM motif) 1	4188	0.24783749878406525	-0.13985021	No	
+row_7	SLC38A2	SLC38A2	solute carrier family 38, member 2	4274	0.2359844297170639	-0.13279942	No	
+row_8	TOMM20	TOMM20	translocase of outer mitochondrial membrane 20 homolog (yeast)	5551	0.08315201103687286	-0.23343915	No	
+row_9	EEF1G	EEF1G	eukaryotic translation elongation factor 1 gamma	5780	0.05892791226506233	-0.24879134	No	
+row_10	RPS19	RPS19	ribosomal protein S19	5897	0.04578066244721413	-0.25565904	No	
+row_11	MXRA7	MXRA7	matrix-remodelling associated 7	6171	0.01507734227925539	-0.27735284	No	
+row_12	TMEM87A	TMEM87A	transmembrane protein 87A	6772	-0.053317733108997345	-0.32382694	No	
+row_13	RPL37A	RPL37A	ribosomal protein L37a	6781	-0.05445905402302742	-0.32123846	No	
+row_14	ITGA6	ITGA6	integrin, alpha 6	6806	-0.05687878280878067	-0.31982973	No	
+row_15	RPL6	RPL6	ribosomal protein L6	7361	-0.1191999539732933	-0.35856447	No	
+row_16	TMED2	TMED2	transmembrane emp24 domain trafficking protein 2	7510	-0.13729539513587952	-0.36261818	No	
+row_17	ZDHHC11	ZDHHC11	zinc finger, DHHC-type containing 11	7721	-0.15504032373428345	-0.3707439	No	
+row_18	RAB14	RAB14	RAB14, member RAS oncogene family	7966	-0.1741565465927124	-0.3805425	No	
+row_19	TBC1D15	TBC1D15	TBC1 domain family, member 15	8351	-0.20739470422267914	-0.39994368	Yes	
+row_20	IL12RB1	IL12RB1	interleukin 12 receptor, beta 1	8383	-0.21202845871448517	-0.3898537	Yes	
+row_21	RPS6	RPS6	ribosomal protein S6	8496	-0.22425711154937744	-0.38573745	Yes	
+row_22	FAU	FAU	Finkel-Biskis-Reilly murine sarcoma virus (FBR-MuSV) ubiquitously expressed (fox derived); ribosomal protein S30	8713	-0.25025278329849243	-0.38867667	Yes	
+row_23	CTDSPL	CTDSPL	CTD (carboxy-terminal domain, RNA polymerase II, polypeptide A) small phosphatase-like	8800	-0.2612375020980835	-0.38020134	Yes	
+row_24	RPS9	RPS9	ribosomal protein S9	8806	-0.26222920417785645	-0.36496317	Yes	
+row_25	RPL13A	RPL13A	ribosomal protein L13a	8856	-0.2665601968765259	-0.353108	Yes	
+row_26	CDC42EP3	CDC42EP3	CDC42 effector protein (Rho GTPase binding) 3	8865	-0.2675533592700958	-0.33780032	Yes	
+row_27	RPS28	RPS28	ribosomal protein S28	9095	-0.3005684018135071	-0.33881223	Yes	
+row_28	TMEM57	TMEM57	transmembrane protein 57	9154	-0.30767205357551575	-0.325248	Yes	
+row_29	RPL7	RPL7	ribosomal protein L7	9241	-0.3187844157218933	-0.3133378	Yes	
+row_30	RPS20	RPS20	ribosomal protein S20	9384	-0.3367219865322113	-0.30499154	Yes	
+row_31	RPS16	RPS16	ribosomal protein S16	9406	-0.33961305022239685	-0.28645867	Yes	
+row_32	RPL27	RPL27	ribosomal protein L27	9516	-0.352959543466568	-0.27441213	Yes	
+row_33	NDRG1	NDRG1	N-myc downstream regulated gene 1	9702	-0.37826797366142273	-0.2671448	Yes	
+row_34	OLFML2A	OLFML2A	olfactomedin-like 2A	9787	-0.3914966881275177	-0.250729	Yes	
+row_35	RNF139	RNF139	ring finger protein 139	9864	-0.40309733152389526	-0.23295872	Yes	
+row_36	CD34	CD34	CD34 molecule	9991	-0.4248838722705841	-0.21802609	Yes	
+row_37	CD69	CD69	CD69 molecule	10165	-0.45515909790992737	-0.20517613	Yes	
+row_38	RPL13	RPL13	ribosomal protein L13	10210	-0.4625830352306366	-0.18120691	Yes	
+row_39	RPL17	RPL17	ribosomal protein L17	10527	-0.5236676931381226	-0.17610262	Yes	
+row_40	RPL5	RPL5	ribosomal protein L5	10553	-0.5291743278503418	-0.14658624	Yes	
+row_41	RPS5	RPS5	ribosomal protein S5	10831	-0.5931241512298584	-0.13410856	Yes	
+row_42	TPT1	TPT1	tumor protein, translationally-controlled 1	11032	-0.6463155150413513	-0.11208338	Yes	
+row_43	RPL22	RPL22	ribosomal protein L22	11139	-0.6792309284210205	-0.08031403	Yes	
+row_44	EEF2	EEF2	eukaryotic translation elongation factor 2	11452	-0.8007872104644775	-0.058337968	Yes	
+row_45	EIF4B	EIF4B	eukaryotic translation initiation factor 4B	11627	-0.911708652973175	-0.018320205	Yes	
+row_46	KLF10	KLF10	Kruppel-like factor 10	11748	-1.001595139503479	0.0315318	Yes	

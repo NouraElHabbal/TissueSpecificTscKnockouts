@@ -1,0 +1,30 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	EGR1	EGR1	early growth response 1	61	3.1635630130767822	0.109638035	Yes	
+row_1	FOSL1	FOSL1	FOS-like antigen 1	138	2.4760935306549072	0.19311579	Yes	
+row_2	SLC2A1	SLC2A1	solute carrier family 2 (facilitated glucose transporter), member 1	271	1.9320694208145142	0.25224498	Yes	
+row_3	PHLDA1	PHLDA1	pleckstrin homology-like domain, family A, member 1	322	1.7948793172836304	0.31317732	Yes	
+row_4	CCL7	CCL7	chemokine (C-C motif) ligand 7	387	1.6855260133743286	0.36898872	Yes	
+row_5	EREG	EREG	epiregulin	426	1.611751914024353	0.42427438	Yes	
+row_6	CDR2	CDR2	cerebellar degeneration-related protein 2, 62kDa	501	1.5025736093521118	0.47262737	Yes	
+row_7	SOCS3	SOCS3	suppressor of cytokine signaling 3	685	1.2763375043869019	0.5037718	Yes	
+row_8	HMOX1	HMOX1	heme oxygenase (decycling) 1	736	1.2308728694915771	0.54425895	Yes	
+row_9	IER2	IER2	immediate early response 2	903	1.1133939027786255	0.5709015	Yes	
+row_10	EGR2	EGR2	early growth response 2 (Krox-20 homolog, Drosophila)	1036	1.0438190698623657	0.5978317	Yes	
+row_11	CCL2	CCL2	chemokine (C-C motif) ligand 2	1092	1.0058143138885498	0.62974733	Yes	
+row_12	SRXN1	SRXN1	sulfiredoxin 1 homolog (S. cerevisiae)	1225	0.9288128614425659	0.65250856	Yes	
+row_13	SPSB1	SPSB1	splA/ryanodine receptor domain and SOCS box containing 1	1328	0.877851665019989	0.67590153	Yes	
+row_14	TUBB2A	TUBB2A	tubulin, beta 2A	1351	0.8663573861122131	0.7054889	Yes	
+row_15	THBS1	THBS1	thrombospondin 1	1556	0.785448431968689	0.71710324	Yes	
+row_16	TUBB6	TUBB6	tubulin, beta 6	1879	0.6668683886528015	0.7146678	Yes	
+row_17	HMGCR	HMGCR	3-hydroxy-3-methylglutaryl-Coenzyme A reductase	1928	0.6548952460289001	0.7344411	Yes	
+row_18	DUSP6	DUSP6	dual specificity phosphatase 6	2124	0.5983901023864746	0.7400183	Yes	
+row_19	CCRN4L	CCRN4L	CCR4 carbon catabolite repression 4-like (S. cerevisiae)	3497	0.34276342391967773	0.63906443	No	
+row_20	STK40	STK40	serine/threonine kinase 40	3701	0.3149714171886444	0.6337066	No	
+row_21	BYSL	BYSL	bystin-like	4138	0.25612345337867737	0.606961	No	
+row_22	B3GNT2	B3GNT2	UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 2	4371	0.22392208874225616	0.5959062	No	
+row_23	PTGES	PTGES	prostaglandin E synthase	5181	0.12596698105335236	0.5336185	No	
+row_24	SYNJ2	SYNJ2	synaptojanin 2	5311	0.11004234105348587	0.52694726	No	
+row_25	PPAN	PPAN	peter pan homolog (Drosophila)	5822	0.05397351086139679	0.48675853	No	
+row_26	SPRED2	SPRED2	sprouty-related, EVH1 domain containing 2	6920	-0.06970027834177017	0.39863148	No	
+row_27	SLC25A28	SLC25A28	solute carrier family 25, member 28	9042	-0.2930234372615814	0.2339788	No	
+row_28	AMOTL2	AMOTL2	angiomotin like 2	10781	-0.5804578065872192	0.11139584	No	

@@ -1,0 +1,27 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	IGFBP5	IGFBP5	insulin-like growth factor binding protein 5	513	1.489218831062317	0.070041776	No	
+row_1	EID1	EID1	EP300 interacting inhibitor of differentiation 1	1121	0.9889194965362549	0.09454881	No	
+row_2	SEC63	SEC63	SEC63 homolog (S. cerevisiae)	2830	0.44619032740592957	-0.012877669	No	
+row_3	CERK	CERK	ceramide kinase	2906	0.440888375043869	0.014209683	No	
+row_4	PEX3	PEX3	peroxisomal biogenesis factor 3	3460	0.3466430902481079	-0.005308833	No	
+row_5	CCPG1	CCPG1	cell cycle progression 1	4141	0.25566399097442627	-0.042187963	No	
+row_6	ITM2B	ITM2B	integral membrane protein 2B	4944	0.15018565952777863	-0.097109206	No	
+row_7	TAX1BP1	TAX1BP1	Tax1 (human T-cell leukemia virus type I) binding protein 1	5674	0.07067500054836273	-0.15200181	No	
+row_8	ARHGAP6	ARHGAP6	Rho GTPase activating protein 6	6658	-0.040450092405080795	-0.23016097	No	
+row_9	HERC1	HERC1	hect (homologous to the E6-AP (UBE3A) carboxyl terminus) domain and RCC1 (CHC1)-like domain (RLD) 1	7185	-0.09976828843355179	-0.26608595	No	
+row_10	TSPAN7	TSPAN7	tetraspanin 7	7298	-0.11344251036643982	-0.26677507	No	
+row_11	RB1CC1	RB1CC1	RB1-inducible coiled-coil 1	7999	-0.17642948031425476	-0.31128812	No	
+row_12	RECK	RECK	reversion-inducing-cysteine-rich protein with kazal motifs	8467	-0.22171075642108917	-0.33313298	No	
+row_13	SIRT1	SIRT1	sirtuin (silent mating type information regulation 2 homolog) 1 (S. cerevisiae)	8568	-0.23205697536468506	-0.3238762	No	
+row_14	PDE8A	PDE8A	phosphodiesterase 8A	9634	-0.36729714274406433	-0.38413557	Yes	
+row_15	ZBTB16	ZBTB16	zinc finger and BTB domain containing 16	9778	-0.3901687562465668	-0.36649513	Yes	
+row_16	GULP1	GULP1	GULP, engulfment adaptor PTB domain containing 1	9799	-0.39253321290016174	-0.33851427	Yes	
+row_17	UBL3	UBL3	ubiquitin-like 3	9829	-0.3983299136161804	-0.31083935	Yes	
+row_18	KCNAB1	KCNAB1	potassium voltage-gated channel, shaker-related subfamily, beta member 1	9887	-0.4083215594291687	-0.28472343	Yes	
+row_19	FAT4	FAT4	FAT tumor suppressor homolog 4 (Drosophila)	10921	-0.6126428246498108	-0.32381734	Yes	
+row_20	RUNX1T1	RUNX1T1	runt-related transcription factor 1; translocated to, 1 (cyclin D-related)	11196	-0.696654200553894	-0.29386252	Yes	
+row_21	EFEMP1	EFEMP1	EGF-containing fibulin-like extracellular matrix protein 1	11269	-0.7224253416061401	-0.24527346	Yes	
+row_22	KL	KL	klotho	11435	-0.7916330099105835	-0.19914317	Yes	
+row_23	PSD3	PSD3	pleckstrin and Sec7 domain containing 3	11465	-0.8063725233078003	-0.1406642	Yes	
+row_24	LEPR	LEPR	leptin receptor	11923	-1.2240867614746094	-0.086011276	Yes	
+row_25	REV3L	REV3L	REV3-like, catalytic subunit of DNA polymerase zeta (yeast)	11995	-1.3636853694915771	0.011070553	Yes	

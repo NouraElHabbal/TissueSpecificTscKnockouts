@@ -1,0 +1,22 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	WFDC2	WFDC2	WAP four-disulfide core domain 2	1518	0.7981886863708496	-0.04566408	No	
+row_1	FAM46A	FAM46A	family with sequence similarity 46, member A	1886	0.6647854447364807	-0.009594887	No	
+row_2	FAM102A	FAM102A	family with sequence similarity 102, member A	2695	0.4756080210208893	-0.028833797	No	
+row_3	ARPC1A	ARPC1A	actin related protein 2/3 complex, subunit 1A, 41kDa	3042	0.41564086079597473	-0.015906846	No	
+row_4	DAG1	DAG1	dystroglycan 1 (dystrophin-associated glycoprotein 1)	4093	0.2629924416542053	-0.07636005	No	
+row_5	ELF3	ELF3	E74-like factor 3 (ets domain transcription factor, epithelial-specific )	5516	0.08795583993196487	-0.18501118	No	
+row_6	NSFL1C	NSFL1C	NSFL1 (p97) cofactor (p47)	6263	0.003478290745988488	-0.24627095	No	
+row_7	SERPINH1	SERPINH1	serpin peptidase inhibitor, clade H (heat shock protein 47), member 1, (collagen binding protein 1)	7771	-0.15979152917861938	-0.35476905	No	
+row_8	L3MBTL4	L3MBTL4	l(3)mbt-like 4 (Drosophila)	7885	-0.16649335622787476	-0.347477	No	
+row_9	TM9SF2	TM9SF2	transmembrane 9 superfamily member 2	8144	-0.1864832192659378	-0.35016355	No	
+row_10	SMG6	SMG6	Smg-6 homolog, nonsense mediated mRNA decay factor (C. elegans)	8176	-0.190962553024292	-0.33365646	No	
+row_11	LAMA4	LAMA4	laminin, alpha 4	9415	-0.3412763774394989	-0.40181884	Yes	
+row_12	TNFAIP2	TNFAIP2	tumor necrosis factor, alpha-induced protein 2	9535	-0.35465678572654724	-0.37623462	Yes	
+row_13	AKNA	AKNA	AT-hook transcription factor	9755	-0.38721081614494324	-0.3556583	Yes	
+row_14	PVRL1	PVRL1	poliovirus receptor-related 1 (herpesvirus entry mediator C; nectin)	10037	-0.43228378891944885	-0.33570167	Yes	
+row_15	ECE1	ECE1	endothelin converting enzyme 1	10347	-0.4863663613796234	-0.31265736	Yes	
+row_16	TMPRSS4	TMPRSS4	transmembrane protease, serine 4	11101	-0.6644341349601746	-0.30850035	Yes	
+row_17	S100A8	S100A8	S100 calcium binding protein A8	11334	-0.7461676001548767	-0.25315663	Yes	
+row_18	CASP7	CASP7	caspase 7, apoptosis-related cysteine peptidase	11375	-0.764367938041687	-0.18013965	Yes	
+row_19	ECHDC2	ECHDC2	enoyl Coenzyme A hydratase domain containing 2	11706	-0.9695123434066772	-0.110588625	Yes	
+row_20	PTGER3	PTGER3	prostaglandin E receptor 3 (subtype EP3)	12025	-1.4566073417663574	0.008588664	Yes	

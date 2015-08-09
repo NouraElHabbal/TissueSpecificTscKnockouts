@@ -1,0 +1,36 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	FOSL1	FOSL1	FOS-like antigen 1	138	2.4760935306549072	0.091489255	Yes	
+row_1	SLC16A1	SLC16A1	solute carrier family 16, member 1 (monocarboxylic acid transporter 1)	370	1.715580940246582	0.14368477	Yes	
+row_2	UCP2	UCP2	uncoupling protein 2 (mitochondrial, proton carrier)	402	1.6604083776474	0.21012327	Yes	
+row_3	EREG	EREG	epiregulin	426	1.611751914024353	0.27520117	Yes	
+row_4	PPA1	PPA1	pyrophosphatase (inorganic) 1	602	1.3673737049102783	0.31755626	Yes	
+row_5	ITGA5	ITGA5	integrin, alpha 5 (fibronectin receptor, alpha polypeptide)	624	1.3360729217529297	0.37134314	Yes	
+row_6	KLF5	KLF5	Kruppel-like factor 5 (intestinal)	755	1.215870976448059	0.4111228	Yes	
+row_7	VDR	VDR	vitamin D (1,25- dihydroxyvitamin D3) receptor	789	1.1887117624282837	0.45779365	Yes	
+row_8	CD44	CD44	CD44 molecule (Indian blood group)	849	1.1493546962738037	0.5006793	Yes	
+row_9	SRXN1	SRXN1	sulfiredoxin 1 homolog (S. cerevisiae)	1225	0.9288128614425659	0.5082734	Yes	
+row_10	ARL4D	ARL4D	ADP-ribosylation factor-like 4D	1318	0.8835216760635376	0.53738344	Yes	
+row_11	TUBB2A	TUBB2A	tubulin, beta 2A	1351	0.8663573861122131	0.5707409	Yes	
+row_12	SLC23A2	SLC23A2	solute carrier family 23 (nucleobase transporters), member 2	1600	0.7745551466941833	0.5824247	Yes	
+row_13	GSTO1	GSTO1	glutathione S-transferase omega 1	1724	0.7259567379951477	0.6024238	Yes	
+row_14	TEAD4	TEAD4	TEA domain family member 4	1971	0.6407087445259094	0.6087107	Yes	
+row_15	SLC7A6	SLC7A6	solute carrier family 7 (cationic amino acid transporter, y+ system), member 6	2042	0.6214003562927246	0.6287467	Yes	
+row_16	CEBPB	CEBPB	CCAAT/enhancer binding protein (C/EBP), beta	3158	0.39626333117485046	0.55302733	No	
+row_17	PRDX6	PRDX6	peroxiredoxin 6	3699	0.3152058720588684	0.5214798	No	
+row_18	IL1RL1	IL1RL1	interleukin 1 receptor-like 1	4374	0.223099485039711	0.4750256	No	
+row_19	RRAS2	RRAS2	related RAS viral (r-ras) oncogene homolog 2	4721	0.17844201624393463	0.45383427	No	
+row_20	PLAC8	PLAC8	placenta-specific 8	5061	0.13898135721683502	0.4315818	No	
+row_21	TIAM1	TIAM1	T-cell lymphoma invasion and metastasis 1	5650	0.07330557703971863	0.386013	No	
+row_22	PPP1R2	PPP1R2	protein phosphatase 1, regulatory (inhibitor) subunit 2	6146	0.017863387241959572	0.34582937	No	
+row_23	BZW1	BZW1	basic leucine zipper and W2 domains 1	6315	-0.002613547956570983	0.33204794	No	
+row_24	POR	POR	P450 (cytochrome) oxidoreductase	6497	-0.02211667038500309	0.31800216	No	
+row_25	TSC22D3	TSC22D3	TSC22 domain family, member 3	6587	-0.03213348239660263	0.31197912	No	
+row_26	FGL2	FGL2	fibrinogen-like 2	6893	-0.06749110668897629	0.2895668	No	
+row_27	BCL3	BCL3	B-cell CLL/lymphoma 3	7140	-0.09526839852333069	0.2731869	No	
+row_28	HMGA2	HMGA2	high mobility group AT-hook 2	8534	-0.2279469519853592	0.16748813	No	
+row_29	SAMHD1	SAMHD1	SAM domain and HD domain 1	8584	-0.2345656156539917	0.1731847	No	
+row_30	HSPH1	HSPH1	heat shock 105kDa/110kDa protein 1	8616	-0.23767518997192383	0.18049872	No	
+row_31	XPO1	XPO1	exportin 1 (CRM1 homolog, yeast)	9185	-0.3113017976284027	0.14647391	No	
+row_32	TOP1	TOP1	topoisomerase (DNA) I	10297	-0.47890424728393555	0.07451958	No	
+row_33	RCL1	RCL1	RNA terminal phosphate cyclase-like 1	10642	-0.5489868521690369	0.0688923	No	
+row_34	PRR5	PRR5	proline rich 5 (renal)	11965	-1.2986629009246826	0.01355942	No	

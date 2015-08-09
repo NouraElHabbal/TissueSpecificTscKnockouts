@@ -1,0 +1,45 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	KRT18	KRT18	keratin 18	42	3.4316630363464355	0.08594447	Yes	
+row_1	EGR1	EGR1	early growth response 1	61	3.1635630130767822	0.16688876	Yes	
+row_2	FOS	FOS	v-fos FBJ murine osteosarcoma viral oncogene homolog	133	2.5163488388061523	0.22658321	Yes	
+row_3	LGALS3	LGALS3	lectin, galactoside-binding, soluble, 3 (galectin 3)	171	2.290645122528076	0.28320962	Yes	
+row_4	ITGAL	ITGAL	integrin, alpha L (antigen CD11A (p180), lymphocyte function-associated antigen 1; alpha polypeptide)	340	1.7645593881607056	0.31528875	Yes	
+row_5	UCP2	UCP2	uncoupling protein 2 (mitochondrial, proton carrier)	402	1.6604083776474	0.3535072	Yes	
+row_6	SERPINE1	SERPINE1	serpin peptidase inhibitor, clade E (nexin, plasminogen activator inhibitor type 1), member 1	587	1.3932085037231445	0.37458608	Yes	
+row_7	TGM2	TGM2	transglutaminase 2 (C polypeptide, protein-glutamine-gamma-glutamyltransferase)	638	1.3156416416168213	0.404731	Yes	
+row_8	APP	APP	amyloid beta (A4) precursor protein (peptidase nexin-II, Alzheimer disease)	641	1.313327670097351	0.43878716	Yes	
+row_9	SPP1	SPP1	secreted phosphoprotein 1 (osteopontin, bone sialoprotein I, early T-lymphocyte activation 1)	745	1.2243901491165161	0.4621691	Yes	
+row_10	IGF2	IGF2	insulin-like growth factor 2 (somatomedin A)	773	1.2031692266464233	0.49128634	Yes	
+row_11	HBEGF	HBEGF	heparin-binding EGF-like growth factor	824	1.1649587154388428	0.5175049	Yes	
+row_12	CD44	CD44	CD44 molecule (Indian blood group)	849	1.1493546962738037	0.5454681	Yes	
+row_13	LGALS1	LGALS1	lectin, galactoside-binding, soluble, 1 (galectin 1)	922	1.1040477752685547	0.5682792	Yes	
+row_14	LAPTM5	LAPTM5	lysosomal associated multispanning membrane protein 5	1163	0.9617063999176025	0.5734809	Yes	
+row_15	BTG2	BTG2	BTG family, member 2	1202	0.9396564960479736	0.5948216	Yes	
+row_16	JUNB	JUNB	jun B proto-oncogene	1254	0.9115976691246033	0.6143555	Yes	
+row_17	CDKN1A	CDKN1A	cyclin-dependent kinase inhibitor 1A (p21, Cip1)	1414	0.8330228328704834	0.622906	Yes	
+row_18	AFP	AFP	alpha-fetoprotein	1521	0.7971746325492859	0.6349077	Yes	
+row_19	CYBB	CYBB	cytochrome b-245, beta polypeptide (chronic granulomatous disease)	1618	0.7675190567970276	0.6469641	Yes	
+row_20	EMP1	EMP1	epithelial membrane protein 1	1753	0.7121267318725586	0.6544329	Yes	
+row_21	TGFB1	TGFB1	transforming growth factor, beta 1 (Camurati-Engelmann disease)	1801	0.6947240829467773	0.66864663	Yes	
+row_22	CDKN2B	CDKN2B	cyclin-dependent kinase inhibitor 2B (p15, inhibits CDK4)	2062	0.6145572662353516	0.6631478	No	
+row_23	CASP1	CASP1	caspase 1, apoptosis-related cysteine peptidase (interleukin 1, beta, convertase)	2628	0.49253636598587036	0.6292336	No	
+row_24	COL4A1	COL4A1	collagen, type IV, alpha 1	2905	0.44111427664756775	0.6178915	No	
+row_25	COL1A1	COL1A1	collagen, type I, alpha 1	2989	0.4236428439617157	0.622063	No	
+row_26	COL1A2	COL1A2	collagen, type I, alpha 2	3261	0.3783724904060364	0.6094997	No	
+row_27	ITGAV	ITGAV	integrin, alpha V (vitronectin receptor, alpha polypeptide, antigen CD51)	3360	0.36214032769203186	0.6108275	No	
+row_28	VIM	VIM	vimentin	3371	0.36006373167037964	0.6193823	No	
+row_29	RAI14	RAI14	retinoic acid induced 14	3578	0.3331453800201416	0.61101866	No	
+row_30	BEX1	BEX1	brain expressed, X-linked 1	3973	0.27746859192848206	0.585649	No	
+row_31	COL4A2	COL4A2	collagen, type IV, alpha 2	4055	0.2676517367362976	0.5859213	No	
+row_32	RBP1	RBP1	retinol binding protein 1, cellular	4854	0.16042622923851013	0.52407473	No	
+row_33	ICAM1	ICAM1	intercellular adhesion molecule 1 (CD54), human rhinovirus receptor	4960	0.1490505039691925	0.51927084	No	
+row_34	CP	CP	ceruloplasmin (ferroxidase)	5194	0.1240009143948555	0.5032235	No	
+row_35	TGFBR2	TGFBR2	transforming growth factor, beta receptor II (70/80kDa)	5340	0.10729468613862991	0.4940219	No	
+row_36	HCK	HCK	hemopoietic cell kinase	5607	0.07748937606811523	0.47403213	No	
+row_37	SPARC	SPARC	secreted protein, acidic, cysteine-rich (osteonectin)	7399	-0.1231006309390068	0.3290518	No	
+row_38	CDH1	CDH1	cadherin 1, type 1, E-cadherin (epithelial)	8170	-0.1904919594526291	0.2703054	No	
+row_39	FGFR2	FGFR2	ffer syndrome, Jackson-Weiss syndrome)	8565	-0.23191608488559723	0.24374878	No	
+row_40	VCAM1	VCAM1	vascular cell adhesion molecule 1	8976	-0.2843268811702728	0.217234	No	
+row_41	CD38	CD38	CD38 molecule	9851	-0.40196800231933594	0.15539308	No	
+row_42	STAT1	STAT1	signal transducer and activator of transcription 1, 91kDa	10085	-0.44080325961112976	0.14760068	No	
+row_43	PDGFA	PDGFA	platelet-derived growth factor alpha polypeptide	11497	-0.8227242827415466	0.052291922	No	

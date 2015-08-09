@@ -1,0 +1,16 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ACOX1	ACOX1	acyl-Coenzyme A oxidase 1, palmitoyl	1967	0.6430623531341553	-0.058870666	No	
+row_1	HP	HP	haptoglobin	4167	0.25078877806663513	-0.20002097	No	
+row_2	CP	CP	ceruloplasmin (ferroxidase)	5194	0.1240009143948555	-0.26475352	No	
+row_3	IFNGR1	IFNGR1	interferon gamma receptor 1	6439	-0.01554101798683405	-0.36493507	No	
+row_4	LTC4S	LTC4S	leukotriene C4 synthase	8188	-0.19189728796482086	-0.4783364	Yes	
+row_5	F11R	F11R	F11 receptor	8447	-0.219607874751091	-0.4642901	Yes	
+row_6	COL15A1	COL15A1	collagen, type XV, alpha 1	8726	-0.2520155608654022	-0.44667923	Yes	
+row_7	TAP2	TAP2	transporter 2, ATP-binding cassette, sub-family B (MDR/TAP)	9297	-0.32526010274887085	-0.4413832	Yes	
+row_8	SOD2	SOD2	superoxide dismutase 2, mitochondrial	9951	-0.41871610283851624	-0.42789802	Yes	
+row_9	STAT1	STAT1	signal transducer and activator of transcription 1, 91kDa	10085	-0.44080325961112976	-0.3679363	Yes	
+row_10	PCK1	PCK1	phosphoenolpyruvate carboxykinase 1 (soluble)	10404	-0.4990818202495575	-0.31386596	Yes	
+row_11	LIPE	LIPE	lipase, hormone-sensitive	10971	-0.630313515663147	-0.25914657	Yes	
+row_12	CIDEC	CIDEC	cell death-inducing DFFA-like effector c	11029	-0.6462570428848267	-0.15984729	Yes	
+row_13	HIPK3	HIPK3	homeodomain interacting protein kinase 3	11059	-0.6541606187820435	-0.056964893	Yes	
+row_14	ABCA1	ABCA1	ATP-binding cassette, sub-family A (ABC1), member 1	11617	-0.9022548198699951	0.042261757	Yes	

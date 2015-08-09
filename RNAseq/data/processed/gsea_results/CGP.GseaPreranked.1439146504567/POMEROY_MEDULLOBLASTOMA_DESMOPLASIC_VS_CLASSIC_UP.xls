@@ -1,0 +1,51 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GABRB3	GABRB3	gamma-aminobutyric acid (GABA) A receptor, beta 3	30	3.606020212173462	0.095933884	Yes	
+row_1	CITED1	CITED1	Cbp/p300-interacting transactivator, with Glu/Asp-rich carboxy-terminal domain, 1	48	3.329686403274536	0.18540208	Yes	
+row_2	OLFM1	OLFM1	olfactomedin 1	147	2.427370309829712	0.24353851	Yes	
+row_3	APLP1	APLP1	amyloid beta (A4) precursor-like protein 1	194	2.214277744293213	0.30016375	Yes	
+row_4	SLC1A2	SLC1A2	solute carrier family 1 (glial high affinity glutamate transporter), member 2	290	1.8980650901794434	0.34410247	Yes	
+row_5	E2F1	E2F1	E2F transcription factor 1	359	1.7321983575820923	0.38574937	Yes	
+row_6	GABRG2	GABRG2	gamma-aminobutyric acid (GABA) A receptor, gamma 2	674	1.2837607860565186	0.39479303	Yes	
+row_7	LRP8	LRP8	low density lipoprotein receptor-related protein 8, apolipoprotein e receptor	728	1.2387821674346924	0.42421508	Yes	
+row_8	GPX4	GPX4	glutathione peroxidase 4 (phospholipid hydroperoxidase)	825	1.1641827821731567	0.44804153	Yes	
+row_9	THBS4	THBS4	thrombospondin 4	1147	0.9759137630462646	0.44810382	Yes	
+row_10	CRABP2	CRABP2	cellular retinoic acid binding protein 2	1160	0.9639748334884644	0.47341973	Yes	
+row_11	BCAP31	BCAP31	B-cell receptor-associated protein 31	1176	0.9517940282821655	0.49815485	Yes	
+row_12	PSMB5	PSMB5	proteasome (prosome, macropain) subunit, beta type, 5	1277	0.9024068117141724	0.5145056	Yes	
+row_13	ARL4D	ARL4D	ADP-ribosylation factor-like 4D	1318	0.8835216760635376	0.53530794	Yes	
+row_14	DYRK4	DYRK4	dual-specificity tyrosine-(Y)-phosphorylation regulated kinase 4	1335	0.8758551478385925	0.5578877	Yes	
+row_15	LHX2	LHX2	LIM homeobox 2	1517	0.7982466220855713	0.5646904	Yes	
+row_16	USP11	USP11	ubiquitin specific peptidase 11	1663	0.7473599314689636	0.5730844	Yes	
+row_17	CHRM4	CHRM4	cholinergic receptor, muscarinic 4	1905	0.6614208817481995	0.57118595	Yes	
+row_18	ILVBL	ILVBL	ilvB (bacterial acetolactate synthase)-like	1963	0.6444821953773499	0.5840569	Yes	
+row_19	ACOX1	ACOX1	acyl-Coenzyme A oxidase 1, palmitoyl	1967	0.6430623531341553	0.60135937	Yes	
+row_20	HSP90AA1	HSP90AA1	heat shock protein 90kDa alpha (cytosolic), class A member 1	2172	0.5898149609565735	0.6005695	No	
+row_21	UGCG	UGCG	UDP-glucose ceramide glucosyltransferase	2602	0.49799495935440063	0.57864773	No	
+row_22	ABL2	ABL2	v-abl Abelson murine leukemia viral oncogene homolog 2 (arg, Abelson-related gene)	3516	0.34092071652412415	0.51237285	No	
+row_23	SMAD2	SMAD2	SMAD, mothers against DPP homolog 2 (Drosophila)	3661	0.3209042549133301	0.5092106	No	
+row_24	GNB3	GNB3	guanine nucleotide binding protein (G protein), beta polypeptide 3	3749	0.3097846210002899	0.5104634	No	
+row_25	POLR2F	POLR2F	polymerase (RNA) II (DNA directed) polypeptide F	4510	0.2052144855260849	0.45315033	No	
+row_26	AANAT	AANAT	arylalkylamine N-acetyltransferase	4602	0.19479969143867493	0.45093378	No	
+row_27	TGFB3	TGFB3	transforming growth factor, beta 3	4611	0.1930106282234192	0.4555393	No	
+row_28	SURF1	SURF1	surfeit 1	5304	0.11058118939399719	0.40127254	No	
+row_29	NUCB1	NUCB1	nucleobindin 1	5721	0.06473344564437866	0.3686022	No	
+row_30	STX3	STX3	syntaxin 3	5824	0.05362411588430405	0.36162204	No	
+row_31	CBX5	CBX5	chromobox homolog 5 (HP1 alpha homolog, Drosophila)	5930	0.042283106595277786	0.35408399	No	
+row_32	ARL6IP1	ARL6IP1	ADP-ribosylation factor-like 6 interacting protein 1	6274	0.0018917662091553211	0.32574156	No	
+row_33	SMAD5	SMAD5	SMAD, mothers against DPP homolog 5 (Drosophila)	6408	-0.012213537469506264	0.31506497	No	
+row_34	CDKL5	CDKL5	cyclin-dependent kinase-like 5	6449	-0.016713947057724	0.31220987	No	
+row_35	TMEM11	TMEM11	transmembrane protein 11	6884	-0.06615366041660309	0.27808824	No	
+row_36	PRDX1	PRDX1	peroxiredoxin 1	7046	-0.0843578428030014	0.26706275	No	
+row_37	ACLY	ACLY	ATP citrate lyase	7549	-0.14015516638755798	0.22933164	No	
+row_38	FPR1	FPR1	formyl peptide receptor 1	7561	-0.1406041383743286	0.23225848	No	
+row_39	SEPT8	SEPT8	septin 8	8180	-0.19152328372001648	0.1863267	No	
+row_40	COL2A1	COL2A1	collagen, type II, alpha 1 (primary osteoarthritis, spondyloepiphyseal dysplasia, congenital)	8638	-0.24117158353328705	0.15507774	No	
+row_41	RPN2	RPN2	ribophorin II	8919	-0.275881290435791	0.13942844	No	
+row_42	POLR2J	POLR2J	polymerase (RNA) II (DNA directed) polypeptide J, 13.3kDa	9119	-0.3043450713157654	0.13126126	No	
+row_43	PDE4C	PDE4C	phosphodiesterase 4C, cAMP-specific (phosphodiesterase E1 dunce homolog, Drosophila)	9162	-0.30913636088371277	0.13622154	No	
+row_44	CPOX	CPOX	coproporphyrinogen oxidase	9483	-0.3496510684490204	0.11927433	No	
+row_45	PPP2R1B	PPP2R1B	protein phosphatase 2 (formerly 2A), regulatory subunit A (PR 65), beta isoform	10631	-0.5459030866622925	0.039223064	No	
+row_46	LDHA	LDHA	lactate dehydrogenase A	10879	-0.601775050163269	0.035199992	No	
+row_47	ATP1B2	ATP1B2	ATPase, Na+/K+ transporting, beta 2 polypeptide	11218	-0.7012961506843567	0.02635999	No	
+row_48	BSG	BSG	basigin (Ok blood group)	11237	-0.7067952752113342	0.04416014	No	
+row_49	ALDOA	ALDOA	aldolase A, fructose-bisphosphate	11823	-1.0844826698303223	0.025331233	No	

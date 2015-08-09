@@ -1,0 +1,27 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	FAS	FAS	Fas (TNF receptor superfamily, member 6)	2123	0.5983965992927551	-0.117945276	No	
+row_1	MAP7	MAP7	microtubule-associated protein 7	2391	0.5382552742958069	-0.088326894	No	
+row_2	RAB27A	RAB27A	RAB27A, member RAS oncogene family	2404	0.5350417494773865	-0.037949625	No	
+row_3	PRKAG1	PRKAG1	protein kinase, AMP-activated, gamma 1 non-catalytic subunit	3816	0.298990398645401	-0.12581697	No	
+row_4	SNX4	SNX4	sorting nexin 4	3948	0.2796047627925873	-0.10979535	No	
+row_5	CLINT1	CLINT1	clathrin interactor 1	4560	0.19924038648605347	-0.14114572	No	
+row_6	RNGTT	RNGTT	RNA guanylyltransferase and 5'-phosphatase	4762	0.17302842438220978	-0.14113955	No	
+row_7	ALDH3A2	ALDH3A2	aldehyde dehydrogenase 3 family, member A2	5036	0.1411464959383011	-0.15014279	No	
+row_8	LRMP	LRMP	lymphoid-restricted membrane protein	5163	0.1280364841222763	-0.14825995	No	
+row_9	NF2	NF2	neurofibromin 2 (bilateral acoustic neuroma)	5757	0.06147345155477524	-0.19135004	No	
+row_10	ADAM28	ADAM28	ADAM metallopeptidase domain 28	5882	0.04737740755081177	-0.19704594	No	
+row_11	PRKACB	PRKACB	protein kinase, cAMP-dependent, catalytic, beta	6225	0.008203152567148209	-0.22451349	No	
+row_12	CEP70	CEP70	centrosomal protein 70kDa	6544	-0.02765693888068199	-0.24813049	No	
+row_13	TFAM	TFAM	transcription factor A, mitochondrial	6698	-0.04488508403301239	-0.2564616	No	
+row_14	ATP5C1	ATP5C1	ATP synthase, H+ transporting, mitochondrial F1 complex, gamma polypeptide 1	7427	-0.12610985338687897	-0.30449933	No	
+row_15	CREBL2	CREBL2	cAMP responsive element binding protein-like 2	7469	-0.13263528048992157	-0.29515252	No	
+row_16	IL1R2	IL1R2	interleukin 1 receptor, type II	8707	-0.2497882843017578	-0.3733683	No	
+row_17	MAPRE2	MAPRE2	microtubule-associated protein, RP/EB family, member 2	9280	-0.3233414590358734	-0.38958177	No	
+row_18	PTGER2	PTGER2	prostaglandin E receptor 2 (subtype EP2), 53kDa	10420	-0.5017746686935425	-0.43550816	Yes	
+row_19	GGT1	GGT1	gamma-glutamyltransferase 1	10462	-0.5092160701751709	-0.39000627	Yes	
+row_20	ITM2A	ITM2A	integral membrane protein 2A	10769	-0.5765791535377502	-0.35993055	Yes	
+row_21	AMPD1	AMPD1	adenosine monophosphate deaminase 1 (isoform M)	11251	-0.7140750288963318	-0.33111206	Yes	
+row_22	AMD1	AMD1	adenosylmethionine decarboxylase 1	11489	-0.8186535239219666	-0.2720945	Yes	
+row_23	CHGA	CHGA	chromogranin A (parathyroid secretory protein 1)	11511	-0.8332356214523315	-0.19383155	Yes	
+row_24	IGF1	IGF1	insulin-like growth factor 1 (somatomedin C)	11926	-1.228389024734497	-0.110099055	Yes	
+row_25	CPA3	CPA3	carboxypeptidase A3 (mast cell)	11977	-1.320584774017334	0.012557739	Yes	

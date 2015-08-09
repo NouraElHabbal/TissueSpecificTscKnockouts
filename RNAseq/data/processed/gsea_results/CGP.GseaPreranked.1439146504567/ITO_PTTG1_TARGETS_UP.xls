@@ -1,0 +1,11 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GPNMB	GPNMB	glycoprotein (transmembrane) nmb	152	2.4202520847320557	0.18503626	No	
+row_1	THBS1	THBS1	thrombospondin 1	1556	0.785448431968689	0.13339733	No	
+row_2	ALCAM	ALCAM	activated leukocyte cell adhesion molecule	1722	0.7270698547363281	0.17913789	No	
+row_3	CALU	CALU	calumenin	2166	0.5906609296798706	0.19080539	No	
+row_4	ST13	ST13	suppression of tumorigenicity 13 (colon carcinoma) (Hsp70 interacting protein)	3414	0.3533632457256317	0.11676444	No	
+row_5	GCLC	GCLC	glutamate-cysteine ligase, catalytic subunit	3652	0.3223709464073181	0.12352677	No	
+row_6	CXCL14	CXCL14	chemokine (C-X-C motif) ligand 14	6824	-0.059580884873867035	-0.13324301	No	
+row_7	HOXD8	HOXD8	homeobox D8	11972	-1.3044489622116089	-0.45142418	Yes	
+row_8	SLC2A3	SLC2A3	solute carrier family 2 (facilitated glucose transporter), member 3	12118	-2.3063387870788574	-0.27510968	Yes	
+row_9	DKK3	DKK3	dickkopf homolog 3 (Xenopus laevis)	12128	-3.3800995349884033	8.248963E-5	Yes	

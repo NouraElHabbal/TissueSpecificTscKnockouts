@@ -1,0 +1,47 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	IQGAP2	IQGAP2	IQ motif containing GTPase activating protein 2	673	1.283777117729187	-0.003032028	No	
+row_1	SOX11	SOX11	SRY (sex determining region Y)-box 11	893	1.1189628839492798	0.02474549	No	
+row_2	PBX3	PBX3	pre-B-cell leukemia transcription factor 3	1282	0.8978103995323181	0.02946574	No	
+row_3	PKP2	PKP2	plakophilin 2	1413	0.8331618905067444	0.052884612	No	
+row_4	DOC2B	DOC2B	double C2-like domains, beta	1559	0.784790575504303	0.07307794	No	
+row_5	AASS	AASS	aminoadipate-semialdehyde synthase	1836	0.6821263432502747	0.07821913	No	
+row_6	ARF3	ARF3	ADP-ribosylation factor 3	1914	0.6593432426452637	0.0988938	No	
+row_7	POU3F4	POU3F4	POU domain, class 3, transcription factor 4	2493	0.5192559957504272	0.07236221	No	
+row_8	GRB2	GRB2	growth factor receptor-bound protein 2	2898	0.44215285778045654	0.057066992	No	
+row_9	PTPRM	PTPRM	protein tyrosine phosphatase, receptor type, M	3396	0.35662832856178284	0.030567376	No	
+row_10	SPIN1	SPIN1	-	4007	0.2730058431625366	-0.0087137045	No	
+row_11	ACTB	ACTB	actin, beta	4220	0.24371398985385895	-0.016260242	No	
+row_12	RBCK1	RBCK1	RanBP-type and C3HC4-type zinc finger containing 1	4455	0.21317976713180542	-0.026879905	No	
+row_13	ATP11A	ATP11A	ATPase, Class VI, type 11A	4528	0.2037055343389511	-0.02448205	No	
+row_14	PDRG1	PDRG1	p53 and DNA damage regulated 1	4890	0.15572954714298248	-0.047968127	No	
+row_15	ALDH2	ALDH2	aldehyde dehydrogenase 2 family (mitochondrial)	5026	0.14285629987716675	-0.053279858	No	
+row_16	TSC22D1	TSC22D1	TSC22 domain family, member 1	5406	0.10058096051216125	-0.08051775	No	
+row_17	SIX3	SIX3	sine oculis homeobox homolog 3 (Drosophila)	5556	0.08300790190696716	-0.08944306	No	
+row_18	COL6A1	COL6A1	collagen, type VI, alpha 1	6166	0.016125570982694626	-0.1391788	No	
+row_19	CRY1	CRY1	cryptochrome 1 (photolyase-like)	6431	-0.014735981822013855	-0.16042139	No	
+row_20	PLA2G12A	PLA2G12A	phospholipase A2, group XIIA	6516	-0.02414519339799881	-0.16638227	No	
+row_21	FOXP1	FOXP1	forkhead box P1	6964	-0.0750352218747139	-0.20029534	No	
+row_22	PENK	PENK	proenkephalin	7214	-0.10265494138002396	-0.21669012	No	
+row_23	GEMIN5	GEMIN5	gem (nuclear organelle) associated protein 5	7359	-0.11876996606588364	-0.22373468	No	
+row_24	DHCR7	DHCR7	7-dehydrocholesterol reductase	7474	-0.13309504091739655	-0.22770898	No	
+row_25	TXNRD1	TXNRD1	thioredoxin reductase 1	7492	-0.13541902601718903	-0.22356081	No	
+row_26	PDXK	PDXK	pyridoxal (pyridoxine, vitamin B6) kinase	7706	-0.15409933030605316	-0.23486617	No	
+row_27	PLAGL1	PLAGL1	pleiomorphic adenoma gene-like 1	7707	-0.15421463549137115	-0.22854017	No	
+row_28	ZBTB20	ZBTB20	zinc finger and BTB domain containing 20	7713	-0.15458305180072784	-0.22261283	No	
+row_29	UHMK1	UHMK1	U2AF homology motif (UHM) kinase 1	8285	-0.2005222737789154	-0.26163983	No	
+row_30	AQR	AQR	aquarius homolog (mouse)	8404	-0.21474891901016235	-0.26259565	No	
+row_31	HES5	HES5	hairy and enhancer of split 5 (Drosophila)	8834	-0.2650170922279358	-0.28722596	No	
+row_32	ETS2	ETS2	v-ets erythroblastosis virus E26 oncogene homolog 2 (avian)	8974	-0.2837757170200348	-0.2870881	No	
+row_33	ASB3	ASB3	ankyrin repeat and SOCS box-containing 3	9304	-0.32586005330085754	-0.30094716	No	
+row_34	TEF	TEF	thyrotrophic embryonic factor	9521	-0.35347598791122437	-0.3043222	No	
+row_35	LDB2	LDB2	LIM domain binding 2	9616	-0.3648165464401245	-0.29713604	No	
+row_36	TRHR	TRHR	thyrotropin-releasing hormone receptor	9642	-0.3688068687915802	-0.28407618	No	
+row_37	NRP1	NRP1	neuropilin 1	9963	-0.4208484888076782	-0.29329398	No	
+row_38	PRKCH	PRKCH	protein kinase C, eta	11328	-0.7431171536445618	-0.3756873	Yes	
+row_39	PNCK	PNCK	pregnancy upregulated non-ubiquitously expressed CaM kinase	11487	-0.8177737593650818	-0.3552168	Yes	
+row_40	PTCH1	PTCH1	patched homolog 1 (Drosophila)	11793	-1.0530956983566284	-0.33725804	Yes	
+row_41	PER2	PER2	period homolog 2 (Drosophila)	11861	-1.1232401132583618	-0.29672644	Yes	
+row_42	CPNE6	CPNE6	copine VI (neuronal)	11964	-1.2950797080993652	-0.25204226	Yes	
+row_43	HAP1	HAP1	huntingtin-associated protein 1 (neuroan 1)	12043	-1.5329643487930298	-0.19561379	Yes	
+row_44	NNAT	NNAT	neuronatin	12052	-1.5580188035964966	-0.13236478	Yes	
+row_45	DKK3	DKK3	dickkopf homolog 3 (Xenopus laevis)	12128	-3.3800995349884033	8.276631E-5	Yes	

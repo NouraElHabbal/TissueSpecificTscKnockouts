@@ -1,0 +1,33 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	TIMP1	TIMP1	TIMP metallopeptidase inhibitor 1	25	3.9199697971343994	0.14082335	Yes	
+row_1	ACOX2	ACOX2	acyl-Coenzyme A oxidase 2, branched chain	52	3.287621021270752	0.2585138	Yes	
+row_2	TRIB3	TRIB3	tribbles homolog 3 (Drosophila)	76	3.0108110904693604	0.36636204	Yes	
+row_3	ASNS	ASNS	asparagine synthetase	296	1.8832995891571045	0.4169095	Yes	
+row_4	TPBG	TPBG	trophoblast glycoprotein	405	1.6559830904006958	0.46834588	Yes	
+row_5	ENAH	ENAH	enabled homolog (Drosophila)	647	1.3040621280670166	0.4959606	Yes	
+row_6	AREG	AREG	amphiregulin (schwannoma-derived growth factor)	911	1.1087177991867065	0.51463616	Yes	
+row_7	GADD45A	GADD45A	growth arrest and DNA-damage-inducible, alpha	1009	1.0567742586135864	0.5451396	Yes	
+row_8	CTSB	CTSB	cathepsin B	1122	0.9887266159057617	0.5719227	Yes	
+row_9	NEK2	NEK2	NIMA (never in mitosis gene a)-related kinase 2	1322	0.8797582387924194	0.5875425	Yes	
+row_10	DEGS1	DEGS1	degenerative spermatocyte homolog 1, lipid desaturase (Drosophila)	1410	0.8351374268531799	0.6107934	Yes	
+row_11	TMEM50A	TMEM50A	transmembrane protein 50A	1710	0.7314542531967163	0.61274135	Yes	
+row_12	MGP	MGP	matrix Gla protein	1929	0.653985321521759	0.6185608	Yes	
+row_13	DNAL4	DNAL4	dynein, axonemal, light chain 4	2072	0.6118213534355164	0.6291253	Yes	
+row_14	APOD	APOD	apolipoprotein D	2091	0.6076254844665527	0.6497865	Yes	
+row_15	PRLR	PRLR	prolactin receptor	2315	0.559723436832428	0.6517566	Yes	
+row_16	PARP4	PARP4	poly (ADP-ribose) polymerase family, member 4	2952	0.4297264814376831	0.61485016	No	
+row_17	FBXL6	FBXL6	F-box and leucine-rich repeat protein 6	4449	0.21365708112716675	0.49898154	No	
+row_18	ASS1	ASS1	argininosuccinate synthetase 1	5032	0.14159560203552246	0.45603582	No	
+row_19	PRCP	PRCP	prolylcarboxypeptidase (angiotensinase C)	5125	0.13330677151679993	0.45329052	No	
+row_20	MAPK8IP2	MAPK8IP2	mitogen-activated protein kinase 8 interacting protein 2	5359	0.10510297864675522	0.43786234	No	
+row_21	TOMM20	TOMM20	translocase of outer mitochondrial membrane 20 homolog (yeast)	5551	0.08315201103687286	0.42510563	No	
+row_22	FRS2	FRS2	fibroblast growth factor receptor substrate 2	6944	-0.07272458076477051	0.31269625	No	
+row_23	EPRS	EPRS	glutamyl-prolyl-tRNA synthetase	7430	-0.1265205591917038	0.27721888	No	
+row_24	NENF	NENF	neuron derived neurotrophic factor	7924	-0.16946347057819366	0.24264558	No	
+row_25	IFITM1	IFITM1	interferon induced transmembrane protein 1 (9-27)	8527	-0.22732499241828918	0.20117168	No	
+row_26	FHL2	FHL2	four and a half LIM domains 2	8634	-0.24061691761016846	0.20118082	No	
+row_27	SATB1	SATB1	special AT-rich sequence binding protein 1 (binds to nuclear matrix/scaffold-associating DNA's)	8754	-0.2557598054409027	0.20066737	No	
+row_28	MBTPS1	MBTPS1	membrane-bound transcription factor peptidase, site 1	9127	-0.3059898316860199	0.18107235	No	
+row_29	UBL3	UBL3	ubiquitin-like 3	9829	-0.3983299136161804	0.13764872	No	
+row_30	CLDN1	CLDN1	claudin 1	11169	-0.6885998249053955	0.052069943	No	
+row_31	S100A8	S100A8	S100 calcium binding protein A8	11334	-0.7461676001548767	0.06571311	No	

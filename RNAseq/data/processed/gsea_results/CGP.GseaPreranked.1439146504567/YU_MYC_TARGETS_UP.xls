@@ -1,0 +1,36 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	E2F8	E2F8	E2F transcription factor 8	98	2.783111333847046	0.08790463	Yes	
+row_1	CKS2	CKS2	CDC28 protein kinase regulatory subunit 2	250	2.009206771850586	0.1447304	Yes	
+row_2	BIRC5	BIRC5	baculoviral IAP repeat-containing 5 (survivin)	254	1.9982331991195679	0.2134141	Yes	
+row_3	BUB1	BUB1	BUB1 budding uninhibited by benzimidazoles 1 homolog (yeast)	280	1.920560598373413	0.27759945	Yes	
+row_4	TOP2A	TOP2A	topoisomerase (DNA) II alpha 170kDa	335	1.769565463066101	0.33417833	Yes	
+row_5	CCNB2	CCNB2	cyclin B2	412	1.647059440612793	0.38471225	Yes	
+row_6	DTL	DTL	denticleless homolog (Drosophila)	451	1.5682849884033203	0.43567055	Yes	
+row_7	MKI67	MKI67	antigen identified by monoclonal antibody Ki-67	463	1.555503010749817	0.48842025	Yes	
+row_8	CLIC4	CLIC4	chloride intracellular channel 4	568	1.4155477285385132	0.52865285	Yes	
+row_9	ECT2	ECT2	epithelial cell transforming sequence 2 oncogene	607	1.3619176149368286	0.57249224	Yes	
+row_10	PLK1	PLK1	polo-like kinase 1 (Drosophila)	1047	1.0379111766815186	0.5720004	Yes	
+row_11	CCNB1	CCNB1	cyclin B1	1294	0.8915682435035706	0.58241725	Yes	
+row_12	KPNA2	KPNA2	karyopherin alpha 2 (RAG cohort 1, importin alpha 1)	1458	0.8215144872665405	0.59727985	Yes	
+row_13	CKS1B	CKS1B	CDC28 protein kinase regulatory subunit 1B	1539	0.7895042300224304	0.61790055	Yes	
+row_14	ASPM	ASPM	asp (abnormal spindle) homolog, microcephaly associated (Drosophila)	1568	0.782130241394043	0.6425662	Yes	
+row_15	NUDCD2	NUDCD2	NudC domain containing 2	2090	0.6077523231506348	0.62045574	No	
+row_16	CDKN3	CDKN3	cyclin-dependent kinase inhibitor 3 (CDK2-associated dual specificity phosphatase)	2704	0.4743778705596924	0.58613795	No	
+row_17	GMNN	GMNN	geminin, DNA replication inhibitor	2825	0.44692400097846985	0.59163374	No	
+row_18	KIF20A	KIF20A	kinesin family member 20A	2838	0.44501250982284546	0.6059929	No	
+row_19	DFNA5	DFNA5	deafness, autosomal dominant 5	3185	0.3912521302700043	0.59088284	No	
+row_20	TFDP1	TFDP1	transcription factor Dp-1	3891	0.2870174050331116	0.5424953	No	
+row_21	FDPS	FDPS	farnesyl diphosphate synthase (farnesyl pyrophosphate synthetase, dimethylallyltranstransferase, geranyltranstransferase)	4183	0.2486637830734253	0.5270138	No	
+row_22	RACGAP1	RACGAP1	Rac GTPase activating protein 1	4264	0.23695462942123413	0.5285735	No	
+row_23	PCNA	PCNA	proliferating cell nuclear antigen	4469	0.21109972894191742	0.5189892	No	
+row_24	UBE2S	UBE2S	ubiquitin-conjugating enzyme E2S	5503	0.08971811085939407	0.43667698	No	
+row_25	HMGB2	HMGB2	high-mobility group box 2	5925	0.043387796729803085	0.40336594	No	
+row_26	STRAP	STRAP	serine/threonine kinase receptor associated protein	6286	-3.526194268488325E-5	0.37360278	No	
+row_27	TSPAN4	TSPAN4	tetraspanin 4	6835	-0.06058662384748459	0.33038482	No	
+row_28	NUP54	NUP54	nucleoporin 54kDa	6933	-0.0715857669711113	0.32483444	No	
+row_29	IDI1	IDI1	isopentenyl-diphosphate delta isomerase 1	7102	-0.09084724634885788	0.31407827	No	
+row_30	UCHL5	UCHL5	ubiquitin carboxyl-terminal hydrolase L5	8175	-0.19094520807266235	0.23203352	No	
+row_31	BRCA2	BRCA2	breast cancer 2, early onset	8942	-0.27953219413757324	0.1783444	No	
+row_32	ANLN	ANLN	anillin, actin binding protein	10024	-0.4307223856449127	0.10382698	No	
+row_33	RRM1	RRM1	ribonucleotide reductase M1 polypeptide	10610	-0.541718065738678	0.07414717	No	
+row_34	AURKA	AURKA	aurora kinase A	12034	-1.4888306856155396	0.007854456	No	

@@ -1,0 +1,67 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	EGR1	EGR1	early growth response 1	61	3.1635630130767822	0.05893723	Yes	
+row_1	FOS	FOS	v-fos FBJ murine osteosarcoma viral oncogene homolog	133	2.5163488388061523	0.10395348	Yes	
+row_2	MPEG1	MPEG1	-	145	2.429623603820801	0.15218891	Yes	
+row_3	TLR2	TLR2	toll-like receptor 2	161	2.3516128063201904	0.19851474	Yes	
+row_4	S100A4	S100A4	S100 calcium binding protein A4	230	2.0748298168182373	0.23484847	Yes	
+row_5	LITAF	LITAF	lipopolysaccharide-induced TNF factor	267	1.9404834508895874	0.27111712	Yes	
+row_6	CTSS	CTSS	cathepsin S	316	1.815683364868164	0.3038666	Yes	
+row_7	PHLDA1	PHLDA1	pleckstrin homology-like domain, family A, member 1	322	1.7948793172836304	0.33975953	Yes	
+row_8	LCN2	LCN2	lipocalin 2 (oncogene 24p3)	327	1.7875066995620728	0.37558624	Yes	
+row_9	CD300LF	CD300LF	CD300 molecule-like family member f	552	1.4294402599334717	0.38593382	Yes	
+row_10	TRPV2	TRPV2	transient receptor potential cation channel, subfamily V, member 2	588	1.3931940793991089	0.4112146	Yes	
+row_11	C3AR1	C3AR1	complement component 3a receptor 1	737	1.229721188545227	0.4238219	Yes	
+row_12	MMP8	MMP8	matrix metallopeptidase 8 (neutrophil collagenase)	882	1.1263724565505981	0.43467018	Yes	
+row_13	PLEK	PLEK	pleckstrin	955	1.084413766860962	0.4506379	Yes	
+row_14	EGR2	EGR2	early growth response 2 (Krox-20 homolog, Drosophila)	1036	1.0438190698623657	0.46512133	Yes	
+row_15	IL1B	IL1B	interleukin 1, beta	1113	0.9945515990257263	0.4789397	Yes	
+row_16	GRK5	GRK5	G protein-coupled receptor kinase 5	1178	0.9509937167167664	0.49287167	Yes	
+row_17	BTG2	BTG2	BTG family, member 2	1202	0.9396564960479736	0.5099729	Yes	
+row_18	LIPA	LIPA	lipase A, lysosomal acid, cholesterol esterase (Wolman disease)	1245	0.9182291030883789	0.52506566	Yes	
+row_19	ARG2	ARG2	arginase, type II	1303	0.8870357871055603	0.5382841	Yes	
+row_20	ANXA4	ANXA4	annexin A4	1314	0.8844022750854492	0.5553452	Yes	
+row_21	SIRPA	SIRPA	signal-regulatory protein alpha	1476	0.8139726519584656	0.558465	Yes	
+row_22	FGR	FGR	Gardner-Rasheed feline sarcoma viral (v-fgr) oncogene homolog	1531	0.7915330529212952	0.5700003	Yes	
+row_23	CYBB	CYBB	cytochrome b-245, beta polypeptide (chronic granulomatous disease)	1618	0.7675190567970276	0.5783973	Yes	
+row_24	UPP1	UPP1	uridine phosphorylase 1	1621	0.76633620262146	0.5937332	Yes	
+row_25	ID2	ID2	inhibitor of DNA binding 2, dominant negative helix-loop-helix protein	2249	0.5753424167633057	0.55339855	No	
+row_26	C5AR1	C5AR1	complement component 5a receptor 1	2345	0.5516114234924316	0.5566821	No	
+row_27	SLC11A1	SLC11A1	solute carrier family 11 (proton-coupled divalent metal ion transporters), member 1	2402	0.5358603596687317	0.56287974	No	
+row_28	ZFP36	ZFP36	zinc finger protein 36, C3H type, homolog (mouse)	2413	0.5335074067115784	0.5728428	No	
+row_29	MSR1	MSR1	macrophage scavenger receptor 1	2485	0.5207036733627319	0.57749045	No	
+row_30	CCR5	CCR5	chemokine (C-C motif) receptor 5	2562	0.5090470910072327	0.5814879	No	
+row_31	MCL1	MCL1	myeloid cell leukemia sequence 1 (BCL2-related)	2664	0.48312443494796753	0.58288866	No	
+row_32	CSF1R	CSF1R	colony stimulating factor 1 receptor, formerly McDonough feline sarcoma viral (v-fms) oncogene homolog	2725	0.4699641764163971	0.58742183	No	
+row_33	CAMK2D	CAMK2D	calcium/calmodulin-dependent protein kinase (CaM kinase) II delta	2995	0.4228849411010742	0.5736783	No	
+row_34	ANXA1	ANXA1	annexin A1	3013	0.4199979305267334	0.580765	No	
+row_35	DUSP1	DUSP1	dual specificity phosphatase 1	3176	0.39338400959968567	0.57529414	No	
+row_36	TPD52	TPD52	tumor protein D52	3732	0.31210771203041077	0.5356029	No	
+row_37	GCNT2	GCNT2	glucosaminyl (N-acetyl) transferase 2, I-branching enzyme (I blood group)	3935	0.28102537989616394	0.5245436	No	
+row_38	CPT1A	CPT1A	carnitine palmitoyltransferase 1A (liver)	3955	0.2790665924549103	0.5286137	No	
+row_39	P2RY14	P2RY14	purinergic receptor P2Y, G-protein coupled, 14	4436	0.2146700769662857	0.4931683	No	
+row_40	MRC1	MRC1	mannose receptor, C type 1	4812	0.1654246747493744	0.46543035	No	
+row_41	MERTK	MERTK	c-mer proto-oncogene tyrosine kinase	5550	0.08348189294338226	0.4060282	No	
+row_42	HCK	HCK	hemopoietic cell kinase	5607	0.07748937606811523	0.40295377	No	
+row_43	PSAP	PSAP	prosaposin (variant Gaucher disease and variant metachromatic leukodystrophy)	5785	0.058706000447273254	0.38946953	No	
+row_44	STX3	STX3	syntaxin 3	5824	0.05362411588430405	0.3874044	No	
+row_45	KLF4	KLF4	Kruppel-like factor 4 (gut)	5903	0.04547528177499771	0.38185877	No	
+row_46	LSP1	LSP1	lymphocyte-specific protein 1	6213	0.009575965814292431	0.35643908	No	
+row_47	EHD1	EHD1	EH-domain containing 1	6399	-0.0109660429880023	0.34132603	No	
+row_48	ZFP36L1	ZFP36L1	zinc finger protein 36, C3H type-like 1	7274	-0.11104054749011993	0.27112526	No	
+row_49	FPR1	FPR1	formyl peptide receptor 1	7561	-0.1406041383743286	0.25026253	No	
+row_50	HIST1H1C	HIST1H1C	histone cluster 1, H1c	7588	-0.1422964334487915	0.25098577	No	
+row_51	TGFBI	TGFBI	transforming growth factor, beta-induced, 68kDa	7636	-0.14713312685489655	0.25006616	No	
+row_52	MYADM	MYADM	myeloid-associated differentiation marker	7668	-0.15071044862270355	0.25054514	No	
+row_53	CDH1	CDH1	cadherin 1, type 1, E-cadherin (epithelial)	8170	-0.1904919594526291	0.21286996	No	
+row_54	PLSCR1	PLSCR1	phospholipid scramblase 1	8427	-0.2169518768787384	0.19603838	No	
+row_55	LPL	LPL	lipoprotein lipase	8483	-0.22254818677902222	0.19598114	No	
+row_56	SAMHD1	SAMHD1	SAM domain and HD domain 1	8584	-0.2345656156539917	0.19243689	No	
+row_57	IL1R2	IL1R2	interleukin 1 receptor, type II	8707	-0.2497882843017578	0.18737695	No	
+row_58	MITF	MITF	microphthalmia-associated transcription factor	8827	-0.2641673684120178	0.18285656	No	
+row_59	DAB2	DAB2	disabled homolog 2, mitogen-responsive phosphoprotein (Drosophila)	9398	-0.3387576639652252	0.14246105	No	
+row_60	IL18	IL18	interleukin 18 (interferon-gamma-inducing factor)	9436	-0.3433612883090973	0.1463397	No	
+row_61	NDRG1	NDRG1	N-myc downstream regulated gene 1	9702	-0.37826797366142273	0.13202526	No	
+row_62	NOV	NOV	nephroblastoma overexpressed gene	10317	-0.48222973942756653	0.09088473	No	
+row_63	AQP9	AQP9	aquaporin 9	11568	-0.8700329661369324	0.0048699854	No	
+row_64	FFAR2	FFAR2	free fatty acid receptor 2	11701	-0.9671893119812012	0.013492966	No	
+row_65	MMP9	MMP9	matrix metallopeptidase 9 (gelatinase B, 92kDa gelatinase, 92kDa type IV collagenase)	11820	-1.0827150344848633	0.025613315	No	

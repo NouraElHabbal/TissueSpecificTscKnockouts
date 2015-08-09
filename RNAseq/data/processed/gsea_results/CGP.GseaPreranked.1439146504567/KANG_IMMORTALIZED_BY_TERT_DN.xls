@@ -1,0 +1,91 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	E2F1	E2F1	E2F transcription factor 1	359	1.7321983575820923	0.004053363	No	
+row_1	CDH2	CDH2	cadherin 2, type 1, N-cadherin (neuronal)	466	1.5511515140533447	0.025579903	No	
+row_2	CKB	CKB	creatine kinase, brain	498	1.506475567817688	0.05246211	No	
+row_3	MSX2	MSX2	msh homeobox homolog 2 (Drosophila)	833	1.156116008758545	0.047327425	No	
+row_4	CD44	CD44	CD44 molecule (Indian blood group)	849	1.1493546962738037	0.06855555	No	
+row_5	NPFFR1	NPFFR1	neuropeptide FF receptor 1	1024	1.052526593208313	0.07468436	No	
+row_6	CCL2	CCL2	chemokine (C-C motif) ligand 2	1092	1.0058143138885498	0.08878682	No	
+row_7	MMP3	MMP3	matrix metallopeptidase 3 (stromelysin 1, progelatinase)	1116	0.9927090406417847	0.10628751	No	
+row_8	THBS4	THBS4	thrombospondin 4	1147	0.9759137630462646	0.1228784	No	
+row_9	TSPAN5	TSPAN5	tetraspanin 5	1161	0.9639121294021606	0.14064658	No	
+row_10	CD52	CD52	CD52 molecule	1173	0.954765260219574	0.15840201	No	
+row_11	PDE10A	PDE10A	phosphodiesterase 10A	1421	0.8312276005744934	0.15414052	No	
+row_12	HTR2B	HTR2B	5-hydroxytryptamine (serotonin) receptor 2B	1482	0.8097626566886902	0.16499087	No	
+row_13	SNTG2	SNTG2	syntrophin, gamma 2	1509	0.8002577424049377	0.17847928	No	
+row_14	GLUL	GLUL	glutamate-ammonia ligase (glutamine synthetase)	1587	0.7761141061782837	0.18725972	No	
+row_15	NET1	NET1	neuroepithelial cell transforming gene 1	1672	0.7446852922439575	0.19484423	No	
+row_16	RGS12	RGS12	regulator of G-protein signalling 12	1732	0.7216159701347351	0.20405406	No	
+row_17	ZFPM2	ZFPM2	zinc finger protein, multitype 2	1832	0.6835423111915588	0.20919715	No	
+row_18	ATP9A	ATP9A	ATPase, Class II, type 9A	2100	0.6028187274932861	0.19880831	No	
+row_19	CASP1	CASP1	caspase 1, apoptosis-related cysteine peptidase (interleukin 1, beta, convertase)	2628	0.49253636598587036	0.1646684	No	
+row_20	ADAM19	ADAM19	ADAM metallopeptidase domain 19 (meltrin beta)	3171	0.39401113986968994	0.1273561	No	
+row_21	DLX6	DLX6	distal-less homeobox 6	3206	0.38628101348876953	0.13208534	No	
+row_22	TFPI2	TFPI2	tissue factor pathway inhibitor 2	3245	0.3808031976222992	0.13637526	No	
+row_23	EFNA3	EFNA3	ephrin-A3	3297	0.37212666869163513	0.13941577	No	
+row_24	DHRS3	DHRS3	dehydrogenase/reductase (SDR family) member 3	3498	0.34269094467163086	0.1295053	No	
+row_25	MYH1	MYH1	myosin, heavy chain 1, skeletal muscle, adult	3765	0.30727753043174744	0.11342065	No	
+row_26	CXCR4	CXCR4	chemokine (C-X-C motif) receptor 4	4109	0.2605094015598297	0.09002617	No	
+row_27	GABRR1	GABRR1	gamma-aminobutyric acid (GABA) receptor, rho 1	4582	0.19715516269207	0.054678597	No	
+row_28	EGR3	EGR3	early growth response 3	5159	0.1286514550447464	0.009353659	No	
+row_29	PMP22	PMP22	peripheral myelin protein 22	5352	0.10593243688344955	-0.0045218286	No	
+row_30	SPN	SPN	sialophorin (leukosialin, CD43)	5864	0.04906703159213066	-0.04600425	No	
+row_31	ALDH1A3	ALDH1A3	aldehyde dehydrogenase 1 family, member A3	6070	0.026962952688336372	-0.062503606	No	
+row_32	GCGR	GCGR	glucagon receptor	6324	-0.0037036011926829815	-0.083444476	No	
+row_33	WISP2	WISP2	WNT1 inducible signaling pathway protein 2	6432	-0.014778322540223598	-0.09204255	No	
+row_34	ADRBK1	ADRBK1	adrenergic, beta, receptor kinase 1	6752	-0.05122021213173866	-0.11753603	No	
+row_35	RAD23B	RAD23B	RAD23 homolog B (S. cerevisiae)	6789	-0.05517904832959175	-0.11944712	No	
+row_36	MYH2	MYH2	myosin, heavy chain 2, skeletal muscle, adult	6896	-0.0679330974817276	-0.12692277	No	
+row_37	TFR2	TFR2	transferrin receptor 2	6930	-0.07103799283504486	-0.12827459	No	
+row_38	ADAMTS3	ADAMTS3	ADAM metallopeptidase with thrombospondin type 1 motif, 3	7313	-0.11520519107580185	-0.15774949	No	
+row_39	SERPINI1	SERPINI1	serpin peptidase inhibitor, clade I (neuroserpin), member 1	7451	-0.12922953069210052	-0.16660133	No	
+row_40	MGLL	MGLL	monoglyceride lipase	7615	-0.14501936733722687	-0.1773039	No	
+row_41	INSL5	INSL5	insulin-like 5	7837	-0.16357490420341492	-0.1924609	No	
+row_42	MAP2K2	MAP2K2	mitogen-activated protein kinase kinase 2	8212	-0.19472163915634155	-0.21971652	No	
+row_43	SMG1	SMG1	-	8213	-0.19472618401050568	-0.21590893	No	
+row_44	SVIL	SVIL	supervillin	8337	-0.20584551990032196	-0.22209987	No	
+row_45	RDH5	RDH5	retinol dehydrogenase 5 (11-cis/9-cis)	8434	-0.2177496999502182	-0.2258155	No	
+row_46	TGFBR3	TGFBR3	transforming growth factor, beta receptor III (betaglycan, 300kDa)	8739	-0.253945529460907	-0.24609914	No	
+row_47	SH3BGR	SH3BGR	SH3 domain binding glutamic acid-rich protein	8949	-0.2803438901901245	-0.25797623	No	
+row_48	CHST1	CHST1	carbohydrate (keratan sulfate Gal-6) sulfotransferase 1	9030	-0.29130274057388306	-0.25892472	No	
+row_49	GHR	GHR	growth hormone receptor	9075	-0.2982698678970337	-0.25674698	No	
+row_50	OPRL1	OPRL1	opiate receptor-like 1	9429	-0.342488169670105	-0.27936906	No	
+row_51	ARHGEF6	ARHGEF6	Rac/Cdc42 guanine nucleotide exchange factor (GEF) 6	9488	-0.3499305546283722	-0.27734396	No	
+row_52	GFRA3	GFRA3	GDNF family receptor alpha 3	9752	-0.3868512511253357	-0.29162347	No	
+row_53	ZFX	ZFX	zinc finger protein, X-linked	9775	-0.3898395895957947	-0.28582796	No	
+row_54	NRP1	NRP1	neuropilin 1	9963	-0.4208484888076782	-0.29313046	No	
+row_55	PTGS1	PTGS1	prostaglandin-endoperoxide synthase 1 (prostaglandin G/H synthase and cyclooxygenase)	10115	-0.44659435749053955	-0.29693946	Yes	
+row_56	ABCC9	ABCC9	ATP-binding cassette, sub-family C (CFTR/MRP), member 9	10138	-0.45006459951400757	-0.28996634	Yes	
+row_57	ACYP1	ACYP1	acylphosphatase 1, erythrocyte (common) type	10159	-0.4542520046234131	-0.28274524	Yes	
+row_58	NR4A3	NR4A3	nuclear receptor subfamily 4, group A, member 3	10166	-0.4551786184310913	-0.27434322	Yes	
+row_59	DNM1	DNM1	dynamin 1	10290	-0.47816047072410583	-0.27520943	Yes	
+row_60	FGFR1	FGFR1	fibroblast growth factor receptor 1 (fms-related tyrosine kinase 2, Pfeiffer syndrome)	10308	-0.4805832803249359	-0.26722428	Yes	
+row_61	NPY1R	NPY1R	neuropeptide Y receptor Y1	10315	-0.4815646708011627	-0.25830632	Yes	
+row_62	MYO1D	MYO1D	myosin ID	10465	-0.5095639824867249	-0.26071793	Yes	
+row_63	THBS2	THBS2	thrombospondin 2	10473	-0.5115010738372803	-0.25129768	Yes	
+row_64	GPR88	GPR88	G protein-coupled receptor 88	10533	-0.5250197052955627	-0.245932	Yes	
+row_65	ST3GAL1	ST3GAL1	ST3 beta-galactoside alpha-2,3-sialyltransferase 1	10540	-0.5266427397727966	-0.23613259	Yes	
+row_66	TYRP1	TYRP1	tyrosinase-related protein 1	10691	-0.5607293844223022	-0.23762682	Yes	
+row_67	RGS5	RGS5	regulator of G-protein signalling 5	10742	-0.5715851187705994	-0.23060311	Yes	
+row_68	MOBP	MOBP	myelin-associated oligodendrocyte basic protein	10824	-0.5909257531166077	-0.225776	Yes	
+row_69	PRELP	PRELP	proline/arginine-rich end leucine-rich repeat protein	10870	-0.6006582975387573	-0.21776854	Yes	
+row_70	NOX1	NOX1	NADPH oxidase 1	10873	-0.6013373732566833	-0.20617636	Yes	
+row_71	ST8SIA5	ST8SIA5	ST8 alpha-N-acetyl-neuraminide alpha-2,8-sialyltransferase 5	10900	-0.6071710586547852	-0.19646348	Yes	
+row_72	ACHE	ACHE	acetylcholinesterase (Yt blood group)	10920	-0.6125761866569519	-0.18606351	Yes	
+row_73	RASGRP2	RASGRP2	RAS guanyl releasing protein 2 (calcium and DAG-regulated)	10924	-0.6131833791732788	-0.17432275	Yes	
+row_74	MAFB	MAFB	v-maf musculoaponeurotic fibrosarcoma oncogene homolog B (avian)	10954	-0.6241534352302551	-0.16452698	Yes	
+row_75	IMPG2	IMPG2	interphotoreceptor matrix proteoglycan 2	11024	-0.6448079943656921	-0.15764959	Yes	
+row_76	TMPRSS4	TMPRSS4	transmembrane protease, serine 4	11101	-0.6644341349601746	-0.15096983	Yes	
+row_77	PPP2R2B	PPP2R2B	protein phosphatase 2 (formerly 2A), regulatory subunit B (PR 52), beta isoform	11241	-0.7102328538894653	-0.1486271	Yes	
+row_78	CNR1	CNR1	cannabinoid receptor 1 (brain)	11327	-0.742401659488678	-0.14117031	Yes	
+row_79	A2M	A2M	alpha-2-macroglobulin	11342	-0.7484865188598633	-0.12769753	Yes	
+row_80	KLF9	KLF9	Kruppel-like factor 9	11371	-0.7622849345207214	-0.11511773	Yes	
+row_81	PDE4D	PDE4D	phosphodiesterase 4D, cAMP-specific (phosphodiesterase E3 dunce homolog, Drosophila)	11429	-0.7890162467956543	-0.10442387	Yes	
+row_82	TNFAIP3	TNFAIP3	tumor necrosis factor, alpha-induced protein 3	11439	-0.792885959148407	-0.08966764	Yes	
+row_83	NR4A1	NR4A1	nuclear receptor subfamily 4, group A, member 1	11512	-0.8332525491714478	-0.07935466	Yes	
+row_84	KLK14	KLK14	kallikrein 14	11596	-0.8911008834838867	-0.06882416	Yes	
+row_85	OGN	OGN	osteoglycin (osteoinductive factor, mimecan)	11675	-0.9480200409889221	-0.0567654	Yes	
+row_86	NTRK2	NTRK2	neurotrophic tyrosine kinase, receptor, type 2	11679	-0.9492745399475098	-0.038452875	Yes	
+row_87	PRM1	PRM1	protamine 1	11806	-1.0685765743255615	-0.028023519	Yes	
+row_88	MMP9	MMP9	matrix metallopeptidase 9 (gelatinase B, 92kDa gelatinase, 92kDa type IV collagenase)	11820	-1.0827150344848633	-0.007932324	Yes	
+row_89	MYH4	MYH4	myosin, heavy chain 4, skeletal muscle	12079	-1.7139517068862915	0.004152957	Yes	

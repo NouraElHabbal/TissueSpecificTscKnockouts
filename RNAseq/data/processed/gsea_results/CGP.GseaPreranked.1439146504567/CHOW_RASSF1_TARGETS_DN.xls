@@ -1,0 +1,26 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	NINJ1	NINJ1	ninjurin 1	1626	0.7648184299468994	-0.052264478	No	
+row_1	RUNX3	RUNX3	runt-related transcription factor 3	1649	0.755956768989563	0.027027475	No	
+row_2	SNRPD1	SNRPD1	small nuclear ribonucleoprotein D1 polypeptide 16kDa	2750	0.4645722508430481	-0.013998405	No	
+row_3	PRKCSH	PRKCSH	protein kinase C substrate 80K-H	4199	0.24618974328041077	-0.1072038	No	
+row_4	PPIB	PPIB	peptidylprolyl isomerase B (cyclophilin B)	4282	0.23501335084438324	-0.08876241	No	
+row_5	LRPAP1	LRPAP1	low density lipoprotein receptor-related protein associated protein 1	4543	0.2014455944299698	-0.0886273	No	
+row_6	ICK	ICK	intestinal cell (MAK-like) kinase	5565	0.08224225044250488	-0.16414854	No	
+row_7	CREG1	CREG1	cellular repressor of E1A-stimulated genes 1	5744	0.06332762539386749	-0.17205855	No	
+row_8	PPP1CA	PPP1CA	protein phosphatase 1, catalytic subunit, alpha isoform	5843	0.05169373005628586	-0.17460798	No	
+row_9	EXOSC4	EXOSC4	exosome component 4	6007	0.03426619619131088	-0.18439694	No	
+row_10	P4HB	P4HB	procollagen-proline, 2-oxoglutarate 4-dioxygenase (proline 4-hydroxylase), beta polypeptide	6240	0.006102341692894697	-0.20290783	No	
+row_11	NDUFS8	NDUFS8	NADH dehydrogenase (ubiquinone) Fe-S protein 8, 23kDa (NADH-coenzyme Q reductase)	6945	-0.07284855842590332	-0.25324944	No	
+row_12	BCL3	BCL3	B-cell CLL/lymphoma 3	7140	-0.09526839852333069	-0.25905415	No	
+row_13	POLR2K	POLR2K	polymerase (RNA) II (DNA directed) polypeptide K, 7.0kDa	7143	-0.0955328419804573	-0.24896932	No	
+row_14	ARL1	ARL1	ADP-ribosylation factor-like 1	7844	-0.16416391730308533	-0.2891829	No	
+row_15	OPTN	OPTN	optineurin	8783	-0.2596498131752014	-0.33881277	No	
+row_16	PTPRN2	PTPRN2	protein tyrosine phosphatase, receptor type, N polypeptide 2	9715	-0.38138875365257263	-0.37480253	Yes	
+row_17	BST2	BST2	bone marrow stromal cell antigen 2	9798	-0.3924488425254822	-0.3394693	Yes	
+row_18	EBAG9	EBAG9	estrogen receptor binding site associated, antigen, 9	10259	-0.4719674289226532	-0.326831	Yes	
+row_19	PYCR1	PYCR1	pyrroline-5-carboxylate reductase 1	10531	-0.5246073007583618	-0.2929314	Yes	
+row_20	LY6E	LY6E	lymphocyte antigen 6 complex, locus E	10659	-0.5529778599739075	-0.24409193	Yes	
+row_21	EEF1D	EEF1D	eukaryotic translation elongation factor 1 delta (guanine nucleotide exchange protein)	10703	-0.5631980895996094	-0.18721658	Yes	
+row_22	DDB2	DDB2	damage-specific DNA binding protein 2, 48kDa	10838	-0.594817042350769	-0.13446628	Yes	
+row_23	CELSR2	CELSR2	cadherin, EGF LAG seven-pass G-type receptor 2 (flamingo homolog, Drosophila)	11814	-1.0751303434371948	-0.09965681	Yes	
+row_24	KLHL21	KLHL21	kelch-like 21 (Drosophila)	11894	-1.170586347579956	0.019413479	Yes	

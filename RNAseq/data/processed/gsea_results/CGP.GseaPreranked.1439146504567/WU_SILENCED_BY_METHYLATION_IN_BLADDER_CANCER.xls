@@ -1,0 +1,47 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CPE	CPE	carboxypeptidase E	489	1.5213146209716797	0.018156026	No	
+row_1	PLEK	PLEK	pleckstrin	955	1.084413766860962	0.021462487	No	
+row_2	GCHFR	GCHFR	GTP cyclohydrolase I feedback regulator	1027	1.0495377779006958	0.05603013	No	
+row_3	CX3CR1	CX3CR1	chemokine (C-X3-C motif) receptor 1	1175	0.9538909196853638	0.08062278	No	
+row_4	LMO2	LMO2	LIM domain only 2 (rhombotin-like 1)	1601	0.7743273973464966	0.07529045	No	
+row_5	COL5A2	COL5A2	collagen, type V, alpha 2	1764	0.7080197930335999	0.08916732	No	
+row_6	ITGB2	ITGB2	integrin, beta 2 (complement component 3 receptor 3 and 4 subunit)	1781	0.6993411779403687	0.11479186	No	
+row_7	GATM	GATM	glycine amidinotransferase (L-arginine:glycine amidinotransferase)	1909	0.6607300043106079	0.12974285	No	
+row_8	SCRG1	SCRG1	-	2727	0.469635546207428	0.08022985	No	
+row_9	LOXL1	LOXL1	lysyl oxidase-like 1	3198	0.3891882598400116	0.056332532	No	
+row_10	PEG3	PEG3	paternally expressed 3	3341	0.36457908153533936	0.058630247	No	
+row_11	PTPRC	PTPRC	protein tyrosine phosphatase, receptor type, C	3382	0.35943499207496643	0.069170654	No	
+row_12	RGS1	RGS1	regulator of G-protein signalling 1	4043	0.26891788840293884	0.02491553	No	
+row_13	ERBB3	ERBB3	v-erb-b2 erythroblastic leukemia viral oncogene homolog 3 (avian)	4470	0.21104879677295685	-0.0022050857	No	
+row_14	SEPP1	SEPP1	selenoprotein P, plasma, 1	4506	0.20538952946662903	0.002813059	No	
+row_15	COL6A3	COL6A3	collagen, type VI, alpha 3	4521	0.20395465195178986	0.009513747	No	
+row_16	FCGRT	FCGRT	Fc fragment of IgG, receptor, transporter, alpha	4533	0.20251746475696564	0.016407317	No	
+row_17	CNN1	CNN1	calponin 1, basic, smooth muscle	5526	0.08720598369836807	-0.06232429	No	
+row_18	KLF4	KLF4	Kruppel-like factor 4 (gut)	5903	0.04547528177499771	-0.091687456	No	
+row_19	FMO5	FMO5	flavin containing monooxygenase 5	6369	-0.008201600052416325	-0.12985206	No	
+row_20	LAMA2	LAMA2	laminin, alpha 2 (merosin, congenital muscular dystrophy)	6697	-0.04483434185385704	-0.15518497	No	
+row_21	ANPEP	ANPEP	alanyl (membrane) aminopeptidase (aminopeptidase N, aminopeptidase M, microsomal aminopeptidase, CD13, p150)	6834	-0.06036457046866417	-0.16411342	No	
+row_22	FGL2	FGL2	fibrinogen-like 2	6893	-0.06749110668897629	-0.16631243	No	
+row_23	LRIG1	LRIG1	leucine-rich repeats and immunoglobulin-like domains 1	7012	-0.08045805245637894	-0.17297702	No	
+row_24	TGFBR3	TGFBR3	transforming growth factor, beta receptor III (betaglycan, 300kDa)	8739	-0.253945529460907	-0.3060249	No	
+row_25	PXDN	PXDN	peroxidasin homolog (Drosophila)	8772	-0.2584310472011566	-0.29871458	No	
+row_26	MITF	MITF	microphthalmia-associated transcription factor	8827	-0.2641673684120178	-0.2930038	No	
+row_27	TSPAN8	TSPAN8	tetraspanin 8	8833	-0.26483482122421265	-0.28321236	No	
+row_28	COBL	COBL	cordon-bleu homolog (mouse)	9391	-0.33777809143066406	-0.31629035	No	
+row_29	PECAM1	PECAM1	platelet/endothelial cell adhesion molecule (CD31 antigen)	9557	-0.35732194781303406	-0.3161756	No	
+row_30	UBL3	UBL3	ubiquitin-like 3	9829	-0.3983299136161804	-0.32325262	No	
+row_31	NR4A3	NR4A3	nuclear receptor subfamily 4, group A, member 3	10166	-0.4551786184310913	-0.333518	No	
+row_32	DPT	DPT	dermatopontin	10430	-0.5033679008483887	-0.3358854	Yes	
+row_33	PROM1	PROM1	prominin 1	10439	-0.5055232644081116	-0.31706744	Yes	
+row_34	ETV1	ETV1	ets variant gene 1	10466	-0.509959876537323	-0.29956812	Yes	
+row_35	GUCY1A3	GUCY1A3	guanylate cyclase 1, soluble, alpha 3	11001	-0.6383398175239563	-0.31916082	Yes	
+row_36	MYH11	MYH11	myosin, heavy chain 11, smooth muscle	11147	-0.6811233162879944	-0.30491358	Yes	
+row_37	ADIPOQ	ADIPOQ	adiponectin, C1Q and collagen domain containing	11337	-0.7462906241416931	-0.29179633	Yes	
+row_38	IGJ	IGJ	immunoglobulin J polypeptide, linker protein for immunoglobulin alpha and mu polypeptides	11345	-0.7498335242271423	-0.2634813	Yes	
+row_39	NR4A1	NR4A1	nuclear receptor subfamily 4, group A, member 1	11512	-0.8332525491714478	-0.24510969	Yes	
+row_40	PTX3	PTX3	pentraxin-related gene, rapidly induced by IL-1 beta	11536	-0.8566862344741821	-0.21400125	Yes	
+row_41	USH1C	USH1C	Usher syndrome 1C (autosomal recessive, severe)	11852	-1.1135828495025635	-0.19715767	Yes	
+row_42	PRKCD	PRKCD	protein kinase C, delta	11887	-1.1557705402374268	-0.15543453	Yes	
+row_43	IGF1	IGF1	insulin-like growth factor 1 (somatomedin C)	11926	-1.228389024734497	-0.111244105	Yes	
+row_44	PTGER3	PTGER3	prostaglandin E receptor 3 (subtype EP3)	12025	-1.4566073417663574	-0.06322469	Yes	
+row_45	SLC4A4	SLC4A4	solute carrier family 4, sodium bicarbonate cotransporter, member 4	12097	-1.8619358539581299	0.0026481252	Yes	

@@ -1,0 +1,53 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	KRT8	KRT8	keratin 8	3	5.075984477996826	0.120424815	Yes	
+row_1	SPRR1A	SPRR1A	small proline-rich protein 1A	5	4.934829235076904	0.23765948	Yes	
+row_2	GIPC2	GIPC2	GIPC PDZ domain containing family, member 2	187	2.2388052940368652	0.27589747	Yes	
+row_3	LCN2	LCN2	lipocalin 2 (oncogene 24p3)	327	1.7875066995620728	0.306884	Yes	
+row_4	SLC16A1	SLC16A1	solute carrier family 16, member 1 (monocarboxylic acid transporter 1)	370	1.715580940246582	0.34419173	Yes	
+row_5	CBR3	CBR3	carbonyl reductase 3	497	1.5102651119232178	0.3696636	Yes	
+row_6	ANXA2	ANXA2	annexin A2	520	1.4768800735473633	0.40295252	Yes	
+row_7	IGFBP2	IGFBP2	insulin-like growth factor binding protein 2, 36kDa	562	1.4208128452301025	0.4333354	Yes	
+row_8	HTATIP2	HTATIP2	HIV-1 Tat interactive protein 2, 30kDa	712	1.248653531074524	0.45068362	Yes	
+row_9	ABHD2	ABHD2	abhydrolase domain containing 2	769	1.205216646194458	0.47469914	Yes	
+row_10	GPX4	GPX4	glutathione peroxidase 4 (phospholipid hydroperoxidase)	825	1.1641827821731567	0.49782193	Yes	
+row_11	UAP1L1	UAP1L1	UDP-N-acteylglucosamine pyrophosphorylase 1-like 1	1186	0.9470922946929932	0.49053124	Yes	
+row_12	CTSE	CTSE	cathepsin E	1278	0.9012635350227356	0.50442296	Yes	
+row_13	ANXA5	ANXA5	annexin A5	1304	0.8869426250457764	0.5234387	Yes	
+row_14	CD74	CD74	CD74 molecule, major histocompatibility complex, class II invariant chain	1343	0.8709944486618042	0.54099894	Yes	
+row_15	SPON2	SPON2	spondin 2, extracellular matrix protein	1468	0.8178316354751587	0.5501749	Yes	
+row_16	PEX11A	PEX11A	peroxisomal biogenesis factor 11A	1854	0.6779810190200806	0.5344167	Yes	
+row_17	CSTB	CSTB	cystatin B (stefin B)	1962	0.644828736782074	0.5408873	Yes	
+row_18	NQO1	NQO1	NAD(P)H dehydrogenase, quinone 1	1977	0.6389268040657043	0.55491763	Yes	
+row_19	CD63	CD63	CD63 molecule	2013	0.6280988454818726	0.5669518	Yes	
+row_20	RGS2	RGS2	regulator of G-protein signalling 2, 24kDa	2056	0.6173893809318542	0.5781518	Yes	
+row_21	SLPI	SLPI	secretory leukocyte peptidase inhibitor	2136	0.5956498980522156	0.5857716	Yes	
+row_22	APCS	APCS	amyloid P component, serum	2215	0.5800738334655762	0.5931039	Yes	
+row_23	HOXC6	HOXC6	homeobox C6	2642	0.4897254705429077	0.5694756	No	
+row_24	SLC20A1	SLC20A1	solute carrier family 20 (phosphate transporter), member 1	3113	0.40506717562675476	0.54019165	No	
+row_25	EHHADH	EHHADH	enoyl-Coenzyme A, hydratase/3-hydroxyacyl Coenzyme A dehydrogenase	3400	0.35574522614479065	0.5249695	No	
+row_26	COL4A2	COL4A2	collagen, type IV, alpha 2	4055	0.2676517367362976	0.47718444	No	
+row_27	IMPACT	IMPACT	Impact homolog (mouse)	4285	0.23451264202594757	0.4637995	No	
+row_28	TBC1D8	TBC1D8	TBC1 domain family, member 8 (with GRAM domain)	4688	0.18328122794628143	0.43487304	No	
+row_29	HDAC1	HDAC1	histone deacetylase 1	5105	0.13470035791397095	0.40363255	No	
+row_30	TAGLN2	TAGLN2	transgelin 2	5401	0.1010456308722496	0.38161016	No	
+row_31	CBR1	CBR1	carbonyl reductase 1	5444	0.09611198306083679	0.38041767	No	
+row_32	PLAT	PLAT	plasminogen activator, tissue	5769	0.06034545972943306	0.35502666	No	
+row_33	MFGE8	MFGE8	milk fat globule-EGF factor 8 protein	6763	-0.05223774537444115	0.27405292	No	
+row_34	LGALS3BP	LGALS3BP	lectin, galactoside-binding, soluble, 3 binding protein	7055	-0.08556972444057465	0.2519938	No	
+row_35	PALMD	PALMD	palmdelphin	7223	-0.10355228930711746	0.2406288	No	
+row_36	VNN3	VNN3	vanin 3	7855	-0.16511334478855133	0.19231035	No	
+row_37	PLSCR1	PLSCR1	phospholipid scramblase 1	8427	-0.2169518768787384	0.15019198	No	
+row_38	LPL	LPL	lipoprotein lipase	8483	-0.22254818677902222	0.15092896	No	
+row_39	ETS2	ETS2	v-ets erythroblastosis virus E26 oncogene homolog 2 (avian)	8974	-0.2837757170200348	0.11710564	No	
+row_40	IGFBP1	IGFBP1	insulin-like growth factor binding protein 1	9036	-0.2922289967536926	0.119002394	No	
+row_41	RPL12	RPL12	ribosomal protein L12	9266	-0.32184016704559326	0.10769352	No	
+row_42	QPCT	QPCT	glutaminyl-peptide cyclotransferase (glutaminyl cyclase)	9529	-0.3540393114089966	0.09441789	No	
+row_43	TOX	TOX	-	9681	-0.375354528427124	0.09083926	No	
+row_44	NDRG1	NDRG1	N-myc downstream regulated gene 1	9702	-0.37826797366142273	0.09817606	No	
+row_45	FABP4	FABP4	fatty acid binding protein 4, adipocyte	10026	-0.43096524477005005	0.08167871	No	
+row_46	RPL36	RPL36	ribosomal protein L36	10213	-0.46286603808403015	0.07728269	No	
+row_47	EDN1	EDN1	endothelin 1	10528	-0.5240901708602905	0.063744396	No	
+row_48	LY6E	LY6E	lymphocyte antigen 6 complex, locus E	10659	-0.5529778599739075	0.066127166	No	
+row_49	CIDEC	CIDEC	cell death-inducing DFFA-like effector c	11029	-0.6462570428848267	0.05093945	No	
+row_50	SLC24A3	SLC24A3	solute carrier family 24 (sodium/potassium/calcium exchanger), member 3	11370	-0.7610952258110046	0.040882878	No	
+row_51	SORBS2	SORBS2	sorbin and SH3 domain containing 2	11641	-0.9201834201812744	0.040404037	No	

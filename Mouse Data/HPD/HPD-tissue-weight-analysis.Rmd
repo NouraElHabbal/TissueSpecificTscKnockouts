@@ -1,0 +1,160 @@
+---
+title: "Tissue Weight Analysis of HPD Fed Animals"
+author: "Innocence Harvey and Dave Bridges"
+date: "August 10, 2015"
+output:
+  html_document:
+    keep_md: yes
+---
+
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.path='figures/',
+               echo=FALSE, warning=FALSE, message=FALSE,dev=c('png','pdf'))
+options(scipen=3,digits = 3)
+```
+
+```{r data-entry}
+filename <- 'HPD fat pad weights.csv'
+data <- read.csv(filename)
+data$Diet <- relevel(data$Diet, ref="Control Diet")
+```
+
+This data uses the input file `r filename`.  This script was most recently run on `r date()`.
+
+# Adipose Tissue
+
+The iWAT and eWAT values are the sum of the left and right fat pads for each mouse.
+
+```{r hpd-wat}
+data$eWAT <- data$Right.EWAT + data$Left.EWAT
+data$iWAT <- data$Right.IWAT + data$Left.IWAT
+
+se <- function(x) sd(x, na.rm=T)/sqrt(length(x))
+library(dplyr)
+iwat.summary <- 
+  data %>%
+  select(Diet,Body.Weight,iWAT) %>%
+  group_by(Diet) %>%
+  summarise(
+    n = length(iWAT),
+    Average = mean(iWAT, na.rm=T),
+    SD = sd(iWAT, na.rm=T),
+    SE = se(iWAT),
+    Shapiro = shapiro.test(iWAT)$p.value)
+
+ewat.summary <- 
+  data %>%
+  select(Diet,Body.Weight,eWAT) %>%
+  group_by(Diet) %>%
+  summarise(
+    n = length(eWAT),
+    Average = mean(eWAT, na.rm=T),
+    SD = sd(eWAT, na.rm=T),
+    SE = se(eWAT),
+    Shapiro = shapiro.test(eWAT)$p.value)
+library(car)
+```
+
+We tested whether normality can be assumed for eWAT and iWAT by a Shapiro-Wilk test.  The p-values for this were all greater than `r min(ewat.summary$Shapiro, iwat.summary$Shapiro)`.  For summary statistics see below.
+
+```{r adipose-summary-tables}
+kable(iwat.summary, caption="Inguinal Fat Pads (mg)")
+kable(ewat.summary, caption="Epididymal Fat Pads (mg)")
+```
+
+```{r hpd-adipose-weights}
+superpose.eb <- function (x, y, ebl, ebu = ebl, length = 0.08, ...)
+  arrows(x, y + ebu, x, y - ebl, angle = 90, code = 3,
+  length = length, ...)
+
+ymax <- max(ewat.summary$Average + ewat.summary$SE)
+plot <- barplot(cbind(iWAT=iwat.summary$Average, eWAT=ewat.summary$Average),
+                beside=T, las=1, ylab="Fat Pad Mass (mg)",
+                ylim=c(0,ymax))
+superpose.eb(plot,
+             cbind(iWAT=iwat.summary$Average, eWAT=ewat.summary$Average),
+             cbind(iWAT=iwat.summary$SE, eWAT=ewat.summary$SE))
+legend('topleft', levels(data$Diet), fill=grey.colors(2), bty="n")
+```
+
+
+We next tested whether equal variance can be assumed via Levene's test.  For iWAT the p-value was `r leveneTest(iWAT~Diet, data=data)$"Pr(>F)"[1]` and for eWAT the p-value was `r leveneTest(eWAT~Diet, data=data)$"Pr(>F)"[1]`.  Therefore in both cases, equal variance can not be assumed and Welch's *t* tests were performed.  These p-values were **`r t.test(iWAT~Diet, var.equal=F, data=data)$p.value`** for iWAT and **`r t.test(eWAT~Diet, var.equal=F, data=data)$p.value`** for eWAT.
+
+# Muscle Tissues
+
+The TS and Quadriceps values are the sum of the left and right fat pads for each mouse.
+
+```{r hpd-muscle}
+data$Quad <- data$Right.Quad + data$Left.Quad
+data$TS <- data$TS.Right + data$TS.Left
+
+ts.summary <- 
+  data %>%
+  select(Diet,Body.Weight,TS) %>%
+  group_by(Diet) %>%
+  summarise(
+    n = length(TS),
+    Average = mean(TS, na.rm=T),
+    SD = sd(TS, na.rm=T),
+    SE = se(TS),
+    Shapiro = shapiro.test(TS)$p.value)
+
+quad.summary <- 
+  data %>%
+  select(Diet,Body.Weight,Quad) %>%
+  group_by(Diet) %>%
+  summarise(
+    n = length(Quad),
+    Average = mean(Quad, na.rm=T),
+    SD = sd(Quad, na.rm=T),
+    SE = se(Quad),
+    Shapiro = shapiro.test(Quad)$p.value)
+
+heart.summary <- 
+  data %>%
+  select(Diet,Body.Weight,Heart) %>%
+  group_by(Diet) %>%
+  summarise(
+    n = length(Heart),
+    Average = mean(Heart, na.rm=T),
+    SD = sd(Heart, na.rm=T),
+    SE = se(Heart),
+    Shapiro = shapiro.test(Heart)$p.value)
+
+```
+
+We tested whether normality can be assumed for TS, Quadriceps and Heart by Shapiro-Wilk tests.  The p-values for this were all greater than `r min(ts.summary$Shapiro, quad.summary$Shapiro, heart.summary$Shapiro)`.  For summary statistics see below.
+
+```{r muscle-summary-tables}
+kable(ts.summary, caption="Triceps Surae Weights (mg)")
+kable(quad.summary, caption="Quadriceps Weights (mg)")
+kable(heart.summary, caption="Heart Weights (mg)")
+```
+
+```{r hpd-muscle-weights}
+ymax <- max(quad.summary$Average + quad.summary$SE)
+plot <- barplot(cbind(Quadriceps=quad.summary$Average,
+                      `Triceps surae`=ts.summary$Average,
+                      Heart = heart.summary$Average),
+                beside=T, las=1, ylab=" Muscle Weight (mg)",
+                ylim=c(0,ymax))
+superpose.eb(plot,
+             cbind(Quadriceps=quad.summary$Average,
+                      `Triceps surae`=ts.summary$Average,
+                      Heart = heart.summary$Average),
+             cbind(Quadriceps=quad.summary$SE,
+                      `Triceps surae`=ts.summary$SE,
+                      Heart = heart.summary$SE))
+legend('topright', levels(data$Diet), fill=grey.colors(2), bty="n")
+```
+
+
+We next tested whether equal variance can be assumed via Levene's test.  For quadriceps the p-value was `r leveneTest(Quad~Diet, data=data)$"Pr(>F)"[1]`,  for TS the p-value was `r leveneTest(TS~Diet, data=data)$"Pr(>F)"[1]` and for heart the p-value was `r leveneTest(Heart~Diet, data=data)$"Pr(>F)"[1]`.  Therefore in all cases, equal variance can be assumed and Student's *t* tests were performed.  These p-values were **`r t.test(Quad~Diet, var.equal=T, data=data)$p.value`** for quadriceps, **`r t.test(TS~Diet, var.equal=T, data=data)$p.value`** for TS, and **`r t.test(Heart~Diet, var.equal=T, data=data)$p.value`** for heart.
+
+
+# Session Information
+
+```{r session-info, echo=FALSE, message=FALSE}
+sessionInfo()
+```

@@ -1,0 +1,119 @@
+---
+title: "Food Intake Analysis of HPD Fed Animals"
+author: "Innocence Harvey and Dave Bridges"
+date: "August 10, 2015"
+output:
+  html_document:
+    keep_md: yes
+---
+
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.path='figures/',
+               echo=FALSE, warning=FALSE, message=FALSE,dev=c('png','pdf'))
+options(scipen=3,digits = 3)
+```
+
+```{r data-entry}
+filename <- 'HPD Food Intake Data.csv'
+data <- read.csv(filename)
+data$Food.Intake <- data$Food.Intake..g.
+#remove dex measurements
+library(dplyr)
+food.data <-
+  subset(data, Treatment %in% c("CD","HPD")) %>%
+  select(Week, Food, Treatment) %>%
+  mutate(Week = floor(Week))
+food.data <- droplevels(food.data)
+food.data$Cage <- as.factor(rep(c(1,2,3,4),12))
+
+#caloric intake is 3.8 kcal/g for both groups
+calories <- 3.8
+se <- function(x) sd(x)/sqrt(length(x))
+food.summary <- 
+  food.data %>%
+  group_by(Week,Treatment) %>%
+  summarize(Average = mean(Food),
+            SD = sd(Food),
+            SE = se(Food))
+
+kcal.summary <- data.frame(
+  Week = food.summary$Week,
+  Treatment = food.summary$Treatment,
+  Average = food.summary$Average*calories,
+  SD = food.summary$SD*calories,
+  SE = food.summary$SE*calories
+)
+```
+
+This data uses the input file `r filename`.  This script was most recently run on `r date()`.
+
+
+```{r hpd-food-intake-grams, fig.cap="Food Intake Per Week"}
+ymax <- max(food.summary$Average + food.summary$SE, na.rm=T)
+plot <- with(subset(food.summary, Treatment=="CD"), plot(Week,Average, las=1,
+     ylim=c(0,ymax), type="l",ylab="Food Intake (g)"))
+with(subset(food.summary, Treatment=="HPD"), lines(Week,Average, col="red"))
+legend("bottomleft", levels(food.data$Treatment), bty="n", lty=1, col=palette()[1:2])
+
+superpose.eb <- function (x, y, ebl, ebu = ebl, length = 0.08, ...)
+  arrows(x, y + ebu, x, y - ebl, angle = 90, code = 3,
+  length = length, ...)
+
+with(subset(food.summary, Treatment=="CD"), superpose.eb(Week,Average,SE, col=palette()[1]))
+with(subset(food.summary, Treatment=="HPD"), superpose.eb(Week,Average,SE, col=palette()[2]))
+```
+
+```{r hpd-food-intake-kcal, fig.cap="Food Intake Per Week"}
+ymax <- max(kcal.summary$Average + kcal.summary$SE, na.rm=T)
+plot <- with(subset(kcal.summary, Treatment=="CD"), plot(Week,Average, las=1,
+     ylim=c(0,ymax), type="l",ylab="Food Intake (kCal)"))
+with(subset(kcal.summary, Treatment=="HPD"), lines(Week,Average, col="red"))
+legend("bottomleft", levels(kcal.summary$Treatment), bty="n", lty=1, col=palette()[1:2])
+
+with(subset(kcal.summary, Treatment=="CD"), superpose.eb(Week,Average,SE, col=palette()[1]))
+with(subset(kcal.summary, Treatment=="HPD"), superpose.eb(Week,Average,SE, col=palette()[2]))
+```
+
+## Statistics
+
+```{r food-intake-statistics}
+library(lme4)
+food.lme <- lmer(Food ~ Treatment + (1|Cage), REML=F, data=food.data)
+food.lme.null <- lmer(Food ~ 1 + (1|Cage), REML=F, data=food.data)
+```
+
+To test the effects of food intake we used a mixed linear model in which the week did not matter and either the Treatment covariate was included or not.  The cage was the random effect.   From this model the Chi-squared value was `r  anova(food.lme, food.lme.null)$Chisq[2]` for a p-value of `r anova(food.lme, food.lme.null)$"Pr(>Chisq)"[2]`.  The residuals of this model were normally distributed (Shapiro-Wilk test p-value = `r shapiro.test(residuals(food.lme))$p.value`).
+
+# Cumulative Food Intake
+
+```{r hpd-food-intake-kcal-cumulative, fig.cap="Cumulative Food Intake"}
+cum.food.data <- 
+  food.data[complete.cases(food.data),] %>%
+  group_by(Cage,Treatment,Week) %>%
+  summarize(Food.Intake = sum(Food)) %>%
+  mutate(Cumulative = cumsum(Food.Intake))
+
+cumulative.summary <- 
+  cum.food.data %>%
+  group_by(Week,Treatment) %>%
+  summarize(Average = mean(Cumulative),
+            SD = sd(Cumulative),
+            SE = se(Cumulative))
+
+ymax <- max(cumulative.summary$Average + cumulative.summary$SE, na.rm=T)
+plot <- with(subset(cumulative.summary, Treatment=="CD"), 
+             plot(Week,Average, las=1,
+     ylim=c(0,ymax), type="l",ylab="Food Intake (kCal)"))
+with(subset(cumulative.summary, Treatment=="HPD"), lines(Week,Average, col="red"))
+legend("topleft", levels(cumulative.summary$Treatment), bty="n", lty=1, col=palette()[1:2])
+
+with(subset(cumulative.summary, Treatment=="CD"), superpose.eb(Week,Average,SE, col=palette()[1]))
+with(subset(cumulative.summary, Treatment=="HPD"), superpose.eb(Week,Average,SE, col=palette()[2]))
+```
+
+# Session Information
+
+```{r session-info, echo=FALSE, message=FALSE}
+sessionInfo()
+```

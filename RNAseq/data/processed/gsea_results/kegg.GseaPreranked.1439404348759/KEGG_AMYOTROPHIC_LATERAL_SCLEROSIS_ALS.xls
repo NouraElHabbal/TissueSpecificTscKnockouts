@@ -1,0 +1,47 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	BID	BID	BH3 interacting domain death agonist	134	2.497912645339966	0.087390095	Yes	
+row_1	SLC1A2	SLC1A2	solute carrier family 1 (glial high affinity glutamate transporter), member 2	290	1.8980650901794434	0.14939362	Yes	
+row_2	CASP3	CASP3	caspase 3, apoptosis-related cysteine peptidase	407	1.6517647504806519	0.20491427	Yes	
+row_3	GRIN2C	GRIN2C	glutamate receptor, ionotropic, N-methyl D-aspartate 2C	813	1.1743823289871216	0.2176984	Yes	
+row_4	NEFL	NEFL	neurofilament, light polypeptide 68kDa	835	1.1540247201919556	0.2614575	Yes	
+row_5	MAPK13	MAPK13	mitogen-activated protein kinase 13	1118	0.9915817975997925	0.27721354	Yes	
+row_6	NEFH	NEFH	neurofilament, heavy polypeptide 200kDa	1377	0.8542700409889221	0.28954223	Yes	
+row_7	BCL2	BCL2	B-cell CLL/lymphoma 2	1574	0.7798110246658325	0.30406615	Yes	
+row_8	CASP9	CASP9	caspase 9, apoptosis-related cysteine peptidase	1715	0.7299567461013794	0.3212588	Yes	
+row_9	MAPK11	MAPK11	mitogen-activated protein kinase 11	1959	0.6459383368492126	0.32661542	Yes	
+row_10	BCL2L1	BCL2L1	BCL2-like 1	1961	0.6450883150100708	0.351965	Yes	
+row_11	GRIN2D	GRIN2D	glutamate receptor, ionotropic, N-methyl D-aspartate 2D	1990	0.6342639923095703	0.37465346	Yes	
+row_12	BAX	BAX	BCL2-associated X protein	2101	0.6025927066802979	0.3893075	Yes	
+row_13	GPX1	GPX1	glutathione peroxidase 1	2291	0.5669574737548828	0.396019	Yes	
+row_14	CCS	CCS	copper chaperone for superoxide dismutase	2598	0.4989849030971527	0.39036855	Yes	
+row_15	CASP1	CASP1	caspase 1, apoptosis-related cysteine peptidase (interleukin 1, beta, convertase)	2628	0.49253636598587036	0.40738672	Yes	
+row_16	MAP3K5	MAP3K5	mitogen-activated protein kinase kinase kinase 5	2660	0.4844827651977539	0.42392188	Yes	
+row_17	CAT	CAT	catalase	2791	0.45605170726776123	0.4311435	Yes	
+row_18	TNFRSF1A	TNFRSF1A	tumor necrosis factor receptor superfamily, member 1A	2910	0.4397903382778168	0.43871707	Yes	
+row_19	TNFRSF1B	TNFRSF1B	tumor necrosis factor receptor superfamily, member 1B	3564	0.3344079852104187	0.39786255	No	
+row_20	TNF	TNF	tumor necrosis factor (TNF superfamily, member 2)	3632	0.3251151740550995	0.40513554	No	
+row_21	GRIN2A	GRIN2A	glutamate receptor, ionotropic, N-methyl D-aspartate 2A	3721	0.3132486343383789	0.4102029	No	
+row_22	ALS2	ALS2	amyotrophic lateral sclerosis 2 (juvenile)	4083	0.2641774117946625	0.39074376	No	
+row_23	BAD	BAD	BCL2-antagonist of cell death	4299	0.2334836721420288	0.38215664	No	
+row_24	RAB5A	RAB5A	RAB5A, member RAS oncogene family	4454	0.2132195383310318	0.37781858	No	
+row_25	TOMM40	TOMM40	translocase of outer mitochondrial membrane 40 homolog (yeast)	4689	0.1832517683506012	0.36567876	No	
+row_26	APAF1	APAF1	apoptotic peptidase activating factor	5848	0.05099371820688248	0.27185997	No	
+row_27	DERL1	DERL1	Der1-like domain family, member 1	6028	0.032198742032051086	0.25831643	No	
+row_28	MAP2K6	MAP2K6	mitogen-activated protein kinase kinase 6	6543	-0.027545638382434845	0.2168668	No	
+row_29	DAXX	DAXX	death-associated protein 6	6567	-0.029850764200091362	0.21614031	No	
+row_30	TOMM40L	TOMM40L	translocase of outer mitochondrial membrane 40 homolog-like (yeast)	6616	-0.035920947790145874	0.21358429	No	
+row_31	PPP3CC	PPP3CC	protein phosphatase 3 (formerly 2B), catalytic subunit, gamma isoform (calcineurin A gamma)	7268	-0.10985127091407776	0.16404223	No	
+row_32	GRIA2	GRIA2	glutamate receptor, ionotropic, AMPA 2	7868	-0.16545043885707855	0.12099537	No	
+row_33	CYCS	CYCS	cytochrome c, somatic	7875	-0.16578979790210724	0.12703504	No	
+row_34	RAC1	RAC1	ras-related C3 botulinum toxin substrate 1 (rho family, small GTP binding protein Rac1)	9122	-0.3049367070198059	0.035945486	No	
+row_35	MAP2K3	MAP2K3	mitogen-activated protein kinase kinase 3	9403	-0.33916348218917847	0.026145725	No	
+row_36	SOD1	SOD1	superoxide dismutase 1, soluble (amyotrophic lateral sclerosis 1 (adult))	9514	-0.35270798206329346	0.03094814	No	
+row_37	PPP3R1	PPP3R1	protein phosphatase 3 (formerly 2B), regulatory subunit B, 19kDa, alpha isoform (calcineurin B, type I)	9707	-0.37948644161224365	0.030020453	No	
+row_38	PPP3CA	PPP3CA	protein phosphatase 3 (formerly 2B), catalytic subunit, alpha isoform (calcineurin A alpha)	9808	-0.39531490206718445	0.03733017	No	
+row_39	MAPK12	MAPK12	mitogen-activated protein kinase 12	9813	-0.39555323123931885	0.052593667	No	
+row_40	MAPK14	MAPK14	mitogen-activated protein kinase 14	9820	-0.3966512084007263	0.06773495	No	
+row_41	GRIN1	GRIN1	glutamate receptor, ionotropic, N-methyl D-aspartate 1	10174	-0.4556361436843872	0.056486025	No	
+row_42	PRPH	PRPH	peripherin	10749	-0.5731537938117981	0.03158154	No	
+row_43	NOS1	NOS1	nitric oxide synthase 1 (neuronal)	11038	-0.6481614112854004	0.03330186	No	
+row_44	PPP3CB	PPP3CB	protein phosphatase 3 (formerly 2B), catalytic subunit, beta isoform (calcineurin A beta)	11088	-0.660870373249054	0.055301446	No	
+row_45	GRIN2B	GRIN2B	glutamate receptor, ionotropic, N-methyl D-aspartate 2B	11407	-0.7802957892417908	0.059748482	No	

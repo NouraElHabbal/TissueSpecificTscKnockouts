@@ -1,0 +1,38 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	HSPA1B	HSPA1B	heat shock 70kDa protein 1B	246	2.0257303714752197	0.072085276	Yes	
+row_1	HSPA2	HSPA2	heat shock 70kDa protein 2	297	1.8811254501342773	0.15378042	Yes	
+row_2	CTSS	CTSS	cathepsin S	316	1.815683364868164	0.2351358	Yes	
+row_3	LGMN	LGMN	legumain	640	1.3150767087936401	0.2684289	Yes	
+row_4	HSPA5	HSPA5	heat shock 70kDa protein 5 (glucose-regulated protein, 78kDa)	968	1.0782526731491089	0.2905857	Yes	
+row_5	HSPA1A	HSPA1A	heat shock 70kDa protein 1A	1073	1.019561767578125	0.32850504	Yes	
+row_6	CTSB	CTSB	cathepsin B	1122	0.9887266159057617	0.36964822	Yes	
+row_7	CD74	CD74	CD74 molecule, major histocompatibility complex, class II invariant chain	1343	0.8709944486618042	0.39119658	Yes	
+row_8	CANX	CANX	calnexin	1535	0.790465772151947	0.41146877	Yes	
+row_9	PDIA3	PDIA3	protein disulfide isomerase family A, member 3	1783	0.6993029117584229	0.42295069	Yes	
+row_10	HSPA4	HSPA4	heat shock 70kDa protein 4	1874	0.670545756816864	0.44610325	Yes	
+row_11	KLRD1	KLRD1	killer cell lectin-like receptor subfamily D, member 1	1965	0.643532931804657	0.46802327	Yes	
+row_12	HSP90AA1	HSP90AA1	heat shock protein 90kDa alpha (cytosolic), class A member 1	2172	0.5898149609565735	0.4779	Yes	
+row_13	PSME2	PSME2	proteasome (prosome, macropain) activator subunit 2 (PA28 beta)	3188	0.391069620847702	0.4118104	No	
+row_14	CIITA	CIITA	class II, major histocompatibility complex, transactivator	3677	0.3189867436885834	0.38601083	No	
+row_15	HSPA8	HSPA8	heat shock 70kDa protein 8	4468	0.21112030744552612	0.33031654	No	
+row_16	CALR	CALR	calreticulin	4680	0.18411652743816376	0.32126907	No	
+row_17	PSME3	PSME3	proteasome (prosome, macropain) activator subunit 3 (PA28 gamma; Ki)	4736	0.17653623223304749	0.3247758	No	
+row_18	IFI30	IFI30	interferon, gamma-inducible protein 30	5421	0.09809786081314087	0.27269003	No	
+row_19	TAPBP	TAPBP	TAP binding protein (tapasin)	6118	0.020955974236130714	0.21609221	No	
+row_20	NFYA	NFYA	nuclear transcription factor Y, alpha	6318	-0.0028208759613335133	0.19976512	No	
+row_21	RFXANK	RFXANK	regulatory factor X-associated ankyrin-containing protein	6941	-0.07227401435375214	0.15162805	No	
+row_22	NFYC	NFYC	nuclear transcription factor Y, gamma	7276	-0.11120941489934921	0.12908289	No	
+row_23	HSP90AB1	HSP90AB1	heat shock protein 90kDa alpha (cytosolic), class B member 1	7933	-0.17053094506263733	0.08261742	No	
+row_24	IFNA16	IFNA16	interferon, alpha 16	8232	-0.19585299491882324	0.066911206	No	
+row_25	HSPA1L	HSPA1L	heat shock 70kDa protein 1-like	8305	-0.20297199487686157	0.07021832	No	
+row_26	TAP1	TAP1	transporter 1, ATP-binding cassette, sub-family B (MDR/TAP)	9108	-0.3024381101131439	0.017698245	No	
+row_27	TAP2	TAP2	transporter 2, ATP-binding cassette, sub-family B (MDR/TAP)	9297	-0.32526010274887085	0.016992643	No	
+row_28	RFXAP	RFXAP	regulatory factor X-associated protein	9679	-0.3745398223400116	0.0025758736	No	
+row_29	NFYB	NFYB	nuclear transcription factor Y, beta	9720	-0.382301926612854	0.016711393	No	
+row_30	CD8A	CD8A	CD8a molecule	9862	-0.4030000567436218	0.023439365	No	
+row_31	CREB1	CREB1	cAMP responsive element binding protein 1	9998	-0.426373153924942	0.03172993	No	
+row_32	RFX5	RFX5	regulatory factor X, 5 (influences HLA class II expression)	10068	-0.4378966689109802	0.04600398	No	
+row_33	LTA	LTA	lymphotoxin alpha (TNF superfamily, member 1)	11019	-0.6430206298828125	-0.0032148813	No	
+row_34	PSME1	PSME1	proteasome (prosome, macropain) activator subunit 1 (PA28 alpha)	11031	-0.6463082432746887	0.025364488	No	
+row_35	B2M	B2M	beta-2-microglobulin	11044	-0.6501669883728027	0.054037225	No	
+row_36	CD4	CD4	CD4 molecule	11406	-0.7802717089653015	0.059786554	No	

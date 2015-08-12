@@ -1,0 +1,97 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	TIMP1	TIMP1	TIMP metallopeptidase inhibitor 1	25	3.9199697971343994	0.059530526	Yes	
+row_1	SAG	SAG	S-antigen; retina and pineal gland (arrestin)	128	2.5417563915252686	0.0910019	Yes	
+row_2	BIRC5	BIRC5	baculoviral IAP repeat-containing 5 (survivin)	254	1.9982331991195679	0.11201978	Yes	
+row_3	CDKN2A	CDKN2A	cyclin-dependent kinase inhibitor 2A (melanoma, p16, inhibits CDK4)	263	1.9775166511535645	0.14243452	Yes	
+row_4	SFN	SFN	stratifin	357	1.733259677886963	0.16194709	Yes	
+row_5	AGT	AGT	angiotensinogen (serpin peptidase inhibitor, clade A, member 8)	386	1.6857261657714844	0.18611395	Yes	
+row_6	SERPINB8	SERPINB8	serpin peptidase inhibitor, clade B (ovalbumin), member 8	389	1.684641718864441	0.21242434	Yes	
+row_7	SERPINB7	SERPINB7	serpin peptidase inhibitor, clade B (ovalbumin), member 7	447	1.5787837505340576	0.23250061	Yes	
+row_8	ANXA2	ANXA2	annexin A2	520	1.4768800735473633	0.24972886	Yes	
+row_9	APP	APP	amyloid beta (A4) precursor protein (peptidase nexin-II, Alzheimer disease)	641	1.313327670097351	0.26039794	Yes	
+row_10	IQGAP2	IQGAP2	IQ motif containing GTPase activating protein 2	673	1.283777117729187	0.27799833	Yes	
+row_11	SOCS3	SOCS3	suppressor of cytokine signaling 3	685	1.2763375043869019	0.29714373	Yes	
+row_12	ATPIF1	ATPIF1	ATPase inhibitory factor 1	888	1.1217073202133179	0.2979872	Yes	
+row_13	APOA2	APOA2	apolipoprotein A-II	1041	1.0400770902633667	0.30170262	Yes	
+row_14	SERPINB12	SERPINB12	serpin peptidase inhibitor, clade B (ovalbumin), member 12	1054	1.0338908433914185	0.31695455	Yes	
+row_15	ANGPTL4	ANGPTL4	angiopoietin-like 4	1075	1.0180987119674683	0.33129346	Yes	
+row_16	GMFG	GMFG	glia maturation factor, gamma	1091	1.0059289932250977	0.34585664	Yes	
+row_17	SPINT1	SPINT1	serine peptidase inhibitor, Kunitz type 1	1096	1.0025975704193115	0.36128148	Yes	
+row_18	SERPINB9	SERPINB9	serpin peptidase inhibitor, clade B (ovalbumin), member 9	1295	0.8912617564201355	0.35883558	Yes	
+row_19	ANXA5	ANXA5	annexin A5	1304	0.8869426250457764	0.37211037	Yes	
+row_20	SPINK5	SPINK5	serine peptidase inhibitor, Kazal type 5	1390	0.8471524715423584	0.37836128	Yes	
+row_21	CDKN1A	CDKN1A	cyclin-dependent kinase inhibitor 1A (p21, Cip1)	1414	0.8330228328704834	0.3895422	Yes	
+row_22	AGTR2	AGTR2	angiotensin II receptor, type 2	1437	0.8282468318939209	0.40073112	Yes	
+row_23	THBS1	THBS1	thrombospondin 1	1556	0.785448431968689	0.40327	Yes	
+row_24	CST3	CST3	cystatin C (amyloid angiopathy and cerebral hemorrhage)	1558	0.78521329164505	0.41552767	Yes	
+row_25	RNH1	RNH1	ribonuclease/angiogenin inhibitor 1	1877	0.6694033741950989	0.3996232	Yes	
+row_26	CDKN2D	CDKN2D	cyclin-dependent kinase inhibitor 2D (p19, inhibits CDK4)	1900	0.6623446941375732	0.40820473	Yes	
+row_27	CAMK2N1	CAMK2N1	calcium/calmodulin-dependent protein kinase II inhibitor 1	1941	0.6508390307426453	0.4151097	Yes	
+row_28	PDZD3	PDZD3	PDZ domain containing 3	2001	0.6317176222801208	0.42013526	Yes	
+row_29	HEXIM1	HEXIM1	hexamethylene bis-acetamide inducible 1	2039	0.6215793490409851	0.42682967	Yes	
+row_30	CDKN2B	CDKN2B	cyclin-dependent kinase inhibitor 2B (p15, inhibits CDK4)	2062	0.6145572662353516	0.43466017	Yes	
+row_31	TAOK3	TAOK3	TAO kinase 3	2122	0.5985630750656128	0.43916467	Yes	
+row_32	SCG5	SCG5	secretogranin V (7B2 protein)	2208	0.5815169811248779	0.44124073	Yes	
+row_33	PDC	PDC	phosducin	2228	0.5800738334655762	0.44877857	Yes	
+row_34	GPX1	GPX1	glutathione peroxidase 1	2291	0.5669574737548828	0.45253703	Yes	
+row_35	CST6	CST6	cystatin E/M	2362	0.5451155304908752	0.45528746	Yes	
+row_36	IQGAP1	IQGAP1	IQ motif containing GTPase activating protein 1	2429	0.5285413265228271	0.4581098	Yes	
+row_37	CDC42SE1	CDC42SE1	CDC42 small effector 1	2494	0.5184065103530884	0.46093902	Yes	
+row_38	SOCS1	SOCS1	suppressor of cytokine signaling 1	2599	0.49888625741004944	0.46013758	Yes	
+row_39	PKIG	PKIG	protein kinase (cAMP-dependent, catalytic) inhibitor gamma	2634	0.4914824366569519	0.4650366	Yes	
+row_40	GMFB	GMFB	glia maturation factor, beta	3024	0.4179448187351227	0.43928012	No	
+row_41	SPINT2	SPINT2	serine peptidase inhibitor, Kunitz type, 2	3131	0.4014047384262085	0.4367804	No	
+row_42	PPP1R8	PPP1R8	protein phosphatase 1, regulatory (inhibitor) subunit 8	3312	0.3691408634185791	0.42762434	No	
+row_43	PRPSAP1	PRPSAP1	phosphoribosyl pyrophosphate synthetase-associated protein 1	3383	0.3592923879623413	0.4274543	No	
+row_44	OAZ2	OAZ2	ornithine decarboxylase antizyme 2	3589	0.3313603401184082	0.41562703	No	
+row_45	PPME1	PPME1	protein phosphatase methylesterase 1	3752	0.30950841307640076	0.40702954	No	
+row_46	TRIAP1	TRIAP1	TP53 regulated inhibitor of apoptosis 1	3951	0.27937859296798706	0.39496702	No	
+row_47	SNCB	SNCB	synuclein, beta	4072	0.2658762037754059	0.3891739	No	
+row_48	RENBP	RENBP	renin binding protein	4562	0.19906295835971832	0.35166758	No	
+row_49	GPS1	GPS1	G protein pathway suppressor 1	4652	0.18797878921031952	0.34722623	No	
+row_50	DNAJC3	DNAJC3	DnaJ (Hsp40) homolog, subfamily C, member 3	4858	0.1601569801568985	0.33270827	No	
+row_51	HEXIM2	HEXIM2	hexamthylene bis-acetamide inducible 2	4930	0.15189141035079956	0.3291955	No	
+row_52	PDE6G	PDE6G	phosphodiesterase 6G, cGMP-specific, rod, gamma	5059	0.13916531205177307	0.32074615	No	
+row_53	PROS1	PROS1	protein S (alpha)	5731	0.06401979178190231	0.26599362	No	
+row_54	TIMP2	TIMP2	TIMP metallopeptidase inhibitor 2	5760	0.061228495091199875	0.2646292	No	
+row_55	MAPK8IP1	MAPK8IP1	mitogen-activated protein kinase 8 interacting protein 1	5821	0.054009612649679184	0.26049215	No	
+row_56	PTN	PTN	pleiotrophin (heparin binding growth factor 8, neurite growth-promoting factor 1)	5886	0.04709800332784653	0.2559141	No	
+row_57	ARRB1	ARRB1	arrestin, beta 1	6001	0.034689418971538544	0.24698614	No	
+row_58	PPP1R2	PPP1R2	protein phosphatase 1, regulatory (inhibitor) subunit 2	6146	0.017863387241959572	0.23530078	No	
+row_59	OAZ1	OAZ1	ornithine decarboxylase antizyme 1	6462	-0.01885068230330944	0.20942122	No	
+row_60	ABCE1	ABCE1	ATP-binding cassette, sub-family E (OABP), member 1	6614	-0.035714082419872284	0.19743474	No	
+row_61	SERPINF1	SERPINF1	serpin peptidase inhibitor, clade F (alpha-2 antiplasmin, pigment epithelium derived factor), member 1	6997	-0.07817529886960983	0.16691998	No	
+row_62	ANGPTL3	ANGPTL3	angiopoietin-like 3	7169	-0.0980764627456665	0.15425165	No	
+row_63	MBIP	MBIP	MAP3K12 binding inhibitory protein 1	7279	-0.11152259260416031	0.14694671	No	
+row_64	SERPINI1	SERPINI1	serpin peptidase inhibitor, clade I (neuroserpin), member 1	7451	-0.12922953069210052	0.13476801	No	
+row_65	TNFSF14	TNFSF14	tumor necrosis factor (ligand) superfamily, member 14	7557	-0.1406041383743286	0.12825252	No	
+row_66	SERPINH1	SERPINH1	serpin peptidase inhibitor, clade H (heat shock protein 47), member 1, (collagen binding protein 1)	7771	-0.15979152917861938	0.11306403	No	
+row_67	SERPINA5	SERPINA5	serpin peptidase inhibitor, clade A (alpha-1 antiproteinase, antitrypsin), member 5	7814	-0.1630837321281433	0.11213701	No	
+row_68	HSPBP1	HSPBP1	-	8187	-0.19184203445911407	0.08423967	No	
+row_69	STUB1	STUB1	STIP1 homology and U-box containing protein 1	8315	-0.20387499034404755	0.07689043	No	
+row_70	RECK	RECK	reversion-inducing-cysteine-rich protein with kazal motifs	8467	-0.22171075642108917	0.06782715	No	
+row_71	RHOH	RHOH	ras homolog gene family, member H	8651	-0.24306562542915344	0.056440365	No	
+row_72	CDKN1C	CDKN1C	cyclin-dependent kinase inhibitor 1C (p57, Kip2)	8773	-0.25847044587135315	0.050447755	No	
+row_73	PPP1R1B	PPP1R1B	protein phosphatase 1, regulatory (inhibitor) subunit 1B (dopamine and cAMP regulated phosphoprotein, DARPP-32)	8935	-0.27859365940093994	0.041447494	No	
+row_74	ANP32E	ANP32E	acidic (leucine-rich) nuclear phosphoprotein 32 family, member E	9076	-0.2983570694923401	0.0345029	No	
+row_75	SERPING1	SERPING1	serpin peptidase inhibitor, clade G (C1 inhibitor), member 1, (angioedema, hereditary)	9150	-0.30741581320762634	0.03326824	No	
+row_76	ARL2	ARL2	ADP-ribosylation factor-like 2	9156	-0.3077365458011627	0.037689272	No	
+row_77	TNFAIP8	TNFAIP8	tumor necrosis factor, alpha-induced protein 8	9712	-0.3810780644416809	-0.0024408668	No	
+row_78	SET	SET	SET translocation (myeloid leukemia-associated)	9872	-0.4044475853443146	-0.009296955	No	
+row_79	TWIST1	TWIST1	twist homolog 1 (acrocephalosyndactyly 3; Saethre-Chotzen syndrome) (Drosophila)	9905	-0.41116487979888916	-0.005494039	No	
+row_80	PRPSAP2	PRPSAP2	phosphoribosyl pyrophosphate synthetase-associated protein 2	9923	-0.4141438901424408	-3.9783548E-4	No	
+row_81	LMTK2	LMTK2	lemur tyrosine kinase 2	10043	-0.43318337202072144	-0.0034783836	No	
+row_82	RTKN	RTKN	rhotekin	10093	-0.44187453389167786	-6.054857E-4	No	
+row_83	SH3BP5	SH3BP5	SH3-domain binding protein 5 (BTK-associated)	10100	-0.4434894621372223	0.0058660023	No	
+row_84	TESC	TESC	tescalcin	10283	-0.4766271114349365	-0.0017669318	No	
+row_85	CDKN1B	CDKN1B	cyclin-dependent kinase inhibitor 1B (p27, Kip1)	10428	-0.5030689239501953	-0.005826575	No	
+row_86	CABP1	CABP1	calcium binding protein 1 (calbrain)	10567	-0.531248152256012	-0.008944754	No	
+row_87	TNK2	TNK2	tyrosine kinase, non-receptor, 2	10692	-0.5612314939498901	-0.010428331	No	
+row_88	FAF1	FAF1	Fas (TNFRSF6) associated factor 1	10808	-0.5863586664199829	-0.010769117	No	
+row_89	PKIA	PKIA	protein kinase (cAMP-dependent, catalytic) inhibitor alpha	11127	-0.672897219657898	-0.026618697	No	
+row_90	GPS2	GPS2	G protein pathway suppressor 2	11380	-0.7664635181427002	-0.035513286	No	
+row_91	CST7	CST7	cystatin F (leukocystatin)	11476	-0.8103019595146179	-0.030672524	No	
+row_92	PDE6H	PDE6H	phosphodiesterase 6H, cGMP-specific, cone, gamma	11565	-0.8693463206291199	-0.02432211	No	
+row_93	PPP1R1A	PPP1R1A	protein phosphatase 1, regulatory (inhibitor) subunit 1A	11970	-1.3041810989379883	-0.037396573	No	
+row_94	OAZ3	OAZ3	ornithine decarboxylase antizyme 3	11984	-1.3430590629577637	-0.017368738	No	
+row_95	CDKN2C	CDKN2C	cyclin-dependent kinase inhibitor 2C (p18, inhibits CDK4)	12099	-1.8665074110031128	0.0024929554	No	

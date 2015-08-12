@@ -1,0 +1,28 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	RPA3	RPA3	replication protein A3, 14kDa	2690	0.47755753993988037	-0.1617589	No	
+row_1	PURB	PURB	purine-rich element binding protein B	3148	0.39875704050064087	-0.14900102	No	
+row_2	XPC	XPC	xeroderma pigmentosum, complementation group C	3492	0.3429204225540161	-0.13389774	No	
+row_3	RBMS1	RBMS1	RNA binding motif, single stranded interacting protein 1	4411	0.21757911145687103	-0.18218239	No	
+row_4	IGHMBP2	IGHMBP2	immunoglobulin mu binding protein 2	4782	0.17091773450374603	-0.19110036	No	
+row_5	TERF2IP	TERF2IP	telomeric repeat binding factor 2, interacting protein	5378	0.10352788120508194	-0.22714615	No	
+row_6	HMGB2	HMGB2	high-mobility group box 2	5925	0.043387796729803085	-0.2667623	No	
+row_7	RPA1	RPA1	replication protein A1, 70kDa	6049	0.029322847723960876	-0.27321026	No	
+row_8	RAD23B	RAD23B	RAD23 homolog B (S. cerevisiae)	6789	-0.05517904832959175	-0.32727906	No	
+row_9	ERCC5	ERCC5	me))	6842	-0.06090378761291504	-0.32385984	No	
+row_10	ERCC1	ERCC1	excision repair cross-complementing rodent repair deficiency, complementation group 1 (includes overlapping antisense sequence)	7016	-0.08083090931177139	-0.32791364	No	
+row_11	ERCC4	ERCC4	excision repair cross-complementing rodent repair deficiency, complementation group 4	7114	-0.09244506061077118	-0.32421663	No	
+row_12	RAD51AP1	RAD51AP1	RAD51 associated protein 1	7439	-0.12752121686935425	-0.33483166	No	
+row_13	MSH3	MSH3	mutS homolog 3 (E. coli)	7701	-0.15328459441661835	-0.33697748	No	
+row_14	TERF2	TERF2	telomeric repeat binding factor 2	7765	-0.1591671109199524	-0.32201847	No	
+row_15	FUBP1	FUBP1	far upstream element (FUSE) binding protein 1	9034	-0.29204121232032776	-0.38978824	Yes	
+row_16	PURA	PURA	purine-rich element binding protein A	9098	-0.301126092672348	-0.356845	Yes	
+row_17	RAD51	RAD51	RAD51 homolog (RecA homolog, E. coli) (S. cerevisiae)	9174	-0.31025391817092896	-0.32373682	Yes	
+row_18	WBP11	WBP11	WW domain binding protein 11	9475	-0.34857815504074097	-0.30436397	Yes	
+row_19	PCBP1	PCBP1	poly(rC) binding protein 1	9566	-0.3580441176891327	-0.2664408	Yes	
+row_20	MLH1	MLH1	mutL homolog 1, colon cancer, nonpolyposis type 2 (E. coli)	9618	-0.36494964361190796	-0.22442046	Yes	
+row_21	RAD23A	RAD23A	RAD23 homolog A (S. cerevisiae)	9674	-0.37421083450317383	-0.18155736	Yes	
+row_22	RPA2	RPA2	replication protein A2, 32kDa	9854	-0.4022315740585327	-0.1453898	Yes	
+row_23	PMS2	PMS2	PMS2 postmeiotic segregation increased 2 (S. cerevisiae)	9922	-0.4141210615634918	-0.0984621	Yes	
+row_24	YBX1	YBX1	Y box binding protein 1	10867	-0.5993757247924805	-0.10052652	Yes	
+row_25	MSH2	MSH2	mutS homolog 2, colon cancer, nonpolyposis type 1 (E. coli)	11459	-0.8041089177131653	-0.047487702	Yes	
+row_26	SUB1	SUB1	SUB1 homolog (S. cerevisiae)	11478	-0.8111626505851746	0.053788356	Yes	

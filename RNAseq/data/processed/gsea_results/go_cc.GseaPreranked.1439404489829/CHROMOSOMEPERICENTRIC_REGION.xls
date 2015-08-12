@@ -1,0 +1,27 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	BIRC5	BIRC5	baculoviral IAP repeat-containing 5 (survivin)	254	1.9982331991195679	0.095646985	Yes	
+row_1	BUB1	BUB1	BUB1 budding uninhibited by benzimidazoles 1 homolog (yeast)	280	1.920560598373413	0.20567979	Yes	
+row_2	CENPF	CENPF	centromere protein F, 350/400ka (mitosin)	286	1.9046634435653687	0.31643707	Yes	
+row_3	CENPE	CENPE	centromere protein E, 312kDa	365	1.7253456115722656	0.41069692	Yes	
+row_4	ZWILCH	ZWILCH	Zwilch, kinetochore associated, homolog (Drosophila)	599	1.3690171241760254	0.47135314	Yes	
+row_5	ZW10	ZW10	ZW10, kinetochore associated, homolog (Drosophila)	919	1.1051750183105469	0.5095045	Yes	
+row_6	KIF22	KIF22	kinesin family member 22	1259	0.9101273417472839	0.53461903	Yes	
+row_7	CENPA	CENPA	centromere protein A	1368	0.8568474054336548	0.5757083	Yes	
+row_8	MIS12	MIS12	MIS12 homolog (yeast)	1757	0.7112858891487122	0.5851688	Yes	
+row_9	CLASP1	CLASP1	cytoplasmic linker associated protein 1	1911	0.6604811549186707	0.6110789	Yes	
+row_10	CENPC1	CENPC1	centromere protein C 1	2079	0.6098935604095459	0.6328798	Yes	
+row_11	BUB1B	BUB1B	BUB1 budding uninhibited by benzimidazoles 1 homolog beta (yeast)	2816	0.4502611756324768	0.59835404	No	
+row_12	DCTN2	DCTN2	dynactin 2 (p50)	3952	0.27931076288223267	0.520886	No	
+row_13	MAD2L1	MAD2L1	MAD2 mitotic arrest deficient-like 1 (yeast)	4117	0.25927266478538513	0.5224699	No	
+row_14	INCENP	INCENP	inner centromere protein antigens 135/155kDa	4208	0.24457107484340668	0.52930933	No	
+row_15	PSEN2	PSEN2	presenilin 2 (Alzheimer disease 4)	4672	0.18586920201778412	0.5019062	No	
+row_16	BUB3	BUB3	BUB3 budding uninhibited by benzimidazoles 3 homolog (yeast)	5157	0.12904445827007294	0.4694514	No	
+row_17	ZWINT	ZWINT	ZW10 interactor	5558	0.08284983038902283	0.44124022	No	
+row_18	SUMO3	SUMO3	SMT3 suppressor of mif two 3 homolog 3 (S. cerevisiae)	5753	0.0621989369392395	0.42884284	No	
+row_19	APC	APC	adenomatosis polyposis coli	6038	0.030856776982545853	0.40718058	No	
+row_20	PSEN1	PSEN1	presenilin 1 (Alzheimer disease 3)	6709	-0.04665619507431984	0.35455015	No	
+row_21	SMC1A	SMC1A	structural maintenance of chromosomes 1A	7714	-0.15460136532783508	0.28062606	No	
+row_22	HELLS	HELLS	helicase, lymphoid-specific	8243	-0.19628067314624786	0.24846052	No	
+row_23	PAFAH1B1	PAFAH1B1	platelet-activating factor acetylhydrolase, isoform Ib, alpha subunit 45kDa	9267	-0.3220521807670593	0.18274036	No	
+row_24	SUGT1	SUGT1	SGT1, suppressor of G2 allele of SKP1 (S. cerevisiae)	10070	-0.4382530450820923	0.142061	No	
+row_25	PMF1	PMF1	polyamine-modulated factor 1	10298	-0.4791260063648224	0.15127222	No	

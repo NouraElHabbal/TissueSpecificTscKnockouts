@@ -1,0 +1,44 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SERPINE1	SERPINE1	serpin peptidase inhibitor, clade E (nexin, plasminogen activator inhibitor type 1), member 1	587	1.3932085037231445	0.03324353	No	
+row_1	MEF2C	MEF2C	MADS box transcription enhancer factor 2, polypeptide C (myocyte enhancer factor 2C)	1532	0.7907317280769348	0.0015742371	No	
+row_2	CRY2	CRY2	cryptochrome 2 (photolyase-like)	1687	0.740568995475769	0.032318905	No	
+row_3	CCRN4L	CCRN4L	CCR4 carbon catabolite repression 4-like (S. cerevisiae)	3497	0.34276342391967773	-0.09721923	No	
+row_4	CLOCK	CLOCK	clock homolog (mouse)	3501	0.34242719411849976	-0.07736037	No	
+row_5	CPT1A	CPT1A	carnitine palmitoyltransferase 1A (liver)	3955	0.2790665924549103	-0.098452084	No	
+row_6	NCOA3	NCOA3	nuclear receptor coactivator 3	4378	0.22249728441238403	-0.12030076	No	
+row_7	HIF1A	HIF1A	hypoxia-inducible factor 1, alpha subunit (basic helix-loop-helix transcription factor)	4516	0.20461101830005646	-0.11962066	No	
+row_8	NPAS2	NPAS2	neuronal PAS domain protein 2	4744	0.17527467012405396	-0.12810917	No	
+row_9	PPARA	PPARA	peroxisome proliferative activated receptor, alpha	5440	0.09643717855215073	-0.17994626	No	
+row_10	BTRC	BTRC	beta-transducin repeat containing	5467	0.09368111938238144	-0.17659645	No	
+row_11	ARNTL2	ARNTL2	aryl hydrocarbon receptor nuclear translocator-like 2	5708	0.0657704547047615	-0.1925905	No	
+row_12	MEF2D	MEF2D	MADS box transcription enhancer factor 2, polypeptide D (myocyte enhancer factor 2D)	5775	0.05945245921611786	-0.19455992	No	
+row_13	CUL1	CUL1	cullin 1	6080	0.026085032150149345	-0.21817921	No	
+row_14	FBXL3	FBXL3	F-box and leucine-rich repeat protein 3	6259	0.003665812546387315	-0.23269051	No	
+row_15	CRY1	CRY1	cryptochrome 1 (photolyase-like)	6431	-0.014735981822013855	-0.24597266	No	
+row_16	RPS27A	RPS27A	ribosomal protein S27a	6701	-0.045302003622055054	-0.2655679	No	
+row_17	TBL1XR1	TBL1XR1	transducin (beta)-like 1X-linked receptor 1	6821	-0.05887964740395546	-0.27195582	No	
+row_18	UBA52	UBA52	ubiquitin A-52 residue ribosomal protein fusion product 1	6822	-0.05915054678916931	-0.26848254	No	
+row_19	PER1	PER1	period homolog 1 (Drosophila)	6963	-0.07494062185287476	-0.27566478	No	
+row_20	ATF2	ATF2	activating transcription factor 2	7381	-0.12149038910865784	-0.30303082	No	
+row_21	TBL1X	TBL1X	transducin (beta)-like 1X-linked	7589	-0.1424177587032318	-0.311794	No	
+row_22	ELOVL3	ELOVL3	elongation of very long chain fatty acids (FEN1/Elo2, SUR4/Elo3, yeast)-like 3	8111	-0.18343748152256012	-0.34412685	No	
+row_23	CSNK1D	CSNK1D	casein kinase 1, delta	8385	-0.2121337205171585	-0.35425678	No	
+row_24	RXRA	RXRA	retinoid X receptor, alpha	8748	-0.2550755739212036	-0.36922848	No	
+row_25	HDAC3	HDAC3	histone deacetylase 3	8780	-0.2595081329345703	-0.3565551	No	
+row_26	NCOA2	NCOA2	nuclear receptor coactivator 2	9410	-0.34091615676879883	-0.38857618	Yes	
+row_27	ARNTL	ARNTL	aryl hydrocarbon receptor nuclear translocator-like	9494	-0.3503057658672333	-0.37487337	Yes	
+row_28	NCOA6	NCOA6	nuclear receptor coactivator 6	9877	-0.40621593594551086	-0.3826249	Yes	
+row_29	SMARCD3	SMARCD3	SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily d, member 3	9962	-0.4208371639251709	-0.36486328	Yes	
+row_30	CREB1	CREB1	cAMP responsive element binding protein 1	9998	-0.426373153924942	-0.34272265	Yes	
+row_31	NCOR1	NCOR1	nuclear receptor co-repressor 1	10058	-0.4358190596103668	-0.322013	Yes	
+row_32	NR1D1	NR1D1	nuclear receptor subfamily 1, group D, member 1	10212	-0.46267351508140564	-0.30750337	Yes	
+row_33	NR3C1	NR3C1	nuclear receptor subfamily 3, group C, member 1 (glucocorticoid receptor)	10295	-0.47848474979400635	-0.28619128	Yes	
+row_34	PPARGC1A	PPARGC1A	peroxisome proliferative activated receptor, gamma, coactivator 1, alpha	10779	-0.5797238349914551	-0.29211065	Yes	
+row_35	EP300	EP300	E1A binding protein p300	10861	-0.5987852215766907	-0.26365188	Yes	
+row_36	CREBBP	CREBBP	CREB binding protein (Rubinstein-Taybi syndrome)	10949	-0.6218989491462708	-0.23433226	Yes	
+row_37	NCOA1	NCOA1	nuclear receptor coactivator 1	10995	-0.6366135478019714	-0.20067382	Yes	
+row_38	CSNK1E	CSNK1E	casein kinase 1, epsilon	11151	-0.6822547912597656	-0.17343606	Yes	
+row_39	RORA	RORA	RAR-related orphan receptor A	11635	-0.9152410626411438	-0.15965411	Yes	
+row_40	SREBF1	SREBF1	sterol regulatory element binding transcription factor 1	11636	-0.9153377413749695	-0.1059062	Yes	
+row_41	PER2	PER2	period homolog 2 (Drosophila)	11861	-1.1232401132583618	-0.058482736	Yes	
+row_42	DBP	DBP	D site of albumin promoter (albumin D-box) binding protein	11999	-1.3721671104431152	0.010755346	Yes	

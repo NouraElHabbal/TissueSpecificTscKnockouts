@@ -1,0 +1,77 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	TIMP1	TIMP1	TIMP metallopeptidase inhibitor 1	25	3.9199697971343994	0.08092957	Yes	
+row_1	MMP10	MMP10	matrix metallopeptidase 10 (stromelysin 2)	39	3.4775774478912354	0.15348722	Yes	
+row_2	MMP24	MMP24	matrix metallopeptidase 24 (membrane-inserted)	77	3.005197048187256	0.21405138	Yes	
+row_3	COL23A1	COL23A1	collagen, type XXIII, alpha 1	299	1.8747137784957886	0.23541343	Yes	
+row_4	LEPREL1	LEPREL1	leprecan-like 1	422	1.620991587638855	0.25961608	Yes	
+row_5	COL10A1	COL10A1	collagen, type X, alpha 1(Schmid metaphyseal chondrodysplasia)	443	1.5809452533721924	0.29143265	Yes	
+row_6	COL8A1	COL8A1	collagen, type VIII, alpha 1	515	1.4853075742721558	0.3169932	Yes	
+row_7	PLOD2	PLOD2	procollagen-lysine, 2-oxoglutarate 5-dioxygenase 2	679	1.281298279762268	0.33060163	Yes	
+row_8	COL25A1	COL25A1	collagen, type XXV, alpha 1	812	1.1752395629882812	0.34453607	Yes	
+row_9	MMP8	MMP8	matrix metallopeptidase 8 (neutrophil collagenase)	882	1.1263724565505981	0.36266226	Yes	
+row_10	COL24A1	COL24A1	collagen, type XXIV, alpha 1	933	1.1014368534088135	0.38183668	Yes	
+row_11	MMP13	MMP13	matrix metallopeptidase 13 (collagenase 3)	937	1.0981990098953247	0.40484166	Yes	
+row_12	ADAMTS14	ADAMTS14	ADAM metallopeptidase with thrombospondin type 1 motif, 14	983	1.0688165426254272	0.42374018	Yes	
+row_13	MMP3	MMP3	matrix metallopeptidase 3 (stromelysin 1, progelatinase)	1116	0.9927090406417847	0.4338096	Yes	
+row_14	COL3A1	COL3A1	collagen, type III, alpha 1 (Ehlers-Danlos syndrome type IV, autosomal dominant)	1117	0.9922835826873779	0.45482078	Yes	
+row_15	TLL2	TLL2	tolloid-like 2	1130	0.9843213558197021	0.47466782	Yes	
+row_16	COL4A5	COL4A5	collagen, type IV, alpha 5 (Alport syndrome)	1441	0.826556921005249	0.46645218	No	
+row_17	COL5A2	COL5A2	collagen, type V, alpha 2	1764	0.7080197930335999	0.45473105	No	
+row_18	MMP11	MMP11	matrix metallopeptidase 11 (stromelysin 3)	2026	0.6240106225013733	0.44629163	No	
+row_19	CTRB1	CTRB1	chymotrypsinogen B1	2441	0.527280330657959	0.4231111	No	
+row_20	PRSS2	PRSS2	protease, serine, 2 (trypsin 2)	2449	0.527280330657959	0.4336953	No	
+row_21	COL12A1	COL12A1	collagen, type XII, alpha 1	2505	0.5150773525238037	0.44003904	No	
+row_22	COL4A1	COL4A1	collagen, type IV, alpha 1	2905	0.44111427664756775	0.41627836	No	
+row_23	COL16A1	COL16A1	collagen, type XVI, alpha 1	2961	0.4284151792526245	0.42078707	No	
+row_24	COL1A1	COL1A1	collagen, type I, alpha 1	2989	0.4236428439617157	0.4275176	No	
+row_25	COL1A2	COL1A2	collagen, type I, alpha 2	3261	0.3783724904060364	0.41304728	No	
+row_26	COL17A1	COL17A1	collagen, type XVII, alpha 1	3294	0.37273165583610535	0.418285	No	
+row_27	LEPREL2	LEPREL2	leprecan-like 2	3485	0.34354710578918457	0.40979704	No	
+row_28	PLG	PLG	plasminogen	3696	0.31558889150619507	0.3990579	No	
+row_29	COL22A1	COL22A1	collagen, type XXII, alpha 1	3757	0.3087633550167084	0.40061823	No	
+row_30	MMP14	MMP14	matrix metallopeptidase 14 (membrane-inserted)	3760	0.30795997381210327	0.4069732	No	
+row_31	COL4A2	COL4A2	collagen, type IV, alpha 2	4055	0.2676517367362976	0.38825038	No	
+row_32	COL28A1	COL28A1	collagen, type XXVIII, alpha 1	4084	0.26416707038879395	0.39152113	No	
+row_33	COL8A2	COL8A2	collagen, type VIII, alpha 2	4254	0.2388799488544464	0.38255906	No	
+row_34	PPIB	PPIB	peptidylprolyl isomerase B (cyclophilin B)	4282	0.23501335084438324	0.38529542	No	
+row_35	COL6A3	COL6A3	collagen, type VI, alpha 3	4521	0.20395465195178986	0.3698696	No	
+row_36	CRTAP	CRTAP	cartilage associated protein	4919	0.15247279405593872	0.34016302	No	
+row_37	COL5A1	COL5A1	collagen, type V, alpha 1	5103	0.13513684272766113	0.3278428	No	
+row_38	COL14A1	COL14A1	collagen, type XIV, alpha 1 (undulin)	5301	0.11085449159145355	0.31384698	No	
+row_39	MMP25	MMP25	matrix metallopeptidase 25	5442	0.09633075445890427	0.30427232	No	
+row_40	TIMP2	TIMP2	TIMP metallopeptidase inhibitor 2	5760	0.061228495091199875	0.27927047	No	
+row_41	ADAMTS2	ADAMTS2	ADAM metallopeptidase with thrombospondin type 1 motif, 2	5820	0.054065313190221786	0.27552065	No	
+row_42	MMP2	MMP2	matrix metallopeptidase 2 (gelatinase A, 72kDa gelatinase, 72kDa type IV collagenase)	5829	0.05345767363905907	0.2759889	No	
+row_43	COL5A3	COL5A3	collagen, type V, alpha 3	5830	0.053291793912649155	0.27711734	No	
+row_44	PLOD1	PLOD1	procollagen-lysine 1, 2-oxoglutarate 5-dioxygenase 1	5956	0.039860814809799194	0.2675914	No	
+row_45	COL6A1	COL6A1	collagen, type VI, alpha 1	6166	0.016125570982694626	0.25059417	No	
+row_46	TPSAB1	TPSAB1	tryptase alpha/beta 1	6184	0.013129482045769691	0.24946187	No	
+row_47	P4HB	P4HB	procollagen-proline, 2-oxoglutarate 4-dioxygenase (proline 4-hydroxylase), beta polypeptide	6240	0.006102341692894697	0.24502829	No	
+row_48	COL6A2	COL6A2	collagen, type VI, alpha 2	6870	-0.06469560414552689	0.19421634	No	
+row_49	MMP17	MMP17	matrix metallopeptidase 17 (membrane-inserted)	6894	-0.06760497391223907	0.19373977	No	
+row_50	PCOLCE	PCOLCE	procollagen C-endopeptidase enhancer	6938	-0.07177779078483582	0.19169235	No	
+row_51	COL27A1	COL27A1	collagen, type XXVII, alpha 1	7014	-0.08071548491716385	0.18717946	No	
+row_52	MMP16	MMP16	matrix metallopeptidase 16 (membrane-inserted)	7166	-0.09786342084407806	0.17672472	No	
+row_53	ADAMTS3	ADAMTS3	ADAM metallopeptidase with thrombospondin type 1 motif, 3	7313	-0.11520519107580185	0.16705197	No	
+row_54	PLOD3	PLOD3	procollagen-lysine, 2-oxoglutarate 5-dioxygenase 3	7465	-0.132233664393425	0.157325	No	
+row_55	COL7A1	COL7A1	collagen, type VII, alpha 1 (epidermolysis bullosa, dystrophic, dominant and recessive)	7610	-0.1446474939584732	0.1484416	No	
+row_56	COL4A4	COL4A4	collagen, type IV, alpha 4	7635	-0.14696656167507172	0.14956251	No	
+row_57	SERPINH1	SERPINH1	serpin peptidase inhibitor, clade H (heat shock protein 47), member 1, (collagen binding protein 1)	7771	-0.15979152917861938	0.14174642	No	
+row_58	FURIN	FURIN	furin (paired basic amino acid cleaving enzyme)	7930	-0.1702825427055359	0.1322444	No	
+row_59	TLL1	TLL1	tolloid-like 1	8296	-0.20204675197601318	0.10624224	No	
+row_60	COL2A1	COL2A1	collagen, type II, alpha 1 (primary osteoarthritis, spondyloepiphyseal dysplasia, congenital)	8638	-0.24117158353328705	0.08305957	No	
+row_61	COL15A1	COL15A1	collagen, type XV, alpha 1	8726	-0.2520155608654022	0.08117837	No	
+row_62	BMP1	BMP1	bone morphogenetic protein 1	8928	-0.2765769064426422	0.0703598	No	
+row_63	COL11A1	COL11A1	collagen, type XI, alpha 1	9008	-0.2884107828140259	0.06991292	No	
+row_64	COL4A3	COL4A3	collagen, type IV, alpha 3 (Goodpasture antigen)	9527	-0.3536139130592346	0.034427248	No	
+row_65	COL13A1	COL13A1	collagen, type XIII, alpha 1	9690	-0.37690141797065735	0.028968444	No	
+row_66	COL9A1	COL9A1	collagen, type IX, alpha 1	9902	-0.41059330105781555	0.020158008	No	
+row_67	MMP15	MMP15	matrix metallopeptidase 15 (membrane-inserted)	10490	-0.5150555968284607	-0.017633451	No	
+row_68	COL9A3	COL9A3	collagen, type IX, alpha 3	10820	-0.5900310277938843	-0.032433655	No	
+row_69	COL4A6	COL4A6	collagen, type IV, alpha 6	10932	-0.6162647008895874	-0.028593093	No	
+row_70	CMA1	CMA1	chymase 1, mast cell	11413	-0.7818095088005066	-0.05185944	No	
+row_71	COL11A2	COL11A2	collagen, type XI, alpha 2	11575	-0.8771951794624329	-0.04664179	No	
+row_72	PCOLCE2	PCOLCE2	procollagen C-endopeptidase enhancer 2	11735	-0.9903692007064819	-0.038861815	No	
+row_73	COL9A2	COL9A2	collagen, type IX, alpha 2	11766	-1.0207029581069946	-0.019737696	No	
+row_74	MMP9	MMP9	matrix metallopeptidase 9 (gelatinase B, 92kDa gelatinase, 92kDa type IV collagenase)	11820	-1.0827150344848633	-0.0012085782	No	
+row_75	COL19A1	COL19A1	collagen, type XIX, alpha 1	11944	-1.2637935876846313	0.015347594	No	

@@ -1,0 +1,30 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	STAG3	STAG3	stromal antigen 3	703	1.2556368112564087	0.0717169	No	
+row_1	PAM	PAM	peptidylglycine alpha-amidating monooxygenase	761	1.2117294073104858	0.19227853	No	
+row_2	RPA3	RPA3	replication protein A3, 14kDa	2690	0.47755753993988037	0.082324095	No	
+row_3	PURB	PURB	purine-rich element binding protein B	3148	0.39875704050064087	0.08578324	No	
+row_4	CBX5	CBX5	chromobox homolog 5 (HP1 alpha homolog, Drosophila)	5930	0.042283106595277786	-0.13966113	No	
+row_5	RCC1	RCC1	regulator of chromosome condensation 1	6026	0.03249645233154297	-0.14415215	No	
+row_6	RPA1	RPA1	replication protein A1, 70kDa	6049	0.029322847723960876	-0.1429387	No	
+row_7	UBE2I	UBE2I	ubiquitin-conjugating enzyme E2I (UBC9 homolog, yeast)	6355	-0.006648645270615816	-0.16745588	No	
+row_8	ERCC1	ERCC1	excision repair cross-complementing rodent repair deficiency, complementation group 1 (includes overlapping antisense sequence)	7016	-0.08083090931177139	-0.2136403	No	
+row_9	ERCC4	ERCC4	excision repair cross-complementing rodent repair deficiency, complementation group 4	7114	-0.09244506061077118	-0.21209894	No	
+row_10	NUFIP1	NUFIP1	nuclear fragile X mental retardation protein interacting protein 1	7121	-0.09279417246580124	-0.20300144	No	
+row_11	TIMELESS	TIMELESS	timeless homolog (Drosophila)	7182	-0.09958671778440475	-0.19766416	No	
+row_12	H2AFY2	H2AFY2	H2A histone family, member Y2	7256	-0.10783903300762177	-0.192548	No	
+row_13	ACD	ACD	adrenocortical dysplasia homolog (mouse)	7455	-0.12963110208511353	-0.19550867	No	
+row_14	SYCE1	SYCE1	synaptonemal complex central element protein 1	7562	-0.1406041383743286	-0.18973222	No	
+row_15	ATRX	ATRX	alpha thalassemia/mental retardation syndrome X-linked (RAD54 homolog, S. cerevisiae)	8424	-0.21656611561775208	-0.23849416	Yes	
+row_16	MCM7	MCM7	MCM7 minichromosome maintenance deficient 7 (S. cerevisiae)	8487	-0.2236798256635666	-0.22049305	Yes	
+row_17	TIPIN	TIPIN	TIMELESS interacting protein	8542	-0.22864477336406708	-0.20131755	Yes	
+row_18	REPIN1	REPIN1	replication initiator 1	8906	-0.2733232080936432	-0.20305815	Yes	
+row_19	MCM3	MCM3	MCM3 minichromosome maintenance deficient 3 (S. cerevisiae)	9069	-0.29730692505836487	-0.18570906	Yes	
+row_20	PURA	PURA	purine-rich element binding protein A	9098	-0.301126092672348	-0.15689164	Yes	
+row_21	KLHDC3	KLHDC3	kelch domain containing 3	9206	-0.313667356967926	-0.13330609	Yes	
+row_22	POLA1	POLA1	polymerase (DNA directed), alpha 1	9666	-0.37255343794822693	-0.1327212	Yes	
+row_23	RPA2	RPA2	replication protein A2, 32kDa	9854	-0.4022315740585327	-0.10659064	Yes	
+row_24	H2AFY	H2AFY	H2A histone family, member Y	10022	-0.4302752912044525	-0.07590809	Yes	
+row_25	NPM2	NPM2	nucleophosmin/nucleoplasmin, 2	10311	-0.48103025555610657	-0.049977515	Yes	
+row_26	FOXC1	FOXC1	forkhead box C1	10682	-0.559032678604126	-0.022759132	Yes	
+row_27	CBX1	CBX1	chromobox homolog 1 (HP1 beta homolog Drosophila )	10748	-0.5729941725730896	0.03110716	Yes	
+row_28	SYCE2	SYCE2	synaptonemal complex central element protein 2	11453	-0.8021936416625977	0.055863187	Yes	

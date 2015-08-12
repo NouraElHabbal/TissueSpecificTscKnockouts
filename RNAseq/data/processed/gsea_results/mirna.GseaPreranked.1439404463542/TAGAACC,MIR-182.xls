@@ -1,0 +1,32 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CNTN2	CNTN2	contactin 2 (axonal)	540	1.4574111700057983	0.05633516	No	
+row_1	ZFP36L2	ZFP36L2	zinc finger protein 36, C3H type-like 2	2392	0.5382099151611328	-0.059366435	No	
+row_2	BAAT	BAAT	bile acid Coenzyme A: amino acid N-acyltransferase (glycine N-choloyltransferase)	2652	0.4854872524738312	-0.047139436	No	
+row_3	SEC22B	SEC22B	SEC22 vesicle trafficking protein homolog B (S. cerevisiae)	2821	0.4482162892818451	-0.029973228	No	
+row_4	CRIM1	CRIM1	cysteine rich transmembrane BMP regulator 1 (chordin-like)	2977	0.425936222076416	-0.013276074	No	
+row_5	CNOT6	CNOT6	CCR4-NOT transcription complex, subunit 6	3444	0.34877556562423706	-0.027629081	No	
+row_6	FAM126B	FAM126B	family with sequence similarity 126, member B	3584	0.3316819369792938	-0.01613928	No	
+row_7	BCL2L2	BCL2L2	BCL2-like 2	3950	0.27941644191741943	-0.026949571	No	
+row_8	GALNT1	GALNT1	UDP-N-acetyl-alpha-D-galactosamine:polypeptide N-acetylgalactosaminyltransferase 1 (GalNAc-T1)	4244	0.2408578246831894	-0.034480233	No	
+row_9	RAB5A	RAB5A	RAB5A, member RAS oncogene family	4454	0.2132195383310318	-0.036982905	No	
+row_10	RBM12	RBM12	RNA binding motif protein 12	5117	0.13371065258979797	-0.08243492	No	
+row_11	FAM107B	FAM107B	family with sequence similarity 107, member B	5435	0.09710081666707993	-0.10190846	No	
+row_12	RNF6	RNF6	ring finger protein (C3H2C3 type) 6	5981	0.037104737013578415	-0.14438295	No	
+row_13	SLC16A7	SLC16A7	solute carrier family 16, member 7 (monocarboxylic acid transporter 2)	6680	-0.04340814799070358	-0.19906643	No	
+row_14	FXR2	FXR2	fragile X mental retardation, autosomal homolog 2	7484	-0.13415919244289398	-0.25614125	No	
+row_15	PRMT8	PRMT8	protein arginine methyltransferase 8	7753	-0.1589290052652359	-0.2672815	No	
+row_16	SLC6A4	SLC6A4	solute carrier family 6 (neurotransmitter transporter, serotonin), member 4	8053	-0.18104296922683716	-0.27945194	No	
+row_17	TBR1	TBR1	T-box, brain, 1	8583	-0.23418696224689484	-0.30695048	No	
+row_18	HDHD2	HDHD2	haloacid dehalogenase-like hydrolase domain containing 2	8677	-0.24646912515163422	-0.29756212	No	
+row_19	CREM	CREM	cAMP responsive element modulator	8971	-0.28320688009262085	-0.3021589	No	
+row_20	LSM14B	LSM14B	LSM14 homolog B (SCD6, S. cerevisiae)	9518	-0.3530879020690918	-0.32282528	No	
+row_21	ACYP1	ACYP1	acylphosphatase 1, erythrocyte (common) type	10159	-0.4542520046234131	-0.3442524	Yes	
+row_22	FAM78B	FAM78B	family with sequence similarity 78, member B	10320	-0.4827156364917755	-0.32403493	Yes	
+row_23	CXXC5	CXXC5	CXXC finger 5	10582	-0.5359165668487549	-0.30847958	Yes	
+row_24	NUP153	NUP153	nucleoporin 153kDa	10706	-0.5638658404350281	-0.27958205	Yes	
+row_25	FLI1	FLI1	Friend leukemia virus integration 1	10834	-0.5934352874755859	-0.24896662	Yes	
+row_26	DDX3X	DDX3X	DEAD (Asp-Glu-Ala-Asp) box polypeptide 3, X-linked	10872	-0.6009932160377502	-0.21038894	Yes	
+row_27	HOXB4	HOXB4	homeobox B4	11013	-0.6400142312049866	-0.17762105	Yes	
+row_28	UBE2B	UBE2B	ubiquitin-conjugating enzyme E2B (RAD6 homolog)	11143	-0.6805793642997742	-0.14113373	Yes	
+row_29	DOCK9	DOCK9	dedicator of cytokinesis 9	11724	-0.9830402135848999	-0.12096823	Yes	
+row_30	NHS	NHS	Nance-Horan syndrome (congenital cataracts and dental anomalies)	12114	-2.2281079292297363	0.0012398388	Yes	

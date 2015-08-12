@@ -1,0 +1,52 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	PASK	PASK	PAS domain containing serine/threonine kinase	503	1.501419186592102	0.022736687	No	
+row_1	TNIP2	TNIP2	TNFAIP3 interacting protein 2	1423	0.83109050989151	-0.017709522	No	
+row_2	SEC14L2	SEC14L2	SEC14-like 2 (S. cerevisiae)	1673	0.7440093755722046	-0.0064215064	No	
+row_3	WNT10A	WNT10A	wingless-type MMTV integration site family, member 10A	1872	0.671026349067688	0.0059592836	No	
+row_4	ARF3	ARF3	ADP-ribosylation factor 3	1914	0.6593432426452637	0.030836878	No	
+row_5	CEP164	CEP164	centrosomal protein 164kDa	1982	0.6382866501808167	0.052659094	No	
+row_6	VPS53	VPS53	vacuolar protein sorting 53 (S. cerevisiae)	2381	0.5412620902061462	0.04291807	No	
+row_7	ZFPM1	ZFPM1	zinc finger protein, multitype 1	3038	0.4162375032901764	0.006456746	No	
+row_8	ARPC1A	ARPC1A	actin related protein 2/3 complex, subunit 1A, 41kDa	3042	0.41564086079597473	0.024030605	No	
+row_9	SNCB	SNCB	synuclein, beta	4072	0.2658762037754059	-0.049758088	No	
+row_10	ASXL1	ASXL1	additional sex combs like 1 (Drosophila)	4087	0.26350870728492737	-0.039618157	No	
+row_11	GREM1	GREM1	gremlin 1, cysteine knot superfamily, homolog (Xenopus laevis)	4240	0.2413444072008133	-0.041853398	No	
+row_12	EIF2B4	EIF2B4	eukaryotic translation initiation factor 2B, subunit 4 delta, 67kDa	4329	0.22923237085342407	-0.039309535	No	
+row_13	STX12	STX12	syntaxin 12	5042	0.1404872089624405	-0.09223088	No	
+row_14	PARN	PARN	poly(A)-specific ribonuclease (deadenylation nuclease)	5433	0.09712549299001694	-0.120353684	No	
+row_15	JAK3	JAK3	Janus kinase 3 (a protein tyrosine kinase, leukocyte)	5857	0.050039127469062805	-0.15322752	No	
+row_16	TXN2	TXN2	thioredoxin 2	5875	0.048014916479587555	-0.15257609	No	
+row_17	TCEAL1	TCEAL1	transcription elongation factor A (SII)-like 1	6119	0.020846422761678696	-0.17179978	No	
+row_18	TNPO3	TNPO3	transportin 3	6869	-0.06460552662611008	-0.231038	No	
+row_19	BTBD1	BTBD1	BTB (POZ) domain containing 1	6986	-0.07732528448104858	-0.23732583	No	
+row_20	BRD2	BRD2	bromodomain containing 2	7553	-0.1404685229063034	-0.27816087	No	
+row_21	PPP1R7	PPP1R7	protein phosphatase 1, regulatory subunit 7	7730	-0.15540416538715363	-0.28606805	No	
+row_22	CD40LG	CD40LG	CD40 ligand (TNF superfamily, member 5, hyper-IgM syndrome)	7757	-0.1589290052652359	-0.28140587	No	
+row_23	RELA	RELA	v-rel reticuloendotheliosis viral oncogene homolog A, nuclear factor of kappa light polypeptide gene enhancer in B-cells 3, p65 (avian)	7895	-0.1677129864692688	-0.2855565	No	
+row_24	FBXO8	FBXO8	F-box protein 8	8020	-0.1775924116373062	-0.2882073	No	
+row_25	SCAMP3	SCAMP3	secretory carrier membrane protein 3	8517	-0.2262275665998459	-0.31956992	No	
+row_26	WHSC1L1	WHSC1L1	Wolf-Hirschhorn syndrome candidate 1-like 1	8539	-0.22852492332458496	-0.31150955	No	
+row_27	LRP5	LRP5	low density lipoprotein receptor-related protein 5	8543	-0.22886227071285248	-0.30194455	No	
+row_28	CCDC85B	CCDC85B	coiled-coil domain containing 85B	9035	-0.29221564531326294	-0.33006373	Yes	
+row_29	SERPING1	SERPING1	serpin peptidase inhibitor, clade G (C1 inhibitor), member 1, (angioedema, hereditary)	9150	-0.30741581320762634	-0.32631993	Yes	
+row_30	GSK3A	GSK3A	glycogen synthase kinase 3 alpha	9317	-0.3275790810585022	-0.32601658	Yes	
+row_31	RAB10	RAB10	RAB10, member RAS oncogene family	9546	-0.3561231791973114	-0.32962215	Yes	
+row_32	TCEA2	TCEA2	transcription elongation factor A (SII), 2	9621	-0.3650696277618408	-0.32009467	Yes	
+row_33	APBA1	APBA1	amyloid beta (A4) precursor protein-binding, family A, member 1 (X11)	9725	-0.38316795229911804	-0.31219205	Yes	
+row_34	SET	SET	SET translocation (myeloid leukemia-associated)	9872	-0.4044475853443146	-0.3069369	Yes	
+row_35	SMC6	SMC6	structural maintenance of chromosomes 6	10039	-0.4329483211040497	-0.3021154	Yes	
+row_36	TDG	TDG	thymine-DNA glycosylase	10313	-0.48146042227745056	-0.3040721	Yes	
+row_37	TMEM95	TMEM95	transmembrane protein 95	10373	-0.49195313453674316	-0.2878622	Yes	
+row_38	GABPB2	GABPB2	GA binding protein transcription factor, beta subunit 2	10497	-0.5169104337692261	-0.2758806	Yes	
+row_39	SSBP4	SSBP4	single stranded DNA binding protein 4	10500	-0.5177825689315796	-0.25384423	Yes	
+row_40	BCL6	BCL6	B-cell CLL/lymphoma 6 (zinc finger protein 51)	10908	-0.6083967685699463	-0.2614517	Yes	
+row_41	CISH	CISH	cytokine inducible SH2-containing protein	11047	-0.6507549285888672	-0.24497283	Yes	
+row_42	UBR1	UBR1	ubiquitin protein ligase E3 component n-recognin 1	11108	-0.6660168766975403	-0.22138205	Yes	
+row_43	MUC1	MUC1	mucin 1, cell surface associated	11189	-0.6953001022338867	-0.19819142	Yes	
+row_44	TRAF4	TRAF4	TNF receptor-associated factor 4	11233	-0.7065017223358154	-0.17145729	Yes	
+row_45	SDC1	SDC1	syndecan 1	11267	-0.7212622165679932	-0.14326237	Yes	
+row_46	PCDH1	PCDH1	protocadherin 1 (cadherin-like 1)	11348	-0.7502139210700989	-0.11771709	Yes	
+row_47	SLC38A5	SLC38A5	solute carrier family 38, member 5	11647	-0.925225555896759	-0.10271534	Yes	
+row_48	ARHGAP8	ARHGAP8	Rho GTPase activating protein 8	11739	-0.9945268630981445	-0.06760486	Yes	
+row_49	PTHLH	PTHLH	parathyroid hormone-like hormone	11791	-1.0522886514663696	-0.026706079	Yes	
+row_50	GABRA1	GABRA1	gamma-aminobutyric acid (GABA) A receptor, alpha 1	11953	-1.2734845876693726	0.014570628	Yes	

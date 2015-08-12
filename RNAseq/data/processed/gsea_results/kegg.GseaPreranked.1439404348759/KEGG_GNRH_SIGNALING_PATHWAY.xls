@@ -1,0 +1,90 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SRC	SRC	v-src sarcoma (Schmidt-Ruppin A-2) viral oncogene homolog (avian)	592	1.3851473331451416	-0.013171382	No	
+row_1	CALML3	CALML3	calmodulin-like 3	758	1.2135119438171387	0.0046593454	No	
+row_2	HBEGF	HBEGF	heparin-binding EGF-like growth factor	824	1.1649587154388428	0.029533342	No	
+row_3	MAPK13	MAPK13	mitogen-activated protein kinase 13	1118	0.9915817975997925	0.030966721	No	
+row_4	NRAS	NRAS	neuroblastoma RAS viral (v-ras) oncogene homolog	1238	0.9218977689743042	0.04503994	No	
+row_5	PRKX	PRKX	protein kinase, X-linked	1365	0.8588340282440186	0.05689306	No	
+row_6	PLCB2	PLCB2	phospholipase C, beta 2	1756	0.7113769054412842	0.042989325	No	
+row_7	MAPK11	MAPK11	mitogen-activated protein kinase 11	1959	0.6459383368492126	0.042998444	No	
+row_8	PLA2G2F	PLA2G2F	phospholipase A2, group IIF	2444	0.527280330657959	0.016504176	No	
+row_9	ADCY7	ADCY7	adenylate cyclase 7	2568	0.5070524215698242	0.019465169	No	
+row_10	PLA2G4A	PLA2G4A	phospholipase A2, group IVA (cytosolic, calcium-dependent)	2715	0.472551167011261	0.019619485	No	
+row_11	CDC42	CDC42	cell division cycle 42 (GTP binding protein, 25kDa)	2718	0.47174137830734253	0.031711895	No	
+row_12	MAP3K4	MAP3K4	mitogen-activated protein kinase kinase kinase 4	2758	0.46363702416419983	0.040520877	No	
+row_13	GRB2	GRB2	growth factor receptor-bound protein 2	2898	0.44215285778045654	0.040466618	No	
+row_14	CAMK2D	CAMK2D	calcium/calmodulin-dependent protein kinase (CaM kinase) II delta	2995	0.4228849411010742	0.043482803	No	
+row_15	GNRH1	GNRH1	gonadotropin-releasing hormone 1 (luteinizing-releasing hormone)	3194	0.38952311873435974	0.037161	No	
+row_16	MAPK7	MAPK7	mitogen-activated protein kinase 7	3376	0.3598456382751465	0.031479854	No	
+row_17	PLCB3	PLCB3	phospholipase C, beta 3 (phosphatidylinositol-specific)	3392	0.3572084903717041	0.039516408	No	
+row_18	MMP14	MMP14	matrix metallopeptidase 14 (membrane-inserted)	3760	0.30795997381210327	0.017039755	No	
+row_19	MAPK8	MAPK8	mitogen-activated protein kinase 8	3783	0.3046676516532898	0.023129655	No	
+row_20	ATF4	ATF4	activating transcription factor 4 (tax-responsive enhancer element B67)	3865	0.2900922894477844	0.023940878	No	
+row_21	PTK2B	PTK2B	PTK2B protein tyrosine kinase 2 beta	4202	0.2457994818687439	0.0024234806	No	
+row_22	MAP3K3	MAP3K3	mitogen-activated protein kinase kinase kinase 3	4204	0.24540364742279053	0.008717407	No	
+row_23	KRAS	KRAS	v-Ki-ras2 Kirsten rat sarcoma viral oncogene homolog	4217	0.24377769231796265	0.014055535	No	
+row_24	PRKACA	PRKACA	protein kinase, cAMP-dependent, catalytic, alpha	4245	0.24078798294067383	0.01807023	No	
+row_25	ADCY8	ADCY8	adenylate cyclase 8 (brain)	4630	0.191138356924057	-0.008853951	No	
+row_26	MAP3K1	MAP3K1	mitogen-activated protein kinase kinase kinase 1	4924	0.15225915610790253	-0.029230922	No	
+row_27	RAF1	RAF1	v-raf-1 murine leukemia viral oncogene homolog 1	5053	0.1394452005624771	-0.036237694	No	
+row_28	ELK1	ELK1	ELK1, member of ETS oncogene family	5075	0.13776621222496033	-0.03440179	No	
+row_29	PLCB4	PLCB4	phospholipase C, beta 4	5404	0.10093671828508377	-0.05901914	No	
+row_30	SOS1	SOS1	son of sevenless homolog 1 (Drosophila)	5642	0.07439659535884857	-0.076768644	No	
+row_31	PLA2G4B	PLA2G4B	phospholipase A2, group IVB (cytosolic)	5761	0.061195455491542816	-0.0849783	No	
+row_32	MMP2	MMP2	matrix metallopeptidase 2 (gelatinase A, 72kDa gelatinase, 72kDa type IV collagenase)	5829	0.05345767363905907	-0.08915348	No	
+row_33	MAPK3	MAPK3	mitogen-activated protein kinase 3	5920	0.04387248307466507	-0.09548789	No	
+row_34	GNAS	GNAS	GNAS complex locus	6079	0.026168981567025185	-0.10792971	No	
+row_35	ITPR3	ITPR3	inositol 1,4,5-triphosphate receptor, type 3	6188	0.012486324645578861	-0.11657459	No	
+row_36	PRKACB	PRKACB	protein kinase, cAMP-dependent, catalytic, beta	6225	0.008203152567148209	-0.119351216	No	
+row_37	MAP2K1	MAP2K1	mitogen-activated protein kinase kinase 1	6392	-0.009804394096136093	-0.13288267	No	
+row_38	PLA2G12A	PLA2G12A	phospholipase A2, group XIIA	6516	-0.02414519339799881	-0.14247034	No	
+row_39	MAP2K6	MAP2K6	mitogen-activated protein kinase kinase 6	6543	-0.027545638382434845	-0.14391384	No	
+row_40	CACNA1D	CACNA1D	calcium channel, voltage-dependent, L type, alpha 1D subunit	6656	-0.04025756195187569	-0.15216927	No	
+row_41	PLA2G12B	PLA2G12B	phospholipase A2, group XIIB	6660	-0.04078713804483414	-0.15135854	No	
+row_42	ADCY1	ADCY1	adenylate cyclase 1 (brain)	6882	-0.06600667536258698	-0.16799727	No	
+row_43	GNAQ	GNAQ	guanine nucleotide binding protein (G protein), q polypeptide	7017	-0.08091006428003311	-0.17702341	No	
+row_44	MAP2K4	MAP2K4	mitogen-activated protein kinase kinase 4	7025	-0.08192244917154312	-0.17547596	No	
+row_45	PLD1	PLD1	phospholipase D1, phosphatidylcholine-specific	7151	-0.09628612548112869	-0.1833551	No	
+row_46	ADCY4	ADCY4	adenylate cyclase 4	7181	-0.09954988956451416	-0.18317665	No	
+row_47	PLA2G2E	PLA2G2E	phospholipase A2, group IIE	7195	-0.10065372288227081	-0.18164074	No	
+row_48	MAPK1	MAPK1	mitogen-activated protein kinase 1	7694	-0.15220962464809418	-0.21904416	No	
+row_49	MAP2K7	MAP2K7	mitogen-activated protein kinase kinase 7	7766	-0.15926319360733032	-0.22080213	No	
+row_50	CAMK2B	CAMK2B	calcium/calmodulin-dependent protein kinase (CaM kinase) II beta	8199	-0.19299015402793884	-0.25166458	No	
+row_51	MAP2K2	MAP2K2	mitogen-activated protein kinase kinase 2	8212	-0.19472163915634155	-0.2476012	No	
+row_52	ITPR2	ITPR2	inositol 1,4,5-triphosphate receptor, type 2	8300	-0.20234210789203644	-0.24956852	No	
+row_53	ADCY9	ADCY9	adenylate cyclase 9	8358	-0.20794396102428436	-0.24889877	No	
+row_54	HRAS	HRAS	v-Ha-ras Harvey rat sarcoma viral oncogene homolog	8509	-0.22525131702423096	-0.2555029	No	
+row_55	MAP3K2	MAP3K2	mitogen-activated protein kinase kinase kinase 2	8529	-0.22749418020248413	-0.25116926	No	
+row_56	GNA11	GNA11	guanine nucleotide binding protein (G protein), alpha 11 (Gq class)	8546	-0.22954614460468292	-0.24653316	No	
+row_57	EGFR	EGFR	epidermal growth factor receptor (erythroblastic leukemia viral (v-erb-b) oncogene homolog, avian)	8562	-0.23173780739307404	-0.24175704	No	
+row_58	PLCB1	PLCB1	phospholipase C, beta 1 (phosphoinositide-specific)	8790	-0.2602665424346924	-0.2538461	No	
+row_59	PLD2	PLD2	phospholipase D2	8982	-0.2850634455680847	-0.262301	No	
+row_60	MAP2K3	MAP2K3	mitogen-activated protein kinase kinase 3	9403	-0.33916348218917847	-0.28836843	No	
+row_61	PLA2G10	PLA2G10	phospholipase A2, group X	9440	-0.34388574957847595	-0.28242213	No	
+row_62	GNRHR	GNRHR	gonadotropin-releasing hormone receptor	9503	-0.3517327606678009	-0.2784312	No	
+row_63	MAPK9	MAPK9	mitogen-activated protein kinase 9	9660	-0.37191474437713623	-0.2817225	No	
+row_64	MAPK12	MAPK12	mitogen-activated protein kinase 12	9813	-0.39555323123931885	-0.2840673	No	
+row_65	MAPK14	MAPK14	mitogen-activated protein kinase 14	9820	-0.3966512084007263	-0.27425835	No	
+row_66	ADCY6	ADCY6	adenylate cyclase 6	9912	-0.41232919692993164	-0.27110124	No	
+row_67	ADCY2	ADCY2	adenylate cyclase 2 (brain)	10141	-0.4507461190223694	-0.2783236	No	
+row_68	JUN	JUN	jun oncogene	10534	-0.5250408053398132	-0.2972355	Yes	
+row_69	SOS2	SOS2	son of sevenless homolog 2 (Drosophila)	10606	-0.5408231019973755	-0.28907835	Yes	
+row_70	PLA2G3	PLA2G3	phospholipase A2, group III	10669	-0.556907594203949	-0.27975583	Yes	
+row_71	PRKCA	PRKCA	protein kinase C, alpha	10690	-0.5605981945991516	-0.2668493	Yes	
+row_72	PLA2G2C	PLA2G2C	phospholipase A2, group IIC	10698	-0.5625877976417542	-0.25281143	Yes	
+row_73	PLA2G4E	PLA2G4E	phospholipase A2, group IVE	10732	-0.5693082213401794	-0.24075823	Yes	
+row_74	ADCY3	ADCY3	adenylate cyclase 3	10803	-0.5852764844894409	-0.23136291	Yes	
+row_75	PLA2G6	PLA2G6	phospholipase A2, group VI (cytosolic, calcium-independent)	11126	-0.672356903553009	-0.24063323	Yes	
+row_76	CACNA1C	CACNA1C	calcium channel, voltage-dependent, L type, alpha 1C subunit	11287	-0.7280485033988953	-0.23500234	Yes	
+row_77	CAMK2G	CAMK2G	calcium/calmodulin-dependent protein kinase (CaM kinase) II gamma	11305	-0.7352122068405151	-0.2173092	Yes	
+row_78	CALM2	CALM2	calmodulin 2 (phosphorylase kinase, delta)	11309	-0.7378762364387512	-0.19838417	Yes	
+row_79	ITPR1	ITPR1	inositol 1,4,5-triphosphate receptor, type 1	11521	-0.8424565196037292	-0.19401583	Yes	
+row_80	CALM3	CALM3	calmodulin 3 (phosphorylase kinase, delta)	11522	-0.8429415225982666	-0.17211145	Yes	
+row_81	CACNA1S	CACNA1S	calcium channel, voltage-dependent, L type, alpha 1S subunit	11598	-0.892543613910675	-0.15514684	Yes	
+row_82	CALM1	CALM1	calmodulin 1 (phosphorylase kinase, delta)	11602	-0.8956689834594727	-0.13212143	Yes	
+row_83	ADCY5	ADCY5	adenylate cyclase 5	11613	-0.9014852046966553	-0.10952624	Yes	
+row_84	CAMK2A	CAMK2A	calcium/calmodulin-dependent protein kinase (CaM kinase) II alpha	11637	-0.915886640548706	-0.08763646	Yes	
+row_85	PLA2G5	PLA2G5	phospholipase A2, group V	11778	-1.0338060855865479	-0.07239927	Yes	
+row_86	PRKCD	PRKCD	protein kinase C, delta	11887	-1.1557705402374268	-0.051335167	Yes	
+row_87	MAPK10	MAPK10	mitogen-activated protein kinase 10	11982	-1.3403613567352295	-0.024311656	Yes	
+row_88	PLA2G2D	PLA2G2D	phospholipase A2, group IID	12010	-1.4021908044815063	0.009882857	Yes	

@@ -1,0 +1,28 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	DDX25	DDX25	DEAD (Asp-Glu-Ala-Asp) box polypeptide 25	999	1.0604311227798462	0.0075128647	No	
+row_1	SLC23A2	SLC23A2	solute carrier family 23 (nucleobase transporters), member 2	1600	0.7745551466941833	0.023715477	No	
+row_2	SLC28A1	SLC28A1	solute carrier family 28 (sodium-coupled nucleoside transporter), member 1	1612	0.7702715396881104	0.08821994	No	
+row_3	DDX19B	DDX19B	DEAD (Asp-Glu-Ala-As) box polypeptide 19B	2364	0.5449886322021484	0.07245096	No	
+row_4	SMG5	SMG5	Smg-5 homolog, nonsense mediated mRNA decay factor (C. elegans)	3023	0.4179931581020355	0.053581264	No	
+row_5	NCBP2	NCBP2	nuclear cap binding protein subunit 2, 20kDa	3044	0.41508933901786804	0.08717918	No	
+row_6	RAE1	RAE1	RAE1 RNA export 1 homolog (S. pombe)	3539	0.3376809060573578	0.07503953	No	
+row_7	CKAP5	CKAP5	cytoskeleton associated protein 5	4991	0.14556145668029785	-0.032486673	No	
+row_8	SLC29A2	SLC29A2	solute carrier family 29 (nucleoside transporters), member 2	5007	0.14399564266204834	-0.021497577	No	
+row_9	SMG7	SMG7	Smg-7 homolog, nonsense mediated mRNA decay factor (C. elegans)	5128	0.13298876583576202	-0.020118747	No	
+row_10	NUDT4	NUDT4	nudix (nucleoside diphosphate linked moiety X)-type motif 4	5575	0.08108719438314438	-0.050082993	No	
+row_11	NUP107	NUP107	nucleoporin 107kDa	5662	0.07190635800361633	-0.05108221	No	
+row_12	UPF2	UPF2	UPF2 regulator of nonsense transcripts homolog (yeast)	6230	0.007766970433294773	-0.09727051	No	
+row_13	EIF5A	EIF5A	eukaryotic translation initiation factor 5A	6443	-0.016207685694098473	-0.11341043	No	
+row_14	SLC35B2	SLC35B2	solute carrier family 35, member B2	6683	-0.04381236806511879	-0.12943695	No	
+row_15	VDAC3	VDAC3	voltage-dependent anion channel 3	8163	-0.18941155076026917	-0.23555277	No	
+row_16	SMG6	SMG6	Smg-6 homolog, nonsense mediated mRNA decay factor (C. elegans)	8176	-0.190962553024292	-0.22032726	No	
+row_17	SMG1	SMG1	-	8213	-0.19472618401050568	-0.20676512	No	
+row_18	SLC23A1	SLC23A1	solute carrier family 23 (nucleobase transporters), member 1	8860	-0.2670357823371887	-0.23746298	No	
+row_19	UPF1	UPF1	UPF1 regulator of nonsense transcripts homolog (yeast)	8936	-0.2788388133049011	-0.21998012	No	
+row_20	SLC29A1	SLC29A1	solute carrier family 29 (nucleoside transporters), member 1	9136	-0.30670028924942017	-0.21037659	No	
+row_21	KHDRBS1	KHDRBS1	KH domain containing, RNA binding, signal transduction associated 1	9423	-0.3418426811695099	-0.20497699	No	
+row_22	SLC28A2	SLC28A2	solute carrier family 28 (sodium-coupled nucleoside transporter), member 2	10967	-0.6284934878349304	-0.27909285	Yes	
+row_23	NUP133	NUP133	nucleoporin 133kDa	11197	-0.6970523595809937	-0.2388184	Yes	
+row_24	NUP160	NUP160	nucleoporin 160kDa	11240	-0.7087355256080627	-0.18210109	Yes	
+row_25	AQP9	AQP9	aquaporin 9	11568	-0.8700329661369324	-0.13523386	Yes	
+row_26	TSC1	TSC1	tuberous sclerosis 1	12112	-2.137284278869629	0.0014045909	Yes	

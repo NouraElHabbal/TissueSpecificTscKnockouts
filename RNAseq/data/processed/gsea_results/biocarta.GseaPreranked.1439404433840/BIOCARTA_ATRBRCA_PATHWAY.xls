@@ -1,0 +1,20 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	RAD17	RAD17	RAD17 homolog (S. pombe)	4134	0.2567282021045685	-0.30344966	No	
+row_1	BRCA1	BRCA1	breast cancer 1, early onset	4223	0.2428845763206482	-0.27486616	No	
+row_2	FANCC	FANCC	Fanconi anemia, complementation group C	4739	0.17562806606292725	-0.2914669	No	
+row_3	FANCG	FANCG	Fanconi anemia, complementation group G	5023	0.14311723411083221	-0.29371005	No	
+row_4	ATR	ATR	ataxia telangiectasia and Rad3 related	5316	0.10943529009819031	-0.30166778	No	
+row_5	RAD50	RAD50	RAD50 homolog (S. cerevisiae)	6788	-0.055128857493400574	-0.41499063	No	
+row_6	CHEK2	CHEK2	CHK2 checkpoint homolog (S. pombe)	8246	-0.19646786153316498	-0.5062959	Yes	
+row_7	RAD1	RAD1	RAD1 homolog (S. pombe)	8286	-0.20069319009780884	-0.47989395	Yes	
+row_8	MRE11A	MRE11A	MRE11 meiotic recombination 11 homolog A (S. cerevisiae)	8348	-0.20721276104450226	-0.4543462	Yes	
+row_9	NBN	NBN	nibrin	8379	-0.21161161363124847	-0.42558953	Yes	
+row_10	BRCA2	BRCA2	breast cancer 2, early onset	8942	-0.27953219413757324	-0.43073484	Yes	
+row_11	HUS1	HUS1	HUS1 checkpoint homolog (S. pombe)	9064	-0.29680854082107544	-0.396917	Yes	
+row_12	RAD51	RAD51	RAD51 homolog (RecA homolog, E. coli) (S. cerevisiae)	9174	-0.31025391817092896	-0.36012378	Yes	
+row_13	FANCD2	FANCD2	Fanconi anemia, complementation group D2	9519	-0.3532213568687439	-0.33639243	Yes	
+row_14	FANCF	FANCF	Fanconi anemia, complementation group F	10962	-0.6270945072174072	-0.36289898	Yes	
+row_15	RAD9A	RAD9A	RAD9 homolog A (S. pombe)	11089	-0.660969614982605	-0.275744	Yes	
+row_16	CHEK1	CHEK1	CHK1 checkpoint homolog (S. pombe)	11306	-0.7357904314994812	-0.18497677	Yes	
+row_17	FANCE	FANCE	Fanconi anemia, complementation group E	11528	-0.8487844467163086	-0.07794455	Yes	
+row_18	ATM	ATM	ataxia telangiectasia mutated (includes complementation groups A, C and D)	11550	-0.8637311458587646	0.04780772	Yes	

@@ -1,0 +1,39 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	AGT	AGT	angiotensinogen (serpin peptidase inhibitor, clade A, member 8)	386	1.6857261657714844	0.05763626	No	
+row_1	GNAI1	GNAI1	guanine nucleotide binding protein (G protein), alpha inhibiting activity polypeptide 1	403	1.6593124866485596	0.14446798	No	
+row_2	AGTR2	AGTR2	angiotensin II receptor, type 2	1437	0.8282468318939209	0.10304217	No	
+row_3	FYN	FYN	FYN oncogene related to SRC, FGR, YES	1986	0.6360108852386475	0.09151253	No	
+row_4	SHC1	SHC1	SHC (Src homology 2 domain containing) transforming protein 1	2005	0.630021870136261	0.12349535	No	
+row_5	STAT3	STAT3	signal transducer and activator of transcription 3 (acute-phase response factor)	2086	0.6081721186637878	0.14918998	No	
+row_6	GNB1	GNB1	guanine nucleotide binding protein (G protein), beta polypeptide 1	2661	0.48417529463768005	0.12744354	No	
+row_7	GRB2	GRB2	growth factor receptor-bound protein 2	2898	0.44215285778045654	0.13141692	No	
+row_8	CAMK2D	CAMK2D	calcium/calmodulin-dependent protein kinase (CaM kinase) II delta	2995	0.4228849411010742	0.14594455	No	
+row_9	MAPK8	MAPK8	mitogen-activated protein kinase 8	3783	0.3046676516532898	0.09704639	No	
+row_10	CDK5	CDK5	cyclin-dependent kinase 5	3812	0.2996050715446472	0.110648036	No	
+row_11	PTK2B	PTK2B	PTK2B protein tyrosine kinase 2 beta	4202	0.2457994818687439	0.091536686	No	
+row_12	STAT4	STAT4	signal transducer and activator of transcription 4	4228	0.2421928346157074	0.10233627	No	
+row_13	RAF1	RAF1	v-raf-1 murine leukemia viral oncogene homolog 1	5053	0.1394452005624771	0.0416004	No	
+row_14	MAPT	MAPT	microtubule-associated protein tau	5290	0.1122777983546257	0.028048387	No	
+row_15	STAT2	STAT2	signal transducer and activator of transcription 2, 113kDa	5602	0.07810357213020325	0.0064783394	No	
+row_16	SOS1	SOS1	son of sevenless homolog 1 (Drosophila)	5642	0.07439659535884857	0.0072055617	No	
+row_17	STAT5A	STAT5A	signal transducer and activator of transcription 5A	5872	0.04817400127649307	-0.009173221	No	
+row_18	MAPK3	MAPK3	mitogen-activated protein kinase 3	5920	0.04387248307466507	-0.010729259	No	
+row_19	MAP2K1	MAP2K1	mitogen-activated protein kinase kinase 1	6392	-0.009804394096136093	-0.04915975	No	
+row_20	MAPK1	MAPK1	mitogen-activated protein kinase 1	7694	-0.15220962464809418	-0.14866506	No	
+row_21	PLCG1	PLCG1	phospholipase C, gamma 1	7733	-0.15622419118881226	-0.14350784	No	
+row_22	STAT6	STAT6	signal transducer and activator of transcription 6, interleukin-4 induced	7787	-0.16138093173503876	-0.13931717	No	
+row_23	CAMK2B	CAMK2B	calcium/calmodulin-dependent protein kinase (CaM kinase) II beta	8199	-0.19299015402793884	-0.16305351	No	
+row_24	MAP2K2	MAP2K2	mitogen-activated protein kinase kinase 2	8212	-0.19472163915634155	-0.15370086	No	
+row_25	HRAS	HRAS	v-Ha-ras Harvey rat sarcoma viral oncogene homolog	8509	-0.22525131702423096	-0.16621284	No	
+row_26	GNA11	GNA11	guanine nucleotide binding protein (G protein), alpha 11 (Gq class)	8546	-0.22954614460468292	-0.15699483	No	
+row_27	MAPK14	MAPK14	mitogen-activated protein kinase 14	9820	-0.3966512084007263	-0.24119802	No	
+row_28	STAT1	STAT1	signal transducer and activator of transcription 1, 91kDa	10085	-0.44080325961112976	-0.23961192	No	
+row_29	PRKCA	PRKCA	protein kinase C, alpha	10690	-0.5605981945991516	-0.25977919	No	
+row_30	MYLK	MYLK	myosin, light chain kinase	11263	-0.7198508977890015	-0.26883942	Yes	
+row_31	CAMK2G	CAMK2G	calcium/calmodulin-dependent protein kinase (CaM kinase) II gamma	11305	-0.7352122068405151	-0.2331702	Yes	
+row_32	CALM2	CALM2	calmodulin 2 (phosphorylase kinase, delta)	11309	-0.7378762364387512	-0.19421688	Yes	
+row_33	CALM3	CALM3	calmodulin 3 (phosphorylase kinase, delta)	11522	-0.8429415225982666	-0.16696587	Yes	
+row_34	CALM1	CALM1	calmodulin 1 (phosphorylase kinase, delta)	11602	-0.8956689834594727	-0.12591457	Yes	
+row_35	CAMK2A	CAMK2A	calcium/calmodulin-dependent protein kinase (CaM kinase) II alpha	11637	-0.915886640548706	-0.08006771	Yes	
+row_36	STAT5B	STAT5B	signal transducer and activator of transcription 5B	11672	-0.9430349469184875	-0.03277852	Yes	
+row_37	JAK2	JAK2	Janus kinase 2 (a protein tyrosine kinase)	11980	-1.3267970085144043	0.012322019	Yes	

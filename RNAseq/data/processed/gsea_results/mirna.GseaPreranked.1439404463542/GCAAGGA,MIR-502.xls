@@ -1,0 +1,59 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	DOCK3	DOCK3	dedicator of cytokinesis 3	65	3.1282970905303955	0.08554258	Yes	
+row_1	SRGAP3	SRGAP3	SLIT-ROBO Rho GTPase activating protein 3	73	3.0371792316436768	0.17324124	Yes	
+row_2	MAP1A	MAP1A	microtubule-associated protein 1A	154	2.400688648223877	0.23639265	Yes	
+row_3	DIO2	DIO2	deiodinase, iodothyronine, type II	205	2.1761863231658936	0.29550377	Yes	
+row_4	GABRB2	GABRB2	gamma-aminobutyric acid (GABA) A receptor, beta 2	221	2.0943496227264404	0.3551355	Yes	
+row_5	LEF1	LEF1	lymphoid enhancer-binding factor 1	675	1.283383846282959	0.3549134	Yes	
+row_6	AKT3	AKT3	v-akt murine thymoma viral oncogene homolog 3 (protein kinase B, gamma)	982	1.0694776773452759	0.3606509	Yes	
+row_7	GADD45A	GADD45A	growth arrest and DNA-damage-inducible, alpha	1009	1.0567742586135864	0.38921332	Yes	
+row_8	EAF1	EAF1	ELL associated factor 1	1214	0.9332324862480164	0.39944	Yes	
+row_9	TESK2	TESK2	testis-specific kinase 2	1638	0.7601167559623718	0.38649374	Yes	
+row_10	DDX11	DDX11	DEAD/H (Asp-Glu-Ala-Asp/His) box polypeptide 11 (CHL1-like helicase homolog, S. cerevisiae)	1679	0.7425521016120911	0.40476328	Yes	
+row_11	FBXO24	FBXO24	F-box protein 24	1729	0.7240430116653442	0.42174932	Yes	
+row_12	GNB1	GNB1	guanine nucleotide binding protein (G protein), beta polypeptide 1	2661	0.48417529463768005	0.3587017	No	
+row_13	RAB1B	RAB1B	RAB1B, member RAS oncogene family	2904	0.4412861466407776	0.35148174	No	
+row_14	PDPK1	PDPK1	3-phosphoinositide dependent protein kinase-1	3177	0.3933652341365814	0.3403838	No	
+row_15	RIMBP2	RIMBP2	RIMS binding protein 2	3537	0.33780601620674133	0.3204642	No	
+row_16	ESCO1	ESCO1	establishment of cohesion 1 homolog 1 (S. cerevisiae)	3726	0.31241634488105774	0.31397167	No	
+row_17	RAB30	RAB30	RAB30, member RAS oncogene family	3957	0.27889612317085266	0.3030257	No	
+row_18	MXI1	MXI1	MAX interactor 1	4210	0.2444268763065338	0.28925544	No	
+row_19	PANK2	PANK2	pantothenate kinase 2 (Hallervorden-Spatz syndrome)	4708	0.1805143654346466	0.2533326	No	
+row_20	SGCD	SGCD	sarcoglycan, delta (35kDa dystrophin-associated glycoprotein)	4745	0.17525190114974976	0.25544438	No	
+row_21	DTNA	DTNA	dystrobrevin, alpha	4884	0.1567472219467163	0.24856895	No	
+row_22	PHF23	PHF23	PHD finger protein 23	4909	0.15280316770076752	0.25102225	No	
+row_23	SPTY2D1	SPTY2D1	SPT2, Suppressor of Ty, domain containing 1 (S. cerevisiae)	4962	0.1489725559949875	0.2510448	No	
+row_24	NFXL1	NFXL1	nuclear transcription factor, X-box binding-like 1	5921	0.04387230426073074	0.1729628	No	
+row_25	BCL11A	BCL11A	B-cell CLL/lymphoma 11A (zinc finger protein)	5933	0.04186704382300377	0.1732685	No	
+row_26	DOT1L	DOT1L	DOT1-like, histone H3 methyltransferase (S. cerevisiae)	6294	-7.337852730415761E-4	0.14346875	No	
+row_27	EIF4G2	EIF4G2	eukaryotic translation initiation factor 4 gamma, 2	6391	-0.009791167452931404	0.13580106	No	
+row_28	YTHDF3	YTHDF3	YTH domain family, member 3	6409	-0.012283949181437492	0.13474989	No	
+row_29	MID1	MID1	midline 1 (Opitz/BBB syndrome)	6427	-0.013896630145609379	0.13374558	No	
+row_30	DAPK1	DAPK1	death-associated protein kinase 1	6601	-0.034254781901836395	0.120410554	No	
+row_31	PLP1	PLP1	proteolipid protein 1 (Pelizaeus-Merzbacher disease, spastic paraplegia 2, uncomplicated)	6769	-0.052791111171245575	0.108111314	No	
+row_32	FOXN2	FOXN2	forkhead box N2	6989	-0.0777725800871849	0.09223069	No	
+row_33	MAP2K4	MAP2K4	mitogen-activated protein kinase kinase 4	7025	-0.08192244917154312	0.09171257	No	
+row_34	ZFP91	ZFP91	zinc finger protein 91 homolog (mouse)	7282	-0.11196767538785934	0.07376093	No	
+row_35	TMEM115	TMEM115	transmembrane protein 115	7791	-0.16214802861213684	0.03639306	No	
+row_36	CASP2	CASP2	caspase 2, apoptosis-related cysteine peptidase (neural precursor cell expressed, developmentally down-regulated 2)	7801	-0.1630074828863144	0.040385503	No	
+row_37	KLHL3	KLHL3	kelch-like 3 (Drosophila)	8018	-0.177537202835083	0.027653147	No	
+row_38	RIMS4	RIMS4	regulating synaptic membrane exocytosis 4	8181	-0.19154535233974457	0.019801112	No	
+row_39	MPZL1	MPZL1	myelin protein zero-like 1	8838	-0.2652994692325592	-0.02682833	No	
+row_40	EIF2S2	EIF2S2	eukaryotic translation initiation factor 2, subunit 2 beta, 38kDa	8920	-0.27599087357521057	-0.025516134	No	
+row_41	MIER3	MIER3	mesoderm induction early response 1, family member 3	8977	-0.284361869096756	-0.021889718	No	
+row_42	EPHA4	EPHA4	EPH receptor A4	9074	-0.2982674539089203	-0.021172576	No	
+row_43	ARCN1	ARCN1	archain 1	9571	-0.3583063781261444	-0.051844873	No	
+row_44	DONSON	DONSON	downstream neighbor of SON	9668	-0.3728906512260437	-0.048958737	No	
+row_45	ING4	ING4	inhibitor of growth family, member 4	10064	-0.43717828392982483	-0.06897208	No	
+row_46	RNF31	RNF31	ring finger protein 31	10334	-0.4845549464225769	-0.07717099	No	
+row_47	PAN3	PAN3	PAN3 polyA specific ribonuclease subunit homolog (S. cerevisiae)	10346	-0.48623567819595337	-0.06394929	No	
+row_48	CDKN1B	CDKN1B	cyclin-dependent kinase inhibitor 1B (p27, Kip1)	10428	-0.5030689239501953	-0.056036852	No	
+row_49	PABPC1	PABPC1	poly(A) binding protein, cytoplasmic 1	10433	-0.503948986530304	-0.041720435	No	
+row_50	SFXN2	SFXN2	sideroflexin 2	10746	-0.5722169280052185	-0.050933335	No	
+row_51	OGT	OGT	O-linked N-acetylglucosamine (GlcNAc) transferase (UDP-N-acetylglucosamine:polypeptide-N-acetylglucosaminyl transferase)	11075	-0.6571812033653259	-0.05900205	No	
+row_52	TOB1	TOB1	transducer of ERBB2, 1	11226	-0.7039827704429626	-0.050965562	No	
+row_53	SGIP1	SGIP1	SH3-domain GRB2-like (endophilin) interacting protein 1	11430	-0.7892962098121643	-0.044839688	No	
+row_54	GLIS2	GLIS2	GLIS family zinc finger 2	11451	-0.8002761602401733	-0.02323562	No	
+row_55	HOXD3	HOXD3	homeobox D3	11504	-0.827079713344574	-0.0035032474	No	
+row_56	SORBS2	SORBS2	sorbin and SH3 domain containing 2	11641	-0.9201834201812744	0.011977023	No	
+row_57	ZMAT1	ZMAT1	zinc finger, matrin type 1	11711	-0.9758543372154236	0.034625456	No	

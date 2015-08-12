@@ -1,0 +1,24 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SPHK1	SPHK1	sphingosine kinase 1	57	3.243910551071167	0.27455983	Yes	
+row_1	GNAI1	GNAI1	guanine nucleotide binding protein (G protein), alpha inhibiting activity polypeptide 1	403	1.6593124866485596	0.3889139	Yes	
+row_2	SRC	SRC	v-src sarcoma (Schmidt-Ruppin A-2) viral oncogene homolog (avian)	592	1.3851473331451416	0.49263287	Yes	
+row_3	GNB1	GNB1	guanine nucleotide binding protein (G protein), beta polypeptide 1	2661	0.48417529463768005	0.36350518	No	
+row_4	PIK3R1	PIK3R1	phosphoinositide-3-kinase, regulatory subunit 1 (p85 alpha)	2710	0.4732910096645355	0.40028608	No	
+row_5	RHOA	RHOA	ras homolog gene family, member A	3124	0.40238267183303833	0.40081465	No	
+row_6	ASAH1	ASAH1	N-acylsphingosine amidohydrolase (acid ceramidase) 1	3310	0.3702907860279083	0.41741252	No	
+row_7	ITGAV	ITGAV	integrin, alpha V (vitronectin receptor, alpha polypeptide, antigen CD51)	3360	0.36214032769203186	0.4445419	No	
+row_8	AKT1	AKT1	v-akt murine thymoma viral oncogene homolog 1	3901	0.28578126430511475	0.42454246	No	
+row_9	ITGB3	ITGB3	integrin, beta 3 (platelet glycoprotein IIIa, antigen CD61)	5666	0.07161247730255127	0.28500673	No	
+row_10	MAPK3	MAPK3	mitogen-activated protein kinase 3	5920	0.04387248307466507	0.26788673	No	
+row_11	PIK3CG	PIK3CG	phosphoinositide-3-kinase, catalytic, gamma polypeptide	6362	-0.007406752556562424	0.23209916	No	
+row_12	PIK3CA	PIK3CA	phosphoinositide-3-kinase, catalytic, alpha polypeptide	6401	-0.011046390980482101	0.22991146	No	
+row_13	PTK2	PTK2	PTK2 protein tyrosine kinase 2	6573	-0.030790239572525024	0.21843812	No	
+row_14	SMPD2	SMPD2	sphingomyelin phosphodiesterase 2, neutral membrane (neutral sphingomyelinase)	6833	-0.06030166894197464	0.2022369	No	
+row_15	ADCY1	ADCY1	adenylate cyclase 1 (brain)	6882	-0.06600667536258698	0.20395476	No	
+row_16	MAPK1	MAPK1	mitogen-activated protein kinase 1	7694	-0.15220962464809418	0.15007243	No	
+row_17	SMPD1	SMPD1	sphingomyelin phosphodiesterase 1, acid lysosomal (acid sphingomyelinase)	8642	-0.24191167950630188	0.09267936	No	
+row_18	PLCB1	PLCB1	phospholipase C, beta 1 (phosphoinositide-specific)	8790	-0.2602665424346924	0.10294394	No	
+row_19	RAC1	RAC1	ras-related C3 botulinum toxin substrate 1 (rho family, small GTP binding protein Rac1)	9122	-0.3049367070198059	0.10185634	No	
+row_20	PDGFRA	PDGFRA	platelet-derived growth factor receptor, alpha polypeptide	9221	-0.31565171480178833	0.12093627	No	
+row_21	PRKCA	PRKCA	protein kinase C, alpha	10690	-0.5605981945991516	0.047945924	No	
+row_22	PDGFA	PDGFA	platelet-derived growth factor alpha polypeptide	11497	-0.8227242827415466	0.052201096	No	

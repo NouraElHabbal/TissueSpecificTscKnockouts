@@ -1,0 +1,30 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	EPOR	EPOR	erythropoietin receptor	792	1.1865299940109253	0.016604135	No	
+row_1	IL3RA	IL3RA	interleukin 3 receptor, alpha (low affinity)	2159	0.592736542224884	-0.05528901	No	
+row_2	IL7R	IL7R	interleukin 7 receptor	2416	0.5331466794013977	-0.03957507	No	
+row_3	IL22RA1	IL22RA1	interleukin 22 receptor, alpha 1	2498	0.5176893472671509	-0.010468455	No	
+row_4	IL10RA	IL10RA	interleukin 10 receptor, alpha	2637	0.4911291003227234	0.01209106	No	
+row_5	IL10RB	IL10RB	interleukin 10 receptor, beta	2719	0.47173890471458435	0.038020022	No	
+row_6	IL2RB	IL2RB	interleukin 2 receptor, beta	3175	0.3935742974281311	0.027637051	No	
+row_7	IFNAR2	IFNAR2	interferon (alpha, beta and omega) receptor 2	3351	0.36356469988822937	0.038317382	No	
+row_8	IFNAR1	IFNAR1	interferon (alpha, beta and omega) receptor 1	3982	0.27601221203804016	0.005342911	No	
+row_9	CSF2RB	CSF2RB	colony stimulating factor 2 receptor, beta, low-affinity (granulocyte-macrophage)	5535	0.08578786253929138	-0.116978385	No	
+row_10	IL12RB2	IL12RB2	interleukin 12 receptor, beta 2	5560	0.08283626288175583	-0.11323324	No	
+row_11	IL9R	IL9R	interleukin 9 receptor	6327	-0.0038823741488158703	-0.17626531	No	
+row_12	IFNGR1	IFNGR1	interferon gamma receptor 1	6439	-0.01554101798683405	-0.18436338	No	
+row_13	IL2RG	IL2RG	interleukin 2 receptor, gamma (severe combined immunodeficiency)	6667	-0.042388129979372025	-0.20019086	No	
+row_14	IL22RA2	IL22RA2	interleukin 22 receptor, alpha 2	7408	-0.12421038001775742	-0.2527532	No	
+row_15	IL13RA2	IL13RA2	interleukin 13 receptor, alpha 2	7804	-0.1630837321281433	-0.27411723	No	
+row_16	IL31RA	IL31RA	interleukin 31 receptor A	8055	-0.18146905303001404	-0.28222737	No	
+row_17	OSMR	OSMR	oncostatin M receptor	8202	-0.19337157905101776	-0.2809201	No	
+row_18	IL12RB1	IL12RB1	interleukin 12 receptor, beta 1	8383	-0.21202845871448517	-0.28113228	No	
+row_19	GFRA2	GFRA2	GDNF family receptor alpha 2	8914	-0.27486974000930786	-0.30592197	No	
+row_20	GHR	GHR	growth hormone receptor	9075	-0.2982698678970337	-0.29851747	No	
+row_21	LIFR	LIFR	leukemia inhibitory factor receptor alpha	9105	-0.30205032229423523	-0.280026	No	
+row_22	IL1R1	IL1R1	interleukin 1 receptor, type I	9950	-0.41846156120300293	-0.320834	Yes	
+row_23	IFNGR2	IFNGR2	interferon gamma receptor 2 (interferon gamma transducer 1)	9958	-0.42029768228530884	-0.29234722	Yes	
+row_24	IL15RA	IL15RA	interleukin 15 receptor, alpha	9982	-0.4228891134262085	-0.2650034	Yes	
+row_25	IL6ST	IL6ST	interleukin 6 signal transducer (gp130, oncostatin M receptor)	10983	-0.6332394480705261	-0.30385017	Yes	
+row_26	GFRA1	GFRA1	GDNF family receptor alpha 1	11869	-1.134416103363037	-0.29853526	Yes	
+row_27	IL2RA	IL2RA	interleukin 2 receptor, alpha	12027	-1.4667816162109375	-0.2100756	Yes	
+row_28	CNTFR	CNTFR	ciliary neurotrophic factor receptor	12127	-3.158487319946289	1.6522844E-4	Yes	

@@ -1,0 +1,30 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	KLK1	KLK1	kallikrein 1, renal/pancreas/salivary	111	2.6905510425567627	0.12796405	Yes	
+row_1	MASP1	MASP1	mannan-binding lectin serine peptidase 1 (C4/C2 activating component of Ra-reactive factor)	253	2.001185178756714	0.21831213	Yes	
+row_2	PCSK9	PCSK9	proprotein convertase subtilisin/kexin type 9	694	1.265519380569458	0.24645476	Yes	
+row_3	LTF	LTF	lactotransferrin	917	1.1070626974105835	0.28453594	Yes	
+row_4	PREP	PREP	prolyl endopeptidase	2202	0.583184540271759	0.2081538	No	
+row_5	PRSS2	PRSS2	protease, serine, 2 (trypsin 2)	2449	0.527280330657959	0.21470027	No	
+row_6	KLK8	KLK8	kallikrein 8 (neuropsin/ovasin)	3517	0.34085068106651306	0.14389883	No	
+row_7	PLG	PLG	plasminogen	3696	0.31558889150619507	0.1452748	No	
+row_8	TPP2	TPP2	tripeptidyl peptidase II	3936	0.2809934616088867	0.13984655	No	
+row_9	ACR	ACR	acrosin	4344	0.22652050852775574	0.11775866	No	
+row_10	CPD	CPD	carboxypeptidase D	4754	0.1740187555551529	0.0928295	No	
+row_11	PCSK2	PCSK2	proprotein convertase subtilisin/kexin type 2	4995	0.1452314704656601	0.08039885	No	
+row_12	TOR1A	TOR1A	torsin family 1, member A (torsin A)	5722	0.06466744095087051	0.02369989	No	
+row_13	HTRA2	HTRA2	HtrA serine peptidase 2	6753	-0.05122995004057884	-0.058805864	No	
+row_14	APEH	APEH	N-acylaminoacyl-peptide hydrolase	6756	-0.051559943705797195	-0.056343142	No	
+row_15	PRSS36	PRSS36	protease, serine, 36	7594	-0.1431027501821518	-0.11821706	No	
+row_16	FURIN	FURIN	furin (paired basic amino acid cleaving enzyme)	7930	-0.1702825427055359	-0.13722146	No	
+row_17	DPP4	DPP4	dipeptidyl-peptidase 4 (CD26, adenosine deaminase complexing protein 2)	8436	-0.21802528202533722	-0.16784084	No	
+row_18	TPP1	TPP1	tripeptidyl peptidase I	9041	-0.2929595708847046	-0.20282198	No	
+row_19	CFD	CFD	complement factor D (adipsin)	9658	-0.3710888922214508	-0.23481254	No	
+row_20	GZMB	GZMB	granzyme B (granzyme 2, cytotoxic T-lymphocyte-associated serine esterase 1)	10542	-0.5269802212715149	-0.28092164	No	
+row_21	TMPRSS6	TMPRSS6	transmembrane protease, serine 6	10693	-0.5616904497146606	-0.26468807	No	
+row_22	ACHE	ACHE	acetylcholinesterase (Yt blood group)	10920	-0.6125761866569519	-0.25214133	No	
+row_23	PCSK6	PCSK6	proprotein convertase subtilisin/kexin type 6	11242	-0.7104368209838867	-0.24245724	No	
+row_24	HGFAC	HGFAC	HGF activator	11561	-0.8674416542053223	-0.22452272	No	
+row_25	CFI	CFI	complement factor I	11586	-0.8859325051307678	-0.18135023	No	
+row_26	CORIN	CORIN	corin, serine peptidase	11826	-1.0864630937576294	-0.14572386	No	
+row_27	MASP2	MASP2	mannan-binding lectin serine peptidase 2	12048	-1.5540953874588013	-0.08477489	No	
+row_28	HTRA1	HTRA1	HtrA serine peptidase 1	12092	-1.7929434776306152	0.0030576524	No	

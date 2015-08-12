@@ -1,0 +1,58 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	DNER	DNER	-	190	2.227415084838867	0.06730728	No	
+row_1	DIO2	DIO2	deiodinase, iodothyronine, type II	205	2.1761863231658936	0.14728257	No	
+row_2	SLITRK4	SLITRK4	SLIT and NTRK-like family, member 4	526	1.4698426723480225	0.1755774	No	
+row_3	PDIA6	PDIA6	protein disulfide isomerase family A, member 6	1449	0.8246328234672546	0.12995349	No	
+row_4	CDK6	CDK6	cyclin-dependent kinase 6	1628	0.7644933462142944	0.1437125	No	
+row_5	RGS12	RGS12	regulator of G-protein signalling 12	1732	0.7216159701347351	0.16208513	No	
+row_6	FGF1	FGF1	fibroblast growth factor 1 (acidic)	2180	0.5880536437034607	0.14698482	No	
+row_7	THAP1	THAP1	THAP domain containing, apoptosis associated protein 1	2608	0.4966045916080475	0.13013159	No	
+row_8	CRIM1	CRIM1	cysteine rich transmembrane BMP regulator 1 (chordin-like)	2977	0.425936222076416	0.11553055	No	
+row_9	HSD11B2	HSD11B2	hydroxysteroid (11-beta) dehydrogenase 2	2991	0.4231721758842468	0.13023093	No	
+row_10	NPHP3	NPHP3	nephronophthisis 3 (adolescent)	3233	0.3818954825401306	0.12450726	No	
+row_11	HERC4	HERC4	hect domain and RLD 4	3965	0.27817848324775696	0.074330285	No	
+row_12	PTGES2	PTGES2	prostaglandin E synthase 2	4024	0.2714075744152069	0.07964509	No	
+row_13	NRBF2	NRBF2	nuclear receptor binding factor 2	4325	0.22972717881202698	0.06336118	No	
+row_14	PSME3	PSME3	proteasome (prosome, macropain) activator subunit 3 (PA28 gamma; Ki)	4736	0.17653623223304749	0.035982925	No	
+row_15	UBE2Q1	UBE2Q1	ubiquitin-conjugating enzyme E2Q (putative) 1	5376	0.10362603515386581	-0.013081598	No	
+row_16	PCDH17	PCDH17	protocadherin 17	5394	0.10159051418304443	-0.010702092	No	
+row_17	NSF	NSF	N-ethylmaleimide-sensitive factor	5413	0.09969446808099747	-0.008476106	No	
+row_18	NF2	NF2	neurofibromin 2 (bilateral acoustic neuroma)	5757	0.06147345155477524	-0.03459469	No	
+row_19	PSMF1	PSMF1	proteasome (prosome, macropain) inhibitor subunit 1 (PI31)	5828	0.053478486835956573	-0.03839891	No	
+row_20	UBE2V2	UBE2V2	ubiquitin-conjugating enzyme E2 variant 2	5990	0.03547399863600731	-0.05041187	No	
+row_21	ARRB1	ARRB1	arrestin, beta 1	6001	0.034689418971538544	-0.049946837	No	
+row_22	CPEB2	CPEB2	cytoplasmic polyadenylation element binding protein 2	6083	0.025308487936854362	-0.055712443	No	
+row_23	ROBO1	ROBO1	roundabout, axon guidance receptor, homolog 1 (Drosophila)	6493	-0.021798212081193924	-0.08877698	No	
+row_24	GMPPB	GMPPB	GDP-mannose pyrophosphorylase B	6594	-0.033594999462366104	-0.0958074	No	
+row_25	RHOT1	RHOT1	ras homolog gene family, member T1	6716	-0.04758886247873306	-0.10405551	No	
+row_26	STRN3	STRN3	striatin, calmodulin binding protein 3	7035	-0.0828847661614418	-0.12730508	No	
+row_27	HHIP	HHIP	hedgehog interacting protein	7242	-0.10568781197071075	-0.14042757	No	
+row_28	ZFP36L1	ZFP36L1	zinc finger protein 36, C3H type-like 1	7274	-0.11104054749011993	-0.13885535	No	
+row_29	ZFP91	ZFP91	zinc finger protein 91 homolog (mouse)	7282	-0.11196767538785934	-0.13526067	No	
+row_30	MPZ	MPZ	myelin protein zero (Charcot-Marie-Tooth neuropathy 1B)	7303	-0.11405870318412781	-0.1326648	No	
+row_31	HMG20A	HMG20A	high-mobility group 20A	7546	-0.13989269733428955	-0.1474939	No	
+row_32	ACPT	ACPT	acid phosphatase, testicular	7830	-0.16357490420341492	-0.16483605	No	
+row_33	MTUS1	MTUS1	mitochondrial tumor suppressor 1	7997	-0.17636869847774506	-0.17201017	No	
+row_34	CCDC106	CCDC106	coiled-coil domain containing 106	8241	-0.19601137936115265	-0.18482983	No	
+row_35	RNF40	RNF40	ring finger protein 40	8456	-0.22104299068450928	-0.19431417	No	
+row_36	MKLN1	MKLN1	muskelin 1, intracellular mediator containing kelch motifs	8458	-0.2211659550666809	-0.18615125	No	
+row_37	HECW2	HECW2	HECT, C2 and WW domain containing E3 ubiquitin protein ligase 2	8912	-0.2744527757167816	-0.21344055	No	
+row_38	PPP3R1	PPP3R1	protein phosphatase 3 (formerly 2B), regulatory subunit B, 19kDa, alpha isoform (calcineurin B, type I)	9707	-0.37948644161224365	-0.26505873	No	
+row_39	TWIST1	TWIST1	twist homolog 1 (acrocephalosyndactyly 3; Saethre-Chotzen syndrome) (Drosophila)	9905	-0.41116487979888916	-0.2660466	Yes	
+row_40	PML	PML	promyelocytic leukemia	10038	-0.43256518244743347	-0.26085275	Yes	
+row_41	IL1A	IL1A	interleukin 1, alpha	10090	-0.441510409116745	-0.24861619	Yes	
+row_42	PHF6	PHF6	PHD finger protein 6	10367	-0.49098360538482666	-0.25317174	Yes	
+row_43	CHODL	CHODL	chondrolectin	10382	-0.49373456835746765	-0.23592341	Yes	
+row_44	THRAP3	THRAP3	thyroid hormone receptor associated protein 3	10475	-0.5117790699005127	-0.22446303	Yes	
+row_45	TGFBR1	TGFBR1	transforming growth factor, beta receptor I (activin A receptor type II-like kinase, 53kDa)	10652	-0.5505574941635132	-0.21851453	Yes	
+row_46	MLLT10	MLLT10	myeloid/lymphoid or mixed-lineage leukemia (trithorax homolog, Drosophila); translocated to, 10	10777	-0.5793436169624329	-0.20718569	Yes	
+row_47	PRKCQ	PRKCQ	protein kinase C, theta	10796	-0.5833615064620972	-0.18692711	Yes	
+row_48	DDX3X	DDX3X	DEAD (Asp-Glu-Ala-Asp) box polypeptide 3, X-linked	10872	-0.6009932160377502	-0.17073244	Yes	
+row_49	ICA1	ICA1	islet cell autoantigen 1, 69kDa	10897	-0.606759786605835	-0.15009847	Yes	
+row_50	CAPN3	CAPN3	calpain 3, (p94)	11025	-0.6448382139205933	-0.13657627	Yes	
+row_51	OGT	OGT	O-linked N-acetylglucosamine (GlcNAc) transferase (UDP-N-acetylglucosamine:polypeptide-N-acetylglucosaminyl transferase)	11075	-0.6571812033653259	-0.116133176	Yes	
+row_52	ARX	ARX	aristaless related homeobox	11394	-0.7757762670516968	-0.11354962	Yes	
+row_53	ZFHX4	ZFHX4	zinc finger homeodomain 4	11438	-0.7926265001296997	-0.08755974	Yes	
+row_54	FRMPD4	FRMPD4	FERM and PDZ domain containing 4	11856	-1.1162467002868652	-0.08048252	Yes	
+row_55	ASTN1	ASTN1	astrotactin 1	11864	-1.1275534629821777	-0.039023668	Yes	
+row_56	CD200R1	CD200R1	CD200 receptor 1	12068	-1.6331995725631714	0.005052652	Yes	

@@ -1,0 +1,65 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	NPPB	NPPB	natriuretic peptide precursor B	7	4.834629058837891	0.102935	Yes	
+row_1	PTPRN	PTPRN	protein tyrosine phosphatase, receptor type, N	34	3.5468075275421143	0.17672154	Yes	
+row_2	GLRA3	GLRA3	glycine receptor, alpha 3	179	2.2762513160705566	0.21352442	Yes	
+row_3	DNER	DNER	-	190	2.227415084838867	0.26038724	Yes	
+row_4	OGDHL	OGDHL	oxoglutarate dehydrogenase-like	334	1.7709271907806396	0.2864534	Yes	
+row_5	ELAVL3	ELAVL3	ELAV (embryonic lethal, abnormal vision, Drosophila)-like 3 (Hu antigen C)	543	1.4486392736434937	0.30023196	Yes	
+row_6	ZWILCH	ZWILCH	Zwilch, kinetochore associated, homolog (Drosophila)	599	1.3690171241760254	0.32498598	Yes	
+row_7	GRM1	GRM1	glutamate receptor, metabotropic 1	604	1.3659982681274414	0.35390213	Yes	
+row_8	GABRG2	GABRG2	gamma-aminobutyric acid (GABA) A receptor, gamma 2	674	1.2837607860565186	0.3756704	Yes	
+row_9	CHKA	CHKA	choline kinase alpha	779	1.1940804719924927	0.39261782	Yes	
+row_10	CDK5R1	CDK5R1	cyclin-dependent kinase 5, regulatory subunit 1 (p35)	845	1.150527000427246	0.41186494	Yes	
+row_11	DRD2	DRD2	dopamine receptor D2	894	1.1189628839492798	0.43184513	Yes	
+row_12	KCNIP2	KCNIP2	Kv channel interacting protein 2	960	1.0818850994110107	0.44962254	Yes	
+row_13	INA	INA	internexin neuronal intermediate filament protein, alpha	964	1.080918312072754	0.47251767	Yes	
+row_14	SLC17A6	SLC17A6	solute carrier family 17 (sodium-dependent inorganic phosphate cotransporter), member 6	1004	1.05855393409729	0.49195033	Yes	
+row_15	CHRNB2	CHRNB2	cholinergic receptor, nicotinic, beta 2 (neuronal)	1196	0.9439546465873718	0.4963319	Yes	
+row_16	NEFH	NEFH	neurofilament, heavy polypeptide 200kDa	1377	0.8542700409889221	0.4997049	Yes	
+row_17	BARHL1	BARHL1	BarH-like 1 (Drosophila)	1514	0.7991821765899658	0.505545	Yes	
+row_18	MAPK11	MAPK11	mitogen-activated protein kinase 11	1959	0.6459383368492126	0.48257768	Yes	
+row_19	DPH2	DPH2	DPH2 homolog (S. cerevisiae)	2120	0.5986834168434143	0.4821358	Yes	
+row_20	MGAT5B	MGAT5B	mannosyl (alpha-1,6-)-glycoprotein beta-1,6-N-acetyl-glucosaminyltransferase, isozyme B	2176	0.5893969535827637	0.49019724	Yes	
+row_21	BDNF	BDNF	brain-derived neurotrophic factor	2186	0.5866512656211853	0.50201225	Yes	
+row_22	CHGB	CHGB	chromogranin B (secretogranin 1)	2239	0.5780674815177917	0.51007974	Yes	
+row_23	FGD2	FGD2	FYVE, RhoGEF and PH domain containing 2	2574	0.5051355361938477	0.4932142	Yes	
+row_24	SARM1	SARM1	sterile alpha and TIR motif containing 1	2635	0.4912347197532654	0.49875945	Yes	
+row_25	CACNA1B	CACNA1B	calcium channel, voltage-dependent, L type, alpha 1B subunit	2639	0.48998919129371643	0.5090021	Yes	
+row_26	WAS	WAS	Wiskott-Aldrich syndrome (eczema-thrombocytopenia)	2681	0.4804137051105499	0.5158903	Yes	
+row_27	PFN1	PFN1	profilin 1	3064	0.4106631278991699	0.49302387	No	
+row_28	TNFRSF19	TNFRSF19	tumor necrosis factor receptor superfamily, member 19	3247	0.3804949223995209	0.48608702	No	
+row_29	CSMD3	CSMD3	CUB and Sushi multiple domains 3	3335	0.3651522397994995	0.48669502	No	
+row_30	RPH3A	RPH3A	rabphilin 3A homolog (mouse)	3664	0.32071247696876526	0.46637803	No	
+row_31	CHAT	CHAT	choline acetyltransferase	3830	0.2963577210903168	0.45904863	No	
+row_32	AOC2	AOC2	amine oxidase, copper containing 2 (retina-specific)	3863	0.2903006374835968	0.4626122	No	
+row_33	BEX1	BEX1	brain expressed, X-linked 1	3973	0.27746859192848206	0.4595195	No	
+row_34	OMG	OMG	oligodendrocyte myelin glycoprotein	4558	0.19940099120140076	0.41538844	No	
+row_35	SCN3B	SCN3B	sodium channel, voltage-gated, type III, beta	4614	0.19269168376922607	0.41495594	No	
+row_36	CRH	CRH	corticotropin releasing hormone	5328	0.10882300138473511	0.35819432	No	
+row_37	COL5A3	COL5A3	collagen, type V, alpha 3	5830	0.053291793912649155	0.31781372	No	
+row_38	TSPAN33	TSPAN33	tetraspanin 33	6017	0.03359994664788246	0.30311793	No	
+row_39	CALB1	CALB1	calbindin 1, 28kDa	6572	-0.030630512163043022	0.25785962	No	
+row_40	SCHIP1	SCHIP1	schwannomin interacting protein 1	7473	-0.13304978609085083	0.1861186	No	
+row_41	SYT6	SYT6	synaptotagmin VI	7563	-0.1406041383743286	0.18175301	No	
+row_42	PRG3	PRG3	proteoglycan 3	7811	-0.1630837321281433	0.16477409	No	
+row_43	PLAC1	PLAC1	placenta-specific 1	7834	-0.16357490420341492	0.16645311	No	
+row_44	VIP	VIP	vasoactive intestinal peptide	8081	-0.18282656371593475	0.14997979	No	
+row_45	NHLH2	NHLH2	nescient helix loop helix 2	8127	-0.18502138555049896	0.15021181	No	
+row_46	SLC12A5	SLC12A5	solute carrier family 12, (potassium-chloride transporter) member 5	8186	-0.1918121725320816	0.14951184	No	
+row_47	PAQR4	PAQR4	progestin and adipoQ receptor family member IV	8361	-0.2083674669265747	0.13955256	No	
+row_48	MYF5	MYF5	myogenic factor 5	8862	-0.2670954763889313	0.10383263	No	
+row_49	SLC25A28	SLC25A28	solute carrier family 25, member 28	9042	-0.2930234372615814	0.09527154	No	
+row_50	KCNH4	KCNH4	potassium voltage-gated channel, subfamily H (eag-related), member 4	9142	-0.30715295672416687	0.09364317	No	
+row_51	PAFAH1B1	PAFAH1B1	platelet-activating factor acetylhydrolase, isoform Ib, alpha subunit 45kDa	9267	-0.3220521807670593	0.090261884	No	
+row_52	ANKZF1	ANKZF1	ankyrin repeat and zinc finger domain containing 1	9637	-0.36752691864967346	0.06754927	No	
+row_53	PHYHIPL	PHYHIPL	phytanoyl-CoA 2-hydroxylase interacting protein-like	9731	-0.383765310049057	0.06805853	No	
+row_54	GRIN1	GRIN1	glutamate receptor, ionotropic, N-methyl D-aspartate 1	10174	-0.4556361436843872	0.041182384	No	
+row_55	JMJD1C	JMJD1C	jumonji domain containing 1C	10201	-0.461363822221756	0.048905917	No	
+row_56	L1CAM	L1CAM	L1 cell adhesion molecule	10325	-0.4833197593688965	0.04906043	No	
+row_57	SIGIRR	SIGIRR	single immunoglobulin and toll-interleukin 1 receptor (TIR) domain	10581	-0.535719633102417	0.039397057	No	
+row_58	RPL4	RPL4	ribosomal protein L4	10812	-0.5875362753868103	0.032915078	No	
+row_59	FAM57B	FAM57B	family with sequence similarity 57, member B	10991	-0.634689211845398	0.031752333	No	
+row_60	HPCA	HPCA	hippocalcin	11087	-0.6605157852172852	0.038021393	No	
+row_61	PGF	PGF	placental growth factor, vascular endothelial growth factor-related protein	11174	-0.6898683309555054	0.04566483	No	
+row_62	GPRIN1	GPRIN1	G protein regulated inducer of neurite outgrowth 1	11273	-0.7228434085845947	0.053019766	No	
+row_63	CHGA	CHGA	chromogranin A (parathyroid secretory protein 1)	11511	-0.8332356214523315	0.05121836	No	

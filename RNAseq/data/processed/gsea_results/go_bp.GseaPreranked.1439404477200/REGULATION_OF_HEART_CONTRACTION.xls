@@ -1,0 +1,24 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	KCNE1L	KCNE1L	KCNE1-like	75	3.0243964195251465	0.12030109	Yes	
+row_1	TNNT2	TNNT2	troponin T type 2 (cardiac)	103	2.7426884174346924	0.23278435	Yes	
+row_2	SCN5A	SCN5A	sodium channel, voltage-gated, type V, alpha (long QT syndrome 3)	121	2.5902137756347656	0.3397163	Yes	
+row_3	MYH7	MYH7	myosin, heavy chain 7, cardiac muscle, beta	307	1.8274660110473633	0.40086994	Yes	
+row_4	KCNH2	KCNH2	potassium voltage-gated channel, subfamily H (eag-related), member 2	344	1.7616851329803467	0.4715792	Yes	
+row_5	HSPB7	HSPB7	heat shock 27kDa protein family, member 7 (cardiovascular)	620	1.3404760360717773	0.5049307	Yes	
+row_6	DMPK	DMPK	dystrophia myotonica-protein kinase	776	1.1950337886810303	0.5421107	Yes	
+row_7	ACTC1	ACTC1	actin, alpha, cardiac muscle 1	904	1.1132994890213013	0.5781848	Yes	
+row_8	KCNIP2	KCNIP2	Kv channel interacting protein 2	960	1.0818850994110107	0.61889195	Yes	
+row_9	KCNE1	KCNE1	potassium voltage-gated channel, Isk-related family, member 1	989	1.0635786056518555	0.6610636	Yes	
+row_10	ADORA3	ADORA3	adenosine A3 receptor	1617	0.7676435112953186	0.6413822	No	
+row_11	KCNG2	KCNG2	potassium voltage-gated channel, subfamily G, member 2	2270	0.5712727904319763	0.6114226	No	
+row_12	MYH6	MYH6	myosin, heavy chain 6, cardiac muscle, alpha (cardiomyopathy, hypertrophic 1)	2621	0.4939512312412262	0.6031733	No	
+row_13	DES	DES	desmin	2974	0.4264732599258423	0.5919365	No	
+row_14	RYR2	RYR2	ryanodine receptor 2 (cardiac)	4573	0.19830605387687683	0.46824095	No	
+row_15	KCNQ1	KCNQ1	potassium voltage-gated channel, KQT-like subfamily, member 1	8440	-0.2187667191028595	0.1580715	No	
+row_16	SRI	SRI	sorcin	8512	-0.22567109763622284	0.16164586	No	
+row_17	KCNJ12	KCNJ12	potassium inwardly-rectifying channel, subfamily J, member 12	9157	-0.30791175365448	0.121331945	No	
+row_18	KCNE2	KCNE2	potassium voltage-gated channel, Isk-related family, member 2	9228	-0.3164174556732178	0.12878437	No	
+row_19	TGFB2	TGFB2	transforming growth factor, beta 2	9967	-0.4214416742324829	0.08545477	No	
+row_20	CACNA1H	CACNA1H	calcium channel, voltage-dependent, alpha 1H subunit	10435	-0.5048407912254333	0.06799709	No	
+row_21	CHRM2	CHRM2	cholinergic receptor, muscarinic 2	11523	-0.8429585099220276	0.013471186	No	
+row_22	TPM1	TPM1	tropomyosin 1 (alpha)	11571	-0.8726797103881836	0.0460891	No	

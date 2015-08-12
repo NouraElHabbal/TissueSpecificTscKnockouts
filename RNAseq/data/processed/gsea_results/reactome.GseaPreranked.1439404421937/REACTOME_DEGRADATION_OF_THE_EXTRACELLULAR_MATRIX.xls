@@ -1,0 +1,22 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	TIMP1	TIMP1	TIMP metallopeptidase inhibitor 1	25	3.9199697971343994	0.20576324	Yes	
+row_1	MMP10	MMP10	matrix metallopeptidase 10 (stromelysin 2)	39	3.4775774478912354	0.38906285	Yes	
+row_2	MMP24	MMP24	matrix metallopeptidase 24 (membrane-inserted)	77	3.005197048187256	0.54533595	Yes	
+row_3	MMP8	MMP8	matrix metallopeptidase 8 (neutrophil collagenase)	882	1.1263724565505981	0.5386568	Yes	
+row_4	MMP13	MMP13	matrix metallopeptidase 13 (collagenase 3)	937	1.0981990098953247	0.59242123	Yes	
+row_5	MMP3	MMP3	matrix metallopeptidase 3 (stromelysin 1, progelatinase)	1116	0.9927090406417847	0.6303526	Yes	
+row_6	MMP11	MMP11	matrix metallopeptidase 11 (stromelysin 3)	2026	0.6240106225013733	0.58836806	No	
+row_7	CTRB1	CTRB1	chymotrypsinogen B1	2441	0.527280330657959	0.5821338	No	
+row_8	PRSS2	PRSS2	protease, serine, 2 (trypsin 2)	2449	0.527280330657959	0.60951096	No	
+row_9	PLG	PLG	plasminogen	3696	0.31558889150619507	0.52334404	No	
+row_10	MMP14	MMP14	matrix metallopeptidase 14 (membrane-inserted)	3760	0.30795997381210327	0.53446865	No	
+row_11	MMP25	MMP25	matrix metallopeptidase 25	5442	0.09633075445890427	0.40075353	No	
+row_12	TIMP2	TIMP2	TIMP metallopeptidase inhibitor 2	5760	0.061228495091199875	0.37782085	No	
+row_13	MMP2	MMP2	matrix metallopeptidase 2 (gelatinase A, 72kDa gelatinase, 72kDa type IV collagenase)	5829	0.05345767363905907	0.3750394	No	
+row_14	TPSAB1	TPSAB1	tryptase alpha/beta 1	6184	0.013129482045769691	0.34650105	No	
+row_15	MMP17	MMP17	matrix metallopeptidase 17 (membrane-inserted)	6894	-0.06760497391223907	0.2915338	No	
+row_16	MMP16	MMP16	matrix metallopeptidase 16 (membrane-inserted)	7166	-0.09786342084407806	0.27434227	No	
+row_17	FURIN	FURIN	furin (paired basic amino acid cleaving enzyme)	7930	-0.1702825427055359	0.22035927	No	
+row_18	MMP15	MMP15	matrix metallopeptidase 15 (membrane-inserted)	10490	-0.5150555968284607	0.03633591	No	
+row_19	CMA1	CMA1	chymase 1, mast cell	11413	-0.7818095088005066	0.0016439513	No	
+row_20	MMP9	MMP9	matrix metallopeptidase 9 (gelatinase B, 92kDa gelatinase, 92kDa type IV collagenase)	11820	-1.0827150344848633	0.025518244	No	

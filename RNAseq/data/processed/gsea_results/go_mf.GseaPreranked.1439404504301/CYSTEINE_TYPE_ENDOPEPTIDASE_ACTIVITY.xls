@@ -1,0 +1,35 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	UCHL1	UCHL1	ubiquitin carboxyl-terminal esterase L1 (ubiquitin thiolesterase)	8	4.819223403930664	0.20681775	Yes	
+row_1	CTSS	CTSS	cathepsin S	316	1.815683364868164	0.259607	Yes	
+row_2	CASP3	CASP3	caspase 3, apoptosis-related cysteine peptidase	407	1.6517647504806519	0.32327893	Yes	
+row_3	LGMN	LGMN	legumain	640	1.3150767087936401	0.36071625	Yes	
+row_4	CAPN9	CAPN9	calpain 9	778	1.1943600177764893	0.40081024	Yes	
+row_5	CTSB	CTSB	cathepsin B	1122	0.9887266159057617	0.41502082	Yes	
+row_6	USP4	USP4	ubiquitin specific peptidase 4 (proto-oncogene)	1257	0.9106273651123047	0.44314748	Yes	
+row_7	CTSK	CTSK	cathepsin K (pycnodysostosis)	1348	0.8679182529449463	0.47307295	Yes	
+row_8	USP11	USP11	ubiquitin specific peptidase 11	1663	0.7473599314689636	0.4792896	Yes	
+row_9	CASP9	CASP9	caspase 9, apoptosis-related cysteine peptidase	1715	0.7299567461013794	0.5064997	Yes	
+row_10	PDIA3	PDIA3	protein disulfide isomerase family A, member 3	1783	0.6993029117584229	0.5310674	Yes	
+row_11	USP5	USP5	ubiquitin specific peptidase 5 (isopeptidase T)	2592	0.5009636878967285	0.48583612	No	
+row_12	CASP1	CASP1	caspase 1, apoptosis-related cysteine peptidase (interleukin 1, beta, convertase)	2628	0.49253636598587036	0.50414747	No	
+row_13	CTSH	CTSH	cathepsin H	2744	0.4657009243965149	0.51468974	No	
+row_14	CAPN11	CAPN11	calpain 11	2797	0.4554896950721741	0.5300007	No	
+row_15	USP8	USP8	ubiquitin specific peptidase 8	3820	0.2984887957572937	0.45836064	No	
+row_16	USP16	USP16	ubiquitin specific peptidase 16	4716	0.17889460921287537	0.39207107	No	
+row_17	USP1	USP1	ubiquitin specific peptidase 1	5299	0.11090883612632751	0.3487309	No	
+row_18	CAPNS1	CAPNS1	calpain, small subunit 1	5399	0.10119267553091049	0.34490296	No	
+row_19	BLMH	BLMH	bleomycin hydrolase	5455	0.09528724104166031	0.34445834	No	
+row_20	ATG4C	ATG4C	ATG4 autophagy related 4 homolog C (S. cerevisiae)	5703	0.06679350882768631	0.32691398	No	
+row_21	USP14	USP14	ubiquitin specific peptidase 14 (tRNA-guanine transglycosylase)	5779	0.05895160511136055	0.3232516	No	
+row_22	USP2	USP2	ubiquitin specific peptidase 2	7382	-0.12150997668504715	0.19604242	No	
+row_23	USP15	USP15	ubiquitin specific peptidase 15	8145	-0.18692082166671753	0.14109378	No	
+row_24	USP13	USP13	ubiquitin specific peptidase 13 (isopeptidase T-3)	8321	-0.2045193463563919	0.13543123	No	
+row_25	CASP8	CASP8	caspase 8, apoptosis-related cysteine peptidase	8370	-0.2103567123413086	0.14051934	No	
+row_26	USP7	USP7	ubiquitin specific peptidase 7 (herpes virus-associated)	8479	-0.2224409431219101	0.14116739	No	
+row_27	CAPN5	CAPN5	calpain 5	9381	-0.33628642559051514	0.08115789	No	
+row_28	ATG4D	ATG4D	ATG4 autophagy related 4 homolog D (S. cerevisiae)	9515	-0.3528708815574646	0.085354455	No	
+row_29	TINAG	TINAG	tubulointerstitial nephritis antigen	10487	-0.5143149495124817	0.027222482	No	
+row_30	CAPN6	CAPN6	calpain 6	10577	-0.5345278382301331	0.042877384	No	
+row_31	USP9X	USP9X	ubiquitin specific peptidase 9, X-linked	10845	-0.5958729386329651	0.04645773	No	
+row_32	CAPN3	CAPN3	calpain 3, (p94)	11025	-0.6448382139205933	0.059421282	No	
+row_33	CTSO	CTSO	cathepsin O	11308	-0.737845242023468	0.06787379	No	

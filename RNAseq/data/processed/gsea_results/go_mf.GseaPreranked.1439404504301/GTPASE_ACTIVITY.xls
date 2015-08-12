@@ -1,0 +1,86 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	RRAD	RRAD	Ras-related associated with diabetes	79	2.9876885414123535	0.054104116	Yes	
+row_1	RAB27B	RAB27B	RAB27B, member RAS oncogene family	101	2.7532830238342285	0.108264074	Yes	
+row_2	RHOD	RHOD	ras homolog gene family, member D	269	1.936619758605957	0.13372105	Yes	
+row_3	RASD1	RASD1	RAS, dexamethasone-induced 1	349	1.7570446729660034	0.16283785	Yes	
+row_4	GNAI1	GNAI1	guanine nucleotide binding protein (G protein), alpha inhibiting activity polypeptide 1	403	1.6593124866485596	0.1921288	Yes	
+row_5	GNG11	GNG11	guanine nucleotide binding protein (G protein), gamma 11	413	1.6440482139587402	0.22476283	Yes	
+row_6	RAB31	RAB31	RAB31, member RAS oncogene family	419	1.6268904209136963	0.25738055	Yes	
+row_7	RAB13	RAB13	RAB13, member RAS oncogene family	504	1.4991909265518188	0.2808467	Yes	
+row_8	ARL4C	ARL4C	ADP-ribosylation factor-like 4C	541	1.451322078704834	0.30732593	Yes	
+row_9	RAP2A	RAP2A	RAP2A, member of RAS oncogene family	650	1.3012959957122803	0.32478142	Yes	
+row_10	RAB33A	RAB33A	RAB33A, member RAS oncogene family	739	1.228661298751831	0.34242257	Yes	
+row_11	RHOC	RHOC	ras homolog gene family, member C	926	1.1024019718170166	0.34936395	Yes	
+row_12	RAB3B	RAB3B	RAB3B, member RAS oncogene family	1049	1.035865306854248	0.36026776	Yes	
+row_13	NCF1	NCF1	neutrophil cytosolic factor 1, (chronic granulomatous disease, autosomal 1)	1055	1.0336986780166626	0.38084117	Yes	
+row_14	SEPT5	SEPT5	septin 5	1076	1.016176462173462	0.39981344	Yes	
+row_15	RND2	RND2	Rho family GTPase 2	1168	0.9576585292816162	0.41170302	Yes	
+row_16	SEPT9	SEPT9	septin 9	1182	0.9482414722442627	0.42987707	Yes	
+row_17	GNA15	GNA15	guanine nucleotide binding protein (G protein), alpha 15 (Gq class)	1292	0.8924999237060547	0.43894926	Yes	
+row_18	ARL4D	ARL4D	ADP-ribosylation factor-like 4D	1318	0.8835216760635376	0.45481297	Yes	
+row_19	GNA12	GNA12	guanine nucleotide binding protein (G protein) alpha 12	1540	0.7891554832458496	0.45248833	Yes	
+row_20	GNAL	GNAL	guanine nucleotide binding protein (G protein), alpha activating activity polypeptide, olfactory type	1622	0.7657865881919861	0.4613123	Yes	
+row_21	ARF3	ARF3	ADP-ribosylation factor 3	1914	0.6593432426452637	0.45054036	Yes	
+row_22	RHOB	RHOB	ras homolog gene family, member B	2080	0.6098544597625732	0.4492244	Yes	
+row_23	ARF4	ARF4	ADP-ribosylation factor 4	2158	0.5932809710502625	0.45487785	Yes	
+row_24	RND3	RND3	Rho family GTPase 3	2248	0.5754797458648682	0.4591736	Yes	
+row_25	RAB27A	RAB27A	RAB27A, member RAS oncogene family	2404	0.5350417494773865	0.45716882	Yes	
+row_26	GNB1	GNB1	guanine nucleotide binding protein (G protein), beta polypeptide 1	2661	0.48417529463768005	0.445746	Yes	
+row_27	NUDT1	NUDT1	nudix (nucleoside diphosphate linked moiety X)-type motif 1	2685	0.479239821434021	0.45356712	Yes	
+row_28	CDC42	CDC42	cell division cycle 42 (GTP binding protein, 25kDa)	2718	0.47174137830734253	0.4604888	Yes	
+row_29	RRAGC	RRAGC	Ras-related GTP binding C	2720	0.4716165363788605	0.46998158	Yes	
+row_30	MRAS	MRAS	muscle RAS oncogene homolog	2968	0.42765986919403076	0.4581585	Yes	
+row_31	GNA13	GNA13	guanine nucleotide binding protein (G protein), alpha 13	2996	0.4227437973022461	0.4645004	Yes	
+row_32	RHOA	RHOA	ras homolog gene family, member A	3124	0.40238267183303833	0.4621267	Yes	
+row_33	ARF5	ARF5	ADP-ribosylation factor 5	3146	0.39889422059059143	0.4684825	Yes	
+row_34	DNM1L	DNM1L	dynamin 1-like	3172	0.393963485956192	0.4744061	Yes	
+row_35	RAB3D	RAB3D	RAB3D, member RAS oncogene family	3201	0.3881344497203827	0.47996226	Yes	
+row_36	RAB35	RAB35	RAB35, member RAS oncogene family	3416	0.35282614827156067	0.46935943	No	
+row_37	RHOG	RHOG	ras homolog gene family, member G (rho G)	3428	0.3511844277381897	0.47557673	No	
+row_38	GNB3	GNB3	guanine nucleotide binding protein (G protein), beta polypeptide 3	3749	0.3097846210002899	0.45529965	No	
+row_39	RAB30	RAB30	RAB30, member RAS oncogene family	3957	0.27889612317085266	0.44377688	No	
+row_40	EFTUD2	EFTUD2	elongation factor Tu GTP binding domain containing 2	3989	0.2753010094165802	0.446793	No	
+row_41	RAB28	RAB28	RAB28, member RAS oncogene family	4050	0.26793667674064636	0.44725192	No	
+row_42	ARF6	ARF6	ADP-ribosylation factor 6	4149	0.2541414201259613	0.44427592	No	
+row_43	RAC2	RAC2	ras-related C3 botulinum toxin substrate 2 (rho family, small GTP binding protein Rac2)	4206	0.24470192193984985	0.4445952	No	
+row_44	RAB5A	RAB5A	RAB5A, member RAS oncogene family	4454	0.2132195383310318	0.428418	No	
+row_45	RAN	RAN	RAN, member RAS oncogene family	4553	0.2006261646747589	0.42435542	No	
+row_46	RRAS2	RRAS2	related RAS viral (r-ras) oncogene homolog 2	4721	0.17844201624393463	0.41411388	No	
+row_47	ARL4A	ARL4A	ADP-ribosylation factor-like 4A	5033	0.14152827858924866	0.39116767	No	
+row_48	RAB11B	RAB11B	RAB11B, member RAS oncogene family	5214	0.12205193936824799	0.3787019	No	
+row_49	OPA1	OPA1	optic atrophy 1 (autosomal dominant)	5554	0.08304498344659805	0.3522436	No	
+row_50	RAB5B	RAB5B	RAB5B, member RAS oncogene family	5730	0.06405527144670486	0.33901533	No	
+row_51	RAB3A	RAB3A	RAB3A, member RAS oncogene family	5924	0.04353959113359451	0.32387614	No	
+row_52	RAP1A	RAP1A	RAP1A, member of RAS oncogene family	6002	0.034676071256399155	0.31818753	No	
+row_53	GNAS	GNAS	GNAS complex locus	6079	0.026168981567025185	0.3124092	No	
+row_54	RAB22A	RAB22A	RAB22A, member RAS oncogene family	6195	0.011786375194787979	0.30310097	No	
+row_55	RAB6A	RAB6A	RAB6A, member RAS oncogene family	6273	0.0021564429625868797	0.29675207	No	
+row_56	GTPBP4	GTPBP4	GTP binding protein 4	6322	-0.003303069854155183	0.29283407	No	
+row_57	GNAI2	GNAI2	guanine nucleotide binding protein (G protein), alpha inhibiting activity polypeptide 2	6370	-0.008439182303845882	0.2891034	No	
+row_58	RRAS	RRAS	related RAS viral (r-ras) oncogene homolog	6425	-0.013363426551222801	0.28489155	No	
+row_59	GNG3	GNG3	guanine nucleotide binding protein (G protein), gamma 3	6647	-0.03872459754347801	0.26732996	No	
+row_60	GNG10	GNG10	guanine nucleotide binding protein (G protein), gamma 10	6650	-0.039527781307697296	0.26796648	No	
+row_61	GNB2	GNB2	guanine nucleotide binding protein (G protein), beta polypeptide 2	6750	-0.050964731723070145	0.26078212	No	
+row_62	GNAQ	GNAQ	guanine nucleotide binding protein (G protein), q polypeptide	7017	-0.08091006428003311	0.24034108	No	
+row_63	GTPBP2	GTPBP2	GTP binding protein 2	7103	-0.09090220183134079	0.23512992	No	
+row_64	EIF5	EIF5	eukaryotic translation initiation factor 5	7254	-0.10703577846288681	0.2248499	No	
+row_65	SEPT4	SEPT4	septin 4	7337	-0.11828340590000153	0.22044376	No	
+row_66	GSPT1	GSPT1	G1 to S phase transition 1	7596	-0.14349758625030518	0.20193769	No	
+row_67	RAB4A	RAB4A	RAB4A, member RAS oncogene family	7731	-0.15553347766399384	0.19397074	No	
+row_68	ARL1	ARL1	ADP-ribosylation factor-like 1	7844	-0.16416391730308533	0.1880055	No	
+row_69	ARFRP1	ARFRP1	ADP-ribosylation factor related protein 1	8141	-0.18627725541591644	0.16721322	No	
+row_70	RAB5C	RAB5C	RAB5C, member RAS oncogene family	8266	-0.19858819246292114	0.16095068	No	
+row_71	GNAI3	GNAI3	guanine nucleotide binding protein (G protein), alpha inhibiting activity polypeptide 3	8292	-0.20172500610351562	0.162971	No	
+row_72	GNA11	GNA11	guanine nucleotide binding protein (G protein), alpha 11 (Gq class)	8546	-0.22954614460468292	0.14662722	No	
+row_73	ARF1	ARF1	ADP-ribosylation factor 1	8637	-0.24078942835330963	0.14404428	No	
+row_74	RAC1	RAC1	ras-related C3 botulinum toxin substrate 1 (rho family, small GTP binding protein Rac1)	9122	-0.3049367070198059	0.11005316	No	
+row_75	GNAZ	GNAZ	guanine nucleotide binding protein (G protein), alpha z polypeptide	9213	-0.31432873010635376	0.10896339	No	
+row_76	TGM3	TGM3	transglutaminase 3 (E polypeptide, protein-glutamine-gamma-glutamyltransferase)	10066	-0.4374370872974396	0.04711049	No	
+row_77	DNM1	DNM1	dynamin 1	10290	-0.47816047072410583	0.038305286	No	
+row_78	RHEB	RHEB	Ras homolog enriched in brain	10292	-0.4782203137874603	0.04793218	No	
+row_79	TRIM23	TRIM23	tripartite motif-containing 23	10388	-0.4948314130306244	0.050092287	No	
+row_80	RERG	RERG	RAS-like, estrogen-regulated, growth inhibitor	10604	-0.5402500629425049	0.043211944	No	
+row_81	RAC3	RAC3	ras-related C3 botulinum toxin substrate 3 (rho family, small GTP binding protein Rac3)	11321	-0.7409778237342834	-0.0011867925	No	
+row_82	ARHGAP5	ARHGAP5	Rho GTPase activating protein 5	11433	-0.7897850871086121	0.0056337803	No	
+row_83	GNAO1	GNAO1	guanine nucleotide binding protein (G protein), alpha activating activity polypeptide O	11781	-1.0369125604629517	-0.0021210948	No	
+row_84	GNA14	GNA14	guanine nucleotide binding protein (G protein), alpha 14	12040	-1.5233081579208374	0.0073888986	No	

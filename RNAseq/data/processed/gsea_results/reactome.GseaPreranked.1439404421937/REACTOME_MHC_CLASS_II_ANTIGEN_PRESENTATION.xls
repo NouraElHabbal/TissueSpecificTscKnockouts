@@ -1,0 +1,72 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	DYNC1I1	DYNC1I1	dynein, cytoplasmic 1, intermediate chain 1	66	3.1247200965881348	0.07910374	Yes	
+row_1	KIF11	KIF11	kinesin family member 11	219	2.0977134704589844	0.12327788	Yes	
+row_2	CTSS	CTSS	cathepsin S	316	1.815683364868164	0.16446213	Yes	
+row_3	KIF2C	KIF2C	kinesin family member 2C	384	1.6899769306182861	0.20464875	Yes	
+row_4	KIF5A	KIF5A	kinesin family member 5A	435	1.596842646598816	0.24372423	Yes	
+row_5	LGMN	LGMN	legumain	640	1.3150767087936401	0.2624026	Yes	
+row_6	SH3GL2	SH3GL2	SH3-domain GRB2-like 2	930	1.1021283864974976	0.2682684	Yes	
+row_7	CTSB	CTSB	cathepsin B	1122	0.9887266159057617	0.2791915	Yes	
+row_8	KIF22	KIF22	kinesin family member 22	1259	0.9101273417472839	0.29254803	Yes	
+row_9	OSBPL1A	OSBPL1A	oxysterol binding protein-like 1A	1263	0.9085212349891663	0.3168902	Yes	
+row_10	KIF3B	KIF3B	kinesin family member 3B	1265	0.9072672128677368	0.3413643	Yes	
+row_11	CD74	CD74	CD74 molecule, major histocompatibility complex, class II invariant chain	1343	0.8709944486618042	0.35855424	Yes	
+row_12	CTSK	CTSK	cathepsin K (pycnodysostosis)	1348	0.8679182529449463	0.3817145	Yes	
+row_13	CANX	CANX	calnexin	1535	0.790465772151947	0.38768587	Yes	
+row_14	KLC4	KLC4	kinesin light chain 4	1547	0.7874184846878052	0.40808675	Yes	
+row_15	DYNC1LI2	DYNC1LI2	dynein, cytoplasmic 1, light intermediate chain 2	1779	0.6995747089385986	0.40786633	Yes	
+row_16	CTSD	CTSD	cathepsin D (lysosomal aspartyl peptidase)	1851	0.6782536506652832	0.4203369	Yes	
+row_17	AP1S1	AP1S1	adaptor-related protein complex 1, sigma 1 subunit	1966	0.6430962681770325	0.4282901	Yes	
+row_18	KIF18A	KIF18A	kinesin family member 18A	2137	0.5951694846153259	0.4303022	Yes	
+row_19	AP1M2	AP1M2	adaptor-related protein complex 1, mu 2 subunit	2144	0.594371497631073	0.4458925	Yes	
+row_20	DYNC1I2	DYNC1I2	dynein, cytoplasmic 1, intermediate chain 2	2529	0.5115405321121216	0.42789495	Yes	
+row_21	SEC24D	SEC24D	SEC24 related gene family, member D (S. cerevisiae)	2566	0.5089130401611328	0.43868437	Yes	
+row_22	CTSH	CTSH	cathepsin H	2744	0.4657009243965149	0.43661168	Yes	
+row_23	KIF20A	KIF20A	kinesin family member 20A	2838	0.44501250982284546	0.44094473	Yes	
+row_24	AP1B1	AP1B1	adaptor-related protein complex 1, beta 1 subunit	3095	0.40726903080940247	0.43073934	Yes	
+row_25	ACTR1A	ACTR1A	ARP1 actin-related protein 1 homolog A, centractin alpha (yeast)	3321	0.36711475253105164	0.42201778	Yes	
+row_26	ACTR1B	ACTR1B	ARP1 actin-related protein 1 homolog B, centractin beta (yeast)	3379	0.35947224497795105	0.42702085	Yes	
+row_27	DCTN5	DCTN5	dynactin 5 (p25)	3441	0.3494800329208374	0.43142176	Yes	
+row_28	SPTBN2	SPTBN2	spectrin, beta, non-erythrocytic 2	3527	0.33903130888938904	0.43354967	Yes	
+row_29	AP1S2	AP1S2	adaptor-related protein complex 1, sigma 2 subunit	3547	0.33651208877563477	0.44108245	Yes	
+row_30	DYNLL2	DYNLL2	dynein, light chain, LC8-type 2	3585	0.3316706418991089	0.44699153	Yes	
+row_31	KLC3	KLC3	kinesin light chain 3	3766	0.3071100413799286	0.44037747	Yes	
+row_32	AP2S1	AP2S1	adaptor-related protein complex 2, sigma 1 subunit	3795	0.3035246431827545	0.44627106	Yes	
+row_33	KIF3C	KIF3C	kinesin family member 3C	3884	0.2879621088504791	0.44676787	Yes	
+row_34	DCTN2	DCTN2	dynactin 2 (p50)	3952	0.27931076288223267	0.44877198	Yes	
+row_35	SEC31A	SEC31A	SEC31 homolog A (S. cerevisiae)	4027	0.2712181508541107	0.44997653	Yes	
+row_36	RILP	RILP	Rab interacting lysosomal protein	4143	0.25520744919776917	0.4473478	Yes	
+row_37	DCTN1	DCTN1	dynactin 1 (p150, glued homolog, Drosophila)	4161	0.25142335891723633	0.45274335	Yes	
+row_38	RACGAP1	RACGAP1	Rac GTPase activating protein 1	4264	0.23695462942123413	0.45069858	Yes	
+row_39	DYNC1H1	DYNC1H1	dynein, cytoplasmic 1, heavy chain 1	4272	0.23632216453552246	0.45651463	Yes	
+row_40	DYNC2H1	DYNC2H1	dynein, cytoplasmic 2, heavy chain 1	4308	0.23167677223682404	0.45988303	Yes	
+row_41	DCTN3	DCTN3	dynactin 3 (p22)	4365	0.22482281923294067	0.46132448	Yes	
+row_42	CLTC	CLTC	clathrin, heavy chain (Hc)	4375	0.22281301021575928	0.46660903	Yes	
+row_43	AP1G1	AP1G1	adaptor-related protein complex 1, gamma 1 subunit	4797	0.16702979803085327	0.43621835	No	
+row_44	AP2A2	AP2A2	adaptor-related protein complex 2, alpha 2 subunit	4926	0.1520785540342331	0.4297202	No	
+row_45	SEC24C	SEC24C	SEC24 related gene family, member C (S. cerevisiae)	4971	0.14820809662342072	0.430083	No	
+row_46	AP2M1	AP2M1	adaptor-related protein complex 2, mu 1 subunit	5130	0.13272525370121002	0.42057323	No	
+row_47	DNM2	DNM2	dynamin 2	5615	0.07698485255241394	0.38252097	No	
+row_48	KLC2	KLC2	kinesin light chain 2	5991	0.035454198718070984	0.35238352	No	
+row_49	AP2B1	AP2B1	adaptor-related protein complex 2, beta 1 subunit	6025	0.032730430364608765	0.3505329	No	
+row_50	KIF2A	KIF2A	kinesin heavy chain member 2A	6113	0.02127821557223797	0.3438943	No	
+row_51	DYNC2LI1	DYNC2LI1	dynein, cytoplasmic 2, light intermediate chain 1	6231	0.00749115040525794	0.33439475	No	
+row_52	SEC23A	SEC23A	Sec23 homolog A (S. cerevisiae)	6467	-0.01924595795571804	0.31542817	No	
+row_53	KIF23	KIF23	kinesin family member 23	7009	-0.08005298674106598	0.2727322	No	
+row_54	CTSC	CTSC	cathepsin C	7133	-0.0948655903339386	0.2651001	No	
+row_55	KIF5B	KIF5B	kinesin family member 5B	7243	-0.10572434216737747	0.25892285	No	
+row_56	CLTA	CLTA	clathrin, light chain (Lca)	7393	-0.12260769307613373	0.24988554	No	
+row_57	AP2A1	AP2A1	adaptor-related protein complex 2, alpha 1 subunit	7783	-0.16104614734649658	0.22198652	No	
+row_58	DYNLL1	DYNLL1	dynein, light chain, LC8-type 1	7946	-0.17250870168209076	0.21322186	No	
+row_59	DCTN4	DCTN4	dynactin 4 (p62)	8260	-0.19817548990249634	0.19263016	No	
+row_60	AP1M1	AP1M1	adaptor-related protein complex 1, mu 1 subunit	8551	-0.23016297817230225	0.17481156	No	
+row_61	KIFAP3	KIFAP3	kinesin-associated protein 3	8587	-0.23465970158576965	0.1782607	No	
+row_62	ARF1	ARF1	ADP-ribosylation factor 1	8637	-0.24078942835330963	0.18071479	No	
+row_63	CTSF	CTSF	cathepsin F	9072	-0.2978045642375946	0.15278575	No	
+row_64	KIF15	KIF15	kinesin family member 15	9615	-0.3645252585411072	0.11770668	No	
+row_65	DCTN6	DCTN6	dynactin 6	10052	-0.43470749258995056	0.09331734	No	
+row_66	DNM1	DNM1	dynamin 1	10290	-0.47816047072410583	0.08660634	No	
+row_67	KIF26A	KIF26A	kinesin family member 26A	10301	-0.4795630872249603	0.09875742	No	
+row_68	SEC24B	SEC24B	SEC24 related gene family, member B (S. cerevisiae)	10395	-0.49630188941955566	0.104478754	No	
+row_69	SAR1B	SAR1B	SAR1 gene homolog B (S. cerevisiae)	11239	-0.7085075974464417	0.05374964	No	
+row_70	CTSO	CTSO	cathepsin O	11308	-0.737845242023468	0.06808196	No	

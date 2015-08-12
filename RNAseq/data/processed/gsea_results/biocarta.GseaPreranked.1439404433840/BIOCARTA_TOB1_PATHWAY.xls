@@ -1,0 +1,19 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CD28	CD28	CD28 molecule	1262	0.9089851379394531	-0.016126055	No	
+row_1	IL4	IL4	interleukin 4	1448	0.8248531818389893	0.048516743	No	
+row_2	TGFB1	TGFB1	transforming growth factor, beta 1 (Camurati-Engelmann disease)	1801	0.6947240829467773	0.086763844	No	
+row_3	IL2	IL2	interleukin 2	2550	0.5091845393180847	0.074339874	No	
+row_4	CD3E	CD3E	CD3e molecule, epsilon (CD3-TCR complex)	3722	0.3126687705516815	0.007952185	No	
+row_5	TGFB3	TGFB3	transforming growth factor, beta 3	4611	0.1930106282234192	-0.046663467	No	
+row_6	TGFBR2	TGFBR2	transforming growth factor, beta receptor II (70/80kDa)	5340	0.10729468613862991	-0.096373774	No	
+row_7	CD3D	CD3D	CD3d molecule, delta (CD3-TCR complex)	5747	0.06307049840688705	-0.12378359	No	
+row_8	TGFBR3	TGFBR3	transforming growth factor, beta receptor III (betaglycan, 300kDa)	8739	-0.253945529460907	-0.34612495	No	
+row_9	SMAD4	SMAD4	SMAD, mothers against DPP homolog 4 (Drosophila)	9653	-0.3703187108039856	-0.38562596	Yes	
+row_10	CD3G	CD3G	CD3g molecule, gamma (CD3-TCR complex)	9738	-0.38472795486450195	-0.3552864	Yes	
+row_11	TGFB2	TGFB2	transforming growth factor, beta 2	9967	-0.4214416742324829	-0.3332788	Yes	
+row_12	TOB2	TOB2	transducer of ERBB2, 2	10573	-0.533989667892456	-0.33149305	Yes	
+row_13	TGFBR1	TGFBR1	transforming growth factor, beta receptor I (activin A receptor type II-like kinase, 53kDa)	10652	-0.5505574941635132	-0.2845915	Yes	
+row_14	TOB1	TOB1	transducer of ERBB2, 1	11226	-0.7039827704429626	-0.26369372	Yes	
+row_15	CD247	CD247	CD247 molecule	11632	-0.9139962196350098	-0.208578	Yes	
+row_16	SMAD3	SMAD3	SMAD, mothers against DPP homolog 3 (Drosophila)	11850	-1.1078523397445679	-0.11915849	Yes	
+row_17	IL2RA	IL2RA	interleukin 2 receptor, alpha	12027	-1.4667816162109375	0.008421392	Yes	

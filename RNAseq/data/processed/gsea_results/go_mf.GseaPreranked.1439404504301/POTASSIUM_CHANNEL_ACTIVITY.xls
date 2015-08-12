@@ -1,0 +1,47 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	KCNK3	KCNK3	potassium channel, subfamily K, member 3	0	6.158414840698242	0.16556306	Yes	
+row_1	KCNJ3	KCNJ3	potassium inwardly-rectifying channel, subfamily J, member 3	37	3.5227997303009033	0.257291	Yes	
+row_2	KCNH2	KCNH2	potassium voltage-gated channel, subfamily H (eag-related), member 2	344	1.7616851329803467	0.27932948	Yes	
+row_3	KCNK5	KCNK5	potassium channel, subfamily K, member 5	360	1.7306205034255981	0.32461423	Yes	
+row_4	KCNN4	KCNN4	potassium intermediate/small conductance calcium-activated channel, subfamily N, member 4	586	1.3943308591842651	0.3434798	Yes	
+row_5	KCNN3	KCNN3	potassium intermediate/small conductance calcium-activated channel, subfamily N, member 3	858	1.1426376104354858	0.3517722	Yes	
+row_6	KCNIP2	KCNIP2	Kv channel interacting protein 2	960	1.0818850994110107	0.37249947	Yes	
+row_7	KCNE1	KCNE1	potassium voltage-gated channel, Isk-related family, member 1	989	1.0635786056518555	0.39877564	Yes	
+row_8	KCNJ4	KCNJ4	potassium inwardly-rectifying channel, subfamily J, member 4	1003	1.05855393409729	0.42615804	Yes	
+row_9	KCNQ3	KCNQ3	potassium voltage-gated channel, KQT-like subfamily, member 3	1056	1.0332337617874146	0.44963232	Yes	
+row_10	KCNJ6	KCNJ6	potassium inwardly-rectifying channel, subfamily J, member 6	1483	0.8087088465690613	0.43612045	Yes	
+row_11	KCNB2	KCNB2	potassium voltage-gated channel, Shab-related subfamily, member 2	1487	0.8067982196807861	0.45756218	Yes	
+row_12	KCNH1	KCNH1	potassium voltage-gated channel, subfamily H (eag-related), member 1	1890	0.6637568473815918	0.4421395	Yes	
+row_13	KCND3	KCND3	potassium voltage-gated channel, Shal-related subfamily, member 3	2041	0.6214034557342529	0.44643223	Yes	
+row_14	KCNC1	KCNC1	potassium voltage-gated channel, Shaw-related subfamily, member 1	2139	0.5948178768157959	0.45439622	Yes	
+row_15	KCNK10	KCNK10	potassium channel, subfamily K, member 10	2152	0.594371497631073	0.46938226	Yes	
+row_16	KCNG2	KCNG2	potassium voltage-gated channel, subfamily G, member 2	2270	0.5712727904319763	0.47505817	Yes	
+row_17	KCNMB3	KCNMB3	potassium large conductance calcium-activated channel, subfamily M beta member 3	2889	0.44265830516815186	0.4358166	No	
+row_18	KCNQ2	KCNQ2	potassium voltage-gated channel, KQT-like subfamily, member 2	3020	0.41863173246383667	0.43631306	No	
+row_19	KCNC3	KCNC3	potassium voltage-gated channel, Shaw-related subfamily, member 3	3548	0.33641162514686584	0.4017458	No	
+row_20	KCNMB4	KCNMB4	potassium large conductance calcium-activated channel, subfamily M, beta member 4	3576	0.33330273628234863	0.40847194	No	
+row_21	KCNJ15	KCNJ15	potassium inwardly-rectifying channel, subfamily J, member 15	4195	0.24695459008216858	0.3639691	No	
+row_22	KCNK1	KCNK1	potassium channel, subfamily K, member 1	4788	0.16885881125926971	0.3195183	No	
+row_23	KCNK7	KCNK7	potassium channel, subfamily K, member 7	5088	0.13614390790462494	0.2984349	No	
+row_24	KCNS1	KCNS1	potassium voltage-gated channel, delayed-rectifier, subfamily S, member 1	5510	0.08884887397289276	0.2659841	No	
+row_25	KCNC4	KCNC4	potassium voltage-gated channel, Shaw-related subfamily, member 4	6175	0.014404929243028164	0.21142265	No	
+row_26	KCNH3	KCNH3	potassium voltage-gated channel, subfamily H (eag-related), member 3	7750	-0.1589290052652359	0.08544042	No	
+row_27	KCNJ1	KCNJ1	potassium inwardly-rectifying channel, subfamily J, member 1	8078	-0.18282656371593475	0.06329496	No	
+row_28	KCNJ10	KCNJ10	potassium inwardly-rectifying channel, subfamily J, member 10	8400	-0.21433983743190765	0.042493228	No	
+row_29	KCNQ1	KCNQ1	potassium voltage-gated channel, KQT-like subfamily, member 1	8440	-0.2187667191028595	0.04514715	No	
+row_30	KCNA6	KCNA6	potassium voltage-gated channel, shaker-related subfamily, member 6	8658	-0.24353112280368805	0.03373662	No	
+row_31	KCNK4	KCNK4	potassium channel, subfamily K, member 4	8958	-0.2818848192691803	0.016571362	No	
+row_32	KCNH4	KCNH4	potassium voltage-gated channel, subfamily H (eag-related), member 4	9142	-0.30715295672416687	0.00968488	No	
+row_33	KCNJ12	KCNJ12	potassium inwardly-rectifying channel, subfamily J, member 12	9157	-0.30791175365448	0.016804235	No	
+row_34	KCNE2	KCNE2	potassium voltage-gated channel, Isk-related family, member 2	9228	-0.3164174556732178	0.01951803	No	
+row_35	KCNMB2	KCNMB2	potassium large conductance calcium-activated channel, subfamily M, beta member 2	9443	-0.34423214197158813	0.011063012	No	
+row_36	KCNS3	KCNS3	potassium voltage-gated channel, delayed-rectifier, subfamily S, member 3	9784	-0.3908988833427429	-0.0065644262	No	
+row_37	KCNK6	KCNK6	potassium channel, subfamily K, member 6	9897	-0.40985333919525146	-0.0048143677	No	
+row_38	KCNA1	KCNA1	potassium voltage-gated channel, shaker-related subfamily, member 1 (episodic ataxia with myokymia)	10193	-0.46052128076553345	-0.016846143	No	
+row_39	KCNA5	KCNA5	potassium voltage-gated channel, shaker-related subfamily, member 5	10255	-0.4716480076313019	-0.009214337	No	
+row_40	KCNMB1	KCNMB1	potassium large conductance calcium-activated channel, subfamily M, beta member 1	10885	-0.6036904454231262	-0.045037	No	
+row_41	KCNN2	KCNN2	potassium intermediate/small conductance calcium-activated channel, subfamily N, member 2	11303	-0.7345843315124512	-0.05979685	No	
+row_42	KCNJ14	KCNJ14	potassium inwardly-rectifying channel, subfamily J, member 14	11461	-0.8045768141746521	-0.051158965	No	
+row_43	KCNA2	KCNA2	potassium voltage-gated channel, shaker-related subfamily, member 2	11686	-0.9551522731781006	-0.044017524	No	
+row_44	KCNA3	KCNA3	potassium voltage-gated channel, shaker-related subfamily, member 3	11867	-1.1315488815307617	-0.02849265	No	
+row_45	KCNQ5	KCNQ5	potassium voltage-gated channel, KQT-like subfamily, member 5	12098	-1.8632347583770752	0.0025651907	No	

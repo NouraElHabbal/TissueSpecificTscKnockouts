@@ -1,0 +1,18 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	BCL2	BCL2	B-cell CLL/lymphoma 2	1574	0.7798110246658325	-0.029858889	No	
+row_1	FYN	FYN	FYN oncogene related to SRC, FGR, YES	1986	0.6360108852386475	0.01783887	No	
+row_2	IL7R	IL7R	interleukin 7 receptor	2416	0.5331466794013977	0.05084861	No	
+row_3	PIK3R1	PIK3R1	phosphoinositide-3-kinase, regulatory subunit 1 (p85 alpha)	2710	0.4732910096645355	0.087403834	No	
+row_4	PTK2B	PTK2B	PTK2B protein tyrosine kinase 2 beta	4202	0.2457994818687439	-0.004140142	No	
+row_5	JAK3	JAK3	Janus kinase 3 (a protein tyrosine kinase, leukocyte)	5857	0.050039127469062805	-0.13426542	No	
+row_6	STAT5A	STAT5A	signal transducer and activator of transcription 5A	5872	0.04817400127649307	-0.12923837	No	
+row_7	PIK3CG	PIK3CG	phosphoinositide-3-kinase, catalytic, gamma polypeptide	6362	-0.007406752556562424	-0.1686576	No	
+row_8	PIK3CA	PIK3CA	phosphoinositide-3-kinase, catalytic, alpha polypeptide	6401	-0.011046390980482101	-0.17037699	No	
+row_9	IL2RG	IL2RG	interleukin 2 receptor, gamma (severe combined immunodeficiency)	6667	-0.042388129979372025	-0.18681404	No	
+row_10	JAK1	JAK1	Janus kinase 1 (a protein tyrosine kinase)	8590	-0.2350369691848755	-0.31532094	No	
+row_11	NMI	NMI	N-myc (and STAT) interactor	9806	-0.3945242762565613	-0.36499152	No	
+row_12	EP300	EP300	E1A binding protein p300	10861	-0.5987852215766907	-0.3751549	Yes	
+row_13	CREBBP	CREBBP	CREB binding protein (Rubinstein-Taybi syndrome)	10949	-0.6218989491462708	-0.30252022	Yes	
+row_14	STAT5B	STAT5B	signal transducer and activator of transcription 5B	11672	-0.9430349469184875	-0.24109262	Yes	
+row_15	LCK	LCK	lymphocyte-specific protein tyrosine kinase	11797	-1.057207465171814	-0.1156432	Yes	
+row_16	IL7	IL7	interleukin 7	11853	-1.11395263671875	0.022785485	Yes	

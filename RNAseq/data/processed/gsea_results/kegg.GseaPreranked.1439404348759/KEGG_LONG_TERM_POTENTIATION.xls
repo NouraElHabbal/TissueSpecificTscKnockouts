@@ -1,0 +1,61 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	RPS6KA6	RPS6KA6	ribosomal protein S6 kinase, 90kDa, polypeptide 6	372	1.7135673761367798	0.02833558	No	
+row_1	GRM1	GRM1	glutamate receptor, metabotropic 1	604	1.3659982681274414	0.056354232	No	
+row_2	CALML3	CALML3	calmodulin-like 3	758	1.2135119438171387	0.08557105	No	
+row_3	GRIN2C	GRIN2C	glutamate receptor, ionotropic, N-methyl D-aspartate 2C	813	1.1743823289871216	0.12163919	No	
+row_4	NRAS	NRAS	neuroblastoma RAS viral (v-ras) oncogene homolog	1238	0.9218977689743042	0.11833654	No	
+row_5	PRKX	PRKX	protein kinase, X-linked	1365	0.8588340282440186	0.13754612	No	
+row_6	PLCB2	PLCB2	phospholipase C, beta 2	1756	0.7113769054412842	0.12979276	No	
+row_7	GRIN2D	GRIN2D	glutamate receptor, ionotropic, N-methyl D-aspartate 2D	1990	0.6342639923095703	0.13238478	No	
+row_8	CAMK2D	CAMK2D	calcium/calmodulin-dependent protein kinase (CaM kinase) II delta	2995	0.4228849411010742	0.063802175	No	
+row_9	PLCB3	PLCB3	phospholipase C, beta 3 (phosphatidylinositol-specific)	3392	0.3572084903717041	0.04332511	No	
+row_10	GRIN2A	GRIN2A	glutamate receptor, ionotropic, N-methyl D-aspartate 2A	3721	0.3132486343383789	0.026964273	No	
+row_11	ATF4	ATF4	activating transcription factor 4 (tax-responsive enhancer element B67)	3865	0.2900922894477844	0.025131287	No	
+row_12	KRAS	KRAS	v-Ki-ras2 Kirsten rat sarcoma viral oncogene homolog	4217	0.24377769231796265	0.00446662	No	
+row_13	PRKACA	PRKACA	protein kinase, cAMP-dependent, catalytic, alpha	4245	0.24078798294067383	0.010542155	No	
+row_14	PPP1R12A	PPP1R12A	protein phosphatase 1, regulatory (inhibitor) subunit 12A	4354	0.22558891773223877	0.009382134	No	
+row_15	ADCY8	ADCY8	adenylate cyclase 8 (brain)	4630	0.191138356924057	-0.0068031466	No	
+row_16	RAF1	RAF1	v-raf-1 murine leukemia viral oncogene homolog 1	5053	0.1394452005624771	-0.036951933	No	
+row_17	PLCB4	PLCB4	phospholipase C, beta 4	5404	0.10093671828508377	-0.06246491	No	
+row_18	RAP1B	RAP1B	RAP1B, member of RAS oncogene family	5572	0.08151189982891083	-0.07348691	No	
+row_19	PPP1CA	PPP1CA	protein phosphatase 1, catalytic subunit, alpha isoform	5843	0.05169373005628586	-0.09407185	No	
+row_20	MAPK3	MAPK3	mitogen-activated protein kinase 3	5920	0.04387248307466507	-0.098853886	No	
+row_21	RAP1A	RAP1A	RAP1A, member of RAS oncogene family	6002	0.034676071256399155	-0.10436765	No	
+row_22	ITPR3	ITPR3	inositol 1,4,5-triphosphate receptor, type 3	6188	0.012486324645578861	-0.11926386	No	
+row_23	PRKACB	PRKACB	protein kinase, cAMP-dependent, catalytic, beta	6225	0.008203152567148209	-0.12196327	No	
+row_24	MAP2K1	MAP2K1	mitogen-activated protein kinase kinase 1	6392	-0.009804394096136093	-0.13537791	No	
+row_25	ADCY1	ADCY1	adenylate cyclase 1 (brain)	6882	-0.06600667536258698	-0.1736129	No	
+row_26	GNAQ	GNAQ	guanine nucleotide binding protein (G protein), q polypeptide	7017	-0.08091006428003311	-0.18192163	No	
+row_27	PPP3CC	PPP3CC	protein phosphatase 3 (formerly 2B), catalytic subunit, gamma isoform (calcineurin A gamma)	7268	-0.10985127091407776	-0.19884185	No	
+row_28	BRAF	BRAF	v-raf murine sarcoma viral oncogene homolog B1	7440	-0.1279134750366211	-0.20859337	No	
+row_29	MAPK1	MAPK1	mitogen-activated protein kinase 1	7694	-0.15220962464809418	-0.22429985	No	
+row_30	GRIA2	GRIA2	glutamate receptor, ionotropic, AMPA 2	7868	-0.16545043885707855	-0.23292123	No	
+row_31	RPS6KA2	RPS6KA2	ribosomal protein S6 kinase, 90kDa, polypeptide 2	8140	-0.18624311685562134	-0.2489441	No	
+row_32	CAMK2B	CAMK2B	calcium/calmodulin-dependent protein kinase (CaM kinase) II beta	8199	-0.19299015402793884	-0.247087	No	
+row_33	MAP2K2	MAP2K2	mitogen-activated protein kinase kinase 2	8212	-0.19472163915634155	-0.24135901	No	
+row_34	ITPR2	ITPR2	inositol 1,4,5-triphosphate receptor, type 2	8300	-0.20234210789203644	-0.24158171	No	
+row_35	ARAF	ARAF	v-raf murine sarcoma 3611 viral oncogene homolog	8422	-0.2164297103881836	-0.24413498	No	
+row_36	HRAS	HRAS	v-Ha-ras Harvey rat sarcoma viral oncogene homolog	8509	-0.22525131702423096	-0.24348395	No	
+row_37	PLCB1	PLCB1	phospholipase C, beta 1 (phosphoinositide-specific)	8790	-0.2602665424346924	-0.25769705	No	
+row_38	PPP1CB	PPP1CB	protein phosphatase 1, catalytic subunit, beta isoform	9167	-0.309608519077301	-0.27816033	No	
+row_39	PPP3R1	PPP3R1	protein phosphatase 3 (formerly 2B), regulatory subunit B, 19kDa, alpha isoform (calcineurin B, type I)	9707	-0.37948644161224365	-0.30971587	No	
+row_40	PPP3CA	PPP3CA	protein phosphatase 3 (formerly 2B), catalytic subunit, alpha isoform (calcineurin A alpha)	9808	-0.39531490206718445	-0.3043538	No	
+row_41	PPP1CC	PPP1CC	protein phosphatase 1, catalytic subunit, gamma isoform	9984	-0.42354390025138855	-0.304231	No	
+row_42	GRIN1	GRIN1	glutamate receptor, ionotropic, N-methyl D-aspartate 1	10174	-0.4556361436843872	-0.30416018	No	
+row_43	RAPGEF3	RAPGEF3	Rap guanine nucleotide exchange factor (GEF) 3	10361	-0.4893627464771271	-0.3026765	No	
+row_44	PRKCA	PRKCA	protein kinase C, alpha	10690	-0.5605981945991516	-0.31049833	Yes	
+row_45	EP300	EP300	E1A binding protein p300	10861	-0.5987852215766907	-0.30391157	Yes	
+row_46	CREBBP	CREBBP	CREB binding protein (Rubinstein-Taybi syndrome)	10949	-0.6218989491462708	-0.2896503	Yes	
+row_47	PPP3CB	PPP3CB	protein phosphatase 3 (formerly 2B), catalytic subunit, beta isoform (calcineurin A beta)	11088	-0.660870373249054	-0.27826902	Yes	
+row_48	CACNA1C	CACNA1C	calcium channel, voltage-dependent, L type, alpha 1C subunit	11287	-0.7280485033988953	-0.26953965	Yes	
+row_49	CAMK2G	CAMK2G	calcium/calmodulin-dependent protein kinase (CaM kinase) II gamma	11305	-0.7352122068405151	-0.24556708	Yes	
+row_50	CALM2	CALM2	calmodulin 2 (phosphorylase kinase, delta)	11309	-0.7378762364387512	-0.22034267	Yes	
+row_51	RPS6KA1	RPS6KA1	ribosomal protein S6 kinase, 90kDa, polypeptide 1	11353	-0.7538566589355469	-0.19788057	Yes	
+row_52	GRIN2B	GRIN2B	glutamate receptor, ionotropic, N-methyl D-aspartate 2B	11407	-0.7802957892417908	-0.17533423	Yes	
+row_53	RPS6KA3	RPS6KA3	ribosomal protein S6 kinase, 90kDa, polypeptide 3	11498	-0.8227865695953369	-0.15438649	Yes	
+row_54	ITPR1	ITPR1	inositol 1,4,5-triphosphate receptor, type 1	11521	-0.8424565196037292	-0.12712589	Yes	
+row_55	CALM3	CALM3	calmodulin 3 (phosphorylase kinase, delta)	11522	-0.8429415225982666	-0.09802586	Yes	
+row_56	CALM1	CALM1	calmodulin 1 (phosphorylase kinase, delta)	11602	-0.8956689834594727	-0.07365071	Yes	
+row_57	CAMK2A	CAMK2A	calcium/calmodulin-dependent protein kinase (CaM kinase) II alpha	11637	-0.915886640548706	-0.044849362	Yes	
+row_58	CAMK4	CAMK4	calcium/calmodulin-dependent protein kinase IV	11895	-1.1709294319152832	-0.02571898	Yes	
+row_59	PPP1R1A	PPP1R1A	protein phosphatase 1, regulatory (inhibitor) subunit 1A	11970	-1.3041810989379883	0.013173074	Yes	

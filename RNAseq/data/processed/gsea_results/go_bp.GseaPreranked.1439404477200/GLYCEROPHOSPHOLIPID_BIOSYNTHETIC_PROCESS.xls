@@ -1,0 +1,26 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	PEMT	PEMT	phosphatidylethanolamine N-methyltransferase	1824	0.6857957243919373	-0.07810393	No	
+row_1	AGPAT2	AGPAT2	1-acylglycerol-3-phosphate O-acyltransferase 2 (lysophosphatidic acid acyltransferase, beta)	1855	0.6776623725891113	-0.008865387	No	
+row_2	PIGZ	PIGZ	phosphatidylinositol glycan anchor biosynthesis, class Z	1924	0.6560428142547607	0.054945968	No	
+row_3	PIGF	PIGF	phosphatidylinositol glycan anchor biosynthesis, class F	3465	0.3460446000099182	-0.035652373	No	
+row_4	PIGT	PIGT	phosphatidylinositol glycan anchor biosynthesis, class T	3603	0.3296701908111572	-0.012081082	No	
+row_5	PIGK	PIGK	phosphatidylinositol glycan anchor biosynthesis, class K	4247	0.24066442251205444	-0.03973017	No	
+row_6	CD81	CD81	CD81 molecule	4651	0.18821261823177338	-0.053103697	No	
+row_7	IMPA1	IMPA1	inositol(myo)-1(or 4)-monophosphatase 1	5115	0.13430948555469513	-0.07713841	No	
+row_8	PIGS	PIGS	phosphatidylinositol glycan anchor biosynthesis, class S	5254	0.11666816473007202	-0.07619169	No	
+row_9	PIGA	PIGA	phosphatidylinositol glycan anchor biosynthesis, class A (paroxysmal nocturnal hemoglobinuria)	5300	0.11088146269321442	-0.0681746	No	
+row_10	PCYT1B	PCYT1B	phosphate cytidylyltransferase 1, choline, beta	5478	0.09261172264814377	-0.07299558	No	
+row_11	DPM2	DPM2	dolichyl-phosphate mannosyltransferase polypeptide 2, regulatory subunit	5728	0.06423414498567581	-0.08676771	No	
+row_12	PIGO	PIGO	phosphatidylinositol glycan anchor biosynthesis, class O	7265	-0.10936439782381058	-0.20208342	No	
+row_13	GPAA1	GPAA1	glycosylphosphatidylinositol anchor attachment protein 1 homolog (yeast)	7796	-0.16264081001281738	-0.22865474	No	
+row_14	DPM3	DPM3	dolichyl-phosphate mannosyltransferase polypeptide 3	8373	-0.21094658970832825	-0.25391397	No	
+row_15	DPM1	DPM1	dolichyl-phosphate mannosyltransferase polypeptide 1, catalytic subunit	8516	-0.22589784860610962	-0.24173792	No	
+row_16	PIGC	PIGC	phosphatidylinositol glycan anchor biosynthesis, class C	10040	-0.43297243118286133	-0.32173234	Yes	
+row_17	PIGV	PIGV	phosphatidylinositol glycan anchor biosynthesis, class V	10145	-0.4517974555492401	-0.2825102	Yes	
+row_18	PIGB	PIGB	phosphatidylinositol glycan anchor biosynthesis, class B	10318	-0.48226165771484375	-0.24568155	Yes	
+row_19	LCAT	LCAT	lecithin-cholesterol acyltransferase	10482	-0.5129998326301575	-0.2048564	Yes	
+row_20	PIGG	PIGG	phosphatidylinositol glycan anchor biosynthesis, class G	10593	-0.5386001467704773	-0.15694362	Yes	
+row_21	PIGH	PIGH	phosphatidylinositol glycan anchor biosynthesis, class H	10840	-0.5950735807418823	-0.11428929	Yes	
+row_22	APOA1	APOA1	apolipoprotein A-I	11081	-0.6591801643371582	-0.06435491	Yes	
+row_23	AGPAT1	AGPAT1	1-acylglycerol-3-phosphate O-acyltransferase 1 (lysophosphatidic acid acyltransferase, alpha)	11206	-0.6987259387969971	-6.526011E-4	Yes	
+row_24	PIK3C2A	PIK3C2A	phosphoinositide-3-kinase, class 2, alpha polypeptide	11282	-0.7258777618408203	0.0699711	Yes	

@@ -1,0 +1,17 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	UBE2N	UBE2N	ubiquitin-conjugating enzyme E2N (UBC13 homolog, yeast)	2917	0.43806612491607666	-0.17863484	No	
+row_1	IKBKB	IKBKB	inhibitor of kappa light polypeptide gene enhancer in B-cells, kinase beta	3300	0.3716896176338196	-0.1574264	No	
+row_2	TNF	TNF	tumor necrosis factor (TNF superfamily, member 2)	3632	0.3251151740550995	-0.13861682	No	
+row_3	EDA2R	EDA2R	ectodysplasin A2 receptor	3953	0.2792120575904846	-0.12541275	No	
+row_4	EDA	EDA	ectodysplasin A	4200	0.24610178172588348	-0.11079836	No	
+row_5	BCL10	BCL10	B-cell CLL/lymphoma 10	5018	0.14354392886161804	-0.15787232	No	
+row_6	ERC1	ERC1	ELKS/RAB6-interacting/CAST family member 1	5423	0.09786850959062576	-0.17733477	No	
+row_7	PYCARD	PYCARD	PYD and CARD domain containing	6670	-0.04282216355204582	-0.27411455	No	
+row_8	RELA	RELA	v-rel reticuloendotheliosis viral oncogene homolog A, nuclear factor of kappa light polypeptide gene enhancer in B-cells 3, p65 (avian)	7895	-0.1677129864692688	-0.35135645	No	
+row_9	PRDX3	PRDX3	peroxiredoxin 3	8996	-0.2866949141025543	-0.40147892	No	
+row_10	PRKCQ	PRKCQ	protein kinase C, theta	10796	-0.5833615064620972	-0.46720663	Yes	
+row_11	NPM1	NPM1	nucleophosmin (nucleolar phosphoprotein B23, numatrin)	10914	-0.6099134683609009	-0.39031908	Yes	
+row_12	UBE2V1	UBE2V1	ubiquitin-conjugating enzyme E2 variant 1	10917	-0.6119055151939392	-0.30365568	Yes	
+row_13	MAP3K13	MAP3K13	mitogen-activated protein kinase kinase kinase 13	10958	-0.6259642243385315	-0.21813427	Yes	
+row_14	CAMK2A	CAMK2A	calcium/calmodulin-dependent protein kinase (CaM kinase) II alpha	11637	-0.915886640548706	-0.14413963	Yes	
+row_15	CARD11	CARD11	caspase recruitment domain family, member 11	11968	-1.3014322519302368	0.013290438	Yes	

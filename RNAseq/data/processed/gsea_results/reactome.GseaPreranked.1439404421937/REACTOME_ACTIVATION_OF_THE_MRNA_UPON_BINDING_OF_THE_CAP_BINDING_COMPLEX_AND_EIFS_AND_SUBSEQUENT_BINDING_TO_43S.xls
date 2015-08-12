@@ -1,0 +1,42 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	EIF4A1	EIF4A1	eukaryotic translation initiation factor 4A, isoform 1	2055	0.6175678372383118	-0.12917085	No	
+row_1	EIF4EBP1	EIF4EBP1	eukaryotic translation initiation factor 4E binding protein 1	5363	0.10497656464576721	-0.39578685	No	
+row_2	RPS29	RPS29	ribosomal protein S29	5520	0.08765663951635361	-0.40289745	No	
+row_3	EIF2S1	EIF2S1	eukaryotic translation initiation factor 2, subunit 1 alpha, 35kDa	5548	0.08359774202108383	-0.39960545	No	
+row_4	RPS19	RPS19	ribosomal protein S19	5897	0.04578066244721413	-0.42536607	No	
+row_5	RPS27A	RPS27A	ribosomal protein S27a	6701	-0.045302003622055054	-0.48879585	No	
+row_6	RPS2	RPS2	ribosomal protein S2	6899	-0.06823853403329849	-0.5005814	No	
+row_7	RPS14	RPS14	ribosomal protein S14	7307	-0.11460105329751968	-0.52667373	No	
+row_8	RPS3	RPS3	ribosomal protein S3	7463	-0.13208943605422974	-0.5307648	No	
+row_9	EIF4E	EIF4E	eukaryotic translation initiation factor 4E	7847	-0.16444513201713562	-0.55157745	No	
+row_10	RPSA	RPSA	ribosomal protein SA	7872	-0.16565930843353271	-0.5426134	No	
+row_11	RPS6	RPS6	ribosomal protein S6	8496	-0.22425711154937744	-0.5793255	Yes	
+row_12	EIF4G1	EIF4G1	eukaryotic translation initiation factor 4 gamma, 1	8694	-0.24847310781478882	-0.57919836	Yes	
+row_13	FAU	FAU	Finkel-Biskis-Reilly murine sarcoma virus (FBR-MuSV) ubiquitously expressed (fox derived); ribosomal protein S30	8713	-0.25025278329849243	-0.56414676	Yes	
+row_14	RPS15A	RPS15A	ribosomal protein S15a	8788	-0.2601723074913025	-0.5530718	Yes	
+row_15	RPS9	RPS9	ribosomal protein S9	8806	-0.26222920417785645	-0.5371459	Yes	
+row_16	RPS24	RPS24	ribosomal protein S24	8866	-0.26757705211639404	-0.52434075	Yes	
+row_17	EIF2S2	EIF2S2	eukaryotic translation initiation factor 2, subunit 2 beta, 38kDa	8920	-0.27599087357521057	-0.5104832	Yes	
+row_18	RPS10	RPS10	ribosomal protein S10	8985	-0.2856948673725128	-0.49689412	Yes	
+row_19	RPS28	RPS28	ribosomal protein S28	9095	-0.3005684018135071	-0.4860444	Yes	
+row_20	RPS15	RPS15	ribosomal protein S15	9296	-0.32522091269493103	-0.48109275	Yes	
+row_21	RPS11	RPS11	ribosomal protein S11	9382	-0.33630186319351196	-0.46589592	Yes	
+row_22	RPS20	RPS20	ribosomal protein S20	9384	-0.3367219865322113	-0.44372287	Yes	
+row_23	RPS16	RPS16	ribosomal protein S16	9406	-0.33961305022239685	-0.42301312	Yes	
+row_24	EIF1AX	EIF1AX	eukaryotic translation initiation factor 1A, X-linked	9633	-0.3663589060306549	-0.41749313	Yes	
+row_25	RPS26	RPS26	ribosomal protein S26	9727	-0.3834831118583679	-0.3998396	Yes	
+row_26	RPS23	RPS23	ribosomal protein S23	9948	-0.41793256998062134	-0.39041457	Yes	
+row_27	RPS18	RPS18	ribosomal protein S18	10033	-0.43150222301483154	-0.3688427	Yes	
+row_28	RPS25	RPS25	ribosomal protein S25	10103	-0.444672554731369	-0.34515956	Yes	
+row_29	RPS17	RPS17	ribosomal protein S17	10218	-0.46400654315948486	-0.3239209	Yes	
+row_30	RPS21	RPS21	ribosomal protein S21	10221	-0.4650101363658905	-0.2933513	Yes	
+row_31	RPS13	RPS13	ribosomal protein S13	10269	-0.4734956920146942	-0.26594323	Yes	
+row_32	RPS12	RPS12	ribosomal protein S12	10287	-0.4769296944141388	-0.23582661	Yes	
+row_33	PABPC1	PABPC1	poly(A) binding protein, cytoplasmic 1	10433	-0.503948986530304	-0.21451226	Yes	
+row_34	RPS7	RPS7	ribosomal protein S7	10469	-0.5104263424873352	-0.18367061	Yes	
+row_35	RPS5	RPS5	ribosomal protein S5	10831	-0.5931241512298584	-0.17432968	Yes	
+row_36	RPS8	RPS8	ribosomal protein S8	11222	-0.7024254202842712	-0.16016331	Yes	
+row_37	RPS4X	RPS4X	ribosomal protein S4, X-linked	11490	-0.8190330862998962	-0.12811518	Yes	
+row_38	RPS27	RPS27	ribosomal protein S27 (metallopanstimulin 1)	11582	-0.8837805986404419	-0.07722883	Yes	
+row_39	EIF4B	EIF4B	eukaryotic translation initiation factor 4B	11627	-0.911708652973175	-0.020608738	Yes	
+row_40	EIF4A2	EIF4A2	eukaryotic translation initiation factor 4A, isoform 2	11663	-0.9388136863708496	0.038547352	Yes	

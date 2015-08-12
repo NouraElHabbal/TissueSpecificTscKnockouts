@@ -1,0 +1,20 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GNAI1	GNAI1	guanine nucleotide binding protein (G protein), alpha inhibiting activity polypeptide 1	403	1.6593124866485596	0.09390559	No	
+row_1	SYTL1	SYTL1	synaptotagmin-like 1	580	1.403107762336731	0.18691719	No	
+row_2	TDGF1	TDGF1	teratocarcinoma-derived growth factor 1	1197	0.9427368640899658	0.20831218	No	
+row_3	SCUBE1	SCUBE1	signal peptide, CUB domain, EGF-like 1	2798	0.4550075829029083	0.11107579	No	
+row_4	RGS19	RGS19	regulator of G-protein signalling 19	3170	0.39429423213005066	0.110663906	No	
+row_5	PRNP	PRNP	prion protein (p27-30) (Creutzfeldt-Jakob disease, Gerstmann-Strausler-Scheinker syndrome, fatal familial insomnia)	3902	0.2857748866081238	0.072209306	No	
+row_6	PLAUR	PLAUR	plasminogen activator, urokinase receptor	3985	0.27540481090545654	0.086547524	No	
+row_7	SYTL4	SYTL4	synaptotagmin-like 4 (granuphilin-a)	5842	0.05178931728005409	-0.06273211	No	
+row_8	ARRB1	ARRB1	arrestin, beta 1	6001	0.034689418971538544	-0.07311926	No	
+row_9	GNAS	GNAS	GNAS complex locus	6079	0.026168981567025185	-0.077471346	No	
+row_10	BST1	BST1	bone marrow stromal cell antigen 1	6966	-0.07526024430990219	-0.14485952	No	
+row_11	GFRA2	GFRA2	GDNF family receptor alpha 2	8914	-0.27486974000930786	-0.28455457	No	
+row_12	EEA1	EEA1	early endosome antigen 1, 162kD	9259	-0.32124578952789307	-0.288336	No	
+row_13	GFRA3	GFRA3	GDNF family receptor alpha 3	9752	-0.3868512511253357	-0.29930928	No	
+row_14	TGM3	TGM3	transglutaminase 3 (E polypeptide, protein-glutamine-gamma-glutamyltransferase)	10066	-0.4374370872974396	-0.29162538	No	
+row_15	SYTL2	SYTL2	synaptotagmin-like 2	11100	-0.6641512513160706	-0.3260146	Yes	
+row_16	APC2	APC2	adenomatosis polyposis coli 2	11134	-0.676947832107544	-0.27685347	Yes	
+row_17	GNA14	GNA14	guanine nucleotide binding protein (G protein), alpha 14	12040	-1.5233081579208374	-0.2348221	Yes	
+row_18	CNTFR	CNTFR	ciliary neurotrophic factor receptor	12127	-3.158487319946289	1.6513543E-4	Yes	

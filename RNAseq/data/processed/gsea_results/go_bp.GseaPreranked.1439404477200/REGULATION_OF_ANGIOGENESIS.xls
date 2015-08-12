@@ -1,0 +1,26 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	NPPB	NPPB	natriuretic peptide precursor B	7	4.834629058837891	0.26548186	Yes	
+row_1	SPHK1	SPHK1	sphingosine kinase 1	57	3.243910551071167	0.4399534	Yes	
+row_2	RUNX1	RUNX1	runt-related transcription factor 1 (acute myeloid leukemia 1; aml1 oncogene)	514	1.4863508939743042	0.48408014	Yes	
+row_3	HTATIP2	HTATIP2	HIV-1 Tat interactive protein 2, 30kDa	712	1.248653531074524	0.536522	Yes	
+row_4	ANGPTL4	ANGPTL4	angiopoietin-like 4	1075	1.0180987119674683	0.5626452	Yes	
+row_5	SPINK5	SPINK5	serine peptidase inhibitor, Kazal type 5	1390	0.8471524715423584	0.5833261	Yes	
+row_6	RNH1	RNH1	ribonuclease/angiogenin inhibitor 1	1877	0.6694033741950989	0.58001614	Yes	
+row_7	RHOB	RHOB	ras homolog gene family, member B	2080	0.6098544597625732	0.59689045	Yes	
+row_8	AGGF1	AGGF1	angiogenic factor with G patch and FHA domains 1	2206	0.5825298428535461	0.618622	Yes	
+row_9	CHRNA7	CHRNA7	cholinergic receptor, nicotinic, alpha 7	2692	0.4769335091114044	0.6048026	No	
+row_10	PLG	PLG	plasminogen	3696	0.31558889150619507	0.5393118	No	
+row_11	COL4A2	COL4A2	collagen, type IV, alpha 2	4055	0.2676517367362976	0.5244667	No	
+row_12	STAB1	STAB1	stabilin 1	4369	0.2242274433374405	0.5109494	No	
+row_13	PF4	PF4	platelet factor 4 (chemokine (C-X-C motif) ligand 4)	5255	0.11663774400949478	0.44425792	No	
+row_14	BTG1	BTG1	B-cell translocation gene 1, anti-proliferative	5318	0.10940825939178467	0.44515702	No	
+row_15	TNNI3	TNNI3	troponin I type 3 (cardiac)	6612	-0.03560785949230194	0.34030125	No	
+row_16	NF1	NF1	neurofibromin 1 (neurofibromatosis, von Recklinghausen disease, Watson disease)	6740	-0.04936276376247406	0.33252624	No	
+row_17	AMOT	AMOT	angiomotin	6924	-0.06989914923906326	0.32125524	No	
+row_18	SERPINF1	SERPINF1	serpin peptidase inhibitor, clade F (alpha-2 antiplasmin, pigment epithelium derived factor), member 1	6997	-0.07817529886960983	0.31960943	No	
+row_19	ANGPTL3	ANGPTL3	angiopoietin-like 3	7169	-0.0980764627456665	0.3108804	No	
+row_20	NPR1	NPR1	natriuretic peptide receptor A/guanylate cyclase A (atrionatriuretic peptide receptor A)	8324	-0.20472952723503113	0.22681458	No	
+row_21	TNFSF12	TNFSF12	tumor necrosis factor (ligand) superfamily, member 12	8876	-0.26965761184692383	0.19613606	No	
+row_22	COL4A3	COL4A3	collagen, type IV, alpha 3 (Goodpasture antigen)	9527	-0.3536139130592346	0.16189937	No	
+row_23	PML	PML	promyelocytic leukemia	10038	-0.43256518244743347	0.14357302	No	
+row_24	IL17F	IL17F	interleukin 17F	10549	-0.5284688472747803	0.13052446	No	

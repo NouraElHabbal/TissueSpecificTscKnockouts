@@ -1,0 +1,21 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ARHGEF2	ARHGEF2	rho/rac guanine nucleotide exchange factor (GEF) 2	577	1.406891107559204	0.058937885	No	
+row_1	SPTA1	SPTA1	spectrin, alpha, erythrocytic 1 (elliptocytosis 2)	1412	0.8338764309883118	0.053242706	No	
+row_2	DBN1	DBN1	drebrin 1	1885	0.664855420589447	0.06463534	No	
+row_3	RND1	RND1	Rho family GTPase 1	2268	0.5715713500976562	0.076392755	No	
+row_4	SORBS1	SORBS1	sorbin and SH3 domain containing 1	2311	0.5601547956466675	0.115361236	No	
+row_5	ARHGEF10L	ARHGEF10L	Rho guanine nucleotide exchange factor (GEF) 10-like	3007	0.42080196738243103	0.08985013	No	
+row_6	BCAR1	BCAR1	breast cancer anti-estrogen resistance 1	5293	0.11178022623062134	-0.09036858	No	
+row_7	NF2	NF2	neurofibromin 2 (bilateral acoustic neuroma)	5757	0.06147345155477524	-0.12394428	No	
+row_8	EVL	EVL	Enah/Vasp-like	6087	0.02460622228682041	-0.14924778	No	
+row_9	LIMA1	LIMA1	LIM domain and actin binding 1	7543	-0.13972590863704681	-0.25881094	No	
+row_10	FSCN1	FSCN1	fascin homolog 1, actin-bundling protein (Strongylocentrotus purpuratus)	7570	-0.14072780311107635	-0.25029656	No	
+row_11	SHROOM2	SHROOM2	shroom family member 2	9089	-0.2999633848667145	-0.35292262	No	
+row_12	RHOF	RHOF	ras homolog gene family, member F (in filopodia)	9644	-0.3688717484474182	-0.37072462	No	
+row_13	SHROOM1	SHROOM1	shroom family member 1	11145	-0.6808960437774658	-0.4430053	Yes	
+row_14	DLG1	DLG1	discs, large homolog 1 (Drosophila)	11329	-0.7435972690582275	-0.40178272	Yes	
+row_15	KPTN	KPTN	kaptin (actin binding protein)	11495	-0.8212690353393555	-0.3531894	Yes	
+row_16	ACTA1	ACTA1	actin, alpha 1, skeletal muscle	11553	-0.8646074533462524	-0.29239458	Yes	
+row_17	SORBS3	SORBS3	sorbin and SH3 domain containing 3	11597	-0.8912928104400635	-0.22842205	Yes	
+row_18	FSCN2	FSCN2	fascin homolog 2, actin-bundling protein, retinal (Strongylocentrotus purpuratus)	12024	-1.4555295705795288	-0.15333033	Yes	
+row_19	TSC1	TSC1	tuberous sclerosis 1	12112	-2.137284278869629	0.0014037327	Yes	

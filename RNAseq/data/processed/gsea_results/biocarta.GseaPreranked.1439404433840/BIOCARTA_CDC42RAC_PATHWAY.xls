@@ -1,0 +1,17 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ACTR3	ACTR3	ARP3 actin-related protein 3 homolog (yeast)	1553	0.7866026163101196	0.01267941	Yes	
+row_1	ARPC3	ARPC3	actin related protein 2/3 complex, subunit 3, 21kDa	1998	0.6328374147415161	0.0893669	Yes	
+row_2	ACTR2	ACTR2	ARP2 actin-related protein 2 homolog (yeast)	2707	0.4739168882369995	0.11579923	Yes	
+row_3	PIK3R1	PIK3R1	phosphoinositide-3-kinase, regulatory subunit 1 (p85 alpha)	2710	0.4732910096645355	0.20039915	Yes	
+row_4	CDC42	CDC42	cell division cycle 42 (GTP binding protein, 25kDa)	2718	0.47174137830734253	0.28430876	Yes	
+row_5	ARPC4	ARPC4	actin related protein 2/3 complex, subunit 4, 20kDa	2784	0.4574867784976959	0.3608776	Yes	
+row_6	ARPC2	ARPC2	actin related protein 2/3 complex, subunit 2, 34kDa	2836	0.44544270634651184	0.43644506	Yes	
+row_7	ARPC1A	ARPC1A	actin related protein 2/3 complex, subunit 1A, 41kDa	3042	0.41564086079597473	0.49396253	Yes	
+row_8	RHOA	RHOA	ras homolog gene family, member A	3124	0.40238267183303833	0.5593416	Yes	
+row_9	ARPC5	ARPC5	actin related protein 2/3 complex, subunit 5, 16kDa	4730	0.1774018108844757	0.4586224	No	
+row_10	ARPC1B	ARPC1B	actin related protein 2/3 complex, subunit 1B, 41kDa	5288	0.11250677704811096	0.43279216	No	
+row_11	WASL	WASL	Wiskott-Aldrich syndrome-like	5588	0.08042602241039276	0.42251405	No	
+row_12	PIK3CA	PIK3CA	phosphoinositide-3-kinase, catalytic, alpha polypeptide	6401	-0.011046390980482101	0.35746256	No	
+row_13	PAK1	PAK1	p21/Cdc42/Rac1-activated kinase 1 (STE20 homolog, yeast)	6499	-0.022254178300499916	0.35344094	No	
+row_14	RAC1	RAC1	ras-related C3 botulinum toxin substrate 1 (rho family, small GTP binding protein Rac1)	9122	-0.3049367070198059	0.19161041	No	
+row_15	PDGFRA	PDGFRA	platelet-derived growth factor receptor, alpha polypeptide	9221	-0.31565171480178833	0.24005288	No	

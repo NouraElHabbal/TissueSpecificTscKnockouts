@@ -1,0 +1,29 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SLC6A19	SLC6A19	solute carrier family 6 (neutral amino acid transporter), member 19	82	2.9669487476348877	0.107486375	Yes	
+row_1	SLC3A1	SLC3A1	 1	126	2.5536441802978516	0.20227832	Yes	
+row_2	SLC7A5	SLC7A5	solute carrier family 7 (cationic amino acid transporter, y+ system), member 5	172	2.2902958393096924	0.286763	Yes	
+row_3	SLC1A4	SLC1A4	solute carrier family 1 (glutamate/neutral amino acid transporter), member 4	313	1.8239651918411255	0.3454386	Yes	
+row_4	SLC7A1	SLC7A1	solute carrier family 7 (cationic amino acid transporter, y+ system), member 1	570	1.41266930103302	0.3786893	Yes	
+row_5	SLC43A2	SLC43A2	solute carrier family 43, member 2	681	1.2785937786102295	0.41884065	Yes	
+row_6	SLC6A18	SLC6A18	solute carrier family 6, member 18	873	1.1321157217025757	0.4466578	Yes	
+row_7	SLC7A3	SLC7A3	solute carrier family 7 (cationic amino acid transporter, y+ system), member 3	985	1.067368984222412	0.47859192	Yes	
+row_8	SLC7A11	SLC7A11	solute carrier family 7, (cationic amino acid transporter, y+ system) member 11	1124	0.9876813292503357	0.5052261	Yes	
+row_9	SLC38A1	SLC38A1	solute carrier family 38, member 1	1185	0.9471172094345093	0.5367433	Yes	
+row_10	SLC6A6	SLC6A6	solute carrier family 6 (neurotransmitter transporter, taurine), member 6	1752	0.7124213576316833	0.5174107	Yes	
+row_11	SLC6A15	SLC6A15	solute carrier family 6, member 15	1987	0.6345852017402649	0.522514	Yes	
+row_12	SLC7A6	SLC7A6	solute carrier family 7 (cationic amino acid transporter, y+ system), member 6	2042	0.6214003562927246	0.54198307	Yes	
+row_13	SLC6A12	SLC6A12	solute carrier family 6 (neurotransmitter transporter, betaine/GABA), member 12	2083	0.6085417866706848	0.56211376	Yes	
+row_14	SLC3A2	SLC3A2	solute carrier family 3 (activators of dibasic and neutral amino acid transport), member 2	3214	0.38459330797195435	0.4835521	No	
+row_15	SLC7A7	SLC7A7	solute carrier family 7 (cationic amino acid transporter, y+ system), member 7	3495	0.34287717938423157	0.47362018	No	
+row_16	SLC38A2	SLC38A2	solute carrier family 38, member 2	4274	0.2359844297170639	0.41842145	No	
+row_17	SLC36A1	SLC36A1	solute carrier family 36 (proton/amino acid symporter), member 1	4734	0.17672106623649597	0.38729966	No	
+row_18	SLC36A2	SLC36A2	solute carrier family 36 (proton/amino acid symporter), member 2	8325	-0.2048213630914688	0.098542474	No	
+row_19	SLC16A10	SLC16A10	solute carrier family 16, member 10 (aromatic amino acid transporter)	9856	-0.4023449420928955	-0.01238794	No	
+row_20	SLC7A8	SLC7A8	solute carrier family 7 (cationic amino acid transporter, y+ system), member 8	9938	-0.41682520508766174	-0.0030284182	No	
+row_21	SLC38A3	SLC38A3	solute carrier family 38, member 3	10261	-0.4723668098449707	-0.011443962	No	
+row_22	SLC43A1	SLC43A1	solute carrier family 43, member 1	10327	-0.48369359970092773	0.0018128675	No	
+row_23	SLC7A2	SLC7A2	solute carrier family 7 (cationic amino acid transporter, y+ system), member 2	10727	-0.5683084726333618	-0.009270388	No	
+row_24	SLC7A10	SLC7A10	solute carrier family 7, (neutral amino acid transporter, y+ system) member 10	10978	-0.6320870518684387	-0.005585411	No	
+row_25	SLC1A5	SLC1A5	solute carrier family 1 (neutral amino acid transporter), member 5	11077	-0.6577766537666321	0.0116488235	No	
+row_26	SLC38A5	SLC38A5	solute carrier family 38, member 5	11647	-0.925225555896759	2.6377093E-4	No	
+row_27	SLC38A4	SLC38A4	solute carrier family 38, member 4	11770	-1.0251879692077637	0.029664481	No	

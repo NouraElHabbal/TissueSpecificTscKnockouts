@@ -1,0 +1,17 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	DNER	DNER	-	190	2.227415084838867	0.3579811	Yes	
+row_1	ANKRD27	ANKRD27	ankyrin repeat domain 27 (VPS9 domain)	818	1.1722928285598755	0.5028836	Yes	
+row_2	WDFY1	WDFY1	WD repeat and FYVE domain containing 1	1337	0.8740755915641785	0.60675585	Yes	
+row_3	CTNS	CTNS	cystinosis, nephropathic	3746	0.31053096055984497	0.46007147	No	
+row_4	ALS2	ALS2	amyotrophic lateral sclerosis 2 (juvenile)	4083	0.2641774117946625	0.47665268	No	
+row_5	CLN3	CLN3	ceroid-lipofuscinosis, neuronal 3, juvenile (Batten, Spielmeyer-Vogt disease)	5091	0.136046901345253	0.4163486	No	
+row_6	SNX17	SNX17	sorting nexin 17	5198	0.12364158034324646	0.4283402	No	
+row_7	LDLRAP1	LDLRAP1	low density lipoprotein receptor adaptor protein 1	5569	0.08195613324642181	0.41154575	No	
+row_8	NF2	NF2	neurofibromin 2 (bilateral acoustic neuroma)	5757	0.06147345155477524	0.40642172	No	
+row_9	STX6	STX6	syntaxin 6	5986	0.036152977496385574	0.39366543	No	
+row_10	STEAP2	STEAP2	six transmembrane epithelial antigen of the prostate 2	6069	0.02698812447488308	0.39142388	No	
+row_11	RAB22A	RAB22A	RAB22A, member RAS oncogene family	6195	0.011786375194787979	0.38308248	No	
+row_12	VAMP8	VAMP8	vesicle-associated membrane protein 8 (endobrevin)	6836	-0.060707662254571915	0.3404352	No	
+row_13	TOM1	TOM1	target of myb1 (chicken)	7485	-0.13427765667438507	0.30946946	No	
+row_14	RAB14	RAB14	RAB14, member RAS oncogene family	7966	-0.1741565465927124	0.29906192	No	
+row_15	RABEP1	RABEP1	rabaptin, RAB GTPase binding effector protein 1	8839	-0.2653082609176636	0.27158654	No	

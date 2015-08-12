@@ -1,0 +1,26 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MMP12	MMP12	matrix metallopeptidase 12 (macrophage elastase)	51	3.3144888877868652	0.20798929	Yes	
+row_1	MMP24	MMP24	matrix metallopeptidase 24 (membrane-inserted)	77	3.005197048187256	0.39832476	Yes	
+row_2	MMP8	MMP8	matrix metallopeptidase 8 (neutrophil collagenase)	882	1.1263724565505981	0.4040193	Yes	
+row_3	MMP13	MMP13	matrix metallopeptidase 13 (collagenase 3)	937	1.0981990098953247	0.46986797	Yes	
+row_4	MMP3	MMP3	matrix metallopeptidase 3 (stromelysin 1, progelatinase)	1116	0.9927090406417847	0.5187192	Yes	
+row_5	MMP11	MMP11	matrix metallopeptidase 11 (stromelysin 3)	2026	0.6240106225013733	0.48357707	No	
+row_6	ECE2	ECE2	endothelin converting enzyme 2	3588	0.3314377963542938	0.37584162	No	
+row_7	IDE	IDE	insulin-degrading enzyme	3684	0.31741583347320557	0.38831544	No	
+row_8	MMP14	MMP14	matrix metallopeptidase 14 (membrane-inserted)	3760	0.30795997381210327	0.40183607	No	
+row_9	THOP1	THOP1	thimet oligopeptidase 1	5788	0.058358170092105865	0.23812085	No	
+row_10	ADAMTS2	ADAMTS2	ADAM metallopeptidase with thrombospondin type 1 motif, 2	5820	0.054065313190221786	0.23902133	No	
+row_11	MMP2	MMP2	matrix metallopeptidase 2 (gelatinase A, 72kDa gelatinase, 72kDa type IV collagenase)	5829	0.05345767363905907	0.24178295	No	
+row_12	MMP17	MMP17	matrix metallopeptidase 17 (membrane-inserted)	6894	-0.06760497391223907	0.15821363	No	
+row_13	MMP16	MMP16	matrix metallopeptidase 16 (membrane-inserted)	7166	-0.09786342084407806	0.14209166	No	
+row_14	PITRM1	PITRM1	pitrilysin metallopeptidase 1	7215	-0.10267152637243271	0.14469966	No	
+row_15	RCE1	RCE1	RCE1 homolog, prenyl protein peptidase (S. cerevisiae)	7992	-0.17573218047618866	0.09184477	No	
+row_16	KEL	KEL	Kell blood group, metallo-endopeptidase	8057	-0.1814737170934677	0.09817613	No	
+row_17	MEP1A	MEP1A	meprin A, alpha (PABA peptide hydrolase)	8058	-0.1814737170934677	0.109794565	No	
+row_18	FAP	FAP	fibroblast activation protein, alpha	8682	-0.2470102459192276	0.07414248	No	
+row_19	SPG7	SPG7	spastic paraplegia 7, paraplegin (pure and complicated autosomal recessive)	9314	-0.32701098918914795	0.04295137	No	
+row_20	PMPCA	PMPCA	peptidase (mitochondrial processing) alpha	9364	-0.3337308168411255	0.0602698	No	
+row_21	MBTPS2	MBTPS2	membrane-bound transcription factor peptidase, site 2	9392	-0.33793678879737854	0.07967493	No	
+row_22	MMP15	MMP15	matrix metallopeptidase 15 (membrane-inserted)	10490	-0.5150555968284607	0.022026451	No	
+row_23	MMP28	MMP28	matrix metallopeptidase 28	11161	-0.6855167150497437	0.010566033	No	
+row_24	MMP9	MMP9	matrix metallopeptidase 9 (gelatinase B, 92kDa gelatinase, 92kDa type IV collagenase)	11820	-1.0827150344848633	0.025526637	No	

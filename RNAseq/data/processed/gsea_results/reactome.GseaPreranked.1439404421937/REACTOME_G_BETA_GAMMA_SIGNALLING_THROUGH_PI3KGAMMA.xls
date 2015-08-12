@@ -1,0 +1,24 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GNG13	GNG13	guanine nucleotide binding protein (G protein), gamma 13	141	2.458371162414551	0.20609401	Yes	
+row_1	GNG11	GNG11	guanine nucleotide binding protein (G protein), gamma 11	413	1.6440482139587402	0.3293251	Yes	
+row_2	GNB5	GNB5	guanine nucleotide binding protein (G protein), beta 5	768	1.2070419788360596	0.40699464	Yes	
+row_3	AKT3	AKT3	v-akt murine thymoma viral oncogene homolog 3 (protein kinase B, gamma)	982	1.0694776773452759	0.48412612	Yes	
+row_4	GNG8	GNG8	guanine nucleotide binding protein (G protein), gamma 8	1551	0.786983847618103	0.506915	Yes	
+row_5	GNB1	GNB1	guanine nucleotide binding protein (G protein), beta polypeptide 1	2661	0.48417529463768005	0.4581989	Yes	
+row_6	PIK3R5	PIK3R5	phosphoinositide-3-kinase, regulatory subunit 5, p101	3114	0.40456610918045044	0.45669794	Yes	
+row_7	RHOA	RHOA	ras homolog gene family, member A	3124	0.40238267183303833	0.49159396	Yes	
+row_8	PDPK1	PDPK1	3-phosphoinositide dependent protein kinase-1	3177	0.3933652341365814	0.5221396	Yes	
+row_9	GNB3	GNB3	guanine nucleotide binding protein (G protein), beta polypeptide 3	3749	0.3097846210002899	0.50241476	Yes	
+row_10	AKT1	AKT1	v-akt murine thymoma viral oncogene homolog 1	3901	0.28578126430511475	0.5152545	Yes	
+row_11	GNG2	GNG2	guanine nucleotide binding protein (G protein), gamma 2	4113	0.26001110672950745	0.520856	Yes	
+row_12	GNG12	GNG12	guanine nucleotide binding protein (G protein), gamma 12	4115	0.25963351130485535	0.54376936	Yes	
+row_13	GNGT2	GNGT2	guanine nucleotide binding protein (G protein), gamma transducing activity polypeptide 2	6009	0.03418031334877014	0.39044094	No	
+row_14	GNB4	GNB4	guanine nucleotide binding protein (G protein), beta polypeptide 4	6105	0.02232070080935955	0.3845712	No	
+row_15	GNG7	GNG7	guanine nucleotide binding protein (G protein), gamma 7	6234	0.006894257850944996	0.37460944	No	
+row_16	PIK3CG	PIK3CG	phosphoinositide-3-kinase, catalytic, gamma polypeptide	6362	-0.007406752556562424	0.36477566	No	
+row_17	GNG3	GNG3	guanine nucleotide binding protein (G protein), gamma 3	6647	-0.03872459754347801	0.34474802	No	
+row_18	GNG10	GNG10	guanine nucleotide binding protein (G protein), gamma 10	6650	-0.039527781307697296	0.34808385	No	
+row_19	GNB2	GNB2	guanine nucleotide binding protein (G protein), beta polypeptide 2	6750	-0.050964731723070145	0.34442076	No	
+row_20	GNG5	GNG5	guanine nucleotide binding protein (G protein), gamma 5	6904	-0.06870808452367783	0.337869	No	
+row_21	AKT2	AKT2	v-akt murine thymoma viral oncogene homolog 2	8829	-0.2642427384853363	0.20235686	No	
+row_22	GNG4	GNG4	guanine nucleotide binding protein (G protein), gamma 4	11437	-0.7917969822883606	0.057157062	No	

@@ -1,0 +1,18 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	VANGL2	VANGL2	vang-like 2 (van gogh, Drosophila)	3733	0.31197577714920044	-0.25741562	No	
+row_1	TBX1	TBX1	T-box 1	4372	0.2234703153371811	-0.27372253	No	
+row_2	SHH	SHH	sonic hedgehog homolog (Drosophila)	4631	0.1911078691482544	-0.26392427	No	
+row_3	BCL10	BCL10	B-cell CLL/lymphoma 10	5018	0.14354392886161804	-0.27243295	No	
+row_4	TBX3	TBX3	T-box 3 (ulnar mammary syndrome)	5584	0.08045313507318497	-0.30598545	No	
+row_5	CELSR1	CELSR1	cadherin, EGF LAG seven-pass G-type receptor 1 (flamingo homolog, Drosophila)	7002	-0.07892893254756927	-0.41012365	No	
+row_6	LMO4	LMO4	LIM domain only 4	7515	-0.13790680468082428	-0.42995167	No	
+row_7	GLI2	GLI2	GLI-Kruppel family member GLI2	8214	-0.19488632678985596	-0.4558632	Yes	
+row_8	CEP290	CEP290	centrosomal protein 290kDa	8410	-0.215208500623703	-0.4369422	Yes	
+row_9	FTO	FTO	-	8675	-0.24640856683254242	-0.41864058	Yes	
+row_10	DSCAML1	DSCAML1	Down syndrome cell adhesion molecule like 1	9497	-0.35063397884368896	-0.42936274	Yes	
+row_11	SOD1	SOD1	superoxide dismutase 1, soluble (amyotrophic lateral sclerosis 1 (adult))	9514	-0.35270798206329346	-0.37328988	Yes	
+row_12	ZIC1	ZIC1	Zic family member 1 (odd-paired homolog, Drosophila)	9647	-0.3691391944885254	-0.3241198	Yes	
+row_13	TINAG	TINAG	tubulointerstitial nephritis antigen	10487	-0.5143149495124817	-0.30969328	Yes	
+row_14	MBNL1	MBNL1	muscleblind-like (Drosophila)	10718	-0.5668569207191467	-0.2364404	Yes	
+row_15	PTCH1	PTCH1	patched homolog 1 (Drosophila)	11793	-1.0530956983566284	-0.15374246	Yes	
+row_16	TBX5	TBX5	T-box 5	11855	-1.1147692203521729	0.022620367	Yes	

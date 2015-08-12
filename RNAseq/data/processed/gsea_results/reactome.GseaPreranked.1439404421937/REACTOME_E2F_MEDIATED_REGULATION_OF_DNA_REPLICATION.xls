@@ -1,0 +1,24 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CCNE1	CCNE1	cyclin E1	127	2.5449490547180176	0.15987784	Yes	
+row_1	RRM2	RRM2	ribonucleotide reductase M2 polypeptide	182	2.2513649463653564	0.30613172	Yes	
+row_2	CDT1	CDT1	chromatin licensing and DNA replication factor 1	202	2.1911511421203613	0.45124558	Yes	
+row_3	E2F1	E2F1	E2F transcription factor 1	359	1.7321983575820923	0.5543198	Yes	
+row_4	CCNB1	CCNB1	cyclin B1	1294	0.8915682435035706	0.536859	No	
+row_5	PRIM1	PRIM1	primase, polypeptide 1, 49kDa	2121	0.598574161529541	0.5087046	No	
+row_6	PPP2CA	PPP2CA	protein phosphatase 2 (formerly 2A), catalytic subunit, alpha isoform	2414	0.5332838892936707	0.5202862	No	
+row_7	CDC25A	CDC25A	cell division cycle 25A	3427	0.35131514072418213	0.46021643	No	
+row_8	RB1	RB1	retinoblastoma 1 (including osteosarcoma)	3510	0.3414557874202728	0.4763017	No	
+row_9	TYMS	TYMS	thymidylate synthetase	3763	0.30742132663726807	0.47606716	No	
+row_10	POLA2	POLA2	polymerase (DNA directed), alpha 2 (70kD subunit)	3772	0.3068752884864807	0.49594966	No	
+row_11	TFDP1	TFDP1	transcription factor Dp-1	3891	0.2870174050331116	0.50541717	No	
+row_12	CDC6	CDC6	CDC6 cell division cycle 6 homolog (S. cerevisiae)	4053	0.2677684426307678	0.5100444	No	
+row_13	PCNA	PCNA	proliferating cell nuclear antigen	4469	0.21109972894191742	0.48989847	No	
+row_14	PPP2R1A	PPP2R1A	protein phosphatase 2 (formerly 2A), regulatory subunit A (PR 65), alpha isoform	5373	0.1038670763373375	0.42226672	No	
+row_15	DHFR	DHFR	dihydrofolate reductase	5748	0.06286337226629257	0.3955838	No	
+row_16	PPP2CB	PPP2CB	protein phosphatase 2 (formerly 2A), catalytic subunit, beta isoform	6529	-0.025458965450525284	0.33286256	No	
+row_17	TK2	TK2	thymidine kinase 2, mitochondrial	7749	-0.15889407694339752	0.24281393	No	
+row_18	FBXO5	FBXO5	F-box protein 5	8298	-0.2022460550069809	0.21108991	No	
+row_19	MCM8	MCM8	MCM8 minichromosome maintenance deficient 8 (S. cerevisiae)	9085	-0.2994840741157532	0.16621728	No	
+row_20	CCNA1	CCNA1	cyclin A1	9498	-0.35066771507263184	0.15566228	No	
+row_21	POLA1	POLA1	polymerase (DNA directed), alpha 1	9666	-0.37255343794822693	0.16680862	No	
+row_22	PPP2R1B	PPP2R1B	protein phosphatase 2 (formerly 2A), regulatory subunit A (PR 65), beta isoform	10631	-0.5459030866622925	0.12372989	No	

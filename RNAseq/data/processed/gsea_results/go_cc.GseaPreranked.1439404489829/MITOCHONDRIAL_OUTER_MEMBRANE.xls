@@ -1,0 +1,18 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MSTO1	MSTO1	misato homolog 1 (Drosophila)	927	1.1023850440979004	0.087409966	Yes	
+row_1	RAB11FIP5	RAB11FIP5	RAB11 family interacting protein 5 (class I)	1154	0.970388650894165	0.213062	Yes	
+row_2	BCL2	BCL2	B-cell CLL/lymphoma 2	1574	0.7798110246658325	0.29443935	Yes	
+row_3	TOMM22	TOMM22	translocase of outer mitochondrial membrane 22 homolog (yeast)	1703	0.7341107130050659	0.3930442	Yes	
+row_4	MTX2	MTX2	metaxin 2	2029	0.6234455108642578	0.45892814	Yes	
+row_5	BNIP3	BNIP3	BCL2/adenovirus E1B 19kDa interacting protein 3	2577	0.5045322775840759	0.4888007	Yes	
+row_6	MCL1	MCL1	myeloid cell leukemia sequence 1 (BCL2-related)	2664	0.48312443494796753	0.5535479	Yes	
+row_7	TOMM34	TOMM34	translocase of outer mitochondrial membrane 34	3994	0.27428779006004333	0.48462132	No	
+row_8	MFN2	MFN2	mitofusin 2	4699	0.18183667957782745	0.45354348	No	
+row_9	RAF1	RAF1	v-raf-1 murine leukemia viral oncogene homolog 1	5053	0.1394452005624771	0.44513857	No	
+row_10	OPA1	OPA1	optic atrophy 1 (autosomal dominant)	5554	0.08304498344659805	0.4162105	No	
+row_11	FIS1	FIS1	fission 1 (mitochondrial outer membrane) homolog (S. cerevisiae)	6631	-0.037185367196798325	0.3329103	No	
+row_12	RHOT1	RHOT1	ras homolog gene family, member T1	6716	-0.04758886247873306	0.3330527	No	
+row_13	RHOT2	RHOT2	ras homolog gene family, member T2	7614	-0.14487066864967346	0.28054422	No	
+row_14	VDAC1	VDAC1	voltage-dependent anion channel 1	7968	-0.17426228523254395	0.27731708	No	
+row_15	VDAC3	VDAC3	voltage-dependent anion channel 3	8163	-0.18941155076026917	0.28946924	No	
+row_16	VDAC2	VDAC2	voltage-dependent anion channel 2	8745	-0.254617303609848	0.27936924	No	

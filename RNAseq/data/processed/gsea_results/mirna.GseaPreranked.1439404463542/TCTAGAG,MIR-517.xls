@@ -1,0 +1,37 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	KCND2	KCND2	potassium voltage-gated channel, Shal-related subfamily, member 2	17	4.3460516929626465	0.20649928	Yes	
+row_1	SNAP25	SNAP25	synaptosomal-associated protein, 25kDa	312	1.8244311809539795	0.26946622	Yes	
+row_2	MAGED1	MAGED1	melanoma antigen family D, 1	417	1.6289072036743164	0.33879003	Yes	
+row_3	HMGN3	HMGN3	high mobility group nucleosomal binding domain 3	1433	0.8288490176200867	0.2945143	Yes	
+row_4	YPEL1	YPEL1	yippee-like 1 (Drosophila)	1545	0.7879759669303894	0.32303113	Yes	
+row_5	PTPN9	PTPN9	protein tyrosine phosphatase, non-receptor type 9	1555	0.7860651612281799	0.35989046	Yes	
+row_6	PLEKHA3	PLEKHA3	pleckstrin homology domain containing, family A (phosphoinositide binding specific) member 3	1942	0.6506720185279846	0.35910043	Yes	
+row_7	RND3	RND3	Rho family GTPase 3	2248	0.5754797458648682	0.36141092	Yes	
+row_8	SCRT1	SCRT1	scratch homolog 1, zinc finger protein (Drosophila)	2546	0.5091845393180847	0.36121148	No	
+row_9	FEZ2	FEZ2	fasciculation and elongation protein zeta 2 (zygin II)	3353	0.36349356174468994	0.31195554	No	
+row_10	FST	FST	follistatin	3536	0.33783185482025146	0.31306785	No	
+row_11	BCL2L2	BCL2L2	BCL2-like 2	3950	0.27941644191741943	0.29228532	No	
+row_12	LYSMD1	LYSMD1	LysM, putative peptidoglycan-binding, domain containing 1	4030	0.2710193991661072	0.2987181	No	
+row_13	ING3	ING3	inhibitor of growth family, member 3	4060	0.26706597208976746	0.309096	No	
+row_14	RBM3	RBM3	RNA binding motif (RNP1, RRM) protein 3	5080	0.13701386749744415	0.23139378	No	
+row_15	CBX8	CBX8	chromobox homolog 8 (Pc class homolog, Drosophila)	5653	0.07309135794639587	0.18759413	No	
+row_16	GTF3C4	GTF3C4	general transcription factor IIIC, polypeptide 4, 90kDa	5907	0.04507124796509743	0.16883077	No	
+row_17	AEBP2	AEBP2	AE binding protein 2	6356	-0.0069062430411577225	0.13211799	No	
+row_18	ARIH1	ARIH1	ariadne homolog, ubiquitin-conjugating enzyme E2 binding protein, 1 (Drosophila)	6586	-0.0321325846016407	0.11472012	No	
+row_19	PAPPA	PAPPA	pregnancy-associated plasma protein A, pappalysin 1	7196	-0.10080557316541672	0.069186874	No	
+row_20	SMC1A	SMC1A	structural maintenance of chromosomes 1A	7714	-0.15460136532783508	0.033834174	No	
+row_21	CS	CS	citrate synthase	7821	-0.16321860253810883	0.032877494	No	
+row_22	ILF3	ILF3	interleukin enhancer binding factor 3, 90kDa	8149	-0.18730580806732178	0.014799565	No	
+row_23	RNF40	RNF40	ring finger protein 40	8456	-0.22104299068450928	7.1942384E-5	No	
+row_24	TMEM117	TMEM117	transmembrane protein 117	8639	-0.24157975614070892	-0.003420232	No	
+row_25	DCX	DCX	doublecortex; lissencephaly, X-linked (doublecortin)	8881	-0.27073073387145996	-0.010396344	No	
+row_26	SLC39A10	SLC39A10	solute carrier family 39 (zinc transporter), member 10	9372	-0.33529022336006165	-0.034872804	No	
+row_27	PKNOX1	PKNOX1	PBX/knotted 1 homeobox 1	9508	-0.3520096242427826	-0.029196046	No	
+row_28	TNPO2	TNPO2	transportin 2 (importin 3, karyopherin beta 2b)	9530	-0.3541583716869354	-0.013990338	No	
+row_29	METTL5	METTL5	methyltransferase like 5	9567	-0.3581189811229706	1.6455192E-4	No	
+row_30	TWIST1	TWIST1	twist homolog 1 (acrocephalosyndactyly 3; Saethre-Chotzen syndrome) (Drosophila)	9905	-0.41116487979888916	-0.00803134	No	
+row_31	CUL3	CUL3	cullin 3	9985	-0.42355889081954956	0.00569856	No	
+row_32	ISL1	ISL1	ISL1 transcription factor, LIM/homeodomain, (islet-1)	10003	-0.42696183919906616	0.024717757	No	
+row_33	HOXB9	HOXB9	homeobox B9	11516	-0.8366044163703918	-0.060281713	No	
+row_34	FAM122A	FAM122A	family with sequence similarity 122A	11759	-1.0122432708740234	-0.03186829	No	
+row_35	HOXA4	HOXA4	homeobox A4	11969	-1.303979516029358	0.013229742	No	

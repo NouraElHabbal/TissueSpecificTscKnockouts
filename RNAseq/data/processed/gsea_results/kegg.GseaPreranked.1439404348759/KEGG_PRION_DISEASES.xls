@@ -1,0 +1,29 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	EGR1	EGR1	early growth response 1	61	3.1635630130767822	0.18702538	Yes	
+row_1	NCAM1	NCAM1	neural cell adhesion molecule 1	218	2.0979480743408203	0.30150536	Yes	
+row_2	HSPA5	HSPA5	heat shock 70kDa protein 5 (glucose-regulated protein, 78kDa)	968	1.0782526731491089	0.3050775	Yes	
+row_3	HSPA1A	HSPA1A	heat shock 70kDa protein 1A	1073	1.019561767578125	0.3583834	Yes	
+row_4	IL1B	IL1B	interleukin 1, beta	1113	0.9945515990257263	0.4155419	Yes	
+row_5	PRKX	PRKX	protein kinase, X-linked	1365	0.8588340282440186	0.44694296	Yes	
+row_6	C1QC	C1QC	complement component 1, q subcomponent, C chain	1686	0.7408087849617004	0.46547696	Yes	
+row_7	FYN	FYN	FYN oncogene related to SRC, FGR, YES	1986	0.6360108852386475	0.4793837	Yes	
+row_8	C1QB	C1QB	complement component 1, q subcomponent, B chain	2000	0.6322093605995178	0.5166921	Yes	
+row_9	C1QA	C1QA	complement component 1, q subcomponent, A chain	2060	0.6152810454368591	0.54917175	Yes	
+row_10	BAX	BAX	BCL2-associated X protein	2101	0.6025927066802979	0.58245105	Yes	
+row_11	IL6	IL6	interleukin 6 (interferon, beta 2)	2275	0.5704829096794128	0.602791	Yes	
+row_12	CCL5	CCL5	chemokine (C-C motif) ligand 5	3824	0.2970351278781891	0.49291182	No	
+row_13	PRNP	PRNP	prion protein (p27-30) (Creutzfeldt-Jakob disease, Gerstmann-Strausler-Scheinker syndrome, fatal familial insomnia)	3902	0.2857748866081238	0.50389916	No	
+row_14	PRKACA	PRKACA	protein kinase, cAMP-dependent, catalytic, alpha	4245	0.24078798294067383	0.49025807	No	
+row_15	ELK1	ELK1	ELK1, member of ETS oncogene family	5075	0.13776621222496033	0.43012106	No	
+row_16	LAMC1	LAMC1	laminin, gamma 1 (formerly LAMB2)	5202	0.12311673164367676	0.4271842	No	
+row_17	STIP1	STIP1	stress-induced-phosphoprotein 1 (Hsp70/Hsp90-organizing protein)	5745	0.06318152695894241	0.38623407	No	
+row_18	MAPK3	MAPK3	mitogen-activated protein kinase 3	5920	0.04387248307466507	0.37451988	No	
+row_19	PRKACB	PRKACB	protein kinase, cAMP-dependent, catalytic, beta	6225	0.008203152567148209	0.3498981	No	
+row_20	MAP2K1	MAP2K1	mitogen-activated protein kinase kinase 1	6392	-0.009804394096136093	0.33677658	No	
+row_21	NOTCH1	NOTCH1	Notch homolog 1, translocation-associated (Drosophila)	7259	-0.10869000852108002	0.27181694	No	
+row_22	MAPK1	MAPK1	mitogen-activated protein kinase 1	7694	-0.15220962464809418	0.24519604	No	
+row_23	MAP2K2	MAP2K2	mitogen-activated protein kinase kinase 2	8212	-0.19472163915634155	0.21429774	No	
+row_24	SOD1	SOD1	superoxide dismutase 1, soluble (amyotrophic lateral sclerosis 1 (adult))	9514	-0.35270798206329346	0.12820843	No	
+row_25	IL1A	IL1A	interleukin 1, alpha	10090	-0.441510409116745	0.107500546	No	
+row_26	C8G	C8G	complement component 8, gamma polypeptide	10391	-0.49555709958076477	0.11279746	No	
+row_27	NCAM2	NCAM2	neural cell adhesion molecule 2	10450	-0.5062012672424316	0.13873729	No	

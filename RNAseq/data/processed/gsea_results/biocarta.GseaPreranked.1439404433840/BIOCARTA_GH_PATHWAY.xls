@@ -1,0 +1,25 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SHC1	SHC1	SHC (Src homology 2 domain containing) transforming protein 1	2005	0.630021870136261	-0.09618114	No	
+row_1	SOCS1	SOCS1	suppressor of cytokine signaling 1	2599	0.49888625741004944	-0.090179294	No	
+row_2	PIK3R1	PIK3R1	phosphoinositide-3-kinase, regulatory subunit 1 (p85 alpha)	2710	0.4732910096645355	-0.047100917	No	
+row_3	GRB2	GRB2	growth factor receptor-bound protein 2	2898	0.44215285778045654	-0.013814973	No	
+row_4	RAF1	RAF1	v-raf-1 murine leukemia viral oncogene homolog 1	5053	0.1394452005624771	-0.17637402	No	
+row_5	PTPN6	PTPN6	protein tyrosine phosphatase, non-receptor type 6	5390	0.1022200882434845	-0.19286245	No	
+row_6	SOS1	SOS1	son of sevenless homolog 1 (Drosophila)	5642	0.07439659535884857	-0.20539619	No	
+row_7	STAT5A	STAT5A	signal transducer and activator of transcription 5A	5872	0.04817400127649307	-0.21900283	No	
+row_8	MAPK3	MAPK3	mitogen-activated protein kinase 3	5920	0.04387248307466507	-0.2180497	No	
+row_9	PIK3CG	PIK3CG	phosphoinositide-3-kinase, catalytic, gamma polypeptide	6362	-0.007406752556562424	-0.25366157	No	
+row_10	MAP2K1	MAP2K1	mitogen-activated protein kinase kinase 1	6392	-0.009804394096136093	-0.25497645	No	
+row_11	PIK3CA	PIK3CA	phosphoinositide-3-kinase, catalytic, alpha polypeptide	6401	-0.011046390980482101	-0.2544198	No	
+row_12	MAPK1	MAPK1	mitogen-activated protein kinase 1	7694	-0.15220962464809418	-0.34436762	No	
+row_13	PLCG1	PLCG1	phospholipase C, gamma 1	7733	-0.15622419118881226	-0.33028796	No	
+row_14	HRAS	HRAS	v-Ha-ras Harvey rat sarcoma viral oncogene homolog	8509	-0.22525131702423096	-0.36947927	No	
+row_15	SRF	SRF	serum response factor (c-fos serum response element-binding transcription factor)	8981	-0.28482022881507874	-0.3769935	No	
+row_16	GHR	GHR	growth hormone receptor	9075	-0.2982698678970337	-0.35180122	No	
+row_17	SLC2A4	SLC2A4	solute carrier family 2 (facilitated glucose transporter), member 4	10437	-0.5049959421157837	-0.40856558	Yes	
+row_18	INSR	INSR	insulin receptor	10518	-0.5214775800704956	-0.3576981	Yes	
+row_19	PRKCA	PRKCA	protein kinase C, alpha	10690	-0.5605981945991516	-0.3100358	Yes	
+row_20	RPS6KA1	RPS6KA1	ribosomal protein S6 kinase, 90kDa, polypeptide 1	11353	-0.7538566589355469	-0.2816315	Yes	
+row_21	IRS1	IRS1	insulin receptor substrate 1	11554	-0.8647452592849731	-0.20284247	Yes	
+row_22	STAT5B	STAT5B	signal transducer and activator of transcription 5B	11672	-0.9430349469184875	-0.108568475	Yes	
+row_23	JAK2	JAK2	Janus kinase 2 (a protein tyrosine kinase)	11980	-1.3267970085144043	0.012307991	Yes	

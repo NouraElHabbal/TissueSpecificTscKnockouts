@@ -1,0 +1,16 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CCNE1	CCNE1	cyclin E1	127	2.5449490547180176	0.21703103	Yes	
+row_1	E2F1	E2F1	E2F transcription factor 1	359	1.7321983575820923	0.3528192	Yes	
+row_2	GADD45A	GADD45A	growth arrest and DNA-damage-inducible, alpha	1009	1.0567742586135864	0.39372298	Yes	
+row_3	CDKN1A	CDKN1A	cyclin-dependent kinase inhibitor 1A (p21, Cip1)	1414	0.8330228328704834	0.43484667	Yes	
+row_4	BCL2	BCL2	B-cell CLL/lymphoma 2	1574	0.7798110246658325	0.49143615	Yes	
+row_5	BAX	BAX	BCL2-associated X protein	2101	0.6025927066802979	0.5018896	Yes	
+row_6	CCND1	CCND1	cyclin D1	2350	0.5497704148292542	0.5305676	Yes	
+row_7	CDK2	CDK2	cyclin-dependent kinase 2	3259	0.3787490725517273	0.48947868	No	
+row_8	RB1	RB1	retinoblastoma 1 (including osteosarcoma)	3510	0.3414557874202728	0.49936864	No	
+row_9	PCNA	PCNA	proliferating cell nuclear antigen	4469	0.21109972894191742	0.43916506	No	
+row_10	MDM2	MDM2	Mdm2, transformed 3T3 cell double minute 2, p53 binding protein (mouse)	5233	0.11916505545377731	0.38683844	No	
+row_11	APAF1	APAF1	apoptotic peptidase activating factor	5848	0.05099371820688248	0.34071618	No	
+row_12	CDK4	CDK4	cyclin-dependent kinase 4	5989	0.0355912409722805	0.33234206	No	
+row_13	ATM	ATM	ataxia telangiectasia mutated (includes complementation groups A, C and D)	11550	-0.8637311458587646	-0.049377125	No	
+row_14	TIMP3	TIMP3	TIMP metallopeptidase inhibitor 3 (Sorsby fundus dystrophy, pseudoinflammatory)	11825	-1.0860011577606201	0.025092848	No	

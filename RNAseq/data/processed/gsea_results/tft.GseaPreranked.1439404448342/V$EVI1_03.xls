@@ -1,0 +1,46 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MSX2	MSX2	msh homeobox homolog 2 (Drosophila)	833	1.156116008758545	-0.026523849	No	
+row_1	ACTC1	ACTC1	actin, alpha, cardiac muscle 1	904	1.1132994890213013	0.008517979	No	
+row_2	ADPRHL1	ADPRHL1	ADP-ribosylhydrolase like 1	1014	1.0543830394744873	0.0381717	No	
+row_3	NRAS	NRAS	neuroblastoma RAS viral (v-ras) oncogene homolog	1238	0.9218977689743042	0.053532884	No	
+row_4	ESRRG	ESRRG	estrogen-related receptor gamma	1399	0.8422077894210815	0.07118423	No	
+row_5	IL4	IL4	interleukin 4	1448	0.8248531818389893	0.09746673	No	
+row_6	LMO2	LMO2	LIM domain only 2 (rhombotin-like 1)	1601	0.7743273973464966	0.1132903	No	
+row_7	ZFPM2	ZFPM2	zinc finger protein, multitype 2	1832	0.6835423111915588	0.11932974	No	
+row_8	SPINK4	SPINK4	serine peptidase inhibitor, Kazal type 4	2003	0.6310657262802124	0.12840925	No	
+row_9	SRPK2	SRPK2	SFRS protein kinase 2	2387	0.5399754047393799	0.11652254	No	
+row_10	PLAG1	PLAG1	pleiomorphic adenoma gene 1	2515	0.5130887031555176	0.12483296	No	
+row_11	ZFPM1	ZFPM1	zinc finger protein, multitype 1	3038	0.4162375032901764	0.09690588	No	
+row_12	KLF14	KLF14	Kruppel-like factor 14	3690	0.31655973196029663	0.054648373	No	
+row_13	CTNNA3	CTNNA3	catenin (cadherin-associated protein), alpha 3	4360	0.225230410695076	0.007551598	No	
+row_14	VAMP1	VAMP1	vesicle-associated membrane protein 1 (synaptobrevin 1)	5054	0.13944299519062042	-0.04467766	No	
+row_15	RAI1	RAI1	retinoic acid induced 1	6053	0.028359970077872276	-0.12621918	No	
+row_16	CHCHD7	CHCHD7	coiled-coil-helix-coiled-coil-helix domain containing 7	6062	0.027636222541332245	-0.1258675	No	
+row_17	CACNA1D	CACNA1D	calcium channel, voltage-dependent, L type, alpha 1D subunit	6656	-0.04025756195187569	-0.17346	No	
+row_18	NCDN	NCDN	neurochondrin	6776	-0.053671944886446	-0.18133833	No	
+row_19	SIX1	SIX1	sine oculis homeobox homolog 1 (Drosophila)	6992	-0.0779367983341217	-0.19627036	No	
+row_20	RSPO2	RSPO2	R-spondin 2 homolog (Xenopus laevis)	7090	-0.08931825309991837	-0.20102079	No	
+row_21	ADAMTS3	ADAMTS3	ADAM metallopeptidase with thrombospondin type 1 motif, 3	7313	-0.11520519107580185	-0.21516512	No	
+row_22	MBNL2	MBNL2	muscleblind-like 2 (Drosophila)	7571	-0.14081044495105743	-0.23126644	No	
+row_23	PLAC1	PLAC1	placenta-specific 1	7834	-0.16357490420341492	-0.24694653	No	
+row_24	RBM39	RBM39	RNA binding motif protein 39	8261	-0.19820557534694672	-0.27492696	No	
+row_25	SCUBE3	SCUBE3	signal peptide, CUB domain, EGF-like 3	8314	-0.2038535624742508	-0.27175277	No	
+row_26	CREB5	CREB5	cAMP responsive element binding protein 5	8374	-0.21096263825893402	-0.2688971	No	
+row_27	TSHB	TSHB	thyroid stimulating hormone, beta	9230	-0.31659913063049316	-0.32803357	No	
+row_28	MTMR10	MTMR10	myotubularin related protein 10	9827	-0.397892564535141	-0.36275682	No	
+row_29	NRP1	NRP1	neuropilin 1	9963	-0.4208484888076782	-0.3584916	No	
+row_30	ISL1	ISL1	ISL1 transcription factor, LIM/homeodomain, (islet-1)	10003	-0.42696183919906616	-0.34605843	No	
+row_31	MYCT1	MYCT1	myc target 1	10525	-0.5232987999916077	-0.36997592	Yes	
+row_32	HOXA3	HOXA3	homeobox A3	10564	-0.5309498906135559	-0.35364586	Yes	
+row_33	PPARGC1A	PPARGC1A	peroxisome proliferative activated receptor, gamma, coactivator 1, alpha	10779	-0.5797238349914551	-0.35009038	Yes	
+row_34	DMD	DMD	dystrophin (muscular dystrophy, Duchenne and Becker types)	10904	-0.60782790184021	-0.33805683	Yes	
+row_35	HS3ST5	HS3ST5	heparan sulfate (glucosamine) 3-O-sulfotransferase 5	10934	-0.6167986392974854	-0.31783327	Yes	
+row_36	RUNX1T1	RUNX1T1	runt-related transcription factor 1; translocated to, 1 (cyclin D-related)	11196	-0.696654200553894	-0.3138781	Yes	
+row_37	TMEM47	TMEM47	transmembrane protein 47	11264	-0.7206785678863525	-0.29298875	Yes	
+row_38	FHL3	FHL3	four and a half LIM domains 3	11720	-0.9805374145507812	-0.2946741	Yes	
+row_39	KCNJ13	KCNJ13	potassium inwardly-rectifying channel, subfamily J, member 13	11762	-1.0170615911483765	-0.26076245	Yes	
+row_40	IL7	IL7	interleukin 7	11853	-1.11395263671875	-0.22735162	Yes	
+row_41	HTR3B	HTR3B	5-hydroxytryptamine (serotonin) receptor 3B	11893	-1.1691371202468872	-0.18769659	Yes	
+row_42	SORCS1	SORCS1	sortilin-related VPS10 domain containing receptor 1	12062	-1.61293363571167	-0.14243816	Yes	
+row_43	HOXA1	HOXA1	homeobox A1	12102	-1.8927844762802124	-0.076240845	Yes	
+row_44	TSC1	TSC1	tuberous sclerosis 1	12112	-2.137284278869629	0.0014067714	Yes	

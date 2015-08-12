@@ -1,0 +1,19 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MAP1A	MAP1A	microtubule-associated protein 1A	154	2.400688648223877	0.2540607	Yes	
+row_1	PLCXD2	PLCXD2	phosphatidylinositol-specific phospholipase C, X domain containing 2	265	1.959120750427246	0.4626851	Yes	
+row_2	ZCCHC12	ZCCHC12	zinc finger, CCHC domain containing 12	671	1.2845877408981323	0.5719964	Yes	
+row_3	PHF21B	PHF21B	PHD finger protein 21B	1085	1.00856351852417	0.6499741	Yes	
+row_4	AP1S1	AP1S1	adaptor-related protein complex 1, sigma 1 subunit	1966	0.6430962681770325	0.6487826	No	
+row_5	STXBP1	STXBP1	syntaxin binding protein 1	3735	0.31183701753616333	0.53746444	No	
+row_6	YARS	YARS	tyrosyl-tRNA synthetase	4916	0.15252332389354706	0.45698947	No	
+row_7	KCNE4	KCNE4	potassium voltage-gated channel, Isk-related family, member 4	5116	0.1343020498752594	0.45548373	No	
+row_8	CBX8	CBX8	chromobox homolog 8 (Pc class homolog, Drosophila)	5653	0.07309135794639587	0.41935232	No	
+row_9	CACNA1G	CACNA1G	calcium channel, voltage-dependent, alpha 1G subunit	5655	0.07301243394613266	0.42738324	No	
+row_10	NOTCH2	NOTCH2	Notch homolog 2 (Drosophila)	6267	0.0028675401117652655	0.37725607	No	
+row_11	CRY1	CRY1	cryptochrome 1 (photolyase-like)	6431	-0.014735981822013855	0.36543584	No	
+row_12	FGF10	FGF10	fibroblast growth factor 10	6863	-0.06416179239749908	0.33698127	No	
+row_13	MYH2	MYH2	myosin, heavy chain 2, skeletal muscle, adult	6896	-0.0679330974817276	0.34188828	No	
+row_14	FBXO11	FBXO11	F-box protein 11	7315	-0.11530200392007828	0.32018992	No	
+row_15	RTF1	RTF1	Rtf1, Paf1/RNA polymerase II complex component, homolog (S. cerevisiae)	7325	-0.11666491627693176	0.3324112	No	
+row_16	CLPTM1	CLPTM1	cleft lip and palate associated transmembrane protein 1	8349	-0.2072870135307312	0.27098417	No	
+row_17	ZIC1	ZIC1	Zic family member 1 (odd-paired homolog, Drosophila)	9647	-0.3691391944885254	0.2049207	No	

@@ -1,0 +1,51 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	BAALC	BAALC	brain and acute leukemia, cytoplasmic	104	2.7327332496643066	0.101373866	Yes	
+row_1	ERC2	ERC2	ELKS/RAB6-interacting/CAST family member 2	258	1.986730933189392	0.1686674	Yes	
+row_2	TSPAN9	TSPAN9	tetraspanin 9	348	1.7575775384902954	0.23203632	Yes	
+row_3	ENAH	ENAH	enabled homolog (Drosophila)	647	1.3040621280670166	0.2598515	Yes	
+row_4	PPIL1	PPIL1	peptidylprolyl isomerase (cyclophilin)-like 1	1051	1.0339585542678833	0.26810384	Yes	
+row_5	VAT1	VAT1	vesicle amine transport protein 1 homolog (T californica)	1119	0.9908409714698792	0.30243543	Yes	
+row_6	NAV3	NAV3	neuron navigator 3	1440	0.8271384239196777	0.30923486	Yes	
+row_7	PPM1F	PPM1F	protein phosphatase 1F (PP2C domain containing)	1444	0.8260524868965149	0.3422323	Yes	
+row_8	ST8SIA2	ST8SIA2	ST8 alpha-N-acetyl-neuraminide alpha-2,8-sialyltransferase 2	1841	0.6815546751022339	0.33688107	No	
+row_9	EXOC5	EXOC5	exocyst complex component 5	2299	0.5636656880378723	0.32173553	No	
+row_10	OAZ2	OAZ2	ornithine decarboxylase antizyme 2	3589	0.3313603401184082	0.22836636	No	
+row_11	SYT11	SYT11	synaptotagmin XI	3612	0.32869353890419006	0.23977396	No	
+row_12	BRWD1	BRWD1	bromodomain and WD repeat domain containing 1	4563	0.19884252548217773	0.1691343	No	
+row_13	AFF4	AFF4	AF4/FMR2 family, member 4	4789	0.16885317862033844	0.15730423	No	
+row_14	TCF12	TCF12	transcription factor 12 (HTF4, helix-loop-helix transcription factors 4)	5001	0.14457005262374878	0.1456558	No	
+row_15	PIK3C2B	PIK3C2B	phosphoinositide-3-kinase, class 2, beta polypeptide	5068	0.13819453120231628	0.14575407	No	
+row_16	PPP2R1A	PPP2R1A	protein phosphatase 2 (formerly 2A), regulatory subunit A (PR 65), alpha isoform	5373	0.1038670763373375	0.1247688	No	
+row_17	NRXN3	NRXN3	neurexin 3	5771	0.06026797369122505	0.09433015	No	
+row_18	RAB3A	RAB3A	RAB3A, member RAS oncogene family	5924	0.04353959113359451	0.083499685	No	
+row_19	RBX1	RBX1	ring-box 1	6126	0.020104393362998962	0.06766974	No	
+row_20	ZBTB41	ZBTB41	zinc finger and BTB domain containing 41	6210	0.009714063256978989	0.061189838	No	
+row_21	PTEN	PTEN	phosphatase and tensin homolog (mutated in multiple advanced cancers 1)	6243	0.005244560074061155	0.058751907	No	
+row_22	ARRDC3	ARRDC3	arrestin domain containing 3	7033	-0.08271986991167068	-0.003233472	No	
+row_23	SCN3A	SCN3A	sodium channel, voltage-gated, type III, alpha	7213	-0.10239555686712265	-0.0139302835	No	
+row_24	EIF4ENIF1	EIF4ENIF1	eukaryotic translation initiation factor 4E nuclear import factor 1	7396	-0.12281396985054016	-0.024053667	No	
+row_25	PRICKLE2	PRICKLE2	prickle homolog 2 (Drosophila)	7520	-0.13854525983333588	-0.028659815	No	
+row_26	CPNE8	CPNE8	copine VIII	7547	-0.13991573452949524	-0.025181005	No	
+row_27	SVIL	SVIL	supervillin	8337	-0.20584551990032196	-0.082211	No	
+row_28	DHX57	DHX57	DEAH (Asp-Glu-Ala-Asp/His) box polypeptide 57	8341	-0.2064104527235031	-0.07415203	No	
+row_29	TAOK2	TAOK2	TAO kinase 2	8347	-0.2070770114660263	-0.0662318	No	
+row_30	COL2A1	COL2A1	collagen, type II, alpha 1 (primary osteoarthritis, spondyloepiphyseal dysplasia, congenital)	8638	-0.24117158353328705	-0.0805321	No	
+row_31	FAM117A	FAM117A	family with sequence similarity 117, member A	8661	-0.2440740019083023	-0.07253014	No	
+row_32	IGBP1	IGBP1	immunoglobulin (CD79A) binding protein 1	8672	-0.24561096727848053	-0.06347296	No	
+row_33	KLF13	KLF13	Kruppel-like factor 13	8940	-0.2793987989425659	-0.07433076	No	
+row_34	NCOA7	NCOA7	nuclear receptor coactivator 7	8947	-0.27993687987327576	-0.063560955	No	
+row_35	FZD4	FZD4	frizzled homolog 4 (Drosophila)	9284	-0.32383301854133606	-0.078342356	No	
+row_36	MYO1B	MYO1B	myosin IB	9444	-0.3442535698413849	-0.077649586	No	
+row_37	TAL1	TAL1	T-cell acute lymphocytic leukemia 1	9449	-0.3447117805480957	-0.06410724	No	
+row_38	PCCA	PCCA	propionyl Coenzyme A carboxylase, alpha polypeptide	9581	-0.35993823409080505	-0.060465336	No	
+row_39	ZIC1	ZIC1	Zic family member 1 (odd-paired homolog, Drosophila)	9647	-0.3691391944885254	-0.050989542	No	
+row_40	PPP3R1	PPP3R1	protein phosphatase 3 (formerly 2B), regulatory subunit B, 19kDa, alpha isoform (calcineurin B, type I)	9707	-0.37948644161224365	-0.04060062	No	
+row_41	GRM8	GRM8	glutamate receptor, metabotropic 8	10198	-0.4608607590198517	-0.06261547	No	
+row_42	NR3C1	NR3C1	nuclear receptor subfamily 3, group C, member 1 (glucocorticoid receptor)	10295	-0.47848474979400635	-0.051305123	No	
+row_43	PTPRG	PTPRG	protein tyrosine phosphatase, receptor type, G	10470	-0.5105158686637878	-0.045162585	No	
+row_44	CARM1	CARM1	coactivator-associated arginine methyltransferase 1	10906	-0.608015775680542	-0.05670197	No	
+row_45	UBQLN2	UBQLN2	ubiquilin 2	10942	-0.6194278597831726	-0.034669474	No	
+row_46	ARHGEF9	ARHGEF9	Cdc42 guanine nucleotide exchange factor (GEF) 9	11017	-0.6412323117256165	-0.014987901	No	
+row_47	TRIM2	TRIM2	tripartite motif-containing 2	11123	-0.6710981130599976	0.003329444	No	
+row_48	CCNE2	CCNE2	cyclin E2	11177	-0.6907658576965332	0.026742984	No	
+row_49	AR	AR	androgen receptor (dihydrotestosterone receptor; testicular feminization; spinal and bulbar muscular atrophy; Kennedy disease)	11963	-1.2915923595428467	0.013741699	No	

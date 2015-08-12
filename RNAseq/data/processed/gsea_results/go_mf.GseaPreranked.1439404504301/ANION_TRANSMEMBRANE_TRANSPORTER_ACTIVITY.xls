@@ -1,0 +1,39 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CLCA4	CLCA4	chloride channel, calcium activated, family member 4	107	2.720366954803467	0.08998738	Yes	
+row_1	GLRB	GLRB	glycine receptor, beta	149	2.4263782501220703	0.17475173	Yes	
+row_2	SLC17A7	SLC17A7	solute carrier family 17 (sodium-dependent inorganic phosphate cotransporter), member 7	163	2.346935510635376	0.25894535	Yes	
+row_3	SLC5A5	SLC5A5	solute carrier family 5 (sodium iodide symporter), member 5	469	1.5452853441238403	0.2898653	Yes	
+row_4	ABCC3	ABCC3	ATP-binding cassette, sub-family C (CFTR/MRP), member 3	573	1.4102916717529297	0.33258587	Yes	
+row_5	ADAMTS8	ADAMTS8	ADAM metallopeptidase with thrombospondin type 1 motif, 8	734	1.2331045866012573	0.36415508	Yes	
+row_6	SLC4A3	SLC4A3	solute carrier family 4, anion exchanger, member 3	842	1.1528325080871582	0.3971909	Yes	
+row_7	CLCNKB	CLCNKB	chloride channel Kb	974	1.0723330974578857	0.42531723	Yes	
+row_8	SLC12A3	SLC12A3	solute carrier family 12 (sodium/chloride transporters), member 3	998	1.0616616010665894	0.46198735	Yes	
+row_9	SLC12A7	SLC12A7	solute carrier family 12 (potassium/chloride transporters), member 7	1219	0.9308008551597595	0.4776113	Yes	
+row_10	SLC13A4	SLC13A4	solute carrier family 13 (sodium/sulfate symporters), member 4	1397	0.8432267308235168	0.49360958	Yes	
+row_11	CLCNKA	CLCNKA	chloride channel Ka	1596	0.7752870917320251	0.5054028	Yes	
+row_12	CLCA2	CLCA2	chloride channel, calcium activated, family member 2	2375	0.5429918766021729	0.4607907	No	
+row_13	SLC20A1	SLC20A1	solute carrier family 20 (phosphate transporter), member 1	3113	0.40506717562675476	0.41455817	No	
+row_14	GLRA1	GLRA1	glycine receptor, alpha 1 (startle disease/hyperekplexia, stiff man syndrome)	3373	0.3599158227443695	0.4062155	No	
+row_15	SLC25A3	SLC25A3	solute carrier family 25 (mitochondrial carrier; phosphate carrier), member 3	3454	0.34800034761428833	0.4122431	No	
+row_16	ABCC2	ABCC2	ATP-binding cassette, sub-family C (CFTR/MRP), member 2	3614	0.32794034481048584	0.4110086	No	
+row_17	SLC12A4	SLC12A4	solute carrier family 12 (potassium/chloride transporters), member 4	3807	0.30054646730422974	0.4060498	No	
+row_18	PKD2	PKD2	polycystic kidney disease 2 (autosomal dominant)	4010	0.2729502320289612	0.39926133	No	
+row_19	CLCN2	CLCN2	chloride channel 2	4038	0.26954373717308044	0.4068215	No	
+row_20	SLC20A2	SLC20A2	solute carrier family 20 (phosphate transporter), member 2	4615	0.1926315426826477	0.36618537	No	
+row_21	ASNA1	ASNA1	arsA arsenite transporter, ATP-binding, homolog 1 (bacterial)	5216	0.12179992347955704	0.320991	No	
+row_22	ABCC5	ABCC5	ATP-binding cassette, sub-family C (CFTR/MRP), member 5	5334	0.10831665992736816	0.31525055	No	
+row_23	SLC4A2	SLC4A2	solute carrier family 4, anion exchanger, member 2 (erythrocyte membrane protein band 3-like 1)	6022	0.033027082681655884	0.25963607	No	
+row_24	CLCA1	CLCA1	chloride channel, calcium activated, family member 1	6192	0.011955591849982738	0.24609426	No	
+row_25	SLC22A7	SLC22A7	solute carrier family 22 (organic anion transporter), member 7	6648	-0.03922282159328461	0.20989111	No	
+row_26	CLCN3	CLCN3	chloride channel 3	7113	-0.0923924446105957	0.17487542	No	
+row_27	SLC25A11	SLC25A11	solute carrier family 25 (mitochondrial carrier; oxoglutarate carrier), member 11	7716	-0.15479998290538788	0.13071463	No	
+row_28	SLC12A2	SLC12A2	solute carrier family 12 (sodium/potassium/chloride transporters), member 2	7941	-0.17148901522159576	0.11842051	No	
+row_29	SLC22A8	SLC22A8	solute carrier family 22 (organic anion transporter), member 8	7969	-0.17457112669944763	0.12253014	No	
+row_30	GLRA2	GLRA2	glycine receptor, alpha 2	8079	-0.18282656371593475	0.12015836	No	
+row_31	SLC12A9	SLC12A9	solute carrier family 12 (potassium/chloride transporters), member 9	8105	-0.18303127586841583	0.12474076	No	
+row_32	BSND	BSND	Bartter syndrome, infantile, with sensorineural deafness (Barttin)	10390	-0.49541428685188293	-0.046145096	No	
+row_33	SLC4A1	SLC4A1	solute carrier family 4, anion exchanger, member 1 (erythrocyte membrane protein band 3, Diego blood group)	10683	-0.5590425133705139	-0.049982194	No	
+row_34	FXYD1	FXYD1	FXYD domain containing ion transport regulator 1 (phospholemman)	11093	-0.6621673107147217	-0.05974839	No	
+row_35	CLCN1	CLCN1	chloride channel 1, skeletal muscle (Thomsen disease, autosomal dominant)	11260	-0.7188420295715332	-0.04735955	No	
+row_36	FXYD3	FXYD3	FXYD domain containing ion transport regulator 3	12014	-1.415063738822937	-0.05822012	No	
+row_37	SLC4A4	SLC4A4	solute carrier family 4, sodium bicarbonate cotransporter, member 4	12097	-1.8619358539581299	0.0026462795	No	

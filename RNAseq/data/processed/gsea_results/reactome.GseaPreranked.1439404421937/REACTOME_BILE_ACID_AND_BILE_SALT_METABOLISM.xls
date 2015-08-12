@@ -1,0 +1,24 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ACOX2	ACOX2	acyl-Coenzyme A oxidase 2, branched chain	52	3.287621021270752	0.21713881	Yes	
+row_1	CYP46A1	CYP46A1	cytochrome P450, family 46, subfamily A, polypeptide 1	364	1.7256393432617188	0.3076796	Yes	
+row_2	ABCC3	ABCC3	ATP-binding cassette, sub-family C (CFTR/MRP), member 3	573	1.4102916717529297	0.385488	Yes	
+row_3	CYP7B1	CYP7B1	cytochrome P450, family 7, subfamily B, polypeptide 1	644	1.3068796396255493	0.46772957	Yes	
+row_4	CYP7A1	CYP7A1	cytochrome P450, family 7, subfamily A, polypeptide 1	1053	1.0338908433914185	0.5036665	Yes	
+row_5	CH25H	CH25H	cholesterol 25-hydroxylase	1272	0.9041873216629028	0.5465609	Yes	
+row_6	CYP39A1	CYP39A1	cytochrome P450, family 39, subfamily A, polypeptide 1	1782	0.699337363243103	0.55162215	Yes	
+row_7	BAAT	BAAT	bile acid Coenzyme A: amino acid N-acyltransferase (glycine N-choloyltransferase)	2652	0.4854872524738312	0.51254493	No	
+row_8	FABP6	FABP6	fatty acid binding protein 6, ileal (gastrotropin)	2891	0.44265830516815186	0.5227016	No	
+row_9	ALB	ALB	albumin	3678	0.31890395283699036	0.4792599	No	
+row_10	HSD17B4	HSD17B4	hydroxysteroid (17-beta) dehydrogenase 4	3999	0.2738986015319824	0.47127703	No	
+row_11	ACOT8	ACOT8	acyl-CoA thioesterase 8	4298	0.233522430062294	0.4623918	No	
+row_12	AMACR	AMACR	alpha-methylacyl-CoA racemase	4413	0.21737927198410034	0.46761706	No	
+row_13	HSD3B7	HSD3B7	hydroxy-delta-5-steroid dehydrogenase, 3 beta- and steroid delta-isomerase 7	4826	0.1635458767414093	0.4446026	No	
+row_14	SCP2	SCP2	sterol carrier protein 2	5021	0.14337804913520813	0.43823588	No	
+row_15	SLC27A5	SLC27A5	solute carrier family 27 (fatty acid transporter), member 5	6235	0.006846219301223755	0.33850703	No	
+row_16	AKR1D1	AKR1D1	aldo-keto reductase family 1, member D1 (delta 4-3-ketosteroid-5-beta-reductase)	7915	-0.1693863570690155	0.21123575	No	
+row_17	SLC10A1	SLC10A1	solute carrier family 10 (sodium/bile acid cotransporter family), member 1	8306	-0.20298127830028534	0.19269454	No	
+row_18	CYP27A1	CYP27A1	cytochrome P450, family 27, subfamily A, polypeptide 1	8412	-0.21553896367549896	0.19853924	No	
+row_19	SLC27A2	SLC27A2	solute carrier family 27 (fatty acid transporter), member 2	8719	-0.2509952783584595	0.19017011	No	
+row_20	SLC10A2	SLC10A2	solute carrier family 10 (sodium/bile acid cotransporter family), member 2	8843	-0.2654951512813568	0.19789281	No	
+row_21	ABCB11	ABCB11	ATP-binding cassette, sub-family B (MDR/TAP), member 11	9977	-0.4224397838115692	0.13276352	No	
+row_22	CYP8B1	CYP8B1	cytochrome P450, family 8, subfamily B, polypeptide 1	11112	-0.6666619181632996	0.08400092	No	

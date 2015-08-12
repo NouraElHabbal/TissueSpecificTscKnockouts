@@ -1,0 +1,68 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	IGF2BP2	IGF2BP2	insulin-like growth factor 2 mRNA binding protein 2	146	2.428159713745117	0.071547374	Yes	
+row_1	SLITRK4	SLITRK4	SLIT and NTRK-like family, member 4	526	1.4698426723480225	0.090765305	Yes	
+row_2	SNN	SNN	stannin	1028	1.0491877794265747	0.085378036	Yes	
+row_3	PCDH9	PCDH9	protocadherin 9	1042	1.0397201776504517	0.120118886	Yes	
+row_4	IL13RA1	IL13RA1	interleukin 13 receptor, alpha 1	1048	1.0366168022155762	0.15541601	Yes	
+row_5	RSPO3	RSPO3	R-spondin 3 homolog (Xenopus laevis)	1306	0.8865247964859009	0.16465212	Yes	
+row_6	WHSC1	WHSC1	Wolf-Hirschhorn syndrome candidate 1	1309	0.8853205442428589	0.19498576	Yes	
+row_7	CGN	CGN	cingulin	1360	0.8615298867225647	0.22052069	Yes	
+row_8	SPRED1	SPRED1	sprouty-related, EVH1 domain containing 1	1520	0.7972719669342041	0.23480605	Yes	
+row_9	MEF2C	MEF2C	MADS box transcription enhancer factor 2, polypeptide C (myocyte enhancer factor 2C)	1532	0.7907317280769348	0.261135	Yes	
+row_10	NBEA	NBEA	neurobeachin	1607	0.772925078868866	0.28162792	Yes	
+row_11	SOX4	SOX4	SRY (sex determining region Y)-box 4	1926	0.655589759349823	0.2778515	Yes	
+row_12	CDC25B	CDC25B	cell division cycle 25B	1951	0.6497086882591248	0.29824454	Yes	
+row_13	EIF4A1	EIF4A1	eukaryotic translation initiation factor 4A, isoform 1	2055	0.6175678372383118	0.31098133	Yes	
+row_14	USP28	USP28	ubiquitin specific peptidase 28	2187	0.586102306842804	0.320313	Yes	
+row_15	BCL9	BCL9	B-cell CLL/lymphoma 9	2347	0.5514134764671326	0.32612848	Yes	
+row_16	RNF185	RNF185	ring finger protein 185	2677	0.4810953140258789	0.3154288	No	
+row_17	PDIK1L	PDIK1L	PDLIM1 interacting kinase 1 like	2851	0.4427798092365265	0.31634125	No	
+row_18	LUZP1	LUZP1	leucine zipper protein 1	3069	0.41004374623298645	0.31247845	No	
+row_19	DLG5	DLG5	discs, large homolog 5 (Drosophila)	3410	0.35410672426223755	0.29649213	No	
+row_20	BUD31	BUD31	BUD31 homolog (yeast)	3538	0.3377175033092499	0.29759848	No	
+row_21	H3F3B	H3F3B	H3 histone, family 3B (H3.3B)	3642	0.3241366446018219	0.30022654	No	
+row_22	TOMM70A	TOMM70A	translocase of outer mitochondrial membrane 70 homolog A (S. cerevisiae)	3738	0.31135615706443787	0.3030775	No	
+row_23	CHRD	CHRD	chordin	3793	0.3035984933376312	0.30906	No	
+row_24	TRIAP1	TRIAP1	TP53 regulated inhibitor of apoptosis 1	3951	0.27937859296798706	0.30566964	No	
+row_25	MAP3K3	MAP3K3	mitogen-activated protein kinase kinase kinase 3	4204	0.24540364742279053	0.2932335	No	
+row_26	RAP2C	RAP2C	RAP2C, member of RAS oncogene family	4943	0.1503593921661377	0.23723459	No	
+row_27	FBXW7	FBXW7	F-box and WD-40 domain protein 7 (archipelago homolog, Drosophila)	5357	0.10527031123638153	0.20662425	No	
+row_28	MAPK8IP2	MAPK8IP2	mitogen-activated protein kinase 8 interacting protein 2	5359	0.10510297864675522	0.21016216	No	
+row_29	CRKL	CRKL	v-crk sarcoma virus CT10 oncogene homolog (avian)-like	6111	0.021484026685357094	0.1486458	No	
+row_30	SELT	SELT	-	6162	0.016293097287416458	0.14506221	No	
+row_31	P4HB	P4HB	procollagen-proline, 2-oxoglutarate 4-dioxygenase (proline 4-hydroxylase), beta polypeptide	6240	0.006102341692894697	0.13888927	No	
+row_32	PTEN	PTEN	phosphatase and tensin homolog (mutated in multiple advanced cancers 1)	6243	0.005244560074061155	0.13890415	No	
+row_33	PHACTR2	PHACTR2	phosphatase and actin regulator 2	6352	-0.005993647500872612	0.13015763	No	
+row_34	UBE2I	UBE2I	ubiquitin-conjugating enzyme E2I (UBC9 homolog, yeast)	6355	-0.006648645270615816	0.13022089	No	
+row_35	EFNB2	EFNB2	ephrin-B2	6436	-0.015311436727643013	0.12411652	No	
+row_36	TRIP12	TRIP12	thyroid hormone receptor interactor 12	6767	-0.0526120662689209	0.098572634	No	
+row_37	TMEM30A	TMEM30A	transmembrane protein 30A	7179	-0.0994209572672844	0.06792657	No	
+row_38	ZFP91	ZFP91	zinc finger protein 91 homolog (mouse)	7282	-0.11196767538785934	0.06332827	No	
+row_39	FBXO11	FBXO11	F-box protein 11	7315	-0.11530200392007828	0.064647704	No	
+row_40	RNF111	RNF111	ring finger protein 111	7415	-0.125227689743042	0.060754903	No	
+row_41	CPNE8	CPNE8	copine VIII	7547	-0.13991573452949524	0.05471537	No	
+row_42	ACACA	ACACA	acetyl-Coenzyme A carboxylase alpha	7662	-0.15001176297664642	0.050432913	No	
+row_43	PHF3	PHF3	PHD finger protein 3	7687	-0.15141499042510986	0.05365963	No	
+row_44	FNIP1	FNIP1	folliculin interacting protein 1	7908	-0.1690903604030609	0.041247234	No	
+row_45	SLC12A2	SLC12A2	solute carrier family 12 (sodium/potassium/chloride transporters), member 2	7941	-0.17148901522159576	0.044502318	No	
+row_46	RAB14	RAB14	RAB14, member RAS oncogene family	7966	-0.1741565465927124	0.048512485	No	
+row_47	ZBTB44	ZBTB44	zinc finger and BTB domain containing 44	7967	-0.17420096695423126	0.054513738	No	
+row_48	ILF3	ILF3	interleukin enhancer binding factor 3, 90kDa	8149	-0.18730580806732178	0.04596189	No	
+row_49	CCNT2	CCNT2	cyclin T2	8439	-0.2185201346874237	0.029532388	No	
+row_50	EPC2	EPC2	enhancer of polycomb homolog 2 (Drosophila)	8931	-0.2769986689090729	-0.0016279393	No	
+row_51	EPHA4	EPHA4	EPH receptor A4	9074	-0.2982674539089203	-0.0031241104	No	
+row_52	DEDD	DEDD	death effector domain containing	9397	-0.33858799934387207	-0.018152893	No	
+row_53	TMEM39A	TMEM39A	transmembrane protein 39A	9428	-0.3424825966358185	-0.008841256	No	
+row_54	LSM12	LSM12	LSM12 homolog (S. cerevisiae)	9455	-0.3450019359588623	8.8876585E-4	No	
+row_55	BCL11B	BCL11B	B-cell CLL/lymphoma 11B (zinc finger protein)	9665	-0.37254607677459717	-0.0036026682	No	
+row_56	ATXN1	ATXN1	ataxin 1	9803	-0.39375749230384827	-0.0013947013	No	
+row_57	AP1S3	AP1S3	adaptor-related protein complex 1, sigma 3 subunit	10015	-0.4294249415397644	-0.0040924456	No	
+row_58	KLF12	KLF12	Kruppel-like factor 12	10217	-0.46347448229789734	-0.0047881966	No	
+row_59	ELOVL6	ELOVL6	ELOVL family member 6, elongation of long chain fatty acids (FEN1/Elo2, SUR4/Elo3-like, yeast)	10519	-0.5215398073196411	-0.0117734	No	
+row_60	CXXC5	CXXC5	CXXC finger 5	10582	-0.5359165668487549	0.0015493283	No	
+row_61	PDE4A	PDE4A	phosphodiesterase 4A, cAMP-specific (phosphodiesterase E2 dunce homolog, Drosophila)	10643	-0.5490031838417053	0.01548869	No	
+row_62	MBNL1	MBNL1	muscleblind-like (Drosophila)	10718	-0.5668569207191467	0.02888254	No	
+row_63	KPNA3	KPNA3	karyopherin alpha 3 (importin alpha 4)	10745	-0.5721865296363831	0.046439108	No	
+row_64	MAFB	MAFB	v-maf musculoaponeurotic fibrosarcoma oncogene homolog B (avian)	10954	-0.6241534352302551	0.05069849	No	
+row_65	RICTOR	RICTOR	-	11049	-0.6510908007621765	0.06533625	No	
+row_66	ESR1	ESR1	estrogen receptor 1	11212	-0.6998805403709412	0.07601775	No	

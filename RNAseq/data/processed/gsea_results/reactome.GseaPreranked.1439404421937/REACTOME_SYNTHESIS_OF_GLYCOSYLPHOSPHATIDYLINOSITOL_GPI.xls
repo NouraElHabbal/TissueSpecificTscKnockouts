@@ -1,0 +1,18 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	PIGQ	PIGQ	phosphatidylinositol glycan anchor biosynthesis, class Q	2684	0.4792427718639374	-0.15207544	No	
+row_1	PIGN	PIGN	phosphatidylinositol glycan anchor biosynthesis, class N	3440	0.3495366871356964	-0.16371179	No	
+row_2	PIGF	PIGF	phosphatidylinositol glycan anchor biosynthesis, class F	3465	0.3460446000099182	-0.1155062	No	
+row_3	PIGA	PIGA	phosphatidylinositol glycan anchor biosynthesis, class A (paroxysmal nocturnal hemoglobinuria)	5300	0.11088146269321442	-0.25083262	No	
+row_4	DPM2	DPM2	dolichyl-phosphate mannosyltransferase polypeptide 2, regulatory subunit	5728	0.06423414498567581	-0.27676812	No	
+row_5	PIGO	PIGO	phosphatidylinositol glycan anchor biosynthesis, class O	7265	-0.10936439782381058	-0.38771287	No	
+row_6	PIGM	PIGM	phosphatidylinositol glycan anchor biosynthesis, class M	9023	-0.2907228171825409	-0.49060005	Yes	
+row_7	PIGX	PIGX	phosphatidylinositol glycan anchor biosynthesis, class X	9223	-0.31569334864616394	-0.4612436	Yes	
+row_8	PIGL	PIGL	phosphatidylinositol glycan anchor biosynthesis, class L	9770	-0.38905850052833557	-0.4498939	Yes	
+row_9	PIGC	PIGC	phosphatidylinositol glycan anchor biosynthesis, class C	10040	-0.43297243118286133	-0.40930736	Yes	
+row_10	PIGV	PIGV	phosphatidylinositol glycan anchor biosynthesis, class V	10145	-0.4517974555492401	-0.3523689	Yes	
+row_11	PIGB	PIGB	phosphatidylinositol glycan anchor biosynthesis, class B	10318	-0.48226165771484375	-0.296626	Yes	
+row_12	PIGG	PIGG	phosphatidylinositol glycan anchor biosynthesis, class G	10593	-0.5386001467704773	-0.24113302	Yes	
+row_13	PIGP	PIGP	phosphatidylinositol glycan anchor biosynthesis, class P	10753	-0.5741624236106873	-0.1709885	Yes	
+row_14	PIGH	PIGH	phosphatidylinositol glycan anchor biosynthesis, class H	10840	-0.5950735807418823	-0.091784656	Yes	
+row_15	SEMA6D	SEMA6D	sema domain, transmembrane domain (TM), and cytoplasmic domain, (semaphorin) 6D	10999	-0.6379327178001404	-0.012308962	Yes	
+row_16	PIGW	PIGW	phosphatidylinositol glycan anchor biosynthesis, class W	11285	-0.7275350093841553	0.06967716	Yes	

@@ -1,0 +1,35 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	PAM	PAM	peptidylglycine alpha-amidating monooxygenase	761	1.2117294073104858	0.020986542	No	
+row_1	JUNB	JUNB	jun B proto-oncogene	1254	0.9115976691246033	0.04343078	No	
+row_2	SUV39H2	SUV39H2	suppressor of variegation 3-9 homolog 2 (Drosophila)	1409	0.8362367749214172	0.08860016	No	
+row_3	HIST4H4	HIST4H4	histone cluster 4, H4	2346	0.5515202283859253	0.04940636	No	
+row_4	TNP1	TNP1	transition protein 1 (during histone to protamine replacement)	2869	0.44265830516815186	0.036901172	No	
+row_5	APTX	APTX	aprataxin	3507	0.34166067838668823	0.007895652	No	
+row_6	RB1	RB1	retinoblastoma 1 (including osteosarcoma)	3510	0.3414557874202728	0.031372637	No	
+row_7	INCENP	INCENP	inner centromere protein antigens 135/155kDa	4208	0.24457107484340668	-0.009315663	No	
+row_8	RAN	RAN	RAN, member RAS oncogene family	4553	0.2006261646747589	-0.0238635	No	
+row_9	JUND	JUND	jun D proto-oncogene	4655	0.18724563717842102	-0.019248517	No	
+row_10	OIP5	OIP5	Opa interacting protein 5	5646	0.0737486407160759	-0.09598741	No	
+row_11	CBX5	CBX5	chromobox homolog 5 (HP1 alpha homolog, Drosophila)	5930	0.042283106595277786	-0.116455905	No	
+row_12	RCC1	RCC1	regulator of chromosome condensation 1	6026	0.03249645233154297	-0.12205969	No	
+row_13	NUFIP1	NUFIP1	nuclear fragile X mental retardation protein interacting protein 1	7121	-0.09279417246580124	-0.20607775	No	
+row_14	TIMELESS	TIMELESS	timeless homolog (Drosophila)	7182	-0.09958671778440475	-0.20414272	No	
+row_15	H2AFY2	H2AFY2	H2A histone family, member Y2	7256	-0.10783903300762177	-0.20271102	No	
+row_16	TOP2B	TOP2B	topoisomerase (DNA) II beta 180kDa	7398	-0.12295190244913101	-0.2058546	No	
+row_17	HMGN1	HMGN1	high-mobility group nucleosome binding domain 1	7767	-0.15931786596775055	-0.22524674	No	
+row_18	HELLS	HELLS	helicase, lymphoid-specific	8243	-0.19628067314624786	-0.25092548	No	
+row_19	ATRX	ATRX	alpha thalassemia/mental retardation syndrome X-linked (RAD54 homolog, S. cerevisiae)	8424	-0.21656611561775208	-0.25081143	No	
+row_20	MCM7	MCM7	MCM7 minichromosome maintenance deficient 7 (S. cerevisiae)	8487	-0.2236798256635666	-0.24044955	No	
+row_21	TIPIN	TIPIN	TIMELESS interacting protein	8542	-0.22864477336406708	-0.22908252	No	
+row_22	UPF1	UPF1	UPF1 regulator of nonsense transcripts homolog (yeast)	8936	-0.2788388133049011	-0.24226585	No	
+row_23	KLHDC3	KLHDC3	kelch domain containing 3	9206	-0.313667356967926	-0.24278635	No	
+row_24	POLA1	POLA1	polymerase (DNA directed), alpha 1	9666	-0.37255343794822693	-0.25493726	Yes	
+row_25	H2AFY	H2AFY	H2A histone family, member Y	10022	-0.4302752912044525	-0.25449362	Yes	
+row_26	DNMT3A	DNMT3A	DNA (cytosine-5-)-methyltransferase 3 alpha	10231	-0.466694176197052	-0.23937558	Yes	
+row_27	NPM2	NPM2	nucleophosmin/nucleoplasmin, 2	10311	-0.48103025555610657	-0.21260023	Yes	
+row_28	FOXC1	FOXC1	forkhead box C1	10682	-0.559032678604126	-0.20448154	Yes	
+row_29	CBX1	CBX1	chromobox homolog 1 (HP1 beta homolog Drosophila )	10748	-0.5729941725730896	-0.17018121	Yes	
+row_30	MYCN	MYCN	v-myc myelocytomatosis viral related oncogene, neuroblastoma derived (avian)	11431	-0.7893920540809631	-0.17190614	Yes	
+row_31	TMPO	TMPO	thymopoietin	11696	-0.9643808603286743	-0.12695801	Yes	
+row_32	MCM2	MCM2	MCM2 minichromosome maintenance deficient 2, mitotin (S. cerevisiae)	11790	-1.0487300157546997	-0.062032655	Yes	
+row_33	MAF	MAF	v-maf musculoaponeurotic fibrosarcoma oncogene homolog (avian)	11966	-1.2994818687438965	0.013475618	Yes	

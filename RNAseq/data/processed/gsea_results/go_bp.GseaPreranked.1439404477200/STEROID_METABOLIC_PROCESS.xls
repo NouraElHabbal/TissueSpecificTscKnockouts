@@ -1,0 +1,50 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	NR0B2	NR0B2	nuclear receptor subfamily 0, group B, member 2	43	3.4286227226257324	0.1189089	Yes	
+row_1	ACOX2	ACOX2	acyl-Coenzyme A oxidase 2, branched chain	52	3.287621021270752	0.23567842	Yes	
+row_2	CYP46A1	CYP46A1	cytochrome P450, family 46, subfamily A, polypeptide 1	364	1.7256393432617188	0.27157423	Yes	
+row_3	TSPO	TSPO	translocator protein (18kDa)	627	1.3326486349105835	0.29748866	Yes	
+row_4	CYP7B1	CYP7B1	cytochrome P450, family 7, subfamily B, polypeptide 1	644	1.3068796396255493	0.34284517	Yes	
+row_5	ADM	ADM	adrenomedullin	676	1.2831382751464844	0.38611203	Yes	
+row_6	FDXR	FDXR	ferredoxin reductase	799	1.1819636821746826	0.4182325	Yes	
+row_7	SOAT2	SOAT2	sterol O-acyltransferase 2	958	1.0824425220489502	0.44381827	Yes	
+row_8	SOAT1	SOAT1	sterol O-acyltransferase (acyl-Coenzyme A: cholesterol acyltransferase) 1	1221	0.9304167628288269	0.4553652	Yes	
+row_9	IL4	IL4	interleukin 4	1448	0.8248531818389893	0.46612138	Yes	
+row_10	DHRS9	DHRS9	dehydrogenase/reductase (SDR family) member 9	1583	0.7769976258277893	0.48278344	Yes	
+row_11	CYP39A1	CYP39A1	cytochrome P450, family 39, subfamily A, polypeptide 1	1782	0.699337363243103	0.49137396	Yes	
+row_12	ABCG1	ABCG1	ATP-binding cassette, sub-family G (WHITE), member 1	1878	0.6669929027557373	0.50733495	Yes	
+row_13	NSDHL	NSDHL	NAD(P) dependent steroid dehydrogenase-like	1889	0.6639565825462341	0.53022325	Yes	
+row_14	BAAT	BAAT	bile acid Coenzyme A: amino acid N-acyltransferase (glycine N-choloyltransferase)	2652	0.4854872524738312	0.48449033	No	
+row_15	HSD11B2	HSD11B2	hydroxysteroid (11-beta) dehydrogenase 2	2991	0.4231721758842468	0.47162795	No	
+row_16	ACOX3	ACOX3	acyl-Coenzyme A oxidase 3, pristanoyl	3057	0.41174831986427307	0.48095497	No	
+row_17	TFCP2L1	TFCP2L1	transcription factor CP2-like 1	3337	0.36499741673469543	0.47089833	No	
+row_18	GBA2	GBA2	glucosidase, beta (bile acid) 2	3563	0.33443719148635864	0.46421993	No	
+row_19	YWHAH	YWHAH	tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein, eta polypeptide	3618	0.32763510942459106	0.471453	No	
+row_20	AKR1B10	AKR1B10	aldo-keto reductase family 1, member B10 (aldose reductase)	4008	0.27296191453933716	0.44900373	No	
+row_21	FDPS	FDPS	farnesyl diphosphate synthase (farnesyl pyrophosphate synthetase, dimethylallyltranstransferase, geranyltranstransferase)	4183	0.2486637830734253	0.44348305	No	
+row_22	UGT1A1	UGT1A1	UDP glucuronosyltransferase 1 family, polypeptide A1	4442	0.21424315869808197	0.42977983	No	
+row_23	SHH	SHH	sonic hedgehog homolog (Drosophila)	4631	0.1911078691482544	0.42104447	No	
+row_24	HDLBP	HDLBP	high density lipoprotein binding protein (vigilin)	4663	0.18664872646331787	0.42514542	No	
+row_25	HSD3B7	HSD3B7	hydroxy-delta-5-steroid dehydrogenase, 3 beta- and steroid delta-isomerase 7	4826	0.1635458767414093	0.41757768	No	
+row_26	SCP2	SCP2	sterol carrier protein 2	5021	0.14337804913520813	0.4066408	No	
+row_27	CLN8	CLN8	ceroid-lipofuscinosis, neuronal 8 (epilepsy, progressive with mental retardation)	5436	0.09696180373430252	0.3758355	No	
+row_28	DHCR24	DHCR24	24-dehydrocholesterol reductase	5632	0.07584451884031296	0.36240357	No	
+row_29	WWOX	WWOX	WW domain containing oxidoreductase	6421	-0.01320719812065363	0.29764894	No	
+row_30	PPARD	PPARD	peroxisome proliferative activated receptor, delta	6897	-0.067970871925354	0.26075888	No	
+row_31	CYP11B2	CYP11B2	cytochrome P450, family 11, subfamily B, polypeptide 2	7348	-0.11831720173358917	0.22773653	No	
+row_32	DHCR7	DHCR7	7-dehydrocholesterol reductase	7474	-0.13309504091739655	0.22214377	No	
+row_33	SULT2B1	SULT2B1	sulfotransferase family, cytosolic, 2B, member 1	7680	-0.1513587087392807	0.21058142	No	
+row_34	CLN6	CLN6	ceroid-lipofuscinosis, neuronal 6, late infantile, variant	7696	-0.15255385637283325	0.21478893	No	
+row_35	AKR1D1	AKR1D1	aldo-keto reductase family 1, member D1 (delta 4-3-ketosteroid-5-beta-reductase)	7915	-0.1693863570690155	0.20279443	No	
+row_36	CYP11A1	CYP11A1	cytochrome P450, family 11, subfamily A, polypeptide 1	8050	-0.18068866431713104	0.19815671	No	
+row_37	CEL	CEL	carboxyl ester lipase (bile salt-stimulated lipase)	8088	-0.1828342080116272	0.20162478	No	
+row_38	APOF	APOF	apolipoprotein F	8228	-0.19585299491882324	0.19711486	No	
+row_39	NPC1	NPC1	Niemann-Pick disease, type C1	8242	-0.19627735018730164	0.20304969	No	
+row_40	STUB1	STUB1	STIP1 homology and U-box containing protein 1	8315	-0.20387499034404755	0.2043722	No	
+row_41	NPC1L1	NPC1L1	NPC1 (Niemann-Pick disease, type C1, gene)-like 1	8570	-0.2322312891483307	0.1916426	No	
+row_42	STARD3	STARD3	START domain containing 3	9052	-0.295015424489975	0.16236578	No	
+row_43	MBTPS2	MBTPS2	membrane-bound transcription factor peptidase, site 2	9392	-0.33793678879737854	0.14637607	No	
+row_44	SOD1	SOD1	superoxide dismutase 1, soluble (amyotrophic lateral sclerosis 1 (adult))	9514	-0.35270798206329346	0.14895885	No	
+row_45	CNBP	CNBP	CCHC-type zinc finger, nucleic acid binding protein	9952	-0.4190279543399811	0.12775376	No	
+row_46	NR1H4	NR1H4	nuclear receptor subfamily 1, group H, member 4	10131	-0.44853782653808594	0.12904136	No	
+row_47	BMP6	BMP6	bone morphogenetic protein 6	10350	-0.48718467354774475	0.12839842	No	
+row_48	SCARB1	SCARB1	scavenger receptor class B, member 1	10536	-0.5256268382072449	0.13186017	No	

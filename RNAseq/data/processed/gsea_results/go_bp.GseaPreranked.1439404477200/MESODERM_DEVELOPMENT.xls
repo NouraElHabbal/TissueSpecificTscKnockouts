@@ -1,0 +1,21 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	BTK	BTK	Bruton agammaglobulinemia tyrosine kinase	2419	0.5328501462936401	-0.12495387	No	
+row_1	SLIT2	SLIT2	slit homolog 2 (Drosophila)	2730	0.46876317262649536	-0.0847503	No	
+row_2	SMAD2	SMAD2	SMAD, mothers against DPP homolog 2 (Drosophila)	3661	0.3209042549133301	-0.11649967	No	
+row_3	TBX3	TBX3	T-box 3 (ulnar mammary syndrome)	5584	0.08045313507318497	-0.26391795	No	
+row_4	HCK	HCK	hemopoietic cell kinase	5607	0.07748937606811523	-0.25485712	No	
+row_5	KLF4	KLF4	Kruppel-like factor 4 (gut)	5903	0.04547528177499771	-0.2728336	No	
+row_6	MATK	MATK	megakaryocyte-associated tyrosine kinase	6054	0.028357967734336853	-0.28123933	No	
+row_7	MEST	MEST	mesoderm specific transcript homolog (mouse)	7060	-0.08587653189897537	-0.35217375	No	
+row_8	TBX6	TBX6	T-box 6	7597	-0.1435070037841797	-0.37629	No	
+row_9	TCF21	TCF21	transcription factor 21	7761	-0.1589290052652359	-0.36744043	No	
+row_10	TIE1	TIE1	tyrosine kinase with immunoglobulin-like and EGF-like domains 1	7764	-0.15908539295196533	-0.3452741	No	
+row_11	IKZF3	IKZF3	IKAROS family zinc finger 3 (Aiolos)	7935	-0.17062462866306305	-0.3353608	No	
+row_12	TRIM15	TRIM15	tripartite motif-containing 15	8438	-0.21822939813137054	-0.34618035	No	
+row_13	IKZF1	IKZF1	IKAROS family zinc finger 1 (Ikaros)	9915	-0.41278210282325745	-0.41011915	Yes	
+row_14	SNAI2	SNAI2	snail homolog 2 (Drosophila)	10163	-0.4549787640571594	-0.36664826	Yes	
+row_15	TCF15	TCF15	transcription factor 15 (basic helix-loop-helix)	10557	-0.5299419164657593	-0.3247106	Yes	
+row_16	EYA2	EYA2	eyes absent homolog 2 (Drosophila)	10731	-0.5692591071128845	-0.25908703	Yes	
+row_17	GDF11	GDF11	growth differentiation factor 11	10801	-0.5848940014839172	-0.18268079	Yes	
+row_18	BMX	BMX	BMX non-receptor tyrosine kinase	11354	-0.7546188235282898	-0.12233395	Yes	
+row_19	JAK2	JAK2	Janus kinase 2 (a protein tyrosine kinase)	11980	-1.3267970085144043	0.012303854	Yes	

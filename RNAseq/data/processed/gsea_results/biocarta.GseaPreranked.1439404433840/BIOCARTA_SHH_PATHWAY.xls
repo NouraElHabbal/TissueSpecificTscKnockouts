@@ -1,0 +1,16 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	PRKAR1B	PRKAR1B	protein kinase, cAMP-dependent, regulatory, type I, beta	1301	0.8876951336860657	0.024213333	No	
+row_1	PRKAR1A	PRKAR1A	protein kinase, cAMP-dependent, regulatory, type I, alpha (tissue specific extinguisher 1)	1567	0.7829664945602417	0.11841447	No	
+row_2	SHH	SHH	sonic hedgehog homolog (Drosophila)	4631	0.1911078691482544	-0.10608085	No	
+row_3	SMO	SMO	smoothened homolog (Drosophila)	6102	0.022946113720536232	-0.22401628	No	
+row_4	PRKACB	PRKACB	protein kinase, cAMP-dependent, catalytic, beta	6225	0.008203152567148209	-0.23287033	No	
+row_5	GSK3B	GSK3B	glycogen synthase kinase 3 beta	6556	-0.029070846736431122	-0.25579953	No	
+row_6	SUFU	SUFU	suppressor of fused homolog (Drosophila)	6895	-0.06777825206518173	-0.2736507	No	
+row_7	DYRK1A	DYRK1A	dual-specificity tyrosine-(Y)-phosphorylation regulated kinase 1A	8154	-0.1881352812051773	-0.34959784	No	
+row_8	GLI2	GLI2	GLI-Kruppel family member GLI2	8214	-0.19488632678985596	-0.32557592	No	
+row_9	PRKAR2A	PRKAR2A	protein kinase, cAMP-dependent, regulatory, type II, alpha	8847	-0.26610004901885986	-0.3382933	No	
+row_10	GLI3	GLI3	GLI-Kruppel family member GLI3 (Greig cephalopolysyndactyly syndrome)	8875	-0.26905250549316406	-0.3006349	No	
+row_11	GLI1	GLI1	glioma-associated oncogene homolog 1 (zinc finger protein)	11068	-0.6553441286087036	-0.38441283	Yes	
+row_12	DYRK1B	DYRK1B	dual-specificity tyrosine-(Y)-phosphorylation regulated kinase 1B	11745	-0.9980745911598206	-0.29224676	Yes	
+row_13	PTCH1	PTCH1	patched homolog 1 (Drosophila)	11793	-1.0530956983566284	-0.14000474	Yes	
+row_14	PRKAR2B	PRKAR2B	protein kinase, cAMP-dependent, regulatory, type II, beta	11866	-1.1309022903442383	0.021708565	Yes	

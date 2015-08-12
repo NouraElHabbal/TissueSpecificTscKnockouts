@@ -1,0 +1,22 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	EIF4A1	EIF4A1	eukaryotic translation initiation factor 4A, isoform 1	2055	0.6175678372383118	-0.09694805	No	
+row_1	PPP2CA	PPP2CA	protein phosphatase 2 (formerly 2A), catalytic subunit, alpha isoform	2414	0.5332838892936707	-0.06368254	No	
+row_2	PIK3R1	PIK3R1	phosphoinositide-3-kinase, regulatory subunit 1 (p85 alpha)	2710	0.4732910096645355	-0.032282524	No	
+row_3	PDPK1	PDPK1	3-phosphoinositide dependent protein kinase-1	3177	0.3933652341365814	-0.024420904	No	
+row_4	AKT1	AKT1	v-akt murine thymoma viral oncogene homolog 1	3901	0.28578126430511475	-0.050458465	No	
+row_5	TSC2	TSC2	tuberous sclerosis 2	4226	0.24241799116134644	-0.048654288	No	
+row_6	FKBP1A	FKBP1A	FK506 binding protein 1A, 12kDa	5277	0.11369951069355011	-0.12197084	No	
+row_7	EIF4EBP1	EIF4EBP1	eukaryotic translation initiation factor 4E binding protein 1	5363	0.10497656464576721	-0.116622314	No	
+row_8	PTEN	PTEN	phosphatase and tensin homolog (mutated in multiple advanced cancers 1)	6243	0.005244560074061155	-0.18859504	No	
+row_9	EIF4G2	EIF4G2	eukaryotic translation initiation factor 4 gamma, 2	6391	-0.009791167452931404	-0.1995812	No	
+row_10	PIK3CA	PIK3CA	phosphoinositide-3-kinase, catalytic, alpha polypeptide	6401	-0.011046390980482101	-0.199023	No	
+row_11	MKNK1	MKNK1	MAP kinase interacting serine/threonine kinase 1	6489	-0.021583521738648415	-0.20366481	No	
+row_12	RPS6KB1	RPS6KB1	ribosomal protein S6 kinase, 70kDa, polypeptide 1	7592	-0.14293615520000458	-0.27783108	No	
+row_13	EIF4E	EIF4E	eukaryotic translation initiation factor 4E	7847	-0.16444513201713562	-0.27943268	No	
+row_14	RPS6	RPS6	ribosomal protein S6	8496	-0.22425711154937744	-0.30652514	No	
+row_15	EIF4G1	EIF4G1	eukaryotic translation initiation factor 4 gamma, 1	8694	-0.24847310781478882	-0.2935195	No	
+row_16	EIF4G3	EIF4G3	eukaryotic translation initiation factor 4 gamma, 3	9355	-0.33272892236709595	-0.30882305	No	
+row_17	PDK2	PDK2	pyruvate dehydrogenase kinase, isozyme 2	10756	-0.5749912261962891	-0.35669538	Yes	
+row_18	EIF4B	EIF4B	eukaryotic translation initiation factor 4B	11627	-0.911708652973175	-0.32112733	Yes	
+row_19	EIF4A2	EIF4A2	eukaryotic translation initiation factor 4A, isoform 2	11663	-0.9388136863708496	-0.21340886	Yes	
+row_20	TSC1	TSC1	tuberous sclerosis 1	12112	-2.137284278869629	0.0014038224	Yes	

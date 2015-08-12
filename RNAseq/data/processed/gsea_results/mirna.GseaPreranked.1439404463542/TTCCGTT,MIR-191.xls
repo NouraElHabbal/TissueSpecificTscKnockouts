@@ -1,0 +1,25 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	NRCAM	NRCAM	neuronal cell adhesion molecule	4	5.009149551391602	0.36521226	Yes	
+row_1	EGR1	EGR1	early growth response 1	61	3.1635630130767822	0.5914475	Yes	
+row_2	SOX4	SOX4	SRY (sex determining region Y)-box 4	1926	0.655589759349823	0.4853159	No	
+row_3	BDNF	BDNF	brain-derived neurotrophic factor	2186	0.5866512656211853	0.5067324	No	
+row_4	CEBPB	CEBPB	CCAAT/enhancer binding protein (C/EBP), beta	3158	0.39626333117485046	0.45544156	No	
+row_5	FZD5	FZD5	frizzled homolog 5 (Drosophila)	3882	0.2880253791809082	0.41673777	No	
+row_6	MAPRE3	MAPRE3	microtubule-associated protein, RP/EB family, member 3	4567	0.19845496118068695	0.3747191	No	
+row_7	AP1G1	AP1G1	adaptor-related protein complex 1, gamma 1 subunit	4797	0.16702979803085327	0.36799186	No	
+row_8	AMMECR1	AMMECR1	Alport syndrome, mental retardation, midface hypoplasia and elliptocytosis chromosomal region, gene 1	4850	0.16058897972106934	0.37541544	No	
+row_9	PHC2	PHC2	polyhomeotic homolog 2 (Drosophila)	5312	0.10982386767864227	0.34534955	No	
+row_10	GAP43	GAP43	growth associated protein 43	5427	0.09771401435136795	0.3430634	No	
+row_11	PLCD1	PLCD1	phospholipase C, delta 1	5948	0.04049532860517502	0.30306464	No	
+row_12	MAP3K12	MAP3K12	mitogen-activated protein kinase kinase kinase 12	6205	0.010490130633115768	0.28268364	No	
+row_13	TAF5	TAF5	TAF5 RNA polymerase II, TATA box binding protein (TBP)-associated factor, 100kDa	6830	-0.06011158972978592	0.2355256	No	
+row_14	FOXP1	FOXP1	forkhead box P1	6964	-0.0750352218747139	0.230015	No	
+row_15	NDST1	NDST1	N-deacetylase/N-sulfotransferase (heparan glucosaminyl) 1	6987	-0.07733891159296036	0.23384152	No	
+row_16	OXSR1	OXSR1	oxidative-stress responsive 1	7183	-0.0995953306555748	0.22500177	No	
+row_17	ATP2B2	ATP2B2	ATPase, Ca++ transporting, plasma membrane 2	7255	-0.10749887675046921	0.22698164	No	
+row_18	BRMS1L	BRMS1L	breast cancer metastasis-suppressor 1-like	8367	-0.20968015491962433	0.15051037	No	
+row_19	WWP1	WWP1	WW domain containing E3 ubiquitin protein ligase 1	9561	-0.35758447647094727	0.07805892	No	
+row_20	CCND2	CCND2	cyclin D2	9695	-0.3775070607662201	0.09462121	No	
+row_21	RNF139	RNF139	ring finger protein 139	9864	-0.40309733152389526	0.11015982	No	
+row_22	TMOD2	TMOD2	tropomodulin 2 (neuronal)	10071	-0.43828698992729187	0.12512746	No	
+row_23	TJP1	TJP1	tight junction protein 1 (zona occludens 1)	10927	-0.6137488484382629	0.09928964	No	

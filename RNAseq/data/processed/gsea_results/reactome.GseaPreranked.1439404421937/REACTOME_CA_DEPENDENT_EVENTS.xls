@@ -1,0 +1,28 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	PRKAR1B	PRKAR1B	protein kinase, cAMP-dependent, regulatory, type I, beta	1301	0.8876951336860657	-0.0437553	No	
+row_1	PRKAR1A	PRKAR1A	protein kinase, cAMP-dependent, regulatory, type I, alpha (tissue specific extinguisher 1)	1567	0.7829664945602417	-0.009431763	No	
+row_2	ADCY7	ADCY7	adenylate cyclase 7	2568	0.5070524215698242	-0.055648282	No	
+row_3	PLA2G4A	PLA2G4A	phospholipase A2, group IVA (cytosolic, calcium-dependent)	2715	0.472551167011261	-0.033781063	No	
+row_4	PDE1B	PDE1B	phosphodiesterase 1B, calmodulin-dependent	2763	0.4623112678527832	-0.0044693006	No	
+row_5	PRKACA	PRKACA	protein kinase, cAMP-dependent, catalytic, alpha	4245	0.24078798294067383	-0.10954648	No	
+row_6	ADCY8	ADCY8	adenylate cyclase 8 (brain)	4630	0.191138356924057	-0.12754995	No	
+row_7	PRKACB	PRKACB	protein kinase, cAMP-dependent, catalytic, beta	6225	0.008203152567148209	-0.25866383	No	
+row_8	ADRBK1	ADRBK1	adrenergic, beta, receptor kinase 1	6752	-0.05122021213173866	-0.2984464	No	
+row_9	ADCY1	ADCY1	adenylate cyclase 1 (brain)	6882	-0.06600667536258698	-0.30436546	No	
+row_10	ADCY4	ADCY4	adenylate cyclase 4	7181	-0.09954988956451416	-0.32183954	No	
+row_11	MAPK1	MAPK1	mitogen-activated protein kinase 1	7694	-0.15220962464809418	-0.35321406	No	
+row_12	ADCY9	ADCY9	adenylate cyclase 9	8358	-0.20794396102428436	-0.39306298	No	
+row_13	PDE1A	PDE1A	phosphodiesterase 1A, calmodulin-dependent	8792	-0.2604628801345825	-0.41013736	No	
+row_14	PRKAR2A	PRKAR2A	protein kinase, cAMP-dependent, regulatory, type II, alpha	8847	-0.26610004901885986	-0.3954924	No	
+row_15	ADCY6	ADCY6	adenylate cyclase 6	9912	-0.41232919692993164	-0.45379823	Yes	
+row_16	CREB1	CREB1	cAMP responsive element binding protein 1	9998	-0.426373153924942	-0.43020666	Yes	
+row_17	ADCY2	ADCY2	adenylate cyclase 2 (brain)	10141	-0.4507461190223694	-0.4095746	Yes	
+row_18	PRKCA	PRKCA	protein kinase C, alpha	10690	-0.5605981945991516	-0.41460028	Yes	
+row_19	ADCY3	ADCY3	adenylate cyclase 3	10803	-0.5852764844894409	-0.3818299	Yes	
+row_20	CALM2	CALM2	calmodulin 2 (phosphorylase kinase, delta)	11309	-0.7378762364387512	-0.37057373	Yes	
+row_21	CALM3	CALM3	calmodulin 3 (phosphorylase kinase, delta)	11522	-0.8429415225982666	-0.32756475	Yes	
+row_22	CALM1	CALM1	calmodulin 1 (phosphorylase kinase, delta)	11602	-0.8956689834594727	-0.2697808	Yes	
+row_23	ADCY5	ADCY5	adenylate cyclase 5	11613	-0.9014852046966553	-0.20587817	Yes	
+row_24	PRKAR2B	PRKAR2B	protein kinase, cAMP-dependent, regulatory, type II, beta	11866	-1.1309022903442383	-0.14549787	Yes	
+row_25	PRKCD	PRKCD	protein kinase C, delta	11887	-1.1557705402374268	-0.06416316	Yes	
+row_26	CAMK4	CAMK4	calcium/calmodulin-dependent protein kinase IV	11895	-1.1709294319152832	0.019334108	Yes	

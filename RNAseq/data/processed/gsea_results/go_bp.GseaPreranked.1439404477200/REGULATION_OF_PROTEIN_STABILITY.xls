@@ -1,0 +1,16 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	APOA2	APOA2	apolipoprotein A-II	1041	1.0400770902633667	0.083196126	No	
+row_1	APTX	APTX	aprataxin	3507	0.34166067838668823	-0.06471462	No	
+row_2	COG7	COG7	component of oligomeric golgi complex 7	4473	0.2106156051158905	-0.1101206	No	
+row_3	STX12	STX12	syntaxin 12	5042	0.1404872089624405	-0.13416058	No	
+row_4	COG3	COG3	component of oligomeric golgi complex 3	5719	0.06486748903989792	-0.17941134	No	
+row_5	TBRG1	TBRG1	transforming growth factor beta regulator 1	6147	0.017829569056630135	-0.21175772	No	
+row_6	PTEN	PTEN	phosphatase and tensin homolog (mutated in multiple advanced cancers 1)	6243	0.005244560074061155	-0.21874644	No	
+row_7	GTPBP4	GTPBP4	GTP binding protein 4	6322	-0.003303069854155183	-0.22464764	No	
+row_8	FBXO7	FBXO7	F-box protein 7	6407	-0.01184609904885292	-0.22965495	No	
+row_9	HPS4	HPS4	Hermansky-Pudlak syndrome 4	8362	-0.20852364599704742	-0.35703543	No	
+row_10	MDM4	MDM4	Mdm4, transformed 3T3 cell double minute 4, p53 binding protein (mouse)	9906	-0.41122058033943176	-0.4175313	Yes	
+row_11	PPARGC1A	PPARGC1A	peroxisome proliferative activated receptor, gamma, coactivator 1, alpha	10779	-0.5797238349914551	-0.3952417	Yes	
+row_12	APOA1	APOA1	apolipoprotein A-I	11081	-0.6591801643371582	-0.31290033	Yes	
+row_13	PEX6	PEX6	peroxisomal biogenesis factor 6	11700	-0.9664286375045776	-0.2067645	Yes	
+row_14	AURKA	AURKA	aurora kinase A	12034	-1.4888306856155396	0.007841565	Yes	

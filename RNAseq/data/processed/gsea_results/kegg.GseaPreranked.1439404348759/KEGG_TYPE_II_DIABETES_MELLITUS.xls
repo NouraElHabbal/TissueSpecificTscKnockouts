@@ -1,0 +1,42 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GCK	GCK	glucokinase (hexokinase 4, maturity onset diabetes of the young 2)	237	2.0510990619659424	0.058339268	No	
+row_1	HK3	HK3	hexokinase 3 (white cell)	320	1.8004364967346191	0.11997468	No	
+row_2	HK1	HK1	hexokinase 1	401	1.6609030961990356	0.17647311	No	
+row_3	SLC2A2	SLC2A2	solute carrier family 2 (facilitated glucose transporter), member 2	534	1.4651333093643188	0.22123067	No	
+row_4	SOCS3	SOCS3	suppressor of cytokine signaling 3	685	1.2763375043869019	0.2573248	No	
+row_5	PIK3R3	PIK3R3	phosphoinositide-3-kinase, regulatory subunit 3 (p55, gamma)	1110	0.9966896176338196	0.26012686	No	
+row_6	CACNA1A	CACNA1A	calcium channel, voltage-dependent, P/Q type, alpha 1A subunit	1443	0.8260741233825684	0.26405552	No	
+row_7	PRKCZ	PRKCZ	protein kinase C, zeta	1957	0.6468119025230408	0.24619977	No	
+row_8	SOCS1	SOCS1	suppressor of cytokine signaling 1	2599	0.49888625741004944	0.21213454	No	
+row_9	CACNA1B	CACNA1B	calcium channel, voltage-dependent, L type, alpha 1B subunit	2639	0.48998919129371643	0.22752857	No	
+row_10	PIK3R1	PIK3R1	phosphoinositide-3-kinase, regulatory subunit 1 (p85 alpha)	2710	0.4732910096645355	0.23972373	No	
+row_11	PIK3R5	PIK3R5	phosphoinositide-3-kinase, regulatory subunit 5, p101	3114	0.40456610918045044	0.22176155	No	
+row_12	IKBKB	IKBKB	inhibitor of kappa light polypeptide gene enhancer in B-cells, kinase beta	3300	0.3716896176338196	0.22058298	No	
+row_13	TNF	TNF	tumor necrosis factor (TNF superfamily, member 2)	3632	0.3251151740550995	0.20555742	No	
+row_14	MAPK8	MAPK8	mitogen-activated protein kinase 8	3783	0.3046676516532898	0.20472713	No	
+row_15	SOCS4	SOCS4	suppressor of cytokine signaling 4	4328	0.22923637926578522	0.16843876	No	
+row_16	HK2	HK2	hexokinase 2	4403	0.21883800625801086	0.17063357	No	
+row_17	PIK3CD	PIK3CD	phosphoinositide-3-kinase, catalytic, delta polypeptide	5099	0.1356002688407898	0.11829623	No	
+row_18	CACNA1G	CACNA1G	calcium channel, voltage-dependent, alpha 1G subunit	5655	0.07301243394613266	0.07516127	No	
+row_19	PIK3CB	PIK3CB	phosphoinositide-3-kinase, catalytic, beta polypeptide	5754	0.06212668493390083	0.06941561	No	
+row_20	MAPK3	MAPK3	mitogen-activated protein kinase 3	5920	0.04387248307466507	0.057434034	No	
+row_21	ABCC8	ABCC8	ATP-binding cassette, sub-family C (CFTR/MRP), member 8	6123	0.020504068583250046	0.041503802	No	
+row_22	PIK3CG	PIK3CG	phosphoinositide-3-kinase, catalytic, gamma polypeptide	6362	-0.007406752556562424	0.022097945	No	
+row_23	PIK3CA	PIK3CA	phosphoinositide-3-kinase, catalytic, alpha polypeptide	6401	-0.011046390980482101	0.019374367	No	
+row_24	CACNA1D	CACNA1D	calcium channel, voltage-dependent, L type, alpha 1D subunit	6656	-0.04025756195187569	-1.0664176E-4	No	
+row_25	MAPK1	MAPK1	mitogen-activated protein kinase 1	7694	-0.15220962464809418	-0.08010299	No	
+row_26	PIK3R2	PIK3R2	phosphoinositide-3-kinase, regulatory subunit 2 (p85 beta)	9470	-0.34689271450042725	-0.21374841	No	
+row_27	MAPK9	MAPK9	mitogen-activated protein kinase 9	9660	-0.37191474437713623	-0.21524931	No	
+row_28	SLC2A4	SLC2A4	solute carrier family 2 (facilitated glucose transporter), member 4	10437	-0.5049959421157837	-0.26024953	No	
+row_29	INSR	INSR	insulin receptor	10518	-0.5214775800704956	-0.24705043	No	
+row_30	SOCS2	SOCS2	suppressor of cytokine signaling 2	11146	-0.6810896992683411	-0.27303368	Yes	
+row_31	CACNA1C	CACNA1C	calcium channel, voltage-dependent, L type, alpha 1C subunit	11287	-0.7280485033988953	-0.25694785	Yes	
+row_32	ADIPOQ	ADIPOQ	adiponectin, C1Q and collagen domain containing	11337	-0.7462906241416931	-0.23264131	Yes	
+row_33	KCNJ11	KCNJ11	potassium inwardly-rectifying channel, subfamily J, member 11	11356	-0.7555667161941528	-0.20541796	Yes	
+row_34	IRS2	IRS2	insulin receptor substrate 2	11418	-0.7840346097946167	-0.18066975	Yes	
+row_35	IRS1	IRS1	insulin receptor substrate 1	11554	-0.8647452592849731	-0.15897572	Yes	
+row_36	PRKCE	PRKCE	protein kinase C, epsilon	11649	-0.9268964529037476	-0.13152836	Yes	
+row_37	MAFA	MAFA	v-maf musculoaponeurotic fibrosarcoma oncogene homolog A (avian)	11661	-0.9371459484100342	-0.09682578	Yes	
+row_38	CACNA1E	CACNA1E	calcium channel, voltage-dependent, alpha 1E subunit	11802	-1.0640448331832886	-0.06797176	Yes	
+row_39	PRKCD	PRKCD	protein kinase C, delta	11887	-1.1557705402374268	-0.030999754	Yes	
+row_40	MAPK10	MAPK10	mitogen-activated protein kinase 10	11982	-1.3403613567352295	0.012159691	Yes	

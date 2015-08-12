@@ -1,0 +1,18 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	FOS	FOS	v-fos FBJ murine osteosarcoma viral oncogene homolog	133	2.5163488388061523	0.35898528	Yes	
+row_1	NGFR	NGFR	nerve growth factor receptor (TNFR superfamily, member 16)	1299	0.8886855840682983	0.3934663	Yes	
+row_2	SHC1	SHC1	SHC (Src homology 2 domain containing) transforming protein 1	2005	0.630021870136261	0.42789307	Yes	
+row_3	PIK3R1	PIK3R1	phosphoinositide-3-kinase, regulatory subunit 1 (p85 alpha)	2710	0.4732910096645355	0.43935913	Yes	
+row_4	GRB2	GRB2	growth factor receptor-bound protein 2	2898	0.44215285778045654	0.48892853	Yes	
+row_5	MAPK8	MAPK8	mitogen-activated protein kinase 8	3783	0.3046676516532898	0.46074274	No	
+row_6	CSNK2A1	CSNK2A1	casein kinase 2, alpha 1 polypeptide	4424	0.2161599099636078	0.43968776	No	
+row_7	RAF1	RAF1	v-raf-1 murine leukemia viral oncogene homolog 1	5053	0.1394452005624771	0.4083445	No	
+row_8	ELK1	ELK1	ELK1, member of ETS oncogene family	5075	0.13776621222496033	0.42686588	No	
+row_9	SOS1	SOS1	son of sevenless homolog 1 (Drosophila)	5642	0.07439659535884857	0.39107734	No	
+row_10	MAPK3	MAPK3	mitogen-activated protein kinase 3	5920	0.04387248307466507	0.3746597	No	
+row_11	PIK3CG	PIK3CG	phosphoinositide-3-kinase, catalytic, gamma polypeptide	6362	-0.007406752556562424	0.3393415	No	
+row_12	MAP2K1	MAP2K1	mitogen-activated protein kinase kinase 1	6392	-0.009804394096136093	0.33838886	No	
+row_13	PIK3CA	PIK3CA	phosphoinositide-3-kinase, catalytic, alpha polypeptide	6401	-0.011046390980482101	0.3393525	No	
+row_14	PLCG1	PLCG1	phospholipase C, gamma 1	7733	-0.15622419118881226	0.25243935	No	
+row_15	HRAS	HRAS	v-Ha-ras Harvey rat sarcoma viral oncogene homolog	8509	-0.22525131702423096	0.22157599	No	
+row_16	JUN	JUN	jun oncogene	10534	-0.5250408053398132	0.13167672	No	

@@ -1,0 +1,18 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GABRB3	GABRB3	gamma-aminobutyric acid (GABA) A receptor, beta 3	30	3.606020212173462	0.16544794	Yes	
+row_1	GLRB	GLRB	glycine receptor, beta	149	2.4263782501220703	0.26869756	Yes	
+row_2	GLRA3	GLRA3	glycine receptor, alpha 3	179	2.2762513160705566	0.37230355	Yes	
+row_3	GABRB2	GABRB2	gamma-aminobutyric acid (GABA) A receptor, beta 2	221	2.0943496227264404	0.46644813	Yes	
+row_4	GABRA5	GABRA5	gamma-aminobutyric acid (GABA) A receptor, alpha 5	345	1.7614176273345947	0.5383192	Yes	
+row_5	GABRG2	GABRG2	gamma-aminobutyric acid (GABA) A receptor, gamma 2	674	1.2837607860565186	0.5710228	Yes	
+row_6	GABRA4	GABRA4	gamma-aminobutyric acid (GABA) A receptor, alpha 4	1102	0.9983245730400085	0.58226126	Yes	
+row_7	GLRA1	GLRA1	glycine receptor, alpha 1 (startle disease/hyperekplexia, stiff man syndrome)	3373	0.3599158227443695	0.41161978	No	
+row_8	GABRR1	GABRR1	gamma-aminobutyric acid (GABA) receptor, rho 1	4582	0.19715516269207	0.32107332	No	
+row_9	GLRA2	GLRA2	glycine receptor, alpha 2	8079	-0.18282656371593475	0.04097161	No	
+row_10	GABRA2	GABRA2	gamma-aminobutyric acid (GABA) A receptor, alpha 2	9329	-0.32907941937446594	-0.04681623	No	
+row_11	ARHGEF9	ARHGEF9	Cdc42 guanine nucleotide exchange factor (GEF) 9	11017	-0.6412323117256165	-0.15622728	No	
+row_12	GABRR2	GABRR2	gamma-aminobutyric acid (GABA) receptor, rho 2	11535	-0.855783224105835	-0.15905671	No	
+row_13	GABRG3	GABRG3	gamma-aminobutyric acid (GABA) A receptor, gamma 3	11634	-0.9151485562324524	-0.12453069	No	
+row_14	GABRA3	GABRA3	gamma-aminobutyric acid (GABA) A receptor, alpha 3	11847	-1.1037763357162476	-0.09063206	No	
+row_15	HTR3B	HTR3B	5-hydroxytryptamine (serotonin) receptor 3B	11893	-1.1691371202468872	-0.039902873	No	
+row_16	GABRA1	GABRA1	gamma-aminobutyric acid (GABA) A receptor, alpha 1	11953	-1.2734845876693726	0.0145297665	No	

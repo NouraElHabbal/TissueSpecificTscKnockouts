@@ -1,0 +1,82 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SLC24A1	SLC24A1	solute carrier family 24 (sodium/potassium/calcium exchanger), member 1	35	3.537324905395508	0.053727306	Yes	
+row_1	SLC6A19	SLC6A19	solute carrier family 6 (neutral amino acid transporter), member 19	82	2.9669487476348877	0.09741003	Yes	
+row_2	SLC1A1	SLC1A1	solute carrier family 1 (neuronal/epithelial high affinity glutamate transporter, system Xag), member 1	109	2.7009599208831787	0.1384942	Yes	
+row_3	SLC3A1	SLC3A1	 1	126	2.5536441802978516	0.17804979	Yes	
+row_4	SLC17A7	SLC17A7	solute carrier family 17 (sodium-dependent inorganic phosphate cotransporter), member 7	163	2.346935510635376	0.21263613	Yes	
+row_5	SLC7A5	SLC7A5	solute carrier family 7 (cationic amino acid transporter, y+ system), member 5	172	2.2902958393096924	0.24863951	Yes	
+row_6	SLC24A2	SLC24A2	solute carrier family 24 (sodium/potassium/calcium exchanger), member 2	176	2.282374143600464	0.28493103	Yes	
+row_7	SLC1A2	SLC1A2	solute carrier family 1 (glial high affinity glutamate transporter), member 2	290	1.8980650901794434	0.30594045	Yes	
+row_8	SLC1A4	SLC1A4	solute carrier family 1 (glutamate/neutral amino acid transporter), member 4	313	1.8239651918411255	0.33331603	Yes	
+row_9	SLC5A5	SLC5A5	solute carrier family 5 (sodium iodide symporter), member 5	469	1.5452853441238403	0.3451917	Yes	
+row_10	SLC7A1	SLC7A1	solute carrier family 7 (cationic amino acid transporter, y+ system), member 1	570	1.41266930103302	0.3595089	Yes	
+row_11	SLC43A2	SLC43A2	solute carrier family 43, member 2	681	1.2785937786102295	0.37084964	Yes	
+row_12	SLC4A3	SLC4A3	solute carrier family 4, anion exchanger, member 3	842	1.1528325080871582	0.37602723	Yes	
+row_13	SLC6A18	SLC6A18	solute carrier family 6, member 18	873	1.1321157217025757	0.39166242	Yes	
+row_14	SLC7A3	SLC7A3	solute carrier family 7 (cationic amino acid transporter, y+ system), member 3	985	1.067368984222412	0.3995385	Yes	
+row_15	SLC17A6	SLC17A6	solute carrier family 17 (sodium-dependent inorganic phosphate cotransporter), member 6	1004	1.05855393409729	0.4149919	Yes	
+row_16	SLC9A4	SLC9A4	solute carrier family 9 (sodium/hydrogen exchanger), member 4	1084	1.0097936391830444	0.424602	Yes	
+row_17	SLC7A11	SLC7A11	solute carrier family 7, (cationic amino acid transporter, y+ system) member 11	1124	0.9876813292503357	0.43717787	Yes	
+row_18	SLC4A5	SLC4A5	solute carrier family 4, sodium bicarbonate cotransporter, member 5	1138	0.980903148651123	0.45180306	Yes	
+row_19	SLC38A1	SLC38A1	solute carrier family 38, member 1	1185	0.9471172094345093	0.46314853	Yes	
+row_20	SLC12A7	SLC12A7	solute carrier family 12 (potassium/chloride transporters), member 7	1219	0.9308008551597595	0.47531173	Yes	
+row_21	SLC17A8	SLC17A8	solute carrier family 17 (sodium-dependent inorganic phosphate cotransporter), member 8	1613	0.7702000141143799	0.4550257	Yes	
+row_22	SLC1A7	SLC1A7	solute carrier family 1 (glutamate transporter), member 7	1639	0.7599436044692993	0.46511745	Yes	
+row_23	SLC6A6	SLC6A6	solute carrier family 6 (neurotransmitter transporter, taurine), member 6	1752	0.7124213576316833	0.46722785	Yes	
+row_24	SLC6A15	SLC6A15	solute carrier family 6, member 15	1987	0.6345852017402649	0.45796677	Yes	
+row_25	SLC25A10	SLC25A10	solute carrier family 25 (mitochondrial carrier; dicarboxylate transporter), member 10	1992	0.6339592933654785	0.4677844	Yes	
+row_26	SLC9A9	SLC9A9	solute carrier family 9 (sodium/hydrogen exchanger), member 9	2025	0.6241846680641174	0.4751217	Yes	
+row_27	SLC7A6	SLC7A6	solute carrier family 7 (cationic amino acid transporter, y+ system), member 6	2042	0.6214003562927246	0.48374233	Yes	
+row_28	SLC6A12	SLC6A12	solute carrier family 6 (neurotransmitter transporter, betaine/GABA), member 12	2083	0.6085417866706848	0.49016523	Yes	
+row_29	SLC15A3	SLC15A3	solute carrier family 15, member 3	2262	0.5731812119483948	0.48456877	No	
+row_30	SLC15A4	SLC15A4	solute carrier family 15, member 4	2343	0.5522562265396118	0.48677075	No	
+row_31	SLC4A7	SLC4A7	solute carrier family 4, sodium bicarbonate cotransporter, member 7	2563	0.5090163350105286	0.47674426	No	
+row_32	SLC9A2	SLC9A2	solute carrier family 9 (sodium/hydrogen exchanger), member 2	3061	0.4110519587993622	0.44207692	No	
+row_33	SLC20A1	SLC20A1	solute carrier family 20 (phosphate transporter), member 1	3113	0.40506717562675476	0.44432926	No	
+row_34	SLC3A2	SLC3A2	solute carrier family 3 (activators of dibasic and neutral amino acid transport), member 2	3214	0.38459330797195435	0.44218713	No	
+row_35	SLC7A7	SLC7A7	solute carrier family 7 (cationic amino acid transporter, y+ system), member 7	3495	0.34287717938423157	0.4244381	No	
+row_36	SLC12A4	SLC12A4	solute carrier family 12 (potassium/chloride transporters), member 4	3807	0.30054646730422974	0.40343854	No	
+row_37	SLC9A7	SLC9A7	solute carrier family 9 (sodium/hydrogen exchanger), member 7	3897	0.2861633598804474	0.40063345	No	
+row_38	SLC24A5	SLC24A5	solute carrier family 24, member 5	4064	0.2664409577846527	0.39112207	No	
+row_39	SLC8A2	SLC8A2	solute carrier family 8 (sodium-calcium exchanger), member 2	4184	0.24864821135997772	0.38522658	No	
+row_40	SLC38A2	SLC38A2	solute carrier family 38, member 2	4274	0.2359844297170639	0.38161814	No	
+row_41	SLC20A2	SLC20A2	solute carrier family 20 (phosphate transporter), member 2	4615	0.1926315426826477	0.35648403	No	
+row_42	SLC36A1	SLC36A1	solute carrier family 36 (proton/amino acid symporter), member 1	4734	0.17672106623649597	0.34951997	No	
+row_43	SLC9A6	SLC9A6	solute carrier family 9 (sodium/hydrogen exchanger), member 6	4822	0.16446451842784882	0.34493253	No	
+row_44	SLC17A5	SLC17A5	solute carrier family 17 (anion/sugar transporter), member 5	5111	0.13437892496585846	0.3231815	No	
+row_45	SLC26A7	SLC26A7	solute carrier family 26, member 7	5213	0.12209047377109528	0.31675372	No	
+row_46	SLC26A1	SLC26A1	solute carrier family 26 (sulfate transporter), member 1	5295	0.11133760958909988	0.31181365	No	
+row_47	SLC4A2	SLC4A2	solute carrier family 4, anion exchanger, member 2 (erythrocyte membrane protein band 3-like 1)	6022	0.033027082681655884	0.25208846	No	
+row_48	SLC9A1	SLC9A1	solute carrier family 9 (sodium/hydrogen exchanger), member 1 (antiporter, Na+/H+, amiloride sensitive)	6280	8.794472087174654E-4	0.23077297	No	
+row_49	SLC26A2	SLC26A2	solute carrier family 26 (sulfate transporter), member 2	6561	-0.029410632327198982	0.20800538	No	
+row_50	SLC26A6	SLC26A6	solute carrier family 26, member 6	7261	-0.10897203534841537	0.1517369	No	
+row_51	SLC9A5	SLC9A5	solute carrier family 9 (sodium/hydrogen exchanger), member 5	7411	-0.12472811341285706	0.14136761	No	
+row_52	SLC5A8	SLC5A8	solute carrier family 5 (iodide transporter), member 8	7531	-0.13946035504341125	0.13372402	No	
+row_53	SLC9A8	SLC9A8	solute carrier family 9 (sodium/hydrogen exchanger), member 8	7789	-0.16178002953529358	0.11498452	No	
+row_54	SLC12A2	SLC12A2	solute carrier family 12 (sodium/potassium/chloride transporters), member 2	7941	-0.17148901522159576	0.10519788	No	
+row_55	SLC12A5	SLC12A5	solute carrier family 12, (potassium-chloride transporter) member 5	8186	-0.1918121725320816	0.08801813	No	
+row_56	SLC26A3	SLC26A3	solute carrier family 26, member 3	8216	-0.19498518109321594	0.08873297	No	
+row_57	SLC36A2	SLC36A2	solute carrier family 36 (proton/amino acid symporter), member 2	8325	-0.2048213630914688	0.08304874	No	
+row_58	SLC12A6	SLC12A6	solute carrier family 12 (potassium/chloride transporters), member 6	8657	-0.24347785115242004	0.059475627	No	
+row_59	SLC4A9	SLC4A9	solute carrier family 4, sodium bicarbonate cotransporter, member 9	9477	-0.3486141860485077	-0.0029155528	No	
+row_60	SLC9A3	SLC9A3	solute carrier family 9 (sodium/hydrogen exchanger), member 3	9504	-0.35173842310905457	5.578785E-4	No	
+row_61	SLC24A4	SLC24A4	solute carrier family 24 (sodium/potassium/calcium exchanger), member 4	9506	-0.3519209325313568	0.006109093	No	
+row_62	SLC8A3	SLC8A3	solute carrier family 8 (sodium-calcium exchanger), member 3	9797	-0.39231041073799133	-0.011678456	No	
+row_63	SLC16A10	SLC16A10	solute carrier family 16, member 10 (aromatic amino acid transporter)	9856	-0.4023449420928955	-0.010050643	No	
+row_64	SLC7A8	SLC7A8	solute carrier family 7 (cationic amino acid transporter, y+ system), member 8	9938	-0.41682520508766174	-0.010099876	No	
+row_65	SLC15A1	SLC15A1	solute carrier family 15 (oligopeptide transporter), member 1	9988	-0.42414185404777527	-0.007376147	No	
+row_66	SLC8A1	SLC8A1	solute carrier family 8 (sodium/calcium exchanger), member 1	10119	-0.4469558894634247	-0.011009718	No	
+row_67	SLC38A3	SLC38A3	solute carrier family 38, member 3	10261	-0.4723668098449707	-0.015149403	No	
+row_68	SLC43A1	SLC43A1	solute carrier family 43, member 1	10327	-0.48369359970092773	-0.01280017	No	
+row_69	SLC4A1	SLC4A1	solute carrier family 4, anion exchanger, member 1 (erythrocyte membrane protein band 3, Diego blood group)	10683	-0.5590425133705139	-0.033313	No	
+row_70	SLC7A2	SLC7A2	solute carrier family 7 (cationic amino acid transporter, y+ system), member 2	10727	-0.5683084726333618	-0.027783215	No	
+row_71	SLC1A3	SLC1A3	solute carrier family 1 (glial high affinity glutamate transporter), member 3	10744	-0.5720112919807434	-0.0199533	No	
+row_72	SLC7A10	SLC7A10	solute carrier family 7, (neutral amino acid transporter, y+ system) member 10	10978	-0.6320870518684387	-0.029171372	No	
+row_73	SLC1A5	SLC1A5	solute carrier family 1 (neutral amino acid transporter), member 5	11077	-0.6577766537666321	-0.02677391	No	
+row_74	SLC24A3	SLC24A3	solute carrier family 24 (sodium/potassium/calcium exchanger), member 3	11370	-0.7610952258110046	-0.03882325	No	
+row_75	SLC26A9	SLC26A9	solute carrier family 26, member 9	11417	-0.783528745174408	-0.0300968	No	
+row_76	SLC15A2	SLC15A2	solute carrier family 15 (H+/peptide transporter), member 2	11436	-0.7916742563247681	-0.018916098	No	
+row_77	SLC38A5	SLC38A5	solute carrier family 38, member 5	11647	-0.925225555896759	-0.02153219	No	
+row_78	SLC4A8	SLC4A8	solute carrier family 4, sodium bicarbonate cotransporter, member 8	11668	-0.9409129023551941	-0.008128184	No	
+row_79	SLC38A4	SLC38A4	solute carrier family 38, member 4	11770	-1.0251879692077637	-9.749618E-5	No	
+row_80	SLC4A4	SLC4A4	solute carrier family 4, sodium bicarbonate cotransporter, member 4	12097	-1.8619358539581299	0.0026556684	No	

@@ -1,0 +1,53 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	IHH	IHH	Indian hedgehog homolog (Drosophila)	881	1.1267186403274536	-0.027596729	No	
+row_1	WNT16	WNT16	wingless-type MMTV integration site family, member 16	1050	1.035386562347412	1.6375276E-4	No	
+row_2	CSNK1G3	CSNK1G3	casein kinase 1, gamma 3	1244	0.9183950424194336	0.021145927	No	
+row_3	PRKX	PRKX	protein kinase, X-linked	1365	0.8588340282440186	0.045775063	No	
+row_4	WNT10A	WNT10A	wingless-type MMTV integration site family, member 10A	1872	0.671026349067688	0.030886771	No	
+row_5	STK36	STK36	serine/threonine kinase 36 (fused homolog, Drosophila)	2282	0.5696158409118652	0.019948253	No	
+row_6	WNT3A	WNT3A	wingless-type MMTV integration site family, member 3A	2453	0.527280330657959	0.027093949	No	
+row_7	LRP2	LRP2	low density lipoprotein-related protein 2	2860	0.44265830516815186	0.011294295	No	
+row_8	WNT7B	WNT7B	wingless-type MMTV integration site family, member 7B	3035	0.41631728410720825	0.013643002	No	
+row_9	WNT5B	WNT5B	wingless-type MMTV integration site family, member 5B	3043	0.4154477119445801	0.029783506	No	
+row_10	WNT9A	WNT9A	wingless-type MMTV integration site family, member 9A	3896	0.28631162643432617	-0.029235106	No	
+row_11	PRKACA	PRKACA	protein kinase, cAMP-dependent, catalytic, alpha	4245	0.24078798294067383	-0.04835709	No	
+row_12	BMP2	BMP2	bone morphogenetic protein 2	4616	0.19254638254642487	-0.0712421	No	
+row_13	SHH	SHH	sonic hedgehog homolog (Drosophila)	4631	0.1911078691482544	-0.064709924	No	
+row_14	DHH	DHH	desert hedgehog homolog (Drosophila)	4691	0.18303391337394714	-0.06222847	No	
+row_15	CSNK1G1	CSNK1G1	casein kinase 1, gamma 1	5222	0.12052132934331894	-0.10125942	No	
+row_16	WNT2	WNT2	wingless-type MMTV integration site family member 2	5391	0.10215148329734802	-0.111057825	No	
+row_17	WNT11	WNT11	wingless-type MMTV integration site family, member 11	5458	0.09464418143033981	-0.11271327	No	
+row_18	BTRC	BTRC	beta-transducin repeat containing	5467	0.09368111938238144	-0.10960535	No	
+row_19	CSNK1A1	CSNK1A1	casein kinase 1, alpha 1	5472	0.09313198179006577	-0.10618835	No	
+row_20	SMO	SMO	smoothened homolog (Drosophila)	6102	0.022946113720536232	-0.15734302	No	
+row_21	PRKACB	PRKACB	protein kinase, cAMP-dependent, catalytic, beta	6225	0.008203152567148209	-0.16711389	No	
+row_22	GAS1	GAS1	growth arrest-specific 1	6394	-0.010022148489952087	-0.18062012	No	
+row_23	CSNK1G2	CSNK1G2	casein kinase 1, gamma 2	6548	-0.02803645469248295	-0.19215943	No	
+row_24	GSK3B	GSK3B	glycogen synthase kinase 3 beta	6556	-0.029070846736431122	-0.19156902	No	
+row_25	WNT8B	WNT8B	wingless-type MMTV integration site family, member 8B	6638	-0.037663981318473816	-0.19675961	No	
+row_26	SUFU	SUFU	suppressor of fused homolog (Drosophila)	6895	-0.06777825206518173	-0.21522737	No	
+row_27	FBXW11	FBXW11	F-box and WD-40 domain protein 11	7164	-0.09763219207525253	-0.23348717	No	
+row_28	HHIP	HHIP	hedgehog interacting protein	7242	-0.10568781197071075	-0.2356089	No	
+row_29	BMP8B	BMP8B	bone morphogenetic protein 8b (osteogenic protein 2)	7715	-0.15474042296409607	-0.26846054	No	
+row_30	WNT3	WNT3	wingless-type MMTV integration site family, member 3	7760	-0.1589290052652359	-0.2657073	No	
+row_31	BMP4	BMP4	bone morphogenetic protein 4	7852	-0.16501924395561218	-0.2666003	No	
+row_32	GLI2	GLI2	GLI-Kruppel family member GLI2	8214	-0.19488632678985596	-0.28864598	No	
+row_33	RAB23	RAB23	RAB23, member RAS oncogene family	8252	-0.19696743786334991	-0.28378227	No	
+row_34	CSNK1D	CSNK1D	casein kinase 1, delta	8385	-0.2121337205171585	-0.28617373	No	
+row_35	GLI3	GLI3	GLI-Kruppel family member GLI3 (Greig cephalopolysyndactyly syndrome)	8875	-0.26905250549316406	-0.3158323	No	
+row_36	WNT6	WNT6	wingless-type MMTV integration site family, member 6	9343	-0.33145204186439514	-0.34115806	No	
+row_37	ZIC2	ZIC2	Zic family member 2 (odd-paired homolog, Drosophila)	9400	-0.3390922248363495	-0.3321475	No	
+row_38	BMP6	BMP6	bone morphogenetic protein 6	10350	-0.48718467354774475	-0.39111292	No	
+row_39	WNT1	WNT1	wingless-type MMTV integration site family, member 1	10463	-0.5092160701751709	-0.37989214	No	
+row_40	GLI1	GLI1	glioma-associated oncogene homolog 1 (zinc finger protein)	11068	-0.6553441286087036	-0.4035255	Yes	
+row_41	CSNK1E	CSNK1E	casein kinase 1, epsilon	11151	-0.6822547912597656	-0.38285673	Yes	
+row_42	WNT5A	WNT5A	wingless-type MMTV integration site family, member 5A	11331	-0.7443276047706604	-0.36772093	Yes	
+row_43	WNT10B	WNT10B	wingless-type MMTV integration site family, member 10B	11355	-0.7548301219940186	-0.3392464	Yes	
+row_44	WNT2B	WNT2B	wingless-type MMTV integration site family, member 2B	11442	-0.794241726398468	-0.3144018	Yes	
+row_45	WNT9B	WNT9B	wingless-type MMTV integration site family, member 9B	11564	-0.8687945604324341	-0.2894546	Yes	
+row_46	PTCH2	PTCH2	patched homolog 2 (Drosophila)	11676	-0.9480558633804321	-0.2604895	Yes	
+row_47	PTCH1	PTCH1	patched homolog 1 (Drosophila)	11793	-1.0530956983566284	-0.22771095	Yes	
+row_48	BMP8A	BMP8A	bone morphogenetic protein 8a	11930	-1.2401845455169678	-0.18905874	Yes	
+row_49	BMP7	BMP7	bone morphogenetic protein 7 (osteogenic protein 1)	12055	-1.5717023611068726	-0.13607076	Yes	
+row_50	BMP5	BMP5	bone morphogenetic protein 5	12066	-1.6299618482589722	-0.07129941	Yes	
+row_51	WNT4	WNT4	wingless-type MMTV integration site family, member 4	12103	-1.8991427421569824	0.0021526804	Yes	

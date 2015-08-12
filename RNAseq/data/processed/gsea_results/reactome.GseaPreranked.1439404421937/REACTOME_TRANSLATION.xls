@@ -1,0 +1,126 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GSPT2	GSPT2	G1 to S phase transition 2	697	1.2588064670562744	-0.030028006	No	
+row_1	RPL3	RPL3	ribosomal protein L3	1218	0.9308555126190186	-0.052614976	No	
+row_2	EIF4A1	EIF4A1	eukaryotic translation initiation factor 4A, isoform 1	2055	0.6175678372383118	-0.10850061	No	
+row_3	SPCS3	SPCS3	signal peptidase complex subunit 3 homolog (S. cerevisiae)	2308	0.5604174137115479	-0.11701247	No	
+row_4	EEF1A1	EEF1A1	eukaryotic translation elongation factor 1 alpha 1	2922	0.43704211711883545	-0.15834247	No	
+row_5	RPLP0	RPLP0	ribosomal protein, large, P0	3417	0.35282397270202637	-0.1916353	No	
+row_6	SEC61A1	SEC61A1	Sec61 alpha 1 subunit (S. cerevisiae)	3546	0.3365928530693054	-0.19480225	No	
+row_7	SRP9	SRP9	signal recognition particle 9kDa	3843	0.29356345534324646	-0.21292157	No	
+row_8	EIF2B4	EIF2B4	eukaryotic translation initiation factor 2B, subunit 4 delta, 67kDa	4329	0.22923237085342407	-0.24821685	No	
+row_9	SRP14	SRP14	signal recognition particle 14kDa (homologous Alu RNA binding protein)	4384	0.2214002162218094	-0.24778484	No	
+row_10	SSR1	SSR1	signal sequence receptor, alpha (translocon-associated protein alpha)	4491	0.20720519125461578	-0.25200045	No	
+row_11	TRAM1	TRAM1	translocation associated membrane protein 1	4670	0.18611709773540497	-0.26268312	No	
+row_12	RPL41	RPL41	ribosomal protein L41	5043	0.14038750529289246	-0.29054406	No	
+row_13	SRP19	SRP19	signal recognition particle 19kDa	5139	0.13127869367599487	-0.29553413	No	
+row_14	EIF2B5	EIF2B5	eukaryotic translation initiation factor 2B, subunit 5 epsilon, 82kDa	5184	0.1250821352005005	-0.29641393	No	
+row_15	EIF4EBP1	EIF4EBP1	eukaryotic translation initiation factor 4E binding protein 1	5363	0.10497656464576721	-0.30890346	No	
+row_16	SRPRB	SRPRB	signal recognition particle receptor, B subunit	5486	0.09150529652833939	-0.31702825	No	
+row_17	RPS29	RPS29	ribosomal protein S29	5520	0.08765663951635361	-0.31782517	No	
+row_18	ETF1	ETF1	eukaryotic translation termination factor 1	5540	0.08447235077619553	-0.31752682	No	
+row_19	EIF2S1	EIF2S1	eukaryotic translation initiation factor 2, subunit 1 alpha, 35kDa	5548	0.08359774202108383	-0.31624833	No	
+row_20	EEF1G	EEF1G	eukaryotic translation elongation factor 1 gamma	5780	0.05892791226506233	-0.33417812	No	
+row_21	RPN1	RPN1	ribophorin I	5862	0.04943734034895897	-0.33982444	No	
+row_22	SPCS1	SPCS1	signal peptidase complex subunit 1 homolog (S. cerevisiae)	5867	0.048928458243608475	-0.33906808	No	
+row_23	RPS19	RPS19	ribosomal protein S19	5897	0.04578066244721413	-0.3404643	No	
+row_24	RPLP1	RPLP1	ribosomal protein, large, P1	6140	0.018190287053585052	-0.3602175	No	
+row_25	SSR3	SSR3	signal sequence receptor, gamma (translocon-associated protein gamma)	6173	0.014505397528409958	-0.36256006	No	
+row_26	EIF2B1	EIF2B1	eukaryotic translation initiation factor 2B, subunit 1 alpha, 26kDa	6185	0.013026588596403599	-0.36318627	No	
+row_27	EIF5B	EIF5B	eukaryotic translation initiation factor 5B	6187	0.012837482616305351	-0.3629837	No	
+row_28	DDOST	DDOST	dolichyl-diphosphooligosaccharide-protein glycosyltransferase	6347	-0.005784620065242052	-0.37609938	No	
+row_29	RPL11	RPL11	ribosomal protein L11	6485	-0.020793072879314423	-0.38704824	No	
+row_30	RPS27A	RPS27A	ribosomal protein S27a	6701	-0.045302003622055054	-0.40394866	No	
+row_31	RPL18	RPL18	ribosomal protein L18	6755	-0.051506876945495605	-0.40721655	No	
+row_32	RPL37A	RPL37A	ribosomal protein L37a	6781	-0.05445905402302742	-0.40808633	No	
+row_33	UBA52	UBA52	ubiquitin A-52 residue ribosomal protein fusion product 1	6822	-0.05915054678916931	-0.4101011	No	
+row_34	RPS2	RPS2	ribosomal protein S2	6899	-0.06823853403329849	-0.41491225	No	
+row_35	EIF2B3	EIF2B3	eukaryotic translation initiation factor 2B, subunit 3 gamma, 58kDa	7029	-0.08214806765317917	-0.4238285	No	
+row_36	EIF5	EIF5	eukaryotic translation initiation factor 5	7254	-0.10703577846288681	-0.44010392	No	
+row_37	RPS14	RPS14	ribosomal protein S14	7307	-0.11460105329751968	-0.4418835	No	
+row_38	RPL6	RPL6	ribosomal protein L6	7361	-0.1191999539732933	-0.443644	No	
+row_39	RPS3	RPS3	ribosomal protein S3	7463	-0.13208943605422974	-0.44911578	No	
+row_40	SPCS2	SPCS2	signal peptidase complex subunit 2 homolog (S. cerevisiae)	7466	-0.13242749869823456	-0.44633347	No	
+row_41	RPL35A	RPL35A	ribosomal protein L35a	7483	-0.13403715193271637	-0.44468153	No	
+row_42	RPL9	RPL9	ribosomal protein L9	7497	-0.13564974069595337	-0.44274375	No	
+row_43	SSR2	SSR2	signal sequence receptor, beta (translocon-associated protein beta)	7521	-0.1385968029499054	-0.44157332	No	
+row_44	EIF4E	EIF4E	eukaryotic translation initiation factor 4E	7847	-0.16444513201713562	-0.46498352	No	
+row_45	RPSA	RPSA	ribosomal protein SA	7872	-0.16565930843353271	-0.4632938	No	
+row_46	RPL10	RPL10	ribosomal protein L10	7960	-0.1737150251865387	-0.46667248	No	
+row_47	RPL34	RPL34	ribosomal protein L34	8271	-0.19887006282806396	-0.48806658	No	
+row_48	RPL19	RPL19	ribosomal protein L19	8413	-0.2155853658914566	-0.49501103	No	
+row_49	RPS6	RPS6	ribosomal protein S6	8496	-0.22425711154937744	-0.49684778	No	
+row_50	EIF4G1	EIF4G1	eukaryotic translation initiation factor 4 gamma, 1	8694	-0.24847310781478882	-0.5077246	Yes	
+row_51	FAU	FAU	Finkel-Biskis-Reilly murine sarcoma virus (FBR-MuSV) ubiquitously expressed (fox derived); ribosomal protein S30	8713	-0.25025278329849243	-0.5036513	Yes	
+row_52	RPS15A	RPS15A	ribosomal protein S15a	8788	-0.2601723074913025	-0.5040219	Yes	
+row_53	RPS9	RPS9	ribosomal protein S9	8806	-0.26222920417785645	-0.49959865	Yes	
+row_54	RPL35	RPL35	ribosomal protein L35	8824	-0.263872891664505	-0.4951388	Yes	
+row_55	RPL13A	RPL13A	ribosomal protein L13a	8856	-0.2665601968765259	-0.4917853	Yes	
+row_56	RPS24	RPS24	ribosomal protein S24	8866	-0.26757705211639404	-0.48657656	Yes	
+row_57	RPL10A	RPL10A	ribosomal protein L10a	8913	-0.27449414134025574	-0.48429585	Yes	
+row_58	RPN2	RPN2	ribophorin II	8919	-0.275881290435791	-0.47856903	Yes	
+row_59	EIF2S2	EIF2S2	eukaryotic translation initiation factor 2, subunit 2 beta, 38kDa	8920	-0.27599087357521057	-0.47242326	Yes	
+row_60	SRPR	SRPR	signal recognition particle receptor ('docking protein')	8950	-0.28040727972984314	-0.4685948	Yes	
+row_61	SRP68	SRP68	signal recognition particle 68kDa	8966	-0.28268149495124817	-0.46354952	Yes	
+row_62	RPS10	RPS10	ribosomal protein S10	8985	-0.2856948673725128	-0.45868704	Yes	
+row_63	EEF1B2	EEF1B2	eukaryotic translation elongation factor 1 beta 2	9070	-0.29769206047058105	-0.4590551	Yes	
+row_64	SRP72	SRP72	signal recognition particle 72kDa	9087	-0.2998698055744171	-0.45371038	Yes	
+row_65	RPS28	RPS28	ribosomal protein S28	9095	-0.3005684018135071	-0.4476004	Yes	
+row_66	RPL7	RPL7	ribosomal protein L7	9241	-0.3187844157218933	-0.45258	Yes	
+row_67	RPL37	RPL37	ribosomal protein L37	9263	-0.32151734828948975	-0.4471697	Yes	
+row_68	RPL12	RPL12	ribosomal protein L12	9266	-0.32184016704559326	-0.44016954	Yes	
+row_69	RPS15	RPS15	ribosomal protein S15	9296	-0.32522091269493103	-0.43534318	Yes	
+row_70	RPS11	RPS11	ribosomal protein S11	9382	-0.33630186319351196	-0.4349348	Yes	
+row_71	RPS20	RPS20	ribosomal protein S20	9384	-0.3367219865322113	-0.42751995	Yes	
+row_72	RPS16	RPS16	ribosomal protein S16	9406	-0.33961305022239685	-0.4217067	Yes	
+row_73	RPL23	RPL23	ribosomal protein L23	9427	-0.34222131967544556	-0.41575208	Yes	
+row_74	RPL38	RPL38	ribosomal protein L38	9495	-0.3504756689071655	-0.4135287	Yes	
+row_75	RPL27	RPL27	ribosomal protein L27	9516	-0.352959543466568	-0.40733495	Yes	
+row_76	EIF1AX	EIF1AX	eukaryotic translation initiation factor 1A, X-linked	9633	-0.3663589060306549	-0.40883952	Yes	
+row_77	RPL31	RPL31	ribosomal protein L31	9640	-0.3681263327598572	-0.40114185	Yes	
+row_78	RPL39	RPL39	ribosomal protein L39	9676	-0.37429365515708923	-0.39572254	Yes	
+row_79	RPS26	RPS26	ribosomal protein S26	9727	-0.3834831118583679	-0.39134803	Yes	
+row_80	RPLP2	RPLP2	ribosomal protein, large, P2	9869	-0.40391796827316284	-0.3940987	Yes	
+row_81	RPS23	RPS23	ribosomal protein S23	9948	-0.41793256998062134	-0.39128944	Yes	
+row_82	RPL27A	RPL27A	ribosomal protein L27a	9990	-0.4243766963481903	-0.38525468	Yes	
+row_83	RPS18	RPS18	ribosomal protein S18	10033	-0.43150222301483154	-0.37914452	Yes	
+row_84	EIF2B2	EIF2B2	eukaryotic translation initiation factor 2B, subunit 2 beta, 39kDa	10057	-0.43555334210395813	-0.37136146	Yes	
+row_85	RPS25	RPS25	ribosomal protein S25	10103	-0.444672554731369	-0.3652079	Yes	
+row_86	RPL26	RPL26	ribosomal protein L26	10146	-0.45219939947128296	-0.3586369	Yes	
+row_87	RPL13	RPL13	ribosomal protein L13	10210	-0.4625830352306366	-0.35358387	Yes	
+row_88	RPL36	RPL36	ribosomal protein L36	10213	-0.46286603808403015	-0.34344336	Yes	
+row_89	RPS17	RPS17	ribosomal protein S17	10218	-0.46400654315948486	-0.33344406	Yes	
+row_90	RPS21	RPS21	ribosomal protein S21	10221	-0.4650101363658905	-0.32325578	Yes	
+row_91	RPS13	RPS13	ribosomal protein S13	10269	-0.4734956920146942	-0.316627	Yes	
+row_92	RPS12	RPS12	ribosomal protein S12	10287	-0.4769296944141388	-0.3074228	Yes	
+row_93	SSR4	SSR4	signal sequence receptor, delta (translocon-associated protein delta)	10321	-0.4827684462070465	-0.29942134	Yes	
+row_94	RPL15	RPL15	ribosomal protein L15	10415	-0.500568687915802	-0.29602146	Yes	
+row_95	PABPC1	PABPC1	poly(A) binding protein, cytoplasmic 1	10433	-0.503948986530304	-0.28621557	Yes	
+row_96	SEC61G	SEC61G	Sec61 gamma subunit	10464	-0.5093461275100708	-0.2773724	Yes	
+row_97	RPS7	RPS7	ribosomal protein S7	10469	-0.5104263424873352	-0.26633942	Yes	
+row_98	RPL21	RPL21	ribosomal protein L21	10478	-0.5124611258506775	-0.2555943	Yes	
+row_99	RPL14	RPL14	ribosomal protein L14	10492	-0.5153958797454834	-0.24520034	Yes	
+row_100	RPL17	RPL17	ribosomal protein L17	10527	-0.5236676931381226	-0.23637144	Yes	
+row_101	SEC61B	SEC61B	Sec61 beta subunit	10532	-0.5248817205429077	-0.22501655	Yes	
+row_102	RPL5	RPL5	ribosomal protein L5	10553	-0.5291743278503418	-0.21489885	Yes	
+row_103	RPL8	RPL8	ribosomal protein L8	10585	-0.5364057421684265	-0.20553641	Yes	
+row_104	SEC61A2	SEC61A2	Sec61 alpha 2 subunit (S. cerevisiae)	10701	-0.5630089640617371	-0.20257866	Yes	
+row_105	EEF1D	EEF1D	eukaryotic translation elongation factor 1 delta (guanine nucleotide exchange protein)	10703	-0.5631980895996094	-0.19012065	Yes	
+row_106	RPL30	RPL30	ribosomal protein L30	10704	-0.5633399486541748	-0.17757618	Yes	
+row_107	RPL7A	RPL7A	ribosomal protein L7a	10795	-0.5831857919692993	-0.17208666	Yes	
+row_108	RPL4	RPL4	ribosomal protein L4	10812	-0.5875362753868103	-0.16033617	Yes	
+row_109	RPS5	RPS5	ribosomal protein S5	10831	-0.5931241512298584	-0.14862783	Yes	
+row_110	RPL28	RPL28	ribosomal protein L28	10975	-0.6312100887298584	-0.14648373	Yes	
+row_111	RPL23A	RPL23A	ribosomal protein L23a	11097	-0.6633245944976807	-0.14179194	Yes	
+row_112	RPL24	RPL24	ribosomal protein L24	11105	-0.6656915545463562	-0.12755139	Yes	
+row_113	RPL22	RPL22	ribosomal protein L22	11139	-0.6792309284210205	-0.11517511	Yes	
+row_114	RPL32	RPL32	ribosomal protein L32	11217	-0.7010014057159424	-0.10597919	Yes	
+row_115	RPS8	RPS8	ribosomal protein S8	11222	-0.7024254202842712	-0.09067076	Yes	
+row_116	RPL36A	RPL36A	ribosomal protein L36a	11310	-0.7383844256401062	-0.08147538	Yes	
+row_117	RPL29	RPL29	ribosomal protein L29	11374	-0.764089822769165	-0.069708414	Yes	
+row_118	RPL18A	RPL18A	ribosomal protein L18a	11390	-0.774586021900177	-0.05370939	Yes	
+row_119	RPL3L	RPL3L	ribosomal protein L3-like	11450	-0.7997590899467468	-0.040814955	Yes	
+row_120	EEF2	EEF2	eukaryotic translation elongation factor 2	11452	-0.8007872104644775	-0.0230663	Yes	
+row_121	RPS4X	RPS4X	ribosomal protein S4, X-linked	11490	-0.8190330862998962	-0.0079101	Yes	
+row_122	RPS27	RPS27	ribosomal protein S27 (metallopanstimulin 1)	11582	-0.8837805986404419	0.0041897744	Yes	
+row_123	EIF4B	EIF4B	eukaryotic translation initiation factor 4B	11627	-0.911708652973175	0.020826587	Yes	
+row_124	EIF4A2	EIF4A2	eukaryotic translation initiation factor 4A, isoform 2	11663	-0.9388136863708496	0.038816664	Yes	

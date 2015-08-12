@@ -1,0 +1,32 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MYL6B	MYL6B	myosin, light chain 6B, alkali, smooth muscle and non-muscle	183	2.2480413913726807	0.07913966	No	
+row_1	MYH7	MYH7	myosin, heavy chain 7, cardiac muscle, beta	307	1.8274660110473633	0.14560282	No	
+row_2	MYL2	MYL2	myosin, light chain 2, regulatory, cardiac, slow	646	1.30535089969635	0.1724026	No	
+row_3	ACTC1	ACTC1	actin, alpha, cardiac muscle 1	904	1.1132994890213013	0.19784406	No	
+row_4	MYBPC1	MYBPC1	myosin binding protein C, slow type	1564	0.7837298512458801	0.17624012	No	
+row_5	MYBPC3	MYBPC3	myosin binding protein C, cardiac	2214	0.5800738334655762	0.14692296	No	
+row_6	MYL3	MYL3	myosin, light chain 3, alkali; ventricular, skeletal, slow	2518	0.5125293731689453	0.14337096	No	
+row_7	ACTN2	ACTN2	actinin, alpha 2	2532	0.5101954936981201	0.16369	No	
+row_8	MYH6	MYH6	myosin, heavy chain 6, cardiac muscle, alpha (cardiomyopathy, hypertrophic 1)	2621	0.4939512312412262	0.17712905	No	
+row_9	NEBL	NEBL	nebulette	3328	0.3663805425167084	0.13414018	No	
+row_10	MYL6	MYL6	myosin, light chain 6, alkali, smooth muscle and non-muscle	4129	0.2572340667247772	0.07880535	No	
+row_11	TPM2	TPM2	tropomyosin 2 (beta)	5998	0.034907370805740356	-0.07412384	No	
+row_12	TPM4	TPM4	tropomyosin 4	7496	-0.1356072872877121	-0.19216679	No	
+row_13	SMTN	SMTN	smoothelin	8137	-0.18565942347049713	-0.23727866	No	
+row_14	ASPH	ASPH	aspartate beta-hydroxylase	8810	-0.2627214789390564	-0.281804	No	
+row_15	TCAP	TCAP	titin-cap (telethonin)	9210	-0.31413355469703674	-0.30160967	No	
+row_16	MYOT	MYOT	myotilin	9719	-0.3822694718837738	-0.32756728	No	
+row_17	KRT19	KRT19	keratin 19	10458	-0.5083672404289246	-0.36724722	No	
+row_18	DMD	DMD	dystrophin (muscular dystrophy, Duchenne and Becker types)	10904	-0.60782790184021	-0.37853968	Yes	
+row_19	MYOM1	MYOM1	myomesin 1 (skelemin) 185kDa	10997	-0.6373358964920044	-0.35941884	Yes	
+row_20	MYLPF	MYLPF	-	11016	-0.6408946514129639	-0.33403257	Yes	
+row_21	MYH11	MYH11	myosin, heavy chain 11, smooth muscle	11147	-0.6811233162879944	-0.3162164	Yes	
+row_22	MYL9	MYL9	myosin, light chain 9, regulatory	11323	-0.7413698434829712	-0.29959327	Yes	
+row_23	MYOM2	MYOM2	myomesin (M-protein) 2, 165kDa	11383	-0.7672351002693176	-0.272298	Yes	
+row_24	TTN	TTN	titin	11479	-0.8113627433776855	-0.24612784	Yes	
+row_25	TPM1	TPM1	tropomyosin 1 (alpha)	11571	-0.8726797103881836	-0.21705592	Yes	
+row_26	NEB	NEB	nebulin	11583	-0.8847240209579468	-0.18086684	Yes	
+row_27	SORBS2	SORBS2	sorbin and SH3 domain containing 2	11641	-0.9201834201812744	-0.14699283	Yes	
+row_28	ACTN3	ACTN3	actinin, alpha 3	11967	-1.3002028465270996	-0.11933445	Yes	
+row_29	MYBPH	MYBPH	myosin binding protein H	12030	-1.4768705368041992	-0.06253071	Yes	
+row_30	MYBPC2	MYBPC2	myosin binding protein C, fast type	12075	-1.6844074726104736	0.004463198	Yes	

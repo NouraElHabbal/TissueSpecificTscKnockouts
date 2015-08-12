@@ -1,0 +1,17 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CDKN2A	CDKN2A	cyclin-dependent kinase inhibitor 2A (melanoma, p16, inhibits CDK4)	263	1.9775166511535645	0.23857106	Yes	
+row_1	E2F1	E2F1	E2F transcription factor 1	359	1.7321983575820923	0.4587215	Yes	
+row_2	PIK3R1	PIK3R1	phosphoinositide-3-kinase, regulatory subunit 1 (p85 alpha)	2710	0.4732910096645355	0.3270258	No	
+row_3	POLR1A	POLR1A	polymerase (RNA) I polypeptide A, 194kDa	2767	0.46157106757164	0.3831552	No	
+row_4	MYC	MYC	v-myc myelocytomatosis viral oncogene homolog (avian)	3331	0.36615869402885437	0.38487402	No	
+row_5	RB1	RB1	retinoblastoma 1 (including osteosarcoma)	3510	0.3414557874202728	0.4151228	No	
+row_6	POLR1D	POLR1D	polymerase (RNA) I polypeptide D, 16kDa	4929	0.15190815925598145	0.31806237	No	
+row_7	MDM2	MDM2	Mdm2, transformed 3T3 cell double minute 2, p53 binding protein (mouse)	5233	0.11916505545377731	0.30873454	No	
+row_8	PIK3CG	PIK3CG	phosphoinositide-3-kinase, catalytic, gamma polypeptide	6362	-0.007406752556562424	0.21659401	No	
+row_9	PIK3CA	PIK3CA	phosphoinositide-3-kinase, catalytic, alpha polypeptide	6401	-0.011046390980482101	0.21491107	No	
+row_10	POLR1C	POLR1C	polymerase (RNA) I polypeptide C, 30kDa	7141	-0.0952739268541336	0.16644727	No	
+row_11	POLR1B	POLR1B	polymerase (RNA) I polypeptide B, 128kDa	7324	-0.11656980961561203	0.16676629	No	
+row_12	RAC1	RAC1	ras-related C3 botulinum toxin substrate 1 (rho family, small GTP binding protein Rac1)	9122	-0.3049367070198059	0.058561407	No	
+row_13	TWIST1	TWIST1	twist homolog 1 (acrocephalosyndactyly 3; Saethre-Chotzen syndrome) (Drosophila)	9905	-0.41116487979888916	0.048125677	No	
+row_14	TBX2	TBX2	T-box 2	10354	-0.4879377484321594	0.075366214	No	
+row_15	ABL1	ABL1	v-abl Abelson murine leukemia viral oncogene homolog 1	10602	-0.5400063395500183	0.12605242	No	

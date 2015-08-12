@@ -1,0 +1,21 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	EREG	EREG	epiregulin	426	1.611751914024353	0.12007479	No	
+row_1	ADAM12	ADAM12	ADAM metallopeptidase domain 12 (meltrin alpha)	1754	0.7118138074874878	0.079061545	No	
+row_2	KCNH1	KCNH1	potassium voltage-gated channel, subfamily H (eag-related), member 1	1890	0.6637568473815918	0.13185026	No	
+row_3	MYEF2	MYEF2	myelin expression factor 2	2425	0.529715359210968	0.1387794	No	
+row_4	IGFBP3	IGFBP3	insulin-like growth factor binding protein 3	4703	0.18096725642681122	-0.031815317	No	
+row_5	TBX3	TBX3	T-box 3 (ulnar mammary syndrome)	5584	0.08045313507318497	-0.09673287	No	
+row_6	BOC	BOC	Boc homolog (mouse)	5746	0.06310230493545532	-0.10394932	No	
+row_7	NOTCH1	NOTCH1	Notch homolog 1, translocation-associated (Drosophila)	7259	-0.10869000852108002	-0.21833523	No	
+row_8	GLMN	GLMN	glomulin, FKBP associated protein	7744	-0.15850774943828583	-0.24303392	No	
+row_9	BMP4	BMP4	bone morphogenetic protein 4	7852	-0.16501924395561218	-0.23597407	No	
+row_10	SYNE1	SYNE1	spectrin repeat containing, nuclear envelope 1	9299	-0.3253829777240753	-0.32403693	Yes	
+row_11	IFRD1	IFRD1	interferon-related developmental regulator 1	9705	-0.37912893295288086	-0.3209607	Yes	
+row_12	MAPK12	MAPK12	mitogen-activated protein kinase 12	9813	-0.39555323123931885	-0.29169464	Yes	
+row_13	CACNA1H	CACNA1H	calcium channel, voltage-dependent, alpha 1H subunit	10435	-0.5048407912254333	-0.29434568	Yes	
+row_14	KRT19	KRT19	keratin 19	10458	-0.5083672404289246	-0.24719377	Yes	
+row_15	MBNL1	MBNL1	muscleblind-like (Drosophila)	10718	-0.5668569207191467	-0.21397844	Yes	
+row_16	MYH11	MYH11	myosin, heavy chain 11, smooth muscle	11147	-0.6811233162879944	-0.18371178	Yes	
+row_17	TTN	TTN	titin	11479	-0.8113627433776855	-0.13288988	Yes	
+row_18	ACTA1	ACTA1	actin, alpha 1, skeletal muscle	11553	-0.8646074533462524	-0.055634473	Yes	
+row_19	MYOZ1	MYOZ1	myozenin 1	11809	-1.0704965591430664	0.026424352	Yes	

@@ -1,0 +1,38 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SMURF1	SMURF1	SMAD specific E3 ubiquitin protein ligase 1	2032	0.6230157613754272	-0.12013628	No	
+row_1	DZIP3	DZIP3	-	2800	0.4544396698474884	-0.14862601	No	
+row_2	UBE2N	UBE2N	ubiquitin-conjugating enzyme E2N (UBC13 homolog, yeast)	2917	0.43806612491607666	-0.12454168	No	
+row_3	TRAF6	TRAF6	TNF receptor-associated factor 6	2969	0.42717432975769043	-0.09591964	No	
+row_4	CAND1	CAND1	cullin-associated and neddylation-dissociated 1	3438	0.34965139627456665	-0.10774	No	
+row_5	SAE1	SAE1	-	3463	0.346304714679718	-0.08310218	No	
+row_6	BRCA1	BRCA1	breast cancer 1, early onset	4223	0.2428845763206482	-0.12719382	No	
+row_7	UBE3C	UBE3C	ubiquitin protein ligase E3C	4588	0.19629620015621185	-0.14220347	No	
+row_8	TRAF7	TRAF7	TNF receptor-associated factor 7	4622	0.19209712743759155	-0.13016471	No	
+row_9	ATG3	ATG3	ATG3 autophagy related 3 homolog (S. cerevisiae)	4825	0.163638636469841	-0.13428874	No	
+row_10	UBB	UBB	ubiquitin B	4927	0.1520162671804428	-0.13095431	No	
+row_11	BCL10	BCL10	B-cell CLL/lymphoma 10	5018	0.14354392886161804	-0.1273616	No	
+row_12	MDM2	MDM2	Mdm2, transformed 3T3 cell double minute 2, p53 binding protein (mouse)	5233	0.11916505545377731	-0.13589688	No	
+row_13	FBXW7	FBXW7	F-box and WD-40 domain protein 7 (archipelago homolog, Drosophila)	5357	0.10527031123638153	-0.1379753	No	
+row_14	HUWE1	HUWE1	HECT, UBA and WWE domain containing 1	5863	0.049124736338853836	-0.1759585	No	
+row_15	UBE2V2	UBE2V2	ubiquitin-conjugating enzyme E2 variant 2	5990	0.03547399863600731	-0.18365067	No	
+row_16	ERCC8	ERCC8	excision repair cross-complementing rodent repair deficiency, complementation group 8	6306	-0.0016938779735937715	-0.20956858	No	
+row_17	GTPBP4	GTPBP4	GTP binding protein 4	6322	-0.003303069854155183	-0.21055503	No	
+row_18	PARK2	PARK2	Parkinson disease (autosomal recessive, juvenile) 2, parkin	6472	-0.019714273512363434	-0.22136067	No	
+row_19	UBE4B	UBE4B	ubiquitination factor E4B (UFD2 homolog, yeast)	6696	-0.04480545595288277	-0.23635663	No	
+row_20	ANAPC11	ANAPC11	APC11 anaphase promoting complex subunit 11 homolog (yeast)	8165	-0.1896096020936966	-0.3431728	Yes	
+row_21	PCNP	PCNP	PEST proteolytic signal containing nuclear protein	8283	-0.20019271969795227	-0.33745784	Yes	
+row_22	STUB1	STUB1	STIP1 homology and U-box containing protein 1	8315	-0.20387499034404755	-0.32434827	Yes	
+row_23	UHRF2	UHRF2	ubiquitin-like, containing PHD and RING finger domains, 2	8335	-0.205495685338974	-0.31012177	Yes	
+row_24	RNF11	RNF11	ring finger protein 11	8377	-0.21155044436454773	-0.29724908	Yes	
+row_25	VHL	VHL	von Hippel-Lindau tumor suppressor	8647	-0.24242231249809265	-0.30085695	Yes	
+row_26	AMFR	AMFR	autocrine motility factor receptor	9101	-0.30148428678512573	-0.3151398	Yes	
+row_27	WWP1	WWP1	WW domain containing E3 ubiquitin protein ligase 1	9561	-0.35758447647094727	-0.32560608	Yes	
+row_28	RNF139	RNF139	ring finger protein 139	9864	-0.40309733152389526	-0.31959078	Yes	
+row_29	TRIM23	TRIM23	tripartite motif-containing 23	10388	-0.4948314130306244	-0.3247984	Yes	
+row_30	MYLIP	MYLIP	myosin regulatory light chain interacting protein	10441	-0.5057018399238586	-0.2902222	Yes	
+row_31	UBE2C	UBE2C	ubiquitin-conjugating enzyme E2C	10597	-0.5388720631599426	-0.26161334	Yes	
+row_32	DDB2	DDB2	damage-specific DNA binding protein 2, 48kDa	10838	-0.594817042350769	-0.23573253	Yes	
+row_33	UBE2V1	UBE2V1	ubiquitin-conjugating enzyme E2 variant 1	10917	-0.6119055151939392	-0.19514184	Yes	
+row_34	CBL	CBL	Cas-Br-M (murine) ecotropic retroviral transforming sequence	11339	-0.7473623156547546	-0.17250133	Yes	
+row_35	UBE2D1	UBE2D1	ubiquitin-conjugating enzyme E2D 1 (UBC4/5 homolog, yeast)	11684	-0.9542357921600342	-0.12758994	Yes	
+row_36	TSC1	TSC1	tuberous sclerosis 1	12112	-2.137284278869629	0.0014057241	Yes	

@@ -1,0 +1,60 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	RPRM	RPRM	reprimo, TP53 dependent G2 arrest mediator candidate	115	2.6514458656311035	0.042027008	Yes	
+row_1	CCNE1	CCNE1	cyclin E1	127	2.5449490547180176	0.090599015	Yes	
+row_2	BID	BID	BH3 interacting domain death agonist	134	2.497912645339966	0.13867067	Yes	
+row_3	PMAIP1	PMAIP1	phorbol-12-myristate-13-acetate-induced protein 1	135	2.4894676208496094	0.18707518	Yes	
+row_4	PERP	PERP	PERP, TP53 apoptosis effector	166	2.3357036113739014	0.23000465	Yes	
+row_5	RRM2	RRM2	ribonucleotide reductase M2 polypeptide	182	2.2513649463653564	0.27253693	Yes	
+row_6	GTSE1	GTSE1	G-2 and S-phase expressed 1	249	2.0106592178344727	0.30616397	Yes	
+row_7	CDKN2A	CDKN2A	cyclin-dependent kinase inhibitor 2A (melanoma, p16, inhibits CDK4)	263	1.9775166511535645	0.3435373	Yes	
+row_8	SESN3	SESN3	sestrin 3	338	1.7655366659164429	0.37173548	Yes	
+row_9	SFN	SFN	stratifin	357	1.733259677886963	0.40394533	Yes	
+row_10	CASP3	CASP3	caspase 3, apoptosis-related cysteine peptidase	407	1.6517647504806519	0.43200248	Yes	
+row_11	CCNB2	CCNB2	cyclin B2	412	1.647059440612793	0.46369606	Yes	
+row_12	SERPINB5	SERPINB5	serpin peptidase inhibitor, clade B (ovalbumin), member 5	438	1.5879305601119995	0.49250028	Yes	
+row_13	SERPINE1	SERPINE1	serpin peptidase inhibitor, clade E (nexin, plasminogen activator inhibitor type 1), member 1	587	1.3932085037231445	0.5073286	Yes	
+row_14	SESN2	SESN2	sestrin 2	883	1.1254210472106934	0.50477225	Yes	
+row_15	CCND3	CCND3	cyclin D3	1000	1.0593000650405884	0.51575917	Yes	
+row_16	GADD45A	GADD45A	growth arrest and DNA-damage-inducible, alpha	1009	1.0567742586135864	0.53564405	Yes	
+row_17	SESN1	SESN1	sestrin 1	1045	1.0383248329162598	0.55293345	Yes	
+row_18	ZMAT3	ZMAT3	zinc finger, matrin type 3	1223	0.9293206930160522	0.5563397	Yes	
+row_19	CCNB1	CCNB1	cyclin B1	1294	0.8915682435035706	0.56787604	Yes	
+row_20	CDKN1A	CDKN1A	cyclin-dependent kinase inhibitor 1A (p21, Cip1)	1414	0.8330228328704834	0.57421476	Yes	
+row_21	THBS1	THBS1	thrombospondin 1	1556	0.785448431968689	0.57780594	Yes	
+row_22	CDK6	CDK6	cyclin-dependent kinase 6	1628	0.7644933462142944	0.58678865	Yes	
+row_23	CASP9	CASP9	caspase 9, apoptosis-related cysteine peptidase	1715	0.7299567461013794	0.5938572	Yes	
+row_24	BAX	BAX	BCL2-associated X protein	2101	0.6025927066802979	0.57367927	No	
+row_25	FAS	FAS	Fas (TNF receptor superfamily, member 6)	2123	0.5983965992927551	0.5835746	No	
+row_26	CCND1	CCND1	cyclin D1	2350	0.5497704148292542	0.5755416	No	
+row_27	BBC3	BBC3	BCL2 binding component 3	2418	0.5328695774078369	0.58035207	No	
+row_28	BAI1	BAI1	brain-specific angiogenesis inhibitor 1	3084	0.4086449146270752	0.53320694	No	
+row_29	CDK2	CDK2	cyclin-dependent kinase 2	3259	0.3787490725517273	0.52615654	No	
+row_30	TNFRSF10B	TNFRSF10B	tumor necrosis factor receptor superfamily, member 10b	3775	0.30643031001091003	0.48945042	No	
+row_31	RCHY1	RCHY1	ring finger and CHY zinc finger domain containing 1	3777	0.30544278025627136	0.49530655	No	
+row_32	TSC2	TSC2	tuberous sclerosis 2	4226	0.24241799116134644	0.4629063	No	
+row_33	IGFBP3	IGFBP3	insulin-like growth factor binding protein 3	4703	0.18096725642681122	0.4269916	No	
+row_34	GADD45G	GADD45G	growth arrest and DNA-damage-inducible, gamma	4877	0.15745045244693756	0.41572118	No	
+row_35	CCNG2	CCNG2	cyclin G2	5081	0.13685767352581024	0.40156505	No	
+row_36	MDM2	MDM2	Mdm2, transformed 3T3 cell double minute 2, p53 binding protein (mouse)	5233	0.11916505545377731	0.3913727	No	
+row_37	ATR	ATR	ataxia telangiectasia and Rad3 related	5316	0.10943529009819031	0.38670743	No	
+row_38	APAF1	APAF1	apoptotic peptidase activating factor	5848	0.05099371820688248	0.3437092	No	
+row_39	CDK4	CDK4	cyclin-dependent kinase 4	5989	0.0355912409722805	0.33280316	No	
+row_40	PTEN	PTEN	phosphatase and tensin homolog (mutated in multiple advanced cancers 1)	6243	0.005244560074061155	0.31194583	No	
+row_41	EI24	EI24	etoposide induced 2.4 mRNA	6518	-0.024213595315814018	0.28971758	No	
+row_42	PPM1D	PPM1D	protein phosphatase 1D magnesium-dependent, delta isoform	7371	-0.11977861821651459	0.22146414	No	
+row_43	CYCS	CYCS	cytochrome c, somatic	7875	-0.16578979790210724	0.1830176	No	
+row_44	CHEK2	CHEK2	CHK2 checkpoint homolog (S. pombe)	8246	-0.19646786153316498	0.15618569	No	
+row_45	CASP8	CASP8	caspase 8, apoptosis-related cysteine peptidase	8370	-0.2103567123413086	0.15008609	No	
+row_46	CCNG1	CCNG1	cyclin G1	9454	-0.34490966796875	0.067073256	No	
+row_47	RRM2B	RRM2B	ribonucleotide reductase M2 B (TP53 inducible)	9591	-0.3612120747566223	0.06282989	No	
+row_48	CCND2	CCND2	cyclin D2	9695	-0.3775070607662201	0.06163718	No	
+row_49	RFWD2	RFWD2	ring finger and WD repeat domain 2	9768	-0.3887205421924591	0.06323065	No	
+row_50	MDM4	MDM4	Mdm4, transformed 3T3 cell double minute 4, p53 binding protein (mouse)	9906	-0.41122058033943176	0.059876792	No	
+row_51	DDB2	DDB2	damage-specific DNA binding protein 2, 48kDa	10838	-0.594817042350769	-0.0056847525	No	
+row_52	CD82	CD82	CD82 molecule	10887	-0.6045858860015869	0.002094174	No	
+row_53	STEAP3	STEAP3	STEAP family member 3	11098	-0.663666844367981	-0.0023987405	No	
+row_54	CCNE2	CCNE2	cyclin E2	11177	-0.6907658576965332	0.00457055	No	
+row_55	CHEK1	CHEK1	CHK1 checkpoint homolog (S. pombe)	11306	-0.7357904314994812	0.008273127	No	
+row_56	ATM	ATM	ataxia telangiectasia mutated (includes complementation groups A, C and D)	11550	-0.8637311458587646	0.0049363812	No	
+row_57	GADD45B	GADD45B	growth arrest and DNA-damage-inducible, beta	11713	-0.9761322140693665	0.010495428	No	
+row_58	IGF1	IGF1	insulin-like growth factor 1 (somatomedin C)	11926	-1.228389024734497	0.016817126	No	

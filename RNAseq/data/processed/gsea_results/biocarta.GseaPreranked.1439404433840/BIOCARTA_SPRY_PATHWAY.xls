@@ -1,0 +1,19 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SPRY3	SPRY3	sprouty homolog 3 (Drosophila)	60	3.1759092807769775	0.3161563	Yes	
+row_1	SRC	SRC	v-src sarcoma (Schmidt-Ruppin A-2) viral oncogene homolog (avian)	592	1.3851473331451416	0.41236505	Yes	
+row_2	SPRY2	SPRY2	sprouty homolog 2 (Drosophila)	1916	0.6577038764953613	0.3696337	Yes	
+row_3	SHC1	SHC1	SHC (Src homology 2 domain containing) transforming protein 1	2005	0.630021870136261	0.42606848	Yes	
+row_4	SPRY4	SPRY4	sprouty homolog 4 (Drosophila)	2048	0.6197332143783569	0.4852609	Yes	
+row_5	GRB2	GRB2	growth factor receptor-bound protein 2	2898	0.44215285778045654	0.45987034	No	
+row_6	RASA1	RASA1	RAS p21 protein activator (GTPase activating protein) 1	3413	0.35359615087509155	0.45318452	No	
+row_7	SPRY1	SPRY1	sprouty homolog 1, antagonist of FGF signaling (Drosophila)	4499	0.2065671980381012	0.38448954	No	
+row_8	EGF	EGF	epidermal growth factor (beta-urogastrone)	4513	0.2049885392189026	0.40414223	No	
+row_9	RAF1	RAF1	v-raf-1 murine leukemia viral oncogene homolog 1	5053	0.1394452005624771	0.37373996	No	
+row_10	SOS1	SOS1	son of sevenless homolog 1 (Drosophila)	5642	0.07439659535884857	0.33271515	No	
+row_11	MAPK3	MAPK3	mitogen-activated protein kinase 3	5920	0.04387248307466507	0.31428114	No	
+row_12	MAP2K1	MAP2K1	mitogen-activated protein kinase kinase 1	6392	-0.009804394096136093	0.27638537	No	
+row_13	MAPK1	MAPK1	mitogen-activated protein kinase 1	7694	-0.15220962464809418	0.18436086	No	
+row_14	HRAS	HRAS	v-Ha-ras Harvey rat sarcoma viral oncogene homolog	8509	-0.22525131702423096	0.1399295	No	
+row_15	EGFR	EGFR	epidermal growth factor receptor (erythroblastic leukemia viral (v-erb-b) oncogene homolog, avian)	8562	-0.23173780739307404	0.15906681	No	
+row_16	PTPRB	PTPRB	protein tyrosine phosphatase, receptor type, B	10823	-0.590506911277771	0.032180008	No	
+row_17	CBL	CBL	Cas-Br-M (murine) ecotropic retroviral transforming sequence	11339	-0.7473623156547546	0.065224566	No	

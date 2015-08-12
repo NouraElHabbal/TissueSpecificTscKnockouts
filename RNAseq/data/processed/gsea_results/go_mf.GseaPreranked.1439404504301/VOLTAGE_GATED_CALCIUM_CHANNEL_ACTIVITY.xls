@@ -1,0 +1,18 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CACNG2	CACNG2	calcium channel, voltage-dependent, gamma subunit 2	136	2.4827442169189453	0.20539449	No	
+row_1	CACNA1A	CACNA1A	calcium channel, voltage-dependent, P/Q type, alpha 1A subunit	1443	0.8260741233825684	0.1696523	No	
+row_2	CACNG5	CACNG5	calcium channel, voltage-dependent, gamma subunit 5	1511	0.8002364039421082	0.23394254	No	
+row_3	CACNA1B	CACNA1B	calcium channel, voltage-dependent, L type, alpha 1B subunit	2639	0.48998919129371643	0.18365408	No	
+row_4	CACNB3	CACNB3	calcium channel, voltage-dependent, beta 3 subunit	3319	0.36756956577301025	0.15966944	No	
+row_5	CACNB1	CACNB1	calcium channel, voltage-dependent, beta 1 subunit	5146	0.13021384179592133	0.020283611	No	
+row_6	CACNA1G	CACNA1G	calcium channel, voltage-dependent, alpha 1G subunit	5655	0.07301243394613266	-0.01528439	No	
+row_7	CACNA1D	CACNA1D	calcium channel, voltage-dependent, L type, alpha 1D subunit	6656	-0.04025756195187569	-0.09432781	No	
+row_8	CACNB2	CACNB2	calcium channel, voltage-dependent, beta 2 subunit	7542	-0.139711394906044	-0.15519984	No	
+row_9	CACNB4	CACNB4	calcium channel, voltage-dependent, beta 4 subunit	8317	-0.20415286719799042	-0.20128557	No	
+row_10	CACNA1H	CACNA1H	calcium channel, voltage-dependent, alpha 1H subunit	10435	-0.5048407912254333	-0.33200857	Yes	
+row_11	CACNG4	CACNG4	calcium channel, voltage-dependent, gamma subunit 4	10880	-0.6026933193206787	-0.31607777	Yes	
+row_12	CACNA2D1	CACNA2D1	calcium channel, voltage-dependent, alpha 2/delta subunit 1	11284	-0.7266643047332764	-0.28594556	Yes	
+row_13	CACNA1C	CACNA1C	calcium channel, voltage-dependent, L type, alpha 1C subunit	11287	-0.7280485033988953	-0.22258766	Yes	
+row_14	CACNA1S	CACNA1S	calcium channel, voltage-dependent, L type, alpha 1S subunit	11598	-0.892543613910675	-0.17030461	Yes	
+row_15	CACNA1E	CACNA1E	calcium channel, voltage-dependent, alpha 1E subunit	11802	-1.0640448331832886	-0.094224416	Yes	
+row_16	CACNG1	CACNG1	calcium channel, voltage-dependent, gamma subunit 1	12006	-1.3883806467056274	0.010154432	Yes	

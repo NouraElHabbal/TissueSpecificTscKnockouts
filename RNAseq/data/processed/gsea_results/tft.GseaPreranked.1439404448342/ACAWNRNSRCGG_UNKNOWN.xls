@@ -1,0 +1,49 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	HES6	HES6	hairy and enhancer of split 6 (Drosophila)	242	2.028745412826538	0.08261882	No	
+row_1	CKB	CKB	creatine kinase, brain	498	1.506475567817688	0.13773632	No	
+row_2	SATB2	SATB2	SATB family member 2	1452	0.8239418268203735	0.10054771	No	
+row_3	PAK4	PAK4	p21(CDKN1A)-activated kinase 4	2276	0.5703662037849426	0.06128872	No	
+row_4	SLIT2	SLIT2	slit homolog 2 (Drosophila)	2730	0.46876317262649536	0.047512982	No	
+row_5	SLC39A7	SLC39A7	solute carrier family 39 (zinc transporter), member 7	4225	0.24260327219963074	-0.06386702	No	
+row_6	AGER	AGER	advanced glycosylation end product-specific receptor	4912	0.152657613158226	-0.11292166	No	
+row_7	RBM3	RBM3	RNA binding motif (RNP1, RRM) protein 3	5080	0.13701386749744415	-0.11981137	No	
+row_8	BCL2L13	BCL2L13	BCL2-like 13 (apoptosis facilitator)	5600	0.0782492533326149	-0.15880865	No	
+row_9	PUM1	PUM1	pumilio homolog 1 (Drosophila)	5934	0.04180619865655899	-0.18425503	No	
+row_10	SREBF2	SREBF2	sterol regulatory element binding transcription factor 2	5944	0.04107498750090599	-0.18292168	No	
+row_11	CRKL	CRKL	v-crk sarcoma virus CT10 oncogene homolog (avian)-like	6111	0.021484026685357094	-0.19557409	No	
+row_12	KPNA6	KPNA6	karyopherin alpha 6 (importin alpha 7)	6169	0.015750519931316376	-0.19949493	No	
+row_13	TRIB2	TRIB2	tribbles homolog 2 (Drosophila)	6364	-0.007480483502149582	-0.21517338	No	
+row_14	EIF4G2	EIF4G2	eukaryotic translation initiation factor 4 gamma, 2	6391	-0.009791167452931404	-0.21682994	No	
+row_15	SUMO1	SUMO1	SMT3 suppressor of mif two 3 homolog 1 (S. cerevisiae)	6500	-0.02254285104572773	-0.22462825	No	
+row_16	FKBP3	FKBP3	FK506 binding protein 3, 25kDa	6550	-0.028633495792746544	-0.2272351	No	
+row_17	MRPL1	MRPL1	mitochondrial ribosomal protein L1	6657	-0.04044429957866669	-0.23396212	No	
+row_18	UBE4B	UBE4B	ubiquitination factor E4B (UFD2 homolog, yeast)	6696	-0.04480545595288277	-0.23484026	No	
+row_19	AKAP8	AKAP8	A kinase (PRKA) anchor protein 8	6994	-0.0780692771077156	-0.2554722	No	
+row_20	MTMR3	MTMR3	myotubularin related protein 3	7061	-0.08593110740184784	-0.25658703	No	
+row_21	NFYC	NFYC	nuclear transcription factor Y, gamma	7276	-0.11120941489934921	-0.26867244	No	
+row_22	PIM2	PIM2	pim-2 oncogene	7986	-0.17547263205051422	-0.31847638	No	
+row_23	ILF3	ILF3	interleukin enhancer binding factor 3, 90kDa	8149	-0.18730580806732178	-0.3224076	No	
+row_24	TGFB1I1	TGFB1I1	transforming growth factor beta 1 induced transcript 1	8342	-0.20664191246032715	-0.32784355	No	
+row_25	SFPQ	SFPQ	splicing factor proline/glutamine-rich (polypyrimidine tract binding protein associated)	8554	-0.23069509863853455	-0.33363503	No	
+row_26	DDX17	DDX17	DEAD (Asp-Glu-Ala-Asp) box polypeptide 17	8633	-0.24039848148822784	-0.32792747	No	
+row_27	ARF1	ARF1	ADP-ribosylation factor 1	8637	-0.24078942835330963	-0.31599253	No	
+row_28	PTBP1	PTBP1	polypyrimidine tract binding protein 1	8770	-0.2583559453487396	-0.3138458	No	
+row_29	ELOVL5	ELOVL5	ELOVL family member 5, elongation of long chain fatty acids (FEN1/Elo2, SUR4/Elo3-like, yeast)	8918	-0.27587446570396423	-0.31205422	No	
+row_30	ZFX	ZFX	zinc finger protein, X-linked	9775	-0.3898395895957947	-0.36317867	Yes	
+row_31	NCOA6	NCOA6	nuclear receptor coactivator 6	9877	-0.40621593594551086	-0.35098487	Yes	
+row_32	PRPF38B	PRPF38B	PRP38 pre-mRNA processing factor 38 (yeast) domain containing B	10012	-0.42898714542388916	-0.34037024	Yes	
+row_33	CTCF	CTCF	CCCTC-binding factor (zinc finger protein)	10106	-0.44475042819976807	-0.32556456	Yes	
+row_34	CXXC1	CXXC1	CXXC finger 1 (PHD domain)	10196	-0.4607792794704437	-0.3096168	Yes	
+row_35	DDX5	DDX5	DEAD (Asp-Glu-Ala-Asp) box polypeptide 5	10296	-0.4786062240600586	-0.29359472	Yes	
+row_36	YWHAE	YWHAE	tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein, epsilon polypeptide	10353	-0.48777902126312256	-0.27354953	Yes	
+row_37	RNF26	RNF26	ring finger protein 26	10515	-0.5212911367416382	-0.26049933	Yes	
+row_38	EP300	EP300	E1A binding protein p300	10861	-0.5987852215766907	-0.2587574	Yes	
+row_39	NR2C2	NR2C2	nuclear receptor subfamily 2, group C, member 2	10871	-0.600704550743103	-0.22910841	Yes	
+row_40	PCF11	PCF11	PCF11, cleavage and polyadenylation factor subunit, homolog (S. cerevisiae)	10889	-0.6047070026397705	-0.19991904	Yes	
+row_41	RUNX1T1	RUNX1T1	runt-related transcription factor 1; translocated to, 1 (cyclin D-related)	11196	-0.696654200553894	-0.1899973	Yes	
+row_42	RXRB	RXRB	retinoid X receptor, beta	11220	-0.7018770575523376	-0.15638803	Yes	
+row_43	SMEK2	SMEK2	-	11403	-0.7797622680664062	-0.13199806	Yes	
+row_44	GPC6	GPC6	glypican 6	11509	-0.8316227793693542	-0.09861098	Yes	
+row_45	NR4A1	NR4A1	nuclear receptor subfamily 4, group A, member 1	11512	-0.8332525491714478	-0.056616366	Yes	
+row_46	PELI2	PELI2	pellino homolog 2 (Drosophila)	11719	-0.9804366230964661	-0.02405928	Yes	
+row_47	SMPD3	SMPD3	sphingomyelin phosphodiesterase 3, neutral membrane (neutral sphingomyelinase II)	11875	-1.1445591449737549	0.02102308	Yes	

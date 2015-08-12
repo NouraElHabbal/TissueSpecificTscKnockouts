@@ -1,0 +1,18 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GPR3	GPR3	G protein-coupled receptor 3	354	1.7459354400634766	0.16457282	No	
+row_1	ADORA3	ADORA3	adenosine A3 receptor	1617	0.7676435112953186	0.14559512	No	
+row_2	ADCY7	ADCY7	adenylate cyclase 7	2568	0.5070524215698242	0.12344945	No	
+row_3	CAP1	CAP1	CAP, adenylate cyclase-associated protein 1 (yeast)	4101	0.2611982226371765	0.025966585	No	
+row_4	ACR	ACR	acrosin	4344	0.22652050852775574	0.031131668	No	
+row_5	ADRB1	ADRB1	adrenergic, beta-1-, receptor	5700	0.067437082529068	-0.07324615	No	
+row_6	GNAS	GNAS	GNAS complex locus	6079	0.026168981567025185	-0.101547554	No	
+row_7	CAP2	CAP2	CAP, adenylate cyclase-associated protein, 2 (yeast)	6689	-0.044181257486343384	-0.14692003	No	
+row_8	GIPR	GIPR	gastric inhibitory polypeptide receptor	7040	-0.08338520675897598	-0.1665589	No	
+row_9	GLP1R	GLP1R	glucagon-like peptide 1 receptor	7560	-0.1406041383743286	-0.19379848	No	
+row_10	EDNRA	EDNRA	endothelin receptor type A	8356	-0.2077917903661728	-0.23636569	No	
+row_11	ADRB2	ADRB2	adrenergic, beta-2-, receptor, surface	9322	-0.32835152745246887	-0.2795854	No	
+row_12	ADRB3	ADRB3	adrenergic, beta-3-, receptor	10335	-0.4846135675907135	-0.3093402	No	
+row_13	ADORA2B	ADORA2B	adenosine A2b receptor	11416	-0.7833604216575623	-0.31154817	Yes	
+row_14	AVPR2	AVPR2	arginine vasopressin receptor 2 (nephrogenic diabetes insipidus)	11473	-0.808244526386261	-0.22645672	Yes	
+row_15	PTHLH	PTHLH	parathyroid hormone-like hormone	11791	-1.0522886514663696	-0.13582364	Yes	
+row_16	CALCR	CALCR	calcitonin receptor	12029	-1.4742878675460815	0.008255526	Yes	

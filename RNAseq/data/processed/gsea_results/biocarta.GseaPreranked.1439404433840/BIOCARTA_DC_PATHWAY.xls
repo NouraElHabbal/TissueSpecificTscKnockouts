@@ -1,0 +1,17 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	TLR2	TLR2	toll-like receptor 2	161	2.3516128063201904	0.19001798	Yes	
+row_1	ITGAX	ITGAX	integrin, alpha X (complement component 3 receptor 4 subunit)	216	2.1051716804504395	0.36756268	Yes	
+row_2	TLR4	TLR4	toll-like receptor 4	436	1.593285322189331	0.4872317	Yes	
+row_3	IL5	IL5	interleukin 5 (colony-stimulating factor, eosinophil)	1105	0.9982234835624695	0.5183902	Yes	
+row_4	IL4	IL4	interleukin 4	1448	0.8248531818389893	0.561471	Yes	
+row_5	TLR7	TLR7	toll-like receptor 7	1606	0.7730423212051392	0.61534405	Yes	
+row_6	CD33	CD33	CD33 molecule	2074	0.6111645102500916	0.62963176	Yes	
+row_7	IL10	IL10	interleukin 10	2943	0.43119969964027405	0.5952584	No	
+row_8	TLR9	TLR9	toll-like receptor 9	3264	0.3780623972415924	0.60152805	No	
+row_9	CD2	CD2	CD2 molecule	3604	0.32960832118988037	0.6020402	No	
+row_10	CD7	CD7	CD7 molecule	3840	0.2943543791770935	0.6080895	No	
+row_11	IL12B	IL12B	interleukin 12B (natural killer cell stimulatory factor 2, cytotoxic lymphocyte maturation factor 2, p40)	4524	0.20387518405914307	0.56933445	No	
+row_12	CD40	CD40	CD40 molecule, TNF receptor superfamily member 5	6211	0.009638442657887936	0.43098992	No	
+row_13	CD5	CD5	CD5 molecule	6538	-0.026812205091118813	0.40639696	No	
+row_14	ANPEP	ANPEP	alanyl (membrane) aminopeptidase (aminopeptidase N, aminopeptidase M, microsomal aminopeptidase, CD13, p150)	6834	-0.06036457046866417	0.38726377	No	
+row_15	IL12A	IL12A	interleukin 12A (natural killer cell stimulatory factor 1, cytotoxic lymphocyte maturation factor 1, p35)	10761	-0.5754591822624207	0.112927206	No	

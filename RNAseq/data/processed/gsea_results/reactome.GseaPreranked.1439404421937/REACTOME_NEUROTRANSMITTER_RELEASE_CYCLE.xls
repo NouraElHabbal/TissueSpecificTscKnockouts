@@ -1,0 +1,32 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SYN1	SYN1	synapsin I	78	2.992882251739502	0.1150071	Yes	
+row_1	SLC1A1	SLC1A1	solute carrier family 1 (neuronal/epithelial high affinity glutamate transporter, system Xag), member 1	109	2.7009599208831787	0.22213499	Yes	
+row_2	SLC17A7	SLC17A7	solute carrier family 17 (sodium-dependent inorganic phosphate cotransporter), member 7	163	2.346935510635376	0.31299528	Yes	
+row_3	ABAT	ABAT	4-aminobutyrate aminotransferase	188	2.2312376499176025	0.40155733	Yes	
+row_4	SYN2	SYN2	synapsin II	214	2.110408067703247	0.48513332	Yes	
+row_5	SNAP25	SNAP25	synaptosomal-associated protein, 25kDa	312	1.8244311809539795	0.55115324	Yes	
+row_6	MAOA	MAOA	monoamine oxidase A	1496	0.803373396396637	0.4859782	No	
+row_7	SLC1A7	SLC1A7	solute carrier family 1 (glutamate transporter), member 7	1639	0.7599436044692993	0.5050809	No	
+row_8	SLC22A2	SLC22A2	solute carrier family 22 (organic cation transporter), member 2	1857	0.6755385994911194	0.5145595	No	
+row_9	SLC6A12	SLC6A12	solute carrier family 6 (neurotransmitter transporter, betaine/GABA), member 12	2083	0.6085417866706848	0.52065814	No	
+row_10	SYN3	SYN3	synapsin III	3036	0.41626593470573425	0.4588664	No	
+row_11	GLS2	GLS2	glutaminase 2 (liver, mitochondrial)	3053	0.4124671220779419	0.47428223	No	
+row_12	DNAJC5	DNAJC5	DnaJ (Hsp40) homolog, subfamily C, member 5	3323	0.36696919798851013	0.46694097	No	
+row_13	STXBP1	STXBP1	syntaxin binding protein 1	3735	0.31183701753616333	0.44562584	No	
+row_14	CHAT	CHAT	choline acetyltransferase	3830	0.2963577210903168	0.44988307	No	
+row_15	UNC13B	UNC13B	unc-13 homolog B (C. elegans)	3868	0.2897762954235077	0.45858437	No	
+row_16	SLC38A2	SLC38A2	solute carrier family 38, member 2	4274	0.2359844297170639	0.434687	No	
+row_17	HSPA8	HSPA8	heat shock 70kDa protein 8	4468	0.21112030744552612	0.42730272	No	
+row_18	GAD2	GAD2	glutamate decarboxylase 2 (pancreatic islets and brain, 65kDa)	4606	0.1936936378479004	0.42383972	No	
+row_19	GAD1	GAD1	glutamate decarboxylase 1 (brain, 67kDa)	5230	0.11951667815446854	0.37719795	No	
+row_20	GLS	GLS	glutaminase	5261	0.11594299226999283	0.3794235	No	
+row_21	SLC18A2	SLC18A2	solute carrier family 18 (vesicular monoamine), member 2	5901	0.0456005223095417	0.3284597	No	
+row_22	RAB3A	RAB3A	RAB3A, member RAS oncogene family	5924	0.04353959113359451	0.32840827	No	
+row_23	SLC6A1	SLC6A1	solute carrier family 6 (neurotransmitter transporter, GABA), member 1	6328	-0.0038892130833119154	0.29525754	No	
+row_24	ALDH5A1	ALDH5A1	aldehyde dehydrogenase 5 family, member A1 (succinate-semialdehyde dehydrogenase)	6595	-0.033684540539979935	0.27463922	No	
+row_25	STX1A	STX1A	syntaxin 1A (brain)	8466	-0.22169381380081177	0.12907752	No	
+row_26	SLC5A7	SLC5A7	solute carrier family 5 (choline transporter), member 7	9371	-0.3350179195404053	0.06795594	No	
+row_27	VAMP2	VAMP2	vesicle-associated membrane protein 2 (synaptobrevin 2)	10254	-0.4714910089969635	0.014190894	No	
+row_28	SLC6A11	SLC6A11	solute carrier family 6 (neurotransmitter transporter, GABA), member 11	11603	-0.8957928419113159	-0.060871176	No	
+row_29	SYT1	SYT1	synaptotagmin I	11858	-1.1170432567596436	-0.036534	No	
+row_30	RIMS1	RIMS1	regulating synaptic membrane exocytosis 1	12023	-1.4501880407333374	0.008761124	No	

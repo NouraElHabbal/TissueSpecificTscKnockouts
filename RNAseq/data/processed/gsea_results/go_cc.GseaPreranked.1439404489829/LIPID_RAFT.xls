@@ -1,0 +1,26 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	STOM	STOM	stomatin	474	1.540086030960083	0.058650486	No	
+row_1	PPT1	PPT1	palmitoyl-protein thioesterase 1 (ceroid-lipofuscinosis, neuronal 1, infantile)	790	1.1877626180648804	0.108060665	No	
+row_2	LAT2	LAT2	linker for activation of T cells family, member 2	1850	0.678320050239563	0.06365494	No	
+row_3	CD48	CD48	CD48 molecule	2203	0.5831450819969177	0.07161045	No	
+row_4	SORBS1	SORBS1	sorbin and SH3 domain containing 1	2311	0.5601547956466675	0.098345466	No	
+row_5	BTK	BTK	Bruton agammaglobulinemia tyrosine kinase	2419	0.5328501462936401	0.12334642	No	
+row_6	MALL	MALL	mal, T-cell differentiation protein-like	3062	0.4109371304512024	0.09640829	No	
+row_7	LYN	LYN	v-yes-1 Yamaguchi sarcoma viral related oncogene homolog	3079	0.40898725390434265	0.121060506	No	
+row_8	MAL	MAL	mal, T-cell differentiation protein	3541	0.3369411528110504	0.10437555	No	
+row_9	FLOT1	FLOT1	flotillin 1	3640	0.32430869340896606	0.11687593	No	
+row_10	LAT	LAT	linker for activation of T cells	3719	0.3135295510292053	0.13034396	No	
+row_11	PRNP	PRNP	prion protein (p27-30) (Creutzfeldt-Jakob disease, Gerstmann-Strausler-Scheinker syndrome, fatal familial insomnia)	3902	0.2857748866081238	0.13345785	No	
+row_12	SHH	SHH	sonic hedgehog homolog (Drosophila)	4631	0.1911078691482544	0.08545431	No	
+row_13	STX12	STX12	syntaxin 12	5042	0.1404872089624405	0.06050607	No	
+row_14	CLN3	CLN3	ceroid-lipofuscinosis, neuronal 3, juvenile (Batten, Spielmeyer-Vogt disease)	5091	0.136046901345253	0.06518084	No	
+row_15	CD55	CD55	CD55 molecule, decay accelerating factor for complement (Cromer blood group)	8598	-0.23625198006629944	-0.20944765	No	
+row_16	CD79A	CD79A	CD79a molecule, immunoglobulin-associated alpha	9809	-0.39540380239486694	-0.28429502	No	
+row_17	CAV1	CAV1	caveolin 1, caveolae protein, 22kDa	10947	-0.6212503910064697	-0.33876875	Yes	
+row_18	PAG1	PAG1	phosphoprotein associated with glycosphingolipid microdomains 1	11096	-0.6630710363388062	-0.30888477	Yes	
+row_19	CAV2	CAV2	caveolin 2	11475	-0.810291051864624	-0.28865153	Yes	
+row_20	ABCA1	ABCA1	ATP-binding cassette, sub-family A (ABC1), member 1	11617	-0.9022548198699951	-0.24299917	Yes	
+row_21	GHSR	GHSR	growth hormone secretagogue receptor	11673	-0.9434768557548523	-0.18762437	Yes	
+row_22	LCK	LCK	lymphocyte-specific protein tyrosine kinase	11797	-1.057207465171814	-0.13064428	Yes	
+row_23	LAX1	LAX1	lymphocyte transmembrane adaptor 1	11902	-1.1849554777145386	-0.06398156	Yes	
+row_24	CARD11	CARD11	caspase recruitment domain family, member 11	11968	-1.3014322519302368	0.013300178	Yes	

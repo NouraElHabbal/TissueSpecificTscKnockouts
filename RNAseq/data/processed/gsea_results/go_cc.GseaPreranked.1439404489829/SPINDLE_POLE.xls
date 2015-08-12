@@ -1,0 +1,17 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	KIF11	KIF11	kinesin family member 11	219	2.0977134704589844	0.17178378	Yes	
+row_1	BUB1	BUB1	BUB1 budding uninhibited by benzimidazoles 1 homolog (yeast)	280	1.920560598373413	0.34065893	Yes	
+row_2	CENPF	CENPF	centromere protein F, 350/400ka (mitosin)	286	1.9046634435653687	0.5126354	Yes	
+row_3	ZW10	ZW10	ZW10, kinetochore associated, homolog (Drosophila)	919	1.1051750183105469	0.5604927	Yes	
+row_4	KNTC1	KNTC1	kinetochore associated 1	1291	0.8926127552986145	0.6106565	Yes	
+row_5	TPX2	TPX2	TPX2, microtubule-associated, homolog (Xenopus laevis)	2002	0.6315190196037292	0.6092048	Yes	
+row_6	KATNA1	KATNA1	katanin p60 (ATPase-containing) subunit A 1	2236	0.5785431265830994	0.6423343	Yes	
+row_7	KATNB1	KATNB1	katanin p80 (WD repeat containing) subunit B 1	3818	0.29886579513549805	0.53887415	No	
+row_8	DCTN1	DCTN1	dynactin 1 (p150, glued homolog, Drosophila)	4161	0.25142335891723633	0.53339845	No	
+row_9	NUMA1	NUMA1	nuclear mitotic apparatus protein 1	7008	-0.080025315284729	0.30570668	No	
+row_10	TUBG1	TUBG1	tubulin, gamma 1	7378	-0.12070902436971664	0.28617132	No	
+row_11	TUBGCP3	TUBGCP3	tubulin, gamma complex associated protein 3	7405	-0.12380477041006088	0.2952305	No	
+row_12	NDE1	NDE1	nudE nuclear distribution gene E homolog 1 (A. nidulans)	7609	-0.1446174532175064	0.2915622	No	
+row_13	SMC3	SMC3	structural maintenance of chromosomes 3	8142	-0.18630582094192505	0.26450846	No	
+row_14	LATS2	LATS2	LATS, large tumor suppressor, homolog 2 (Drosophila)	9165	-0.3092581331729889	0.2081339	No	
+row_15	LATS1	LATS1	LATS, large tumor suppressor, homolog 1 (Drosophila)	9860	-0.4028225839138031	0.1873039	No	

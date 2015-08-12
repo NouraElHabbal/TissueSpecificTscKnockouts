@@ -1,0 +1,19 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SMAD2	SMAD2	SMAD, mothers against DPP homolog 2 (Drosophila)	3661	0.3209042549133301	-0.24651523	No	
+row_1	HDAC1	HDAC1	histone deacetylase 1	5105	0.13470035791397095	-0.34225333	No	
+row_2	PPM1A	PPM1A	protein phosphatase 1A (formerly 2C), magnesium-dependent, alpha isoform	6127	0.020032232627272606	-0.42306992	No	
+row_3	SMURF2	SMURF2	SMAD specific E3 ubiquitin protein ligase 2	6383	-0.009440428577363491	-0.44248345	No	
+row_4	RPS27A	RPS27A	ribosomal protein S27a	6701	-0.045302003622055054	-0.46078607	No	
+row_5	UBA52	UBA52	ubiquitin A-52 residue ribosomal protein fusion product 1	6822	-0.05915054678916931	-0.46041805	No	
+row_6	TRIM33	TRIM33	tripartite motif-containing 33	6845	-0.06173641234636307	-0.45150968	No	
+row_7	SKI	SKI	v-ski sarcoma viral oncogene homolog (avian)	7022	-0.08136822283267975	-0.45190555	No	
+row_8	UBE2D3	UBE2D3	ubiquitin-conjugating enzyme E2D 3 (UBC4/5 homolog, yeast)	7780	-0.16091838479042053	-0.48645106	No	
+row_9	SKIL	SKIL	SKI-like	8302	-0.2024102807044983	-0.49430385	No	
+row_10	NCOR2	NCOR2	nuclear receptor co-repressor 2	9533	-0.3545472323894501	-0.5342646	Yes	
+row_11	PARP1	PARP1	poly (ADP-ribose) polymerase family, member 1	9614	-0.36439937353134155	-0.47756675	Yes	
+row_12	SMAD4	SMAD4	SMAD, mothers against DPP homolog 4 (Drosophila)	9653	-0.3703187108039856	-0.41637293	Yes	
+row_13	NCOR1	NCOR1	nuclear receptor co-repressor 1	10058	-0.4358190596103668	-0.37401846	Yes	
+row_14	TGIF2	TGIF2	TGFB-induced factor 2 (TALE family homeobox)	10288	-0.47743189334869385	-0.3099866	Yes	
+row_15	USP9X	USP9X	ubiquitin specific peptidase 9, X-linked	10845	-0.5958729386329651	-0.25237733	Yes	
+row_16	UBE2D1	UBE2D1	ubiquitin-conjugating enzyme E2D 1 (UBC4/5 homolog, yeast)	11684	-0.9542357921600342	-0.15579654	Yes	
+row_17	SMAD3	SMAD3	SMAD, mothers against DPP homolog 3 (Drosophila)	11850	-1.1078523397445679	0.02303502	Yes	

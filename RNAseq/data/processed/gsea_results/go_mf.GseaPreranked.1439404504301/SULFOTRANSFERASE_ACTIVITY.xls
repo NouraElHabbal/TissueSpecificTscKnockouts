@@ -1,0 +1,21 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CHST9	CHST9	carbohydrate (N-acetylgalactosamine 4-0) sulfotransferase 9	1591	0.7752870917320251	-0.025427213	No	
+row_1	CHST8	CHST8	carbohydrate (N-acetylgalactosamine 4-0) sulfotransferase 8	2501	0.5163217782974243	-0.029927887	No	
+row_2	GAL3ST1	GAL3ST1	galactose-3-O-sulfotransferase 1	3278	0.3753644526004791	-0.042709332	No	
+row_3	TPST2	TPST2	tyrosylprotein sulfotransferase 2	4174	0.25001204013824463	-0.0824482	No	
+row_4	CHST2	CHST2	carbohydrate (N-acetylglucosamine-6-O) sulfotransferase 2	4816	0.1648227423429489	-0.11285476	No	
+row_5	HS6ST1	HS6ST1	heparan sulfate 6-O-sulfotransferase 1	5051	0.13954709470272064	-0.11310693	No	
+row_6	HS3ST3B1	HS3ST3B1	heparan sulfate (glucosamine) 3-O-sulfotransferase 3B1	6414	-0.012681402266025543	-0.2238429	No	
+row_7	CHST12	CHST12	carbohydrate (chondroitin 4) sulfotransferase 12	6487	-0.021054008975625038	-0.22691114	No	
+row_8	TPST1	TPST1	tyrosylprotein sulfotransferase 1	7097	-0.09028439968824387	-0.26486176	No	
+row_9	SULT2B1	SULT2B1	sulfotransferase family, cytosolic, 2B, member 1	7680	-0.1513587087392807	-0.29223633	No	
+row_10	SULT1E1	SULT1E1	sulfotransferase family 1E, estrogen-preferring, member 1	8131	-0.18502138555049896	-0.3041104	No	
+row_11	UST	UST	uronyl-2-sulfotransferase	8851	-0.26639941334724426	-0.32707632	Yes	
+row_12	CHST1	CHST1	carbohydrate (keratan sulfate Gal-6) sulfotransferase 1	9030	-0.29130274057388306	-0.3019651	Yes	
+row_13	CHST10	CHST10	carbohydrate sulfotransferase 10	9390	-0.33746102452278137	-0.28549212	Yes	
+row_14	CHST5	CHST5	carbohydrate (N-acetylglucosamine 6-O) sulfotransferase 5	10208	-0.4623929262161255	-0.28976575	Yes	
+row_15	GAL3ST2	GAL3ST2	galactose-3-O-sulfotransferase 2	10358	-0.48878213763237	-0.23527198	Yes	
+row_16	CHST7	CHST7	carbohydrate (N-acetylglucosamine 6-O) sulfotransferase 7	10440	-0.5056048631668091	-0.17286399	Yes	
+row_17	HS3ST5	HS3ST5	heparan sulfate (glucosamine) 3-O-sulfotransferase 5	10934	-0.6167986392974854	-0.12928158	Yes	
+row_18	CHST11	CHST11	carbohydrate (chondroitin 4) sulfotransferase 11	11463	-0.8048061728477478	-0.062895976	Yes	
+row_19	CHST3	CHST3	carbohydrate (chondroitin 6) sulfotransferase 3	11546	-0.8620520234107971	0.048141994	Yes	

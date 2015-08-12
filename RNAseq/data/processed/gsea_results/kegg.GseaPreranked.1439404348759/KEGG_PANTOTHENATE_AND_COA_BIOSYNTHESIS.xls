@@ -1,0 +1,16 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	PANK1	PANK1	pantothenate kinase 1	957	1.0832713842391968	0.05989433	Yes	
+row_1	BCAT1	BCAT1	branched chain aminotransferase 1, cytosolic	959	1.0824025869369507	0.1985877	Yes	
+row_2	PPCS	PPCS	phosphopantothenoylcysteine synthetase	1588	0.7754364609718323	0.24617063	Yes	
+row_3	DPYD	DPYD	dihydropyrimidine dehydrogenase	1696	0.7365142703056335	0.33176783	Yes	
+row_4	DPYS	DPYS	dihydropyrimidinase	1797	0.6956877112388611	0.41270843	Yes	
+row_5	UPB1	UPB1	ureidopropionase, beta	1805	0.6921910047531128	0.50087714	Yes	
+row_6	COASY	COASY	Coenzyme A synthase	2466	0.5246404409408569	0.5136639	Yes	
+row_7	ENPP1	ENPP1	ectonucleotide pyrophosphatase/phosphodiesterase 1	3125	0.4023018479347229	0.5109306	Yes	
+row_8	BCAT2	BCAT2	branched chain aminotransferase 2, mitochondrial	3136	0.39962929487228394	0.561342	Yes	
+row_9	PANK2	PANK2	pantothenate kinase 2 (Hallervorden-Spatz syndrome)	4708	0.1805143654346466	0.454812	No	
+row_10	PPCDC	PPCDC	phosphopantothenoylcysteine decarboxylase	5825	0.05361210182309151	0.36956844	No	
+row_11	PANK3	PANK3	pantothenate kinase 3	7425	-0.12551817297935486	0.2536761	No	
+row_12	ENPP3	ENPP3	ectonucleotide pyrophosphatase/phosphodiesterase 3	8275	-0.19961026310920715	0.2091899	No	
+row_13	PANK4	PANK4	pantothenate kinase 4	8907	-0.27332839369773865	0.19214943	No	
+row_14	VNN1	VNN1	vanin 1	10755	-0.5749841928482056	0.11341309	No	

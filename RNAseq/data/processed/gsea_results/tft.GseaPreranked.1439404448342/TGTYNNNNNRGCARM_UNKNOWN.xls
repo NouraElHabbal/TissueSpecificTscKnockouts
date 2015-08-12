@@ -1,0 +1,66 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	NUP62CL	NUP62CL	nucleoporin 62kDa C-terminal like	6	4.876469612121582	0.13450542	Yes	
+row_1	CITED1	CITED1	Cbp/p300-interacting transactivator, with Glu/Asp-rich carboxy-terminal domain, 1	48	3.329686403274536	0.22328795	Yes	
+row_2	SIDT1	SIDT1	SID1 transmembrane family, member 1	72	3.0410306453704834	0.30557108	Yes	
+row_3	RNF207	RNF207	ring finger protein 207	310	1.825005292892456	0.3364519	Yes	
+row_4	PPM1E	PPM1E	protein phosphatase 1E (PP2C domain containing)	509	1.4948534965515137	0.3614251	Yes	
+row_5	TYRO3	TYRO3	TYRO3 protein tyrosine kinase	530	1.4662716388702393	0.40036044	Yes	
+row_6	ATP13A4	ATP13A4	ATPase type 13A4	533	1.4651333093643188	0.44075617	Yes	
+row_7	FSIP1	FSIP1	fibrous sheath interacting protein 1	721	1.24526846408844	0.45973146	Yes	
+row_8	BTG2	BTG2	BTG family, member 2	1202	0.9396564960479736	0.4459609	Yes	
+row_9	SELPLG	SELPLG	selectin P ligand	1456	0.8226230144500732	0.44776508	Yes	
+row_10	KATNAL2	KATNAL2	katanin p60 subunit A-like 2	1647	0.7567852735519409	0.4529683	Yes	
+row_11	MGP	MGP	matrix Gla protein	1929	0.653985321521759	0.44778305	Yes	
+row_12	SEMA4B	SEMA4B	sema domain, immunoglobulin domain (Ig), transmembrane domain (TM) and short cytoplasmic domain, (semaphorin) 4B	2035	0.6223316788673401	0.45630917	Yes	
+row_13	FAM49A	FAM49A	family with sequence similarity 49, member A	2332	0.5555480122566223	0.44715548	Yes	
+row_14	EXOSC9	EXOSC9	exosome component 9	2400	0.5364137291908264	0.45645258	Yes	
+row_15	P2RX4	P2RX4	purinergic receptor P2X, ligand-gated ion channel, 4	2728	0.4689286947250366	0.44233143	Yes	
+row_16	HPCAL4	HPCAL4	hippocalcin like 4	2805	0.45268428325653076	0.4485646	Yes	
+row_17	ROGDI	ROGDI	rogdi homolog (Drosophila)	2915	0.4385586977005005	0.45167148	Yes	
+row_18	CAMK2D	CAMK2D	calcium/calmodulin-dependent protein kinase (CaM kinase) II delta	2995	0.4228849411010742	0.45683098	Yes	
+row_19	GNA13	GNA13	guanine nucleotide binding protein (G protein), alpha 13	2996	0.4227437973022461	0.46853444	Yes	
+row_20	CAMK1	CAMK1	calcium/calmodulin-dependent protein kinase I	3215	0.3843884766101837	0.46110725	No	
+row_21	PTK7	PTK7	PTK7 protein tyrosine kinase 7	4097	0.2619664669036865	0.39533854	No	
+row_22	ZFYVE1	ZFYVE1	zinc finger, FYVE domain containing 1	4116	0.259633332490921	0.40103444	No	
+row_23	PRKACA	PRKACA	protein kinase, cAMP-dependent, catalytic, alpha	4245	0.24078798294067383	0.39709133	No	
+row_24	OSR2	OSR2	odd-skipped related 2 (Drosophila)	4293	0.2338809221982956	0.39967066	No	
+row_25	FRMD4A	FRMD4A	FERM domain containing 4A	4383	0.22147344052791595	0.39842534	No	
+row_26	NLGN2	NLGN2	neuroligin 2	4781	0.17102576792240143	0.370255	No	
+row_27	ZP1	ZP1	zona pellucida glycoprotein 1 (sperm receptor)	4880	0.15701371431350708	0.3664792	No	
+row_28	AGER	AGER	advanced glycosylation end product-specific receptor	4912	0.152657613158226	0.36813602	No	
+row_29	KRIT1	KRIT1	KRIT1, ankyrin repeat containing	4989	0.1456843614578247	0.36587	No	
+row_30	MARCH1	MARCH1	membrane-associated ring finger (C3HC4) 1	5024	0.14288835227489471	0.36700773	No	
+row_31	CP	CP	ceruloplasmin (ferroxidase)	5194	0.1240009143948555	0.35643318	No	
+row_32	CRH	CRH	corticotropin releasing hormone	5328	0.10882300138473511	0.34842226	No	
+row_33	TSC22D1	TSC22D1	TSC22 domain family, member 1	5406	0.10058096051216125	0.3448247	No	
+row_34	TTF1	TTF1	transcription termination factor, RNA polymerase I	5601	0.07818546891212463	0.33090967	No	
+row_35	DNM2	DNM2	dynamin 2	5615	0.07698485255241394	0.33196345	No	
+row_36	SLC44A1	SLC44A1	solute carrier family 44, member 1	6076	0.026523038744926453	0.29457092	No	
+row_37	ELMO1	ELMO1	engulfment and cell motility 1	6168	0.01594625413417816	0.28746992	No	
+row_38	TSHZ3	TSHZ3	teashirt family zinc finger 3	6537	-0.026648331433534622	0.2577062	No	
+row_39	RHOBTB1	RHOBTB1	Rho-related BTB domain containing 1	6628	-0.03677010163664818	0.25126457	No	
+row_40	FAM53B	FAM53B	family with sequence similarity 53, member B	6765	-0.052440810948610306	0.2414441	No	
+row_41	NCDN	NCDN	neurochondrin	6776	-0.053671944886446	0.24210113	No	
+row_42	NDUFC1	NDUFC1	NADH dehydrogenase (ubiquinone) 1, subcomplex unknown, 1, 6kDa	6778	-0.05393549054861069	0.24351144	No	
+row_43	MPP2	MPP2	membrane protein, palmitoylated 2 (MAGUK p55 subfamily member 2)	6841	-0.060900963842868805	0.24005862	No	
+row_44	NDST1	NDST1	N-deacetylase/N-sulfotransferase (heparan glucosaminyl) 1	6987	-0.07733891159296036	0.23018147	No	
+row_45	GIPR	GIPR	gastric inhibitory polypeptide receptor	7040	-0.08338520675897598	0.22817996	No	
+row_46	TNKS	TNKS	tankyrase, TRF1-interacting ankyrin-related ADP-ribose polymerase	7066	-0.08633790910243988	0.22849807	No	
+row_47	DGKI	DGKI	diacylglycerol kinase, iota	7334	-0.1174885556101799	0.20962057	No	
+row_48	EPX	EPX	eosinophil peroxidase	7344	-0.11831720173358917	0.21215016	No	
+row_49	TMEM178	TMEM178	transmembrane protein 178	7387	-0.12224865704774857	0.21205342	No	
+row_50	SPARC	SPARC	secreted protein, acidic, cysteine-rich (osteonectin)	7399	-0.1231006309390068	0.21454966	No	
+row_51	RWDD1	RWDD1	RWD domain containing 1	7928	-0.17016111314296722	0.17549755	No	
+row_52	MAX	MAX	MYC associated factor X	8614	-0.2375873476266861	0.12529925	No	
+row_53	OMA1	OMA1	OMA1 homolog, zinc metallopeptidase (S. cerevisiae)	8656	-0.2434583455324173	0.12864101	No	
+row_54	SPAG9	SPAG9	sperm associated antigen 9	8939	-0.27932024002075195	0.11300046	No	
+row_55	ABLIM3	ABLIM3	actin binding LIM protein family, member 3	9499	-0.35077133774757385	0.07637903	No	
+row_56	GRHL2	GRHL2	grainyhead-like 2 (Drosophila)	9525	-0.35356223583221436	0.08409512	No	
+row_57	ASCC1	ASCC1	activating signal cointegrator 1 complex subunit 1	9560	-0.3575442135334015	0.0911755	No	
+row_58	TNFRSF8	TNFRSF8	tumor necrosis factor receptor superfamily, member 8	10149	-0.45317354798316956	0.054985374	No	
+row_59	NR1D1	NR1D1	nuclear receptor subfamily 1, group D, member 1	10212	-0.46267351508140564	0.06265544	No	
+row_60	MEOX2	MEOX2	mesenchyme homeobox 2	10472	-0.51055508852005	0.05532286	No	
+row_61	SLAIN1	SLAIN1	SLAIN motif family, member 1	10719	-0.567349374294281	0.0506401	No	
+row_62	PPP2R2B	PPP2R2B	protein phosphatase 2 (formerly 2A), regulatory subunit B (PR 52), beta isoform	11241	-0.7102328538894653	0.027119799	No	
+row_63	CDK2AP2	CDK2AP2	CDK2-associated protein 2	11358	-0.7571007609367371	0.038465183	No	
+row_64	CAMK2A	CAMK2A	calcium/calmodulin-dependent protein kinase (CaM kinase) II alpha	11637	-0.915886640548706	0.04077921	No	

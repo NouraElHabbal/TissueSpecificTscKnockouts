@@ -1,0 +1,32 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	HCLS1	HCLS1	hematopoietic cell-specific Lyn substrate 1	619	1.3415011167526245	0.035588086	No	
+row_1	PCSK9	PCSK9	proprotein convertase subtilisin/kexin type 9	694	1.265519380569458	0.111307785	No	
+row_2	PDCD7	PDCD7	programmed cell death 7	1011	1.0565284490585327	0.15351126	No	
+row_3	LYN	LYN	v-yes-1 Yamaguchi sarcoma viral related oncogene homolog	3079	0.40898725390434265	0.00911821	No	
+row_4	ANG	ANG	angiogenin, ribonuclease, RNase A family, 5	3256	0.37949827313423157	0.019112136	No	
+row_5	GCLC	GCLC	glutamate-cysteine ligase, catalytic subunit	3652	0.3223709464073181	0.0073112077	No	
+row_6	BRCA1	BRCA1	breast cancer 1, early onset	4223	0.2428845763206482	-0.024093783	No	
+row_7	EIF2B4	EIF2B4	eukaryotic translation initiation factor 2B, subunit 4 delta, 67kDa	4329	0.22923237085342407	-0.017948676	No	
+row_8	EIF2B5	EIF2B5	eukaryotic translation initiation factor 2B, subunit 5 epsilon, 82kDa	5184	0.1250821352005005	-0.08044448	No	
+row_9	FOXC2	FOXC2	forkhead box C2 (MFH-1, mesenchyme forkhead 1)	5629	0.0760093405842781	-0.112226516	No	
+row_10	STEAP2	STEAP2	six transmembrane epithelial antigen of the prostate 2	6069	0.02698812447488308	-0.14676529	No	
+row_11	EIF2B1	EIF2B1	eukaryotic translation initiation factor 2B, subunit 1 alpha, 26kDa	6185	0.013026588596403599	-0.15542783	No	
+row_12	GATA3	GATA3	GATA binding protein 3	6679	-0.0433427095413208	-0.1933722	No	
+row_13	EIF2B3	EIF2B3	eukaryotic translation initiation factor 2B, subunit 3 gamma, 58kDa	7029	-0.08214806765317917	-0.2169054	No	
+row_14	ABCA2	ABCA2	ATP-binding cassette, sub-family A (ABC1), member 2	7048	-0.08468133211135864	-0.21291713	No	
+row_15	ADIPOR1	ADIPOR1	adiponectin receptor 1	8878	-0.27006039023399353	-0.34662294	Yes	
+row_16	BRCA2	BRCA2	breast cancer 2, early onset	8942	-0.27953219413757324	-0.3337538	Yes	
+row_17	GSTM3	GSTM3	glutathione S-transferase M3 (brain)	9040	-0.29281526803970337	-0.32283583	Yes	
+row_18	LATS2	LATS2	LATS, large tumor suppressor, homolog 2 (Drosophila)	9165	-0.3092581331729889	-0.31308618	Yes	
+row_19	RBM14	RBM14	RNA binding motif protein 14	9175	-0.31028199195861816	-0.2937654	Yes	
+row_20	ADIPOR2	ADIPOR2	adiponectin receptor 2	9363	-0.33359235525131226	-0.28764918	Yes	
+row_21	LATS1	LATS1	LATS, large tumor suppressor, homolog 1 (Drosophila)	9860	-0.4028225839138031	-0.30259544	Yes	
+row_22	NCOA6	NCOA6	nuclear receptor coactivator 6	9877	-0.40621593594551086	-0.27764955	Yes	
+row_23	EIF2B2	EIF2B2	eukaryotic translation initiation factor 2B, subunit 2 beta, 39kDa	10057	-0.43555334210395813	-0.2642787	Yes	
+row_24	KRT19	KRT19	keratin 19	10458	-0.5083672404289246	-0.2644653	Yes	
+row_25	GHRL	GHRL	ghrelin/obestatin preprohormone	10526	-0.5236472487449646	-0.23614083	Yes	
+row_26	RERG	RERG	RAS-like, estrogen-regulated, growth inhibitor	10604	-0.5402500629425049	-0.20756926	Yes	
+row_27	ME1	ME1	malic enzyme 1, NADP(+)-dependent, cytosolic	10863	-0.5988624095916748	-0.19016738	Yes	
+row_28	GHSR	GHSR	growth hormone secretagogue receptor	11673	-0.9434768557548523	-0.19602166	Yes	
+row_29	CALCR	CALCR	calcitonin receptor	12029	-1.4742878675460815	-0.13002683	Yes	
+row_30	TSC1	TSC1	tuberous sclerosis 1	12112	-2.137284278869629	0.0014050972	Yes	

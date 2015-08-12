@@ -1,0 +1,31 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CACNG2	CACNG2	calcium channel, voltage-dependent, gamma subunit 2	136	2.4827442169189453	0.111486726	No	
+row_1	RYR3	RYR3	ryanodine receptor 3	355	1.74253511428833	0.17960677	No	
+row_2	CACNA1A	CACNA1A	calcium channel, voltage-dependent, P/Q type, alpha 1A subunit	1443	0.8260741233825684	0.13060635	No	
+row_3	CACNG5	CACNG5	calcium channel, voltage-dependent, gamma subunit 5	1511	0.8002364039421082	0.16462624	No	
+row_4	TRPC4	TRPC4	transient receptor potential cation channel, subfamily C, member 4	2181	0.5879958868026733	0.13840266	No	
+row_5	TRPC3	TRPC3	transient receptor potential cation channel, subfamily C, member 3	2321	0.5579437017440796	0.1544952	No	
+row_6	TRPC5	TRPC5	transient receptor potential cation channel, subfamily C, member 5	2593	0.49995386600494385	0.15681209	No	
+row_7	CACNA1B	CACNA1B	calcium channel, voltage-dependent, L type, alpha 1B subunit	2639	0.48998919129371643	0.1773141	No	
+row_8	TRPC1	TRPC1	transient receptor potential cation channel, subfamily C, member 1	3203	0.3874616026878357	0.14993809	No	
+row_9	CACNB3	CACNB3	calcium channel, voltage-dependent, beta 3 subunit	3319	0.36756956577301025	0.15860356	No	
+row_10	TRPM2	TRPM2	transient receptor potential cation channel, subfamily M, member 2	4078	0.26529842615127563	0.1090731	No	
+row_11	RYR2	RYR2	ryanodine receptor 2 (cardiac)	4573	0.19830605387687683	0.07804927	No	
+row_12	CACNB1	CACNB1	calcium channel, voltage-dependent, beta 1 subunit	5146	0.13021384179592133	0.037213247	No	
+row_13	CACNA1G	CACNA1G	calcium channel, voltage-dependent, alpha 1G subunit	5655	0.07301243394613266	-0.0011610918	No	
+row_14	CACNA1D	CACNA1D	calcium channel, voltage-dependent, L type, alpha 1D subunit	6656	-0.04025756195187569	-0.08181572	No	
+row_15	CACNB2	CACNB2	calcium channel, voltage-dependent, beta 2 subunit	7542	-0.139711394906044	-0.14805003	No	
+row_16	MS4A2	MS4A2	membrane-spanning 4-domains, subfamily A, member 2 (Fc fragment of IgE, high affinity I, receptor for; beta polypeptide)	8010	-0.1772124022245407	-0.17788516	No	
+row_17	CACNB4	CACNB4	calcium channel, voltage-dependent, beta 4 subunit	8317	-0.20415286719799042	-0.19308278	No	
+row_18	CUL5	CUL5	cullin 5	9197	-0.31262001395225525	-0.25027403	No	
+row_19	CACNA1H	CACNA1H	calcium channel, voltage-dependent, alpha 1H subunit	10435	-0.5048407912254333	-0.3275503	Yes	
+row_20	TRPV6	TRPV6	transient receptor potential cation channel, subfamily V, member 6	10460	-0.5088885426521301	-0.3043785	Yes	
+row_21	CACNG4	CACNG4	calcium channel, voltage-dependent, gamma subunit 4	10880	-0.6026933193206787	-0.3092144	Yes	
+row_22	CACNA2D1	CACNA2D1	calcium channel, voltage-dependent, alpha 2/delta subunit 1	11284	-0.7266643047332764	-0.30659992	Yes	
+row_23	CACNA1C	CACNA1C	calcium channel, voltage-dependent, L type, alpha 1C subunit	11287	-0.7280485033988953	-0.27077648	Yes	
+row_24	RYR1	RYR1	ryanodine receptor 1 (skeletal)	11470	-0.8075167536735535	-0.24590084	Yes	
+row_25	CACNA1S	CACNA1S	calcium channel, voltage-dependent, L type, alpha 1S subunit	11598	-0.892543613910675	-0.21227671	Yes	
+row_26	CACNA1E	CACNA1E	calcium channel, voltage-dependent, alpha 1E subunit	11802	-1.0640448331832886	-0.17645596	Yes	
+row_27	TRPV1	TRPV1	transient receptor potential cation channel, subfamily V, member 1	11981	-1.3381106853485107	-0.12502155	Yes	
+row_28	TRPM1	TRPM1	transient receptor potential cation channel, subfamily M, member 1	12005	-1.3848912715911865	-0.058464773	Yes	
+row_29	CACNG1	CACNG1	calcium channel, voltage-dependent, gamma subunit 1	12006	-1.3883806467056274	0.01016532	Yes	

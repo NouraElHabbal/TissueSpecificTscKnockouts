@@ -1,0 +1,25 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	VDR	VDR	vitamin D (1,25- dihydroxyvitamin D3) receptor	789	1.1887117624282837	0.02857463	No	
+row_1	PGRMC2	PGRMC2	progesterone receptor membrane component 2	2820	0.4484049379825592	-0.10374692	No	
+row_2	PGR	PGR	progesterone receptor	2883	0.44265830516815186	-0.07395767	No	
+row_3	NR2F6	NR2F6	nuclear receptor subfamily 2, group F, member 6	2966	0.4277820885181427	-0.046993706	No	
+row_4	NR3C2	NR3C2	nuclear receptor subfamily 3, group C, member 2	5611	0.07709799706935883	-0.2593174	No	
+row_5	PPARD	PPARD	peroxisome proliferative activated receptor, delta	6897	-0.067970871925354	-0.36010253	No	
+row_6	RARA	RARA	retinoic acid receptor, alpha	7104	-0.09094928950071335	-0.36994606	No	
+row_7	NR1I3	NR1I3	nuclear receptor subfamily 1, group I, member 3	7108	-0.09178416430950165	-0.36295524	No	
+row_8	RARB	RARB	retinoic acid receptor, beta	7424	-0.12543393671512604	-0.37908292	No	
+row_9	RARG	RARG	retinoic acid receptor, gamma	8046	-0.1804725080728531	-0.41614667	No	
+row_10	RXRA	RXRA	retinoid X receptor, alpha	8748	-0.2550755739212036	-0.45393506	No	
+row_11	THRB	THRB	thyroid hormone receptor, beta (erythroblastic leukemia viral (v-erb-a) oncogene homolog 2, avian)	9104	-0.30171409249305725	-0.45946437	Yes	
+row_12	AHR	AHR	aryl hydrocarbon receptor	9215	-0.31472933292388916	-0.44372934	Yes	
+row_13	BRD8	BRD8	bromodomain containing 8	9425	-0.341890811920166	-0.43402994	Yes	
+row_14	NR4A3	NR4A3	nuclear receptor subfamily 4, group A, member 3	10166	-0.4551786184310913	-0.45925856	Yes	
+row_15	NR1D1	NR1D1	nuclear receptor subfamily 1, group D, member 1	10212	-0.46267351508140564	-0.42648652	Yes	
+row_16	NR3C1	NR3C1	nuclear receptor subfamily 3, group C, member 1 (glucocorticoid receptor)	10295	-0.47848474979400635	-0.39552385	Yes	
+row_17	NR2C1	NR2C1	nuclear receptor subfamily 2, group C, member 1	10635	-0.547357976436615	-0.38035855	Yes	
+row_18	THRA	THRA	thyroid hormone receptor, alpha (erythroblastic leukemia viral (v-erb-a) oncogene homolog, avian)	10687	-0.5601893067359924	-0.34039146	Yes	
+row_19	RXRB	RXRB	retinoid X receptor, beta	11220	-0.7018770575523376	-0.32898238	Yes	
+row_20	RXRG	RXRG	retinoid X receptor, gamma	11821	-1.0833486318588257	-0.2931052	Yes	
+row_21	ESR2	ESR2	estrogen receptor 2 (ER beta)	11961	-1.2877521514892578	-0.2030273	Yes	
+row_22	AR	AR	androgen receptor (dihydrotestosterone receptor; testicular feminization; spinal and bulbar muscular atrophy; Kennedy disease)	11963	-1.2915923595428467	-0.101247184	Yes	
+row_23	PTGER3	PTGER3	prostaglandin E receptor 3 (subtype EP3)	12025	-1.4566073417663574	0.008590768	Yes	

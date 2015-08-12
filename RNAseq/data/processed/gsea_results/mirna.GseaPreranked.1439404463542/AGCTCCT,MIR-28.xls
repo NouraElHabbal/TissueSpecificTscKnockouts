@@ -1,0 +1,68 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SPRY3	SPRY3	sprouty homolog 3 (Drosophila)	60	3.1759092807769775	0.08012951	No	
+row_1	LBH	LBH	-	450	1.5732958316802979	0.09004104	No	
+row_2	AMPH	AMPH	amphiphysin (Stiff-Man syndrome with breast cancer 128kDa autoantigen)	628	1.3317995071411133	0.1110557	No	
+row_3	NRAS	NRAS	neuroblastoma RAS viral (v-ras) oncogene homolog	1238	0.9218977689743042	0.08527442	No	
+row_4	IQSEC2	IQSEC2	IQ motif and Sec7 domain 2	2177	0.5885275602340698	0.02328649	No	
+row_5	EPHB1	EPHB1	EPH receptor B1	2342	0.552860677242279	0.024505956	No	
+row_6	CDC42SE1	CDC42SE1	CDC42 small effector 1	2494	0.5184065103530884	0.025879843	No	
+row_7	NDRG2	NDRG2	NDRG family member 2	2606	0.49711930751800537	0.029999232	No	
+row_8	SARM1	SARM1	sterile alpha and TIR motif containing 1	2635	0.4912347197532654	0.04084148	No	
+row_9	TRIT1	TRIT1	tRNA isopentenyltransferase 1	2655	0.4849207103252411	0.052260615	No	
+row_10	SSH2	SSH2	slingshot homolog 2 (Drosophila)	2658	0.48478010296821594	0.065085255	No	
+row_11	DPF1	DPF1	D4, zinc and double PHD fingers family 1	2834	0.44567787647247314	0.06252071	No	
+row_12	CRIM1	CRIM1	cysteine rich transmembrane BMP regulator 1 (chordin-like)	2977	0.425936222076416	0.062162798	No	
+row_13	LUZP1	LUZP1	leucine zipper protein 1	3069	0.41004374623298645	0.065606825	No	
+row_14	LRRC14	LRRC14	leucine rich repeat containing 14	3231	0.3822390139102936	0.06250291	No	
+row_15	LPHN1	LPHN1	latrophilin 1	3390	0.3573874235153198	0.058981758	No	
+row_16	OTUB1	OTUB1	OTU domain, ubiquitin aldehyde binding 1	3911	0.2850818634033203	0.023513945	No	
+row_17	MAP3K3	MAP3K3	mitogen-activated protein kinase kinase kinase 3	4204	0.24540364742279053	0.005883664	No	
+row_18	LIF	LIF	leukemia inhibitory factor (cholinergic differentiation factor)	4487	0.20808467268943787	-0.011917655	No	
+row_19	YPEL3	YPEL3	yippee-like 3 (Drosophila)	4580	0.197265163064003	-0.014258257	No	
+row_20	RHO	RHO	rhodopsin (opsin 2, rod pigment) (retinitis pigmentosa 4, autosomal dominant)	4675	0.18552620708942413	-0.01707922	No	
+row_21	BCAM	BCAM	basal cell adhesion molecule (Lutheran blood group)	4746	0.17522668838500977	-0.018186618	No	
+row_22	SEH1L	SEH1L	SEH1-like (S. cerevisiae)	4889	0.15608243644237518	-0.02577568	No	
+row_23	PDZD4	PDZD4	PDZ domain containing 4	4914	0.15254510939121246	-0.023677552	No	
+row_24	TXNL1	TXNL1	thioredoxin-like 1	4992	0.14553290605545044	-0.026160927	No	
+row_25	CSNK1G1	CSNK1G1	casein kinase 1, gamma 1	5222	0.12052132934331894	-0.041915044	No	
+row_26	CSF1	CSF1	colony stimulating factor 1 (macrophage)	5236	0.11896287649869919	-0.039804924	No	
+row_27	CABP7	CABP7	calcium binding protein 7	5396	0.10157553106546402	-0.050263852	No	
+row_28	RAP1B	RAP1B	RAP1B, member of RAS oncogene family	5572	0.08151189982891083	-0.062586784	No	
+row_29	MEF2D	MEF2D	MADS box transcription enhancer factor 2, polypeptide D (myocyte enhancer factor 2D)	5775	0.05945245921611786	-0.07773908	No	
+row_30	HTRA2	HTRA2	HtrA serine peptidase 2	6753	-0.05122995004057884	-0.15735777	No	
+row_31	BIVM	BIVM	basic, immunoglobulin-like variable motif containing	7018	-0.08106229454278946	-0.17707068	No	
+row_32	ZC3H12B	ZC3H12B	zinc finger CCCH-type containing 12B	7020	-0.08124210685491562	-0.17497657	No	
+row_33	GPM6A	GPM6A	glycoprotein M6A	7117	-0.09254090487957001	-0.18045501	No	
+row_34	TLN2	TLN2	talin 2	7508	-0.13716916739940643	-0.20910962	No	
+row_35	SETDB1	SETDB1	SET domain, bifurcated 1	7556	-0.14058685302734375	-0.20923859	No	
+row_36	NDE1	NDE1	nudE nuclear distribution gene E homolog 1 (A. nidulans)	7609	-0.1446174532175064	-0.20967405	No	
+row_37	DYRK1A	DYRK1A	dual-specificity tyrosine-(Y)-phosphorylation regulated kinase 1A	8154	-0.1881352812051773	-0.24972925	No	
+row_38	SSRP1	SSRP1	structure specific recognition protein 1	8442	-0.2192791998386383	-0.2676451	No	
+row_39	MAX	MAX	MYC associated factor X	8614	-0.2375873476266861	-0.27545413	No	
+row_40	PTPRF	PTPRF	protein tyrosine phosphatase, receptor type, F	8740	-0.25395089387893677	-0.2790114	No	
+row_41	TNFSF12	TNFSF12	tumor necrosis factor (ligand) superfamily, member 12	8876	-0.26965761184692383	-0.28297675	No	
+row_42	UNC5A	UNC5A	unc-5 homolog A (C. elegans)	8927	-0.276521772146225	-0.2797118	No	
+row_43	MORF4L2	MORF4L2	mortality factor 4 like 2	8937	-0.2788788974285126	-0.27298492	No	
+row_44	SRF	SRF	serum response factor (c-fos serum response element-binding transcription factor)	8981	-0.28482022881507874	-0.26891735	No	
+row_45	N4BP1	N4BP1	-	9383	-0.3365936279296875	-0.29313993	No	
+row_46	LSM12	LSM12	LSM12 homolog (S. cerevisiae)	9455	-0.3450019359588623	-0.28978086	No	
+row_47	MAT2A	MAT2A	methionine adenosyltransferase II, alpha	9758	-0.3875802755355835	-0.30443028	Yes	
+row_48	ATXN1	ATXN1	ataxin 1	9803	-0.39375749230384827	-0.29752645	Yes	
+row_49	AMIGO1	AMIGO1	adhesion molecule with Ig-like domain 1	9926	-0.4143242835998535	-0.29653755	Yes	
+row_50	NR4A3	NR4A3	nuclear receptor subfamily 4, group A, member 3	10166	-0.4551786184310913	-0.304153	Yes	
+row_51	VAMP2	VAMP2	vesicle-associated membrane protein 2 (synaptobrevin 2)	10254	-0.4714910089969635	-0.2987308	Yes	
+row_52	CLK3	CLK3	CDC-like kinase 3	10330	-0.4841494560241699	-0.2919746	Yes	
+row_53	ARID1A	ARID1A	AT rich interactive domain 1A (SWI- like)	10372	-0.49194082617759705	-0.28219113	Yes	
+row_54	CAPN6	CAPN6	calpain 6	10577	-0.5345278382301331	-0.28477883	Yes	
+row_55	MTSS1	MTSS1	metastasis suppressor 1	10736	-0.5702288150787354	-0.2825966	Yes	
+row_56	USP9X	USP9X	ubiquitin specific peptidase 9, X-linked	10845	-0.5958729386329651	-0.27558225	Yes	
+row_57	ACHE	ACHE	acetylcholinesterase (Yt blood group)	10920	-0.6125761866569519	-0.26530176	Yes	
+row_58	TRPS1	TRPS1	trichorhinophalangeal syndrome I	11148	-0.6812690496444702	-0.26586398	Yes	
+row_59	SDC1	SDC1	syndecan 1	11267	-0.7212622165679932	-0.25631863	Yes	
+row_60	SMAD3	SMAD3	SMAD, mothers against DPP homolog 3 (Drosophila)	11850	-1.1078523397445679	-0.2748787	Yes	
+row_61	RNF165	RNF165	ring finger protein 165	12004	-1.383832573890686	-0.2504802	Yes	
+row_62	IKZF4	IKZF4	IKAROS family zinc finger 4 (Eos)	12026	-1.4572492837905884	-0.21317181	Yes	
+row_63	NNAT	NNAT	neuronatin	12052	-1.5580188035964966	-0.17349474	Yes	
+row_64	EN2	EN2	engrailed homolog 2	12071	-1.6521697044372559	-0.13071446	Yes	
+row_65	HOXA1	HOXA1	homeobox A1	12102	-1.8927844762802124	-0.08248132	Yes	
+row_66	CNTFR	CNTFR	ciliary neurotrophic factor receptor	12127	-3.158487319946289	1.6568185E-4	Yes	

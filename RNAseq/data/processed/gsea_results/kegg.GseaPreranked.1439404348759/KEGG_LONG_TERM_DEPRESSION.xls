@@ -1,0 +1,62 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GNAI1	GNAI1	guanine nucleotide binding protein (G protein), alpha inhibiting activity polypeptide 1	403	1.6593124866485596	0.029936822	No	
+row_1	GRM1	GRM1	glutamate receptor, metabotropic 1	604	1.3659982681274414	0.06549917	No	
+row_2	NRAS	NRAS	neuroblastoma RAS viral (v-ras) oncogene homolog	1238	0.9218977689743042	0.048235252	No	
+row_3	CACNA1A	CACNA1A	calcium channel, voltage-dependent, P/Q type, alpha 1A subunit	1443	0.8260741233825684	0.06285981	No	
+row_4	GNA12	GNA12	guanine nucleotide binding protein (G protein) alpha 12	1540	0.7891554832458496	0.085023895	No	
+row_5	PLCB2	PLCB2	phospholipase C, beta 2	1756	0.7113769054412842	0.09435957	No	
+row_6	PPP2CA	PPP2CA	protein phosphatase 2 (formerly 2A), catalytic subunit, alpha isoform	2414	0.5332838892936707	0.060275525	No	
+row_7	PLA2G2F	PLA2G2F	phospholipase A2, group IIF	2444	0.527280330657959	0.077996485	No	
+row_8	PRKG2	PRKG2	protein kinase, cGMP-dependent, type II	2654	0.4849527180194855	0.07918776	No	
+row_9	PLA2G4A	PLA2G4A	phospholipase A2, group IVA (cytosolic, calcium-dependent)	2715	0.472551167011261	0.0922514	No	
+row_10	GNA13	GNA13	guanine nucleotide binding protein (G protein), alpha 13	2996	0.4227437973022461	0.0851856	No	
+row_11	LYN	LYN	v-yes-1 Yamaguchi sarcoma viral related oncogene homolog	3079	0.40898725390434265	0.09400046	No	
+row_12	PLCB3	PLCB3	phospholipase C, beta 3 (phosphatidylinositol-specific)	3392	0.3572084903717041	0.08178207	No	
+row_13	KRAS	KRAS	v-Ki-ras2 Kirsten rat sarcoma viral oncogene homolog	4217	0.24377769231796265	0.022811832	No	
+row_14	IGF1R	IGF1R	insulin-like growth factor 1 receptor	4801	0.1660754233598709	-0.019155424	No	
+row_15	RAF1	RAF1	v-raf-1 murine leukemia viral oncogene homolog 1	5053	0.1394452005624771	-0.03463054	No	
+row_16	CRH	CRH	corticotropin releasing hormone	5328	0.10882300138473511	-0.05318007	No	
+row_17	PPP2R1A	PPP2R1A	protein phosphatase 2 (formerly 2A), regulatory subunit A (PR 65), alpha isoform	5373	0.1038670763373375	-0.052861657	No	
+row_18	PLCB4	PLCB4	phospholipase C, beta 4	5404	0.10093671828508377	-0.051495083	No	
+row_19	PLA2G4B	PLA2G4B	phospholipase A2, group IVB (cytosolic)	5761	0.061195455491542816	-0.0786566	No	
+row_20	MAPK3	MAPK3	mitogen-activated protein kinase 3	5920	0.04387248307466507	-0.090073586	No	
+row_21	GNAS	GNAS	GNAS complex locus	6079	0.026168981567025185	-0.10216623	No	
+row_22	ITPR3	ITPR3	inositol 1,4,5-triphosphate receptor, type 3	6188	0.012486324645578861	-0.11063822	No	
+row_23	GNAI2	GNAI2	guanine nucleotide binding protein (G protein), alpha inhibiting activity polypeptide 2	6370	-0.008439182303845882	-0.12531324	No	
+row_24	MAP2K1	MAP2K1	mitogen-activated protein kinase kinase 1	6392	-0.009804394096136093	-0.12667905	No	
+row_25	PLA2G12A	PLA2G12A	phospholipase A2, group XIIA	6516	-0.02414519339799881	-0.13594894	No	
+row_26	PPP2CB	PPP2CB	protein phosphatase 2 (formerly 2A), catalytic subunit, beta isoform	6529	-0.025458965450525284	-0.13597158	No	
+row_27	PLA2G12B	PLA2G12B	phospholipase A2, group XIIB	6660	-0.04078713804483414	-0.14518632	No	
+row_28	GNAQ	GNAQ	guanine nucleotide binding protein (G protein), q polypeptide	7017	-0.08091006428003311	-0.17159542	No	
+row_29	GRIA3	GRIA3	glutamate receptor, ionotrophic, AMPA 3	7069	-0.08684276789426804	-0.17250673	No	
+row_30	PLA2G2E	PLA2G2E	phospholipase A2, group IIE	7195	-0.10065372288227081	-0.17902237	No	
+row_31	BRAF	BRAF	v-raf murine sarcoma viral oncogene homolog B1	7440	-0.1279134750366211	-0.1943576	No	
+row_32	MAPK1	MAPK1	mitogen-activated protein kinase 1	7694	-0.15220962464809418	-0.20951128	No	
+row_33	GRIA2	GRIA2	glutamate receptor, ionotropic, AMPA 2	7868	-0.16545043885707855	-0.21753106	No	
+row_34	GUCY1A2	GUCY1A2	guanylate cyclase 1, soluble, alpha 2	7901	-0.1681673377752304	-0.21376432	No	
+row_35	MAP2K2	MAP2K2	mitogen-activated protein kinase kinase 2	8212	-0.19472163915634155	-0.23201835	No	
+row_36	GNAI3	GNAI3	guanine nucleotide binding protein (G protein), alpha inhibiting activity polypeptide 3	8292	-0.20172500610351562	-0.23086515	No	
+row_37	ITPR2	ITPR2	inositol 1,4,5-triphosphate receptor, type 2	8300	-0.20234210789203644	-0.2237227	No	
+row_38	ARAF	ARAF	v-raf murine sarcoma 3611 viral oncogene homolog	8422	-0.2164297103881836	-0.22548829	No	
+row_39	PRKG1	PRKG1	protein kinase, cGMP-dependent, type I	8497	-0.22428888082504272	-0.22305964	No	
+row_40	HRAS	HRAS	v-Ha-ras Harvey rat sarcoma viral oncogene homolog	8509	-0.22525131702423096	-0.21537429	No	
+row_41	GNA11	GNA11	guanine nucleotide binding protein (G protein), alpha 11 (Gq class)	8546	-0.22954614460468292	-0.20959644	No	
+row_42	PLCB1	PLCB1	phospholipase C, beta 1 (phosphoinositide-specific)	8790	-0.2602665424346924	-0.21979752	No	
+row_43	GNAZ	GNAZ	guanine nucleotide binding protein (G protein), alpha z polypeptide	9213	-0.31432873010635376	-0.24276668	No	
+row_44	PLA2G10	PLA2G10	phospholipase A2, group X	9440	-0.34388574957847595	-0.24836785	No	
+row_45	GUCY1B3	GUCY1B3	guanylate cyclase 1, soluble, beta 3	10447	-0.5059891939163208	-0.31241065	Yes	
+row_46	PPP2R1B	PPP2R1B	protein phosphatase 2 (formerly 2A), regulatory subunit A (PR 65), beta isoform	10631	-0.5459030866622925	-0.3067389	Yes	
+row_47	PLA2G3	PLA2G3	phospholipase A2, group III	10669	-0.556907594203949	-0.28855008	Yes	
+row_48	PRKCA	PRKCA	protein kinase C, alpha	10690	-0.5605981945991516	-0.26881182	Yes	
+row_49	PLA2G2C	PLA2G2C	phospholipase A2, group IIC	10698	-0.5625877976417542	-0.24792048	Yes	
+row_50	PLA2G4E	PLA2G4E	phospholipase A2, group IVE	10732	-0.5693082213401794	-0.22892696	Yes	
+row_51	GUCY1A3	GUCY1A3	guanylate cyclase 1, soluble, alpha 3	11001	-0.6383398175239563	-0.22677018	Yes	
+row_52	NOS1	NOS1	nitric oxide synthase 1 (neuronal)	11038	-0.6481614112854004	-0.20501575	Yes	
+row_53	PLA2G6	PLA2G6	phospholipase A2, group VI (cytosolic, calcium-independent)	11126	-0.672356903553009	-0.1865636	Yes	
+row_54	GRID2	GRID2	glutamate receptor, ionotropic, delta 2	11209	-0.6993528604507446	-0.16666685	Yes	
+row_55	RYR1	RYR1	ryanodine receptor 1 (skeletal)	11470	-0.8075167536735535	-0.15739053	Yes	
+row_56	ITPR1	ITPR1	inositol 1,4,5-triphosphate receptor, type 1	11521	-0.8424565196037292	-0.12938078	Yes	
+row_57	PLA2G5	PLA2G5	phospholipase A2, group V	11778	-1.0338060855865479	-0.11113663	Yes	
+row_58	GNAO1	GNAO1	guanine nucleotide binding protein (G protein), alpha activating activity polypeptide O	11781	-1.0369125604629517	-0.071728274	Yes	
+row_59	IGF1	IGF1	insulin-like growth factor 1 (somatomedin C)	11926	-1.228389024734497	-0.03677784	Yes	
+row_60	PLA2G2D	PLA2G2D	phospholipase A2, group IID	12010	-1.4021908044815063	0.009860068	Yes	

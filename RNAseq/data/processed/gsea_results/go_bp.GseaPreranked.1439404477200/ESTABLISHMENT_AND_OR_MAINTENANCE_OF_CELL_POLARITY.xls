@@ -1,0 +1,20 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CCL4	CCL4	chemokine (C-C motif) ligand 4	2367	0.5445969700813293	-0.11863823	No	
+row_1	MAP7	MAP7	microtubule-associated protein 7	2391	0.5382552742958069	-0.04462776	No	
+row_2	CDC42	CDC42	cell division cycle 42 (GTP binding protein, 25kDa)	2718	0.47174137830734253	-0.0050162543	No	
+row_3	CAP1	CAP1	CAP, adenylate cyclase-associated protein 1 (yeast)	4101	0.2611982226371765	-0.08229089	No	
+row_4	BRSK2	BRSK2	BR serine/threonine kinase 2	5037	0.14065875113010406	-0.13965648	No	
+row_5	SPN	SPN	sialophorin (leukosialin, CD43)	5864	0.04906703159213066	-0.20093907	No	
+row_6	PRKCI	PRKCI	protein kinase C, iota	6495	-0.022015845403075218	-0.24985303	No	
+row_7	CAP2	CAP2	CAP, adenylate cyclase-associated protein, 2 (yeast)	6689	-0.044181257486343384	-0.2595581	No	
+row_8	CLASP2	CLASP2	cytoplasmic linker associated protein 2	6736	-0.04896415024995804	-0.25645095	No	
+row_9	MARK2	MARK2	MAP/microtubule affinity-regulating kinase 2	7047	-0.08444245159626007	-0.27013868	No	
+row_10	PARD3	PARD3	par-3 partitioning defective 3 homolog (C. elegans)	7264	-0.10928025841712952	-0.27256203	No	
+row_11	CDC42BPB	CDC42BPB	CDC42 binding protein kinase beta (DMPK-like)	7617	-0.145205557346344	-0.28114834	No	
+row_12	ANK1	ANK1	ankyrin 1, erythrocytic	9469	-0.3468688130378723	-0.38506606	Yes	
+row_13	CD3G	CD3G	CD3g molecule, gamma (CD3-TCR complex)	9738	-0.38472795486450195	-0.35293692	Yes	
+row_14	WNT1	WNT1	wingless-type MMTV integration site family, member 1	10463	-0.5092160701751709	-0.3409031	Yes	
+row_15	CRB1	CRB1	crumbs homolog 1 (Drosophila)	11180	-0.6920788288116455	-0.30241978	Yes	
+row_16	DLG1	DLG1	discs, large homolog 1 (Drosophila)	11329	-0.7435972690582275	-0.20977132	Yes	
+row_17	PARD6B	PARD6B	par-6 partitioning defective 6 homolog beta (C. elegans)	11472	-0.8077707886695862	-0.107577145	Yes	
+row_18	SFRP5	SFRP5	secreted frizzled-related protein 5	11879	-1.146876335144043	0.02064237	Yes	

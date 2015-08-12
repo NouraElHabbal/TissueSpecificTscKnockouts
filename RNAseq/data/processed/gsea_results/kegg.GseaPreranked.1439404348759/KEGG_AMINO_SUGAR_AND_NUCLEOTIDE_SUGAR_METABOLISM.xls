@@ -1,0 +1,43 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GALE	GALE	UDP-galactose-4-epimerase	169	2.3198158740997314	0.06980024	Yes	
+row_1	GCK	GCK	glucokinase (hexokinase 4, maturity onset diabetes of the young 2)	237	2.0510990619659424	0.13833378	Yes	
+row_2	CYB5R3	CYB5R3	cytochrome b5 reductase 3	311	1.8246489763259888	0.19819264	Yes	
+row_3	HK3	HK3	hexokinase 3 (white cell)	320	1.8004364967346191	0.2625543	Yes	
+row_4	PMM1	PMM1	phosphomannomutase 1	399	1.6645201444625854	0.3162164	Yes	
+row_5	HK1	HK1	hexokinase 1	401	1.6609030961990356	0.37611783	Yes	
+row_6	GALK2	GALK2	galactokinase 2	621	1.3402674198150635	0.40640497	Yes	
+row_7	UXS1	UXS1	UDP-glucuronate decarboxylase 1	844	1.1505895853042603	0.42959362	Yes	
+row_8	NAGK	NAGK	N-acetylglucosamine kinase	885	1.1230018138885498	0.4668422	Yes	
+row_9	CMAS	CMAS	cytidine monophosphate N-acetylneuraminic acid synthetase	1187	0.9467352628707886	0.4761332	Yes	
+row_10	PMM2	PMM2	phosphomannomutase 2	1376	0.8543293476104736	0.49143502	Yes	
+row_11	CYB5R1	CYB5R1	cytochrome b5 reductase 1	1432	0.828883945941925	0.5168205	Yes	
+row_12	PGM3	PGM3	phosphoglucomutase 3	1906	0.6613094806671143	0.5015742	No	
+row_13	MPI	MPI	mannose phosphate isomerase	2188	0.5857124328613281	0.4994813	No	
+row_14	UGDH	UGDH	UDP-glucose dehydrogenase	2950	0.430076539516449	0.45205867	No	
+row_15	GNPNAT1	GNPNAT1	glucosamine-phosphate N-acetyltransferase 1	3030	0.41693538427352905	0.46058103	No	
+row_16	GNPDA1	GNPDA1	glucosamine-6-phosphate deaminase 1	3302	0.37160760164260864	0.45158285	No	
+row_17	GMDS	GMDS	GDP-mannose 4,6-dehydratase	3348	0.3636845052242279	0.46099478	No	
+row_18	NANS	NANS	N-acetylneuraminic acid synthase (sialic acid synthase)	3651	0.32250285148620605	0.44765863	No	
+row_19	GNPDA2	GNPDA2	glucosamine-6-phosphate deaminase 2	3857	0.29116106033325195	0.44121504	No	
+row_20	HEXA	HEXA	hexosaminidase A (alpha polypeptide)	4133	0.2567776143550873	0.42773885	No	
+row_21	HK2	HK2	hexokinase 2	4403	0.21883800625801086	0.4133888	No	
+row_22	PGM1	PGM1	phosphoglucomutase 1	4527	0.2037678211927414	0.41057256	No	
+row_23	RENBP	RENBP	renin binding protein	4562	0.19906295835971832	0.4149491	No	
+row_24	CHIT1	CHIT1	chitinase 1 (chitotriosidase)	5004	0.14414969086647034	0.38367265	No	
+row_25	GMPPA	GMPPA	GDP-mannose pyrophosphorylase A	5265	0.11540001630783081	0.36633143	No	
+row_26	UGP2	UGP2	UDP-glucose pyrophosphorylase 2	6378	-0.00912000797688961	0.27466875	No	
+row_27	GMPPB	GMPPB	GDP-mannose pyrophosphorylase B	6594	-0.033594999462366104	0.2580958	No	
+row_28	TSTA3	TSTA3	tissue specific transplantation antigen P35B	6825	-0.05961451679468155	0.24122168	No	
+row_29	GFPT1	GFPT1	glutamine-fructose-6-phosphate transaminase 1	7370	-0.11976492404937744	0.20054372	No	
+row_30	FPGT	FPGT	fucose-1-phosphate guanylyltransferase	7444	-0.1280287206172943	0.19912848	No	
+row_31	AMDHD2	AMDHD2	amidohydrolase domain containing 2	7630	-0.14659500122070312	0.18911839	No	
+row_32	GALT	GALT	galactose-1-phosphate uridylyltransferase	8208	-0.19443275034427643	0.1484071	No	
+row_33	HEXB	HEXB	hexosaminidase B (beta polypeptide)	8813	-0.26280665397644043	0.10793156	No	
+row_34	FUK	FUK	fucokinase	8955	-0.2814297080039978	0.106431045	No	
+row_35	GALK1	GALK1	galactokinase 1	9134	-0.3064969480037689	0.102774955	No	
+row_36	UAP1	UAP1	UDP-N-acteylglucosamine pyrophosphorylase 1	9346	-0.33168765902519226	0.09729865	No	
+row_37	NPL	NPL	N-acetylneuraminate pyruvate lyase (dihydrodipicolinate synthase)	9924	-0.4142034947872162	0.06452449	No	
+row_38	GFPT2	GFPT2	glutamine-fructose-6-phosphate transaminase 2	10083	-0.4402090013027191	0.06735199	No	
+row_39	GNE	GNE	glucosamine (UDP-N-acetyl)-2-epimerase/N-acetylmannosamine kinase	10375	-0.49207592010498047	0.06105004	No	
+row_40	PGM2	PGM2	phosphoglucomutase 2	11741	-0.9966238737106323	-0.015878407	No	
+row_41	NANP	NANP	N-acetylneuraminic acid phosphatase	11979	-1.326130747795105	0.012409097	No	

@@ -1,0 +1,18 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CASP9	CASP9	caspase 9, apoptosis-related cysteine peptidase	1715	0.7299567461013794	-0.0037839531	Yes	
+row_1	HSP90AA1	HSP90AA1	heat shock protein 90kDa alpha (cytosolic), class A member 1	2172	0.5898149609565735	0.069914386	Yes	
+row_2	PPP2CA	PPP2CA	protein phosphatase 2 (formerly 2A), catalytic subunit, alpha isoform	2414	0.5332838892936707	0.15069047	Yes	
+row_3	PIK3R1	PIK3R1	phosphoinositide-3-kinase, regulatory subunit 1 (p85 alpha)	2710	0.4732910096645355	0.21568319	Yes	
+row_4	PDPK1	PDPK1	3-phosphoinositide dependent protein kinase-1	3177	0.3933652341365814	0.25147069	Yes	
+row_5	IKBKB	IKBKB	inhibitor of kappa light polypeptide gene enhancer in B-cells, kinase beta	3300	0.3716896176338196	0.31156552	Yes	
+row_6	IKBKG	IKBKG	inhibitor of kappa light polypeptide gene enhancer in B-cells, kinase gamma	3451	0.34832143783569336	0.36493742	Yes	
+row_7	CHUK	CHUK	conserved helix-loop-helix ubiquitous kinase	3489	0.3430771231651306	0.4266481	Yes	
+row_8	YWHAH	YWHAH	tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein, eta polypeptide	3618	0.32763510942459106	0.47793114	Yes	
+row_9	AKT1	AKT1	v-akt murine thymoma viral oncogene homolog 1	3901	0.28578126430511475	0.50859946	Yes	
+row_10	BAD	BAD	BCL2-antagonist of cell death	4299	0.2334836721420288	0.5199012	Yes	
+row_11	NFKBIA	NFKBIA	nuclear factor of kappa light polypeptide gene enhancer in B-cells inhibitor, alpha	6276	0.0015946803614497185	0.35707176	No	
+row_12	PIK3CG	PIK3CG	phosphoinositide-3-kinase, catalytic, gamma polypeptide	6362	-0.007406752556562424	0.35145274	No	
+row_13	PIK3CA	PIK3CA	phosphoinositide-3-kinase, catalytic, alpha polypeptide	6401	-0.011046390980482101	0.35040092	No	
+row_14	RELA	RELA	v-rel reticuloendotheliosis viral oncogene homolog A, nuclear factor of kappa light polypeptide gene enhancer in B-cells 3, p65 (avian)	7895	-0.1677129864692688	0.25880536	No	
+row_15	NFKB1	NFKB1	nuclear factor of kappa light polypeptide gene enhancer in B-cells 1 (p105)	8063	-0.1815081387758255	0.2792832	No	
+row_16	GHR	GHR	growth hormone receptor	9075	-0.2982698678970337	0.2521258	No	

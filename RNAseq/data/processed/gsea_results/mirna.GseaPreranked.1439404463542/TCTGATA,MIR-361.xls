@@ -1,0 +1,68 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	DOCK3	DOCK3	dedicator of cytokinesis 3	65	3.1282970905303955	0.08892612	No	
+row_1	RANBP17	RANBP17	RAN binding protein 17	211	2.1251111030578613	0.1409755	No	
+row_2	PCDH9	PCDH9	protocadherin 9	1042	1.0397201776504517	0.103516415	No	
+row_3	DPP10	DPP10	dipeptidyl-peptidase 10	1525	0.7946884632110596	0.08751845	No	
+row_4	SOHLH2	SOHLH2	spermatogenesis and oogenesis specific basic helix-loop-helix 2	1590	0.7752870917320251	0.10558697	No	
+row_5	ZFPM2	ZFPM2	zinc finger protein, multitype 2	1832	0.6835423111915588	0.10621653	No	
+row_6	LRP1B	LRP1B	low density lipoprotein-related protein 1B (deleted in tumors)	1846	0.6808266639709473	0.12566498	No	
+row_7	IL10	IL10	interleukin 10	2943	0.43119969964027405	0.047808804	No	
+row_8	CAMK2D	CAMK2D	calcium/calmodulin-dependent protein kinase (CaM kinase) II delta	2995	0.4228849411010742	0.056330487	No	
+row_9	PEX5	PEX5	peroxisomal biogenesis factor 5	3018	0.41936662793159485	0.067150146	No	
+row_10	RHOA	RHOA	ras homolog gene family, member A	3124	0.40238267183303833	0.070577204	No	
+row_11	MAGI1	MAGI1	membrane associated guanylate kinase, WW and PDZ domain containing 1	3366	0.3605070114135742	0.061467625	No	
+row_12	KPNB1	KPNB1	karyopherin (importin) beta 1	3422	0.3517327308654785	0.06751256	No	
+row_13	SND1	SND1	-	3805	0.30083948373794556	0.044915438	No	
+row_14	DAG1	DAG1	dystroglycan 1 (dystrophin-associated glycoprotein 1)	4093	0.2629924416542053	0.029052591	No	
+row_15	MXI1	MXI1	MAX interactor 1	4210	0.2444268763065338	0.026805593	No	
+row_16	MYCBP	MYCBP	c-myc binding protein	4302	0.2331875115633011	0.026292196	No	
+row_17	RAD21	RAD21	RAD21 homolog (S. pombe)	4626	0.19150957465171814	0.0052898917	No	
+row_18	STX7	STX7	syntaxin 7	4885	0.15656739473342896	-0.011377499	No	
+row_19	ATPAF1	ATPAF1	ATP synthase mitochondrial F1 complex assembly factor 1	5084	0.1366821676492691	-0.02367052	No	
+row_20	YWHAB	YWHAB	tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein, beta polypeptide	5200	0.1234220415353775	-0.029482773	No	
+row_21	MTMR4	MTMR4	myotubularin related protein 4	5325	0.10903419554233551	-0.036474887	No	
+row_22	CTNND2	CTNND2	catenin (cadherin-associated protein), delta 2 (neural plakophilin-related arm-repeat protein)	5382	0.10292849689722061	-0.038014006	No	
+row_23	ACTG1	ACTG1	actin, gamma 1	5932	0.0420001782476902	-0.08225882	No	
+row_24	STAU1	STAU1	staufen, RNA binding protein, homolog 1 (Drosophila)	5961	0.03915462642908096	-0.083399504	No	
+row_25	FGF7	FGF7	fibroblast growth factor 7 (keratinocyte growth factor)	6039	0.03073037602007389	-0.08885617	No	
+row_26	RPA1	RPA1	replication protein A1, 70kDa	6049	0.029322847723960876	-0.088718206	No	
+row_27	AEBP2	AEBP2	AE binding protein 2	6356	-0.0069062430411577225	-0.11387681	No	
+row_28	CRY1	CRY1	cryptochrome 1 (photolyase-like)	6431	-0.014735981822013855	-0.119567	No	
+row_29	GOLGA4	GOLGA4	golgi autoantigen, golgin subfamily a, 4	6441	-0.01597408764064312	-0.11983149	No	
+row_30	PLP1	PLP1	proteolipid protein 1 (Pelizaeus-Merzbacher disease, spastic paraplegia 2, uncomplicated)	6769	-0.052791111171245575	-0.14534758	No	
+row_31	RAD23B	RAD23B	RAD23 homolog B (S. cerevisiae)	6789	-0.05517904832959175	-0.14525907	No	
+row_32	DENND1B	DENND1B	DENN/MADD domain containing 1B	6876	-0.06530539691448212	-0.15041941	No	
+row_33	ARMC8	ARMC8	armadillo repeat containing 8	7363	-0.11937010288238525	-0.18710904	No	
+row_34	PRICKLE2	PRICKLE2	prickle homolog 2 (Drosophila)	7520	-0.13854525983333588	-0.19586417	No	
+row_35	NFAT5	NFAT5	nuclear factor of activated T-cells 5, tonicity-responsive	7612	-0.1448051780462265	-0.19904219	No	
+row_36	BTF3	BTF3	basic transcription factor 3	7692	-0.15197302401065826	-0.20100933	No	
+row_37	AFF2	AFF2	AF4/FMR2 family, member 2	8114	-0.1838545948266983	-0.23036644	No	
+row_38	LGR4	LGR4	leucine-rich repeat-containing G protein-coupled receptor 4	8506	-0.22509470582008362	-0.25599325	No	
+row_39	RAC1	RAC1	ras-related C3 botulinum toxin substrate 1 (rho family, small GTP binding protein Rac1)	9122	-0.3049367070198059	-0.29778212	No	
+row_40	USP42	USP42	ubiquitin specific peptidase 42	9188	-0.31186655163764954	-0.29376808	No	
+row_41	CPOX	CPOX	coproporphyrinogen oxidase	9483	-0.3496510684490204	-0.30759856	No	
+row_42	RAD23A	RAD23A	RAD23 homolog A (S. cerevisiae)	9674	-0.37421083450317383	-0.31206718	Yes	
+row_43	SON	SON	SON DNA binding protein	9794	-0.3919878900051117	-0.3101141	Yes	
+row_44	CALCRL	CALCRL	calcitonin receptor-like	9888	-0.4087085723876953	-0.30550152	Yes	
+row_45	TWIST1	TWIST1	twist homolog 1 (acrocephalosyndactyly 3; Saethre-Chotzen syndrome) (Drosophila)	9905	-0.41116487979888916	-0.29443175	Yes	
+row_46	AP1S3	AP1S3	adaptor-related protein complex 1, sigma 3 subunit	10015	-0.4294249415397644	-0.290521	Yes	
+row_47	ADCY2	ADCY2	adenylate cyclase 2 (brain)	10141	-0.4507461190223694	-0.2872938	Yes	
+row_48	MTRR	MTRR	5-methyltetrahydrofolate-homocysteine methyltransferase reductase	10162	-0.45489272475242615	-0.27523726	Yes	
+row_49	SP1	SP1	Sp1 transcription factor	10179	-0.45713621377944946	-0.2627815	Yes	
+row_50	MECP2	MECP2	methyl CpG binding protein 2 (Rett syndrome)	10331	-0.48438340425491333	-0.26069555	Yes	
+row_51	MEOX2	MEOX2	mesenchyme homeobox 2	10472	-0.51055508852005	-0.25690863	Yes	
+row_52	NUP153	NUP153	nucleoporin 153kDa	10706	-0.5638658404350281	-0.259224	Yes	
+row_53	SLC1A3	SLC1A3	solute carrier family 1 (glial high affinity glutamate transporter), member 3	10744	-0.5720112919807434	-0.24504575	Yes	
+row_54	DDX26B	DDX26B	DEAD/H (Asp-Glu-Ala-Asp/His) box polypeptide 26B	10849	-0.5968308448791504	-0.23567341	Yes	
+row_55	DDX3X	DDX3X	DEAD (Asp-Glu-Ala-Asp) box polypeptide 3, X-linked	10872	-0.6009932160377502	-0.21937792	Yes	
+row_56	GPHN	GPHN	gephyrin	10926	-0.6134662628173828	-0.20527624	Yes	
+row_57	CREBBP	CREBBP	CREB binding protein (Rubinstein-Taybi syndrome)	10949	-0.6218989491462708	-0.18835047	Yes	
+row_58	VEZF1	VEZF1	vascular endothelial zinc finger 1	11037	-0.647610068321228	-0.17603791	Yes	
+row_59	SDK1	SDK1	sidekick homolog 1 (chicken)	11181	-0.6921807527542114	-0.16702391	Yes	
+row_60	PATZ1	PATZ1	POZ (BTB) and AT hook containing zinc finger 1	11296	-0.7324471473693848	-0.15439187	Yes	
+row_61	ERG	ERG	v-ets erythroblastosis virus E26 oncogene homolog (avian)	11373	-0.7627058029174805	-0.13769743	Yes	
+row_62	CALM3	CALM3	calmodulin 3 (phosphorylase kinase, delta)	11522	-0.8429415225982666	-0.12455265	Yes	
+row_63	ADD3	ADD3	adducin 3 (gamma)	11704	-0.96883225440979	-0.11034805	Yes	
+row_64	RRAGB	RRAGB	Ras-related GTP binding B	11936	-1.2462685108184814	-0.09192398	Yes	
+row_65	PDE4B	PDE4B	phosphodiesterase 4B, cAMP-specific (phosphodiesterase E4 dunce homolog, Drosophila)	11986	-1.3460693359375	-0.055403568	Yes	
+row_66	NHS	NHS	Nance-Horan syndrome (congenital cataracts and dental anomalies)	12114	-2.2281079292297363	0.0012432217	Yes	

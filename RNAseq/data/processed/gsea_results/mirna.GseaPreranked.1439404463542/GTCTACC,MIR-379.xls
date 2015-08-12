@@ -1,0 +1,20 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GDF6	GDF6	growth differentiation factor 6	549	1.4355090856552124	0.11597132	Yes	
+row_1	ARHGEF5	ARHGEF5	Rho guanine nucleotide exchange factor (GEF) 5	798	1.1829174757003784	0.22841345	Yes	
+row_2	HBEGF	HBEGF	heparin-binding EGF-like growth factor	824	1.1649587154388428	0.35725063	Yes	
+row_3	SLC22A2	SLC22A2	solute carrier family 22 (organic cation transporter), member 2	1857	0.6755385994911194	0.34794623	Yes	
+row_4	EDEM3	EDEM3	ER degradation enhancer, mannosidase alpha-like 3	2408	0.5342199802398682	0.36256096	Yes	
+row_5	HTR1D	HTR1D	5-hydroxytryptamine (serotonin) receptor 1D	2437	0.527280330657959	0.41949725	Yes	
+row_6	SCRT1	SCRT1	scratch homolog 1, zinc finger protein (Drosophila)	2546	0.5091845393180847	0.46779463	Yes	
+row_7	SLC20A1	SLC20A1	solute carrier family 20 (phosphate transporter), member 1	3113	0.40506717562675476	0.46657592	No	
+row_8	LPHN3	LPHN3	latrophilin 3	4656	0.1872335523366928	0.3602923	No	
+row_9	UBE2E3	UBE2E3	ubiquitin-conjugating enzyme E2E 3 (UBC4/5 homolog, yeast)	5739	0.06370457261800766	0.2781102	No	
+row_10	EIF4G2	EIF4G2	eukaryotic translation initiation factor 4 gamma, 2	6391	-0.009791167452931404	0.22545761	No	
+row_11	EI24	EI24	etoposide induced 2.4 mRNA	6518	-0.024213595315814018	0.21777463	No	
+row_12	PCGF5	PCGF5	polycomb group ring finger 5	7089	-0.08917752653360367	0.18073046	No	
+row_13	GLMN	GLMN	glomulin, FKBP associated protein	7744	-0.15850774943828583	0.1445408	No	
+row_14	TNFSF12	TNFSF12	tumor necrosis factor (ligand) superfamily, member 12	8876	-0.26965761184692383	0.0814549	No	
+row_15	ZBTB26	ZBTB26	zinc finger and BTB domain containing 26	9199	-0.3130088746547699	0.09003897	No	
+row_16	TNRC6B	TNRC6B	trinucleotide repeat containing 6B	9264	-0.3216412365436554	0.12089596	No	
+row_17	LIN28B	LIN28B	lin-28 homolog B (C. elegans)	9349	-0.3321824371814728	0.15128604	No	
+row_18	CAPZA2	CAPZA2	capping protein (actin filament) muscle Z-line, alpha 2	11192	-0.695716142654419	0.07736754	No	

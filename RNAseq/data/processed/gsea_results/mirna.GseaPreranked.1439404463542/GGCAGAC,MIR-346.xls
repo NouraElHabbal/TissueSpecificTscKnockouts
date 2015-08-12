@@ -1,0 +1,30 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	FSTL4	FSTL4	follistatin-like 4	631	1.323278784751892	0.054579586	No	
+row_1	PIK3R3	PIK3R3	phosphoinositide-3-kinase, regulatory subunit 3 (p55, gamma)	1110	0.9966896176338196	0.09546294	No	
+row_2	IGF2BP1	IGF2BP1	insulin-like growth factor 2 mRNA binding protein 1	2235	0.5786532759666443	0.049247142	No	
+row_3	PPP1R9B	PPP1R9B	protein phosphatase 1, regulatory subunit 9B, spinophilin	3573	0.33339470624923706	-0.034350913	No	
+row_4	KRAS	KRAS	v-Ki-ras2 Kirsten rat sarcoma viral oncogene homolog	4217	0.24377769231796265	-0.067826055	No	
+row_5	MAN1C1	MAN1C1	mannosidase, alpha, class 1C, member 1	4231	0.2419460564851761	-0.049387105	No	
+row_6	NRBF2	NRBF2	nuclear receptor binding factor 2	4325	0.22972717881202698	-0.038544644	No	
+row_7	LIF	LIF	leukemia inhibitory factor (cholinergic differentiation factor)	4487	0.20808467268943787	-0.035067048	No	
+row_8	TRAF7	TRAF7	TNF receptor-associated factor 7	4622	0.19209712743759155	-0.030647648	No	
+row_9	CSNK1G1	CSNK1G1	casein kinase 1, gamma 1	5222	0.12052132934331894	-0.0704275	No	
+row_10	ABCC12	ABCC12	ATP-binding cassette, sub-family C (CFTR/MRP), member 12	5457	0.09479255974292755	-0.082119614	No	
+row_11	FGF7	FGF7	fibroblast growth factor 7 (keratinocyte growth factor)	6039	0.03073037602007389	-0.12765373	No	
+row_12	HBP1	HBP1	HMG-box transcription factor 1	6545	-0.02771979197859764	-0.16715018	No	
+row_13	LRP6	LRP6	low density lipoprotein receptor-related protein 6	7039	-0.08318055421113968	-0.20118201	No	
+row_14	PRICKLE2	PRICKLE2	prickle homolog 2 (Drosophila)	7520	-0.13854525983333588	-0.22967431	No	
+row_15	AFF2	AFF2	AF4/FMR2 family, member 2	8114	-0.1838545948266983	-0.26385042	No	
+row_16	LRRTM1	LRRTM1	leucine rich repeat transmembrane neuronal 1	8130	-0.18502138555049896	-0.2501678	No	
+row_17	RBM39	RBM39	RNA binding motif protein 39	8261	-0.19820557534694672	-0.2449252	No	
+row_18	CSNK1D	CSNK1D	casein kinase 1, delta	8385	-0.2121337205171585	-0.2379808	No	
+row_19	COL2A1	COL2A1	collagen, type II, alpha 1 (primary osteoarthritis, spondyloepiphyseal dysplasia, congenital)	8638	-0.24117158353328705	-0.23935474	No	
+row_20	SF1	SF1	splicing factor 1	10641	-0.548953652381897	-0.36052185	Yes	
+row_21	MBNL1	MBNL1	muscleblind-like (Drosophila)	10718	-0.5668569207191467	-0.32108462	Yes	
+row_22	PFN2	PFN2	profilin 2	10818	-0.5883309245109558	-0.28181615	Yes	
+row_23	BCL6	BCL6	B-cell CLL/lymphoma 6 (zinc finger protein 51)	10908	-0.6083967685699463	-0.24010299	Yes	
+row_24	OGT	OGT	O-linked N-acetylglucosamine (GlcNAc) transferase (UDP-N-acetylglucosamine:polypeptide-N-acetylglucosaminyl transferase)	11075	-0.6571812033653259	-0.2008184	Yes	
+row_25	KCTD15	KCTD15	potassium channel tetramerisation domain containing 15	11080	-0.6591392159461975	-0.14798857	Yes	
+row_26	RPS6KB2	RPS6KB2	ribosomal protein S6 kinase, 70kDa, polypeptide 2	11462	-0.8047851920127869	-0.11456668	Yes	
+row_27	SYT8	SYT8	synaptotagmin VIII	11737	-0.9940459132194519	-0.057038434	Yes	
+row_28	SMAD3	SMAD3	SMAD, mothers against DPP homolog 3 (Drosophila)	11850	-1.1078523397445679	0.023055768	Yes	

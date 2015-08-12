@@ -1,0 +1,35 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GNA15	GNA15	guanine nucleotide binding protein (G protein), alpha 15 (Gq class)	1292	0.8924999237060547	-0.023587408	No	
+row_1	GNB1	GNB1	guanine nucleotide binding protein (G protein), beta polypeptide 1	2661	0.48417529463768005	-0.091533765	No	
+row_2	CAMK1	CAMK1	calcium/calmodulin-dependent protein kinase I	3215	0.3843884766101837	-0.1014075	No	
+row_3	NFATC2	NFATC2	nuclear factor of activated T-cells, cytoplasmic, calcineurin-dependent 2	3238	0.3813440203666687	-0.067666315	No	
+row_4	NCF2	NCF2	neutrophil cytosolic factor 2 (65kDa, chronic granulomatous disease, autosomal 2)	3976	0.2766071856021881	-0.102802195	No	
+row_5	PIK3C2G	PIK3C2G	phosphoinositide-3-kinase, class 2, gamma polypeptide	4058	0.26741281151771545	-0.08456264	No	
+row_6	MAP3K1	MAP3K1	mitogen-activated protein kinase kinase kinase 1	4924	0.15225915610790253	-0.14187586	No	
+row_7	RAF1	RAF1	v-raf-1 murine leukemia viral oncogene homolog 1	5053	0.1394452005624771	-0.13945474	No	
+row_8	ELK1	ELK1	ELK1, member of ETS oncogene family	5075	0.13776621222496033	-0.12834428	No	
+row_9	CAMK1G	CAMK1G	calcium/calmodulin-dependent protein kinase IG	5546	0.08400119096040726	-0.15936707	No	
+row_10	MAPK3	MAPK3	mitogen-activated protein kinase 3	5920	0.04387248307466507	-0.18611264	No	
+row_11	NFKBIA	NFKBIA	nuclear factor of kappa light polypeptide gene enhancer in B-cells inhibitor, alpha	6276	0.0015946803614497185	-0.21531248	No	
+row_12	MAP2K1	MAP2K1	mitogen-activated protein kinase kinase 1	6392	-0.009804394096136093	-0.2239055	No	
+row_13	PAK1	PAK1	p21/Cdc42/Rac1-activated kinase 1 (STE20 homolog, yeast)	6499	-0.022254178300499916	-0.23059356	No	
+row_14	MAP2K6	MAP2K6	mitogen-activated protein kinase kinase 6	6543	-0.027545638382434845	-0.23157984	No	
+row_15	PPP3CC	PPP3CC	protein phosphatase 3 (formerly 2B), catalytic subunit, gamma isoform (calcineurin A gamma)	7268	-0.10985127091407776	-0.2811908	No	
+row_16	FPR1	FPR1	formyl peptide receptor 1	7561	-0.1406041383743286	-0.29221982	Yes	
+row_17	MAPK1	MAPK1	mitogen-activated protein kinase 1	7694	-0.15220962464809418	-0.28893912	Yes	
+row_18	RELA	RELA	v-rel reticuloendotheliosis viral oncogene homolog A, nuclear factor of kappa light polypeptide gene enhancer in B-cells 3, p65 (avian)	7895	-0.1677129864692688	-0.28983444	Yes	
+row_19	NFKB1	NFKB1	nuclear factor of kappa light polypeptide gene enhancer in B-cells 1 (p105)	8063	-0.1815081387758255	-0.2867152	Yes	
+row_20	MAP2K2	MAP2K2	mitogen-activated protein kinase kinase 2	8212	-0.19472163915634155	-0.28079304	Yes	
+row_21	HRAS	HRAS	v-Ha-ras Harvey rat sarcoma viral oncogene homolog	8509	-0.22525131702423096	-0.28425947	Yes	
+row_22	PLCB1	PLCB1	phospholipase C, beta 1 (phosphoinositide-specific)	8790	-0.2602665424346924	-0.283138	Yes	
+row_23	RAC1	RAC1	ras-related C3 botulinum toxin substrate 1 (rho family, small GTP binding protein Rac1)	9122	-0.3049367070198059	-0.2820674	Yes	
+row_24	NFATC4	NFATC4	nuclear factor of activated T-cells, cytoplasmic, calcineurin-dependent 4	9285	-0.3238609731197357	-0.26526052	Yes	
+row_25	MAP2K3	MAP2K3	mitogen-activated protein kinase kinase 3	9403	-0.33916348218917847	-0.24330646	Yes	
+row_26	PPP3CA	PPP3CA	protein phosphatase 3 (formerly 2B), catalytic subunit, alpha isoform (calcineurin A alpha)	9808	-0.39531490206718445	-0.2398432	Yes	
+row_27	MAPK14	MAPK14	mitogen-activated protein kinase 14	9820	-0.3966512084007263	-0.20376524	Yes	
+row_28	NFATC1	NFATC1	nuclear factor of activated T-cells, cytoplasmic, calcineurin-dependent 1	10310	-0.48093411326408386	-0.19934519	Yes	
+row_29	NFATC3	NFATC3	nuclear factor of activated T-cells, cytoplasmic, calcineurin-dependent 3	10909	-0.608657717704773	-0.19202627	Yes	
+row_30	PPP3CB	PPP3CB	protein phosphatase 3 (formerly 2B), catalytic subunit, beta isoform (calcineurin A beta)	11088	-0.660870373249054	-0.14511636	Yes	
+row_31	CALM2	CALM2	calmodulin 2 (phosphorylase kinase, delta)	11309	-0.7378762364387512	-0.09449794	Yes	
+row_32	CALM3	CALM3	calmodulin 3 (phosphorylase kinase, delta)	11522	-0.8429415225982666	-0.033420913	Yes	
+row_33	CALM1	CALM1	calmodulin 1 (phosphorylase kinase, delta)	11602	-0.8956689834594727	0.043568272	Yes	

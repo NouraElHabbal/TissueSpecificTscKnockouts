@@ -1,0 +1,16 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	UCHL1	UCHL1	ubiquitin carboxyl-terminal esterase L1 (ubiquitin thiolesterase)	8	4.819223403930664	0.36537236	Yes	
+row_1	ACOT12	ACOT12	acyl-CoA thioesterase 12	192	2.2259883880615234	0.51933676	Yes	
+row_2	PPT1	PPT1	palmitoyl-protein thioesterase 1 (ceroid-lipofuscinosis, neuronal 1, infantile)	790	1.1877626180648804	0.5602727	Yes	
+row_3	ACOT9	ACOT9	acyl-CoA thioesterase 9	862	1.1371769905090332	0.6407838	Yes	
+row_4	USP12	USP12	ubiquitin specific peptidase 12	1816	0.6884169578552246	0.614408	Yes	
+row_5	ACOT11	ACOT11	acyl-CoA thioesterase 11	2105	0.6018409729003906	0.63634723	Yes	
+row_6	UCHL3	UCHL3	ubiquitin carboxyl-terminal esterase L3 (ubiquitin thiolesterase)	2580	0.5038285255432129	0.6354893	Yes	
+row_7	USP5	USP5	ubiquitin specific peptidase 5 (isopeptidase T)	2592	0.5009636878967285	0.67263085	Yes	
+row_8	ACOT8	ACOT8	acyl-CoA thioesterase 8	4298	0.233522430062294	0.54963285	No	
+row_9	HIBCH	HIBCH	3-hydroxyisobutyryl-Coenzyme A hydrolase	4330	0.22895251214504242	0.5644636	No	
+row_10	USP53	USP53	ubiquitin specific peptidase 53	6559	-0.029308278113603592	0.38278538	No	
+row_11	HAGH	HAGH	hydroxyacylglutathione hydrolase	7420	-0.1252841055393219	0.32131466	No	
+row_12	YOD1	YOD1	YOD1 OTU deubiquinating enzyme 1 homolog (S. cerevisiae)	8755	-0.25606393814086914	0.23065196	No	
+row_13	USP21	USP21	ubiquitin specific peptidase 21	9194	-0.31231772899627686	0.21821977	No	
+row_14	OTUB2	OTUB2	OTU domain, ubiquitin aldehyde binding 2	9219	-0.3154509961605072	0.24019809	No	

@@ -1,0 +1,18 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CAPN2	CAPN2	calpain 2, (m/II) large subunit	2844	0.44400927424430847	-0.17490725	No	
+row_1	CAPNS2	CAPNS2	calpain, small subunit 2	3129	0.40189504623413086	-0.1441511	No	
+row_2	NFATC2	NFATC2	nuclear factor of activated T-cells, cytoplasmic, calcineurin-dependent 2	3238	0.3813440203666687	-0.10163675	No	
+row_3	CABIN1	CABIN1	-	4256	0.23850302398204803	-0.15343015	No	
+row_4	HDAC1	HDAC1	histone deacetylase 1	5105	0.13470035791397095	-0.20527107	No	
+row_5	CAPNS1	CAPNS1	calpain, small subunit 1	5399	0.10119267553091049	-0.21581249	No	
+row_6	MEF2D	MEF2D	MADS box transcription enhancer factor 2, polypeptide D (myocyte enhancer factor 2D)	5775	0.05945245921611786	-0.23875284	No	
+row_7	PPP3CC	PPP3CC	protein phosphatase 3 (formerly 2B), catalytic subunit, gamma isoform (calcineurin A gamma)	7268	-0.10985127091407776	-0.34711108	No	
+row_8	HDAC2	HDAC2	histone deacetylase 2	9657	-0.3708222508430481	-0.49424326	Yes	
+row_9	PPP3CA	PPP3CA	protein phosphatase 3 (formerly 2B), catalytic subunit, alpha isoform (calcineurin A alpha)	9808	-0.39531490206718445	-0.45331207	Yes	
+row_10	NFATC1	NFATC1	nuclear factor of activated T-cells, cytoplasmic, calcineurin-dependent 1	10310	-0.48093411326408386	-0.42981088	Yes	
+row_11	PRKCA	PRKCA	protein kinase C, alpha	10690	-0.5605981945991516	-0.38549384	Yes	
+row_12	EP300	EP300	E1A binding protein p300	10861	-0.5987852215766907	-0.3187725	Yes	
+row_13	PPP3CB	PPP3CB	protein phosphatase 3 (formerly 2B), catalytic subunit, beta isoform (calcineurin A beta)	11088	-0.660870373249054	-0.24830112	Yes	
+row_14	CALM2	CALM2	calmodulin 2 (phosphorylase kinase, delta)	11309	-0.7378762364387512	-0.1669489	Yes	
+row_15	CALM3	CALM3	calmodulin 3 (phosphorylase kinase, delta)	11522	-0.8429415225982666	-0.070766486	Yes	
+row_16	CALM1	CALM1	calmodulin 1 (phosphorylase kinase, delta)	11602	-0.8956689834594727	0.04350701	Yes	

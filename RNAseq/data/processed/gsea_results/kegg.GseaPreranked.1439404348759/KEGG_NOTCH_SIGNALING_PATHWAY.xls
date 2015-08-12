@@ -1,0 +1,41 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ADAM17	ADAM17	ADAM metallopeptidase domain 17 (tumor necrosis factor, alpha, converting enzyme)	1565	0.7835826873779297	-0.06631436	No	
+row_1	HES1	HES1	hairy and enhancer of split 1, (Drosophila)	2011	0.6290721893310547	-0.052438736	No	
+row_2	DVL3	DVL3	dishevelled, dsh homolog 3 (Drosophila)	4292	0.23392091691493988	-0.22217786	No	
+row_3	PSEN2	PSEN2	presenilin 2 (Alzheimer disease 4)	4672	0.18586920201778412	-0.23855104	No	
+row_4	NCSTN	NCSTN	nicastrin	4817	0.16479986906051636	-0.23718417	No	
+row_5	HDAC1	HDAC1	histone deacetylase 1	5105	0.13470035791397095	-0.2500703	No	
+row_6	DTX4	DTX4	deltex 4 homolog (Drosophila)	5307	0.11043893545866013	-0.25779778	No	
+row_7	DTX3L	DTX3L	deltex 3-like (Drosophila)	5308	0.11037565767765045	-0.24890508	No	
+row_8	CTBP1	CTBP1	C-terminal binding protein 1	5793	0.05787798762321472	-0.28427505	No	
+row_9	JAG1	JAG1	jagged 1 (Alagille syndrome)	5810	0.056013792753219604	-0.28108558	No	
+row_10	NUMBL	NUMBL	numb homolog (Drosophila)-like	6117	0.021000247448682785	-0.3047038	No	
+row_11	NOTCH2	NOTCH2	Notch homolog 2 (Drosophila)	6267	0.0028675401117652655	-0.316797	No	
+row_12	MAML3	MAML3	mastermind-like 3 (Drosophila)	6303	-0.0016095316968858242	-0.3195623	No	
+row_13	PSEN1	PSEN1	presenilin 1 (Alzheimer disease 3)	6709	-0.04665619507431984	-0.34930205	No	
+row_14	NOTCH1	NOTCH1	Notch homolog 1, translocation-associated (Drosophila)	7259	-0.10869000852108002	-0.3859546	No	
+row_15	DTX2	DTX2	deltex homolog 2 (Drosophila)	7320	-0.11605950444936752	-0.3815667	No	
+row_16	NOTCH4	NOTCH4	Notch homolog 4 (Drosophila)	8397	-0.21362446248531342	-0.45335466	No	
+row_17	APH1A	APH1A	anterior pharynx defective 1 homolog A (C. elegans)	8711	-0.2501561641693115	-0.4590893	Yes	
+row_18	HES5	HES5	hairy and enhancer of split 5 (Drosophila)	8834	-0.2650170922279358	-0.44782847	Yes	
+row_19	JAG2	JAG2	jagged 2	9011	-0.28895139694213867	-0.4391058	Yes	
+row_20	DLL4	DLL4	delta-like 4 (Drosophila)	9038	-0.2924216687679291	-0.4176966	Yes	
+row_21	MAML2	MAML2	mastermind-like 2 (Drosophila)	9245	-0.3195764422416687	-0.40898794	Yes	
+row_22	RFNG	RFNG	radical fringe homolog (Drosophila)	9276	-0.3232674300670624	-0.3854244	Yes	
+row_23	DTX3	DTX3	deltex 3 homolog (Drosophila)	9300	-0.3255808353424072	-0.36109552	Yes	
+row_24	DVL2	DVL2	dishevelled, dsh homolog 2 (Drosophila)	9320	-0.3279123604297638	-0.33624792	Yes	
+row_25	CTBP2	CTBP2	C-terminal binding protein 2	9419	-0.34139811992645264	-0.31684813	Yes	
+row_26	NCOR2	NCOR2	nuclear receptor co-repressor 2	9533	-0.3545472323894501	-0.29762962	Yes	
+row_27	DLL1	DLL1	delta-like 1 (Drosophila)	9579	-0.35936111211776733	-0.27239883	Yes	
+row_28	MAML1	MAML1	mastermind-like 1 (Drosophila)	9601	-0.36306262016296387	-0.24488467	Yes	
+row_29	HDAC2	HDAC2	histone deacetylase 2	9657	-0.3708222508430481	-0.2195576	Yes	
+row_30	DVL1	DVL1	dishevelled, dsh homolog 1 (Drosophila)	9908	-0.4117528796195984	-0.20706186	Yes	
+row_31	NUMB	NUMB	numb homolog (Drosophila)	10075	-0.43885573744773865	-0.18543461	Yes	
+row_32	PSENEN	PSENEN	presenilin enhancer 2 homolog (C. elegans)	10109	-0.445239782333374	-0.15229219	Yes	
+row_33	SNW1	SNW1	SNW domain containing 1	10181	-0.45793965458869934	-0.12126967	Yes	
+row_34	LFNG	LFNG	lunatic fringe homolog (Drosophila)	10611	-0.5424504280090332	-0.11304956	Yes	
+row_35	MFNG	MFNG	manic fringe homolog (Drosophila)	10620	-0.543668806552887	-0.06990912	Yes	
+row_36	DTX1	DTX1	deltex homolog 1 (Drosophila)	10622	-0.5438733100891113	-0.026173206	Yes	
+row_37	EP300	EP300	E1A binding protein p300	10861	-0.5987852215766907	0.0023838512	Yes	
+row_38	CREBBP	CREBBP	CREB binding protein (Rubinstein-Taybi syndrome)	10949	-0.6218989491462708	0.04529279	Yes	
+row_39	NOTCH3	NOTCH3	Notch homolog 3 (Drosophila)	11039	-0.6482247114181519	0.09015731	Yes	

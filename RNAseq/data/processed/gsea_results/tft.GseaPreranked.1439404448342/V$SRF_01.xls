@@ -1,0 +1,46 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	FOSB	FOSB	FBJ murine osteosarcoma viral oncogene homolog B	29	3.7042295932769775	0.091995545	Yes	
+row_1	EGR1	EGR1	early growth response 1	61	3.1635630130767822	0.17004775	Yes	
+row_2	MRVI1	MRVI1	murine retrovirus integration site 1 homolog	100	2.779353141784668	0.23772985	Yes	
+row_3	FOS	FOS	v-fos FBJ murine osteosarcoma viral oncogene homolog	133	2.5163488388061523	0.2992063	Yes	
+row_4	FOSL1	FOSL1	FOS-like antigen 1	138	2.4760935306549072	0.3619738	Yes	
+row_5	TNNC1	TNNC1	troponin C type 1 (slow)	379	1.6940308809280396	0.38528362	Yes	
+row_6	NPAS4	NPAS4	neuronal PAS domain protein 4	429	1.608826756477356	0.42222688	Yes	
+row_7	WDR1	WDR1	WD repeat domain 1	711	1.249272108078003	0.4308102	Yes	
+row_8	ITGB1BP2	ITGB1BP2	integrin beta 1 binding protein (melusin) 2	871	1.1333231925964355	0.44653398	Yes	
+row_9	IER2	IER2	immediate early response 2	903	1.1133939027786255	0.47234154	Yes	
+row_10	EGR2	EGR2	early growth response 2 (Krox-20 homolog, Drosophila)	1036	1.0438190698623657	0.48801863	Yes	
+row_11	IL17B	IL17B	interleukin 17B	1039	1.0419589281082153	0.5144055	Yes	
+row_12	JUNB	JUNB	jun B proto-oncogene	1254	0.9115976691246033	0.5199279	Yes	
+row_13	ACTR3	ACTR3	ARP3 actin-related protein 3 homolog (yeast)	1553	0.7866026163101196	0.5153143	Yes	
+row_14	THBS1	THBS1	thrombospondin 1	1556	0.785448431968689	0.5351645	Yes	
+row_15	ANXA6	ANXA6	annexin A6	2430	0.5283457636833191	0.47639003	No	
+row_16	CFL1	CFL1	cofilin 1 (non-muscle)	2464	0.5250855684280396	0.48704016	No	
+row_17	PFN1	PFN1	profilin 1	3064	0.4106631278991699	0.44793954	No	
+row_18	PLCB3	PLCB3	phospholipase C, beta 3 (phosphatidylinositol-specific)	3392	0.3572084903717041	0.429984	No	
+row_19	CAP1	CAP1	CAP, adenylate cyclase-associated protein 1 (yeast)	4101	0.2611982226371765	0.3780551	No	
+row_20	ACTN1	ACTN1	actinin, alpha 1	4107	0.26055386662483215	0.38428107	No	
+row_21	MYL6	MYL6	myosin, light chain 6, alkali, smooth muscle and non-muscle	4129	0.2572340667247772	0.38909853	No	
+row_22	SCOC	SCOC	short coiled-coil protein	5137	0.13157296180725098	0.30912495	No	
+row_23	EGR3	EGR3	early growth response 3	5159	0.1286514550447464	0.3106657	No	
+row_24	VCL	VCL	vinculin	6536	-0.02661130763590336	0.19748367	No	
+row_25	CNN2	CNN2	calponin 2	7125	-0.09319962561130524	0.15120333	No	
+row_26	TGFB1I1	TGFB1I1	transforming growth factor beta 1 induced transcript 1	8342	-0.20664191246032715	0.0558486	No	
+row_27	SLC25A4	SLC25A4	solute carrier family 25 (mitochondrial carrier; adenine nucleotide translocator), member 4	8359	-0.20797763764858246	0.059824556	No	
+row_28	FLNA	FLNA	filamin A, alpha (actin binding protein 280)	8444	-0.21947012841701508	0.058466565	No	
+row_29	TAZ	TAZ	tafazzin (cardiomyopathy, dilated 3A (X-linked); endocardial fibroelastosis 2; Barth syndrome)	8544	-0.22937637567520142	0.05611981	No	
+row_30	TNMD	TNMD	tenomodulin	8905	-0.273013710975647	0.033288047	No	
+row_31	DIXDC1	DIXDC1	DIX domain containing 1	9202	-0.31306302547454834	0.016772686	No	
+row_32	SETD2	SETD2	SET domain containing 2	9420	-0.34148043394088745	0.007518518	No	
+row_33	CALD1	CALD1	caldesmon 1	9843	-0.4004684388637543	-0.017195633	No	
+row_34	ACTG2	ACTG2	actin, gamma 2, smooth muscle, enteric	10529	-0.5243871808052063	-0.060514465	No	
+row_35	MUS81	MUS81	MUS81 endonuclease homolog (S. cerevisiae)	10571	-0.5326095819473267	-0.050334565	No	
+row_36	KCNMB1	KCNMB1	potassium large conductance calcium-activated channel, subfamily M, beta member 1	10885	-0.6036904454231262	-0.060850546	No	
+row_37	ASB2	ASB2	ankyrin repeat and SOCS box-containing 2	10945	-0.620347261428833	-0.049924266	No	
+row_38	HOXB4	HOXB4	homeobox B4	11013	-0.6400142312049866	-0.03915879	No	
+row_39	MYH11	MYH11	myosin, heavy chain 11, smooth muscle	11147	-0.6811233162879944	-0.03280704	No	
+row_40	GPR20	GPR20	G protein-coupled receptor 20	11378	-0.7651814818382263	-0.032339714	No	
+row_41	SUSD1	SUSD1	sushi domain containing 1	11488	-0.8178408741950989	-0.020518046	No	
+row_42	TPM1	TPM1	tropomyosin 1 (alpha)	11571	-0.8726797103881836	-0.0050647426	No	
+row_43	CD248	CD248	CD248 molecule, endosialin	11659	-0.935577392578125	0.011577652	No	
+row_44	PRM1	PRM1	protamine 1	11806	-1.0685765743255615	0.02672719	No	

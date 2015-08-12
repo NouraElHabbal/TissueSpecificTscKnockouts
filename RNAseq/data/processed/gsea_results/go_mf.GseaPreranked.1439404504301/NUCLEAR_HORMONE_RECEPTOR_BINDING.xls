@@ -1,0 +1,20 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	PPARGC1B	PPARGC1B	peroxisome proliferative activated receptor, gamma, coactivator 1, beta	2016	0.6273354887962341	-0.06916615	No	
+row_1	DDX54	DDX54	DEAD (Asp-Glu-Ala-Asp) box polypeptide 54	2369	0.544197142124176	-0.013830565	No	
+row_2	YWHAH	YWHAH	tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein, eta polypeptide	3618	0.32763510942459106	-0.06606413	No	
+row_3	HMGA1	HMGA1	high mobility group AT-hook 1	3969	0.27773621678352356	-0.051889088	No	
+row_4	TACC2	TACC2	transforming, acidic coiled-coil containing protein 2	5504	0.08960390090942383	-0.16465405	No	
+row_5	NUP62	NUP62	nucleoporin 62kDa	5931	0.042096298187971115	-0.19329992	No	
+row_6	DAXX	DAXX	death-associated protein 6	6567	-0.029850764200091362	-0.24110201	No	
+row_7	NSD1	NSD1	nuclear receptor binding SET domain protein 1	6742	-0.04941906780004501	-0.24780467	No	
+row_8	TRIP12	TRIP12	thyroid hormone receptor interactor 12	6767	-0.0526120662689209	-0.24162668	No	
+row_9	PRPF6	PRPF6	PRP6 pre-mRNA processing factor 6 homolog (S. cerevisiae)	7044	-0.08396577090024948	-0.25139356	No	
+row_10	TGFB1I1	TGFB1I1	transforming growth factor beta 1 induced transcript 1	8342	-0.20664191246032715	-0.32643798	Yes	
+row_11	ZNHIT3	ZNHIT3	zinc finger, HIT type 3	8762	-0.2570052146911621	-0.32117543	Yes	
+row_12	MED4	MED4	mediator of RNA polymerase II transcription, subunit 4 homolog (S. cerevisiae)	9254	-0.32071653008461	-0.31197685	Yes	
+row_13	NCOA6	NCOA6	nuclear receptor coactivator 6	9877	-0.40621593594551086	-0.3003347	Yes	
+row_14	SMARCD3	SMARCD3	SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily d, member 3	9962	-0.4208371639251709	-0.24200247	Yes	
+row_15	JMJD1C	JMJD1C	jumonji domain containing 1C	10201	-0.461363822221756	-0.19010064	Yes	
+row_16	THRAP3	THRAP3	thyroid hormone receptor associated protein 3	10475	-0.5117790699005127	-0.1332698	Yes	
+row_17	MED12	MED12	mediator of RNA polymerase II transcription, subunit 12 homolog (S. cerevisiae)	11007	-0.638975203037262	-0.07801495	Yes	
+row_18	NRIP1	NRIP1	nuclear receptor interacting protein 1	11845	-1.0998408794403076	0.02344975	Yes	

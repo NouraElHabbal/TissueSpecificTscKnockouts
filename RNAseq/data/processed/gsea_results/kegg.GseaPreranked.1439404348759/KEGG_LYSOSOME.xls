@@ -1,0 +1,114 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CD68	CD68	CD68 molecule	245	2.0261223316192627	0.019280879	Yes	
+row_1	CTSS	CTSS	cathepsin S	316	1.815683364868164	0.049004357	Yes	
+row_2	ARSG	ARSG	arylsulfatase G	495	1.514366865158081	0.06384121	Yes	
+row_3	GALC	GALC	galactosylceramidase	508	1.4957231283187866	0.09212681	Yes	
+row_4	ATP6V1H	ATP6V1H	ATPase, H+ transporting, lysosomal 50/57kDa, V1 subunit H	556	1.4266066551208496	0.11614666	Yes	
+row_5	LGMN	LGMN	legumain	640	1.3150767087936401	0.13498716	Yes	
+row_6	GALNS	GALNS	galactosamine (N-acetyl)-6-sulfate sulfatase (Morquio syndrome, mucopolysaccharidosis type IVA)	658	1.2957611083984375	0.1589417	Yes	
+row_7	GGA2	GGA2	golgi associated, gamma adaptin ear containing, ARF binding protein 2	682	1.2778849601745605	0.18204696	Yes	
+row_8	GUSB	GUSB	glucuronidase, beta	777	1.1945571899414062	0.19761248	Yes	
+row_9	PPT1	PPT1	palmitoyl-protein thioesterase 1 (ceroid-lipofuscinosis, neuronal 1, infantile)	790	1.1877626180648804	0.21986865	Yes	
+row_10	ATP6V0D2	ATP6V0D2	ATPase, H+ transporting, lysosomal 38kDa, V0 subunit d2	851	1.1485282182693481	0.23736231	Yes	
+row_11	CTSB	CTSB	cathepsin B	1122	0.9887266159057617	0.23425204	Yes	
+row_12	LAPTM5	LAPTM5	lysosomal associated multispanning membrane protein 5	1163	0.9617063999176025	0.24975228	Yes	
+row_13	LIPA	LIPA	lipase A, lysosomal acid, cholesterol esterase (Wolman disease)	1245	0.9182291030883789	0.2609895	Yes	
+row_14	CTSE	CTSE	cathepsin E	1278	0.9012635350227356	0.2759721	Yes	
+row_15	CTSK	CTSK	cathepsin K (pycnodysostosis)	1348	0.8679182529449463	0.28722286	Yes	
+row_16	AP3B2	AP3B2	adaptor-related protein complex 3, beta 2 subunit	1450	0.8246194124221802	0.294963	Yes	
+row_17	NAPSA	NAPSA	napsin A aspartic peptidase	1503	0.8013851046562195	0.3063258	Yes	
+row_18	HYAL1	HYAL1	hyaluronoglucosaminidase 1	1597	0.7751613855361938	0.31376335	Yes	
+row_19	GLB1	GLB1	galactosidase, beta 1	1731	0.7225469946861267	0.31684217	Yes	
+row_20	IGF2R	IGF2R	insulin-like growth factor 2 receptor	1812	0.690284252166748	0.32369974	Yes	
+row_21	CTSD	CTSD	cathepsin D (lysosomal aspartyl peptidase)	1851	0.6782536506652832	0.33381683	Yes	
+row_22	AP1S1	AP1S1	adaptor-related protein complex 1, sigma 1 subunit	1966	0.6430962681770325	0.3369212	Yes	
+row_23	CD63	CD63	CD63 molecule	2013	0.6280988454818726	0.3453906	Yes	
+row_24	AP1M2	AP1M2	adaptor-related protein complex 1, mu 2 subunit	2144	0.594371497631073	0.34620956	Yes	
+row_25	FUCA1	FUCA1	fucosidase, alpha-L- 1, tissue	2238	0.5780880451202393	0.34978867	Yes	
+row_26	GBA	GBA	glucosidase, beta; acid (includes glucosylceramidase)	2337	0.5540167689323425	0.35248044	Yes	
+row_27	SLC11A1	SLC11A1	solute carrier family 11 (proton-coupled divalent metal ion transporters), member 1	2402	0.5358603596687317	0.35764605	Yes	
+row_28	CTSZ	CTSZ	cathepsin Z	2500	0.5165387988090515	0.35968727	Yes	
+row_29	ATP6AP1	ATP6AP1	ATPase, H+ transporting, lysosomal accessory protein 1	2616	0.4947212040424347	0.35980344	Yes	
+row_30	SUMF1	SUMF1	sulfatase modifying factor 1	2657	0.48482176661491394	0.36596698	Yes	
+row_31	TCIRG1	TCIRG1	T-cell, immune regulator 1, ATPase, H+ transporting, lysosomal V0 subunit A3	2737	0.4673539996147156	0.3685431	Yes	
+row_32	CTSH	CTSH	cathepsin H	2744	0.4657009243965149	0.37716156	Yes	
+row_33	AP3S1	AP3S1	adaptor-related protein complex 3, sigma 1 subunit	2840	0.4446600377559662	0.37796193	Yes	
+row_34	GNPTAB	GNPTAB	N-acetylglucosamine-1-phosphate transferase, alpha and beta subunits	3019	0.41864004731178284	0.37134597	No	
+row_35	AP1B1	AP1B1	adaptor-related protein complex 1, beta 1 subunit	3095	0.40726903080940247	0.37307858	No	
+row_36	NPC2	NPC2	Niemann-Pick disease, type C2	3204	0.3870365619659424	0.37166893	No	
+row_37	ASAH1	ASAH1	N-acylsphingosine amidohydrolase (acid ceramidase) 1	3310	0.3702907860279083	0.3701811	No	
+row_38	ATP6V0A4	ATP6V0A4	ATPase, H+ transporting, lysosomal V0 subunit a4	3368	0.36046165227890015	0.37249517	No	
+row_39	SGSH	SGSH	N-sulfoglucosamine sulfohydrolase (sulfamidase)	3420	0.3519268035888672	0.3751414	No	
+row_40	AP1S2	AP1S2	adaptor-related protein complex 1, sigma 2 subunit	3547	0.33651208877563477	0.3712447	No	
+row_41	ATP6V0C	ATP6V0C	ATPase, H+ transporting, lysosomal 16kDa, V0 subunit c	3554	0.3357919156551361	0.37731975	No	
+row_42	CTNS	CTNS	cystinosis, nephropathic	3746	0.31053096055984497	0.36750537	No	
+row_43	MANBA	MANBA	mannosidase, beta A, lysosomal	3876	0.288859099149704	0.36242604	No	
+row_44	ATP6V0A2	ATP6V0A2	ATPase, H+ transporting, lysosomal V0 subunit a2	4128	0.25725826621055603	0.3465757	No	
+row_45	HEXA	HEXA	hexosaminidase A (alpha polypeptide)	4133	0.2567776143550873	0.3512702	No	
+row_46	CLTC	CLTC	clathrin, heavy chain (Hc)	4375	0.22281301021575928	0.33557767	No	
+row_47	LAMP3	LAMP3	lysosomal-associated membrane protein 3	4380	0.22213977575302124	0.33959398	No	
+row_48	ATP6V0D1	ATP6V0D1	ATPase, H+ transporting, lysosomal 38kDa, V0 subunit d1	4456	0.21311362087726593	0.33752528	No	
+row_49	AP4M1	AP4M1	adaptor-related protein complex 4, mu 1 subunit	4490	0.20738106966018677	0.3388394	No	
+row_50	GLA	GLA	galactosidase, alpha	4620	0.19231988489627838	0.33187	No	
+row_51	LAMP1	LAMP1	lysosomal-associated membrane protein 1	4638	0.19032137095928192	0.33418155	No	
+row_52	AP3S2	AP3S2	adaptor-related protein complex 3, sigma 2 subunit	4756	0.1737237423658371	0.32784662	No	
+row_53	AP4B1	AP4B1	adaptor-related protein complex 4, beta 1 subunit	4770	0.17225922644138336	0.3301374	No	
+row_54	AP1G1	AP1G1	adaptor-related protein complex 1, gamma 1 subunit	4797	0.16702979803085327	0.33124402	No	
+row_55	NAGA	NAGA	N-acetylgalactosaminidase, alpha-	4882	0.15686830878257751	0.3273252	No	
+row_56	CLN5	CLN5	ceroid-lipofuscinosis, neuronal 5	4982	0.14710666239261627	0.321967	No	
+row_57	ATP6V0B	ATP6V0B	ATPase, H+ transporting, lysosomal 21kDa, V0 subunit b	4987	0.14574363827705383	0.3244876	No	
+row_58	CTSW	CTSW	cathepsin W (lymphopain)	5034	0.14130781590938568	0.3234263	No	
+row_59	CLN3	CLN3	ceroid-lipofuscinosis, neuronal 3, juvenile (Batten, Spielmeyer-Vogt disease)	5091	0.136046901345253	0.32142985	No	
+row_60	SLC17A5	SLC17A5	solute carrier family 17 (anion/sugar transporter), member 5	5111	0.13437892496585846	0.3224797	No	
+row_61	MAN2B1	MAN2B1	mannosidase, alpha, class 2B, member 1	5171	0.1273586004972458	0.3200635	No	
+row_62	GGA3	GGA3	golgi associated, gamma adaptin ear containing, ARF binding protein 3	5283	0.11270933598279953	0.31303328	No	
+row_63	NEU1	NEU1	sialidase 1 (lysosomal sialidase)	5490	0.0912516862154007	0.29767746	No	
+row_64	ATP6V0A1	ATP6V0A1	ATPase, H+ transporting, lysosomal V0 subunit a1	5686	0.06955567747354507	0.28281227	No	
+row_65	LAMP2	LAMP2	lysosomal-associated membrane protein 2	5690	0.06890508532524109	0.28391168	No	
+row_66	ABCB9	ABCB9	ATP-binding cassette, sub-family B (MDR/TAP), member 9	5699	0.06754568964242935	0.2845684	No	
+row_67	PSAP	PSAP	prosaposin (variant Gaucher disease and variant metachromatic leukodystrophy)	5785	0.058706000447273254	0.27864447	No	
+row_68	AP3M1	AP3M1	adaptor-related protein complex 3, mu 1 subunit	5805	0.0566781647503376	0.27817306	No	
+row_69	M6PR	M6PR	mannose-6-phosphate receptor (cation dependent)	6494	-0.02187309041619301	0.22134908	No	
+row_70	SCARB2	SCARB2	scavenger receptor class B, member 2	6797	-0.05580170452594757	0.19731054	No	
+row_71	ARSB	ARSB	arylsulfatase B	7010	-0.08030634373426437	0.18124114	No	
+row_72	ACP2	ACP2	acid phosphatase 2, lysosomal	7043	-0.08394599705934525	0.1802218	No	
+row_73	ABCA2	ABCA2	ATP-binding cassette, sub-family A (ABC1), member 2	7048	-0.08468133211135864	0.18154688	No	
+row_74	GNS	GNS	glucosamine (N-acetyl)-6-sulfatase (Sanfilippo disease IIID)	7094	-0.0896160751581192	0.17955674	No	
+row_75	SLC11A2	SLC11A2	solute carrier family 11 (proton-coupled divalent metal ion transporters), member 2	7107	-0.09156015515327454	0.18035078	No	
+row_76	CTSC	CTSC	cathepsin C	7133	-0.0948655903339386	0.18012773	No	
+row_77	HGSNAT	HGSNAT	heparan-alpha-glucosaminide N-acetyltransferase	7208	-0.10198906064033508	0.17596659	No	
+row_78	CLTA	CLTA	clathrin, light chain (Lca)	7393	-0.12260769307613373	0.16305543	No	
+row_79	CLTB	CLTB	clathrin, light chain (Lcb)	7409	-0.12428433448076248	0.16424052	No	
+row_80	AP3B1	AP3B1	adaptor-related protein complex 3, beta 1 subunit	7525	-0.13909558951854706	0.15739404	No	
+row_81	AP3M2	AP3M2	adaptor-related protein complex 3, mu 2 subunit	7577	-0.14144833385944366	0.15591942	No	
+row_82	AP3D1	AP3D1	adaptor-related protein complex 3, delta 1 subunit	7586	-0.14217282831668854	0.15803725	No	
+row_83	LAPTM4A	LAPTM4A	lysosomal-associated protein transmembrane 4 alpha	7743	-0.15822672843933105	0.14815348	No	
+row_84	AP4S1	AP4S1	adaptor-related protein complex 4, sigma 1 subunit	8122	-0.18435470759868622	0.12030746	No	
+row_85	AP4E1	AP4E1	adaptor-related protein complex 4, epsilon 1 subunit	8161	-0.18903028964996338	0.12084622	No	
+row_86	MCOLN1	MCOLN1	mucolipin 1	8218	-0.19507230818271637	0.12000541	No	
+row_87	NPC1	NPC1	Niemann-Pick disease, type C1	8242	-0.19627735018730164	0.12193429	No	
+row_88	ARSA	ARSA	arylsulfatase A	8357	-0.20788626372814178	0.11651785	No	
+row_89	AP1M1	AP1M1	adaptor-related protein complex 1, mu 1 subunit	8551	-0.23016297817230225	0.10496354	No	
+row_90	SMPD1	SMPD1	sphingomyelin phosphodiesterase 1, acid lysosomal (acid sphingomyelinase)	8642	-0.24191167950630188	0.10221045	No	
+row_91	HEXB	HEXB	hexosaminidase B (beta polypeptide)	8813	-0.26280665397644043	0.09320921	No	
+row_92	NAGPA	NAGPA	N-acetylglucosamine-1-phosphodiester alpha-N-acetylglucosaminidase	9026	-0.291130930185318	0.081267476	No	
+row_93	TPP1	TPP1	tripeptidyl peptidase I	9041	-0.2929595708847046	0.0858382	No	
+row_94	CTSF	CTSF	cathepsin F	9072	-0.2978045642375946	0.08917233	No	
+row_95	GAA	GAA	glucosidase, alpha; acid (Pompe disease, glycogen storage disease type II)	9086	-0.2997719347476959	0.09395965	No	
+row_96	AGA	AGA	aspartylglucosaminidase	9132	-0.30637145042419434	0.09621329	No	
+row_97	IDUA	IDUA	iduronidase, alpha-L-	9207	-0.3138425350189209	0.096199945	No	
+row_98	GM2A	GM2A	GM2 ganglioside activator	9217	-0.3149792551994324	0.101617865	No	
+row_99	GNPTG	GNPTG	N-acetylglucosamine-1-phosphate transferase, gamma subunit	9316	-0.3275526463985443	0.09987578	No	
+row_100	NAGLU	NAGLU	N-acetylglucosaminidase, alpha- (Sanfilippo disease IIIB)	9697	-0.3776654899120331	0.07564807	No	
+row_101	GGA1	GGA1	golgi associated, gamma adaptin ear containing, ARF binding protein 1	9742	-0.3850543797016144	0.07952542	No	
+row_102	ACP5	ACP5	acid phosphatase 5, tartrate resistant	9937	-0.41681718826293945	0.07154233	No	
+row_103	AP1S3	AP1S3	adaptor-related protein complex 1, sigma 3 subunit	10015	-0.4294249415397644	0.07354228	No	
+row_104	SORT1	SORT1	sortilin 1	10055	-0.4353863596916199	0.07882114	No	
+row_105	PSAPL1	PSAPL1	prosaposin-like 1	10101	-0.44367343187332153	0.08376296	No	
+row_106	DNASE2B	DNASE2B	deoxyribonuclease II beta	10123	-0.4472936987876892	0.09077282	No	
+row_107	CD164	CD164	CD164 molecule, sialomucin	10336	-0.4848287105560303	0.08262342	No	
+row_108	ENTPD4	ENTPD4	ectonucleoside triphosphate diphosphohydrolase 4	10499	-0.51750248670578	0.0792745	No	
+row_109	IDS	IDS	iduronate 2-sulfatase (Hunter syndrome)	10677	-0.5586298108100891	0.07548256	No	
+row_110	PPT2	PPT2	palmitoyl-protein thioesterase 2	10815	-0.5881394743919373	0.075597	No	
+row_111	CTSO	CTSO	cathepsin O	11308	-0.737845242023468	0.049100988	No	
+row_112	LAPTM4B	LAPTM4B	lysosomal associated protein transmembrane 4 beta	11716	-0.9773750901222229	0.03436795	No	

@@ -1,0 +1,18 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MVP	MVP	major vault protein	651	1.3012288808822632	0.1175604	No	
+row_1	BCAR3	BCAR3	breast cancer anti-estrogen resistance 3	4071	0.26591143012046814	-0.1296916	No	
+row_2	CTPS	CTPS	CTP synthase	4704	0.18094173073768616	-0.1580463	No	
+row_3	ABCG2	ABCG2	ATP-binding cassette, sub-family G (WHITE), member 2	4796	0.16706131398677826	-0.1435656	No	
+row_4	ABCC6	ABCC6	ATP-binding cassette, sub-family C (CFTR/MRP), member 6	4897	0.1540195792913437	-0.1315448	No	
+row_5	ABCA3	ABCA3	ATP-binding cassette, sub-family A (ABC1), member 3	6808	-0.05715365335345268	-0.28170246	No	
+row_6	ABCA2	ABCA2	ATP-binding cassette, sub-family A (ABC1), member 2	7048	-0.08468133211135864	-0.2902852	No	
+row_7	ABCC1	ABCC1	ATP-binding cassette, sub-family C (CFTR/MRP), member 1	8666	-0.24490605294704437	-0.3915367	No	
+row_8	SLC22A18	SLC22A18	solute carrier family 22 (organic cation transporter), member 18	9435	-0.3428507149219513	-0.40980405	Yes	
+row_9	SOD1	SOD1	superoxide dismutase 1, soluble (amyotrophic lateral sclerosis 1 (adult))	9514	-0.35270798206329346	-0.36981007	Yes	
+row_10	TOP1	TOP1	topoisomerase (DNA) I	10297	-0.47890424728393555	-0.37132198	Yes	
+row_11	SCN11A	SCN11A	sodium channel, voltage-gated, type XI, alpha	10438	-0.5052695870399475	-0.31636202	Yes	
+row_12	GCLM	GCLM	glutamate-cysteine ligase, modifier subunit	10556	-0.5299212336540222	-0.25625795	Yes	
+row_13	SEMA3C	SEMA3C	sema domain, immunoglobulin domain (Ig), short basic domain, secreted, (semaphorin) 3C	10814	-0.5879759788513184	-0.20006889	Yes	
+row_14	LIPE	LIPE	lipase, hormone-sensitive	10971	-0.630313515663147	-0.12996805	Yes	
+row_15	ABCB4	ABCB4	ATP-binding cassette, sub-family B (MDR/TAP), member 4	11064	-0.654953122138977	-0.051339854	Yes	
+row_16	LCK	LCK	lymphocyte-specific protein tyrosine kinase	11797	-1.057207465171814	0.027408555	Yes	

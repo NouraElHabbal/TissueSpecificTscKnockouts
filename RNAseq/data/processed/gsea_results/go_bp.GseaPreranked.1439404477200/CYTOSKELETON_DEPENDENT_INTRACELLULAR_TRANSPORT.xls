@@ -1,0 +1,26 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	DYNC1I1	DYNC1I1	dynein, cytoplasmic 1, intermediate chain 1	66	3.1247200965881348	0.15020876	Yes	
+row_1	TNNT2	TNNT2	troponin T type 2 (cardiac)	103	2.7426884174346924	0.28386453	Yes	
+row_2	MYL6B	MYL6B	myosin, light chain 6B, alkali, smooth muscle and non-muscle	183	2.2480413913726807	0.38932672	Yes	
+row_3	MYH7	MYH7	myosin, heavy chain 7, cardiac muscle, beta	307	1.8274660110473633	0.47020268	Yes	
+row_4	KIF5A	KIF5A	kinesin family member 5A	435	1.596842646598816	0.53925943	Yes	
+row_5	MYH10	MYH10	myosin, heavy chain 10, non-muscle	546	1.441959261894226	0.60200495	Yes	
+row_6	NEFL	NEFL	neurofilament, light polypeptide 68kDa	835	1.1540247201919556	0.635702	Yes	
+row_7	KIF1A	KIF1A	kinesin family member 1A	1253	0.9120447039604187	0.64668787	Yes	
+row_8	KIF3B	KIF3B	kinesin family member 3B	1265	0.9072672128677368	0.69097555	Yes	
+row_9	MYO1E	MYO1E	myosin IE	2520	0.5124337077140808	0.6129094	No	
+row_10	MYH6	MYH6	myosin, heavy chain 6, cardiac muscle, alpha (cardiomyopathy, hypertrophic 1)	2621	0.4939512312412262	0.629255	No	
+row_11	MYH9	MYH9	myosin, heavy chain 9, non-muscle	2680	0.48069727420806885	0.64841	No	
+row_12	MAP1S	MAP1S	microtubule-associated protein 1S	2793	0.4558030366897583	0.6618639	No	
+row_13	MYO9B	MYO9B	myosin IXB	3694	0.3156905770301819	0.6032409	No	
+row_14	MYL6	MYL6	myosin, light chain 6, alkali, smooth muscle and non-muscle	4129	0.2572340667247772	0.58020234	No	
+row_15	UXT	UXT	ubiquitously-expressed transcript	4604	0.19454073905944824	0.5507362	No	
+row_16	KIF1B	KIF1B	kinesin family member 1B	4940	0.15069396793842316	0.53056866	No	
+row_17	OPA1	OPA1	optic atrophy 1 (autosomal dominant)	5554	0.08304498344659805	0.48406538	No	
+row_18	KIF13B	KIF13B	kinesin family member 13B	6287	-3.7736346712335944E-5	0.42359638	No	
+row_19	RHOT1	RHOT1	ras homolog gene family, member T1	6716	-0.04758886247873306	0.39060977	No	
+row_20	LRPPRC	LRPPRC	leucine-rich PPR-motif containing	6980	-0.07641900330781937	0.3726901	No	
+row_21	KIF5B	KIF5B	kinesin family member 5B	7243	-0.10572434216737747	0.3563129	No	
+row_22	RHOT2	RHOT2	ras homolog gene family, member T2	7614	-0.14487066864967346	0.3329639	No	
+row_23	APBA1	APBA1	amyloid beta (A4) precursor protein-binding, family A, member 1 (X11)	9725	-0.38316795229911804	0.17774366	No	
+row_24	MYO6	MYO6	myosin VI	9939	-0.41692066192626953	0.18091694	No	

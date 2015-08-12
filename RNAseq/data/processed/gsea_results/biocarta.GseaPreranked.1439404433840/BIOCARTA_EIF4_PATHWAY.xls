@@ -1,0 +1,23 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	EIF4A1	EIF4A1	eukaryotic translation initiation factor 4A, isoform 1	2055	0.6175678372383118	-0.08329293	No	
+row_1	PIK3R1	PIK3R1	phosphoinositide-3-kinase, regulatory subunit 1 (p85 alpha)	2710	0.4732910096645355	-0.07106901	No	
+row_2	PDPK1	PDPK1	3-phosphoinositide dependent protein kinase-1	3177	0.3933652341365814	-0.05450389	No	
+row_3	AKT1	AKT1	v-akt murine thymoma viral oncogene homolog 1	3901	0.28578126430511475	-0.074220955	No	
+row_4	EIF4EBP1	EIF4EBP1	eukaryotic translation initiation factor 4E binding protein 1	5363	0.10497656464576721	-0.18019335	No	
+row_5	MAPK3	MAPK3	mitogen-activated protein kinase 3	5920	0.04387248307466507	-0.21997337	No	
+row_6	PTEN	PTEN	phosphatase and tensin homolog (mutated in multiple advanced cancers 1)	6243	0.005244560074061155	-0.24583338	No	
+row_7	EIF4G2	EIF4G2	eukaryotic translation initiation factor 4 gamma, 2	6391	-0.009791167452931404	-0.25660384	No	
+row_8	PIK3CA	PIK3CA	phosphoinositide-3-kinase, catalytic, alpha polypeptide	6401	-0.011046390980482101	-0.25580117	No	
+row_9	MKNK1	MKNK1	MAP kinase interacting serine/threonine kinase 1	6489	-0.021583521738648415	-0.25996587	No	
+row_10	RPS6KB1	RPS6KB1	ribosomal protein S6 kinase, 70kDa, polypeptide 1	7592	-0.14293615520000458	-0.33097592	No	
+row_11	MAPK1	MAPK1	mitogen-activated protein kinase 1	7694	-0.15220962464809418	-0.31801555	No	
+row_12	EIF4E	EIF4E	eukaryotic translation initiation factor 4E	7847	-0.16444513201713562	-0.3075549	No	
+row_13	EIF4G1	EIF4G1	eukaryotic translation initiation factor 4 gamma, 1	8694	-0.24847310781478882	-0.34265187	Yes	
+row_14	GHR	GHR	growth hormone receptor	9075	-0.2982698678970337	-0.33229274	Yes	
+row_15	EIF4G3	EIF4G3	eukaryotic translation initiation factor 4 gamma, 3	9355	-0.33272892236709595	-0.30876943	Yes	
+row_16	MAPK14	MAPK14	mitogen-activated protein kinase 14	9820	-0.3966512084007263	-0.29157928	Yes	
+row_17	PABPC1	PABPC1	poly(A) binding protein, cytoplasmic 1	10433	-0.503948986530304	-0.27159593	Yes	
+row_18	PRKCA	PRKCA	protein kinase C, alpha	10690	-0.5605981945991516	-0.21428241	Yes	
+row_19	PDK2	PDK2	pyruvate dehydrogenase kinase, isozyme 2	10756	-0.5749912261962891	-0.13917986	Yes	
+row_20	IRS1	IRS1	insulin receptor substrate 1	11554	-0.8647452592849731	-0.08398169	Yes	
+row_21	EIF4A2	EIF4A2	eukaryotic translation initiation factor 4A, isoform 2	11663	-0.9388136863708496	0.038487	Yes	

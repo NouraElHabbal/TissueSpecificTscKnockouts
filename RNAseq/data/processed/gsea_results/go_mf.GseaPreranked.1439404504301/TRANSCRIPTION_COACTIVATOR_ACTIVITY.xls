@@ -1,0 +1,107 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	PCBD1	PCBD1	pterin-4 alpha-carbinolamine dehydratase/dimerization cofactor of hepatocyte nuclear factor 1 alpha (TCF1)	54	3.283813714981079	0.0696315	No	
+row_1	HTATIP2	HTATIP2	HIV-1 Tat interactive protein 2, 30kDa	712	1.248653531074524	0.043175496	No	
+row_2	BRDT	BRDT	bromodomain, testis-specific	759	1.2132147550582886	0.0667346	No	
+row_3	JUNB	JUNB	jun B proto-oncogene	1254	0.9115976691246033	0.04622676	No	
+row_4	GTF2F1	GTF2F1	general transcription factor IIF, polypeptide 1, 74kDa	1554	0.786568284034729	0.03911431	No	
+row_5	SMARCC1	SMARCC1	SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily c, member 1	1708	0.7315354347229004	0.042902038	No	
+row_6	TFAP2B	TFAP2B	transcription factor AP-2 beta (activating enhancer binding protein 2 beta)	1842	0.6814939379692078	0.047223568	No	
+row_7	PPARGC1B	PPARGC1B	peroxisome proliferative activated receptor, gamma, coactivator 1, beta	2016	0.6273354887962341	0.046995945	No	
+row_8	SMARCA4	SMARCA4	SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily a, member 4	2237	0.5783480405807495	0.041753724	No	
+row_9	ATF6	ATF6	activating transcription factor 6	2382	0.5409835577011108	0.041988805	No	
+row_10	YAF2	YAF2	YY1 associated factor 2	2405	0.5346376895904541	0.052227017	No	
+row_11	MYEF2	MYEF2	myelin expression factor 2	2425	0.529715359210968	0.06260362	No	
+row_12	GMEB1	GMEB1	glucocorticoid modulatory element binding protein 1	2512	0.5139616131782532	0.06705245	No	
+row_13	SMARCE1	SMARCE1	SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily e, member 1	3004	0.4212995171546936	0.035727058	No	
+row_14	MED6	MED6	mediator of RNA polymerase II transcription, subunit 6 homolog (S. cerevisiae)	3249	0.38024774193763733	0.024017293	No	
+row_15	PRRX1	PRRX1	paired related homeobox 1	3275	0.3759591281414032	0.030424299	No	
+row_16	NFKBIB	NFKBIB	nuclear factor of kappa light polypeptide gene enhancer in B-cells inhibitor, beta	3625	0.3264363408088684	0.008767364	No	
+row_17	TBPL1	TBPL1	TBP-like 1	3645	0.32366299629211426	0.014492939	No	
+row_18	CIITA	CIITA	class II, major histocompatibility complex, transactivator	3677	0.3189867436885834	0.019114958	No	
+row_19	GABPA	GABPA	GA binding protein transcription factor, alpha subunit 60kDa	3823	0.2974604666233063	0.013770045	No	
+row_20	TFEC	TFEC	transcription factor EC	3826	0.29676303267478943	0.020302271	No	
+row_21	TFDP1	TFDP1	transcription factor Dp-1	3891	0.2870174050331116	0.021458164	No	
+row_22	HMGA1	HMGA1	high mobility group AT-hook 1	3969	0.27773621678352356	0.02132339	No	
+row_23	MTF1	MTF1	metal-regulatory transcription factor 1	4132	0.25684699416160583	0.013647908	No	
+row_24	TRIM32	TRIM32	tripartite motif-containing 32	4207	0.24463781714439392	0.013015536	No	
+row_25	EPAS1	EPAS1	endothelial PAS domain protein 1	4479	0.20964431762695312	-0.0047906116	No	
+row_26	HCFC2	HCFC2	host cell factor C2	4498	0.2067442536354065	-0.0016209693	No	
+row_27	SMARCD1	SMARCD1	SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily d, member 1	4698	0.18193255364894867	-0.014064605	No	
+row_28	CRTC1	CRTC1	CREB regulated transcription coactivator 1	4853	0.16044464707374573	-0.023250753	No	
+row_29	BCL10	BCL10	B-cell CLL/lymphoma 10	5018	0.14354392886161804	-0.033650056	No	
+row_30	RNF14	RNF14	ring finger protein 14	5025	0.14287562668323517	-0.030924056	No	
+row_31	ABT1	ABT1	activator of basal transcription 1	5050	0.1396482139825821	-0.029767914	No	
+row_32	ELF3	ELF3	E74-like factor 3 (ets domain transcription factor, epithelial-specific )	5516	0.08795583993196487	-0.06645522	No	
+row_33	HSF2	HSF2	heat shock transcription factor 2	5735	0.06387501955032349	-0.08314383	No	
+row_34	TAF9	TAF9	TAF9 RNA polymerase II, TATA box binding protein (TBP)-associated factor, 32kDa	5794	0.05770106986165047	-0.08666509	No	
+row_35	PSMC3	PSMC3	proteasome (prosome, macropain) 26S subunit, ATPase, 3	6052	0.028432829305529594	-0.10739721	No	
+row_36	NR2F1	NR2F1	nuclear receptor subfamily 2, group F, member 1	6245	0.005087312310934067	-0.12325045	No	
+row_37	MAML3	MAML3	mastermind-like 3 (Drosophila)	6303	-0.0016095316968858242	-0.12795463	No	
+row_38	TCERG1	TCERG1	transcription elongation regulator 1	6326	-0.003855061484500766	-0.1296973	No	
+row_39	PQBP1	PQBP1	polyglutamine binding protein 1	6351	-0.005905408877879381	-0.13156	No	
+row_40	TFAP2A	TFAP2A	transcription factor AP-2 alpha (activating enhancer binding protein 2 alpha)	6377	-0.00908434297889471	-0.13343413	No	
+row_41	COPS5	COPS5	COP9 constitutive photomorphogenic homolog subunit 5 (Arabidopsis)	6420	-0.013173121958971024	-0.13662979	No	
+row_42	APEX1	APEX1	APEX nuclease (multifunctional DNA repair enzyme) 1	6613	-0.03561104089021683	-0.15179405	No	
+row_43	ECD	ECD	ecdysoneless homolog (Drosophila)	6881	-0.06600292026996613	-0.1725098	No	
+row_44	PRPF6	PRPF6	PRP6 pre-mRNA processing factor 6 homolog (S. cerevisiae)	7044	-0.08396577090024948	-0.18408757	No	
+row_45	RARA	RARA	retinoic acid receptor, alpha	7104	-0.09094928950071335	-0.18694152	No	
+row_46	NR1I3	NR1I3	nuclear receptor subfamily 1, group I, member 3	7108	-0.09178416430950165	-0.18511926	No	
+row_47	ARNT	ARNT	aryl hydrocarbon receptor nuclear translocator	7161	-0.09712973237037659	-0.18725152	No	
+row_48	SOX10	SOX10	SRY (sex determining region Y)-box 10	7162	-0.09745002537965775	-0.18505187	No	
+row_49	TRIP4	TRIP4	thyroid hormone receptor interactor 4	7180	-0.09945730119943619	-0.18422075	No	
+row_50	NFYC	NFYC	nuclear transcription factor Y, gamma	7276	-0.11120941489934921	-0.18961139	No	
+row_51	ATF2	ATF2	activating transcription factor 2	7381	-0.12149038910865784	-0.19551846	No	
+row_52	EDF1	EDF1	endothelial differentiation-related factor 1	7611	-0.1447368562221527	-0.21129669	No	
+row_53	NFE2L3	NFE2L3	nuclear factor (erythroid-derived 2)-like 3	7613	-0.144809290766716	-0.20811121	No	
+row_54	GTF2A1	GTF2A1	general transcription factor IIA, 1, 19/37kDa	7740	-0.15717221796512604	-0.21504255	No	
+row_55	CALCOCO1	CALCOCO1	calcium binding and coiled-coil domain 1	8023	-0.17814528942108154	-0.23447454	No	
+row_56	KLF7	KLF7	Kruppel-like factor 7 (ubiquitous)	8049	-0.1806495040655136	-0.23247607	No	
+row_57	MKL2	MKL2	MKL/myocardin-like 2	8338	-0.2059844434261322	-0.25177866	No	
+row_58	TGFB1I1	TGFB1I1	transforming growth factor beta 1 induced transcript 1	8342	-0.20664191246032715	-0.24736384	No	
+row_59	TAF7	TAF7	TAF7 RNA polymerase II, TATA box binding protein (TBP)-associated factor, 55kDa	8433	-0.21774514019489288	-0.2499339	No	
+row_60	MAX	MAX	MYC associated factor X	8614	-0.2375873476266861	-0.25954112	Yes	
+row_61	SMARCD2	SMARCD2	SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily d, member 2	8655	-0.24344287812709808	-0.2573728	Yes	
+row_62	SMARCA2	SMARCA2	SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily a, member 2	8695	-0.24855303764343262	-0.25500596	Yes	
+row_63	NR1H3	NR1H3	nuclear receptor subfamily 1, group H, member 3	8730	-0.2527117133140564	-0.25212938	Yes	
+row_64	RIPK3	RIPK3	receptor-interacting serine-threonine kinase 3	8738	-0.2538664638996124	-0.24698126	Yes	
+row_65	RXRA	RXRA	retinoid X receptor, alpha	8748	-0.2550755739212036	-0.24197218	Yes	
+row_66	NFKB2	NFKB2	nuclear factor of kappa light polypeptide gene enhancer in B-cells 2 (p49/p100)	8921	-0.2760095000267029	-0.2500468	Yes	
+row_67	TRIP11	TRIP11	thyroid hormone receptor interactor 11	8984	-0.28519508242607117	-0.2487657	Yes	
+row_68	E4F1	E4F1	E4F transcription factor 1	9171	-0.30991652607917786	-0.2572393	Yes	
+row_69	RBM14	RBM14	RNA binding motif protein 14	9175	-0.31028199195861816	-0.2504851	Yes	
+row_70	SRCAP	SRCAP	-	9211	-0.3141860365867615	-0.2463041	Yes	
+row_71	MAML2	MAML2	mastermind-like 2 (Drosophila)	9245	-0.3195764422416687	-0.2418351	Yes	
+row_72	NFATC4	NFATC4	nuclear factor of activated T-cells, cytoplasmic, calcineurin-dependent 4	9285	-0.3238609731197357	-0.2377684	Yes	
+row_73	SMARCC2	SMARCC2	SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily c, member 2	9396	-0.338467538356781	-0.23927686	Yes	
+row_74	BRD8	BRD8	bromodomain containing 8	9425	-0.341890811920166	-0.23388834	Yes	
+row_75	HCFC1	HCFC1	host cell factor C1 (VP16-accessory protein)	9585	-0.36050233244895935	-0.2389746	Yes	
+row_76	TRIM24	TRIM24	tripartite motif-containing 24	9594	-0.36175188422203064	-0.23147444	Yes	
+row_77	MAML1	MAML1	mastermind-like 1 (Drosophila)	9601	-0.36306262016296387	-0.22377837	Yes	
+row_78	RFXAP	RFXAP	regulatory factor X-associated protein	9679	-0.3745398223400116	-0.22172809	Yes	
+row_79	JMY	JMY	-	9750	-0.3867332637310028	-0.21882041	Yes	
+row_80	ZFX	ZFX	zinc finger protein, X-linked	9775	-0.3898395895957947	-0.21201691	Yes	
+row_81	NCOA6	NCOA6	nuclear receptor coactivator 6	9877	-0.40621593594551086	-0.21124764	Yes	
+row_82	SMARCD3	SMARCD3	SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily d, member 3	9962	-0.4208371639251709	-0.2087345	Yes	
+row_83	POU2AF1	POU2AF1	POU domain, class 2, associating factor 1	10016	-0.4295407235622406	-0.20344672	Yes	
+row_84	NR1H4	NR1H4	nuclear receptor subfamily 1, group H, member 4	10131	-0.44853782653808594	-0.20280333	Yes	
+row_85	SNW1	SNW1	SNW domain containing 1	10181	-0.45793965458869934	-0.19654186	Yes	
+row_86	PMF1	PMF1	polyamine-modulated factor 1	10298	-0.4791260063648224	-0.19537435	Yes	
+row_87	MNT	MNT	MAX binding protein	10303	-0.47996121644973755	-0.1848733	Yes	
+row_88	DTX1	DTX1	deltex homolog 1 (Drosophila)	10622	-0.5438733100891113	-0.19904405	Yes	
+row_89	PPARGC1A	PPARGC1A	peroxisome proliferative activated receptor, gamma, coactivator 1, alpha	10779	-0.5797238349914551	-0.19893253	Yes	
+row_90	YY1	YY1	YY1 transcription factor	10857	-0.5979087352752686	-0.19184034	Yes	
+row_91	EP300	EP300	E1A binding protein p300	10861	-0.5987852215766907	-0.17857401	Yes	
+row_92	NR2C2	NR2C2	nuclear receptor subfamily 2, group C, member 2	10871	-0.600704550743103	-0.16576336	Yes	
+row_93	CARM1	CARM1	coactivator-associated arginine methyltransferase 1	10906	-0.608015775680542	-0.15486686	Yes	
+row_94	NPM1	NPM1	nucleophosmin (nucleolar phosphoprotein B23, numatrin)	10914	-0.6099134683609009	-0.14168201	Yes	
+row_95	CREBBP	CREBBP	CREB binding protein (Rubinstein-Taybi syndrome)	10949	-0.6218989491462708	-0.13047214	Yes	
+row_96	RXRB	RXRB	retinoid X receptor, beta	11220	-0.7018770575523376	-0.1370844	Yes	
+row_97	SUB1	SUB1	SUB1 homolog (S. cerevisiae)	11478	-0.8111626505851746	-0.14014868	Yes	
+row_98	NFE2	NFE2	nuclear factor (erythroid-derived 2), 45kDa	11587	-0.8859443664550781	-0.1291331	Yes	
+row_99	MYOD1	MYOD1	myogenic differentiation 1	11614	-0.901523768901825	-0.11094618	Yes	
+row_100	AIP	AIP	aryl hydrocarbon receptor interacting protein	11707	-0.971161425113678	-0.09667641	Yes	
+row_101	DYRK1B	DYRK1B	dual-specificity tyrosine-(Y)-phosphorylation regulated kinase 1B	11745	-0.9980745911598206	-0.07722497	Yes	
+row_102	SP4	SP4	Sp4 transcription factor	11829	-1.086880087852478	-0.05959468	Yes	
+row_103	NRIP1	NRIP1	nuclear receptor interacting protein 1	11845	-1.0998408794403076	-0.036016487	Yes	
+row_104	ESR2	ESR2	estrogen receptor 2 (ER beta)	11961	-1.2877521514892578	-0.016513443	Yes	
+row_105	TFAP4	TFAP4	transcription factor AP-4 (activating enhancer binding protein 4)	11988	-1.346893072128296	0.011726398	Yes	

@@ -1,0 +1,16 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MDFI	MDFI	MyoD family inhibitor	12	4.567900657653809	0.44056034	Yes	
+row_1	MAP3K9	MAP3K9	mitogen-activated protein kinase kinase kinase 9	131	2.5319674015045166	0.6755701	Yes	
+row_2	DBNL	DBNL	drebrin-like	1508	0.8002594113349915	0.63934803	No	
+row_3	PKN1	PKN1	protein kinase N1	2600	0.49813586473464966	0.5974461	No	
+row_4	MAP3K5	MAP3K5	mitogen-activated protein kinase kinase kinase 5	2660	0.4844827651977539	0.63940805	No	
+row_5	MAP3K6	MAP3K6	mitogen-activated protein kinase kinase kinase 6	4738	0.1757003366947174	0.48495156	No	
+row_6	ZAK	ZAK	-	5428	0.09755421429872513	0.43750986	No	
+row_7	MAP4K1	MAP4K1	mitogen-activated protein kinase kinase kinase kinase 1	5826	0.053514931350946426	0.40991354	No	
+row_8	PTPLAD1	PTPLAD1	protein tyrosine phosphatase-like A domain containing 1	6110	0.02148948237299919	0.3886313	No	
+row_9	DAXX	DAXX	death-associated protein 6	6567	-0.029850764200091362	0.3538775	No	
+row_10	MDFIC	MDFIC	MyoD family inhibitor domain containing	7201	-0.10130979865789413	0.31142125	No	
+row_11	MAP3K2	MAP3K2	mitogen-activated protein kinase kinase kinase 2	8529	-0.22749418020248413	0.22387806	No	
+row_12	MAP4K5	MAP4K5	mitogen-activated protein kinase kinase kinase kinase 5	8670	-0.24537362158298492	0.2360409	No	
+row_13	MAP3K11	MAP3K11	mitogen-activated protein kinase kinase kinase 11	8737	-0.25354936718940735	0.25510216	No	
+row_14	MAP3K10	MAP3K10	mitogen-activated protein kinase kinase kinase 10	8759	-0.2565450966358185	0.27816743	No	

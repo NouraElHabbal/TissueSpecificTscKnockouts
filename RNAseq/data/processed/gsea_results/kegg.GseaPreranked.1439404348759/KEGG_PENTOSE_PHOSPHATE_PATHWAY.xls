@@ -1,0 +1,23 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	PGD	PGD	phosphogluconate dehydrogenase	877	1.1289979219436646	0.008535099	No	
+row_1	DERA	DERA	2-deoxyribose-5-phosphate aldolase homolog (C. elegans)	1151	0.9741209745407104	0.055847507	No	
+row_2	ALDOB	ALDOB	aldolase B, fructose-bisphosphate	1504	0.8010637760162354	0.08422443	No	
+row_3	PFKL	PFKL	phosphofructokinase, liver	1631	0.7624760866165161	0.12849937	No	
+row_4	TALDO1	TALDO1	transaldolase 1	2099	0.6031520962715149	0.13318513	No	
+row_5	ALDOC	ALDOC	aldolase C, fructose-bisphosphate	2156	0.5942098498344421	0.1711741	No	
+row_6	TKTL1	TKTL1	transketolase-like 1	2864	0.44265830516815186	0.14452837	No	
+row_7	PFKP	PFKP	phosphofructokinase, platelet	2912	0.4396912753582001	0.17217928	No	
+row_8	PGM1	PGM1	phosphoglucomutase 1	4527	0.2037678211927414	0.053492274	No	
+row_9	PGLS	PGLS	6-phosphogluconolactonase	4559	0.19939488172531128	0.065231666	No	
+row_10	RBKS	RBKS	ribokinase	6202	0.011236950755119324	-0.06957528	No	
+row_11	PRPS2	PRPS2	phosphoribosyl pyrophosphate synthetase 2	7311	-0.11513920873403549	-0.15282777	No	
+row_12	H6PD	H6PD	hexose-6-phosphate dehydrogenase (glucose 1-dehydrogenase)	9077	-0.2984221577644348	-0.2771977	No	
+row_13	TKT	TKT	transketolase (Wernicke-Korsakoff syndrome)	9726	-0.3833214044570923	-0.30322596	No	
+row_14	PFKM	PFKM	phosphofructokinase, muscle	9884	-0.407591849565506	-0.286962	No	
+row_15	RPIA	RPIA	ribose 5-phosphate isomerase A (ribose 5-phosphate epimerase)	11004	-0.6385160088539124	-0.33358878	Yes	
+row_16	FBP1	FBP1	fructose-1,6-bisphosphatase 1	11055	-0.6529766321182251	-0.2908898	Yes	
+row_17	RPE	RPE	ribulose-5-phosphate-3-epimerase	11058	-0.6540839672088623	-0.24414709	Yes	
+row_18	PRPS1	PRPS1	phosphoribosyl pyrophosphate synthetase 1	11229	-0.704126238822937	-0.20769069	Yes	
+row_19	PGM2	PGM2	phosphoglucomutase 2	11741	-0.9966238737106323	-0.1784209	Yes	
+row_20	ALDOA	ALDOA	aldolase A, fructose-bisphosphate	11823	-1.0844826698303223	-0.10733658	Yes	
+row_21	FBP2	FBP2	fructose-1,6-bisphosphatase 2	12095	-1.8479516506195068	0.0028081315	Yes	

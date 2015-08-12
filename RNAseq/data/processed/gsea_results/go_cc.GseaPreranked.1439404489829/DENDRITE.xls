@@ -1,0 +1,17 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	DNER	DNER	-	190	2.227415084838867	0.20396161	Yes	
+row_1	ATXN10	ATXN10	ataxin 10	632	1.3228371143341064	0.29800275	Yes	
+row_2	CDK5R1	CDK5R1	cyclin-dependent kinase 5, regulatory subunit 1 (p35)	845	1.150527000427246	0.3939561	Yes	
+row_3	MAGEE1	MAGEE1	melanoma antigen family E, 1	1144	0.9786705374717712	0.4658634	Yes	
+row_4	CAMK2N1	CAMK2N1	calcium/calmodulin-dependent protein kinase II inhibitor 1	1941	0.6508390307426453	0.46433368	Yes	
+row_5	RAB27A	RAB27A	RAB27A, member RAS oncogene family	2404	0.5350417494773865	0.4789566	Yes	
+row_6	ACTN2	ACTN2	actinin, alpha 2	2532	0.5101954936981201	0.5187834	Yes	
+row_7	BNIP3	BNIP3	BCL2/adenovirus E1B 19kDa interacting protein 3	2577	0.5045322775840759	0.56490326	Yes	
+row_8	MAP1S	MAP1S	microtubule-associated protein 1S	2793	0.4558030366897583	0.59210205	Yes	
+row_9	CDK5	CDK5	cyclin-dependent kinase 5	3812	0.2996050715446472	0.5376112	No	
+row_10	TRAPPC4	TRAPPC4	trafficking protein particle complex 4	3998	0.27406802773475647	0.5493655	No	
+row_11	OPA1	OPA1	optic atrophy 1 (autosomal dominant)	5554	0.08304498344659805	0.42919073	No	
+row_12	NF1	NF1	neurofibromin 1 (neurofibromatosis, von Recklinghausen disease, Watson disease)	6740	-0.04936276376247406	0.3362377	No	
+row_13	SYNPO	SYNPO	synaptopodin	9022	-0.2906477451324463	0.176604	No	
+row_14	SOD1	SOD1	superoxide dismutase 1, soluble (amyotrophic lateral sclerosis 1 (adult))	9514	-0.35270798206329346	0.17085302	No	
+row_15	GRIN1	GRIN1	glutamate receptor, ionotropic, N-methyl D-aspartate 1	10174	-0.4556361436843872	0.16138354	No	

@@ -1,0 +1,16 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	DYNC1I1	DYNC1I1	dynein, cytoplasmic 1, intermediate chain 1	66	3.1247200965881348	0.32921964	Yes	
+row_1	KIF5A	KIF5A	kinesin family member 5A	435	1.596842646598816	0.469871	Yes	
+row_2	NEFL	NEFL	neurofilament, light polypeptide 68kDa	835	1.1540247201919556	0.5605363	Yes	
+row_3	KIF1A	KIF1A	kinesin family member 1A	1253	0.9120447039604187	0.6237991	Yes	
+row_4	KIF3B	KIF3B	kinesin family member 3B	1265	0.9072672128677368	0.7200623	Yes	
+row_5	MAP1S	MAP1S	microtubule-associated protein 1S	2793	0.4558030366897583	0.6428382	No	
+row_6	UXT	UXT	ubiquitously-expressed transcript	4604	0.19454073905944824	0.5142726	No	
+row_7	KIF1B	KIF1B	kinesin family member 1B	4940	0.15069396793842316	0.5027607	No	
+row_8	OPA1	OPA1	optic atrophy 1 (autosomal dominant)	5554	0.08304498344659805	0.46105662	No	
+row_9	KIF13B	KIF13B	kinesin family member 13B	6287	-3.7736346712335944E-5	0.4006397	No	
+row_10	RHOT1	RHOT1	ras homolog gene family, member T1	6716	-0.04758886247873306	0.3704085	No	
+row_11	LRPPRC	LRPPRC	leucine-rich PPR-motif containing	6980	-0.07641900330781937	0.3568846	No	
+row_12	KIF5B	KIF5B	kinesin family member 5B	7243	-0.10572434216737747	0.34658194	No	
+row_13	RHOT2	RHOT2	ras homolog gene family, member T2	7614	-0.14487066864967346	0.3315574	No	
+row_14	APBA1	APBA1	amyloid beta (A4) precursor protein-binding, family A, member 1 (X11)	9725	-0.38316795229911804	0.19843164	No	

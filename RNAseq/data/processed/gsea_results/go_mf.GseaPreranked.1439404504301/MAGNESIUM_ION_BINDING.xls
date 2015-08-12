@@ -1,0 +1,53 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MOV10L1	MOV10L1	Mov10l1, Moloney leukemia virus 10-like 1, homolog (mouse)	15	4.4206624031066895	0.14399415	Yes	
+row_1	SPHK1	SPHK1	sphingosine kinase 1	57	3.243910551071167	0.24717471	Yes	
+row_2	MTHFD2	MTHFD2	methylenetetrahydrofolate dehydrogenase (NADP+ dependent) 2, methenyltetrahydrofolate cyclohydrolase	105	2.730266571044922	0.3329833	Yes	
+row_3	DYRK3	DYRK3	dual-specificity tyrosine-(Y)-phosphorylation regulated kinase 3	476	1.5393604040145874	0.3529231	Yes	
+row_4	MARK1	MARK1	MAP/microtubule affinity-regulating kinase 1	665	1.2898372411727905	0.37973383	Yes	
+row_5	BRSK1	BRSK1	BR serine/threonine kinase 1	772	1.2034488916397095	0.41049555	Yes	
+row_6	FIGNL1	FIGNL1	fidgetin-like 1	1152	0.9740563631057739	0.41111773	Yes	
+row_7	TSSK4	TSSK4	testis-specific serine kinase 4	1153	0.9732946157455444	0.44309428	Yes	
+row_8	MAST2	MAST2	microtubule associated serine/threonine kinase 2	1367	0.858436644077301	0.45366192	Yes	
+row_9	NME1	NME1	non-metastatic cells 1, protein (NM23A) expressed in	1641	0.7594754695892334	0.45601058	Yes	
+row_10	SRPK2	SRPK2	SFRS protein kinase 2	2387	0.5399754047393799	0.4120685	No	
+row_11	MAP3K5	MAP3K5	mitogen-activated protein kinase kinase kinase 5	2660	0.4844827651977539	0.40546536	No	
+row_12	CERK	CERK	ceramide kinase	2906	0.440888375043869	0.39966545	No	
+row_13	MAST1	MAST1	microtubule associated serine/threonine kinase 1	2985	0.4242641031742096	0.40714616	No	
+row_14	MSH6	MSH6	mutS homolog 6 (E. coli)	3010	0.4204055666923523	0.41897106	No	
+row_15	STK38	STK38	serine/threonine kinase 38	3345	0.36401867866516113	0.40327692	No	
+row_16	ABL2	ABL2	v-abl Abelson murine leukemia viral oncogene homolog 2 (arg, Abelson-related gene)	3516	0.34092071652412415	0.4004023	No	
+row_17	ERN1	ERN1	endoplasmic reticulum to nucleus signalling 1	3529	0.33847832679748535	0.4105291	No	
+row_18	GCLC	GCLC	glutamate-cysteine ligase, catalytic subunit	3652	0.3223709464073181	0.41101924	No	
+row_19	TSSK3	TSSK3	testis-specific serine kinase 3	4048	0.26816317439079285	0.38712537	No	
+row_20	STK38L	STK38L	serine/threonine kinase 38 like	4445	0.21403469145298004	0.36137035	No	
+row_21	MAP3K6	MAP3K6	mitogen-activated protein kinase kinase kinase 6	4738	0.1757003366947174	0.34296662	No	
+row_22	TSSK6	TSSK6	testis-specific serine kinase 6	4952	0.14956867694854736	0.33024517	No	
+row_23	STK4	STK4	serine/threonine kinase 4	5017	0.1436624377965927	0.32966614	No	
+row_24	SRPK1	SRPK1	SFRS protein kinase 1	5020	0.14342708885669708	0.3342127	No	
+row_25	BRSK2	BRSK2	BR serine/threonine kinase 2	5037	0.14065875113010406	0.33750916	No	
+row_26	CDC42BPA	CDC42BPA	CDC42 binding protein kinase alpha (DMPK-like)	5158	0.1288514882326126	0.33180702	No	
+row_27	ZAK	ZAK	-	5428	0.09755421429872513	0.31274015	No	
+row_28	ICK	ICK	intestinal cell (MAK-like) kinase	5565	0.08224225044250488	0.304182	No	
+row_29	DYRK2	DYRK2	dual-specificity tyrosine-(Y)-phosphorylation regulated kinase 2	5898	0.04570208862423897	0.2781955	No	
+row_30	STK3	STK3	serine/threonine kinase 3 (STE20 homolog, yeast)	6104	0.02245352603495121	0.26196018	No	
+row_31	PRKACB	PRKACB	protein kinase, cAMP-dependent, catalytic, beta	6225	0.008203152567148209	0.25229424	No	
+row_32	MARK2	MARK2	MAP/microtubule affinity-regulating kinase 2	7047	-0.08444245159626007	0.18709369	No	
+row_33	OXSR1	OXSR1	oxidative-stress responsive 1	7183	-0.0995953306555748	0.17918843	No	
+row_34	NLK	NLK	nemo-like kinase	7312	-0.11515486240386963	0.17237395	No	
+row_35	PINK1	PINK1	PTEN induced putative kinase 1	7404	-0.12374866753816605	0.16890521	No	
+row_36	CDC42BPB	CDC42BPB	CDC42 binding protein kinase beta (DMPK-like)	7617	-0.145205557346344	0.1561232	No	
+row_37	MAP2K7	MAP2K7	mitogen-activated protein kinase kinase 7	7766	-0.15926319360733032	0.14910194	No	
+row_38	FOXK2	FOXK2	forkhead box K2	8002	-0.17686225473880768	0.1354557	No	
+row_39	CDC42BPG	CDC42BPG	CDC42 binding protein kinase gamma (DMPK-like)	8313	-0.2037990689277649	0.11648479	No	
+row_40	NUAK2	NUAK2	NUAK family, SNF1-like kinase, 2	8703	-0.2492431104183197	0.092466086	No	
+row_41	IRAK3	IRAK3	interleukin-1 receptor-associated kinase 3	8870	-0.26801878213882446	0.08752756	No	
+row_42	STK11	STK11	serine/threonine kinase 11	8978	-0.284702867269516	0.088022076	No	
+row_43	TSSK2	TSSK2	testis-specific serine kinase 2	9268	-0.32206082344055176	0.07467523	No	
+row_44	SNRK	SNRK	SNF related kinase	9693	-0.3773745000362396	0.051968314	No	
+row_45	MAPK12	MAPK12	mitogen-activated protein kinase 12	9813	-0.39555323123931885	0.055111162	No	
+row_46	LATS1	LATS1	LATS, large tumor suppressor, homolog 1 (Drosophila)	9860	-0.4028225839138031	0.064536884	No	
+row_47	TGM3	TGM3	transglutaminase 3 (E polypeptide, protein-glutamine-gamma-glutamyltransferase)	10066	-0.4374370872974396	0.0619354	No	
+row_48	TESC	TESC	tescalcin	10283	-0.4766271114349365	0.05971071	No	
+row_49	ABL1	ABL1	v-abl Abelson murine leukemia viral oncogene homolog 1	10602	-0.5400063395500183	0.051123172	No	
+row_50	MSH2	MSH2	mutS homolog 2, colon cancer, nonpolyposis type 1 (E. coli)	11459	-0.8041089177131653	0.0066686366	No	
+row_51	NEK6	NEK6	NIMA (never in mitosis gene a)-related kinase 6	12032	-1.4829647541046143	0.008031003	No	

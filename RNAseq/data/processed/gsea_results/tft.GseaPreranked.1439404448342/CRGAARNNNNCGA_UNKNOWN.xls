@@ -1,0 +1,42 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	LEF1	LEF1	lymphoid enhancer-binding factor 1	675	1.283383846282959	0.022162074	No	
+row_1	TLN1	TLN1	talin 1	1604	0.7739186882972717	-0.0075668343	No	
+row_2	SPATS2	SPATS2	spermatogenesis associated, serine-rich 2	1650	0.755888044834137	0.03465005	No	
+row_3	CDC27	CDC27	cell division cycle 27	2971	0.426838219165802	-0.04859893	No	
+row_4	CREB3	CREB3	cAMP responsive element binding protein 3	3322	0.36702120304107666	-0.05524507	No	
+row_5	UBE2M	UBE2M	ubiquitin-conjugating enzyme E2M (UBC12 homolog, yeast)	3917	0.28409793972969055	-0.08711453	No	
+row_6	PRPF19	PRPF19	PRP19/PSO4 pre-mRNA processing factor 19 homolog (S. cerevisiae)	4039	0.26952993869781494	-0.08074288	No	
+row_7	SPTAN1	SPTAN1	spectrin, alpha, non-erythrocytic 1 (alpha-fodrin)	4949	0.14992184937000275	-0.14682367	No	
+row_8	U2AF2	U2AF2	U2 small nuclear RNA auxiliary factor 2	5303	0.11061795800924301	-0.16930094	No	
+row_9	TSC22D1	TSC22D1	TSC22 domain family, member 1	5406	0.10058096051216125	-0.17162552	No	
+row_10	EXTL2	EXTL2	exostoses (multiple)-like 2	5692	0.06843773275613785	-0.19104137	No	
+row_11	MTA2	MTA2	metastasis associated 1 family, member 2	5815	0.055151261389255524	-0.19778135	No	
+row_12	BZW1	BZW1	basic leucine zipper and W2 domains 1	6315	-0.002613547956570983	-0.23889971	No	
+row_13	DARS	DARS	aspartyl-tRNA synthetase	6435	-0.01529789436608553	-0.24781363	No	
+row_14	GSK3B	GSK3B	glycogen synthase kinase 3 beta	6556	-0.029070846736431122	-0.25597322	No	
+row_15	GATA3	GATA3	GATA binding protein 3	6679	-0.0433427095413208	-0.2634309	No	
+row_16	SLC30A7	SLC30A7	solute carrier family 30 (zinc transporter), member 7	6795	-0.055643219500780106	-0.26956195	No	
+row_17	POLR3C	POLR3C	polymerase (RNA) III (DNA directed) polypeptide C (62kD)	6888	-0.06669513881206512	-0.27311873	No	
+row_18	TSPAN6	TSPAN6	tetraspanin 6	7910	-0.16927389800548553	-0.34728804	No	
+row_19	SERINC2	SERINC2	serine incorporator 2	8491	-0.2239147126674652	-0.38165706	No	
+row_20	EEF1B2	EEF1B2	eukaryotic translation elongation factor 1 beta 2	9070	-0.29769206047058105	-0.4113768	Yes	
+row_21	ACIN1	ACIN1	apoptotic chromatin condensation inducer 1	9172	-0.30993738770484924	-0.400895	Yes	
+row_22	ZBTB33	ZBTB33	zinc finger and BTB domain containing 33	9287	-0.3239348530769348	-0.39063784	Yes	
+row_23	PIK3R2	PIK3R2	phosphoinositide-3-kinase, regulatory subunit 2 (p85 beta)	9470	-0.34689271450042725	-0.38461035	Yes	
+row_24	WAC	WAC	WW domain containing adaptor with coiled-coil	9587	-0.3607342839241028	-0.37228215	Yes	
+row_25	BCL11B	BCL11B	B-cell CLL/lymphoma 11B (zinc finger protein)	9665	-0.37254607677459717	-0.35601	Yes	
+row_26	EIF1B	EIF1B	eukaryotic translation initiation factor 1B	9782	-0.390750527381897	-0.34185755	Yes	
+row_27	NDUFS1	NDUFS1	NADH dehydrogenase (ubiquinone) Fe-S protein 1, 75kDa (NADH-coenzyme Q reductase)	9876	-0.4061184227466583	-0.32486853	Yes	
+row_28	PTBP2	PTBP2	polypyrimidine tract binding protein 2	9878	-0.4063088893890381	-0.30025774	Yes	
+row_29	CREB1	CREB1	cAMP responsive element binding protein 1	9998	-0.426373153924942	-0.28418848	Yes	
+row_30	PICALM	PICALM	phosphatidylinositol binding clathrin assembly protein	10153	-0.4535953104496002	-0.26935998	Yes	
+row_31	RBM24	RBM24	RNA binding motif protein 24	10349	-0.4867308437824249	-0.25590914	Yes	
+row_32	TMUB1	TMUB1	transmembrane and ubiquitin-like domain containing 1	10359	-0.48918387293815613	-0.22692336	Yes	
+row_33	CREBBP	CREBBP	CREB binding protein (Rubinstein-Taybi syndrome)	10949	-0.6218989491462708	-0.23784928	Yes	
+row_34	MED12	MED12	mediator of RNA polymerase II transcription, subunit 12 homolog (S. cerevisiae)	11007	-0.638975203037262	-0.20373043	Yes	
+row_35	TPT1	TPT1	tumor protein, translationally-controlled 1	11032	-0.6463155150413513	-0.16643573	Yes	
+row_36	MPP5	MPP5	membrane protein, palmitoylated 5 (MAGUK p55 subfamily member 5)	11114	-0.6681418418884277	-0.13252956	Yes	
+row_37	KIRREL2	KIRREL2	kin of IRRE like 2 (Drosophila)	11115	-0.6689814925193787	-0.09187205	Yes	
+row_38	RPS27	RPS27	ribosomal protein S27 (metallopanstimulin 1)	11582	-0.8837805986404419	-0.07670752	Yes	
+row_39	AIP	AIP	aryl hydrocarbon receptor interacting protein	11707	-0.971161425113678	-0.027942207	Yes	
+row_40	RABEP2	RABEP2	rabaptin, RAB GTPase binding effector protein 2	11776	-1.032776951789856	0.02920011	Yes	

@@ -1,0 +1,29 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SERPINE1	SERPINE1	serpin peptidase inhibitor, clade E (nexin, plasminogen activator inhibitor type 1), member 1	587	1.3932085037231445	0.059267137	No	
+row_1	CRY2	CRY2	cryptochrome 2 (photolyase-like)	1687	0.740568995475769	0.025742346	No	
+row_2	CCRN4L	CCRN4L	CCR4 carbon catabolite repression 4-like (S. cerevisiae)	3497	0.34276342391967773	-0.09722264	No	
+row_3	CLOCK	CLOCK	clock homolog (mouse)	3501	0.34242719411849976	-0.07098211	No	
+row_4	NCOA3	NCOA3	nuclear receptor coactivator 3	4378	0.22249728441238403	-0.12615559	No	
+row_5	NPAS2	NPAS2	neuronal PAS domain protein 2	4744	0.17527467012405396	-0.14275753	No	
+row_6	PPARA	PPARA	peroxisome proliferative activated receptor, alpha	5440	0.09643717855215073	-0.19272617	No	
+row_7	ARNTL2	ARNTL2	aryl hydrocarbon receptor nuclear translocator-like 2	5708	0.0657704547047615	-0.20970097	No	
+row_8	CRY1	CRY1	cryptochrome 1 (photolyase-like)	6431	-0.014735981822013855	-0.26822063	No	
+row_9	TBL1XR1	TBL1XR1	transducin (beta)-like 1X-linked receptor 1	6821	-0.05887964740395546	-0.29580945	No	
+row_10	PER1	PER1	period homolog 1 (Drosophila)	6963	-0.07494062185287476	-0.3016634	No	
+row_11	TBL1X	TBL1X	transducin (beta)-like 1X-linked	7589	-0.1424177587032318	-0.34229103	No	
+row_12	RXRA	RXRA	retinoid X receptor, alpha	8748	-0.2550755739212036	-0.41824636	No	
+row_13	HDAC3	HDAC3	histone deacetylase 3	8780	-0.2595081329345703	-0.40073368	No	
+row_14	NCOA2	NCOA2	nuclear receptor coactivator 2	9410	-0.34091615676879883	-0.42633703	Yes	
+row_15	ARNTL	ARNTL	aryl hydrocarbon receptor nuclear translocator-like	9494	-0.3503057658672333	-0.40609753	Yes	
+row_16	NCOA6	NCOA6	nuclear receptor coactivator 6	9877	-0.40621593594551086	-0.40623975	Yes	
+row_17	SMARCD3	SMARCD3	SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily d, member 3	9962	-0.4208371639251709	-0.38062695	Yes	
+row_18	NCOR1	NCOR1	nuclear receptor co-repressor 1	10058	-0.4358190596103668	-0.35476413	Yes	
+row_19	NR1D1	NR1D1	nuclear receptor subfamily 1, group D, member 1	10212	-0.46267351508140564	-0.3316166	Yes	
+row_20	NR3C1	NR3C1	nuclear receptor subfamily 3, group C, member 1 (glucocorticoid receptor)	10295	-0.47848474979400635	-0.3013792	Yes	
+row_21	PPARGC1A	PPARGC1A	peroxisome proliferative activated receptor, gamma, coactivator 1, alpha	10779	-0.5797238349914551	-0.2964455	Yes	
+row_22	EP300	EP300	E1A binding protein p300	10861	-0.5987852215766907	-0.25681964	Yes	
+row_23	CREBBP	CREBBP	CREB binding protein (Rubinstein-Taybi syndrome)	10949	-0.6218989491462708	-0.21590158	Yes	
+row_24	NCOA1	NCOA1	nuclear receptor coactivator 1	10995	-0.6366135478019714	-0.1703748	Yes	
+row_25	RORA	RORA	RAR-related orphan receptor A	11635	-0.9152410626411438	-0.15237759	Yes	
+row_26	PER2	PER2	period homolog 2 (Drosophila)	11861	-1.1232401132583618	-0.084081426	Yes	
+row_27	DBP	DBP	D site of albumin promoter (albumin D-box) binding protein	11999	-1.3721671104431152	0.010741983	Yes	

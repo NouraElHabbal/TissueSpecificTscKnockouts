@@ -1,0 +1,26 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ADH7	ADH7	alcohol dehydrogenase 7 (class IV), mu or sigma polypeptide	38	3.491464853286743	0.20186582	Yes	
+row_1	RDH12	RDH12	retinol dehydrogenase 12 (all-trans/9-cis/11-cis)	278	1.924676537513733	0.29513133	Yes	
+row_2	RDH16	RDH16	retinol dehydrogenase 16 (all-trans)	363	1.7260271310806274	0.3895375	Yes	
+row_3	RPE65	RPE65	retinal pigment epithelium-specific protein 65kDa	1080	1.01202392578125	0.38981044	Yes	
+row_4	DHRS9	DHRS9	dehydrogenase/reductase (SDR family) member 9	1583	0.7769976258277893	0.39396223	Yes	
+row_5	DGAT1	DGAT1	diacylglycerol O-acyltransferase homolog 1 (mouse)	1700	0.7359870076179504	0.42759365	Yes	
+row_6	RDH10	RDH10	retinol dehydrogenase 10 (all-trans)	1918	0.6569896936416626	0.44824302	Yes	
+row_7	DHRS4	DHRS4	dehydrogenase/reductase (SDR family) member 4	2017	0.6270871758460999	0.47696728	Yes	
+row_8	RETSAT	RETSAT	retinol saturase (all-trans-retinol 13,14-reductase)	2323	0.5571811199188232	0.48448655	Yes	
+row_9	DGAT2	DGAT2	diacylglycerol O-acyltransferase homolog 2 (mouse)	2932	0.4346543252468109	0.45978054	Yes	
+row_10	RDH11	RDH11	retinol dehydrogenase 11 (all-trans/9-cis/11-cis)	2987	0.42389631271362305	0.4802091	Yes	
+row_11	CYP26C1	CYP26C1	cytochrome P450, family 26, subfamily C, polypeptide 1	3141	0.39895421266555786	0.49099472	Yes	
+row_12	UGT1A5	UGT1A5	UDP glucuronosyltransferase 1 family, polypeptide A5	3293	0.3729574382305145	0.50041914	Yes	
+row_13	DHRS3	DHRS3	dehydrogenase/reductase (SDR family) member 3	3498	0.34269094467163086	0.50368804	Yes	
+row_14	ADH4	ADH4	alcohol dehydrogenase 4 (class II), pi polypeptide	4340	0.2272464483976364	0.44755563	No	
+row_15	UGT1A1	UGT1A1	UDP glucuronosyltransferase 1 family, polypeptide A1	4442	0.21424315869808197	0.45179147	No	
+row_16	ALDH1A2	ALDH1A2	aldehyde dehydrogenase 1 family, member A2	4450	0.21355177462100983	0.46375212	No	
+row_17	ADH5	ADH5	alcohol dehydrogenase 5 (class III), chi polypeptide	5292	0.11183356493711472	0.4008431	No	
+row_18	LRAT	LRAT	lecithin retinol acyltransferase (phosphatidylcholine--retinol O-acyltransferase)	6226	0.008132151328027248	0.324245	No	
+row_19	CYP26A1	CYP26A1	cytochrome P450, family 26, subfamily A, polypeptide 1	6261	0.0035802447237074375	0.32164648	No	
+row_20	UGT1A8	UGT1A8	UDP glucuronosyltransferase 1 family, polypeptide A8	7535	-0.13946035504341125	0.22467187	No	
+row_21	ALDH1A1	ALDH1A1	aldehyde dehydrogenase 1 family, member A1	8159	-0.18892040848731995	0.18429819	No	
+row_22	RDH5	RDH5	retinol dehydrogenase 5 (11-cis/9-cis)	8434	-0.2177496999502182	0.17444831	No	
+row_23	CYP26B1	CYP26B1	cytochrome P450, family 26, subfamily B, polypeptide 1	11677	-0.9482926726341248	-0.03769491	No	
+row_24	CYP1A1	CYP1A1	cytochrome P450, family 1, subfamily A, polypeptide 1	11954	-1.276519536972046	0.01445678	No	

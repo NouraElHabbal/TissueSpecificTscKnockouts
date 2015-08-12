@@ -1,0 +1,21 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	DGKG	DGKG	diacylglycerol kinase, gamma 90kDa	853	1.1462236642837524	0.04119039	No	
+row_1	DGKK	DGKK	diacylglycerol kinase, kappa	1670	0.7453123927116394	0.046392296	No	
+row_2	TRPC3	TRPC3	transient receptor potential cation channel, subfamily C, member 3	2321	0.5579437017440796	0.04705448	No	
+row_3	DGKD	DGKD	diacylglycerol kinase, delta 130kDa	3886	0.2879546880722046	-0.054051753	No	
+row_4	DGKE	DGKE	diacylglycerol kinase, epsilon 64kDa	4437	0.21460162103176117	-0.07856921	No	
+row_5	DGKH	DGKH	diacylglycerol kinase, eta	4618	0.19248756766319275	-0.07468705	No	
+row_6	DGKQ	DGKQ	diacylglycerol kinase, theta 110kDa	5869	0.04886327683925629	-0.17314886	No	
+row_7	ITPR3	ITPR3	inositol 1,4,5-triphosphate receptor, type 3	6188	0.012486324645578861	-0.19819213	No	
+row_8	RASGRP1	RASGRP1	RAS guanyl releasing protein 1 (calcium and DAG-regulated)	7050	-0.08491870760917664	-0.26102036	No	
+row_9	DGKI	DGKI	diacylglycerol kinase, iota	7334	-0.1174885556101799	-0.27294755	No	
+row_10	MGLL	MGLL	monoglyceride lipase	7615	-0.14501936733722687	-0.28194582	No	
+row_11	ITPR2	ITPR2	inositol 1,4,5-triphosphate receptor, type 2	8300	-0.20234210789203644	-0.31872246	No	
+row_12	PRKCQ	PRKCQ	protein kinase C, theta	10796	-0.5833615064620972	-0.46793833	Yes	
+row_13	DGKA	DGKA	diacylglycerol kinase, alpha 80kDa	10893	-0.6059945225715637	-0.41684926	Yes	
+row_14	RASGRP2	RASGRP2	RAS guanyl releasing protein 2 (calcium and DAG-regulated)	10924	-0.6131833791732788	-0.35961005	Yes	
+row_15	DGKB	DGKB	diacylglycerol kinase, beta 90kDa	11301	-0.7334182262420654	-0.31923288	Yes	
+row_16	PRKCH	PRKCH	protein kinase C, eta	11328	-0.7431171536445618	-0.24900943	Yes	
+row_17	PRKCE	PRKCE	protein kinase C, epsilon	11649	-0.9268964529037476	-0.1851656	Yes	
+row_18	TRPC6	TRPC6	transient receptor potential cation channel, subfamily C, member 6	11880	-1.1508562564849854	-0.092078954	Yes	
+row_19	PRKCD	PRKCD	protein kinase C, delta	11887	-1.1557705402374268	0.019983375	Yes	

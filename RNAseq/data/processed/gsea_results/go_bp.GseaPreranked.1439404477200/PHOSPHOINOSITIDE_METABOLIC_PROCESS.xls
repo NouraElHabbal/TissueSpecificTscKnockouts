@@ -1,0 +1,24 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	PIGZ	PIGZ	phosphatidylinositol glycan anchor biosynthesis, class Z	1924	0.6560428142547607	-0.07433783	No	
+row_1	PIK3R1	PIK3R1	phosphoinositide-3-kinase, regulatory subunit 1 (p85 alpha)	2710	0.4732910096645355	-0.078158624	No	
+row_2	PIGF	PIGF	phosphatidylinositol glycan anchor biosynthesis, class F	3465	0.3460446000099182	-0.09582381	No	
+row_3	PIGT	PIGT	phosphatidylinositol glycan anchor biosynthesis, class T	3603	0.3296701908111572	-0.06463776	No	
+row_4	PIGK	PIGK	phosphatidylinositol glycan anchor biosynthesis, class K	4247	0.24066442251205444	-0.08672054	No	
+row_5	CD81	CD81	CD81 molecule	4651	0.18821261823177338	-0.09574228	No	
+row_6	IMPA1	IMPA1	inositol(myo)-1(or 4)-monophosphatase 1	5115	0.13430948555469513	-0.11666914	No	
+row_7	PIGS	PIGS	phosphatidylinositol glycan anchor biosynthesis, class S	5254	0.11666816473007202	-0.11302639	No	
+row_8	PIGA	PIGA	phosphatidylinositol glycan anchor biosynthesis, class A (paroxysmal nocturnal hemoglobinuria)	5300	0.11088146269321442	-0.10244816	No	
+row_9	DPM2	DPM2	dolichyl-phosphate mannosyltransferase polypeptide 2, regulatory subunit	5728	0.06423414498567581	-0.12943581	No	
+row_10	PTEN	PTEN	phosphatase and tensin homolog (mutated in multiple advanced cancers 1)	6243	0.005244560074061155	-0.17121445	No	
+row_11	PIGO	PIGO	phosphatidylinositol glycan anchor biosynthesis, class O	7265	-0.10936439782381058	-0.24144632	No	
+row_12	GPAA1	GPAA1	glycosylphosphatidylinositol anchor attachment protein 1 homolog (yeast)	7796	-0.16264081001281738	-0.26425463	No	
+row_13	SMG1	SMG1	-	8213	-0.19472618401050568	-0.2735104	No	
+row_14	DPM3	DPM3	dolichyl-phosphate mannosyltransferase polypeptide 3	8373	-0.21094658970832825	-0.25944757	No	
+row_15	DPM1	DPM1	dolichyl-phosphate mannosyltransferase polypeptide 1, catalytic subunit	8516	-0.22589784860610962	-0.24205309	No	
+row_16	PIGC	PIGC	phosphatidylinositol glycan anchor biosynthesis, class C	10040	-0.43297243118286133	-0.31202832	Yes	
+row_17	PIGV	PIGV	phosphatidylinositol glycan anchor biosynthesis, class V	10145	-0.4517974555492401	-0.26237166	Yes	
+row_18	PIGB	PIGB	phosphatidylinositol glycan anchor biosynthesis, class B	10318	-0.48226165771484375	-0.21440406	Yes	
+row_19	PIGG	PIGG	phosphatidylinositol glycan anchor biosynthesis, class G	10593	-0.5386001467704773	-0.16759807	Yes	
+row_20	PIGH	PIGH	phosphatidylinositol glycan anchor biosynthesis, class H	10840	-0.5950735807418823	-0.111198686	Yes	
+row_21	PIK3C2A	PIK3C2A	phosphoinositide-3-kinase, class 2, alpha polypeptide	11282	-0.7258777618408203	-0.054042123	Yes	
+row_22	PITPNM3	PITPNM3	PITPNM family member 3	11690	-0.9611928462982178	0.036260076	Yes	

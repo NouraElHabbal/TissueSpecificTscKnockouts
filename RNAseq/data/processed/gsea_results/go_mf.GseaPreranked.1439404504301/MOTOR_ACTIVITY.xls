@@ -1,0 +1,26 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	DYNC1I1	DYNC1I1	dynein, cytoplasmic 1, intermediate chain 1	66	3.1247200965881348	0.14139035	Yes	
+row_1	MYL6B	MYL6B	myosin, light chain 6B, alkali, smooth muscle and non-muscle	183	2.2480413913726807	0.23745167	Yes	
+row_2	KIF11	KIF11	kinesin family member 11	219	2.0977134704589844	0.33313996	Yes	
+row_3	KIF5C	KIF5C	kinesin family member 5C	303	1.8528738021850586	0.41335696	Yes	
+row_4	CENPE	CENPE	centromere protein E, 312kDa	365	1.7253456115722656	0.48939836	Yes	
+row_5	KIF2C	KIF2C	kinesin family member 2C	384	1.6899769306182861	0.5673299	Yes	
+row_6	MYH10	MYH10	myosin, heavy chain 10, non-muscle	546	1.441959261894226	0.62179285	Yes	
+row_7	KIF22	KIF22	kinesin family member 22	1259	0.9101273417472839	0.60574454	Yes	
+row_8	KIF3B	KIF3B	kinesin family member 3B	1265	0.9072672128677368	0.6479675	Yes	
+row_9	MYO3A	MYO3A	myosin IIIA	2226	0.5800738334655762	0.59592134	No	
+row_10	MYO1E	MYO1E	myosin IE	2520	0.5124337077140808	0.5957977	No	
+row_11	MYH9	MYH9	myosin, heavy chain 9, non-muscle	2680	0.48069727420806885	0.60525244	No	
+row_12	MYO9B	MYO9B	myosin IXB	3694	0.3156905770301819	0.53640354	No	
+row_13	BBS4	BBS4	Bardet-Biedl syndrome 4	3768	0.30705884099006653	0.54480284	No	
+row_14	APPBP2	APPBP2	amyloid beta precursor protein (cytoplasmic tail) binding protein 2	3995	0.27426964044570923	0.53902185	No	
+row_15	MYL6	MYL6	myosin, light chain 6, alkali, smooth muscle and non-muscle	4129	0.2572340667247772	0.5401231	No	
+row_16	KIF1B	KIF1B	kinesin family member 1B	4940	0.15069396793842316	0.48029026	No	
+row_17	KIFC3	KIFC3	kinesin family member C3	6603	-0.034301478415727615	0.3446036	No	
+row_18	MYH2	MYH2	myosin, heavy chain 2, skeletal muscle, adult	6896	-0.0679330974817276	0.32367375	No	
+row_19	KIF23	KIF23	kinesin family member 23	7009	-0.08005298674106598	0.3181834	No	
+row_20	KIF5B	KIF5B	kinesin family member 5B	7243	-0.10572434216737747	0.30390352	No	
+row_21	DNALI1	DNALI1	dynein, axonemal, light intermediate chain 1	9303	-0.32567059993743896	0.14911304	No	
+row_22	MYO6	MYO6	myosin VI	9939	-0.41692066192626953	0.116248086	No	
+row_23	GRIN1	GRIN1	glutamate receptor, ionotropic, N-methyl D-aspartate 1	10174	-0.4556361436843872	0.11832933	No	
+row_24	MYH13	MYH13	myosin, heavy chain 13, skeletal muscle	11638	-0.9169603586196899	0.040561683	No	

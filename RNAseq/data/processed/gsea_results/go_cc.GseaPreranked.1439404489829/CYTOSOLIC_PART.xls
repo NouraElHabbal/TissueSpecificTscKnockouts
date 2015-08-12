@@ -1,0 +1,17 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CYB5R3	CYB5R3	cytochrome b5 reductase 3	311	1.8246489763259888	0.15162778	No	
+row_1	NEFL	NEFL	neurofilament, light polypeptide 68kDa	835	1.1540247201919556	0.22059081	No	
+row_2	PFKL	PFKL	phosphofructokinase, liver	1631	0.7624760866165161	0.22905383	No	
+row_3	PIK3R1	PIK3R1	phosphoinositide-3-kinase, regulatory subunit 1 (p85 alpha)	2710	0.4732910096645355	0.1860554	No	
+row_4	IKBKG	IKBKG	inhibitor of kappa light polypeptide gene enhancer in B-cells, kinase gamma	3451	0.34832143783569336	0.15881534	No	
+row_5	TSC2	TSC2	tuberous sclerosis 2	4226	0.24241799116134644	0.11847801	No	
+row_6	ERC1	ERC1	ELKS/RAB6-interacting/CAST family member 1	5423	0.09786850959062576	0.029259121	No	
+row_7	PYCARD	PYCARD	PYD and CARD domain containing	6670	-0.04282216355204582	-0.06943606	No	
+row_8	AKT1S1	AKT1S1	AKT1 substrate 1 (proline-rich)	7078	-0.08773095160722733	-0.09450876	No	
+row_9	PRDX3	PRDX3	peroxiredoxin 3	8996	-0.2866949141025543	-0.22489737	No	
+row_10	PFKM	PFKM	phosphofructokinase, muscle	9884	-0.407591849565506	-0.25851285	Yes	
+row_11	GUCY1B3	GUCY1B3	guanylate cyclase 1, soluble, beta 3	10447	-0.5059891939163208	-0.25573865	Yes	
+row_12	MAP3K13	MAP3K13	mitogen-activated protein kinase kinase kinase 13	10958	-0.6259642243385315	-0.23701395	Yes	
+row_13	GUCY1A3	GUCY1A3	guanylate cyclase 1, soluble, alpha 3	11001	-0.6383398175239563	-0.17845374	Yes	
+row_14	PFKFB1	PFKFB1	6-phosphofructo-2-kinase/fructose-2,6-biphosphatase 1	11070	-0.6558091640472412	-0.12034232	Yes	
+row_15	TSC1	TSC1	tuberous sclerosis 1	12112	-2.137284278869629	0.0014032782	Yes	

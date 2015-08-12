@@ -1,0 +1,37 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SLC25A13	SLC25A13	solute carrier family 25, member 13 (citrin)	85	2.904125690460205	0.0986175	Yes	
+row_1	SLC1A1	SLC1A1	solute carrier family 1 (neuronal/epithelial high affinity glutamate transporter, system Xag), member 1	109	2.7009599208831787	0.19497079	Yes	
+row_2	SLC3A1	SLC3A1	 1	126	2.5536441802978516	0.28654385	Yes	
+row_3	SLC7A5	SLC7A5	solute carrier family 7 (cationic amino acid transporter, y+ system), member 5	172	2.2902958393096924	0.36613896	Yes	
+row_4	SLC1A2	SLC1A2	solute carrier family 1 (glial high affinity glutamate transporter), member 2	290	1.8980650901794434	0.42551222	Yes	
+row_5	SLC1A4	SLC1A4	solute carrier family 1 (glutamate/neutral amino acid transporter), member 4	313	1.8239651918411255	0.49004504	Yes	
+row_6	SLC16A1	SLC16A1	solute carrier family 16, member 1 (monocarboxylic acid transporter 1)	370	1.715580940246582	0.5478237	Yes	
+row_7	ARL6IP5	ARL6IP5	ADP-ribosylation-like factor 6 interacting protein 5	981	1.0696693658828735	0.53629774	No	
+row_8	SLC1A7	SLC1A7	solute carrier family 1 (glutamate transporter), member 7	1639	0.7599436044692993	0.5096184	No	
+row_9	SLC25A10	SLC25A10	solute carrier family 25 (mitochondrial carrier; dicarboxylate transporter), member 10	1992	0.6339592933654785	0.50357515	No	
+row_10	SLC16A2	SLC16A2	solute carrier family 16, member 2 (monocarboxylic acid transporter 8)	2997	0.4223635792732239	0.43592343	No	
+row_11	SLC3A2	SLC3A2	solute carrier family 3 (activators of dibasic and neutral amino acid transport), member 2	3214	0.38459330797195435	0.432054	No	
+row_12	CTNS	CTNS	cystinosis, nephropathic	3746	0.31053096055984497	0.39944437	No	
+row_13	SLC16A6	SLC16A6	solute carrier family 16, member 6 (monocarboxylic acid transporter 7)	3853	0.2922411859035492	0.4013108	No	
+row_14	SLC25A15	SLC25A15	solute carrier family 25 (mitochondrial carrier; ornithine transporter) member 15	4906	0.15305739641189575	0.31989342	No	
+row_15	CLN3	CLN3	ceroid-lipofuscinosis, neuronal 3, juvenile (Batten, Spielmeyer-Vogt disease)	5091	0.136046901345253	0.30962834	No	
+row_16	SLC16A4	SLC16A4	solute carrier family 16, member 4 (monocarboxylic acid transporter 5)	5609	0.07732357084751129	0.26969275	No	
+row_17	SLC25A22	SLC25A22	solute carrier family 25 (mitochondrial carrier: glutamate), member 22	6138	0.0185081847012043	0.22670802	No	
+row_18	SLC16A7	SLC16A7	solute carrier family 16, member 7 (monocarboxylic acid transporter 2)	6680	-0.04340814799070358	0.18355419	No	
+row_19	SLC25A12	SLC25A12	solute carrier family 25 (mitochondrial carrier, Aralar), member 12	6929	-0.0708339512348175	0.16562495	No	
+row_20	PDPN	PDPN	podoplanin	7350	-0.11831720173358917	0.1352011	No	
+row_21	SLC6A7	SLC6A7	solute carrier family 6 (neurotransmitter transporter, L-proline), member 7	7360	-0.11906041949987411	0.13878809	No	
+row_22	SLC25A1	SLC25A1	solute carrier family 25 (mitochondrial carrier; citrate transporter), member 1	7419	-0.12526381015777588	0.13854915	No	
+row_23	PRAF2	PRAF2	PRA1 domain family, member 2	7710	-0.1543523669242859	0.120185316	No	
+row_24	SERINC1	SERINC1	serine incorporator 1	8003	-0.17703017592430115	0.10248109	No	
+row_25	SLC16A5	SLC16A5	solute carrier family 16, member 5 (monocarboxylic acid transporter 6)	8389	-0.21273167431354523	0.07838584	No	
+row_26	SLC16A10	SLC16A10	solute carrier family 16, member 10 (aromatic amino acid transporter)	9856	-0.4023449420928955	-0.028194856	No	
+row_27	SLC7A8	SLC7A8	solute carrier family 7 (cationic amino acid transporter, y+ system), member 8	9938	-0.41682520508766174	-0.019729197	No	
+row_28	SLC38A3	SLC38A3	solute carrier family 38, member 3	10261	-0.4723668098449707	-0.02917029	No	
+row_29	SLC43A1	SLC43A1	solute carrier family 43, member 1	10327	-0.48369359970092773	-0.016949134	No	
+row_30	SLC16A8	SLC16A8	solute carrier family 16, member 8 (monocarboxylic acid transporter 3)	10445	-0.5059080123901367	-0.008219519	No	
+row_31	SLC1A3	SLC1A3	solute carrier family 1 (glial high affinity glutamate transporter), member 3	10744	-0.5720112919807434	-0.0120513085	No	
+row_32	SLC7A10	SLC7A10	solute carrier family 7, (neutral amino acid transporter, y+ system) member 10	10978	-0.6320870518684387	-0.008323108	No	
+row_33	SLC1A5	SLC1A5	solute carrier family 1 (neutral amino acid transporter), member 5	11077	-0.6577766537666321	0.007502185	No	
+row_34	AQP9	AQP9	aquaporin 9	11568	-0.8700329661369324	-0.0013638622	No	
+row_35	SLC16A3	SLC16A3	solute carrier family 16, member 3 (monocarboxylic acid transporter 4)	11973	-1.3103525638580322	0.012898924	No	

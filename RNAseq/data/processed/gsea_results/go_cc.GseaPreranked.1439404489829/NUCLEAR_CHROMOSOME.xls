@@ -1,0 +1,46 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	STAG3	STAG3	stromal antigen 3	703	1.2556368112564087	0.020152947	No	
+row_1	PAM	PAM	peptidylglycine alpha-amidating monooxygenase	761	1.2117294073104858	0.09102174	No	
+row_2	DMC1	DMC1	DMC1 dosage suppressor of mck1 homolog, meiosis-specific homologous recombination (yeast)	1019	1.052588701248169	0.13541418	No	
+row_3	RGS12	RGS12	regulator of G-protein signalling 12	1732	0.7216159701347351	0.121511206	No	
+row_4	RPA3	RPA3	replication protein A3, 14kDa	2690	0.47755753993988037	0.072111264	No	
+row_5	SMARCE1	SMARCE1	SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily e, member 1	3004	0.4212995171546936	0.07249125	No	
+row_6	PURB	PURB	purine-rich element binding protein B	3148	0.39875704050064087	0.08553211	No	
+row_7	HDAC8	HDAC8	histone deacetylase 8	4119	0.25902649760246277	0.021424891	No	
+row_8	TERF2IP	TERF2IP	telomeric repeat binding factor 2, interacting protein	5378	0.10352788120508194	-0.076213226	No	
+row_9	HMGB2	HMGB2	high-mobility group box 2	5925	0.043387796729803085	-0.11868676	No	
+row_10	CBX5	CBX5	chromobox homolog 5 (HP1 alpha homolog, Drosophila)	5930	0.042283106595277786	-0.11638021	No	
+row_11	RCC1	RCC1	regulator of chromosome condensation 1	6026	0.03249645233154297	-0.12221412	No	
+row_12	RPA1	RPA1	replication protein A1, 70kDa	6049	0.029322847723960876	-0.12220546	No	
+row_13	NOL6	NOL6	nucleolar protein family 6 (RNA-associated)	6106	0.021852996200323105	-0.12547615	No	
+row_14	UBE2I	UBE2I	ubiquitin-conjugating enzyme E2I (UBC9 homolog, yeast)	6355	-0.006648645270615816	-0.14558274	No	
+row_15	LRPPRC	LRPPRC	leucine-rich PPR-motif containing	6980	-0.07641900330781937	-0.19245012	No	
+row_16	ERCC1	ERCC1	excision repair cross-complementing rodent repair deficiency, complementation group 1 (includes overlapping antisense sequence)	7016	-0.08083090931177139	-0.19030419	No	
+row_17	ERCC4	ERCC4	excision repair cross-complementing rodent repair deficiency, complementation group 4	7114	-0.09244506061077118	-0.19256413	No	
+row_18	NUFIP1	NUFIP1	nuclear fragile X mental retardation protein interacting protein 1	7121	-0.09279417246580124	-0.18727228	No	
+row_19	TIMELESS	TIMELESS	timeless homolog (Drosophila)	7182	-0.09958671778440475	-0.18602508	No	
+row_20	H2AFY2	H2AFY2	H2A histone family, member Y2	7256	-0.10783903300762177	-0.18533884	No	
+row_21	TUBG1	TUBG1	tubulin, gamma 1	7378	-0.12070902436971664	-0.18782166	No	
+row_22	ACD	ACD	adrenocortical dysplasia homolog (mouse)	7455	-0.12963110208511353	-0.1860243	No	
+row_23	SYCE1	SYCE1	synaptonemal complex central element protein 1	7562	-0.1406041383743286	-0.18602487	No	
+row_24	SMC1A	SMC1A	structural maintenance of chromosomes 1A	7714	-0.15460136532783508	-0.18887597	No	
+row_25	ATRX	ATRX	alpha thalassemia/mental retardation syndrome X-linked (RAD54 homolog, S. cerevisiae)	8424	-0.21656611561775208	-0.23403476	Yes	
+row_26	MCM7	MCM7	MCM7 minichromosome maintenance deficient 7 (S. cerevisiae)	8487	-0.2236798256635666	-0.22521237	Yes	
+row_27	TIPIN	TIPIN	TIMELESS interacting protein	8542	-0.22864477336406708	-0.21541828	Yes	
+row_28	REPIN1	REPIN1	replication initiator 1	8906	-0.2733232080936432	-0.22840615	Yes	
+row_29	MCM3	MCM3	MCM3 minichromosome maintenance deficient 3 (S. cerevisiae)	9069	-0.29730692505836487	-0.22326575	Yes	
+row_30	SUV39H1	SUV39H1	suppressor of variegation 3-9 homolog 1 (Drosophila)	9081	-0.29889369010925293	-0.20553155	Yes	
+row_31	PURA	PURA	purine-rich element binding protein A	9098	-0.301126092672348	-0.18807183	Yes	
+row_32	RAD51	RAD51	RAD51 homolog (RecA homolog, E. coli) (S. cerevisiae)	9174	-0.31025391817092896	-0.17492482	Yes	
+row_33	KLHDC3	KLHDC3	kelch domain containing 3	9206	-0.313667356967926	-0.15792401	Yes	
+row_34	POLA1	POLA1	polymerase (DNA directed), alpha 1	9666	-0.37255343794822693	-0.1726658	Yes	
+row_35	RPA2	RPA2	replication protein A2, 32kDa	9854	-0.4022315740585327	-0.16304909	Yes	
+row_36	H2AFY	H2AFY	H2A histone family, member Y	10022	-0.4302752912044525	-0.15002811	Yes	
+row_37	NPM2	NPM2	nucleophosmin/nucleoplasmin, 2	10311	-0.48103025555610657	-0.14385356	Yes	
+row_38	JUN	JUN	jun oncogene	10534	-0.5250408053398132	-0.12947239	Yes	
+row_39	FOXC1	FOXC1	forkhead box C1	10682	-0.559032678604126	-0.10676484	Yes	
+row_40	CBX1	CBX1	chromobox homolog 1 (HP1 beta homolog Drosophila )	10748	-0.5729941725730896	-0.076401114	Yes	
+row_41	SMC2	SMC2	structural maintenance of chromosomes 2	11221	-0.7021114826202393	-0.07166142	Yes	
+row_42	CHEK1	CHEK1	CHK1 checkpoint homolog (S. pombe)	11306	-0.7357904314994812	-0.032714978	Yes	
+row_43	SYCE2	SYCE2	synaptonemal complex central element protein 2	11453	-0.8021936416625977	0.005243246	Yes	
+row_44	TTN	TTN	titin	11479	-0.8113627433776855	0.053785834	Yes	

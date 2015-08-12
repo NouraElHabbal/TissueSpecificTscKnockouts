@@ -1,0 +1,102 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MRVI1	MRVI1	murine retrovirus integration site 1 homolog	100	2.779353141784668	0.049362723	No	
+row_1	MYL6B	MYL6B	myosin, light chain 6B, alkali, smooth muscle and non-muscle	183	2.2480413913726807	0.08919627	No	
+row_2	CALML3	CALML3	calmodulin-like 3	758	1.2135119438171387	0.066660546	No	
+row_3	PRKX	PRKX	protein kinase, X-linked	1365	0.8588340282440186	0.03410445	No	
+row_4	GNA12	GNA12	guanine nucleotide binding protein (G protein) alpha 12	1540	0.7891554832458496	0.03601563	No	
+row_5	PLCB2	PLCB2	phospholipase C, beta 2	1756	0.7113769054412842	0.032904353	No	
+row_6	RAMP1	RAMP1	receptor (calcitonin) activity modifying protein 1	1844	0.6811242699623108	0.039806236	No	
+row_7	ARHGEF12	ARHGEF12	Rho guanine nucleotide exchange factor (GEF) 12	2379	0.5416929721832275	0.006654503	No	
+row_8	PLA2G2F	PLA2G2F	phospholipase A2, group IIF	2444	0.527280330657959	0.012275927	No	
+row_9	PTGIR	PTGIR	prostaglandin I2 (prostacyclin) receptor (IP)	2486	0.5204789042472839	0.019668255	No	
+row_10	KCNMA1	KCNMA1	potassium large conductance calcium-activated channel, subfamily M, alpha member 1	2508	0.514746367931366	0.028604275	No	
+row_11	ADCY7	ADCY7	adenylate cyclase 7	2568	0.5070524215698242	0.0342216	No	
+row_12	PLA2G4A	PLA2G4A	phospholipase A2, group IVA (cytosolic, calcium-dependent)	2715	0.472551167011261	0.03189045	No	
+row_13	KCNMB3	KCNMB3	potassium large conductance calcium-activated channel, subfamily M beta member 3	2889	0.44265830516815186	0.026694395	No	
+row_14	GNA13	GNA13	guanine nucleotide binding protein (G protein), alpha 13	2996	0.4227437973022461	0.026654959	No	
+row_15	RHOA	RHOA	ras homolog gene family, member A	3124	0.40238267183303833	0.024447216	No	
+row_16	PLCB3	PLCB3	phospholipase C, beta 3 (phosphatidylinositol-specific)	3392	0.3572084903717041	0.009663497	No	
+row_17	PPP1R12B	PPP1R12B	protein phosphatase 1, regulatory (inhibitor) subunit 12B	3542	0.33679187297821045	0.004265728	No	
+row_18	KCNMB4	KCNMB4	potassium large conductance calcium-activated channel, subfamily M, beta member 4	3576	0.33330273628234863	0.008438916	No	
+row_19	MYL6	MYL6	myosin, light chain 6, alkali, smooth muscle and non-muscle	4129	0.2572340667247772	-0.032112174	No	
+row_20	PRKACA	PRKACA	protein kinase, cAMP-dependent, catalytic, alpha	4245	0.24078798294067383	-0.03667567	No	
+row_21	ADRA1B	ADRA1B	adrenergic, alpha-1B-, receptor	4320	0.23059888184070587	-0.03804218	No	
+row_22	PPP1R12A	PPP1R12A	protein phosphatase 1, regulatory (inhibitor) subunit 12A	4354	0.22558891773223877	-0.036104225	No	
+row_23	ADCY8	ADCY8	adenylate cyclase 8 (brain)	4630	0.191138356924057	-0.054999217	No	
+row_24	ARHGEF1	ARHGEF1	Rho guanine nucleotide exchange factor (GEF) 1	4891	0.1554105132818222	-0.073388636	No	
+row_25	RAF1	RAF1	v-raf-1 murine leukemia viral oncogene homolog 1	5053	0.1394452005624771	-0.08387925	No	
+row_26	PLCB4	PLCB4	phospholipase C, beta 4	5404	0.10093671828508377	-0.110881	No	
+row_27	ROCK1	ROCK1	Rho-associated, coiled-coil containing protein kinase 1	5416	0.099319227039814	-0.10973443	No	
+row_28	PLA2G4B	PLA2G4B	phospholipase A2, group IVB (cytosolic)	5761	0.061195455491542816	-0.13706209	No	
+row_29	PPP1CA	PPP1CA	protein phosphatase 1, catalytic subunit, alpha isoform	5843	0.05169373005628586	-0.14272308	No	
+row_30	MAPK3	MAPK3	mitogen-activated protein kinase 3	5920	0.04387248307466507	-0.14813073	No	
+row_31	GNAS	GNAS	GNAS complex locus	6079	0.026168981567025185	-0.1607226	No	
+row_32	ARHGEF11	ARHGEF11	Rho guanine nucleotide exchange factor (GEF) 11	6182	0.01331491768360138	-0.1689258	No	
+row_33	ITPR3	ITPR3	inositol 1,4,5-triphosphate receptor, type 3	6188	0.012486324645578861	-0.16908236	No	
+row_34	PRKACB	PRKACB	protein kinase, cAMP-dependent, catalytic, beta	6225	0.008203152567148209	-0.17190489	No	
+row_35	MAP2K1	MAP2K1	mitogen-activated protein kinase kinase 1	6392	-0.009804394096136093	-0.18550143	No	
+row_36	PLA2G12A	PLA2G12A	phospholipase A2, group XIIA	6516	-0.02414519339799881	-0.19522566	No	
+row_37	CACNA1D	CACNA1D	calcium channel, voltage-dependent, L type, alpha 1D subunit	6656	-0.04025756195187569	-0.20594566	No	
+row_38	PLA2G12B	PLA2G12B	phospholipase A2, group XIIB	6660	-0.04078713804483414	-0.20534866	No	
+row_39	ADCY1	ADCY1	adenylate cyclase 1 (brain)	6882	-0.06600667536258698	-0.22235118	No	
+row_40	GNAQ	GNAQ	guanine nucleotide binding protein (G protein), q polypeptide	7017	-0.08091006428003311	-0.23181191	No	
+row_41	ADCY4	ADCY4	adenylate cyclase 4	7181	-0.09954988956451416	-0.24329668	No	
+row_42	PLA2G2E	PLA2G2E	phospholipase A2, group IIE	7195	-0.10065372288227081	-0.24228868	No	
+row_43	BRAF	BRAF	v-raf murine sarcoma viral oncogene homolog B1	7440	-0.1279134750366211	-0.2599186	No	
+row_44	MAPK1	MAPK1	mitogen-activated protein kinase 1	7694	-0.15220962464809418	-0.2777925	No	
+row_45	ADORA2A	ADORA2A	adenosine A2a receptor	7856	-0.1651330143213272	-0.28775007	No	
+row_46	GUCY1A2	GUCY1A2	guanylate cyclase 1, soluble, alpha 2	7901	-0.1681673377752304	-0.28791815	No	
+row_47	ROCK2	ROCK2	Rho-associated, coiled-coil containing protein kinase 2	7995	-0.1759980469942093	-0.29199722	No	
+row_48	MAP2K2	MAP2K2	mitogen-activated protein kinase kinase 2	8212	-0.19472163915634155	-0.30591303	No	
+row_49	ITPR2	ITPR2	inositol 1,4,5-triphosphate receptor, type 2	8300	-0.20234210789203644	-0.30894664	No	
+row_50	NPR1	NPR1	natriuretic peptide receptor A/guanylate cyclase A (atrionatriuretic peptide receptor A)	8324	-0.20472952723503113	-0.30661023	No	
+row_51	EDNRA	EDNRA	endothelin receptor type A	8356	-0.2077917903661728	-0.30487534	No	
+row_52	ADCY9	ADCY9	adenylate cyclase 9	8358	-0.20794396102428436	-0.3006433	No	
+row_53	ARAF	ARAF	v-raf murine sarcoma 3611 viral oncogene homolog	8422	-0.2164297103881836	-0.3013894	No	
+row_54	PRKG1	PRKG1	protein kinase, cGMP-dependent, type I	8497	-0.22428888082504272	-0.30288684	No	
+row_55	GNA11	GNA11	guanine nucleotide binding protein (G protein), alpha 11 (Gq class)	8546	-0.22954614460468292	-0.30211374	No	
+row_56	NPR2	NPR2	natriuretic peptide receptor B/guanylate cyclase B (atrionatriuretic peptide receptor B)	8557	-0.23111416399478912	-0.29814908	No	
+row_57	PLCB1	PLCB1	phospholipase C, beta 1 (phosphoinositide-specific)	8790	-0.2602665424346924	-0.31203488	No	
+row_58	PPP1CB	PPP1CB	protein phosphatase 1, catalytic subunit, beta isoform	9167	-0.309608519077301	-0.3368678	No	
+row_59	PLA2G10	PLA2G10	phospholipase A2, group X	9440	-0.34388574957847595	-0.35234365	No	
+row_60	KCNMB2	KCNMB2	potassium large conductance calcium-activated channel, subfamily M, beta member 2	9443	-0.34423214197158813	-0.34536654	No	
+row_61	ADRA1D	ADRA1D	adrenergic, alpha-1D-, receptor	9539	-0.3549354374408722	-0.34589866	No	
+row_62	ACTA2	ACTA2	actin, alpha 2, smooth muscle, aorta	9717	-0.3819562494754791	-0.3526869	No	
+row_63	CALD1	CALD1	caldesmon 1	9843	-0.4004684388637543	-0.3547681	Yes	
+row_64	CALCRL	CALCRL	calcitonin receptor-like	9888	-0.4087085723876953	-0.3499446	Yes	
+row_65	ADCY6	ADCY6	adenylate cyclase 6	9912	-0.41232919692993164	-0.34330013	Yes	
+row_66	PPP1CC	PPP1CC	protein phosphatase 1, catalytic subunit, gamma isoform	9984	-0.42354390025138855	-0.34041336	Yes	
+row_67	PPP1R14A	PPP1R14A	protein phosphatase 1, regulatory (inhibitor) subunit 14A	10027	-0.43099191784858704	-0.33496115	Yes	
+row_68	RAMP2	RAMP2	receptor (calcitonin) activity modifying protein 2	10063	-0.4370425045490265	-0.32880145	Yes	
+row_69	RAMP3	RAMP3	receptor (calcitonin) activity modifying protein 3	10107	-0.44493234157562256	-0.3231431	Yes	
+row_70	ADCY2	ADCY2	adenylate cyclase 2 (brain)	10141	-0.4507461190223694	-0.3165328	Yes	
+row_71	GUCY1B3	GUCY1B3	guanylate cyclase 1, soluble, beta 3	10447	-0.5059891939163208	-0.3313881	Yes	
+row_72	ACTG2	ACTG2	actin, gamma 2, smooth muscle, enteric	10529	-0.5243871808052063	-0.32723996	Yes	
+row_73	PLA2G3	PLA2G3	phospholipase A2, group III	10669	-0.556907594203949	-0.32723865	Yes	
+row_74	PRKCA	PRKCA	protein kinase C, alpha	10690	-0.5605981945991516	-0.317268	Yes	
+row_75	PLA2G2C	PLA2G2C	phospholipase A2, group IIC	10698	-0.5625877976417542	-0.30617535	Yes	
+row_76	PLA2G4E	PLA2G4E	phospholipase A2, group IVE	10732	-0.5693082213401794	-0.2971047	Yes	
+row_77	PRKCQ	PRKCQ	protein kinase C, theta	10796	-0.5833615064620972	-0.29023635	Yes	
+row_78	ADCY3	ADCY3	adenylate cyclase 3	10803	-0.5852764844894409	-0.27858973	Yes	
+row_79	KCNMB1	KCNMB1	potassium large conductance calcium-activated channel, subfamily M, beta member 1	10885	-0.6036904454231262	-0.27279595	Yes	
+row_80	AVPR1A	AVPR1A	arginine vasopressin receptor 1A	10937	-0.6179955005645752	-0.2642113	Yes	
+row_81	GUCY1A3	GUCY1A3	guanylate cyclase 1, soluble, alpha 3	11001	-0.6383398175239563	-0.2562021	Yes	
+row_82	MYLK2	MYLK2	myosin light chain kinase 2, skeletal muscle	11005	-0.6387847661972046	-0.2431957	Yes	
+row_83	PLA2G6	PLA2G6	phospholipase A2, group VI (cytosolic, calcium-independent)	11126	-0.672356903553009	-0.23921911	Yes	
+row_84	MYH11	MYH11	myosin, heavy chain 11, smooth muscle	11147	-0.6811233162879944	-0.22674738	Yes	
+row_85	MYLK	MYLK	myosin, light chain kinase	11263	-0.7198508977890015	-0.22136956	Yes	
+row_86	CACNA1C	CACNA1C	calcium channel, voltage-dependent, L type, alpha 1C subunit	11287	-0.7280485033988953	-0.20817347	Yes	
+row_87	CALM2	CALM2	calmodulin 2 (phosphorylase kinase, delta)	11309	-0.7378762364387512	-0.19460715	Yes	
+row_88	MYL9	MYL9	myosin, light chain 9, regulatory	11323	-0.7413698434829712	-0.18030328	Yes	
+row_89	PRKCH	PRKCH	protein kinase C, eta	11328	-0.7431171536445618	-0.16521496	Yes	
+row_90	ADORA2B	ADORA2B	adenosine A2b receptor	11416	-0.7833604216575623	-0.15619151	Yes	
+row_91	ITPR1	ITPR1	inositol 1,4,5-triphosphate receptor, type 1	11521	-0.8424565196037292	-0.14735498	Yes	
+row_92	CALM3	CALM3	calmodulin 3 (phosphorylase kinase, delta)	11522	-0.8429415225982666	-0.1298626	Yes	
+row_93	CACNA1S	CACNA1S	calcium channel, voltage-dependent, L type, alpha 1S subunit	11598	-0.892543613910675	-0.117575854	Yes	
+row_94	CALM1	CALM1	calmodulin 1 (phosphorylase kinase, delta)	11602	-0.8956689834594727	-0.09923871	Yes	
+row_95	ADCY5	ADCY5	adenylate cyclase 5	11613	-0.9014852046966553	-0.08136279	Yes	
+row_96	PRKCE	PRKCE	protein kinase C, epsilon	11649	-0.9268964529037476	-0.06503786	Yes	
+row_97	PLA2G5	PLA2G5	phospholipase A2, group V	11778	-1.0338060855865479	-0.0542257	Yes	
+row_98	PRKCD	PRKCD	protein kinase C, delta	11887	-1.1557705402374268	-0.039219942	Yes	
+row_99	PLA2G2D	PLA2G2D	phospholipase A2, group IID	12010	-1.4021908044815063	-0.020264426	Yes	
+row_100	ADRA1A	ADRA1A	adrenergic, alpha-1A-, receptor	12022	-1.4492356777191162	0.008895046	Yes	

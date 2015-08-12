@@ -1,0 +1,26 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	PRKAR1B	PRKAR1B	protein kinase, cAMP-dependent, regulatory, type I, beta	1301	0.8876951336860657	-0.0204709	No	
+row_1	PRKAR1A	PRKAR1A	protein kinase, cAMP-dependent, regulatory, type I, alpha (tissue specific extinguisher 1)	1567	0.7829664945602417	0.03437794	No	
+row_2	PIK3R1	PIK3R1	phosphoinositide-3-kinase, regulatory subunit 1 (p85 alpha)	2710	0.4732910096645355	-0.013574737	No	
+row_3	GRB2	GRB2	growth factor receptor-bound protein 2	2898	0.44215285778045654	0.0143136745	No	
+row_4	CAMK2D	CAMK2D	calcium/calmodulin-dependent protein kinase (CaM kinase) II delta	2995	0.4228849411010742	0.04783114	No	
+row_5	AKT1	AKT1	v-akt murine thymoma viral oncogene homolog 1	3901	0.28578126430511475	0.0010788243	No	
+row_6	SOS1	SOS1	son of sevenless homolog 1 (Drosophila)	5642	0.07439659535884857	-0.13537163	No	
+row_7	MAPK3	MAPK3	mitogen-activated protein kinase 3	5920	0.04387248307466507	-0.15395468	No	
+row_8	GNAS	GNAS	GNAS complex locus	6079	0.026168981567025185	-0.16444224	No	
+row_9	PRKACB	PRKACB	protein kinase, cAMP-dependent, catalytic, beta	6225	0.008203152567148209	-0.17561676	No	
+row_10	PIK3CA	PIK3CA	phosphoinositide-3-kinase, catalytic, alpha polypeptide	6401	-0.011046390980482101	-0.1889909	No	
+row_11	ADCY1	ADCY1	adenylate cyclase 1 (brain)	6882	-0.06600667536258698	-0.22217445	No	
+row_12	MAPK1	MAPK1	mitogen-activated protein kinase 1	7694	-0.15220962464809418	-0.2742531	No	
+row_13	CAMK2B	CAMK2B	calcium/calmodulin-dependent protein kinase (CaM kinase) II beta	8199	-0.19299015402793884	-0.29697332	No	
+row_14	HRAS	HRAS	v-Ha-ras Harvey rat sarcoma viral oncogene homolog	8509	-0.22525131702423096	-0.30042246	No	
+row_15	PRKAR2A	PRKAR2A	protein kinase, cAMP-dependent, regulatory, type II, alpha	8847	-0.26610004901885986	-0.30218104	No	
+row_16	RAC1	RAC1	ras-related C3 botulinum toxin substrate 1 (rho family, small GTP binding protein Rac1)	9122	-0.3049367070198059	-0.29492867	No	
+row_17	MAPK14	MAPK14	mitogen-activated protein kinase 14	9820	-0.3966512084007263	-0.31363133	Yes	
+row_18	CREB1	CREB1	cAMP responsive element binding protein 1	9998	-0.426373153924942	-0.28646344	Yes	
+row_19	PRKCA	PRKCA	protein kinase C, alpha	10690	-0.5605981945991516	-0.28860158	Yes	
+row_20	RPS6KA5	RPS6KA5	ribosomal protein S6 kinase, 90kDa, polypeptide 5	10935	-0.6173305511474609	-0.24825233	Yes	
+row_21	CAMK2G	CAMK2G	calcium/calmodulin-dependent protein kinase (CaM kinase) II gamma	11305	-0.7352122068405151	-0.2066755	Yes	
+row_22	RPS6KA1	RPS6KA1	ribosomal protein S6 kinase, 90kDa, polypeptide 1	11353	-0.7538566589355469	-0.13667071	Yes	
+row_23	CAMK2A	CAMK2A	calcium/calmodulin-dependent protein kinase (CaM kinase) II alpha	11637	-0.915886640548706	-0.070281	Yes	
+row_24	PRKAR2B	PRKAR2B	protein kinase, cAMP-dependent, regulatory, type II, beta	11866	-1.1309022903442383	0.021726543	Yes	

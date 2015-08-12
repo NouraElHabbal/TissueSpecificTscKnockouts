@@ -1,0 +1,31 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SPHK1	SPHK1	sphingosine kinase 1	57	3.243910551071167	0.16904287	Yes	
+row_1	B4GALT6	B4GALT6	UDP-Gal:betaGlcNAc beta 1,4- galactosyltransferase, polypeptide 6	91	2.825591564178467	0.3176628	Yes	
+row_2	PPAP2C	PPAP2C	phosphatidic acid phosphatase type 2C	424	1.6142537593841553	0.37668908	Yes	
+row_3	GALC	GALC	galactosylceramidase	508	1.4957231283187866	0.449945	Yes	
+row_4	SGPL1	SGPL1	sphingosine-1-phosphate lyase 1	1269	0.9065897464752197	0.43569475	Yes	
+row_5	DEGS1	DEGS1	degenerative spermatocyte homolog 1, lipid desaturase (Drosophila)	1410	0.8351374268531799	0.468857	Yes	
+row_6	GLB1	GLB1	galactosidase, beta 1	1731	0.7225469946861267	0.4811125	Yes	
+row_7	GBA	GBA	glucosidase, beta; acid (includes glucosylceramidase)	2337	0.5540167689323425	0.46078733	No	
+row_8	UGCG	UGCG	UDP-glucose ceramide glucosyltransferase	2602	0.49799495935440063	0.46564326	No	
+row_9	CERK	CERK	ceramide kinase	2906	0.440888375043869	0.46421725	No	
+row_10	GAL3ST1	GAL3ST1	galactose-3-O-sulfotransferase 1	3278	0.3753644526004791	0.45366174	No	
+row_11	ASAH1	ASAH1	N-acylsphingosine amidohydrolase (acid ceramidase) 1	3310	0.3702907860279083	0.47093365	No	
+row_12	SPTLC2	SPTLC2	serine palmitoyltransferase, long chain base subunit 2	3724	0.3125375509262085	0.45354185	No	
+row_13	SGPP2	SGPP2	sphingosine-1-phosphate phosphotase 2	3922	0.2836757004261017	0.4524554	No	
+row_14	SPTLC1	SPTLC1	serine palmitoyltransferase, long chain base subunit 1	4423	0.21616114675998688	0.4227113	No	
+row_15	SMPD4	SMPD4	sphingomyelin phosphodiesterase 4, neutral membrane (neutral sphingomyelinase-3)	4453	0.21322214603424072	0.43173546	No	
+row_16	GLA	GLA	galactosidase, alpha	4620	0.19231988489627838	0.42831767	No	
+row_17	PPAP2A	PPAP2A	phosphatidic acid phosphatase type 2A	4973	0.14817187190055847	0.4071633	No	
+row_18	NEU1	NEU1	sialidase 1 (lysosomal sialidase)	5490	0.0912516862154007	0.36940637	No	
+row_19	SPHK2	SPHK2	sphingosine kinase 2	6114	0.021213017404079437	0.31905502	No	
+row_20	DEGS2	DEGS2	degenerative spermatocyte homolog 2, lipid desaturase (Drosophila)	6486	-0.02100919745862484	0.28951916	No	
+row_21	NEU3	NEU3	sialidase 3 (membrane sialidase)	6507	-0.02295771613717079	0.28909597	No	
+row_22	SGPP1	SGPP1	sphingosine-1-phosphate phosphatase 1	6604	-0.03438363969326019	0.28300378	No	
+row_23	SMPD2	SMPD2	sphingomyelin phosphodiesterase 2, neutral membrane (neutral sphingomyelinase)	6833	-0.06030166894197464	0.26739073	No	
+row_24	PPAP2B	PPAP2B	phosphatidic acid phosphatase type 2B	7231	-0.10409998148679733	0.24015673	No	
+row_25	ASAH2	ASAH2	N-acylsphingosine amidohydrolase (non-lysosomal ceramidase) 2	7785	-0.1612495332956314	0.20309126	No	
+row_26	ARSA	ARSA	arylsulfatase A	8357	-0.20788626372814178	0.16703619	No	
+row_27	SMPD1	SMPD1	sphingomyelin phosphodiesterase 1, acid lysosomal (acid sphingomyelinase)	8642	-0.24191167950630188	0.15652263	No	
+row_28	SMPD3	SMPD3	sphingomyelin phosphodiesterase 3, neutral membrane (neutral sphingomyelinase II)	11875	-1.1445591449737549	-0.04927876	No	
+row_29	NEU2	NEU2	sialidase 2 (cytosolic sialidase)	11974	-1.3103771209716797	0.012809814	No	

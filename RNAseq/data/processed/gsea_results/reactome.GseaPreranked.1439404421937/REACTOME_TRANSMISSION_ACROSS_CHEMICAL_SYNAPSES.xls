@@ -1,0 +1,166 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CHRNG	CHRNG	cholinergic receptor, nicotinic, gamma	23	3.932847261428833	0.032632172	Yes	
+row_1	GABRB3	GABRB3	gamma-aminobutyric acid (GABA) A receptor, beta 3	30	3.606020212173462	0.06381361	Yes	
+row_2	KCNJ3	KCNJ3	potassium inwardly-rectifying channel, subfamily J, member 3	37	3.5227997303009033	0.094263874	Yes	
+row_3	SYN1	SYN1	synapsin I	78	2.992882251739502	0.11721659	Yes	
+row_4	SLC1A1	SLC1A1	solute carrier family 1 (neuronal/epithelial high affinity glutamate transporter, system Xag), member 1	109	2.7009599208831787	0.13844022	Yes	
+row_5	CACNG2	CACNG2	calcium channel, voltage-dependent, gamma subunit 2	136	2.4827442169189453	0.15808089	Yes	
+row_6	GNG13	GNG13	guanine nucleotide binding protein (G protein), gamma 13	141	2.458371162414551	0.17934611	Yes	
+row_7	SLC17A7	SLC17A7	solute carrier family 17 (sodium-dependent inorganic phosphate cotransporter), member 7	163	2.346935510635376	0.19821143	Yes	
+row_8	ABAT	ABAT	4-aminobutyrate aminotransferase	188	2.2312376499176025	0.2158095	Yes	
+row_9	SYN2	SYN2	synapsin II	214	2.110408067703247	0.23226234	Yes	
+row_10	GABRB2	GABRB2	gamma-aminobutyric acid (GABA) A receptor, beta 2	221	2.0943496227264404	0.2501621	Yes	
+row_11	CHRND	CHRND	cholinergic receptor, nicotinic, delta	283	1.9131946563720703	0.26187342	Yes	
+row_12	SLC1A2	SLC1A2	solute carrier family 1 (glial high affinity glutamate transporter), member 2	290	1.8980650901794434	0.27804857	Yes	
+row_13	SNAP25	SNAP25	synaptosomal-associated protein, 25kDa	312	1.8244311809539795	0.2923231	Yes	
+row_14	GABRA5	GABRA5	gamma-aminobutyric acid (GABA) A receptor, alpha 5	345	1.7614176273345947	0.30512467	Yes	
+row_15	RPS6KA6	RPS6KA6	ribosomal protein S6 kinase, 90kDa, polypeptide 6	372	1.7135673761367798	0.31800726	Yes	
+row_16	GNAI1	GNAI1	guanine nucleotide binding protein (G protein), alpha inhibiting activity polypeptide 1	403	1.6593124866485596	0.33007884	Yes	
+row_17	GNG11	GNG11	guanine nucleotide binding protein (G protein), gamma 11	413	1.6440482139587402	0.34377146	Yes	
+row_18	GABRG2	GABRG2	gamma-aminobutyric acid (GABA) A receptor, gamma 2	674	1.2837607860565186	0.33332068	Yes	
+row_19	GRIK4	GRIK4	glutamate receptor, ionotropic, kainate 4	713	1.2485452890396118	0.3411146	Yes	
+row_20	GNB5	GNB5	guanine nucleotide binding protein (G protein), beta 5	768	1.2070419788360596	0.34720665	Yes	
+row_21	GRIN2C	GRIN2C	glutamate receptor, ionotropic, N-methyl D-aspartate 2C	813	1.1743823289871216	0.3538475	Yes	
+row_22	NEFL	NEFL	neurofilament, light polypeptide 68kDa	835	1.1540247201919556	0.3622318	Yes	
+row_23	CHRNA5	CHRNA5	cholinergic receptor, nicotinic, alpha 5	969	1.07481849193573	0.36055952	Yes	
+row_24	GABBR2	GABBR2	gamma-aminobutyric acid (GABA) B receptor, 2	980	1.0699927806854248	0.36912483	Yes	
+row_25	KCNJ4	KCNJ4	potassium inwardly-rectifying channel, subfamily J, member 4	1003	1.05855393409729	0.3765867	Yes	
+row_26	CHRNB4	CHRNB4	cholinergic receptor, nicotinic, beta 4	1098	1.000195860862732	0.3775183	Yes	
+row_27	CHRNA1	CHRNA1	cholinergic receptor, nicotinic, alpha 1 (muscle)	1099	0.9995821714401245	0.38630074	Yes	
+row_28	GABRA4	GABRA4	gamma-aminobutyric acid (GABA) A receptor, alpha 4	1102	0.9983245730400085	0.39490497	Yes	
+row_29	SLC38A1	SLC38A1	solute carrier family 38, member 1	1185	0.9471172094345093	0.39637312	Yes	
+row_30	CHRNB2	CHRNB2	cholinergic receptor, nicotinic, beta 2 (neuronal)	1196	0.9439546465873718	0.40383103	Yes	
+row_31	CACNA1A	CACNA1A	calcium channel, voltage-dependent, P/Q type, alpha 1A subunit	1443	0.8260741233825684	0.39052907	Yes	
+row_32	KCNJ6	KCNJ6	potassium inwardly-rectifying channel, subfamily J, member 6	1483	0.8087088465690613	0.39437497	Yes	
+row_33	MAOA	MAOA	monoamine oxidase A	1496	0.803373396396637	0.40043056	Yes	
+row_34	GNG8	GNG8	guanine nucleotide binding protein (G protein), gamma 8	1551	0.786983847618103	0.40283194	Yes	
+row_35	GLUL	GLUL	glutamate-ammonia ligase (glutamine synthetase)	1587	0.7761141061782837	0.40672576	Yes	
+row_36	GNAL	GNAL	guanine nucleotide binding protein (G protein), alpha activating activity polypeptide, olfactory type	1622	0.7657865881919861	0.41061243	Yes	
+row_37	SLC1A7	SLC1A7	solute carrier family 1 (glutamate transporter), member 7	1639	0.7599436044692993	0.41595215	Yes	
+row_38	CACNA2D3	CACNA2D3	calcium channel, voltage-dependent, alpha 2/delta 3 subunit	1739	0.7171456217765808	0.41397893	Yes	
+row_39	PLCB2	PLCB2	phospholipase C, beta 2	1756	0.7113769054412842	0.41889194	Yes	
+row_40	SLC22A2	SLC22A2	solute carrier family 22 (organic cation transporter), member 2	1857	0.6755385994911194	0.4164696	No	
+row_41	GRIN2D	GRIN2D	glutamate receptor, ionotropic, N-methyl D-aspartate 2D	1990	0.6342639923095703	0.41101012	No	
+row_42	SLC6A12	SLC6A12	solute carrier family 6 (neurotransmitter transporter, betaine/GABA), member 12	2083	0.6085417866706848	0.40866774	No	
+row_43	ACTN2	ACTN2	actinin, alpha 2	2532	0.5101954936981201	0.37570786	No	
+row_44	ADCY7	ADCY7	adenylate cyclase 7	2568	0.5070524215698242	0.37723768	No	
+row_45	PICK1	PICK1	protein interacting with PRKCA 1	2570	0.5066823363304138	0.38160586	No	
+row_46	CACNA1B	CACNA1B	calcium channel, voltage-dependent, L type, alpha 1B subunit	2639	0.48998919129371643	0.3802277	No	
+row_47	GNB1	GNB1	guanine nucleotide binding protein (G protein), beta polypeptide 1	2661	0.48417529463768005	0.3827266	No	
+row_48	CHRNA7	CHRNA7	cholinergic receptor, nicotinic, alpha 7	2692	0.4769335091114044	0.3844097	No	
+row_49	CAMK2D	CAMK2D	calcium/calmodulin-dependent protein kinase (CaM kinase) II delta	2995	0.4228849411010742	0.36288494	No	
+row_50	SYN3	SYN3	synapsin III	3036	0.41626593470573425	0.3631992	No	
+row_51	GLS2	GLS2	glutaminase 2 (liver, mitochondrial)	3053	0.4124671220779419	0.36548597	No	
+row_52	GRIA4	GRIA4	glutamate receptor, ionotrophic, AMPA 4	3071	0.4096775949001312	0.36766464	No	
+row_53	GABBR1	GABBR1	gamma-aminobutyric acid (GABA) B receptor, 1	3080	0.4089440405368805	0.37058905	No	
+row_54	GRIK3	GRIK3	glutamate receptor, ionotropic, kainate 3	3083	0.40868809819221497	0.37401265	No	
+row_55	PDPK1	PDPK1	3-phosphoinositide dependent protein kinase-1	3177	0.3933652341365814	0.36969614	No	
+row_56	CACNB3	CACNB3	calcium channel, voltage-dependent, beta 3 subunit	3319	0.36756956577301025	0.36114126	No	
+row_57	DNAJC5	DNAJC5	DnaJ (Hsp40) homolog, subfamily C, member 5	3323	0.36696919798851013	0.3641148	No	
+row_58	PLCB3	PLCB3	phospholipase C, beta 3 (phosphatidylinositol-specific)	3392	0.3572084903717041	0.36157	No	
+row_59	GRIN2A	GRIN2A	glutamate receptor, ionotropic, N-methyl D-aspartate 2A	3721	0.3132486343383789	0.33690897	No	
+row_60	STXBP1	STXBP1	syntaxin binding protein 1	3735	0.31183701753616333	0.33856228	No	
+row_61	GNB3	GNB3	guanine nucleotide binding protein (G protein), beta polypeptide 3	3749	0.3097846210002899	0.3401976	No	
+row_62	AP2S1	AP2S1	adaptor-related protein complex 2, sigma 1 subunit	3795	0.3035246431827545	0.33910343	No	
+row_63	CHAT	CHAT	choline acetyltransferase	3830	0.2963577210903168	0.33886564	No	
+row_64	UNC13B	UNC13B	unc-13 homolog B (C. elegans)	3868	0.2897762954235077	0.3383193	No	
+row_65	GNG2	GNG2	guanine nucleotide binding protein (G protein), gamma 2	4113	0.26001110672950745	0.32021096	No	
+row_66	GNG12	GNG12	guanine nucleotide binding protein (G protein), gamma 12	4115	0.25963351130485535	0.32240856	No	
+row_67	KCNJ15	KCNJ15	potassium inwardly-rectifying channel, subfamily J, member 15	4195	0.24695459008216858	0.31797573	No	
+row_68	SLC38A2	SLC38A2	solute carrier family 38, member 2	4274	0.2359844297170639	0.31353012	No	
+row_69	HSPA8	HSPA8	heat shock 70kDa protein 8	4468	0.21112030744552612	0.29925466	No	
+row_70	GABRR1	GABRR1	gamma-aminobutyric acid (GABA) receptor, rho 1	4582	0.19715516269207	0.29154268	No	
+row_71	CHRNA2	CHRNA2	cholinergic receptor, nicotinic, alpha 2 (neuronal)	4603	0.19457753002643585	0.2915807	No	
+row_72	GAD2	GAD2	glutamate decarboxylase 2 (pancreatic islets and brain, 65kDa)	4606	0.1936936378479004	0.29311538	No	
+row_73	ADCY8	ADCY8	adenylate cyclase 8 (brain)	4630	0.191138356924057	0.29287246	No	
+row_74	AP2A2	AP2A2	adaptor-related protein complex 2, alpha 2 subunit	4926	0.1520785540342331	0.2695534	No	
+row_75	ALDH2	ALDH2	aldehyde dehydrogenase 2 family (mitochondrial)	5026	0.14285629987716675	0.2625344	No	
+row_76	RAF1	RAF1	v-raf-1 murine leukemia viral oncogene homolog 1	5053	0.1394452005624771	0.2615866	No	
+row_77	CHRNA4	CHRNA4	cholinergic receptor, nicotinic, alpha 4	5122	0.13347749412059784	0.2570761	No	
+row_78	AP2M1	AP2M1	adaptor-related protein complex 2, mu 1 subunit	5130	0.13272525370121002	0.2576572	No	
+row_79	CACNB1	CACNB1	calcium channel, voltage-dependent, beta 1 subunit	5146	0.13021384179592133	0.25754762	No	
+row_80	GAD1	GAD1	glutamate decarboxylase 1 (brain, 67kDa)	5230	0.11951667815446854	0.2516608	No	
+row_81	MDM2	MDM2	Mdm2, transformed 3T3 cell double minute 2, p53 binding protein (mouse)	5233	0.11916505545377731	0.25254065	No	
+row_82	GLS	GLS	glutaminase	5261	0.11594299226999283	0.25130275	No	
+row_83	NSF	NSF	N-ethylmaleimide-sensitive factor	5413	0.09969446808099747	0.23955855	No	
+row_84	NCALD	NCALD	neurocalcin delta	5512	0.08845880627632141	0.23214519	No	
+row_85	KCNJ9	KCNJ9	potassium inwardly-rectifying channel, subfamily J, member 9	5752	0.06226830184459686	0.21271737	No	
+row_86	SLC18A2	SLC18A2	solute carrier family 18 (vesicular monoamine), member 2	5901	0.0456005223095417	0.20074861	No	
+row_87	RAB3A	RAB3A	RAB3A, member RAS oncogene family	5924	0.04353959113359451	0.19929245	No	
+row_88	GRIP2	GRIP2	glutamate receptor interacting protein 2	5997	0.03491511568427086	0.19358167	No	
+row_89	GNGT2	GNGT2	guanine nucleotide binding protein (G protein), gamma transducing activity polypeptide 2	6009	0.03418031334877014	0.19296263	No	
+row_90	AP2B1	AP2B1	adaptor-related protein complex 2, beta 1 subunit	6025	0.032730430364608765	0.19199654	No	
+row_91	GNB4	GNB4	guanine nucleotide binding protein (G protein), beta polypeptide 4	6105	0.02232070080935955	0.18559007	No	
+row_92	PRKACB	PRKACB	protein kinase, cAMP-dependent, catalytic, beta	6225	0.008203152567148209	0.17571647	No	
+row_93	GNG7	GNG7	guanine nucleotide binding protein (G protein), gamma 7	6234	0.006894257850944996	0.17510843	No	
+row_94	SLC6A1	SLC6A1	solute carrier family 6 (neurotransmitter transporter, GABA), member 1	6328	-0.0038892130833119154	0.16736993	No	
+row_95	GNAI2	GNAI2	guanine nucleotide binding protein (G protein), alpha inhibiting activity polypeptide 2	6370	-0.008439182303845882	0.16401741	No	
+row_96	RRAS	RRAS	related RAS viral (r-ras) oncogene homolog	6425	-0.013363426551222801	0.15962167	No	
+row_97	ALDH5A1	ALDH5A1	aldehyde dehydrogenase 5 family, member A1 (succinate-semialdehyde dehydrogenase)	6595	-0.033684540539979935	0.1457931	No	
+row_98	GNG3	GNG3	guanine nucleotide binding protein (G protein), gamma 3	6647	-0.03872459754347801	0.1418709	No	
+row_99	GNG10	GNG10	guanine nucleotide binding protein (G protein), gamma 10	6650	-0.039527781307697296	0.14205104	No	
+row_100	GNB2	GNB2	guanine nucleotide binding protein (G protein), beta polypeptide 2	6750	-0.050964731723070145	0.13422468	No	
+row_101	ADCY1	ADCY1	adenylate cyclase 1 (brain)	6882	-0.06600667536258698	0.12385603	No	
+row_102	GNG5	GNG5	guanine nucleotide binding protein (G protein), gamma 5	6904	-0.06870808452367783	0.12270459	No	
+row_103	GRIA3	GRIA3	glutamate receptor, ionotrophic, AMPA 3	7069	-0.08684276789426804	0.109760955	No	
+row_104	ADCY4	ADCY4	adenylate cyclase 4	7181	-0.09954988956451416	0.101358555	No	
+row_105	BRAF	BRAF	v-raf murine sarcoma viral oncogene homolog B1	7440	-0.1279134750366211	0.08091953	No	
+row_106	CACNB2	CACNB2	calcium channel, voltage-dependent, beta 2 subunit	7542	-0.139711394906044	0.073705755	No	
+row_107	MAPK1	MAPK1	mitogen-activated protein kinase 1	7694	-0.15220962464809418	0.062422946	No	
+row_108	AP2A1	AP2A1	adaptor-related protein complex 2, alpha 1 subunit	7783	-0.16104614734649658	0.05648313	No	
+row_109	GRIA2	GRIA2	glutamate receptor, ionotropic, AMPA 2	7868	-0.16545043885707855	0.05091632	No	
+row_110	RPS6KA2	RPS6KA2	ribosomal protein S6 kinase, 90kDa, polypeptide 2	8140	-0.18624311685562134	0.029903281	No	
+row_111	CAMK2B	CAMK2B	calcium/calmodulin-dependent protein kinase (CaM kinase) II beta	8199	-0.19299015402793884	0.026751442	No	
+row_112	GRIK5	GRIK5	glutamate receptor, ionotropic, kainate 5	8253	-0.19705797731876373	0.02405323	No	
+row_113	GNAI3	GNAI3	guanine nucleotide binding protein (G protein), alpha inhibiting activity polypeptide 3	8292	-0.20172500610351562	0.02264968	No	
+row_114	CACNB4	CACNB4	calcium channel, voltage-dependent, beta 4 subunit	8317	-0.20415286719799042	0.022437539	No	
+row_115	ADCY9	ADCY9	adenylate cyclase 9	8358	-0.20794396102428436	0.020921474	No	
+row_116	KCNJ10	KCNJ10	potassium inwardly-rectifying channel, subfamily J, member 10	8400	-0.21433983743190765	0.019378027	No	
+row_117	CAMKK1	CAMKK1	calcium/calmodulin-dependent protein kinase kinase 1, alpha	8416	-0.21587513387203217	0.020021075	No	
+row_118	STX1A	STX1A	syntaxin 1A (brain)	8466	-0.22169381380081177	0.017873624	No	
+row_119	HRAS	HRAS	v-Ha-ras Harvey rat sarcoma viral oncogene homolog	8509	-0.22525131702423096	0.016342469	No	
+row_120	PLCB1	PLCB1	phospholipase C, beta 1 (phosphoinositide-specific)	8790	-0.2602665424346924	-0.004772387	No	
+row_121	COMT	COMT	catechol-O-methyltransferase	8956	-0.28148940205574036	-0.01608941	No	
+row_122	KCNJ12	KCNJ12	potassium inwardly-rectifying channel, subfamily J, member 12	9157	-0.30791175365448	-0.030099483	No	
+row_123	AKAP9	AKAP9	A kinase (PRKA) anchor protein (yotiao) 9	9196	-0.3124253749847412	-0.030530408	No	
+row_124	GABRA2	GABRA2	gamma-aminobutyric acid (GABA) A receptor, alpha 2	9329	-0.32907941937446594	-0.038671255	No	
+row_125	SLC5A7	SLC5A7	solute carrier family 5 (choline transporter), member 7	9371	-0.3350179195404053	-0.03915441	No	
+row_126	KCNJ2	KCNJ2	potassium inwardly-rectifying channel, subfamily J, member 2	9620	-0.36504316329956055	-0.05667422	No	
+row_127	ADCY6	ADCY6	adenylate cyclase 6	9912	-0.41232919692993164	-0.07737239	No	
+row_128	MYO6	MYO6	myosin VI	9939	-0.41692066192626953	-0.07588228	No	
+row_129	CREB1	CREB1	cAMP responsive element binding protein 1	9998	-0.426373153924942	-0.076983586	No	
+row_130	ADCY2	ADCY2	adenylate cyclase 2 (brain)	10141	-0.4507461190223694	-0.08489123	No	
+row_131	GRIN1	GRIN1	glutamate receptor, ionotropic, N-methyl D-aspartate 1	10174	-0.4556361436843872	-0.083562426	No	
+row_132	VAMP2	VAMP2	vesicle-associated membrane protein 2 (synaptobrevin 2)	10254	-0.4714910089969635	-0.086022444	No	
+row_133	PRKCA	PRKCA	protein kinase C, alpha	10690	-0.5605981945991516	-0.117453	No	
+row_134	DLG3	DLG3	discs, large homolog 3 (neuroendocrine-dlg, Drosophila)	10739	-0.5703759789466858	-0.11645331	No	
+row_135	SLC1A3	SLC1A3	solute carrier family 1 (glial high affinity glutamate transporter), member 3	10744	-0.5720112919807434	-0.11176186	No	
+row_136	ADCY3	ADCY3	adenylate cyclase 3	10803	-0.5852764844894409	-0.111467026	No	
+row_137	CACNG4	CACNG4	calcium channel, voltage-dependent, gamma subunit 4	10880	-0.6026933193206787	-0.112523556	No	
+row_138	ACHE	ACHE	acetylcholinesterase (Yt blood group)	10920	-0.6125761866569519	-0.1104009	No	
+row_139	GRIK2	GRIK2	glutamate receptor, ionotropic, kainate 2	11010	-0.6393086910247803	-0.112222224	No	
+row_140	ARHGEF9	ARHGEF9	Cdc42 guanine nucleotide exchange factor (GEF) 9	11017	-0.6412323117256165	-0.10708974	No	
+row_141	CALM2	CALM2	calmodulin 2 (phosphorylase kinase, delta)	11309	-0.7378762364387512	-0.12492762	No	
+row_142	RASGRF1	RASGRF1	Ras protein-specific guanine nucleotide-releasing factor 1	11315	-0.740238606929779	-0.118841685	No	
+row_143	DLG1	DLG1	discs, large homolog 1 (Drosophila)	11329	-0.7435972690582275	-0.11339486	No	
+row_144	RPS6KA1	RPS6KA1	ribosomal protein S6 kinase, 90kDa, polypeptide 1	11353	-0.7538566589355469	-0.10869366	No	
+row_145	KCNJ16	KCNJ16	potassium inwardly-rectifying channel, subfamily J, member 16	11391	-0.7748470306396484	-0.104978114	No	
+row_146	GRIN2B	GRIN2B	glutamate receptor, ionotropic, N-methyl D-aspartate 2B	11407	-0.7802957892417908	-0.09937601	No	
+row_147	GNG4	GNG4	guanine nucleotide binding protein (G protein), gamma 4	11437	-0.7917969822883606	-0.09484292	No	
+row_148	RASGRF2	RASGRF2	Ras protein-specific guanine nucleotide-releasing factor 2	11466	-0.8066753149032593	-0.09009554	No	
+row_149	RPS6KA3	RPS6KA3	ribosomal protein S6 kinase, 90kDa, polypeptide 3	11498	-0.8227865695953369	-0.08545733	No	
+row_150	CHRNE	CHRNE	cholinergic receptor, nicotinic, epsilon	11500	-0.823642909526825	-0.07830429	No	
+row_151	CALM3	CALM3	calmodulin 3 (phosphorylase kinase, delta)	11522	-0.8429415225982666	-0.07265323	No	
+row_152	GABRR2	GABRR2	gamma-aminobutyric acid (GABA) receptor, rho 2	11535	-0.855783224105835	-0.06613714	No	
+row_153	CALM1	CALM1	calmodulin 1 (phosphorylase kinase, delta)	11602	-0.8956689834594727	-0.06378379	No	
+row_154	SLC6A11	SLC6A11	solute carrier family 6 (neurotransmitter transporter, GABA), member 11	11603	-0.8957928419113159	-0.055913247	No	
+row_155	ADCY5	ADCY5	adenylate cyclase 5	11613	-0.9014852046966553	-0.048744887	No	
+row_156	GABRG3	GABRG3	gamma-aminobutyric acid (GABA) A receptor, gamma 3	11634	-0.9151485562324524	-0.042375833	No	
+row_157	CAMK2A	CAMK2A	calcium/calmodulin-dependent protein kinase (CaM kinase) II alpha	11637	-0.915886640548706	-0.0344959	No	
+row_158	AKAP5	AKAP5	A kinase (PRKA) anchor protein 5	11667	-0.9401445388793945	-0.02865942	No	
+row_159	GABRA3	GABRA3	gamma-aminobutyric acid (GABA) A receptor, alpha 3	11847	-1.1037763357162476	-0.033921815	No	
+row_160	SYT1	SYT1	synaptotagmin I	11858	-1.1170432567596436	-0.024943119	No	
+row_161	CAMK4	CAMK4	calcium/calmodulin-dependent protein kinase IV	11895	-1.1709294319152832	-0.017663974	No	
+row_162	GABRA1	GABRA1	gamma-aminobutyric acid (GABA) A receptor, alpha 1	11953	-1.2734845876693726	-0.011238889	No	
+row_163	RIMS1	RIMS1	regulating synaptic membrane exocytosis 1	12023	-1.4501880407333374	-0.0042641917	No	
+row_164	CHRNA9	CHRNA9	cholinergic receptor, nicotinic, alpha 9	12033	-1.4841200113296509	0.008023262	No	

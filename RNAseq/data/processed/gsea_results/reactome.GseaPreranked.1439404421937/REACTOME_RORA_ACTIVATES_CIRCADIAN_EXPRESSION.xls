@@ -1,0 +1,22 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CLOCK	CLOCK	clock homolog (mouse)	3501	0.34242719411849976	-0.2489137	No	
+row_1	CPT1A	CPT1A	carnitine palmitoyltransferase 1A (liver)	3955	0.2790665924549103	-0.25355402	No	
+row_2	NCOA3	NCOA3	nuclear receptor coactivator 3	4378	0.22249728441238403	-0.262277	No	
+row_3	NPAS2	NPAS2	neuronal PAS domain protein 2	4744	0.17527467012405396	-0.27183795	No	
+row_4	PPARA	PPARA	peroxisome proliferative activated receptor, alpha	5440	0.09643717855215073	-0.31790897	No	
+row_5	TBL1XR1	TBL1XR1	transducin (beta)-like 1X-linked receptor 1	6821	-0.05887964740395546	-0.42495975	No	
+row_6	TBL1X	TBL1X	transducin (beta)-like 1X-linked	7589	-0.1424177587032318	-0.47157744	No	
+row_7	RXRA	RXRA	retinoid X receptor, alpha	8748	-0.2550755739212036	-0.5372561	Yes	
+row_8	HDAC3	HDAC3	histone deacetylase 3	8780	-0.2595081329345703	-0.509343	Yes	
+row_9	NCOA2	NCOA2	nuclear receptor coactivator 2	9410	-0.34091615676879883	-0.5212552	Yes	
+row_10	ARNTL	ARNTL	aryl hydrocarbon receptor nuclear translocator-like	9494	-0.3503057658672333	-0.48697433	Yes	
+row_11	NCOA6	NCOA6	nuclear receptor coactivator 6	9877	-0.40621593594551086	-0.47082052	Yes	
+row_12	SMARCD3	SMARCD3	SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily d, member 3	9962	-0.4208371639251709	-0.42834	Yes	
+row_13	NCOR1	NCOR1	nuclear receptor co-repressor 1	10058	-0.4358190596103668	-0.3850086	Yes	
+row_14	NR1D1	NR1D1	nuclear receptor subfamily 1, group D, member 1	10212	-0.46267351508140564	-0.3433136	Yes	
+row_15	PPARGC1A	PPARGC1A	peroxisome proliferative activated receptor, gamma, coactivator 1, alpha	10779	-0.5797238349914551	-0.32198066	Yes	
+row_16	EP300	EP300	E1A binding protein p300	10861	-0.5987852215766907	-0.2583565	Yes	
+row_17	CREBBP	CREBBP	CREB binding protein (Rubinstein-Taybi syndrome)	10949	-0.6218989491462708	-0.19251372	Yes	
+row_18	NCOA1	NCOA1	nuclear receptor coactivator 1	10995	-0.6366135478019714	-0.12147454	Yes	
+row_19	RORA	RORA	RAR-related orphan receptor A	11635	-0.9152410626411438	-0.06677148	Yes	
+row_20	SREBF1	SREBF1	sterol regulatory element binding transcription factor 1	11636	-0.9153377413749695	0.040713605	Yes	

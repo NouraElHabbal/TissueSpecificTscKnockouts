@@ -1,0 +1,28 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	HRH3	HRH3	histamine receptor H3	199	2.2012317180633545	0.10435072	No	
+row_1	DRD2	DRD2	dopamine receptor D2	894	1.1189628839492798	0.10841282	No	
+row_2	HTR2B	HTR2B	5-hydroxytryptamine (serotonin) receptor 2B	1482	0.8097626566886902	0.104348294	No	
+row_3	HTR6	HTR6	5-hydroxytryptamine (serotonin) receptor 6	1527	0.7933934330940247	0.14425042	No	
+row_4	CHRM4	CHRM4	cholinergic receptor, muscarinic 4	1905	0.6614208817481995	0.14939669	No	
+row_5	CHRM3	CHRM3	cholinergic receptor, muscarinic 3	1969	0.641722559928894	0.17940599	No	
+row_6	CHRM5	CHRM5	cholinergic receptor, muscarinic 5	2219	0.5800738334655762	0.19066422	No	
+row_7	HTR1D	HTR1D	5-hydroxytryptamine (serotonin) receptor 1D	2437	0.527280330657959	0.20166937	No	
+row_8	ADRA1B	ADRA1B	adrenergic, alpha-1B-, receptor	4320	0.23059888184070587	0.058824867	No	
+row_9	ADRB1	ADRB1	adrenergic, beta-1-, receptor	5700	0.067437082529068	-0.05141321	No	
+row_10	HTR7	HTR7	5-hydroxytryptamine (serotonin) receptor 7 (adenylate cyclase-coupled)	7174	-0.09872254729270935	-0.16770115	No	
+row_11	HRH1	HRH1	histamine receptor H1	7516	-0.13792535662651062	-0.18830732	No	
+row_12	HTR1F	HTR1F	5-hydroxytryptamine (serotonin) receptor 1F	7859	-0.16545043885707855	-0.20748566	No	
+row_13	HTR4	HTR4	5-hydroxytryptamine (serotonin) receptor 4	8056	-0.1814737170934677	-0.21372159	No	
+row_14	ADRA2A	ADRA2A	adrenergic, alpha-2A-, receptor	8333	-0.20532333850860596	-0.22525871	No	
+row_15	ADRB2	ADRB2	adrenergic, beta-2-, receptor, surface	9322	-0.32835152745246887	-0.28887302	No	
+row_16	ADRA1D	ADRA1D	adrenergic, alpha-1D-, receptor	9539	-0.3549354374408722	-0.2872427	No	
+row_17	CHRM1	CHRM1	cholinergic receptor, muscarinic 1	10263	-0.47261762619018555	-0.321045	No	
+row_18	ADRB3	ADRB3	adrenergic, beta-3-, receptor	10335	-0.4846135675907135	-0.30031806	No	
+row_19	ADRA2C	ADRA2C	adrenergic, alpha-2C-, receptor	11053	-0.6522902250289917	-0.32376507	Yes	
+row_20	ADRA2B	ADRA2B	adrenergic, alpha-2B-, receptor	11078	-0.6578633785247803	-0.2896477	Yes	
+row_21	HRH2	HRH2	histamine receptor H2	11243	-0.7117407321929932	-0.26414117	Yes	
+row_22	CHRM2	CHRM2	cholinergic receptor, muscarinic 2	11523	-0.8429585099220276	-0.24093583	Yes	
+row_23	HTR3B	HTR3B	5-hydroxytryptamine (serotonin) receptor 3B	11893	-1.1691371202468872	-0.20726757	Yes	
+row_24	HTR2A	HTR2A	5-hydroxytryptamine (serotonin) receptor 2A	11957	-1.2775739431381226	-0.14236583	Yes	
+row_25	HTR1B	HTR1B	5-hydroxytryptamine (serotonin) receptor 1B	12009	-1.4010891914367676	-0.069694676	Yes	
+row_26	ADRA1A	ADRA1A	adrenergic, alpha-1A-, receptor	12022	-1.4492356777191162	0.008840863	Yes	

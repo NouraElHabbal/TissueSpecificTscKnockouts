@@ -1,0 +1,21 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	BID	BID	BH3 interacting domain death agonist	134	2.497912645339966	0.18828835	Yes	
+row_1	CASP3	CASP3	caspase 3, apoptosis-related cysteine peptidase	407	1.6517647504806519	0.2976517	Yes	
+row_2	BCL2	BCL2	B-cell CLL/lymphoma 2	1574	0.7798110246658325	0.26360285	Yes	
+row_3	TLN1	TLN1	talin 1	1604	0.7739186882972717	0.3229731	Yes	
+row_4	CASP9	CASP9	caspase 9, apoptosis-related cysteine peptidase	1715	0.7299567461013794	0.37214613	Yes	
+row_5	BCL2L1	BCL2L1	BCL2-like 1	1961	0.6450883150100708	0.40339816	Yes	
+row_6	CASP6	CASP6	caspase 6, apoptosis-related cysteine peptidase	2088	0.6081252694129944	0.44152686	Yes	
+row_7	BAX	BAX	BCL2-associated X protein	2101	0.6025927066802979	0.4886277	Yes	
+row_8	AKT1	AKT1	v-akt murine thymoma viral oncogene homolog 1	3901	0.28578126430511475	0.3628804	No	
+row_9	BAD	BAD	BCL2-antagonist of cell death	4299	0.2334836721420288	0.3487315	No	
+row_10	EIF2S1	EIF2S1	eukaryotic translation initiation factor 2, subunit 1 alpha, 35kDa	5548	0.08359774202108383	0.25234792	No	
+row_11	APAF1	APAF1	apoptotic peptidase activating factor	5848	0.05099371820688248	0.23172729	No	
+row_12	PTK2	PTK2	PTK2 protein tyrosine kinase 2	6573	-0.030790239572525024	0.1743993	No	
+row_13	CYCS	CYCS	cytochrome c, somatic	7875	-0.16578979790210724	0.08019879	No	
+row_14	PARP1	PARP1	poly (ADP-ribose) polymerase family, member 1	9614	-0.36439937353134155	-0.034236964	No	
+row_15	PXN	PXN	paxillin	9818	-0.39655542373657227	-0.019351648	No	
+row_16	STAT1	STAT1	signal transducer and activator of transcription 1, 91kDa	10085	-0.44080325961112976	-0.0061373105	No	
+row_17	PRKCA	PRKCA	protein kinase C, alpha	10690	-0.5605981945991516	-0.011273188	No	
+row_18	CASP7	CASP7	caspase 7, apoptosis-related cysteine peptidase	11375	-0.764367938041687	-0.006752708	No	
+row_19	ATM	ATM	ataxia telangiectasia mutated (includes complementation groups A, C and D)	11550	-0.8637311458587646	0.047811713	No	

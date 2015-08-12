@@ -1,0 +1,28 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GYS2	GYS2	glycogen synthase 2 (liver)	162	2.3492772579193115	0.09976663	Yes	
+row_1	MGAM	MGAM	maltase-glucoamylase (alpha-glucosidase)	217	2.0995287895202637	0.19642764	Yes	
+row_2	GCK	GCK	glucokinase (hexokinase 4, maturity onset diabetes of the young 2)	237	2.0510990619659424	0.29364794	Yes	
+row_3	HK3	HK3	hexokinase 3 (white cell)	320	1.8004364967346191	0.37358984	Yes	
+row_4	HK1	HK1	hexokinase 1	401	1.6609030961990356	0.44697648	Yes	
+row_5	GUSB	GUSB	glucuronidase, beta	777	1.1945571899414062	0.47352767	Yes	
+row_6	GBE1	GBE1	glucan (1,4-alpha-), branching enzyme 1 (glycogen branching enzyme, Andersen disease, glycogen storage disease type IV)	832	1.156494379043579	0.52476794	Yes	
+row_7	UXS1	UXS1	UDP-glucuronate decarboxylase 1	844	1.1505895853042603	0.5792766	Yes	
+row_8	PYGB	PYGB	phosphorylase, glycogen; brain	1316	0.8838363885879517	0.58293015	Yes	
+row_9	UGDH	UGDH	UDP-glucose dehydrogenase	2950	0.430076539516449	0.46871936	No	
+row_10	ENPP1	ENPP1	ectonucleotide pyrophosphatase/phosphodiesterase 1	3125	0.4023018479347229	0.47371942	No	
+row_11	UGT1A5	UGT1A5	UDP glucuronosyltransferase 1 family, polypeptide A5	3293	0.3729574382305145	0.4778845	No	
+row_12	TREH	TREH	trehalase (brush-border membrane glycoprotein)	3934	0.281777560710907	0.4385767	No	
+row_13	HK2	HK2	hexokinase 2	4403	0.21883800625801086	0.41044882	No	
+row_14	GYS1	GYS1	glycogen synthase 1 (muscle)	4419	0.21644166111946106	0.41963428	No	
+row_15	UGT1A1	UGT1A1	UDP glucuronosyltransferase 1 family, polypeptide A1	4442	0.21424315869808197	0.42813545	No	
+row_16	PGM1	PGM1	phosphoglucomutase 1	4527	0.2037678211927414	0.4310094	No	
+row_17	UGP2	UGP2	UDP-glucose pyrophosphorylase 2	6378	-0.00912000797688961	0.278594	No	
+row_18	GANC	GANC	glucosidase, alpha; neutral C	7149	-0.09605532139539719	0.21959986	No	
+row_19	UGT1A8	UGT1A8	UDP glucuronosyltransferase 1 family, polypeptide A8	7535	-0.13946035504341125	0.1945066	No	
+row_20	ENPP3	ENPP3	ectonucleotide pyrophosphatase/phosphodiesterase 3	8275	-0.19961026310920715	0.14306147	No	
+row_21	GAA	GAA	glucosidase, alpha; acid (Pompe disease, glycogen storage disease type II)	9086	-0.2997719347476959	0.09057428	No	
+row_22	PGM2L1	PGM2L1	phosphoglucomutase 2-like 1	9153	-0.30762144923210144	0.09993752	No	
+row_23	PYGL	PYGL	phosphorylase, glycogen; liver (Hers disease, glycogen storage disease type VI)	10305	-0.48008009791374207	0.027959943	No	
+row_24	AGL	AGL	amylo-1, 6-glucosidase, 4-alpha-glucanotransferase (glycogen debranching enzyme, glycogen storage disease type III)	10645	-0.549310564994812	0.02640762	No	
+row_25	PGM2	PGM2	phosphoglucomutase 2	11741	-0.9966238737106323	-0.016063936	No	
+row_26	PYGM	PYGM	phosphorylase, glycogen; muscle (McArdle syndrome, glycogen storage disease type V)	11743	-0.9974038004875183	0.031892885	No	

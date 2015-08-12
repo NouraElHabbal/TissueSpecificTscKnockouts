@@ -1,0 +1,45 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ALDH1B1	ALDH1B1	aldehyde dehydrogenase 1 family, member B1	289	1.8986040353775024	0.0732343	Yes	
+row_1	OGDHL	OGDHL	oxoglutarate dehydrogenase-like	334	1.7709271907806396	0.16020712	Yes	
+row_2	PIPOX	PIPOX	pipecolic acid oxidase	571	1.410681128501892	0.212861	Yes	
+row_3	PLOD2	PLOD2	procollagen-lysine, 2-oxoglutarate 5-dioxygenase 2	679	1.281298279762268	0.26956823	Yes	
+row_4	BBOX1	BBOX1	butyrobetaine (gamma), 2-oxoglutarate dioxygenase (gamma-butyrobetaine hydroxylase) 1	841	1.1536314487457275	0.31527513	Yes	
+row_5	AADAT	AADAT	aminoadipate aminotransferase	1136	0.980903148651123	0.34113955	Yes	
+row_6	WHSC1	WHSC1	Wolf-Hirschhorn syndrome candidate 1	1309	0.8853205442428589	0.37220758	Yes	
+row_7	SUV39H2	SUV39H2	suppressor of variegation 3-9 homolog 2 (Drosophila)	1409	0.8362367749214172	0.40680417	Yes	
+row_8	AASS	AASS	aminoadipate-semialdehyde synthase	1836	0.6821263432502747	0.40645927	Yes	
+row_9	TMLHE	TMLHE	trimethyllysine hydroxylase, epsilon	1931	0.6536628603935242	0.4321278	Yes	
+row_10	ALDH9A1	ALDH9A1	aldehyde dehydrogenase 9 family, member A1	3241	0.3810221254825592	0.3433165	No	
+row_11	HADH	HADH	hydroxyacyl-Coenzyme A dehydrogenase	3242	0.38099896907806396	0.36281115	No	
+row_12	EHHADH	EHHADH	enoyl-Coenzyme A, hydratase/3-hydroxyacyl Coenzyme A dehydrogenase	3400	0.35574522614479065	0.3680234	No	
+row_13	HADHA	HADHA	hydroxyacyl-Coenzyme A dehydrogenase/3-ketoacyl-Coenzyme A thiolase/enoyl-Coenzyme A hydratase (trifunctional protein), alpha subunit	3997	0.2740771472454071	0.3327339	No	
+row_14	OGDH	OGDH	oxoglutarate (alpha-ketoglutarate) dehydrogenase (lipoamide)	4114	0.2597842514514923	0.33642846	No	
+row_15	EHMT2	EHMT2	euchromatic histone-lysine N-methyltransferase 2	4158	0.25176820158958435	0.3457529	No	
+row_16	GCDH	GCDH	glutaryl-Coenzyme A dehydrogenase	4683	0.1840812861919403	0.31181586	No	
+row_17	SETMAR	SETMAR	SET domain and mariner transposase fusion gene	4834	0.16250674426555634	0.30771983	No	
+row_18	ALDH2	ALDH2	aldehyde dehydrogenase 2 family (mitochondrial)	5026	0.14285629987716675	0.299226	No	
+row_19	ALDH3A2	ALDH3A2	aldehyde dehydrogenase 3 family, member A2	5036	0.1411464959383011	0.3057034	No	
+row_20	ECHS1	ECHS1	enoyl Coenzyme A hydratase, short chain, 1, mitochondrial	5287	0.11251098662614822	0.29077518	No	
+row_21	AASDHPPT	AASDHPPT	aminoadipate-semialdehyde dehydrogenase-phosphopantetheinyl transferase	5319	0.10925997793674469	0.29380074	No	
+row_22	SETDB2	SETDB2	SET domain, bifurcated 2	5409	0.1000671461224556	0.291557	No	
+row_23	SETD7	SETD7	SET domain containing (lysine methyltransferase) 7	5487	0.09138986468315125	0.28986216	No	
+row_24	DLST	DLST	dihydrolipoamide S-succinyltransferase (E2 component of 2-oxo-glutarate complex)	5664	0.07171822339296341	0.2789695	No	
+row_25	ALDH7A1	ALDH7A1	aldehyde dehydrogenase 7 family, member A1	5803	0.056805483996868134	0.2704579	No	
+row_26	PLOD1	PLOD1	procollagen-lysine 1, 2-oxoglutarate 5-dioxygenase 1	5956	0.039860814809799194	0.25992092	No	
+row_27	ACAT1	ACAT1	acetyl-Coenzyme A acetyltransferase 1 (acetoacetyl Coenzyme A thiolase)	5965	0.03861941397190094	0.26123506	No	
+row_28	DOT1L	DOT1L	DOT1-like, histone H3 methyltransferase (S. cerevisiae)	6294	-7.337852730415761E-4	0.23413375	No	
+row_29	NSD1	NSD1	nuclear receptor binding SET domain protein 1	6742	-0.04941906780004501	0.19967745	No	
+row_30	PLOD3	PLOD3	procollagen-lysine, 2-oxoglutarate 5-dioxygenase 3	7465	-0.132233664393425	0.14670493	No	
+row_31	SETDB1	SETDB1	SET domain, bifurcated 1	7556	-0.14058685302734375	0.14645174	No	
+row_32	SUV420H1	SUV420H1	suppressor of variegation 4-20 homolog 1 (Drosophila)	7699	-0.1528431922197342	0.14252317	No	
+row_33	SETD1A	SETD1A	SET domain containing 1A	8480	-0.22245074808597565	0.08936787	No	
+row_34	WHSC1L1	WHSC1L1	Wolf-Hirschhorn syndrome candidate 1-like 1	8539	-0.22852492332458496	0.0962619	No	
+row_35	SUV39H1	SUV39H1	suppressor of variegation 3-9 homolog 1 (Drosophila)	9081	-0.29889369010925293	0.06679293	No	
+row_36	EHMT1	EHMT1	euchromatic histone-lysine N-methyltransferase 1	9155	-0.3076819181442261	0.0764961	No	
+row_37	SETD8	SETD8	SET domain containing (lysine methyltransferase) 8	9301	-0.3256339728832245	0.08116053	No	
+row_38	SETD2	SETD2	SET domain containing 2	9420	-0.34148043394088745	0.088869765	No	
+row_39	ACAT2	ACAT2	acetyl-Coenzyme A acetyltransferase 2 (acetoacetyl Coenzyme A thiolase)	10029	-0.43136316537857056	0.060635272	No	
+row_40	ASH1L	ASH1L	ash1 (absent, small, or homeotic)-like (Drosophila)	10219	-0.46405720710754395	0.06874186	No	
+row_41	SUV420H2	SUV420H2	suppressor of variegation 4-20 homolog 2 (Drosophila)	10459	-0.5085089802742004	0.07498589	No	
+row_42	SETD1B	SETD1B	SET domain containing 1B	10737	-0.5703261494636536	0.081248805	No	
+row_43	AASDH	AASDH	-	11091	-0.6614184379577637	0.08588439	No	

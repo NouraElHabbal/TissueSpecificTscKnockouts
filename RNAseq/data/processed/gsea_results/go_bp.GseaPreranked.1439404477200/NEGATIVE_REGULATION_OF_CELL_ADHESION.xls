@@ -1,0 +1,17 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ARHGDIG	ARHGDIG	Rho GDP dissociation inhibitor (GDI) gamma	106	2.7235584259033203	0.37982213	Yes	
+row_1	CDKN2A	CDKN2A	cyclin-dependent kinase inhibitor 2A (melanoma, p16, inhibits CDK4)	263	1.9775166511535645	0.6490784	Yes	
+row_2	RND1	RND1	Rho family GTPase 1	2268	0.5715713500976562	0.5651965	No	
+row_3	CDH13	CDH13	cadherin 13, H-cadherin (heart)	3395	0.3567562401294708	0.52314496	No	
+row_4	RASA1	RASA1	RAS p21 protein activator (GTPase activating protein) 1	3413	0.35359615087509155	0.57218945	No	
+row_5	ADAM10	ADAM10	ADAM metallopeptidase domain 10	4685	0.18377624452114105	0.49348906	No	
+row_6	ARHGDIA	ARHGDIA	Rho GDP dissociation inhibitor (GDI) alpha	5507	0.0892828106880188	0.43845427	No	
+row_7	B4GALNT2	B4GALNT2	beta-1,4-N-acetyl-galactosaminyl transferase 2	5681	0.07005941867828369	0.43416873	No	
+row_8	NF2	NF2	neurofibromin 2 (bilateral acoustic neuroma)	5757	0.06147345155477524	0.436748	No	
+row_9	SPN	SPN	sialophorin (leukosialin, CD43)	5864	0.04906703159213066	0.4349982	No	
+row_10	PTEN	PTEN	phosphatase and tensin homolog (mutated in multiple advanced cancers 1)	6243	0.005244560074061155	0.4045429	No	
+row_11	GTPBP4	GTPBP4	GTP binding protein 4	6322	-0.003303069854155183	0.39857534	No	
+row_12	MIA3	MIA3	melanoma inhibitory activity family, member 3	7137	-0.09499312192201614	0.3449331	No	
+row_13	ARHGDIB	ARHGDIB	Rho GDP dissociation inhibitor (GDI) beta	7210	-0.10220474004745483	0.3535712	No	
+row_14	TGFBI	TGFBI	transforming growth factor, beta-induced, 68kDa	7636	-0.14713312685489655	0.33947942	No	
+row_15	ACVRL1	ACVRL1	activin A receptor type II-like 1	8446	-0.21960480511188507	0.3040284	No	

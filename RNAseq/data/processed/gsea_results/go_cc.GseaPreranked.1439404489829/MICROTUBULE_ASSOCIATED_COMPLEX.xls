@@ -1,0 +1,44 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	MAP1B	MAP1B	microtubule-associated protein 1B	46	3.338003396987915	0.11974926	Yes	
+row_1	DYNC1I1	DYNC1I1	dynein, cytoplasmic 1, intermediate chain 1	66	3.1247200965881348	0.23383772	Yes	
+row_2	MAP1A	MAP1A	microtubule-associated protein 1A	154	2.400688648223877	0.31550056	Yes	
+row_3	KIF11	KIF11	kinesin family member 11	219	2.0977134704589844	0.38785172	Yes	
+row_4	KIF5C	KIF5C	kinesin family member 5C	303	1.8528738021850586	0.4495683	Yes	
+row_5	KIF2C	KIF2C	kinesin family member 2C	384	1.6899769306182861	0.50550354	Yes	
+row_6	KIF5A	KIF5A	kinesin family member 5A	435	1.596842646598816	0.5604734	Yes	
+row_7	KIF3B	KIF3B	kinesin family member 3B	1265	0.9072672128677368	0.5254695	No	
+row_8	DYNC1LI2	DYNC1LI2	dynein, cytoplasmic 1, light intermediate chain 2	1779	0.6995747089385986	0.5089217	No	
+row_9	MAP7	MAP7	microtubule-associated protein 7	2391	0.5382552742958069	0.47829485	No	
+row_10	MEFV	MEFV	Mediterranean fever	2908	0.4402076303958893	0.4518985	No	
+row_11	RANBP9	RANBP9	RAN binding protein 9	3270	0.37677156925201416	0.43597776	No	
+row_12	EML2	EML2	echinoderm microtubule associated protein like 2	3306	0.3711906671524048	0.44682157	No	
+row_13	ACTR1A	ACTR1A	ARP1 actin-related protein 1 homolog A, centractin alpha (yeast)	3321	0.36711475253105164	0.4592519	No	
+row_14	ATG4B	ATG4B	ATG4 autophagy related 4 homolog B (S. cerevisiae)	3326	0.3665471374988556	0.4724886	No	
+row_15	ACTR1B	ACTR1B	ARP1 actin-related protein 1 homolog B, centractin beta (yeast)	3379	0.35947224497795105	0.4814922	No	
+row_16	KATNB1	KATNB1	katanin p80 (WD repeat containing) subunit B 1	3818	0.29886579513549805	0.45631734	No	
+row_17	KIF3C	KIF3C	kinesin family member 3C	3884	0.2879621088504791	0.46159846	No	
+row_18	DCTN2	DCTN2	dynactin 2 (p50)	3952	0.27931076288223267	0.46639392	No	
+row_19	APPBP2	APPBP2	amyloid beta precursor protein (cytoplasmic tail) binding protein 2	3995	0.27426964044570923	0.4730711	No	
+row_20	MAP4	MAP4	microtubule-associated protein 4	4081	0.26458218693733215	0.47583216	No	
+row_21	DCTN3	DCTN3	dynactin 3 (p22)	4365	0.22482281923294067	0.4607403	No	
+row_22	ATG4A	ATG4A	ATG4 autophagy related 4 homolog A (S. cerevisiae)	4896	0.15407054126262665	0.4225944	No	
+row_23	KIF1B	KIF1B	kinesin family member 1B	4940	0.15069396793842316	0.42461476	No	
+row_24	MAPT	MAPT	microtubule-associated protein tau	5290	0.1122777983546257	0.39989668	No	
+row_25	ATG4C	ATG4C	ATG4 autophagy related 4 homolog C (S. cerevisiae)	5703	0.06679350882768631	0.3682828	No	
+row_26	STAU1	STAU1	staufen, RNA binding protein, homolog 1 (Drosophila)	5961	0.03915462642908096	0.3484696	No	
+row_27	KLC2	KLC2	kinesin light chain 2	5991	0.035454198718070984	0.34738263	No	
+row_28	MID1	MID1	midline 1 (Opitz/BBB syndrome)	6427	-0.013896630145609379	0.31190795	No	
+row_29	KIFC3	KIFC3	kinesin family member C3	6603	-0.034301478415727615	0.29869923	No	
+row_30	KIF23	KIF23	kinesin family member 23	7009	-0.08005298674106598	0.26815528	No	
+row_31	KIF5B	KIF5B	kinesin family member 5B	7243	-0.10572434216737747	0.25279173	No	
+row_32	DYNLL1	DYNLL1	dynein, light chain, LC8-type 1	7946	-0.17250870168209076	0.20109814	No	
+row_33	KIFAP3	KIFAP3	kinesin-associated protein 3	8587	-0.23465970158576965	0.15683454	No	
+row_34	RABGAP1	RABGAP1	RAB GTPase activating protein 1	8724	-0.25177255272865295	0.15490206	No	
+row_35	DCX	DCX	doublecortex; lissencephaly, X-linked (doublecortin)	8881	-0.27073073387145996	0.15201662	No	
+row_36	PAFAH1B1	PAFAH1B1	platelet-activating factor acetylhydrolase, isoform Ib, alpha subunit 45kDa	9267	-0.3220521807670593	0.13208488	No	
+row_37	DNALI1	DNALI1	dynein, axonemal, light intermediate chain 1	9303	-0.32567059993743896	0.14124379	No	
+row_38	ATG4D	ATG4D	ATG4 autophagy related 4 homolog D (S. cerevisiae)	9515	-0.3528708815574646	0.13684839	No	
+row_39	KIF15	KIF15	kinesin family member 15	9615	-0.3645252585411072	0.14215055	No	
+row_40	PXN	PXN	paxillin	9818	-0.39655542373657227	0.14011674	No	
+row_41	EML1	EML1	echinoderm microtubule associated protein like 1	10539	-0.5266138315200806	0.10004103	No	
+row_42	MAP2	MAP2	microtubule-associated protein 2	11529	-0.8489224910736084	0.049640145	No	

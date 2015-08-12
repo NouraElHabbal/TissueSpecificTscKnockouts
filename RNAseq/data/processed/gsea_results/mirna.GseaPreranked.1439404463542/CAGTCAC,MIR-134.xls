@@ -1,0 +1,35 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	CDH9	CDH9	cadherin 9, type 2 (T1-cadherin)	71	3.0522191524505615	0.1603357	No	
+row_1	SLC25A5	SLC25A5	solute carrier family 25 (mitochondrial carrier; adenine nucleotide translocator), member 5	1072	1.0198768377304077	0.13320006	No	
+row_2	CSNK1G3	CSNK1G3	casein kinase 1, gamma 3	1244	0.9183950424194336	0.1690734	No	
+row_3	ZFPM2	ZFPM2	zinc finger protein, multitype 2	1832	0.6835423111915588	0.15776655	No	
+row_4	EPHA7	EPHA7	EPH receptor A7	2184	0.5870386362075806	0.16071527	No	
+row_5	ACSL1	ACSL1	acyl-CoA synthetase long-chain family member 1	3343	0.3642865717411041	0.08481799	No	
+row_6	PPP1R12A	PPP1R12A	protein phosphatase 1, regulatory (inhibitor) subunit 12A	4354	0.22558891773223877	0.013603521	No	
+row_7	ZDHHC9	ZDHHC9	zinc finger, DHHC-type containing 9	4564	0.198619544506073	0.0071407016	No	
+row_8	LPHN3	LPHN3	latrophilin 3	4656	0.1872335523366928	0.009813162	No	
+row_9	TSC22D1	TSC22D1	TSC22 domain family, member 1	5406	0.10058096051216125	-0.0466311	No	
+row_10	ETF1	ETF1	eukaryotic translation termination factor 1	5540	0.08447235077619553	-0.05302662	No	
+row_11	CPEB2	CPEB2	cytoplasmic polyadenylation element binding protein 2	6083	0.025308487936854362	-0.09645667	No	
+row_12	TAPBP	TAPBP	TAP binding protein (tapasin)	6118	0.020955974236130714	-0.09812638	No	
+row_13	SMARCAD1	SMARCAD1	SWI/SNF-related, matrix-associated actin-dependent regulator of chromatin, subfamily a, containing DEAD/H box 1	6607	-0.034878119826316833	-0.13657105	No	
+row_14	PPP1R7	PPP1R7	protein phosphatase 1, regulatory subunit 7	7730	-0.15540416538715363	-0.2208666	No	
+row_15	SERTAD2	SERTAD2	SERTA domain containing 2	7773	-0.16002516448497772	-0.21562482	No	
+row_16	VGLL4	VGLL4	vestigial like 4 (Drosophila)	8476	-0.22239674627780914	-0.26155016	No	
+row_17	COL2A1	COL2A1	collagen, type II, alpha 1 (primary osteoarthritis, spondyloepiphyseal dysplasia, congenital)	8638	-0.24117158353328705	-0.2617276	No	
+row_18	UBAP2	UBAP2	ubiquitin associated protein 2	9338	-0.33032718300819397	-0.30152768	No	
+row_19	MAT2A	MAT2A	methionine adenosyltransferase II, alpha	9758	-0.3875802755355835	-0.31506193	Yes	
+row_20	NRF1	NRF1	nuclear respiratory factor 1	9844	-0.4008030593395233	-0.30026373	Yes	
+row_21	BANF1	BANF1	barrier to autointegration factor 1	10028	-0.4312337040901184	-0.29191032	Yes	
+row_22	AFF3	AFF3	AF4/FMR2 family, member 3	10092	-0.44185519218444824	-0.2730579	Yes	
+row_23	MBNL1	MBNL1	muscleblind-like (Drosophila)	10718	-0.5668569207191467	-0.2938603	Yes	
+row_24	KPNA3	KPNA3	karyopherin alpha 3 (importin alpha 4)	10745	-0.5721865296363831	-0.26485193	Yes	
+row_25	HIC2	HIC2	hypermethylated in cancer 2	10895	-0.6063920259475708	-0.24414961	Yes	
+row_26	OPCML	OPCML	opioid binding protein/cell adhesion molecule-like	11057	-0.6536026000976562	-0.22186854	Yes	
+row_27	SMAD6	SMAD6	SMAD, mothers against DPP homolog 6 (Drosophila)	11084	-0.6595675945281982	-0.18810195	Yes	
+row_28	PATZ1	PATZ1	POZ (BTB) and AT hook containing zinc finger 1	11296	-0.7324471473693848	-0.1656611	Yes	
+row_29	STRBP	STRBP	spermatid perinuclear RNA binding protein	11379	-0.7657387256622314	-0.13074268	Yes	
+row_30	MYCN	MYCN	v-myc myelocytomatosis viral related oncogene, neuroblastoma derived (avian)	11431	-0.7893920540809631	-0.09197344	Yes	
+row_31	PSD3	PSD3	pleckstrin and Sec7 domain containing 3	11465	-0.8063725233078003	-0.050791446	Yes	
+row_32	TTBK1	TTBK1	tau tubulin kinase 1	11612	-0.9008792638778687	-0.013805114	Yes	
+row_33	GNAO1	GNAO1	guanine nucleotide binding protein (G protein), alpha activating activity polypeptide O	11781	-1.0369125604629517	0.028769985	Yes	

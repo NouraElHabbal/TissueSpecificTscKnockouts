@@ -1,0 +1,16 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	BID	BID	BH3 interacting domain death agonist	134	2.497912645339966	0.22189127	Yes	
+row_1	PMAIP1	PMAIP1	phorbol-12-myristate-13-acetate-induced protein 1	135	2.4894676208496094	0.45405564	Yes	
+row_2	E2F1	E2F1	E2F transcription factor 1	359	1.7321983575820923	0.59719115	Yes	
+row_3	BCL2	BCL2	B-cell CLL/lymphoma 2	1574	0.7798110246658325	0.56970894	No	
+row_4	BBC3	BBC3	BCL2 binding component 3	2418	0.5328695774078369	0.5498205	No	
+row_5	DYNLL2	DYNLL2	dynein, light chain, LC8-type 2	3585	0.3316706418991089	0.4845073	No	
+row_6	MAPK8	MAPK8	mitogen-activated protein kinase 8	3783	0.3046676516532898	0.49665934	No	
+row_7	TFDP1	TFDP1	transcription factor Dp-1	3891	0.2870174050331116	0.51459414	No	
+row_8	AKT1	AKT1	v-akt murine thymoma viral oncogene homolog 1	3901	0.28578126430511475	0.54050285	No	
+row_9	BAD	BAD	BCL2-antagonist of cell death	4299	0.2334836721420288	0.52950794	No	
+row_10	YWHAB	YWHAB	tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein, beta polypeptide	5200	0.1234220415353775	0.46673003	No	
+row_11	BCL2L11	BCL2L11	BCL2-like 11 (apoptosis facilitator)	7366	-0.11954762041568756	0.2991748	No	
+row_12	DYNLL1	DYNLL1	dynein, light chain, LC8-type 1	7946	-0.17250870168209076	0.26747072	No	
+row_13	PPP3R1	PPP3R1	protein phosphatase 3 (formerly 2B), regulatory subunit B, 19kDa, alpha isoform (calcineurin B, type I)	9707	-0.37948644161224365	0.15758665	No	
+row_14	BMF	BMF	Bcl2 modifying factor	10148	-0.45302337408065796	0.16351637	No	

@@ -1,0 +1,61 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GPX4	GPX4	glutathione peroxidase 4 (phospholipid hydroperoxidase)	825	1.1641827821731567	-0.018140484	No	
+row_1	PCYT2	PCYT2	phosphate cytidylyltransferase 2, ethanolamine	1319	0.8829029202461243	-0.020906257	No	
+row_2	PLCB2	PLCB2	phospholipase C, beta 2	1756	0.7113769054412842	-0.026347432	No	
+row_3	PEMT	PEMT	phosphatidylethanolamine N-methyltransferase	1824	0.6857957243919373	-0.0023202533	No	
+row_4	AGPAT2	AGPAT2	1-acylglycerol-3-phosphate O-acyltransferase 2 (lysophosphatidic acid acyltransferase, beta)	1855	0.6776623725891113	0.02442159	No	
+row_5	PIGZ	PIGZ	phosphatidylinositol glycan anchor biosynthesis, class Z	1924	0.6560428142547607	0.04708269	No	
+row_6	CHPT1	CHPT1	choline phosphotransferase 1	2682	0.4803497791290283	0.005082525	No	
+row_7	PIK3R1	PIK3R1	phosphoinositide-3-kinase, regulatory subunit 1 (p85 alpha)	2710	0.4732910096645355	0.023258451	No	
+row_8	PIGF	PIGF	phosphatidylinositol glycan anchor biosynthesis, class F	3465	0.3460446000099182	-0.024285696	No	
+row_9	PLAA	PLAA	phospholipase A2-activating protein	3556	0.33510705828666687	-0.017289149	No	
+row_10	PIGT	PIGT	phosphatidylinositol glycan anchor biosynthesis, class T	3603	0.3296701908111572	-0.0068816887	No	
+row_11	PRDX6	PRDX6	peroxiredoxin 6	3699	0.3152058720588684	-0.0011577222	No	
+row_12	PIGK	PIGK	phosphatidylinositol glycan anchor biosynthesis, class K	4247	0.24066442251205444	-0.036096923	No	
+row_13	ETNK1	ETNK1	ethanolamine kinase 1	4290	0.2339426428079605	-0.029486759	No	
+row_14	DGKE	DGKE	diacylglycerol kinase, epsilon 64kDa	4437	0.21460162103176117	-0.03232717	No	
+row_15	SMPD4	SMPD4	sphingomyelin phosphodiesterase 4, neutral membrane (neutral sphingomyelinase-3)	4453	0.21322214603424072	-0.024373723	No	
+row_16	CD81	CD81	CD81 molecule	4651	0.18821261823177338	-0.032577638	No	
+row_17	FADS1	FADS1	fatty acid desaturase 1	4939	0.15072529017925262	-0.049854867	No	
+row_18	CLN3	CLN3	ceroid-lipofuscinosis, neuronal 3, juvenile (Batten, Spielmeyer-Vogt disease)	5091	0.136046901345253	-0.05649757	No	
+row_19	IMPA1	IMPA1	inositol(myo)-1(or 4)-monophosphatase 1	5115	0.13430948555469513	-0.052610397	No	
+row_20	PIGS	PIGS	phosphatidylinositol glycan anchor biosynthesis, class S	5254	0.11666816473007202	-0.059011847	No	
+row_21	SERINC5	SERINC5	serine incorporator 5	5259	0.11630228906869888	-0.054327168	No	
+row_22	PIGA	PIGA	phosphatidylinositol glycan anchor biosynthesis, class A (paroxysmal nocturnal hemoglobinuria)	5300	0.11088146269321442	-0.052858893	No	
+row_23	PIP5K1A	PIP5K1A	phosphatidylinositol-4-phosphate 5-kinase, type I, alpha	5387	0.10272305458784103	-0.055553585	No	
+row_24	CLN8	CLN8	ceroid-lipofuscinosis, neuronal 8 (epilepsy, progressive with mental retardation)	5436	0.09696180373430252	-0.05534846	No	
+row_25	PCYT1B	PCYT1B	phosphate cytidylyltransferase 1, choline, beta	5478	0.09261172264814377	-0.054750998	No	
+row_26	DPM2	DPM2	dolichyl-phosphate mannosyltransferase polypeptide 2, regulatory subunit	5728	0.06423414498567581	-0.07261026	No	
+row_27	PLA2G4B	PLA2G4B	phospholipase A2, group IVB (cytosolic)	5761	0.061195455491542816	-0.07262213	No	
+row_28	PGS1	PGS1	phosphatidylglycerophosphate synthase 1	5940	0.04129994660615921	-0.08558818	No	
+row_29	PLCD1	PLCD1	phospholipase C, delta 1	5948	0.04049532860517502	-0.08442158	No	
+row_30	PTEN	PTEN	phosphatase and tensin homolog (mutated in multiple advanced cancers 1)	6243	0.005244560074061155	-0.1085533	No	
+row_31	SMPD2	SMPD2	sphingomyelin phosphodiesterase 2, neutral membrane (neutral sphingomyelinase)	6833	-0.06030166894197464	-0.15475118	No	
+row_32	PLA2G2E	PLA2G2E	phospholipase A2, group IIE	7195	-0.10065372288227081	-0.18031889	No	
+row_33	PIGO	PIGO	phosphatidylinositol glycan anchor biosynthesis, class O	7265	-0.10936439782381058	-0.18131869	No	
+row_34	PLA1A	PLA1A	phospholipase A1 member A	7482	-0.13397960364818573	-0.1934358	No	
+row_35	GPAA1	GPAA1	glycosylphosphatidylinositol anchor attachment protein 1 homolog (yeast)	7796	-0.16264081001281738	-0.21235323	No	
+row_36	SERINC1	SERINC1	serine incorporator 1	8003	-0.17703017592430115	-0.22178508	No	
+row_37	APOC2	APOC2	apolipoprotein C-II	8200	-0.19316338002681732	-0.22969262	No	
+row_38	SMG1	SMG1	-	8213	-0.19472618401050568	-0.22228836	No	
+row_39	DPM3	DPM3	dolichyl-phosphate mannosyltransferase polypeptide 3	8373	-0.21094658970832825	-0.22636345	No	
+row_40	LPL	LPL	lipoprotein lipase	8483	-0.22254818677902222	-0.22579569	No	
+row_41	SERINC2	SERINC2	serine incorporator 2	8491	-0.2239147126674652	-0.21671827	No	
+row_42	DPM1	DPM1	dolichyl-phosphate mannosyltransferase polypeptide 1, catalytic subunit	8516	-0.22589784860610962	-0.20896377	No	
+row_43	TAZ	TAZ	tafazzin (cardiomyopathy, dilated 3A (X-linked); endocardial fibroelastosis 2; Barth syndrome)	8544	-0.22937637567520142	-0.2013078	No	
+row_44	PIGC	PIGC	phosphatidylinositol glycan anchor biosynthesis, class C	10040	-0.43297243118286133	-0.30649465	Yes	
+row_45	PIGV	PIGV	phosphatidylinositol glycan anchor biosynthesis, class V	10145	-0.4517974555492401	-0.2956252	Yes	
+row_46	PIGB	PIGB	phosphatidylinositol glycan anchor biosynthesis, class B	10318	-0.48226165771484375	-0.2890756	Yes	
+row_47	LCAT	LCAT	lecithin-cholesterol acyltransferase	10482	-0.5129998326301575	-0.28045467	Yes	
+row_48	PIGG	PIGG	phosphatidylinositol glycan anchor biosynthesis, class G	10593	-0.5386001467704773	-0.26633856	Yes	
+row_49	PLA2G3	PLA2G3	phospholipase A2, group III	10669	-0.556907594203949	-0.24853307	Yes	
+row_50	PIGH	PIGH	phosphatidylinositol glycan anchor biosynthesis, class H	10840	-0.5950735807418823	-0.23695226	Yes	
+row_51	PLA2G4C	PLA2G4C	phospholipase A2, group IVC (cytosolic, calcium-independent)	11063	-0.6548808217048645	-0.22710018	Yes	
+row_52	APOA1	APOA1	apolipoprotein A-I	11081	-0.6591801643371582	-0.20007841	Yes	
+row_53	PLA2G6	PLA2G6	phospholipase A2, group VI (cytosolic, calcium-independent)	11126	-0.672356903553009	-0.1747253	Yes	
+row_54	AGPAT1	AGPAT1	1-acylglycerol-3-phosphate O-acyltransferase 1 (lysophosphatidic acid acyltransferase, alpha)	11206	-0.6987259387969971	-0.15113464	Yes	
+row_55	PIK3C2A	PIK3C2A	phosphoinositide-3-kinase, class 2, alpha polypeptide	11282	-0.7258777618408203	-0.12604155	Yes	
+row_56	PITPNM3	PITPNM3	PITPNM family member 3	11690	-0.9611928462982178	-0.118305594	Yes	
+row_57	PLA2G5	PLA2G5	phospholipase A2, group V	11778	-1.0338060855865479	-0.08092585	Yes	
+row_58	SMPD3	SMPD3	sphingomyelin phosphodiesterase 3, neutral membrane (neutral sphingomyelinase II)	11875	-1.1445591449737549	-0.039515015	Yes	
+row_59	PLA2G2D	PLA2G2D	phospholipase A2, group IID	12010	-1.4021908044815063	0.009859086	Yes	

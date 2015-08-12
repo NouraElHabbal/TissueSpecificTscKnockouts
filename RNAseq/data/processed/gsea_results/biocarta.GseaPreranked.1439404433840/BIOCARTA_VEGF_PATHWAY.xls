@@ -1,0 +1,27 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SHC1	SHC1	SHC (Src homology 2 domain containing) transforming protein 1	2005	0.630021870136261	-0.07593554	No	
+row_1	PIK3R1	PIK3R1	phosphoinositide-3-kinase, regulatory subunit 1 (p85 alpha)	2710	0.4732910096645355	-0.06670369	No	
+row_2	EIF2B4	EIF2B4	eukaryotic translation initiation factor 2B, subunit 4 delta, 67kDa	4329	0.22923237085342407	-0.16773689	No	
+row_3	HIF1A	HIF1A	hypoxia-inducible factor 1, alpha subunit (basic helix-loop-helix transcription factor)	4516	0.20461101830005646	-0.15396805	No	
+row_4	EIF2B5	EIF2B5	eukaryotic translation initiation factor 2B, subunit 5 epsilon, 82kDa	5184	0.1250821352005005	-0.19126269	No	
+row_5	ELAVL1	ELAVL1	ELAV (embryonic lethal, abnormal vision, Drosophila)-like 1 (Hu antigen R)	5485	0.09155207127332687	-0.20301129	No	
+row_6	EIF2S1	EIF2S1	eukaryotic translation initiation factor 2, subunit 1 alpha, 35kDa	5548	0.08359774202108383	-0.19622964	No	
+row_7	EIF2B1	EIF2B1	eukaryotic translation initiation factor 2B, subunit 1 alpha, 26kDa	6185	0.013026588596403599	-0.24691932	No	
+row_8	PIK3CG	PIK3CG	phosphoinositide-3-kinase, catalytic, gamma polypeptide	6362	-0.007406752556562424	-0.26040527	No	
+row_9	PIK3CA	PIK3CA	phosphoinositide-3-kinase, catalytic, alpha polypeptide	6401	-0.011046390980482101	-0.2619718	No	
+row_10	PTK2	PTK2	PTK2 protein tyrosine kinase 2	6573	-0.030790239572525024	-0.27171496	No	
+row_11	EIF2B3	EIF2B3	eukaryotic translation initiation factor 2B, subunit 3 gamma, 58kDa	7029	-0.08214806765317917	-0.29760835	No	
+row_12	ARNT	ARNT	aryl hydrocarbon receptor nuclear translocator	7161	-0.09712973237037659	-0.2946004	No	
+row_13	PLCG1	PLCG1	phospholipase C, gamma 1	7733	-0.15622419118881226	-0.31952927	No	
+row_14	HRAS	HRAS	v-Ha-ras Harvey rat sarcoma viral oncogene homolog	8509	-0.22525131702423096	-0.35148296	Yes	
+row_15	VHL	VHL	von Hippel-Lindau tumor suppressor	8647	-0.24242231249809265	-0.32828173	Yes	
+row_16	FLT4	FLT4	fms-related tyrosine kinase 4	8831	-0.26463404297828674	-0.30571803	Yes	
+row_17	EIF2S2	EIF2S2	eukaryotic translation initiation factor 2, subunit 2 beta, 38kDa	8920	-0.27599087357521057	-0.27368852	Yes	
+row_18	NOS3	NOS3	nitric oxide synthase 3 (endothelial cell)	9608	-0.36382317543029785	-0.27863988	Yes	
+row_19	EIF1AX	EIF1AX	eukaryotic translation initiation factor 1A, X-linked	9633	-0.3663589060306549	-0.2284549	Yes	
+row_20	PXN	PXN	paxillin	9818	-0.39655542373657227	-0.18718883	Yes	
+row_21	EIF2B2	EIF2B2	eukaryotic translation initiation factor 2B, subunit 2 beta, 39kDa	10057	-0.43555334210395813	-0.14483099	Yes	
+row_22	KDR	KDR	kinase insert domain receptor (a type III receptor tyrosine kinase)	10381	-0.4936155378818512	-0.10122782	Yes	
+row_23	EIF1	EIF1	eukaryotic translation initiation factor 1	10431	-0.5035337805747986	-0.0335752	Yes	
+row_24	PRKCA	PRKCA	protein kinase C, alpha	10690	-0.5605981945991516	0.024936112	Yes	
+row_25	FLT1	FLT1	fms-related tyrosine kinase 1 (vascular endothelial growth factor/vascular permeability factor receptor)	11082	-0.6592040657997131	0.08650034	Yes	

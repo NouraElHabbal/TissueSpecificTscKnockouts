@@ -1,0 +1,36 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	PAK4	PAK4	p21(CDKN1A)-activated kinase 4	2276	0.5703662037849426	-0.14815667	No	
+row_1	ZSWIM3	ZSWIM3	zinc finger, SWIM-type containing 3	2406	0.5344622135162354	-0.121321216	No	
+row_2	AGPS	AGPS	alkylglycerone phosphate synthase	2923	0.4368008077144623	-0.13333495	No	
+row_3	NR2F6	NR2F6	nuclear receptor subfamily 2, group F, member 6	2966	0.4277820885181427	-0.10679174	No	
+row_4	AP1B1	AP1B1	adaptor-related protein complex 1, beta 1 subunit	3095	0.40726903080940247	-0.088798225	No	
+row_5	SNRPF	SNRPF	small nuclear ribonucleoprotein polypeptide F	3689	0.31671297550201416	-0.1156043	No	
+row_6	ASXL1	ASXL1	additional sex combs like 1 (Drosophila)	4087	0.26350870728492737	-0.12993845	No	
+row_7	ACOT8	ACOT8	acyl-CoA thioesterase 8	4298	0.233522430062294	-0.13091569	No	
+row_8	ESRRA	ESRRA	estrogen-related receptor alpha	4522	0.20393557846546173	-0.13504373	No	
+row_9	GRPEL1	GRPEL1	GrpE-like 1, mitochondrial (E. coli)	4643	0.18949757516384125	-0.13166891	No	
+row_10	SMYD5	SMYD5	SMYD family member 5	4795	0.16709919273853302	-0.13242875	No	
+row_11	EMG1	EMG1	EMG1 nucleolar protein homolog (S. cerevisiae)	5101	0.1354524791240692	-0.14814164	No	
+row_12	PRRX2	PRRX2	paired related homeobox 2	5482	0.09222427755594254	-0.17308858	No	
+row_13	CCDC71	CCDC71	coiled-coil domain containing 71	5740	0.06369616091251373	-0.18986773	No	
+row_14	ZIC4	ZIC4	Zic family member 4	5839	0.05207406356930733	-0.19431643	No	
+row_15	SCNM1	SCNM1	sodium channel modifier 1	6397	-0.010186342522501945	-0.23965378	No	
+row_16	GOLGA4	GOLGA4	golgi autoantigen, golgin subfamily a, 4	6441	-0.01597408764064312	-0.24208814	No	
+row_17	RQCD1	RQCD1	RCD1 required for cell differentiation1 homolog (S. pombe)	6956	-0.07388801127672195	-0.27940062	No	
+row_18	SYT6	SYT6	synaptotagmin VI	7563	-0.1406041383743286	-0.31963834	No	
+row_19	APOM	APOM	apolipoprotein M	7572	-0.14081761240959167	-0.31041917	No	
+row_20	NOVA1	NOVA1	neuro-oncological ventral antigen 1	8796	-0.26080086827278137	-0.393236	Yes	
+row_21	MRPS28	MRPS28	mitochondrial ribosomal protein S28	8926	-0.27649521827697754	-0.38450104	Yes	
+row_22	USP37	USP37	ubiquitin specific peptidase 37	9046	-0.29340845346450806	-0.37375256	Yes	
+row_23	EEF1B2	EEF1B2	eukaryotic translation elongation factor 1 beta 2	9070	-0.29769206047058105	-0.35476634	Yes	
+row_24	RPL27	RPL27	ribosomal protein L27	9516	-0.352959543466568	-0.36679268	Yes	
+row_25	DNAJA2	DNAJA2	DnaJ (Hsp40) homolog, subfamily A, member 2	9675	-0.3742223083972931	-0.35359827	Yes	
+row_26	ZBTB40	ZBTB40	zinc finger and BTB domain containing 40	9838	-0.3996884822845459	-0.33894774	Yes	
+row_27	NDUFS1	NDUFS1	NADH dehydrogenase (ubiquinone) Fe-S protein 1, 75kDa (NADH-coenzyme Q reductase)	9876	-0.4061184227466583	-0.3135112	Yes	
+row_28	GPR124	GPR124	G protein-coupled receptor 124	10195	-0.4607692360877991	-0.30747274	Yes	
+row_29	PPTC7	PPTC7	PTC7 protein phosphatase homolog (S. cerevisiae)	10474	-0.511733889579773	-0.29455116	Yes	
+row_30	NR2C1	NR2C1	nuclear receptor subfamily 2, group C, member 1	10635	-0.547357976436615	-0.26937392	Yes	
+row_31	PPARGC1A	PPARGC1A	peroxisome proliferative activated receptor, gamma, coactivator 1, alpha	10779	-0.5797238349914551	-0.24052013	Yes	
+row_32	RTP3	RTP3	receptor transporter protein 3	11397	-0.7760917544364929	-0.23707777	Yes	
+row_33	PAX7	PAX7	paired box gene 7	11819	-1.080513834953308	-0.19607031	Yes	
+row_34	CNTFR	CNTFR	ciliary neurotrophic factor receptor	12127	-3.158487319946289	1.6542632E-4	Yes	

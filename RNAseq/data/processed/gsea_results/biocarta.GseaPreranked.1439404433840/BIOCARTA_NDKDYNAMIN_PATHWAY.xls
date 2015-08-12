@@ -1,0 +1,19 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	AMPH	AMPH	amphiphysin (Stiff-Man syndrome with breast cancer 128kDa autoantigen)	628	1.3317995071411133	0.09793396	No	
+row_1	NME1	NME1	non-metastatic cells 1, protein (NM23A) expressed in	1641	0.7594754695892334	0.09979632	No	
+row_2	SYNJ1	SYNJ1	synaptojanin 1	3286	0.3742166757583618	0.0061501483	No	
+row_3	BIN1	BIN1	bridging integrator 1	3540	0.3370508551597595	0.02316884	No	
+row_4	AP2M1	AP2M1	adaptor-related protein complex 2, mu 1 subunit	5130	0.13272525370121002	-0.093096174	No	
+row_5	SYNJ2	SYNJ2	synaptojanin 2	5311	0.11004234105348587	-0.095581345	No	
+row_6	PPP3CC	PPP3CC	protein phosphatase 3 (formerly 2B), catalytic subunit, gamma isoform (calcineurin A gamma)	7268	-0.10985127091407776	-0.24471945	No	
+row_7	AP2A1	AP2A1	adaptor-related protein complex 2, alpha 1 subunit	7783	-0.16104614734649658	-0.26904434	No	
+row_8	EPN1	EPN1	epsin 1	8473	-0.2223271131515503	-0.30092564	No	
+row_9	NME2	NME2	non-metastatic cells 2, protein (NM23B) expressed in	9107	-0.30240869522094727	-0.31917688	No	
+row_10	PPP3CA	PPP3CA	protein phosphatase 3 (formerly 2B), catalytic subunit, alpha isoform (calcineurin A alpha)	9808	-0.39531490206718445	-0.33251095	Yes	
+row_11	PICALM	PICALM	phosphatidylinositol binding clathrin assembly protein	10153	-0.4535953104496002	-0.30989808	Yes	
+row_12	DNM1	DNM1	dynamin 1	10290	-0.47816047072410583	-0.2673494	Yes	
+row_13	EPS15	EPS15	epidermal growth factor receptor pathway substrate 15	10806	-0.5861319303512573	-0.24394876	Yes	
+row_14	PPP3CB	PPP3CB	protein phosphatase 3 (formerly 2B), catalytic subunit, beta isoform (calcineurin A beta)	11088	-0.660870373249054	-0.19282284	Yes	
+row_15	CALM2	CALM2	calmodulin 2 (phosphorylase kinase, delta)	11309	-0.7378762364387512	-0.12799999	Yes	
+row_16	CALM3	CALM3	calmodulin 3 (phosphorylase kinase, delta)	11522	-0.8429415225982666	-0.050700266	Yes	
+row_17	CALM1	CALM1	calmodulin 1 (phosphorylase kinase, delta)	11602	-0.8956689834594727	0.0435104	Yes	

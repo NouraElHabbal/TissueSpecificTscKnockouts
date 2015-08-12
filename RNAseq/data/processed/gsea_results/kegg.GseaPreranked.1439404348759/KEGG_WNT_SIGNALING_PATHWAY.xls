@@ -1,0 +1,136 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	FOSL1	FOSL1	FOS-like antigen 1	138	2.4760935306549072	0.029252822	No	
+row_1	FZD6	FZD6	frizzled homolog 6 (Drosophila)	366	1.7253285646438599	0.038727954	No	
+row_2	TCF7	TCF7	transcription factor 7 (T-cell specific, HMG-box)	635	1.3182027339935303	0.038083524	No	
+row_3	LEF1	LEF1	lymphoid enhancer-binding factor 1	675	1.283383846282959	0.055957247	No	
+row_4	FZD9	FZD9	frizzled homolog 9 (Drosophila)	820	1.1717756986618042	0.0632402	No	
+row_5	FZD10	FZD10	frizzled homolog 10 (Drosophila)	867	1.1345034837722778	0.07807971	No	
+row_6	CCND3	CCND3	cyclin D3	1000	1.0593000650405884	0.08451168	No	
+row_7	WNT16	WNT16	wingless-type MMTV integration site family, member 16	1050	1.035386562347412	0.097469576	No	
+row_8	WIF1	WIF1	WNT inhibitory factor 1	1256	0.9113332033157349	0.095380075	No	
+row_9	PRKX	PRKX	protein kinase, X-linked	1365	0.8588340282440186	0.100513116	No	
+row_10	PLCB2	PLCB2	phospholipase C, beta 2	1756	0.7113769054412842	0.07970916	No	
+row_11	WNT10A	WNT10A	wingless-type MMTV integration site family, member 10A	1872	0.671026349067688	0.08116723	No	
+row_12	MAP3K7	MAP3K7	mitogen-activated protein kinase kinase kinase 7	1873	0.670840322971344	0.09220956	No	
+row_13	DAAM1	DAAM1	dishevelled associated activator of morphogenesis 1	2198	0.5834254622459412	0.07480175	No	
+row_14	CCND1	CCND1	cyclin D1	2350	0.5497704148292542	0.07126264	No	
+row_15	PPP2CA	PPP2CA	protein phosphatase 2 (formerly 2A), catalytic subunit, alpha isoform	2414	0.5332838892936707	0.07478855	No	
+row_16	WNT3A	WNT3A	wingless-type MMTV integration site family, member 3A	2453	0.527280330657959	0.08029983	No	
+row_17	DKK4	DKK4	dickkopf homolog 4 (Xenopus laevis)	2861	0.44265830516815186	0.053655382	No	
+row_18	CAMK2D	CAMK2D	calcium/calmodulin-dependent protein kinase (CaM kinase) II delta	2995	0.4228849411010742	0.04952831	No	
+row_19	WNT7B	WNT7B	wingless-type MMTV integration site family, member 7B	3035	0.41631728410720825	0.05312972	No	
+row_20	WNT5B	WNT5B	wingless-type MMTV integration site family, member 5B	3043	0.4154477119445801	0.059384603	No	
+row_21	RHOA	RHOA	ras homolog gene family, member A	3124	0.40238267183303833	0.05933856	No	
+row_22	SENP2	SENP2	SUMO1/sentrin/SMT3 specific peptidase 2	3155	0.396937757730484	0.06337129	No	
+row_23	FZD1	FZD1	frizzled homolog 1 (Drosophila)	3232	0.3821008503437042	0.06332487	No	
+row_24	NFATC2	NFATC2	nuclear factor of activated T-cells, cytoplasmic, calcineurin-dependent 2	3238	0.3813440203666687	0.06918512	No	
+row_25	MYC	MYC	v-myc myelocytomatosis viral oncogene homolog (avian)	3331	0.36615869402885437	0.0675424	No	
+row_26	PLCB3	PLCB3	phospholipase C, beta 3 (phosphatidylinositol-specific)	3392	0.3572084903717041	0.06842013	No	
+row_27	AXIN2	AXIN2	axin 2 (conductin, axil)	3616	0.3277527987957001	0.055224005	No	
+row_28	PPP2R5C	PPP2R5C	protein phosphatase 2, regulatory subunit B (B56), gamma isoform	3650	0.322774201631546	0.05778587	No	
+row_29	SMAD2	SMAD2	SMAD, mothers against DPP homolog 2 (Drosophila)	3661	0.3209042549133301	0.062234417	No	
+row_30	VANGL2	VANGL2	vang-like 2 (van gogh, Drosophila)	3733	0.31197577714920044	0.061450545	No	
+row_31	MAPK8	MAPK8	mitogen-activated protein kinase 8	3783	0.3046676516532898	0.062380478	No	
+row_32	FZD5	FZD5	frizzled homolog 5 (Drosophila)	3882	0.2880253791809082	0.058951434	No	
+row_33	WNT9A	WNT9A	wingless-type MMTV integration site family, member 9A	3896	0.28631162643432617	0.062580466	No	
+row_34	DKK1	DKK1	dickkopf homolog 1 (Xenopus laevis)	4196	0.24685251712799072	0.041716717	No	
+row_35	RAC2	RAC2	ras-related C3 botulinum toxin substrate 2 (rho family, small GTP binding protein Rac2)	4206	0.24470192193984985	0.04499431	No	
+row_36	PRKACA	PRKACA	protein kinase, cAMP-dependent, catalytic, alpha	4245	0.24078798294067383	0.045789804	No	
+row_37	VANGL1	VANGL1	vang-like 1 (van gogh, Drosophila)	4284	0.23463228344917297	0.046483967	No	
+row_38	CTNNBIP1	CTNNBIP1	catenin, beta interacting protein 1	4286	0.23444479703903198	0.05025967	No	
+row_39	DVL3	DVL3	dishevelled, dsh homolog 3 (Drosophila)	4292	0.23392091691493988	0.053693272	No	
+row_40	CSNK2A1	CSNK2A1	casein kinase 2, alpha 1 polypeptide	4424	0.2161599099636078	0.046330143	No	
+row_41	FZD3	FZD3	frizzled homolog 3 (Drosophila)	4505	0.20552928745746613	0.043043803	No	
+row_42	AXIN1	AXIN1	axin 1	4592	0.195736825466156	0.039096065	No	
+row_43	CER1	CER1	cerberus 1, cysteine knot superfamily, homolog (Xenopus laevis)	4612	0.1928114891052246	0.040685836	No	
+row_44	CTNNB1	CTNNB1	catenin (cadherin-associated protein), beta 1, 88kDa	5000	0.14469604194164276	0.010804157	No	
+row_45	PPP2R1A	PPP2R1A	protein phosphatase 2 (formerly 2A), regulatory subunit A (PR 65), alpha isoform	5373	0.1038670763373375	-0.018499065	No	
+row_46	WNT2	WNT2	wingless-type MMTV integration site family member 2	5391	0.10215148329734802	-0.018234864	No	
+row_47	PLCB4	PLCB4	phospholipase C, beta 4	5404	0.10093671828508377	-0.017573817	No	
+row_48	PPP2R5A	PPP2R5A	protein phosphatase 2, regulatory subunit B (B56), alpha isoform	5405	0.10083681344985962	-0.015913997	No	
+row_49	ROCK1	ROCK1	Rho-associated, coiled-coil containing protein kinase 1	5416	0.099319227039814	-0.015112839	No	
+row_50	WNT11	WNT11	wingless-type MMTV integration site family, member 11	5458	0.09464418143033981	-0.016973043	No	
+row_51	BTRC	BTRC	beta-transducin repeat containing	5467	0.09368111938238144	-0.016097955	No	
+row_52	CSNK1A1	CSNK1A1	casein kinase 1, alpha 1	5472	0.09313198179006577	-0.014898432	No	
+row_53	FZD8	FZD8	frizzled homolog 8 (Drosophila)	5706	0.06598422676324844	-0.033237062	No	
+row_54	CTBP1	CTBP1	C-terminal binding protein 1	5793	0.05787798762321472	-0.039454017	No	
+row_55	RUVBL1	RUVBL1	RuvB-like 1 (E. coli)	5892	0.046383604407310486	-0.046860594	No	
+row_56	APC	APC	adenomatosis polyposis coli	6038	0.030856776982545853	-0.058441047	No	
+row_57	DAAM2	DAAM2	dishevelled associated activator of morphogenesis 2	6078	0.026415251195430756	-0.061257593	No	
+row_58	CUL1	CUL1	cullin 1	6080	0.026085032150149345	-0.060911592	No	
+row_59	RBX1	RBX1	ring-box 1	6126	0.020104393362998962	-0.064332224	No	
+row_60	PRKACB	PRKACB	protein kinase, cAMP-dependent, catalytic, beta	6225	0.008203152567148209	-0.07236727	No	
+row_61	CSNK2A2	CSNK2A2	casein kinase 2, alpha prime polypeptide	6341	-0.004711611662060022	-0.081877045	No	
+row_62	PORCN	PORCN	porcupine homolog (Drosophila)	6363	-0.007438060827553272	-0.08350534	No	
+row_63	PPP2CB	PPP2CB	protein phosphatase 2 (formerly 2A), catalytic subunit, beta isoform	6529	-0.025458965450525284	-0.096842006	No	
+row_64	GSK3B	GSK3B	glycogen synthase kinase 3 beta	6556	-0.029070846736431122	-0.09853105	No	
+row_65	SOX17	SOX17	SRY (sex determining region Y)-box 17	6633	-0.03737828508019447	-0.104251765	No	
+row_66	WNT8B	WNT8B	wingless-type MMTV integration site family, member 8B	6638	-0.037663981318473816	-0.10396527	No	
+row_67	PSEN1	PSEN1	presenilin 1 (Alzheimer disease 3)	6709	-0.04665619507431984	-0.109033056	No	
+row_68	TBL1XR1	TBL1XR1	transducin (beta)-like 1X-linked receptor 1	6821	-0.05887964740395546	-0.11731772	No	
+row_69	PPARD	PPARD	peroxisome proliferative activated receptor, delta	6897	-0.067970871925354	-0.1224515	No	
+row_70	LRP6	LRP6	low density lipoprotein receptor-related protein 6	7039	-0.08318055421113968	-0.1328372	No	
+row_71	FBXW11	FBXW11	F-box and WD-40 domain protein 11	7164	-0.09763219207525253	-0.14156778	No	
+row_72	TCF7L2	TCF7L2	transcription factor 7-like 2 (T-cell specific, HMG-box)	7218	-0.10309841483831406	-0.14428924	No	
+row_73	PPP3CC	PPP3CC	protein phosphatase 3 (formerly 2B), catalytic subunit, gamma isoform (calcineurin A gamma)	7268	-0.10985127091407776	-0.14656608	No	
+row_74	NLK	NLK	nemo-like kinase	7312	-0.11515486240386963	-0.1482554	No	
+row_75	PPP2R5B	PPP2R5B	protein phosphatase 2, regulatory subunit B (B56), beta isoform	7437	-0.12735137343406677	-0.15649678	No	
+row_76	PRICKLE2	PRICKLE2	prickle homolog 2 (Drosophila)	7520	-0.13854525983333588	-0.16105244	No	
+row_77	TBL1X	TBL1X	transducin (beta)-like 1X-linked	7589	-0.1424177587032318	-0.16437721	No	
+row_78	NFAT5	NFAT5	nuclear factor of activated T-cells 5, tonicity-responsive	7612	-0.1448051780462265	-0.16382775	No	
+row_79	SFRP2	SFRP2	secreted frizzled-related protein 2	7670	-0.15134507417678833	-0.16608852	No	
+row_80	WNT3	WNT3	wingless-type MMTV integration site family, member 3	7760	-0.1589290052652359	-0.17089224	No	
+row_81	PPP2R5E	PPP2R5E	protein phosphatase 2, regulatory subunit B (B56), epsilon isoform	7896	-0.16772602498531342	-0.17938608	No	
+row_82	ROCK2	ROCK2	Rho-associated, coiled-coil containing protein kinase 2	7995	-0.1759980469942093	-0.18465914	No	
+row_83	CAMK2B	CAMK2B	calcium/calmodulin-dependent protein kinase (CaM kinase) II beta	8199	-0.19299015402793884	-0.19840616	No	
+row_84	LRP5	LRP5	low density lipoprotein receptor-related protein 5	8543	-0.22886227071285248	-0.22323422	No	
+row_85	PLCB1	PLCB1	phospholipase C, beta 1 (phosphoinositide-specific)	8790	-0.2602665424346924	-0.23945867	No	
+row_86	FZD2	FZD2	frizzled homolog 2 (Drosophila)	8924	-0.27615299820899963	-0.24600102	No	
+row_87	RAC1	RAC1	ras-related C3 botulinum toxin substrate 1 (rho family, small GTP binding protein Rac1)	9122	-0.3049367070198059	-0.25740513	No	
+row_88	CHD8	CHD8	chromodomain helicase DNA binding protein 8	9139	-0.30691492557525635	-0.25368705	No	
+row_89	FZD4	FZD4	frizzled homolog 4 (Drosophila)	9284	-0.32383301854133606	-0.2603616	No	
+row_90	NFATC4	NFATC4	nuclear factor of activated T-cells, cytoplasmic, calcineurin-dependent 4	9285	-0.3238609731197357	-0.25503072	No	
+row_91	DVL2	DVL2	dishevelled, dsh homolog 2 (Drosophila)	9320	-0.3279123604297638	-0.25246766	No	
+row_92	WNT6	WNT6	wingless-type MMTV integration site family, member 6	9343	-0.33145204186439514	-0.2488459	No	
+row_93	CTBP2	CTBP2	C-terminal binding protein 2	9419	-0.34139811992645264	-0.24947894	No	
+row_94	SMAD4	SMAD4	SMAD, mothers against DPP homolog 4 (Drosophila)	9653	-0.3703187108039856	-0.26280808	No	
+row_95	MAPK9	MAPK9	mitogen-activated protein kinase 9	9660	-0.37191474437713623	-0.2571864	No	
+row_96	CCND2	CCND2	cyclin D2	9695	-0.3775070607662201	-0.25380698	No	
+row_97	PPP3R1	PPP3R1	protein phosphatase 3 (formerly 2B), regulatory subunit B, 19kDa, alpha isoform (calcineurin B, type I)	9707	-0.37948644161224365	-0.24847752	No	
+row_98	PPP3CA	PPP3CA	protein phosphatase 3 (formerly 2B), catalytic subunit, alpha isoform (calcineurin A alpha)	9808	-0.39531490206718445	-0.25030726	No	
+row_99	CSNK2B	CSNK2B	casein kinase 2, beta polypeptide	9816	-0.39633533358573914	-0.24436699	No	
+row_100	DVL1	DVL1	dishevelled, dsh homolog 1 (Drosophila)	9908	-0.4117528796195984	-0.24517584	No	
+row_101	NFATC1	NFATC1	nuclear factor of activated T-cells, cytoplasmic, calcineurin-dependent 1	10310	-0.48093411326408386	-0.27069005	Yes	
+row_102	NKD2	NKD2	naked cuticle homolog 2 (Drosophila)	10405	-0.49909308552742004	-0.27031136	Yes	
+row_103	PRICKLE1	PRICKLE1	prickle homolog 1 (Drosophila)	10417	-0.5010926723480225	-0.2629802	Yes	
+row_104	WNT1	WNT1	wingless-type MMTV integration site family, member 1	10463	-0.5092160701751709	-0.25834984	Yes	
+row_105	JUN	JUN	jun oncogene	10534	-0.5250408053398132	-0.25554317	Yes	
+row_106	CXXC4	CXXC4	CXXC finger 4	10535	-0.5254474878311157	-0.24689408	Yes	
+row_107	PPP2R1B	PPP2R1B	protein phosphatase 2 (formerly 2A), regulatory subunit A (PR 65), beta isoform	10631	-0.5459030866622925	-0.24582823	Yes	
+row_108	PRKCA	PRKCA	protein kinase C, alpha	10690	-0.5605981945991516	-0.24143589	Yes	
+row_109	SFRP4	SFRP4	secreted frizzled-related protein 4	10705	-0.5637928247451782	-0.23332275	Yes	
+row_110	CACYBP	CACYBP	calcyclin binding protein	10710	-0.5650944709777832	-0.2243545	Yes	
+row_111	EP300	EP300	E1A binding protein p300	10861	-0.5987852215766907	-0.22700346	Yes	
+row_112	NFATC3	NFATC3	nuclear factor of activated T-cells, cytoplasmic, calcineurin-dependent 3	10909	-0.608657717704773	-0.22090296	Yes	
+row_113	CREBBP	CREBBP	CREB binding protein (Rubinstein-Taybi syndrome)	10949	-0.6218989491462708	-0.21391758	Yes	
+row_114	PPP3CB	PPP3CB	protein phosphatase 3 (formerly 2B), catalytic subunit, beta isoform (calcineurin A beta)	11088	-0.660870373249054	-0.21454415	Yes	
+row_115	APC2	APC2	adenomatosis polyposis coli 2	11134	-0.676947832107544	-0.20715284	Yes	
+row_116	SFRP1	SFRP1	secreted frizzled-related protein 1	11150	-0.682152509689331	-0.19717483	Yes	
+row_117	CSNK1E	CSNK1E	casein kinase 1, epsilon	11151	-0.6822547912597656	-0.18594462	Yes	
+row_118	PPP2R5D	PPP2R5D	protein phosphatase 2, regulatory subunit B (B56), delta isoform	11201	-0.6979560256004333	-0.17854097	Yes	
+row_119	CAMK2G	CAMK2G	calcium/calmodulin-dependent protein kinase (CaM kinase) II gamma	11305	-0.7352122068405151	-0.17502597	Yes	
+row_120	RAC3	RAC3	ras-related C3 botulinum toxin substrate 3 (rho family, small GTP binding protein Rac3)	11321	-0.7409778237342834	-0.16407965	Yes	
+row_121	WNT5A	WNT5A	wingless-type MMTV integration site family, member 5A	11331	-0.7443276047706604	-0.152578	Yes	
+row_122	WNT10B	WNT10B	wingless-type MMTV integration site family, member 10B	11355	-0.7548301219940186	-0.14207062	Yes	
+row_123	TCF7L1	TCF7L1	transcription factor 7-like 1 (T-cell specific, HMG-box)	11368	-0.7603910565376282	-0.13055466	Yes	
+row_124	WNT2B	WNT2B	wingless-type MMTV integration site family, member 2B	11442	-0.794241726398468	-0.123566955	Yes	
+row_125	NKD1	NKD1	naked cuticle homolog 1 (Drosophila)	11530	-0.8500415682792664	-0.116827905	Yes	
+row_126	DKK2	DKK2	dickkopf homolog 2 (Xenopus laevis)	11563	-0.8686407208442688	-0.10519747	Yes	
+row_127	WNT9B	WNT9B	wingless-type MMTV integration site family, member 9B	11564	-0.8687945604324341	-0.09089672	Yes	
+row_128	FZD7	FZD7	frizzled homolog 7 (Drosophila)	11573	-0.8738332390785217	-0.077179976	Yes	
+row_129	CAMK2A	CAMK2A	calcium/calmodulin-dependent protein kinase (CaM kinase) II alpha	11637	-0.915886640548706	-0.06735626	Yes	
+row_130	FRAT2	FRAT2	frequently rearranged in advanced T-cell lymphomas 2	11803	-1.064321756362915	-0.06359277	Yes	
+row_131	SMAD3	SMAD3	SMAD, mothers against DPP homolog 3 (Drosophila)	11850	-1.1078523397445679	-0.049191955	Yes	
+row_132	SFRP5	SFRP5	secreted frizzled-related protein 5	11879	-1.146876335144043	-0.03264816	Yes	
+row_133	MAPK10	MAPK10	mitogen-activated protein kinase 10	11982	-1.3403613567352295	-0.01908875	Yes	
+row_134	WNT4	WNT4	wingless-type MMTV integration site family, member 4	12103	-1.8991427421569824	0.0021678251	Yes	

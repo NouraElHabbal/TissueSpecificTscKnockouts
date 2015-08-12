@@ -1,0 +1,20 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SPHK1	SPHK1	sphingosine kinase 1	57	3.243910551071167	0.33611873	Yes	
+row_1	PPAP2C	PPAP2C	phosphatidic acid phosphatase type 2C	424	1.6142537593841553	0.47550172	Yes	
+row_2	SGPL1	SGPL1	sphingosine-1-phosphate lyase 1	1269	0.9065897464752197	0.5010649	Yes	
+row_3	DEGS1	DEGS1	degenerative spermatocyte homolog 1, lipid desaturase (Drosophila)	1410	0.8351374268531799	0.5772498	Yes	
+row_4	SPTLC2	SPTLC2	serine palmitoyltransferase, long chain base subunit 2	3724	0.3125375509262085	0.41910356	No	
+row_5	SGPP2	SGPP2	sphingosine-1-phosphate phosphotase 2	3922	0.2836757004261017	0.43264207	No	
+row_6	SPTLC1	SPTLC1	serine palmitoyltransferase, long chain base subunit 1	4423	0.21616114675998688	0.4140685	No	
+row_7	PPAP2A	PPAP2A	phosphatidic acid phosphatase type 2A	4973	0.14817187190055847	0.38430566	No	
+row_8	OSBP	OSBP	oxysterol binding protein	5724	0.06443798542022705	0.32914874	No	
+row_9	SPHK2	SPHK2	sphingosine kinase 2	6114	0.021213017404079437	0.29925793	No	
+row_10	COL4A3BP	COL4A3BP	collagen, type IV, alpha 3 (Goodpasture antigen) binding protein	6335	-0.004271596670150757	0.28154144	No	
+row_11	DEGS2	DEGS2	degenerative spermatocyte homolog 2, lipid desaturase (Drosophila)	6486	-0.02100919745862484	0.27136335	No	
+row_12	CSNK1G2	CSNK1G2	casein kinase 1, gamma 2	6548	-0.02803645469248295	0.2692723	No	
+row_13	SGPP1	SGPP1	sphingosine-1-phosphate phosphatase 1	6604	-0.03438363969326019	0.26834354	No	
+row_14	PPAP2B	PPAP2B	phosphatidic acid phosphatase type 2B	7231	-0.10409998148679733	0.22759236	No	
+row_15	VAPB	VAPB	VAMP (vesicle-associated membrane protein)-associated protein B and C	8734	-0.2529821991920471	0.13015273	No	
+row_16	VAPA	VAPA	VAMP (vesicle-associated membrane protein)-associated protein A, 33kDa	10096	-0.4424012303352356	0.06425695	No	
+row_17	PPM1L	PPM1L	protein phosphatase 1 (formerly 2C)-like	10204	-0.46165379881858826	0.1039262	No	
+row_18	PRKD1	PRKD1	protein kinase D1	10524	-0.5228865742683411	0.13252419	No	

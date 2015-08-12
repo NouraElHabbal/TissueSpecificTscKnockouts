@@ -1,0 +1,46 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GABRB3	GABRB3	gamma-aminobutyric acid (GABA) A receptor, beta 3	30	3.606020212173462	0.110684924	Yes	
+row_1	DOCK3	DOCK3	dedicator of cytokinesis 3	65	3.1282970905303955	0.20604652	Yes	
+row_2	SRGAP3	SRGAP3	SLIT-ROBO Rho GTPase activating protein 3	73	3.0371792316436768	0.30078274	Yes	
+row_3	CNTNAP4	CNTNAP4	contactin associated protein-like 4	122	2.589292287826538	0.37807035	Yes	
+row_4	GAB2	GAB2	GRB2-associated binding protein 2	538	1.4624700546264648	0.3896268	Yes	
+row_5	MARK1	MARK1	MAP/microtubule affinity-regulating kinase 1	665	1.2898372411727905	0.4196795	Yes	
+row_6	PTPN12	PTPN12	protein tyrosine phosphatase, non-receptor type 12	834	1.1548552513122559	0.44202065	Yes	
+row_7	ELAVL2	ELAVL2	ELAV (embryonic lethal, abnormal vision, Drosophila)-like 2 (Hu antigen B)	1020	1.052526593208313	0.45974374	Yes	
+row_8	UNC5C	UNC5C	unc-5 homolog C (C. elegans)	1657	0.751218855381012	0.43069193	No	
+row_9	MAP3K7	MAP3K7	mitogen-activated protein kinase kinase kinase 7	1873	0.670840322971344	0.43395418	No	
+row_10	PIK3R1	PIK3R1	phosphoinositide-3-kinase, regulatory subunit 1 (p85 alpha)	2710	0.4732910096645355	0.37963077	No	
+row_11	SNRPD1	SNRPD1	small nuclear ribonucleoprotein D1 polypeptide 16kDa	2750	0.4645722508430481	0.39098325	No	
+row_12	SP5	SP5	Sp5 transcription factor	2853	0.44265830516815186	0.39643493	No	
+row_13	DCC	DCC	deleted in colorectal carcinoma	2859	0.44265830516815186	0.4099131	No	
+row_14	G3BP2	G3BP2	-	3187	0.39113470911979675	0.39512968	No	
+row_15	H3F3B	H3F3B	H3 histone, family 3B (H3.3B)	3642	0.3241366446018219	0.3677348	No	
+row_16	COPS7B	COPS7B	COP9 constitutive photomorphogenic homolog subunit 7B (Arabidopsis)	4363	0.22489258646965027	0.31521457	No	
+row_17	STK4	STK4	serine/threonine kinase 4	5017	0.1436624377965927	0.2656892	No	
+row_18	FGF13	FGF13	fibroblast growth factor 13	5557	0.08288179337978363	0.22368953	No	
+row_19	TSC22D2	TSC22D2	TSC22 domain family, member 2	6021	0.03311867639422417	0.18641692	No	
+row_20	ID4	ID4	inhibitor of DNA binding 4, dominant negative helix-loop-helix protein	6180	0.013869625516235828	0.17377813	No	
+row_21	PTEN	PTEN	phosphatase and tensin homolog (mutated in multiple advanced cancers 1)	6243	0.005244560074061155	0.1688124	No	
+row_22	MAML3	MAML3	mastermind-like 3 (Drosophila)	6303	-0.0016095316968858242	0.16398083	No	
+row_23	PDZRN3	PDZRN3	PDZ domain containing RING finger 3	6307	-0.0017431327141821384	0.16378729	No	
+row_24	BCORL1	BCORL1	BCL6 co-repressor-like 1	6521	-0.024585915729403496	0.1469337	No	
+row_25	PUM2	PUM2	pumilio homolog 2 (Drosophila)	7198	-0.10096026957035065	0.09416502	No	
+row_26	ARMC8	ARMC8	armadillo repeat containing 8	7363	-0.11937010288238525	0.084340654	No	
+row_27	NFAT5	NFAT5	nuclear factor of activated T-cells 5, tonicity-responsive	7612	-0.1448051780462265	0.06836375	No	
+row_28	NEUROD6	NEUROD6	neurogenic differentiation 6	7920	-0.1693863570690155	0.04827619	No	
+row_29	DYNLL1	DYNLL1	dynein, light chain, LC8-type 1	7946	-0.17250870168209076	0.051621333	No	
+row_30	SLC12A5	SLC12A5	solute carrier family 12, (potassium-chloride transporter) member 5	8186	-0.1918121725320816	0.03786437	No	
+row_31	IRX5	IRX5	iroquois homeobox protein 5	8706	-0.24960222840309143	0.0027518058	No	
+row_32	RBBP6	RBBP6	retinoblastoma binding protein 6	8837	-0.26528966426849365	3.202248E-4	No	
+row_33	SRF	SRF	serum response factor (c-fos serum response element-binding transcription factor)	8981	-0.28482022881507874	-0.0025741444	No	
+row_34	BTAF1	BTAF1	BTAF1 RNA polymerase II, B-TFIID transcription factor-associated, 170kDa (Mot1 homolog, S. cerevisiae)	9380	-0.3362790048122406	-0.024954127	No	
+row_35	NCOA6	NCOA6	nuclear receptor coactivator 6	9877	-0.40621593594551086	-0.053248513	No	
+row_36	AFF3	AFF3	AF4/FMR2 family, member 3	10092	-0.44185519218444824	-0.057089724	No	
+row_37	ST5	ST5	suppression of tumorigenicity 5	10316	-0.48212653398513794	-0.060411826	No	
+row_38	TBX2	TBX2	T-box 2	10354	-0.4879377484321594	-0.048160575	No	
+row_39	PPP3CB	PPP3CB	protein phosphatase 3 (formerly 2B), catalytic subunit, beta isoform (calcineurin A beta)	11088	-0.660870373249054	-0.08807426	No	
+row_40	SMOC1	SMOC1	SPARC related modular calcium binding 1	11200	-0.6978015899658203	-0.075360164	No	
+row_41	TOB1	TOB1	transducer of ERBB2, 1	11226	-0.7039827704429626	-0.05533583	No	
+row_42	ARHGAP5	ARHGAP5	Rho GTPase activating protein 5	11433	-0.7897850871086121	-0.04759602	No	
+row_43	SORCS1	SORCS1	sortilin-related VPS10 domain containing receptor 1	12062	-1.61293363571167	-0.04894275	No	
+row_44	PIM1	PIM1	pim-1 oncogene	12082	-1.7335586547851562	0.0038891332	No	

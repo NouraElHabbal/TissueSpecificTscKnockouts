@@ -1,0 +1,23 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GALE	GALE	UDP-galactose-4-epimerase	169	2.3198158740997314	0.12468452	Yes	
+row_1	MGAM	MGAM	maltase-glucoamylase (alpha-glucosidase)	217	2.0995287895202637	0.24627972	Yes	
+row_2	GCK	GCK	glucokinase (hexokinase 4, maturity onset diabetes of the young 2)	237	2.0510990619659424	0.36729306	Yes	
+row_3	HK3	HK3	hexokinase 3 (white cell)	320	1.8004364967346191	0.46812254	Yes	
+row_4	HK1	HK1	hexokinase 1	401	1.6609030961990356	0.56077814	Yes	
+row_5	GALK2	GALK2	galactokinase 2	621	1.3402674198150635	0.62279105	Yes	
+row_6	PFKL	PFKL	phosphofructokinase, liver	1631	0.7624760866165161	0.5850266	No	
+row_7	GLB1	GLB1	galactosidase, beta 1	1731	0.7225469946861267	0.6200327	No	
+row_8	PFKP	PFKP	phosphofructokinase, platelet	2912	0.4396912753582001	0.54885435	No	
+row_9	B4GALT2	B4GALT2	UDP-Gal:betaGlcNAc beta 1,4- galactosyltransferase, polypeptide 2	3590	0.3312661647796631	0.5127388	No	
+row_10	HK2	HK2	hexokinase 2	4403	0.21883800625801086	0.45875445	No	
+row_11	PGM1	PGM1	phosphoglucomutase 1	4527	0.2037678211927414	0.46077392	No	
+row_12	GLA	GLA	galactosidase, alpha	4620	0.19231988489627838	0.4646695	No	
+row_13	UGP2	UGP2	UDP-glucose pyrophosphorylase 2	6378	-0.00912000797688961	0.32010388	No	
+row_14	B4GALT1	B4GALT1	UDP-Gal:betaGlcNAc beta 1,4- galactosyltransferase, polypeptide 1	6813	-0.05788968503475189	0.28771955	No	
+row_15	GANC	GANC	glucosidase, alpha; neutral C	7149	-0.09605532139539719	0.26579258	No	
+row_16	GALT	GALT	galactose-1-phosphate uridylyltransferase	8208	-0.19443275034427643	0.19003248	No	
+row_17	LCT	LCT	lactase	8462	-0.22145165503025055	0.18237211	No	
+row_18	GAA	GAA	glucosidase, alpha; acid (Pompe disease, glycogen storage disease type II)	9086	-0.2997719347476959	0.1488342	No	
+row_19	GALK1	GALK1	galactokinase 1	9134	-0.3064969480037689	0.16327004	No	
+row_20	PFKM	PFKM	phosphofructokinase, muscle	9884	-0.407591849565506	0.12576957	No	
+row_21	PGM2	PGM2	phosphoglucomutase 2	11741	-0.9966238737106323	0.032045055	No	

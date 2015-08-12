@@ -1,0 +1,32 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	SRC	SRC	v-src sarcoma (Schmidt-Ruppin A-2) viral oncogene homolog (avian)	592	1.3851473331451416	0.042316813	Yes	
+row_1	BAIAP2	BAIAP2	BAI1-associated protein 2	626	1.332722544670105	0.12738232	Yes	
+row_2	MYL2	MYL2	myosin, light chain 2, regulatory, cardiac, slow	646	1.30535089969635	0.21180183	Yes	
+row_3	ARHGEF5	ARHGEF5	Rho guanine nucleotide exchange factor (GEF) 5	798	1.1829174757003784	0.27724606	Yes	
+row_4	ACTR3	ACTR3	ARP3 actin-related protein 3 homolog (yeast)	1553	0.7866026163101196	0.26674426	Yes	
+row_5	TLN1	TLN1	talin 1	1604	0.7739186882972717	0.3135935	Yes	
+row_6	ARPC3	ARPC3	actin related protein 2/3 complex, subunit 3, 21kDa	1998	0.6328374147415161	0.32279962	Yes	
+row_7	LIMK1	LIMK1	LIM domain kinase 1	2234	0.5792111754417419	0.34153202	Yes	
+row_8	CFL1	CFL1	cofilin 1 (non-muscle)	2464	0.5250855684280396	0.3571948	Yes	
+row_9	ACTR2	ACTR2	ARP2 actin-related protein 2 homolog (yeast)	2707	0.4739168882369995	0.36841238	Yes	
+row_10	ARPC4	ARPC4	actin related protein 2/3 complex, subunit 4, 20kDa	2784	0.4574867784976959	0.3922678	Yes	
+row_11	ARPC2	ARPC2	actin related protein 2/3 complex, subunit 2, 34kDa	2836	0.44544270634651184	0.41739607	Yes	
+row_12	ARPC1A	ARPC1A	actin related protein 2/3 complex, subunit 1A, 41kDa	3042	0.41564086079597473	0.42783284	Yes	
+row_13	PFN1	PFN1	profilin 1	3064	0.4106631278991699	0.45314956	Yes	
+row_14	RHOA	RHOA	ras homolog gene family, member A	3124	0.40238267183303833	0.47478005	Yes	
+row_15	PPP1R12B	PPP1R12B	protein phosphatase 1, regulatory (inhibitor) subunit 12B	3542	0.33679187297821045	0.4625005	No	
+row_16	ARPC5	ARPC5	actin related protein 2/3 complex, subunit 5, 16kDa	4730	0.1774018108844757	0.3760796	No	
+row_17	ARHGEF1	ARHGEF1	Rho guanine nucleotide exchange factor (GEF) 1	4891	0.1554105132818222	0.373093	No	
+row_18	ARPC1B	ARPC1B	actin related protein 2/3 complex, subunit 1B, 41kDa	5288	0.11250677704811096	0.3477744	No	
+row_19	PIP5K1A	PIP5K1A	phosphatidylinositol-4-phosphate 5-kinase, type I, alpha	5387	0.10272305458784103	0.34644142	No	
+row_20	ROCK1	ROCK1	Rho-associated, coiled-coil containing protein kinase 1	5416	0.099319227039814	0.35066983	No	
+row_21	ARHGEF11	ARHGEF11	Rho guanine nucleotide exchange factor (GEF) 11	6182	0.01331491768360138	0.28831857	No	
+row_22	VCL	VCL	vinculin	6536	-0.02661130763590336	0.26089564	No	
+row_23	ARHGAP6	ARHGAP6	Rho GTPase activating protein 6	6658	-0.040450092405080795	0.25355947	No	
+row_24	ARHGAP1	ARHGAP1	Rho GTPase activating protein 1	7205	-0.10181456059217453	0.2151388	No	
+row_25	ARHGAP4	ARHGAP4	Rho GTPase activating protein 4	7697	-0.15269896388053894	0.18461595	No	
+row_26	PIP5K1B	PIP5K1B	phosphatidylinositol-4-phosphate 5-kinase, type I, beta	8352	-0.2075517624616623	0.14423436	No	
+row_27	OPHN1	OPHN1	oligophrenin 1	10126	-0.44772884249687195	0.02718743	No	
+row_28	GSN	GSN	gelsolin (amyloidosis, Finnish type)	10810	-0.5869932770729065	0.009404623	No	
+row_29	MYLK	MYLK	myosin, light chain kinase	11263	-0.7198508977890015	0.019466288	No	
+row_30	ARHGAP5	ARHGAP5	Rho GTPase activating protein 5	11433	-0.7897850871086121	0.05752523	No	

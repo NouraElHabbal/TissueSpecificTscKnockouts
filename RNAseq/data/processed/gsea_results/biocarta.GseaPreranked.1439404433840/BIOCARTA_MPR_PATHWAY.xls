@@ -1,0 +1,31 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	GNAI1	GNAI1	guanine nucleotide binding protein (G protein), alpha inhibiting activity polypeptide 1	403	1.6593124866485596	0.07143677	Yes	
+row_1	SRC	SRC	v-src sarcoma (Schmidt-Ruppin A-2) viral oncogene homolog (avian)	592	1.3851473331451416	0.14333571	Yes	
+row_2	CDC25C	CDC25C	cell division cycle 25C	748	1.223016381263733	0.20772757	Yes	
+row_3	CCNB1	CCNB1	cyclin B1	1294	0.8915682435035706	0.21896566	Yes	
+row_4	PRKAR1B	PRKAR1B	protein kinase, cAMP-dependent, regulatory, type I, beta	1301	0.8876951336860657	0.27450472	Yes	
+row_5	ACTR3	ACTR3	ARP3 actin-related protein 3 homolog (yeast)	1553	0.7866026163101196	0.30341446	Yes	
+row_6	PRKAR1A	PRKAR1A	protein kinase, cAMP-dependent, regulatory, type I, alpha (tissue specific extinguisher 1)	1567	0.7829664945602417	0.3517641	Yes	
+row_7	ARPC3	ARPC3	actin related protein 2/3 complex, subunit 3, 21kDa	1998	0.6328374147415161	0.3561742	Yes	
+row_8	GNB1	GNB1	guanine nucleotide binding protein (G protein), beta polypeptide 1	2661	0.48417529463768005	0.33202657	Yes	
+row_9	ACTR2	ACTR2	ARP2 actin-related protein 2 homolog (yeast)	2707	0.4739168882369995	0.35822314	Yes	
+row_10	ARPC4	ARPC4	actin related protein 2/3 complex, subunit 4, 20kDa	2784	0.4574867784976959	0.38082057	Yes	
+row_11	ARPC2	ARPC2	actin related protein 2/3 complex, subunit 2, 34kDa	2836	0.44544270634651184	0.40472385	Yes	
+row_12	PGR	PGR	progesterone receptor	2883	0.44265830516815186	0.4288646	Yes	
+row_13	ARPC1A	ARPC1A	actin related protein 2/3 complex, subunit 1A, 41kDa	3042	0.41564086079597473	0.4420437	Yes	
+row_14	PAQR7	PAQR7	progestin and adipoQ receptor family member VII	3135	0.3998977243900299	0.45968354	Yes	
+row_15	PIN1	PIN1	protein (peptidylprolyl cis/trans isomerase) NIMA-interacting 1	4020	0.2718234658241272	0.4037843	No	
+row_16	CAP1	CAP1	CAP, adenylate cyclase-associated protein 1 (yeast)	4101	0.2611982226371765	0.41366062	No	
+row_17	ARPC5	ARPC5	actin related protein 2/3 complex, subunit 5, 16kDa	4730	0.1774018108844757	0.37295812	No	
+row_18	ARPC1B	ARPC1B	actin related protein 2/3 complex, subunit 1B, 41kDa	5288	0.11250677704811096	0.33402693	No	
+row_19	MAPK3	MAPK3	mitogen-activated protein kinase 3	5920	0.04387248307466507	0.28464758	No	
+row_20	GNAS	GNAS	GNAS complex locus	6079	0.026168981567025185	0.27324164	No	
+row_21	PRKACB	PRKACB	protein kinase, cAMP-dependent, catalytic, beta	6225	0.008203152567148209	0.26177597	No	
+row_22	ADCY1	ADCY1	adenylate cyclase 1 (brain)	6882	-0.06600667536258698	0.21172772	No	
+row_23	PAQR5	PAQR5	progestin and adipoQ receptor family member V	7295	-0.11334330588579178	0.18483283	No	
+row_24	MAPK1	MAPK1	mitogen-activated protein kinase 1	7694	-0.15220962464809418	0.16154835	No	
+row_25	HRAS	HRAS	v-Ha-ras Harvey rat sarcoma viral oncogene homolog	8509	-0.22525131702423096	0.10849441	No	
+row_26	PRKAR2A	PRKAR2A	protein kinase, cAMP-dependent, regulatory, type II, alpha	8847	-0.26610004901885986	0.09744048	No	
+row_27	RPS6KA1	RPS6KA1	ribosomal protein S6 kinase, 90kDa, polypeptide 1	11353	-0.7538566589355469	-0.061997805	No	
+row_28	ACTA1	ACTA1	actin, alpha 1, skeletal muscle	11553	-0.8646074533462524	-0.023866545	No	
+row_29	PRKAR2B	PRKAR2B	protein kinase, cAMP-dependent, regulatory, type II, beta	11866	-1.1309022903442383	0.02173549	No	

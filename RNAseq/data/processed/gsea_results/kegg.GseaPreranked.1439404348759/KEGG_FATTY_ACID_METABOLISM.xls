@@ -1,0 +1,34 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	ADH7	ADH7	alcohol dehydrogenase 7 (class IV), mu or sigma polypeptide	38	3.491464853286743	0.25245765	Yes	
+row_1	ALDH1B1	ALDH1B1	aldehyde dehydrogenase 1 family, member B1	289	1.8986040353775024	0.37078208	Yes	
+row_2	ACADS	ACADS	acyl-Coenzyme A dehydrogenase, C-2 to C-3 short chain	1486	0.8078497052192688	0.33105466	Yes	
+row_3	ACOX1	ACOX1	acyl-Coenzyme A oxidase 1, palmitoyl	1967	0.6430623531341553	0.33845192	Yes	
+row_4	ACAA2	ACAA2	acetyl-Coenzyme A acyltransferase 2 (mitochondrial 3-oxoacyl-Coenzyme A thiolase)	2962	0.4283779561519623	0.287643	Yes	
+row_5	ACOX3	ACOX3	acyl-Coenzyme A oxidase 3, pristanoyl	3057	0.41174831986427307	0.31001523	Yes	
+row_6	ALDH9A1	ALDH9A1	aldehyde dehydrogenase 9 family, member A1	3241	0.3810221254825592	0.3227809	Yes	
+row_7	HADH	HADH	hydroxyacyl-Coenzyme A dehydrogenase	3242	0.38099896907806396	0.35067263	Yes	
+row_8	ACSL1	ACSL1	acyl-CoA synthetase long-chain family member 1	3343	0.3642865717411041	0.36907437	Yes	
+row_9	EHHADH	EHHADH	enoyl-Coenzyme A, hydratase/3-hydroxyacyl Coenzyme A dehydrogenase	3400	0.35574522614479065	0.3904881	Yes	
+row_10	ACADVL	ACADVL	acyl-Coenzyme A dehydrogenase, very long chain	3594	0.3307301104068756	0.3987454	Yes	
+row_11	ACADL	ACADL	acyl-Coenzyme A dehydrogenase, long chain	3714	0.313920795917511	0.41188937	Yes	
+row_12	ACSL3	ACSL3	acyl-CoA synthetase long-chain family member 3	3762	0.30744144320487976	0.4305109	Yes	
+row_13	CPT1A	CPT1A	carnitine palmitoyltransferase 1A (liver)	3955	0.2790665924549103	0.4350688	Yes	
+row_14	HADHA	HADHA	hydroxyacyl-Coenzyme A dehydrogenase/3-ketoacyl-Coenzyme A thiolase/enoyl-Coenzyme A hydratase (trifunctional protein), alpha subunit	3997	0.2740771472454071	0.4517438	Yes	
+row_15	ACADSB	ACADSB	acyl-Coenzyme A dehydrogenase, short/branched chain	4011	0.27288371324539185	0.4706461	Yes	
+row_16	ADH4	ADH4	alcohol dehydrogenase 4 (class II), pi polypeptide	4340	0.2272464483976364	0.46016794	No	
+row_17	HADHB	HADHB	hydroxyacyl-Coenzyme A dehydrogenase/3-ketoacyl-Coenzyme A thiolase/enoyl-Coenzyme A hydratase (trifunctional protein), beta subunit	4674	0.18558520078659058	0.44622654	No	
+row_18	GCDH	GCDH	glutaryl-Coenzyme A dehydrogenase	4683	0.1840812861919403	0.45904124	No	
+row_19	ALDH2	ALDH2	aldehyde dehydrogenase 2 family (mitochondrial)	5026	0.14285629987716675	0.4412278	No	
+row_20	ALDH3A2	ALDH3A2	aldehyde dehydrogenase 3 family, member A2	5036	0.1411464959383011	0.4508167	No	
+row_21	ACSL6	ACSL6	acyl-CoA synthetase long-chain family member 6	5185	0.12499818205833435	0.44773299	No	
+row_22	ECHS1	ECHS1	enoyl Coenzyme A hydratase, short chain, 1, mitochondrial	5287	0.11251098662614822	0.44762036	No	
+row_23	ADH5	ADH5	alcohol dehydrogenase 5 (class III), chi polypeptide	5292	0.11183356493711472	0.45547667	No	
+row_24	CPT1B	CPT1B	carnitine palmitoyltransferase 1B (muscle)	5431	0.09730608016252518	0.45119235	No	
+row_25	ACSL4	ACSL4	acyl-CoA synthetase long-chain family member 4	5469	0.09355347603559494	0.4549825	No	
+row_26	ALDH7A1	ALDH7A1	aldehyde dehydrogenase 7 family, member A1	5803	0.056805483996868134	0.43161356	No	
+row_27	ACAT1	ACAT1	acetyl-Coenzyme A acetyltransferase 1 (acetoacetyl Coenzyme A thiolase)	5965	0.03861941397190094	0.42113167	No	
+row_28	CPT2	CPT2	carnitine palmitoyltransferase II	6571	-0.030549930408596992	0.37335575	No	
+row_29	ACADM	ACADM	acyl-Coenzyme A dehydrogenase, C-4 to C-12 straight chain	8174	-0.1905965507030487	0.25487918	No	
+row_30	CPT1C	CPT1C	carnitine palmitoyltransferase 1C	8646	-0.2423008382320404	0.23368196	No	
+row_31	ACSL5	ACSL5	acyl-CoA synthetase long-chain family member 5	9148	-0.3073025345802307	0.21476337	No	
+row_32	ACAT2	ACAT2	acetyl-Coenzyme A acetyltransferase 2 (acetoacetyl Coenzyme A thiolase)	10029	-0.43136316537857056	0.17359677	No	

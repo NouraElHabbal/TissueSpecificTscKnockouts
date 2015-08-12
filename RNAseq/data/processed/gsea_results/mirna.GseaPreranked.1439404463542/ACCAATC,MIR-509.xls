@@ -1,0 +1,31 @@
+NAME	PROBE	GENE SYMBOL	GENE_TITLE	RANK IN GENE LIST	RANK METRIC SCORE	RUNNING ES	CORE ENRICHMENT	
+row_0	OLR1	OLR1	oxidised low density lipoprotein (lectin-like) receptor 1	50	3.321099042892456	0.24947749	Yes	
+row_1	SOX2	SOX2	SRY (sex determining region Y)-box 2	1128	0.9851320385932922	0.23569705	Yes	
+row_2	PBX3	PBX3	pre-B-cell leukemia transcription factor 3	1282	0.8978103995323181	0.2916121	Yes	
+row_3	MMP19	MMP19	matrix metallopeptidase 19	1479	0.8133391737937927	0.33752292	Yes	
+row_4	ENPP2	ENPP2	ectonucleotide pyrophosphatase/phosphodiesterase 2 (autotaxin)	1643	0.7584166526794434	0.38196695	Yes	
+row_5	PURB	PURB	purine-rich element binding protein B	3148	0.39875704050064087	0.2881198	No	
+row_6	INSIG1	INSIG1	insulin induced gene 1	3480	0.3441917300224304	0.287048	No	
+row_7	BAZ2A	BAZ2A	bromodomain adjacent to zinc finger domain, 2A	4435	0.2147466242313385	0.22460377	No	
+row_8	NPAS2	NPAS2	neuronal PAS domain protein 2	4744	0.17527467012405396	0.21253377	No	
+row_9	KLF6	KLF6	Kruppel-like factor 6	4928	0.1519639641046524	0.20901425	No	
+row_10	GAD1	GAD1	glutamate decarboxylase 1 (brain, 67kDa)	5230	0.11951667815446854	0.19326489	No	
+row_11	USP47	USP47	ubiquitin specific peptidase 47	5713	0.06528900563716888	0.15841585	No	
+row_12	OSBP	OSBP	oxysterol binding protein	5724	0.06443798542022705	0.16251011	No	
+row_13	SELT	SELT	-	6162	0.016293097287416458	0.1276386	No	
+row_14	PTEN	PTEN	phosphatase and tensin homolog (mutated in multiple advanced cancers 1)	6243	0.005244560074061155	0.12142751	No	
+row_15	ATP5L	ATP5L	ATP synthase, H+ transporting, mitochondrial F0 complex, subunit G	6708	-0.04645320028066635	0.08662772	No	
+row_16	PLP1	PLP1	proteolipid protein 1 (Pelizaeus-Merzbacher disease, spastic paraplegia 2, uncomplicated)	6769	-0.052791111171245575	0.08570035	No	
+row_17	ARHGAP1	ARHGAP1	Rho GTPase activating protein 1	7205	-0.10181456059217453	0.05752482	No	
+row_18	NLK	NLK	nemo-like kinase	7312	-0.11515486240386963	0.057558082	No	
+row_19	SF3B4	SF3B4	splicing factor 3b, subunit 4, 49kDa	8173	-0.19058853387832642	0.001037651	No	
+row_20	SMG6	SMG6	Smg-6 homolog, nonsense mediated mRNA decay factor (C. elegans)	8176	-0.190962553024292	0.015454872	No	
+row_21	CRK	CRK	v-crk sarcoma virus CT10 oncogene homolog (avian)	8240	-0.19597022235393524	0.025213173	No	
+row_22	RAB5C	RAB5C	RAB5C, member RAS oncogene family	8266	-0.19858819246292114	0.038311884	No	
+row_23	MEIS1	MEIS1	Meis1, myeloid ecotropic viral integration site 1 homolog (mouse)	8794	-0.2607484459877014	0.014669751	No	
+row_24	DEDD	DEDD	death effector domain containing	9397	-0.33858799934387207	-0.009226654	No	
+row_25	RYBP	RYBP	RING1 and YY1 binding protein	10021	-0.43004119396209717	-0.027874935	No	
+row_26	ZFAND3	ZFAND3	zinc finger, AN1-type domain 3	10618	-0.5434601306915283	-0.03563078	No	
+row_27	PCDHA10	PCDHA10	protocadherin alpha 10	10976	-0.6318217515945435	-0.016886987	No	
+row_28	VEZF1	VEZF1	vascular endothelial zinc finger 1	11037	-0.647610068321228	0.027607907	No	
+row_29	MLF1	MLF1	myeloid leukemia factor 1	11491	-0.819208562374115	0.052727275	No	

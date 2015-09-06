@@ -1,0 +1,73 @@
+---
+title: "Re-Analysis of Other Published Data"
+author: "Dave Bridges"
+date: "September 6, 2015"
+output: html_document
+bibliography: references.bib
+---
+
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.path='figures/',
+               echo=FALSE, warning=FALSE, message=FALSE,dev=c('png','pdf'))
+options(digits=3, scipen=8)
+
+library("knitcitations")
+cleanbib()
+options("citation_format" = "pandoc")
+```
+
+This script is for the re-analysis of previously published data from other groups.  This is often for presentations wherein the data was presented as a table or something and we want to draw attention to a particular aspect.  This script was most recently run on `r date()`.
+
+# Ebbeling et al JAMA 2012 Paper
+
+The paper `r citep('10.1001/jama.2012.6607')` used subjects who lost 12% of their weight, then had their weight stabilized.  They used a crossover design to test weight maintenance on low carbohydrate, or high carbohydrate diet.  They also used a high glycemic index diet that we are ignoring here.
+
+```{r ebbeling-bargraphs, fig.cap="Effect of Maintenance Diet on Energy Expenditure After Weight Loss"}
+ebbeling_datafile <- 'Ebbeling JAMA 2012 Table 3.csv'
+ebbeling.data <- read.csv(ebbeling_datafile)
+#calculate SE from 95% CI
+ebbeling.data$TEE.SE <- ebbeling.data$TEE.95ci/qt(0.975, df=2)
+
+superpose.eb <- function (x, y, ebl, ebu = ebl, length = 0.08, ...)
+arrows(x, y + ebu, x, y - ebl, angle = 90, code = 3,
+length = length, ...)
+
+ymax <- max(ebbeling.data$TEE + ebbeling.data$TEE.SE)
+plot <- barplot(ebbeling.data$TEE,
+                las=1, ylab="Total Energy Expenditure (kcal/FFM/day)",
+                col=c(grey.colors(3)[2],'black','red'),
+                ylim=c(2000,ymax),xpd=F,
+                names.arg=c("Baseline","High Carbohydrate", "High Fat/Protein"))
+
+superpose.eb(plot, ebbeling.data$TEE, ebbeling.data$TEE.SE)
+```
+
+The data from Table 2 of `r citet('Ebbeling_2012')` was re-entered as `r ebbeling_datafile`.
+
+```{r ebbeling-barplot-decrease}
+ebbeling.data$Decrease <- ebbeling.data$TEE - ebbeling.data$TEE[1]
+ebbeling.data$Decrease.SE <- sqrt(ebbeling.data$TEE.SE^2 + ebbeling.data$TEE.SE[1]^2)
+
+ymax <- max(abs(ebbeling.data$Decrease) + abs(ebbeling.data$Decrease.SE))
+plot <- barplot(abs(ebbeling.data$Decrease[2:3]),
+                las=1, ylab="Decrease in Energy Expenditure",
+                col=c('black','red'),
+                ylim=c(0,abs(ymax)),
+                names.arg=c("High Carbohydrate", "High Fat/Protein"))
+
+superpose.eb(plot, abs(ebbeling.data$Decrease[2:3]), abs(ebbeling.data$Decrease.SE[2:3]))
+```
+
+# Bibliography
+
+```{r bibliography}
+write.bibtex(file="references.bib")
+```
+
+
+# Session Information
+
+```{r session-info}
+sessionInfo()
+```

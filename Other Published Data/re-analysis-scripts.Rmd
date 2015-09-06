@@ -37,7 +37,7 @@ ymax <- max(ebbeling.data$TEE + ebbeling.data$TEE.SE)
 plot <- barplot(ebbeling.data$TEE,
                 las=1, ylab="Total Energy Expenditure (kcal/FFM/day)",
                 col=c(grey.colors(3)[2],'black','red'),
-                ylim=c(2000,ymax),xpd=F,
+                ylim=c(2500,ymax),xpd=F,
                 names.arg=c("Baseline","High Carbohydrate", "High Fat/Protein"))
 
 superpose.eb(plot, ebbeling.data$TEE, ebbeling.data$TEE.SE)
@@ -59,15 +59,16 @@ plot <- barplot(abs(ebbeling.data$Decrease[2:3]),
 superpose.eb(plot, abs(ebbeling.data$Decrease[2:3]), abs(ebbeling.data$Decrease.SE[2:3]))
 ```
 
-# Bibliography
-
-```{r bibliography}
+```{r bibliography, results='asis'}
 write.bibtex(file="references.bib")
+#bibliography()
 ```
 
 
 # Session Information
 
-```{r session-info}
+```{r session-info, results='asis'}
 sessionInfo()
 ```
+
+# Bibliography

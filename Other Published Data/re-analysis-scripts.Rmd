@@ -59,6 +59,29 @@ plot <- barplot(abs(ebbeling.data$Decrease[2:3]),
 superpose.eb(plot, abs(ebbeling.data$Decrease[2:3]), abs(ebbeling.data$Decrease.SE[2:3]))
 ```
 
+# Bray et al Overfeeding Study
+
+In `r citet('10.1001/jama.2011.1918')`, subjects were overfed for 8 weeks with equal calories of low, normal (not included here) and high protein diet.  Total energy expenditure is taken from the Table in this paper.
+
+```{r bray-bargraph, fig.cap="Effect of Diet on Energy Expenditure After 8 Weeks of Overfeeding"}
+bray_datafile <- 'Bray JAMA 2012 Table.csv'
+bray.data <- read.csv(bray_datafile)
+#calculate SE from 95% CI
+bray.data$TEE.SE <- bray.data$TEE.95ci/qt(0.975, df=2)
+
+ymax <- max(bray.data$TEE + bray.data$TEE.SE)
+plot <- barplot(bray.data$TEE,
+                las=1, ylab="Increase in Total Energy Expenditure (kJ/day)",
+                col=c('black','red'),
+                ylim=c(0,ymax),xpd=F,
+                names.arg=bray.data$Condition)
+
+superpose.eb(plot, bray.data$TEE, bray.data$TEE.SE)
+```
+
+The data from the table was re-entered as `r bray_datafile`.
+
+
 ```{r bibliography, results='asis'}
 write.bibtex(file="references.bib")
 #bibliography()

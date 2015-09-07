@@ -12,6 +12,8 @@ library(knitr)
 opts_chunk$set(fig.path='figures/',
                echo=FALSE, warning=FALSE, message=FALSE,dev=c('png','pdf'))
 options(scipen=3,digits = 3)
+
+color.set <- c('#f77f00','#006a4d')
 ```
 
 ```{r data-entry}
@@ -73,6 +75,21 @@ legend("bottomleft", levels(kcal.summary$Treatment), bty="n", lty=1, col=palette
 
 with(subset(kcal.summary, Treatment=="CD"), superpose.eb(Week,Average,SE, col=palette()[1]))
 with(subset(kcal.summary, Treatment=="HPD"), superpose.eb(Week,Average,SE, col=palette()[2]))
+```
+
+```{r hpd-food-intake-kcal-uthsc, fig.cap="Food Intake Per Week"}
+par(mar=c(5, 7, 4, 2))
+ymax <- max(kcal.summary$Average + kcal.summary$SE, na.rm=T)
+plot <- with(subset(kcal.summary, Treatment=="CD"), 
+             plot(Week,Average, las=1,cex.names=1.5,
+                  cex.lab=1.5,
+                  ylim=c(0,ymax), type="l",
+                  ylab="Food Intake (kCal)", col=color.set[1]))
+with(subset(kcal.summary, Treatment=="HPD"), lines(Week,Average, col=color.set[2]))
+legend("bottomleft", levels(kcal.summary$Treatment), bty="n", lty=1, col=color.set, cex=1.5)
+
+with(subset(kcal.summary, Treatment=="CD"), superpose.eb(Week,Average,SE, col=color.set[1]))
+with(subset(kcal.summary, Treatment=="HPD"), superpose.eb(Week,Average,SE, col=color.set[2]))
 ```
 
 ## Statistics

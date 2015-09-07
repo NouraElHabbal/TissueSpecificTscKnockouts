@@ -46,17 +46,17 @@ superpose.eb(plot, ebbeling.data$TEE, ebbeling.data$TEE.SE)
 The data from Table 2 of `r citet('Ebbeling_2012')` was re-entered as `r ebbeling_datafile`.
 
 ```{r ebbeling-barplot-decrease}
-ebbeling.data$Decrease <- ebbeling.data$TEE - ebbeling.data$TEE[1]
-ebbeling.data$Decrease.SE <- sqrt(ebbeling.data$TEE.SE^2 + ebbeling.data$TEE.SE[1]^2)
+ebbeling.data$Decrease <- (ebbeling.data$TEE - ebbeling.data$TEE[1])*4.18400
+ebbeling.data$Decrease.SE <- sqrt(ebbeling.data$TEE.SE^2 + ebbeling.data$TEE.SE[1]^2)*4.18400
 
-ymax <- max(abs(ebbeling.data$Decrease) + abs(ebbeling.data$Decrease.SE))
-plot <- barplot(abs(ebbeling.data$Decrease[2:3]),
-                las=1, ylab="Decrease in Energy Expenditure",
+ymax <- min(ebbeling.data$Decrease - ebbeling.data$Decrease.SE)
+plot <- barplot(ebbeling.data$Decrease[2:3],
+                las=1, ylab="Change in Energy Expenditure (kJ/day)",
                 col=c('black','red'),
-                ylim=c(0,abs(ymax)),
+                ylim=c(ymax,0),
                 names.arg=c("High Carbohydrate", "High Fat/Protein"))
 
-superpose.eb(plot, abs(ebbeling.data$Decrease[2:3]), abs(ebbeling.data$Decrease.SE[2:3]))
+superpose.eb(plot, ebbeling.data$Decrease[2:3], ebbeling.data$Decrease.SE[2:3])
 ```
 
 # Bray et al Overfeeding Study
@@ -71,7 +71,7 @@ bray.data$TEE.SE <- bray.data$TEE.95ci/qt(0.975, df=2)
 
 ymax <- max(bray.data$TEE + bray.data$TEE.SE)
 plot <- barplot(bray.data$TEE,
-                las=1, ylab="Increase in Total Energy Expenditure (kJ/day)",
+                las=1, ylab="Change in Total Energy Expenditure (kJ/day)",
                 col=c('black','red'),
                 ylim=c(0,ymax),xpd=F,
                 names.arg=bray.data$Condition)
@@ -80,6 +80,29 @@ superpose.eb(plot, bray.data$TEE, bray.data$TEE.SE)
 ```
 
 The data from the table was re-entered as `r bray_datafile`.
+
+## Bray et al Follow-Up Study
+
+In a follow up study, `r citet('10.3945/ajcn.114.091769')` looked at the energy expenditure in a tissue specific manner via DEXA scans.
+
+```{r bray-tissue-bargraph, fig.cap="Effect of Diet on Energy Expenditure in Adipose and Muscle"}
+
+#calculate SD from SE
+bray.data$Adipose.SE <- bray.data$Adipose.SD/sqrt(bray.data$n)
+bray.data$Muscle.SE <- bray.data$Muscle.SD/sqrt(bray.data$n)
+
+ymax <- max(bray.data$Muscle + bray.data$Muscle.SE)
+plot <- barplot(cbind(bray.data$Muscle,bray.data$Adipose),
+                las=1, ylab="Energy Expenditure",
+                col=c('black','red'),
+                ylim=c(0,ymax),beside=T,
+                names.arg=c('Muscle','Adipose'))
+
+superpose.eb(plot,
+             cbind(bray.data$Muscle,bray.data$Adipose),
+             cbind(bray.data$Muscle.SE,bray.data$Adipose.SE))
+legend('topright',levels(bray.data$Condition), bty='n', fill=c('black','red'))
+```
 
 
 ```{r bibliography, results='asis'}

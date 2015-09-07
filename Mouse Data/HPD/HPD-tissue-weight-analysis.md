@@ -6,7 +6,7 @@ August 10, 2015
 
 
 
-This data uses the input file HPD fat pad weights.csv.  This script was most recently run on Mon Aug 10 11:03:29 2015.
+This data uses the input file HPD fat pad weights.csv.  This script was most recently run on Mon Sep  7 10:41:27 2015.
 
 # Adipose Tissue
 
@@ -35,6 +35,7 @@ High Protein Diet     6       814   442   180     0.158
 
 ![](figures/hpd-adipose-weights-1.png) 
 
+![](figures/hpd-adipose-weights-uthsc-1.png) 
 
 We next tested whether equal variance can be assumed via Levene's test.  For iWAT the p-value was 0.033 and for eWAT the p-value was 0.046.  Therefore in both cases, equal variance can not be assumed and Welch's *t* tests were performed.  These p-values were **0.249** for iWAT and **0.233** for eWAT.
 
@@ -74,6 +75,8 @@ High Protein Diet     6       135   8.13   3.32     0.385
 
 ![](figures/hpd-muscle-weights-1.png) 
 
+![](figures/hpd-muscle-weights-uthsc-1.png) 
+
 
 We next tested whether equal variance can be assumed via Levene's test.  For quadriceps the p-value was 0.239,  for TS the p-value was 0.862 and for heart the p-value was 0.122.  Therefore in all cases, equal variance can be assumed and Student's *t* tests were performed.  These p-values were **0.075** for quadriceps, **0.1** for TS, and **0.083** for heart.
 
@@ -82,7 +85,7 @@ We next tested whether equal variance can be assumed via Levene's test.  For qua
 
 
 ```
-## R version 3.2.0 (2015-04-16)
+## R version 3.2.2 (2015-08-14)
 ## Platform: x86_64-apple-darwin13.4.0 (64-bit)
 ## Running under: OS X 10.10.4 (Yosemite)
 ## 
@@ -93,15 +96,15 @@ We next tested whether equal variance can be assumed via Levene's test.  For qua
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-## [1] car_2.0-25   dplyr_0.4.2  knitr_1.10.5
+## [1] car_2.0-26  dplyr_0.4.2 knitr_1.11 
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] Rcpp_0.12.0     magrittr_1.5    splines_3.2.0   MASS_7.3-43    
-##  [5] lattice_0.20-33 R6_2.1.0        minqa_1.2.4     highr_0.5      
-##  [9] stringr_1.0.0   tools_3.2.0     nnet_7.3-10     parallel_3.2.0 
-## [13] pbkrtest_0.4-2  grid_3.2.0      nlme_3.1-121    mgcv_1.8-7     
+##  [1] Rcpp_0.12.0     magrittr_1.5    splines_3.2.2   MASS_7.3-43    
+##  [5] lattice_0.20-33 R6_2.1.1        minqa_1.2.4     highr_0.5      
+##  [9] stringr_1.0.0   tools_3.2.2     nnet_7.3-10     parallel_3.2.2 
+## [13] pbkrtest_0.4-2  grid_3.2.2      nlme_3.1-121    mgcv_1.8-7     
 ## [17] quantreg_5.11   DBI_0.3.1       htmltools_0.2.6 yaml_2.1.13    
 ## [21] lme4_1.1-8      lazyeval_0.1.10 assertthat_0.1  digest_0.6.8   
-## [25] Matrix_1.2-2    nloptr_1.0.4    formatR_1.2     evaluate_0.7   
-## [29] rmarkdown_0.7   stringi_0.5-5   SparseM_1.6
+## [25] Matrix_1.2-2    nloptr_1.0.4    formatR_1.2     evaluate_0.7.2 
+## [29] rmarkdown_0.7   stringi_0.5-5   SparseM_1.7
 ```

@@ -12,6 +12,8 @@ library(knitr)
 opts_chunk$set(fig.path='figures/',
                echo=FALSE, warning=FALSE, message=FALSE,dev=c('png','pdf'))
 options(scipen=3,digits = 3)
+
+color.set <- c('#f77f00','#006a4d')
 ```
 
 ```{r data-entry}
@@ -78,6 +80,17 @@ superpose.eb(plot,
 legend('topleft', levels(data$Diet), fill=grey.colors(2), bty="n")
 ```
 
+```{r hpd-adipose-weights-uthsc}
+ymax <- max(ewat.summary$Average + ewat.summary$SE)
+plot <- barplot(cbind(iWAT=iwat.summary$Average, eWAT=ewat.summary$Average),
+                beside=T, las=1, ylab="Fat Pad Mass (mg)",
+                cex.lab=1.5, cex.names=1.5, col=color.set,
+                ylim=c(0,ymax))
+superpose.eb(plot,
+             cbind(iWAT=iwat.summary$Average, eWAT=ewat.summary$Average),
+             cbind(iWAT=iwat.summary$SE, eWAT=ewat.summary$SE))
+legend('topleft', levels(data$Diet), fill=color.set, bty="n",cex=1.5)
+```
 
 We next tested whether equal variance can be assumed via Levene's test.  For iWAT the p-value was `r leveneTest(iWAT~Diet, data=data)$"Pr(>F)"[1]` and for eWAT the p-value was `r leveneTest(eWAT~Diet, data=data)$"Pr(>F)"[1]`.  Therefore in both cases, equal variance can not be assumed and Welch's *t* tests were performed.  These p-values were **`r t.test(iWAT~Diet, var.equal=F, data=data)$p.value`** for iWAT and **`r t.test(eWAT~Diet, var.equal=F, data=data)$p.value`** for eWAT.
 
@@ -147,6 +160,24 @@ superpose.eb(plot,
                       `Triceps surae`=ts.summary$SE,
                       Heart = heart.summary$SE))
 legend('topright', levels(data$Diet), fill=grey.colors(2), bty="n")
+```
+
+```{r hpd-muscle-weights-uthsc}
+ymax <- max(quad.summary$Average + quad.summary$SE)
+plot <- barplot(cbind(Quadriceps=quad.summary$Average,
+                      `Triceps surae`=ts.summary$Average,
+                      Heart = heart.summary$Average),
+                beside=T, las=1, ylab=" Muscle Weight (mg)",
+                cex.names=1.5, cex.lab=1.5,col=color.set,
+                ylim=c(0,ymax))
+superpose.eb(plot,
+             cbind(Quadriceps=quad.summary$Average,
+                      `Triceps surae`=ts.summary$Average,
+                      Heart = heart.summary$Average),
+             cbind(Quadriceps=quad.summary$SE,
+                      `Triceps surae`=ts.summary$SE,
+                      Heart = heart.summary$SE))
+legend('topright', levels(data$Diet), fill=color.set, bty="n", cex=1.5)
 ```
 
 

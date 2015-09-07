@@ -15,6 +15,8 @@ options(digits=3, scipen=8)
 library("knitcitations")
 cleanbib()
 options("citation_format" = "pandoc")
+
+color.set <- c('#f77f00','#006a4d')
 ```
 
 This script is for the re-analysis of previously published data from other groups.  This is often for presentations wherein the data was presented as a table or something and we want to draw attention to a particular aspect.  This script was most recently run on `r date()`.
@@ -36,7 +38,7 @@ length = length, ...)
 ymax <- max(ebbeling.data$TEE + ebbeling.data$TEE.SE)
 plot <- barplot(ebbeling.data$TEE,
                 las=1, ylab="Total Energy Expenditure (kcal/FFM/day)",
-                col=c(grey.colors(3)[2],'black','red'),
+                col=c(grey.colors(3)[2],color.set),
                 ylim=c(2500,ymax),xpd=F,
                 names.arg=c("Baseline","High Carbohydrate", "High Fat/Protein"))
 
@@ -49,10 +51,11 @@ The data from Table 2 of `r citet('Ebbeling_2012')` was re-entered as `r ebbelin
 ebbeling.data$Decrease <- (ebbeling.data$TEE - ebbeling.data$TEE[1])*4.18400
 ebbeling.data$Decrease.SE <- sqrt(ebbeling.data$TEE.SE^2 + ebbeling.data$TEE.SE[1]^2)*4.18400
 
+par(mar=c(5, 7, 4, 2))
 ymax <- min(ebbeling.data$Decrease - ebbeling.data$Decrease.SE)
 plot <- barplot(ebbeling.data$Decrease[2:3],
-                las=1, ylab="Change in Energy Expenditure (kJ/day)",
-                col=c('black','red'),
+                las=1, ylab="Change in Energy \nExpenditure (kJ/day)",
+                col=color.set,cex.names=1.5, cex.lab=1.5,
                 ylim=c(ymax,0),
                 names.arg=c("High Carbohydrate", "High Fat/Protein"))
 
@@ -69,10 +72,11 @@ bray.data <- read.csv(bray_datafile)
 #calculate SE from 95% CI
 bray.data$TEE.SE <- bray.data$TEE.95ci/qt(0.975, df=2)
 
+par(mar=c(5, 7, 4, 2))
 ymax <- max(bray.data$TEE + bray.data$TEE.SE)
 plot <- barplot(bray.data$TEE,
-                las=1, ylab="Change in Total Energy Expenditure (kJ/day)",
-                col=c('black','red'),
+                las=1, ylab="Change in Energy \nExpenditure (kJ/day)",
+                col=color.set,cex.names=1.5,cex.lab=1.5,
                 ylim=c(0,ymax),xpd=F,
                 names.arg=bray.data$Condition)
 
@@ -94,14 +98,14 @@ bray.data$Muscle.SE <- bray.data$Muscle.SD/sqrt(bray.data$n)
 ymax <- max(bray.data$Muscle + bray.data$Muscle.SE)
 plot <- barplot(cbind(bray.data$Muscle,bray.data$Adipose),
                 las=1, ylab="Energy Expenditure",
-                col=c('black','red'),
+                col=color.set,cex.names=2,
                 ylim=c(0,ymax),beside=T,
                 names.arg=c('Muscle','Adipose'))
 
 superpose.eb(plot,
              cbind(bray.data$Muscle,bray.data$Adipose),
              cbind(bray.data$Muscle.SE,bray.data$Adipose.SE))
-legend('topright',levels(bray.data$Condition), bty='n', fill=c('black','red'))
+legend('topright',levels(bray.data$Condition), bty='n', fill=color.set)
 ```
 
 

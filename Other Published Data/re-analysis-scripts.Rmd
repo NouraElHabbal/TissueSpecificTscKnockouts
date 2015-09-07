@@ -1,0 +1,124 @@
+---
+title: "Re-Analysis of Other Published Data"
+author: "Dave Bridges"
+date: "September 6, 2015"
+output: html_document
+bibliography: references.bib
+---
+
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.path='figures/',
+               echo=FALSE, warning=FALSE, message=FALSE,dev=c('png','pdf'))
+options(digits=3, scipen=8)
+
+library("knitcitations")
+cleanbib()
+options("citation_format" = "pandoc")
+
+color.set <- c('#f77f00','#006a4d')
+```
+
+This script is for the re-analysis of previously published data from other groups.  This is often for presentations wherein the data was presented as a table or something and we want to draw attention to a particular aspect.  This script was most recently run on `r date()`.
+
+# Ebbeling et al JAMA 2012 Paper
+
+The paper `r citep('10.1001/jama.2012.6607')` used subjects who lost 12% of their weight, then had their weight stabilized.  They used a crossover design to test weight maintenance on low carbohydrate, or high carbohydrate diet.  They also used a high glycemic index diet that we are ignoring here.
+
+```{r ebbeling-bargraphs, fig.cap="Effect of Maintenance Diet on Energy Expenditure After Weight Loss"}
+ebbeling_datafile <- 'Ebbeling JAMA 2012 Table 3.csv'
+ebbeling.data <- read.csv(ebbeling_datafile)
+#calculate SE from 95% CI
+ebbeling.data$TEE.SE <- ebbeling.data$TEE.95ci/qt(0.975, df=2)
+
+superpose.eb <- function (x, y, ebl, ebu = ebl, length = 0.08, ...)
+arrows(x, y + ebu, x, y - ebl, angle = 90, code = 3,
+length = length, ...)
+
+ymax <- max(ebbeling.data$TEE + ebbeling.data$TEE.SE)
+plot <- barplot(ebbeling.data$TEE,
+                las=1, ylab="Total Energy Expenditure (kcal/FFM/day)",
+                col=c(grey.colors(3)[2],color.set),
+                ylim=c(2500,ymax),xpd=F,
+                names.arg=c("Baseline","High Carbohydrate", "High Fat/Protein"))
+
+superpose.eb(plot, ebbeling.data$TEE, ebbeling.data$TEE.SE)
+```
+
+The data from Table 2 of `r citet('Ebbeling_2012')` was re-entered as `r ebbeling_datafile`.
+
+```{r ebbeling-barplot-decrease}
+ebbeling.data$Decrease <- (ebbeling.data$TEE - ebbeling.data$TEE[1])*4.18400
+ebbeling.data$Decrease.SE <- sqrt(ebbeling.data$TEE.SE^2 + ebbeling.data$TEE.SE[1]^2)*4.18400
+
+par(mar=c(5, 7, 4, 2))
+ymax <- min(ebbeling.data$Decrease - ebbeling.data$Decrease.SE)
+plot <- barplot(ebbeling.data$Decrease[2:3],
+                las=1, ylab="Change in Energy \nExpenditure (kJ/day)",
+                col=color.set,cex.names=1.5, cex.lab=1.5,
+                ylim=c(ymax,0),
+                names.arg=c("High Carbohydrate", "High Fat/Protein"))
+
+superpose.eb(plot, ebbeling.data$Decrease[2:3], ebbeling.data$Decrease.SE[2:3])
+```
+
+# Bray et al Overfeeding Study
+
+In `r citet('10.1001/jama.2011.1918')`, subjects were overfed for 8 weeks with equal calories of low, normal (not included here) and high protein diet.  Total energy expenditure is taken from the Table in this paper.
+
+```{r bray-bargraph, fig.cap="Effect of Diet on Energy Expenditure After 8 Weeks of Overfeeding"}
+bray_datafile <- 'Bray JAMA 2012 Table.csv'
+bray.data <- read.csv(bray_datafile)
+#calculate SE from 95% CI
+bray.data$TEE.SE <- bray.data$TEE.95ci/qt(0.975, df=2)
+
+par(mar=c(5, 7, 4, 2))
+ymax <- max(bray.data$TEE + bray.data$TEE.SE)
+plot <- barplot(bray.data$TEE,
+                las=1, ylab="Change in Energy \nExpenditure (kJ/day)",
+                col=color.set,cex.names=1.5,cex.lab=1.5,
+                ylim=c(0,ymax),xpd=F,
+                names.arg=bray.data$Condition)
+
+superpose.eb(plot, bray.data$TEE, bray.data$TEE.SE)
+```
+
+The data from the table was re-entered as `r bray_datafile`.
+
+## Bray et al Follow-Up Study
+
+In a follow up study, `r citet('10.3945/ajcn.114.091769')` looked at the energy expenditure in a tissue specific manner via DEXA scans.
+
+```{r bray-tissue-bargraph, fig.cap="Effect of Diet on Energy Expenditure in Adipose and Muscle"}
+
+#calculate SD from SE
+bray.data$Adipose.SE <- bray.data$Adipose.SD/sqrt(bray.data$n)
+bray.data$Muscle.SE <- bray.data$Muscle.SD/sqrt(bray.data$n)
+
+ymax <- max(bray.data$Muscle + bray.data$Muscle.SE)
+plot <- barplot(cbind(bray.data$Muscle,bray.data$Adipose),
+                las=1, ylab="Energy Expenditure",
+                col=color.set,cex.names=2,
+                ylim=c(0,ymax),beside=T,
+                names.arg=c('Muscle','Adipose'))
+
+superpose.eb(plot,
+             cbind(bray.data$Muscle,bray.data$Adipose),
+             cbind(bray.data$Muscle.SE,bray.data$Adipose.SE))
+legend('topright',levels(bray.data$Condition), bty='n', fill=color.set)
+```
+
+
+```{r bibliography, results='asis'}
+write.bibtex(file="references.bib")
+#bibliography()
+```
+
+
+# Session Information
+
+```{r session-info, results='asis'}
+sessionInfo()
+```
+
+# Bibliography

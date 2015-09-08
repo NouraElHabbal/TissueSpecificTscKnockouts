@@ -247,10 +247,9 @@ itt.lme.null <- lmer(glucose ~ time + (1|animal.MouseID), data=hpd.data, REML=F)
 
 itt.lme.norm <- lmer(glucose ~ time + Diet + time:Diet + (1|animal.MouseID), data=hpd.data.norm, REML=F)
 itt.lme.norm.null <- lmer(glucose ~ time + (1|animal.MouseID), data=hpd.data.norm, REML=F)
-
 ```
 
-We generated mixed linear models with random slopes and intercepts using time (as a factor) and the diet as a covariate.  First this was done for absolute glucose values.  A chi-squared test comparing these models had a p-value of `r anova(itt.lme, itt.lme.null)$"Pr(>Chisq)"[2]`.  For normalized glucose values, the p-value was `r anova(itt.lme.norm, itt.lme.norm.null)$"Pr(>Chisq)"[2]`. Pairwise Student's *t* tests are shown in the table below:
+We generated mixed linear models with random intercepts using time (as a factor) and the diet as a covariate.  First this was done for absolute glucose values.  A chi-squared test comparing these models had a p-value of `r anova(itt.lme, itt.lme.null)$"Pr(>Chisq)"[2]`.  For normalized glucose values, the p-value was `r anova(itt.lme.norm, itt.lme.norm.null)$"Pr(>Chisq)"[2]`. Pairwise Student's *t* tests are shown in the table below:
 
 ```{r itt-t-tests}
 t.tests <- data.frame(row.names=levels(hpd.data$time))

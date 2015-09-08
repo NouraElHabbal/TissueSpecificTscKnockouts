@@ -1,0 +1,344 @@
+---
+title: "PTT for HPD Fed Mice"
+author: "Innocence Harvey and Dave Bridges"
+date: "May 4, 2015"
+output:
+  html_document:
+    keep_md: yes
+  pdf_document:
+    keep_tex: yes
+---
+
+```{r setup, echo=FALSE, cache=FALSE}
+## numbers >= 10^5 will be denoted in scientific notation,
+## and rounded to 2 digits
+options(scipen = 4, digits = 4)
+library(knitr)
+opts_chunk$set(fig.path='figures/',
+               echo=FALSE, warning=FALSE, message=FALSE,dev=c('png','pdf'))
+```
+
+Used 2.5g/kg pyruvate
+
+```{r data-entry}
+library(rjson)
+library(RCurl)
+#download data from experiment 796
+itt_url <- 'http://bridgeslab.uthsc.edu/mousedb/api/v1/data/?format=json&username=davebridges&api_key=fce3fde2a9a2e5dc9e04c20aad90120a621c50b3&limit=0&experiment=796'
+itt.json <- fromJSON(getURL(itt_url))
+library(plyr)
+#parse json data into data frame
+itt.data <-  rbind(ldply(lapply(itt.json[[2]],function(x) do.call(c,unlist(x,r=F))),as.data.frame))
+#figure out which mice are dex treated
+dex.url <- 'http://bridgeslab.uthsc.edu/mousedb/api/v1/treatment/?format=json&username=davebridges&api_key=fce3fde2a9a2e5dc9e04c20aad90120a621c50b3&limit=0&treatment=Dexamethasone%20Treated'
+dex.json <- fromJSON(getURL(dex.url))
+dex.mouseids <- as.integer(unlist(dex.json[[2]][[1]]['animals'])[names(unlist(dex.json[[2]][[1]]['animals'])) == 'animals.id'])
+itt.data$Dexamethasone <-  itt.data$animal.id %in% dex.mouseids
+#set a new treatment colllumn
+for (row in rownames(itt.data)){
+  if (itt.data[row,'Dexamethasone']==TRUE) {
+      itt.data[row,'Treatment'] <- 'Dexamethasone'}
+  else itt.data[row,'Treatment'] <- 'Water'
+}
+itt.data$Treatment <- relevel(as.factor(itt.data$Treatment),ref='Water')
+
+#find out which ones are high protein diet
+hpd.url <- 'http://bridgeslab.uthsc.edu/mousedb/api/v1/treatment/?format=json&username=davebridges&api_key=fce3fde2a9a2e5dc9e04c20aad90120a621c50b3&limit=0&treatment=High%20Protein%20Diet'
+hpd.json <- fromJSON(getURL(hpd.url))
+hpd.mouseids <- as.integer(unlist(hpd.json[[2]][[1]]['animals'])[names(unlist(hpd.json[[2]][[1]]['animals'])) == 'animals.id'])
+itt.data$HPD <-  itt.data$animal.id %in% hpd.mouseids
+#set a new treatment colllumn
+for (row in rownames(itt.data)){
+  if (itt.data[row,'HPD']==TRUE) {
+      itt.data[row,'Diet'] <- 'High Protein Diet'}
+  else itt.data[row,'Diet'] <- 'Control Diet'
+}
+
+#set cd as the reference level
+itt.data$Diet <- relevel(as.factor(itt.data$Diet), ref='Control Diet')
+
+itt.glucose <- itt.data[itt.data$assay.assay=='Plasma Glucose',]
+#separate comma separated list into values
+s <- strsplit(as.character(itt.glucose$values), split = ",")
+#paste values into new colunms
+itt.glucose <- cbind(itt.glucose, as.data.frame(rbind.fill.matrix(lapply(s, t))))
+#convert all values to numbers, put in new columns
+itt.glucose$t0 <- as.numeric(as.character(itt.glucose$`1`))
+itt.glucose$t15 <- as.numeric(as.character(itt.glucose$`2`))
+itt.glucose$t30 <- as.numeric(as.character(itt.glucose$`3`))
+itt.glucose$t45 <- as.numeric(as.character(itt.glucose$`4`))
+itt.glucose$t60 <- as.numeric(as.character(itt.glucose$`5`))
+itt.glucose$t75 <- as.numeric(as.character(itt.glucose$`6`))
+itt.glucose$t90 <- as.numeric(as.character(itt.glucose$`7`))
+itt.glucose$t105 <- as.numeric(as.character(itt.glucose$`8`))
+itt.glucose$t120 <- as.numeric(as.character(itt.glucose$`9`))
+
+itt.glucose.no.outlier <- subset(itt.glucose, id !=36958)
+```
+
+```{r ptt-analysis, dev=c('png','pdf')}
+detach("package:plyr", unload=TRUE)
+library(dplyr)
+#generate averages/se/n/shapiro test for each time point
+se <- function(x) sd(x, na.rm=T)/sqrt(length(x))
+itt.summary.means <- 
+  itt.glucose %>%
+  group_by(Treatment, Diet) %>%
+  summarize(
+    t0 = mean(t0, na.rm=T),
+    t15 = mean(t15, na.rm=T),
+    t30 = mean(t30, na.rm=T),
+    t45 = mean(t45, na.rm=T),
+    t60 = mean(t60, na.rm=T),
+    t75 = mean(t75, na.rm=T),
+    t90 = mean(t90, na.rm=T),
+    t105 = mean(t105, na.rm=T),
+    t120 = mean(t120, na.rm=T))
+
+itt.summary.se <- 
+  itt.glucose %>%
+  group_by(Treatment,Diet) %>%
+  summarize(
+    t0 = se(t0),
+    t15 = se(t15),
+    t30 = se(t30),
+    t45 = se(t45),
+    t60 = se(t60),
+    t75 = se(t75),
+    t90 = se(t90),
+    t105 = se(t105),
+    t120 = se(t120))
+
+times <- seq(0,120,15)
+ymax <- max(itt.summary.means[,3:dim(itt.summary.means)[2]],na.rm=T) + max(itt.summary.se[,3:dim(itt.summary.se)[2]],na.rm=T)
+plot <- plot(times,
+     as.numeric(itt.summary.means[1,3:dim(itt.summary.se)[2]]),
+     las=1, ylim=c(0,ymax), ylab="Blood Glucose (mg/dL)", xlab="Pyruvate (min)", type="l", col='black')
+#add other lines
+lines(times, as.numeric(itt.summary.means[2,3:dim(itt.summary.se)[2]]), col='red')
+lines(times, as.numeric(itt.summary.means[3,3:dim(itt.summary.se)[2]]), col='black', lty=2)
+lines(times, as.numeric(itt.summary.means[4,3:dim(itt.summary.se)[2]]), col='red', lty=2)
+#add error bars
+superpose.eb <- function (x, y, ebl, ebu = ebl, length = 0.08, ...)
+arrows(x, y + ebu, x, y - ebl, angle = 90, code = 3,
+length = length, ...)
+
+#add error bars for water
+superpose.eb(times,
+             as.numeric(itt.summary.means[1,3:dim(itt.summary.means)[2]]),
+             as.numeric(itt.summary.se[1,3:dim(itt.summary.means)[2]]), col='black')
+#add error bars for dex
+superpose.eb(times,
+             as.numeric(itt.summary.means[2,3:dim(itt.summary.means)[2]]),
+             as.numeric(itt.summary.se[2,3:dim(itt.summary.means)[2]]), col='red')
+#add error bars for dex
+superpose.eb(times,
+             as.numeric(itt.summary.means[3,3:dim(itt.summary.means)[2]]),
+             as.numeric(itt.summary.se[3,3:dim(itt.summary.means)[2]]), col='black')
+#add error bars for dex
+superpose.eb(times,
+             as.numeric(itt.summary.means[4,3:dim(itt.summary.means)[2]]),
+             as.numeric(itt.summary.se[4,3:dim(itt.summary.means)[2]]), col='red')
+#add legend
+legend("topright",
+       paste(itt.summary.means$Treatment, itt.summary.means$Diet,sep=" - "),
+       col=c('red','black','red','black'), lty=c(1,1,2,2), bty='n')
+
+#normalized means and errors to 100%
+itt.summary.means.norm <- sweep(itt.summary.means[3:dim(itt.summary.means)[2]], 1, itt.summary.means$t0, "/")*100
+itt.summary.se.norm <- sweep(itt.summary.se[3:dim(itt.summary.se)[2]], 1, itt.summary.means$t0, "/")*100
+
+ymax <- max(itt.summary.means.norm[,3:dim(itt.summary.means.norm)[2]],na.rm=T) + max(itt.summary.se.norm[,3:dim(itt.summary.se.norm)[2]],na.rm=T)
+plot <- plot(times,
+     as.numeric(itt.summary.means.norm[1,1:dim(itt.summary.means.norm)[2]]),
+     las=1, ylim=c(0,ymax), ylab="Blood Glucose (% initial)", xlab="Pyruvate (min)", type="l", col='black')
+#add other lines
+lines(times, as.numeric(itt.summary.means.norm[2,1:dim(itt.summary.se.norm)[2]]), col='red')
+lines(times, as.numeric(itt.summary.means.norm[3,1:dim(itt.summary.se.norm)[2]]), col='black', lty=2)
+lines(times, as.numeric(itt.summary.means.norm[4,1:dim(itt.summary.se.norm)[2]]), col='red', lty=2)
+
+#add error bars for water
+superpose.eb(times,
+             as.numeric(itt.summary.means.norm[1,1:dim(itt.summary.means.norm)[2]]),
+             as.numeric(itt.summary.se.norm[1,1:dim(itt.summary.means.norm)[2]]), col='black')
+#add error bars for dex
+superpose.eb(times,
+             as.numeric(itt.summary.means.norm[2,1:dim(itt.summary.means.norm)[2]]),
+             as.numeric(itt.summary.se.norm[2,1:dim(itt.summary.means.norm)[2]]), col='red')
+#add error bars for dex
+superpose.eb(times,
+             as.numeric(itt.summary.means.norm[3,1:dim(itt.summary.means.norm)[2]]),
+             as.numeric(itt.summary.se.norm[3,1:dim(itt.summary.means.norm)[2]]), col='black')
+#add error bars for dex
+superpose.eb(times,
+             as.numeric(itt.summary.means.norm[4,1:dim(itt.summary.means.norm)[2]]),
+             as.numeric(itt.summary.se.norm[4,1:dim(itt.summary.means.norm)[2]]), col='red')
+# #add legend
+# legend("topright",
+#        paste(itt.summary.means$Treatment, itt.summary.means$Diet,sep=" - "),
+#        col=c('red','black','red','black'), lty=c(1,1,2,2), bty='n')
+
+```
+
+# Removing outlier
+
+```{r ptt-analysis-no-outlier, dev=c('png','pdf')}
+#generate averages/se/n/shapiro test for each time point
+se <- function(x) sd(x, na.rm=T)/sqrt(length(x))
+itt.summary.means <- 
+  itt.glucose.no.outlier %>%
+  group_by(Treatment, Diet) %>%
+  summarize(
+    t0 = mean(t0, na.rm=T),
+    t15 = mean(t15, na.rm=T),
+    t30 = mean(t30, na.rm=T),
+    t45 = mean(t45, na.rm=T),
+    t60 = mean(t60, na.rm=T),
+    t75 = mean(t75, na.rm=T),
+    t90 = mean(t90, na.rm=T),
+    t105 = mean(t105, na.rm=T),
+    t120 = mean(t120, na.rm=T))
+
+itt.summary.se <- 
+  itt.glucose.no.outlier %>%
+  group_by(Treatment,Diet) %>%
+  summarize(
+    t0 = se(t0),
+    t15 = se(t15),
+    t30 = se(t30),
+    t45 = se(t45),
+    t60 = se(t60),
+    t75 = se(t75),
+    t90 = se(t90),
+    t105 = se(t105),
+    t120 = se(t120))
+
+times <- seq(0,120,15)
+ymax <- max(itt.summary.means[,3:dim(itt.summary.means)[2]],na.rm=T) + max(itt.summary.se[,3:dim(itt.summary.se)[2]],na.rm=T)
+plot <- plot(times,
+     as.numeric(itt.summary.means[1,3:dim(itt.summary.se)[2]]),
+     las=1, ylim=c(0,ymax), ylab="Blood Glucose (mg/dL)", xlab="Pyruvate (min)", type="l", col='black')
+#add other lines
+lines(times, as.numeric(itt.summary.means[2,3:dim(itt.summary.se)[2]]), col='red')
+lines(times, as.numeric(itt.summary.means[3,3:dim(itt.summary.se)[2]]), col='black', lty=2)
+lines(times, as.numeric(itt.summary.means[4,3:dim(itt.summary.se)[2]]), col='red', lty=2)
+#add error bars
+superpose.eb <- function (x, y, ebl, ebu = ebl, length = 0.08, ...)
+arrows(x, y + ebu, x, y - ebl, angle = 90, code = 3,
+length = length, ...)
+
+#add error bars for water
+superpose.eb(times,
+             as.numeric(itt.summary.means[1,3:dim(itt.summary.means)[2]]),
+             as.numeric(itt.summary.se[1,3:dim(itt.summary.means)[2]]), col='black')
+#add error bars for dex
+superpose.eb(times,
+             as.numeric(itt.summary.means[2,3:dim(itt.summary.means)[2]]),
+             as.numeric(itt.summary.se[2,3:dim(itt.summary.means)[2]]), col='red')
+#add error bars for dex
+superpose.eb(times,
+             as.numeric(itt.summary.means[3,3:dim(itt.summary.means)[2]]),
+             as.numeric(itt.summary.se[3,3:dim(itt.summary.means)[2]]), col='black')
+#add error bars for dex
+superpose.eb(times,
+             as.numeric(itt.summary.means[4,3:dim(itt.summary.means)[2]]),
+             as.numeric(itt.summary.se[4,3:dim(itt.summary.means)[2]]), col='red')
+#add legend
+legend("topright",
+       paste(itt.summary.means$Treatment, itt.summary.means$Diet,sep=" - "),
+       col=c('red','black','red','black'), lty=c(1,1,2,2), bty='n')
+
+#normalized means and errors to 100%
+itt.summary.means.norm <- sweep(itt.summary.means[3:dim(itt.summary.means)[2]], 1, itt.summary.means$t0, "/")*100
+itt.summary.se.norm <- sweep(itt.summary.se[3:dim(itt.summary.se)[2]], 1, itt.summary.means$t0, "/")*100
+
+ymax <- max(itt.summary.means.norm[,3:dim(itt.summary.means.norm)[2]],na.rm=T) + max(itt.summary.se.norm[,3:dim(itt.summary.se.norm)[2]],na.rm=T)
+plot <- plot(times,
+     as.numeric(itt.summary.means.norm[1,1:dim(itt.summary.means.norm)[2]]),
+     las=1, ylim=c(0,ymax), ylab="Blood Glucose (% initial)", xlab="Pyruvate (min)", type="l", col='black')
+#add other lines
+lines(times, as.numeric(itt.summary.means.norm[2,1:dim(itt.summary.se.norm)[2]]), col='red')
+lines(times, as.numeric(itt.summary.means.norm[3,1:dim(itt.summary.se.norm)[2]]), col='black', lty=2)
+lines(times, as.numeric(itt.summary.means.norm[4,1:dim(itt.summary.se.norm)[2]]), col='red', lty=2)
+
+#add error bars for water
+superpose.eb(times,
+             as.numeric(itt.summary.means.norm[1,1:dim(itt.summary.means.norm)[2]]),
+             as.numeric(itt.summary.se.norm[1,1:dim(itt.summary.means.norm)[2]]), col='black')
+#add error bars for dex
+superpose.eb(times,
+             as.numeric(itt.summary.means.norm[2,1:dim(itt.summary.means.norm)[2]]),
+             as.numeric(itt.summary.se.norm[2,1:dim(itt.summary.means.norm)[2]]), col='red')
+#add error bars for dex
+superpose.eb(times,
+             as.numeric(itt.summary.means.norm[3,1:dim(itt.summary.means.norm)[2]]),
+             as.numeric(itt.summary.se.norm[3,1:dim(itt.summary.means.norm)[2]]), col='black')
+#add error bars for dex
+superpose.eb(times,
+             as.numeric(itt.summary.means.norm[4,1:dim(itt.summary.means.norm)[2]]),
+             as.numeric(itt.summary.se.norm[4,1:dim(itt.summary.means.norm)[2]]), col='red')
+# #add legend
+# legend("topright",
+#        paste(itt.summary.means$Treatment, itt.summary.means$Diet,sep=" - "),
+#        col=c('red','black','red','black'), lty=c(1,1,2,2), bty='n')
+
+```
+
+# Statistics
+
+
+```{r itt-statistics}
+library(tidyr)
+hpd.data <- droplevels(subset(itt.glucose, Treatment=="Water")) %>% 
+  select(animal.MouseID, t0, t15, t30, t45, t60, t75, t90, t105, t120, Diet) %>%
+  gather(time, glucose, -Diet, -animal.MouseID) 
+
+hpd.data.norm <- droplevels(subset(itt.glucose, Treatment=="Water")) %>% 
+  select(animal.MouseID, t0, t15, t30, t45, t60, t75, t90, t105, t120, Diet) %>%
+  mutate(
+         t15=t15/t0*100,
+         t30=t30/t0*100,
+         t45=t45/t0*100,
+         t60=t60/t0*100,
+         t75=t75/t0*100,
+         t90=t90/t0*100,
+         t105=t105/t0*100,
+         t120=t120/t0*100,
+         t0=100) %>%
+  gather(time, glucose, -Diet, -animal.MouseID)
+
+library(lme4)
+itt.lme <- lmer(glucose ~ time + Diet + time:Diet + (1|animal.MouseID), data=hpd.data, REML=F)
+itt.lme.null <- lmer(glucose ~ time + (1|animal.MouseID), data=hpd.data, REML=F)
+
+itt.lme.norm <- lmer(glucose ~ time + Diet + time:Diet + (1|animal.MouseID), data=hpd.data.norm, REML=F)
+itt.lme.norm.null <- lmer(glucose ~ time + (1|animal.MouseID), data=hpd.data.norm, REML=F)
+
+```
+
+We generated mixed linear models with random intercepts using time (as a factor) and the diet as a covariate.  First this was done for absolute glucose values.  A chi-squared test comparing these models had a p-value of `r anova(itt.lme, itt.lme.null)$"Pr(>Chisq)"[2]`.  For normalized glucose values, the p-value was `r anova(itt.lme.norm, itt.lme.norm.null)$"Pr(>Chisq)"[2]`. Pairwise Student's *t* tests are shown in the table below:
+
+```{r itt-t-tests}
+t.tests <- data.frame(row.names=levels(hpd.data$time))
+for (timepoint in levels(hpd.data$time)) {
+  t.tests[timepoint,'pval.abs'] <- t.test(glucose~Diet, data=subset(hpd.data, time==timepoint))$p.value
+  obj <- try(t.test(glucose~Diet, data=subset(hpd.data.norm, time==timepoint))$p.value, silent=T)
+  if (is(obj, "try-error")) {
+    t.tests[timepoint, 'pval.norm'] <- NA
+  }
+    else {
+    t.tests[timepoint, 'pval.norm'] <- obj
+}
+}
+
+t.tests$padj.abs <- p.adjust(t.tests$pval.abs, method="BH")
+t.tests$padj.norm <- p.adjust(t.tests$pval.norm, method="BH")
+kable(t.tests, caption="Pairwise t-tests for effects of diet at each point of the ITT, both for absolute and normalized values.")
+```
+
+## Session Information
+
+```{r session-info}
+sessionInfo()
+```
+

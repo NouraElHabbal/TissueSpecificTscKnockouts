@@ -12,7 +12,7 @@ output:
 ```{r setup, echo=FALSE, cache=FALSE}
 ## numbers >= 10^5 will be denoted in scientific notation,
 ## and rounded to 2 digits
-options(scipen = 1, digits = 22)
+options(scipen = 4, digits = 4)
 library(knitr)
 opts_chunk$set(fig.path='figures/',
                echo=FALSE, warning=FALSE, message=FALSE,dev=c('png','pdf'))
@@ -221,6 +221,53 @@ legend("topright",
 ```
 
 
+```{r itt-statistics}
+library(tidyr)
+hpd.data <- droplevels(subset(itt.glucose, Treatment=="Water")) %>% 
+  select(animal.MouseID, t0, t15, t30, t45, t60, t75, t90, t105, t120, Diet) %>%
+  gather(time, glucose, -Diet, -animal.MouseID) 
+
+hpd.data.norm <- droplevels(subset(itt.glucose, Treatment=="Water")) %>% 
+  select(animal.MouseID, t0, t15, t30, t45, t60, t75, t90, t105, t120, Diet) %>%
+  mutate(t0=t0/t0*100,
+         t15=t15/t0*100,
+         t30=t30/t0*100,
+         t45=t45/t0*100,
+         t60=t60/t0*100,
+         t75=t75/t0*100,
+         t90=t90/t0*100,
+         t105=t105/t0*100,
+         t120=t120/t0*100) %>%
+  gather(time, glucose, -Diet, -animal.MouseID)
+
+library(lme4)
+itt.lme <- lmer(glucose ~ time + Diet + time:Diet + (1|animal.MouseID), data=hpd.data, REML=F)
+itt.lme.null <- lmer(glucose ~ time + (1|animal.MouseID), data=hpd.data, REML=F)
+
+itt.lme.norm <- lmer(glucose ~ time + Diet + time:Diet + (1|animal.MouseID), data=hpd.data.norm, REML=F)
+itt.lme.norm.null <- lmer(glucose ~ time + (1|animal.MouseID), data=hpd.data.norm, REML=F)
+
+```
+
+We generated mixed linear models with random slopes and intercepts using time (as a factor) and the diet as a covariate.  First this was done for absolute glucose values.  A chi-squared test comparing these models had a p-value of `r anova(itt.lme, itt.lme.null)$"Pr(>Chisq)"[2]`.  For normalized glucose values, the p-value was `r anova(itt.lme.norm, itt.lme.norm.null)$"Pr(>Chisq)"[2]`. Pairwise Student's *t* tests are shown in the table below:
+
+```{r itt-t-tests}
+t.tests <- data.frame(row.names=levels(hpd.data$time))
+for (timepoint in levels(hpd.data$time)) {
+  t.tests[timepoint,'pval.abs'] <- t.test(glucose~Diet, data=subset(hpd.data, time==timepoint))$p.value
+  obj <- try(t.test(glucose~Diet, data=subset(hpd.data.norm, time==timepoint))$p.value, silent=T)
+  if (is(obj, "try-error")) {
+    t.tests[timepoint, 'pval.norm'] <- NA
+  }
+    else {
+    t.tests[timepoint, 'pval.norm'] <- obj
+}
+}
+
+t.tests$padj.abs <- p.adjust(t.tests$pval.abs, method="BH")
+t.tests$padj.norm <- p.adjust(t.tests$pval.norm, method="BH")
+kable(t.tests, caption="Pairwise t-tests for effects of diet at each point of the ITT, both for absolute and normalized values.")
+```
 
 ## Session Information
 

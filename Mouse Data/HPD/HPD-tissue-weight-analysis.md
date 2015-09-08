@@ -6,7 +6,7 @@ August 10, 2015
 
 
 
-This data uses the input file HPD fat pad weights.csv.  This script was most recently run on Mon Sep  7 10:41:27 2015.
+This data uses the input file HPD fat pad weights.csv.  This script was most recently run on Tue Sep  8 08:22:21 2015.
 
 # Adipose Tissue
 

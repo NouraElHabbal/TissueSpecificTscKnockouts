@@ -14,6 +14,7 @@ opts_chunk$set(fig.path='figures/',
 options(scipen=3,digits = 3)
 
 color.set <- c('#f77f00','#006a4d')
+default.color.set <- c('black','red')
 ```
 
 ```{r data-entry}
@@ -73,11 +74,12 @@ superpose.eb <- function (x, y, ebl, ebu = ebl, length = 0.08, ...)
 ymax <- max(ewat.summary$Average + ewat.summary$SE)
 plot <- barplot(cbind(iWAT=iwat.summary$Average, eWAT=ewat.summary$Average),
                 beside=T, las=1, ylab="Fat Pad Mass (mg)",
+                col=default.color.set,
                 ylim=c(0,ymax))
 superpose.eb(plot,
              cbind(iWAT=iwat.summary$Average, eWAT=ewat.summary$Average),
              cbind(iWAT=iwat.summary$SE, eWAT=ewat.summary$SE))
-legend('topleft', levels(data$Diet), fill=grey.colors(2), bty="n")
+legend('topleft', levels(data$Diet), fill=default.color.set, bty="n")
 ```
 
 ```{r hpd-adipose-weights-uthsc}
@@ -151,6 +153,7 @@ plot <- barplot(cbind(Quadriceps=quad.summary$Average,
                       `Triceps surae`=ts.summary$Average,
                       Heart = heart.summary$Average),
                 beside=T, las=1, ylab=" Muscle Weight (mg)",
+                col=default.color.set,
                 ylim=c(0,ymax))
 superpose.eb(plot,
              cbind(Quadriceps=quad.summary$Average,
@@ -159,7 +162,7 @@ superpose.eb(plot,
              cbind(Quadriceps=quad.summary$SE,
                       `Triceps surae`=ts.summary$SE,
                       Heart = heart.summary$SE))
-legend('topright', levels(data$Diet), fill=grey.colors(2), bty="n")
+legend('topright', levels(data$Diet), fill=default.color.set, bty="n")
 ```
 
 ```{r hpd-muscle-weights-uthsc}

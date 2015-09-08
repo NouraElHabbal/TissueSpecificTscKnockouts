@@ -3,10 +3,10 @@ title: "Weight Analysis of Dexamethasone Treated C57BL/6J Mice on a High Protein
 author: "Innocence Harvey and Dave Bridges"
 date: "February 15, 2015"
 output:
-  pdf_document:
-    keep_tex: yes
   html_document:
     keep_md: yes
+  pdf_document:
+    keep_tex: yes
 ---
 
 ```{r global_options, include=FALSE}

@@ -8,3 +8,12 @@ This document indicates where the raw data for each Figure panel can be found, a
 | Figure 1A | HPD/body-weight-analysis.Rmd  |  HPD/figures/weights-scatterplot-2.pdf  |
 | Figure 1B | HPD/body-weight-analysis.Rmd  |  HPD/figures/lean-mass-scatterplot-2.pdf  |
 | Figure 1C | HPD/body-weight-analysis.Rmd  |  HPD/figures/fat-mass-scatterplot-2.pdf  |
+| Figure 1D | HPD/HPD-tissue-weight-analysis.Rmd |HPD/figures/hpd-adipose-weights-1.pdf |
+| Figure 1E | HPD/HPD-food-intake-analysis.Rmd |HPD/figures/hpd-food-intake-kcal-1.pdf |
+| Figure 1F | HPD/HPD-food-intake-analysis.Rmd |HPD/figures/hpd-food-intake-kcal-cumulative-1.pdf |
+
+
+
+
+
+| Supplementary Figure 1A | HPD/HPD-tissue-weight-analysis.Rmd |HPD/figures/hpd-muscle-weights-1.pdf |

@@ -229,7 +229,7 @@ hpd.data <- droplevels(subset(itt.glucose, Treatment=="Water")) %>%
 
 hpd.data.norm <- droplevels(subset(itt.glucose, Treatment=="Water")) %>% 
   select(animal.MouseID, t0, t15, t30, t45, t60, t75, t90, t105, t120, Diet) %>%
-  mutate(t0=t0/t0*100,
+  mutate(
          t15=t15/t0*100,
          t30=t30/t0*100,
          t45=t45/t0*100,
@@ -237,7 +237,8 @@ hpd.data.norm <- droplevels(subset(itt.glucose, Treatment=="Water")) %>%
          t75=t75/t0*100,
          t90=t90/t0*100,
          t105=t105/t0*100,
-         t120=t120/t0*100) %>%
+         t120=t120/t0*100,
+         t0=100) %>%
   gather(time, glucose, -Diet, -animal.MouseID)
 
 library(lme4)

@@ -17,7 +17,7 @@ April 20, 2015
 
 
 
-We generated mixed linear models with random slopes and intercepts using time (as a factor) and the diet as a covariate.  First this was done for absolute glucose values.  A chi-squared test comparing these models had a p-value of 0.0753.  For normalized glucose values, the p-value was 0.1176. Pairwise Student's *t* tests are shown in the table below:
+We generated mixed linear models with random slopes and intercepts using time (as a factor) and the diet as a covariate.  First this was done for absolute glucose values.  A chi-squared test comparing these models had a p-value of 0.0753.  For normalized glucose values, the p-value was 0.2086. Pairwise Student's *t* tests are shown in the table below:
 
 
 Table: Pairwise t-tests for effects of diet at each point of the ITT, both for absolute and normalized values.
@@ -25,14 +25,14 @@ Table: Pairwise t-tests for effects of diet at each point of the ITT, both for a
         pval.abs   pval.norm   padj.abs   padj.norm
 -----  ---------  ----------  ---------  ----------
 t0        0.0126          NA     0.1138          NA
-t15       0.2415      0.2415     0.5166      0.5740
-t30       0.2069      0.2069     0.5166      0.5740
-t45       0.1328      0.1328     0.5166      0.5740
-t60       0.5039      0.5039     0.6479      0.6719
-t75       0.9141      0.9141     0.9141      0.9141
-t90       0.2870      0.2870     0.5166      0.5740
-t105      0.9087      0.9087     0.9141      0.9141
-t120      0.4330      0.4330     0.6479      0.6719
+t15       0.2415      0.6544     0.5166      0.6544
+t30       0.2069      0.4646     0.5166      0.6236
+t45       0.1328      0.5868     0.5166      0.6544
+t60       0.5039      0.3865     0.6479      0.6236
+t75       0.9141      0.2984     0.9141      0.6236
+t90       0.2870      0.4677     0.5166      0.6236
+t105      0.9087      0.1585     0.9141      0.6236
+t120      0.4330      0.1296     0.6479      0.6236
 
 ## Session Information
 

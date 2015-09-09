@@ -1,0 +1,319 @@
+---
+title: "mTORC1 Signaling in HPD Quadriceps"
+author: "Dave Bridges"
+date: "June 26, 2015"
+output:
+  html_document:
+    keep_md: yes
+---
+
+
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.path='figures/',
+               echo=FALSE, warning=FALSE, message=FALSE,dev=c('png','pdf'))
+
+options(scipen=8, digits=3)
+```
+
+# S6K Phosphorylation
+
+```{r s6k-analysis,  fig.cap="Normalized mTORC1 Activity in Quadriceps"}
+datafile <- 'HPD Quadriceps Blot Quantification.csv'
+library(readr)
+data <- read_csv(file=datafile)
+
+s6k.data <- subset(data, `Image Name`=='S6K')
+#select band 1 for phospho
+p.s6k.data <- s6k.data[s6k.data$Channel==700,]
+p.s6k.data$Protein <- rep("pS6K", dim(p.s6k.data)[1])
+
+p.s6k.data$Treatment <- c(rep("Fasted",8), rep("Fed",2))
+p.s6k.data$Diet <- c(rep("CD", 4), rep("HPD",4), rep("CD",2))
+p.s6k.data$Lane <- as.factor(seq(1,10))
+
+t.s6k.data <- s6k.data[s6k.data$Channel==800,]
+t.s6k.data$Protein <- rep("S6K", dim(t.s6k.data)[1])
+t.s6k.data$Diet <- c(rep("CD", 4), rep("HPD",4), rep("CD",2))
+t.s6k.data$Treatment <- c(rep("Fasted",8), rep("Fed",2))
+t.s6k.data$Lane <- as.factor(seq(1,10))
+
+library(dplyr)
+library(tidyr)
+s6k.summary.lane <- 
+  rbind(p.s6k.data,t.s6k.data) %>%
+  mutate(Intensity = Signal) %>%
+  spread(Protein, Intensity) %>%
+  group_by(Treatment,Diet,Lane) %>%
+  summarize(pS6K = mean(pS6K, na.rm=T),
+            S6K = mean(S6K, na.rm=T)) %>%
+  mutate(Ratio=pS6K/S6K)
+s6k.summary.lane$Norm.Ratio <- s6k.summary.lane$Ratio/mean(s6k.summary.lane$Ratio[1:4])
+
+
+#remove outlier lane
+#s6k.summary.lane <- subset(s6k.summary.lane,!( `Lane Name` %in% c("Lane 2","Lane 8")))
+kable(s6k.summary.lane, caption="Lane Summary for S6K", digits=2)
+
+s6k.summary <-
+  s6k.summary.lane %>%
+  group_by(Treatment, Diet) %>%
+  summarize(Average = mean(Norm.Ratio),
+            SE = sd(Norm.Ratio)/sqrt(length(Norm.Ratio)),
+            SD = sd(Norm.Ratio),
+            n = length(Norm.Ratio))
+
+kable(s6k.summary, caption="Summarized Normalized Ratios for S6K", digits=2)
+s6k.plot <-
+  s6k.summary %>%
+  select(Diet,Treatment,Average) %>%
+  spread(Treatment, Average)
+s6k.plot.se <-
+  s6k.summary %>%
+  select(Diet,Treatment,SE) %>%
+  spread(Treatment, SE)
+
+ymax <- max(s6k.summary$Average + s6k.summary$SE)
+plot <- barplot(as.matrix(s6k.plot[2:3]), beside=T, las=1,
+        ylab="pS6K/S6K", ylim=c(0,ymax))
+
+superpose.eb <- function (x, y, ebl, ebu = ebl, length = 0.08, ...)
+  arrows(x, y + ebu, x, y - ebl, angle = 90, code = 3,
+  length = length, ...)
+
+superpose.eb(plot,
+             as.matrix(s6k.plot[2:3]),
+             as.matrix(s6k.plot.se[2:3]))
+```
+
+## S6K Statistics
+
+```{r s6k-statistics}
+s6k.aov <- aov(Norm.Ratio~Treatment+Diet, data=s6k.summary.lane)
+#kable(summary(s6k.aov)[[1]], caption="Two Way ANOVA for Effects of Diet and Treatment on Normalized pS6K Ratio", digits=3)
+library(car)
+```
+
+Ignoring the fed mice, within the fasted mice, the data was normally distributed (Shapiro-Wilk test `r with(s6k.summary.lane, shapiro.test(s6k.summary.lane[Diet=="CD"&Treatment=="Fasted",]$Norm.Ratio))$p.value` for CD and `r with(s6k.summary.lane, shapiro.test(s6k.summary.lane[Diet=="HPD"&Treatment=="Fasted",]$Norm.Ratio))$p.value` for HPD), and equal variance could be assumed (Levene's test `r leveneTest(Norm.Ratio~Diet, subset(s6k.summary.lane, Treatment=="Fasted"))$"Pr(>F)"[1]`).  Based on this a Student's *t* test had a p-value of `r t.test(Norm.Ratio~Diet, subset(s6k.summary.lane, Treatment=="Fasted"), var.equal=T)$p.value`.
+
+# Akt Phosphorylation
+
+```{r akt-analysis,  fig.cap="Normalized Akt Activity in Quadriceps"}
+
+Akt.data <- subset(data, `Image Name`=='Akt')
+#select band 1 for phospho
+p.Akt.data <- Akt.data[Akt.data$Channel==700,]
+p.Akt.data$Protein <- rep("pAkt", dim(p.Akt.data)[1])
+
+p.Akt.data$Treatment <- c(rep("Fasted",8), rep("Fed",2))
+p.Akt.data$Diet <- c(rep("CD", 4), rep("HPD",4), rep("CD",2))
+p.Akt.data$Lane <- as.factor(seq(1,10))
+
+t.Akt.data <- Akt.data[Akt.data$Channel==800,]
+t.Akt.data$Protein <- rep("Akt", dim(t.Akt.data)[1])
+t.Akt.data$Diet <- c(rep("CD", 4), rep("HPD",4), rep("CD",2))
+t.Akt.data$Treatment <- c(rep("Fasted",8), rep("Fed",2))
+t.Akt.data$Lane <- as.factor(seq(1,10))
+
+Akt.summary.lane <- 
+  rbind(p.Akt.data,t.Akt.data) %>%
+  mutate(Intensity = Signal) %>%
+  spread(Protein, Intensity) %>%
+  group_by(Treatment,Diet,Lane) %>%
+  summarize(pAkt = mean(pAkt, na.rm=T),
+            Akt = mean(Akt, na.rm=T)) %>%
+  mutate(Ratio=pAkt/Akt)
+Akt.summary.lane$Norm.Ratio <- Akt.summary.lane$Ratio/mean(Akt.summary.lane$Ratio[1:4])
+
+
+#remove outlier lane
+#Akt.summary.lane <- subset(Akt.summary.lane,!( `Lane Name` %in% c("Lane 2","Lane 8")))
+kable(Akt.summary.lane, caption="Lane Summary for Akt", digits=2)
+
+Akt.summary <-
+  Akt.summary.lane %>%
+  group_by(Treatment, Diet) %>%
+  summarize(Average = mean(Norm.Ratio),
+            SE = sd(Norm.Ratio)/sqrt(length(Norm.Ratio)),
+            SD = sd(Norm.Ratio),
+            n = length(Norm.Ratio))
+
+kable(Akt.summary, caption="Summarized Normalized Ratios for Akt", digits=2)
+Akt.plot <-
+  Akt.summary %>%
+  select(Diet,Treatment,Average) %>%
+  spread(Treatment, Average)
+Akt.plot.se <-
+  Akt.summary %>%
+  select(Diet,Treatment,SE) %>%
+  spread(Treatment, SE)
+
+ymax <- max(Akt.summary$Average + Akt.summary$SE)
+plot <- barplot(as.matrix(Akt.plot[2:3]), beside=T, las=1,
+        ylab="pAkt/Akt", ylim=c(0,ymax))
+
+superpose.eb <- function (x, y, ebl, ebu = ebl, length = 0.08, ...)
+  arrows(x, y + ebu, x, y - ebl, angle = 90, code = 3,
+  length = length, ...)
+
+superpose.eb(plot,
+             as.matrix(Akt.plot[2:3]),
+             as.matrix(Akt.plot.se[2:3]))
+```
+
+## Akt Statistics
+
+```{r Akt-statistics}
+Akt.aov <- aov(Norm.Ratio~Treatment+Diet, data=Akt.summary.lane)
+#kable(summary(Akt.aov)[[1]], caption="Two Way ANOVA for Effects of Diet and Treatment on Normalized pAkt Ratio", digits=3)
+library(car)
+```
+
+Ignoring the fed mice, within the fasted mice, the data was normally distributed (Shapiro-Wilk test `r with(Akt.summary.lane, shapiro.test(Akt.summary.lane[Diet=="CD"&Treatment=="Fasted",]$Norm.Ratio))$p.value` for CD and `r with(Akt.summary.lane, shapiro.test(Akt.summary.lane[Diet=="HPD"&Treatment=="Fasted",]$Norm.Ratio))$p.value` for HPD), and equal variance could be assumed (Levene's test `r leveneTest(Norm.Ratio~Diet, subset(Akt.summary.lane, Treatment=="Fasted"))$"Pr(>F)"[1]`).  Based on this a Student's *t* test had a p-value of `r t.test(Norm.Ratio~Diet, subset(Akt.summary.lane, Treatment=="Fasted"), var.equal=T)$p.value`.
+
+```{r tsc-analysis,  fig.cap="Normalized TSC Phosphorylation in Quadriceps"}
+
+tsc.data <- subset(data, `Image Name`=='TSC')
+#select band 1 for phospho
+p.tsc.data <- tsc.data[tsc.data$Channel==800,]
+p.tsc.data$Protein <- rep("ptsc", dim(p.tsc.data)[1])
+
+p.tsc.data$Treatment <- c(rep("Fasted",8), rep("Fed",2))
+p.tsc.data$Diet <- c(rep("CD", 4), rep("HPD",4), rep("CD",2))
+p.tsc.data$Lane <- as.factor(seq(1,10))
+
+t.tsc.data <- tsc.data[tsc.data$Channel==700,]
+t.tsc.data$Protein <- rep("tsc", dim(t.tsc.data)[1])
+t.tsc.data$Diet <- c(rep("CD", 4), rep("HPD",4), rep("CD",2))
+t.tsc.data$Treatment <- c(rep("Fasted",8), rep("Fed",2))
+t.tsc.data$Lane <- as.factor(seq(1,10))
+
+tsc.summary.lane <- 
+  rbind(p.tsc.data,t.tsc.data) %>%
+  mutate(Intensity = Signal) %>%
+  spread(Protein, Intensity) %>%
+  group_by(Treatment,Diet,Lane) %>%
+  summarize(ptsc = mean(ptsc, na.rm=T),
+            tsc = mean(tsc, na.rm=T)) %>%
+  mutate(Ratio=ptsc/tsc)
+tsc.summary.lane$Norm.Ratio <- tsc.summary.lane$Ratio/mean(tsc.summary.lane$Ratio[1:4])
+
+
+#remove outlier lane
+#tsc.summary.lane <- subset(tsc.summary.lane,!( `Lane Name` %in% c("Lane 2","Lane 8")))
+kable(tsc.summary.lane, caption="Lane Summary for TSC", digits=2)
+
+tsc.summary <-
+  tsc.summary.lane %>%
+  group_by(Treatment, Diet) %>%
+  summarize(Average = mean(Norm.Ratio),
+            SE = sd(Norm.Ratio)/sqrt(length(Norm.Ratio)),
+            SD = sd(Norm.Ratio),
+            n = length(Norm.Ratio))
+
+kable(tsc.summary, caption="Summarized Normalized Ratios for TSC2", digits=2)
+tsc.plot <-
+  tsc.summary %>%
+  select(Diet,Treatment,Average) %>%
+  spread(Treatment, Average)
+tsc.plot.se <-
+  tsc.summary %>%
+  select(Diet,Treatment,SE) %>%
+  spread(Treatment, SE)
+
+ymax <- max(tsc.summary$Average + tsc.summary$SE)
+plot <- barplot(as.matrix(tsc.plot[2:3]), beside=T, las=1,
+        ylab="pTSC2/TSC2", ylim=c(0,ymax))
+
+superpose.eb <- function (x, y, ebl, ebu = ebl, length = 0.08, ...)
+  arrows(x, y + ebu, x, y - ebl, angle = 90, code = 3,
+  length = length, ...)
+
+superpose.eb(plot,
+             as.matrix(tsc.plot[2:3]),
+             as.matrix(tsc.plot.se[2:3]))
+```
+
+## TSC Statistics
+
+```{r tsc-statistics}
+tsc.aov <- aov(Norm.Ratio~Treatment+Diet, data=tsc.summary.lane)
+#kable(summary(tsc.aov)[[1]], caption="Two Way ANOVA for Effects of Diet and Treatment on Normalized pTSC Ratio", digits=3)
+library(car)
+```
+
+Ignoring the fed mice, within the fasted mice, the data was normally distributed (Shapiro-Wilk test `r with(tsc.summary.lane, shapiro.test(tsc.summary.lane[Diet=="CD"&Treatment=="Fasted",]$Norm.Ratio))$p.value` for CD and `r with(tsc.summary.lane, shapiro.test(tsc.summary.lane[Diet=="HPD"&Treatment=="Fasted",]$Norm.Ratio))$p.value` for HPD), and equal variance could be assumed (Levene's test `r leveneTest(Norm.Ratio~Diet, subset(tsc.summary.lane, Treatment=="Fasted"))$"Pr(>F)"[1]`).  Based on this a Student's *t* test had a p-value of `r t.test(Norm.Ratio~Diet, subset(tsc.summary.lane, Treatment=="Fasted"), var.equal=T)$p.value`.
+
+```{r s6-analysis,  fig.cap="Normalized S6 Phosphorylation in Quadriceps"}
+
+s6.data <- subset(data, `Image Name`=='S6')
+#select band 1 for phospho
+p.s6.data <- s6.data[s6.data$Channel==700,]
+p.s6.data$Protein <- rep("ps6", dim(p.s6.data)[1])
+
+p.s6.data$Treatment <- c(rep("Fasted",8), rep("Fed",2))
+p.s6.data$Diet <- c(rep("CD", 4), rep("HPD",4), rep("CD",2))
+p.s6.data$Lane <- as.factor(seq(1,10))
+
+t.s6.data <- s6.data[s6.data$Channel==800,]
+t.s6.data$Protein <- rep("s6", dim(t.s6.data)[1])
+t.s6.data$Diet <- c(rep("CD", 4), rep("HPD",4), rep("CD",2))
+t.s6.data$Treatment <- c(rep("Fasted",8), rep("Fed",2))
+t.s6.data$Lane <- as.factor(seq(1,10))
+
+s6.summary.lane <- 
+  rbind(p.s6.data,t.s6.data) %>%
+  mutate(Intensity = Signal) %>%
+  spread(Protein, Intensity) %>%
+  group_by(Treatment,Diet,Lane) %>%
+  summarize(ps6 = mean(ps6, na.rm=T),
+            s6 = mean(s6, na.rm=T)) %>%
+  mutate(Ratio=ps6/s6)
+s6.summary.lane$Norm.Ratio <- s6.summary.lane$Ratio/mean(s6.summary.lane$Ratio[1:4])
+
+
+#remove outlier lane
+#s6.summary.lane <- subset(s6.summary.lane,!( `Lane Name` %in% c("Lane 2","Lane 8")))
+kable(s6.summary.lane, caption="Lane Summary for S6", digits=2)
+
+s6.summary <-
+  s6.summary.lane %>%
+  group_by(Treatment, Diet) %>%
+  summarize(Average = mean(Norm.Ratio),
+            SE = sd(Norm.Ratio)/sqrt(length(Norm.Ratio)),
+            SD = sd(Norm.Ratio),
+            n = length(Norm.Ratio))
+
+kable(s6.summary, caption="Summarized Normalized Ratios for S6", digits=2)
+s6.plot <-
+  s6.summary %>%
+  select(Diet,Treatment,Average) %>%
+  spread(Treatment, Average)
+s6.plot.se <-
+  s6.summary %>%
+  select(Diet,Treatment,SE) %>%
+  spread(Treatment, SE)
+
+ymax <- max(s6.summary$Average + s6.summary$SE)
+plot <- barplot(as.matrix(s6.plot[2:3]), beside=T, las=1,
+        ylab="pS6/S6", ylim=c(0,ymax))
+
+superpose.eb(plot,
+             as.matrix(s6.plot[2:3]),
+             as.matrix(s6.plot.se[2:3]))
+```
+
+## S6 Statistics
+
+```{r s6-statistics}
+s6.aov <- aov(Norm.Ratio~Treatment+Diet, data=s6.summary.lane)
+#kable(summary(s6.aov)[[1]], caption="Two Way ANOVA for Effects of Diet and Treatment on Normalized pS6 Ratio", digits=3)
+library(car)
+```
+
+Ignoring the fed mice, within the fasted mice, the data was normally distributed (Shapiro-Wilk test `r with(s6.summary.lane, shapiro.test(s6.summary.lane[Diet=="CD"&Treatment=="Fasted",]$Norm.Ratio))$p.value` for CD and `r with(s6.summary.lane, shapiro.test(s6.summary.lane[Diet=="HPD"&Treatment=="Fasted",]$Norm.Ratio))$p.value` for HPD), and equal variance could be assumed (Levene's test `r leveneTest(Norm.Ratio~Diet, subset(s6.summary.lane, Treatment=="Fasted"))$"Pr(>F)"[1]`).  Based on this a Student's *t* test had a p-value of `r t.test(Norm.Ratio~Diet, subset(s6.summary.lane, Treatment=="Fasted"), var.equal=T)$p.value`.
+
+# Session Information
+```{r sessionInfo, results='asis'}
+sessionInfo()
+```

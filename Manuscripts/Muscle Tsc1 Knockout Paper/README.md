@@ -11,6 +11,11 @@ This document indicates where the raw data for each Figure panel can be found, a
 | Figure 1D | HPD/HPD-tissue-weight-analysis.Rmd |HPD/figures/hpd-adipose-weights-1.pdf |
 | Figure 1E | HPD/HPD-food-intake-analysis.Rmd |HPD/figures/hpd-food-intake-kcal-1.pdf |
 | Figure 1F | HPD/HPD-food-intake-analysis.Rmd |HPD/figures/hpd-food-intake-kcal-cumulative-1.pdf |
+| Figure 2C | NA | HPD Quadriceps Blot Summary.png |
+| Figure 2D | HPD/quadriceps-western-quantification.Rmd | HPD/figures/s6k-analysis-1.pdf |
+| Figure 2D | HPD/quadriceps-western-quantification.Rmd | HPD/figures/akt-analysis-1.pdf |
 | Supplementary Figure 1A | HPD/HPD-tissue-weight-analysis.Rmd |HPD/figures/hpd-muscle-weights-1.pdf |
 | Supplementary Figure 1A | HPD/itt-analysis.Rmd |HPD/figures/hpd-itt-1.pdf |
-| Supplementary Figure 1A | HPD/itt-analysis.Rmd |HPD/figures/hpd-itt-norm-1.pdf |
+| Supplementary Figure 1B | HPD/itt-analysis.Rmd |HPD/figures/hpd-itt-norm-1.pdf |
+| Supplementary Figure 1B | HPD/ptt-analysis.Rmd |HPD/figures/hpd-itt-norm-1.pdf |
+| Supplementary Figure 1B | HPD/ptt-analysis.Rmd |HPD/figures/hpd-itt-norm-1.pdf |

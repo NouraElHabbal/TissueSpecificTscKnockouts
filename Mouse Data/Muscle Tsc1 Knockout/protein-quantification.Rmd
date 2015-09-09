@@ -1,0 +1,91 @@
+---
+title: "Quantification of Blots from McK-TSC1 Knockout Mice Quadriceps"
+author: "Dave Bridges"
+date: "June 6, 2013"
+output:
+  html_document:
+    keep_md: yes
+---
+
+```{r setup, echo=FALSE, cache=FALSE}
+## numbers >= 10^5 will be denoted in scientific notation,
+## and rounded to 2 digits
+options(scipen = 4, digits = 4)
+library(knitr)
+opts_chunk$set(fig.path='figures/',
+               echo=FALSE, warning=FALSE, message=FALSE,dev=c('png','pdf'))
+```
+
+# Experimental Details
+Sacrificed mice after a 16h fast.  Mice were 69-203 days old. Lysed cells using the Qiagen Tissue Lyser in HNTG buffer (has 1\% Triton X-100).  Blots quantified by ImageJ.
+
+```{r data-entry}
+data_file <- "quantification_data.csv" 
+data <- read.csv(data_file)
+data$pGS.Ratio <- data$pGS/data$GS
+data$GS.PD.Ratio <- data$GS.PD/data$GS
+```
+
+# Statistics
+
+## Effects on GS phosphorylation
+
+A Shapiro-wilk test on the pGS ratio had a p-value of `r min(shapiro.test(subset(data, Genotype=='fl/fl; +/+')$pGS.Ratio)$p.value, shapiro.test(subset(data, Genotype=='fl/fl; Tg/+')$pGS.Ratio)$p.value)`, indicating a non-normal distribution for one of the groups.  Beacause of this we did a Wilcoxon-Rank Sum test, which had a p-value of `r wilcox.test(pGS.Ratio ~ Genotype, data=data)$p.value`.
+
+```{r data-summary}
+require(plyr)
+summary <- ddply(
+              subset(data, Genotype!="fl/+; Tg/+"),
+              ~Genotype, summarise, 
+              pGS.mean=mean(pGS.Ratio, na.rm=T),
+              GS.PD.mean=mean(GS.PD.Ratio, na.rm=T),
+              pGS.se=sd(pGS.Ratio, na.rm=T)/sqrt(length(pGS.Ratio)),
+              GS.PD.se=sd(GS.PD.Ratio, na.rm=T)/sqrt(length(GS.PD.Ratio))
+              )
+summary.normalized <- as.matrix(with(summary, 
+                           cbind(pGS.mean/pGS.mean[1],
+                                 GS.PD.mean/GS.PD.mean[1],
+                                 pGS.se/pGS.mean[1],
+                                 GS.PD.se/GS.PD.mean[1])))
+rownames(summary.normalized) <- summary$Genotype
+colnames(summary.normalized) <- colnames(summary)[2:5]                           
+```
+
+#Summary
+
+```{R data-tables}
+kable(data, caption = "Raw and Calculated Data", label = "tab:one")
+kable(summary.normalized, caption = "Summarized Data", label = "tab:two")
+```
+
+```{r quadriceps-pGS-ratio}
+colors <- c(grey.colors(2)[2], grey.colors(2)[1])
+plot <- barplot(summary.normalized[1:2],
+        ylab="pGS/GS Ratio (Relative Units)",
+        names.arg = summary$Genotype,
+        col=colors,
+        ylim = c(0,max(summary.normalized[1:2]+summary.normalized[1:2,3])))
+superpose.eb <- function (x, y, ebl, ebu = ebl, length = 0.08, ...)
+  arrows(x, y + ebu, x, y - ebl, angle = 90, code = 3,
+  length = length, ...)
+superpose.eb(plot, summary.normalized[1:2], summary.normalized[1:2,3])
+legend("topright", c("Wild-Type", "Knockout"), fill=colors, bty="n")
+```
+
+```{r quadriceps-GS-PullDown}
+plot <- barplot(summary.normalized[1:2,2],
+        ylab="GS Ratio (Pull-Down/Total)",
+        names.arg = summary$Genotype,
+        col=colors,
+        ylim = c(0,max(summary.normalized[1:2]+summary.normalized[1:2,4])))
+superpose.eb <- function (x, y, ebl, ebu = ebl, length = 0.08, ...)
+  arrows(x, y + ebu, x, y - ebl, angle = 90, code = 3,
+  length = length, ...)
+superpose.eb(plot, summary.normalized[1:2,2], summary.normalized[1:2,4])
+legend("topright", c("Wild-Type", "Knockout"), fill=colors, bty="n")
+```
+
+# Session Information
+```{r session-info}
+sessionInfo()
+```

@@ -20,17 +20,13 @@ opts_chunk$set(fig.path='figures/',
 Sacrificed mice after a 16h fast.  Mice were 69-203 days old. Lysed cells using the Qiagen Tissue Lyser in HNTG buffer (has 1\% Triton X-100).  Blots quantified by ImageJ.
 
 ```{r data-entry}
-data_file <- "quantification_data.csv" 
+data_file <- "Quadriceps Quantification Data.csv" 
 data <- read.csv(data_file)
 data$pGS.Ratio <- data$pGS/data$GS
 data$GS.PD.Ratio <- data$GS.PD/data$GS
 ```
 
 # Statistics
-
-## Effects on GS phosphorylation
-
-A Shapiro-wilk test on the pGS ratio had a p-value of `r min(shapiro.test(subset(data, Genotype=='fl/fl; +/+')$pGS.Ratio)$p.value, shapiro.test(subset(data, Genotype=='fl/fl; Tg/+')$pGS.Ratio)$p.value)`, indicating a non-normal distribution for one of the groups.  Beacause of this we did a Wilcoxon-Rank Sum test, which had a p-value of `r wilcox.test(pGS.Ratio ~ Genotype, data=data)$p.value`.
 
 ```{r data-summary}
 require(plyr)
@@ -40,23 +36,24 @@ summary <- ddply(
               pGS.mean=mean(pGS.Ratio, na.rm=T),
               GS.PD.mean=mean(GS.PD.Ratio, na.rm=T),
               pGS.se=sd(pGS.Ratio, na.rm=T)/sqrt(length(pGS.Ratio)),
-              GS.PD.se=sd(GS.PD.Ratio, na.rm=T)/sqrt(length(GS.PD.Ratio))
+              GS.PD.se=sd(GS.PD.Ratio, na.rm=T)/sqrt(length(GS.PD.Ratio)),
+              SREBP.mean = mean(SREBP1c, na.rm=T),
+              SREBP.se = sd(SREBP1c, na.rm=T)/sqrt(length(SREBP1c))
               )
 summary.normalized <- as.matrix(with(summary, 
                            cbind(pGS.mean/pGS.mean[1],
                                  GS.PD.mean/GS.PD.mean[1],
                                  pGS.se/pGS.mean[1],
-                                 GS.PD.se/GS.PD.mean[1])))
+                                 GS.PD.se/GS.PD.mean[1],
+                                 SREBP.mean/SREBP.mean[1],
+                                 SREBP.se/SREBP.mean[1])))
 rownames(summary.normalized) <- summary$Genotype
-colnames(summary.normalized) <- colnames(summary)[2:5]                           
+colnames(summary.normalized) <- colnames(summary)[2:7]                           
 ```
 
-#Summary
+## Effects on GS phosphorylation
 
-```{R data-tables}
-kable(data, caption = "Raw and Calculated Data", label = "tab:one")
-kable(summary.normalized, caption = "Summarized Data", label = "tab:two")
-```
+A Shapiro-wilk test on the pGS ratio had a p-value of `r min(shapiro.test(subset(data, Genotype=='fl/fl; +/+')$pGS.Ratio)$p.value, shapiro.test(subset(data, Genotype=='fl/fl; Tg/+')$pGS.Ratio)$p.value)`, indicating a non-normal distribution for one of the groups.  Beacause of this we did a Wilcoxon-Rank Sum test, which had a p-value of `r wilcox.test(pGS.Ratio ~ Genotype, data=data)$p.value`.
 
 ```{r quadriceps-pGS-ratio}
 colors <- c(grey.colors(2)[2], grey.colors(2)[1])
@@ -83,7 +80,32 @@ superpose.eb <- function (x, y, ebl, ebu = ebl, length = 0.08, ...)
   length = length, ...)
 superpose.eb(plot, summary.normalized[1:2,2], summary.normalized[1:2,4])
 legend("topright", c("Wild-Type", "Knockout"), fill=colors, bty="n")
+
+library(car)
 ```
+
+## Effects on pSREBP1c levels
+
+A Shapiro-wilk test on the processed SREBP1 levels had a p-value of `r min(shapiro.test(subset(data, Genotype=='fl/fl; +/+')$SREBP1c)$p.value, shapiro.test(subset(data, Genotype=='fl/fl; Tg/+')$SREBP1c)$p.value)`, indicating a normal distribution for one of the groups.  We then tested equal variance via Levene's test (p=`r leveneTest(SREBP1c~Genotype, data=data)$"Pr(>F)"[1]`).  Based on this, a Student's *t* test was done (p-value of `r t.test(SREBP1c ~ Genotype, var.equal=T, data=data)$p.value`).
+
+```{r quadriceps-SREBP-levels}
+colors <- c(grey.colors(2)[2], grey.colors(2)[1])
+plot <- barplot(summary.normalized[9:10],
+        ylab="processed SREBP1 (Relative Units)",
+        names.arg = summary$Genotype,
+        col=colors,
+        ylim = c(0,max(summary.normalized[9:10]+summary.normalized[11:12])))
+
+superpose.eb(plot, summary.normalized[9:10], summary.normalized[11:12])
+legend("topleft", c("Wild-Type", "Knockout"), fill=colors, bty="n")
+```
+
+
+```{R data-tables}
+kable(data, caption = "Raw and Calculated Data", label = "tab:one")
+kable(summary.normalized, caption = "Summarized Data", label = "tab:two")
+```
+
 
 # Session Information
 ```{r session-info}

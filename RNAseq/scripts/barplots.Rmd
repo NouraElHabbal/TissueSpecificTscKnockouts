@@ -77,7 +77,7 @@ srebp <- c('Srebf1','Srebf2','Fasn','Acaca1','Hmgcr','Ldlr','Gpam')
 linoleate_metabolism <- c('Pla2g2f','Akr1b10','Pla2g4a','Pla2g10','Pla2g12a','Pla2g12b','Pla2g2e','Cyp2e1','Pla2g4e','Pla2g6','Pla2g5','Alox15','Pla2g2d','Pla2g2c','Pla2g3')
 tg_synthesis <- c('Dgat1','Dgat2','Lpin1','Lpin2','Lpin3','Agpat1','Agpat2','Agpat3','Gpam','Gpat1','Gpat2','Gpat3','Gpat4','Fasn','Acaca1')
 
-myokines <- c('Igf1','Il4','Il6','Il7','Il8','Il15','Fndc5','Fgf2','Fgf21','Serpine1','Bdnf','Lif','Fam132b','Angptl4','Fst','Fstl1','Cxcl1','Ccl2','Mstn','Gdf11','Serpinf1','Vegfa','Vegfb','Metrnl')
+myokines <- c('Igf1','Il4','Il6','Il7','Il8','Il15','Fndc5','Fgf2','Fgf21','Serpine1','Bdnf','Lif','Fam132b','Angptl4','Fst','Fstl1','Cxcl1','Ccl2','Mstn','Gdf11','Serpinf1','Vegfa','Vegfb','Metrnl','Ostn','Apln','Epo','Sparc','Osm')
 
 lipolysis <- c('Lpl','Lipe','Pnpla2','Abhd5')
 oglnac_metabolisn <- c('Oga','Ogt','Uap1','Uap1l1','Pgm1','Pgm2','Pgm3','Gnpnat1','Amdhd2','Gfpt1','Gfpt2','Gnpda1','Gnpda2','Gpi1','Mpi','Hk1','Hk2','Hk3','Gck')

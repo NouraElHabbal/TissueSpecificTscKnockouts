@@ -27,7 +27,7 @@ rpkm.data.unique <- rpkm.data[!duplicated(rpkm.data$external_gene_name),]
 rownames(rpkm.data.unique) <- rpkm.data.unique$external_gene_name
 rpkm.data.unique <- rpkm.data.unique[,-1]
 
-genes.of.interest <- c("Tsc1",'Tsc2','Ppp1r3c','Cd36','Fabp3')
+genes.of.interest <- c("Tsc1",'Tsc2','Ppp1r3c','Cd36','Fabp3','Ucp3')
 
 
 genes.of.interest.data <- rpkm.data.unique[genes.of.interest,]
@@ -88,7 +88,8 @@ ppard_targets <- c('Ppard','Ehhadh','Cyp4a10','Acaa1a','Acaa1b','Scp2','Acox1','
 myosin_heavy_chain <- c('Myh1','Myh2','Myh3','Myh4','Myh5','Myh6','Myh7','Myh7b','Myh8','Myh9','Myh10','Myh11','Myh12','Myh13','Myh14','Myh15','Myhn3','Myhn4','Myhs')
 myosin_heavy_chain_main <- c('Myh1','Myh2','Myh4','Myh7')
 
-slow_twitch_genes <- c('Mb','Tnni1','Ppp3ca','Ckmt2','Ppargc1a','Myh7')
+slow_twitch_genes <- c('Mb','Tnni1','Ppp3ca','Ckmt2','Ppargc1a','Myh7','Atp2a2')
+oxidative_markers_rosenbaum <- c('Myh7','Atp2a2')
 fast_twitch_genes <- c('Pvalb','Tnni2','Ckm','Myh4','Myh1')
 myotubular_degradation <- c('Trim63','Fbxo32')
 muscle_differentiation <- c('Cdkn1a','Myog','Myod1','Myf4','Myf5','Myf6','Mef2c')
@@ -106,7 +107,7 @@ ribosomes <- c('RPL7','RPL13A','RPL34','RPS28','RPS24','RPS5','FAU','RPS6','RPS1
 #convert to mouse gene format
 ribosomes <- capitalize(tolower(ribosomes))
 
-gene.data.name <- c('tsc_isoforms','glycogen_genes','pp1_regulatory_subunits','interleukins','srebp','linoleate_metabolism','myokines','tg_synthesis','lipolysis','oglnac_metabolisn','ribosomes','ppar_isoforms','b_oxidation','ppard_targets','myosin_heavy_chain','myosin_heavy_chain_main','slow_twitch_genes','fast_twitch_genes','myotubular_degradation','muscle_differentiation','autophagy','mitochondrial_genes','fatty_acid_uptake','fatty_acid_uptake_no_FABP3','fabp_cd36','cb_receptors')
+gene.data.name <- c('tsc_isoforms','glycogen_genes','pp1_regulatory_subunits','interleukins','srebp','linoleate_metabolism','myokines','tg_synthesis','lipolysis','oglnac_metabolisn','ribosomes','ppar_isoforms','b_oxidation','ppard_targets','myosin_heavy_chain','myosin_heavy_chain_main','slow_twitch_genes','fast_twitch_genes','myotubular_degradation','muscle_differentiation','autophagy','mitochondrial_genes','fatty_acid_uptake','fatty_acid_uptake_no_FABP3','fabp_cd36','cb_receptors','oxidative_markers_rosenbaum')
 for (name in gene.data.name){
   #name <- as.name(name) #convert string to variable name
   gene.data <- rpkm.long.cal[rpkm.long.cal$external_gene_name%in%eval(as.name(name)),]

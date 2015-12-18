@@ -1,6 +1,6 @@
 ---
 title: "Weight Analysis of Dexamethasone Treated C57BL/6J Mice on a High Protein Diet"
-author: "Innocence Harvey and Dave Bridges"
+author: "Innocence Harvey, JeAnna Redd and Dave Bridges"
 date: "February 15, 2015"
 output:
   html_document:
@@ -13,30 +13,30 @@ output:
 library(knitr)
 opts_chunk$set(fig.path='figures/',
                echo=FALSE, warning=FALSE, message=FALSE,dev=c('png','pdf'))
-options(scipen = 99, digits = 5)
+#options(scipen = 3, digits = 2)
 
 color.set <- c('#f77f00','#006a4d')
 ```
 
 # Data Entry
-This was from combined weights over several measurements of C57BL/6J Mice on treated with dexamethasone and placed on a high protein or control diet.  Some animals may appear multiple times in this analysis.  Data is downloaded in csv format from the mousedb website.  This includes only fed weights.  These mice were treated with 10 mg/kg/day starting at 70 days of age.
+This was from combined weights over several measurements of C57BL/6J Mice on treated placed on a high protein or control diet.  Some animals may appear multiple times in this analysis.  This data includes fed weights from two cohorts
 
 ```{r data-entry}
 raw_data_file <- "Body Weights and Composition.csv"
 
-data.dex <- read.csv(raw_data_file, row.names='X')
-data.dex$Treatment <- relevel(data.dex$Treatment, ref='Water')
-data.dex$Diet <- relevel(data.dex$Diet, ref='Control Diet')
-data.dex$age.from.start <- data.dex$age - 70
+data <- read.csv(raw_data_file)
+data$Treatment <- relevel(data$Treatment, ref='Water')
+data$Diet <- relevel(data$Diet, ref='Control Diet')
+data$age.from.start <- data$age - 70
 #remove ITT
-data.dex <- droplevels(subset(data.dex, experiment.feeding_state=='fed'&assay.assay!='Grip Strength (4 Paw)'))
-data.dex$Weight <- as.numeric(as.character(data.dex$values))/1000
+data <- droplevels(subset(data, experiment.feeding_state=='fed'&assay.assay!='Grip Strength (4 Paw)'))
+data$Weight <- as.numeric(as.character(data$values))/1000
 
 library(dplyr)
 library(tidyr)
 weight.data <-
-  subset(data.dex, age<150) %>%
-  select(assay.assay,animal.id,age,Treatment,Diet,Weight) %>%
+  subset(data, age<150&animal.Gender=="M"&Treatment!="Dexamethasone") %>%
+  select(assay.assay,animal.id,age,Treatment,Diet,Weight,animal.Gender) %>%
     distinct(animal.id,assay.assay,age) %>%
   spread(assay.assay, Weight) %>%
   rename(Total.Fat.Mass = `Total Fat Mass`,
@@ -47,84 +47,64 @@ weight.data <-
 se <- function(x) sd(x, na.rm=T)/sqrt(length(x))
 combined.summary <-
   subset(weight.data, age>=70) %>%
-  group_by(age, Treatment,Diet)%>%
+  mutate(Weeks = round((age-70)/7)) %>%
+  group_by(Weeks, Diet)%>%
   summarise(Body.Weight.mean = mean(Body.Weight, na.rm=T),
             Body.Weight.se = se(Body.Weight),
             Total.Fat.Mass.mean = mean(Total.Fat.Mass, na.rm=T),
             Total.Fat.Mass.se = se(Total.Fat.Mass),
-            Lean.Mass.mean = mean(Lean.Mass),
-            Lean.Mass.se = se(Lean.Mass)) %>%
-  mutate(Weeks = (age-70)/7)
-
-```
-
-Data was downloaded from MouseDB then aand the data is saved as `r raw_data_file`.  These data are located in `r getwd()` and was most recently updated on `r date()`.
-
-# Body Weights
-
-```{r weights-scatterplot}
-ymin = min(weight.data$Body.Weight, na.rm=T)
-ymax = max(weight.data$Body.Weight, na.rm=T)
-
-with(subset(weight.data, Diet == levels(Diet)[1]&Treatment==levels(Treatment)[1]), 
-     plot(age, Body.Weight,
-                       col=palette()[1],
-                       ylab="Body Weight (g)",
-                       xlab='Age (days)',
-                       ylim=c(ymin,ymax),
-                        las=1, pch=19))
-with(subset(weight.data, Diet == levels(Diet)[1]&Treatment==levels(Treatment)[2]), 
-     points(age, Body.Weight, col=palette()[2], pch=19))
-with(subset(weight.data, Diet == levels(Diet)[2]&Treatment==levels(Treatment)[1]), 
-     points(age, Body.Weight, col=palette()[3], pch=19))
-with(subset(weight.data, Diet == levels(Diet)[2]&Treatment==levels(Treatment)[2]), 
-     points(age, Body.Weight, col=palette()[4], pch=19))
-
-lines(with(subset(weight.data, Treatment==levels(Treatment)[1]&Diet == levels(Diet)[1]), 
-           loess.smooth(age,Body.Weight)), col=palette()[1])
-lines(with(subset(weight.data, Treatment==levels(Treatment)[2]&Diet == levels(Diet)[1]), 
-           loess.smooth(age,Body.Weight)), col=palette()[2], lty=2)
-lines(with(subset(weight.data, Treatment==levels(Treatment)[1]&Diet == levels(Diet)[2]), 
-           loess.smooth(age,Body.Weight)), col=palette()[3])
-lines(with(subset(weight.data, Treatment==levels(Treatment)[2]&Diet == levels(Diet)[2]), 
-           loess.smooth(age,Body.Weight)), col=palette()[4], lty=2)
-
-
-legend("bottomleft", do.call(paste, expand.grid(levels(weight.data$Treatment),'-',levels(weight.data$Diet))),
-       lty=c(1,2,1,2), col=palette()[1:4], bty='n', cex=1)
-
-yaxes <- with(subset(combined.summary, Treatment=="Water"), 
-              c(min(Body.Weight.mean, na.rm=T)-max(Body.Weight.se, na.rm=T), 
-               c(max(Body.Weight.mean, na.rm=T)+max(Body.Weight.se, na.rm=T))))
-plot <- with(subset(combined.summary, 
-                    Treatment=="Water"&Diet=="Control Diet"), 
-             plot(Weeks, Body.Weight.mean, type="l", ylim=yaxes,
-                  las=1, ylab="Body Weight (g)", col=palette()[1]))
-with(subset(combined.summary, 
-                    Treatment=="Water"&Diet=="High Protein Diet"), 
-             lines(Weeks, Body.Weight.mean, col=palette()[2]))
+            Lean.Mass.mean = mean(Lean.Mass, na.rm=T),
+            Lean.Mass.se = se(Lean.Mass),
+            Percent.Fat.Mass.mean = mean(Percent.Fat.Mass, na.rm=T),
+            Percent.Fat.Mass.se = se(Percent.Fat.Mass),
+            n = length(Lean.Mass)) 
 
 superpose.eb <- function (x, y, ebl, ebu = ebl, length = 0.08, ...)
   arrows(x, y + ebu, x, y - ebl, angle = 90, code = 3,
   length = length, ...)
-
-with(subset(combined.summary, 
-                    Treatment=="Water"&Diet=="Control Diet"), 
-             superpose.eb(Weeks, Body.Weight.mean, Body.Weight.se, col=palette()[1]))
-with(subset(combined.summary, 
-                    Treatment=="Water"&Diet=="High Protein Diet"), 
-             superpose.eb(Weeks, Body.Weight.mean, Body.Weight.se, col=palette()[2]))
-legend("topleft", levels(combined.summary$Diet), col=palette()[1:2], lty=1, bty='n')
 ```
 
+Data was downloaded from MouseDB then aand the data is saved as `r raw_data_file`.  These data are located in `r getwd()` and was most recently updated on `r date()`.
 
-## Effects of High Protein Diet on Body Weight (Water Only)
+## Body Weights
+
+```{r body-weights}
+with(subset(weight.data, Diet == levels(Diet)[1]), plot(age, Body.Weight,
+                       ylab="Body Weight (g)",
+                       xlab='Age (days)',
+                        las=1, pch=19))
+with(subset(weight.data, Diet == levels(Diet)[2]),
+     points(age, Body.Weight, col=palette()[2], pch=19))
+
+lines(with(subset(weight.data, Diet == levels(Diet)[1]), 
+           loess.smooth(age,Body.Weight)), col=palette()[1])
+lines(with(subset(weight.data, Diet == levels(Diet)[2]), 
+           loess.smooth(age,Body.Weight)), col=palette()[2])
+
+legend("topleft", levels(combined.summary$Diet), col=palette()[1:2], lty=1, bty='n')
+
+yaxes <- with(combined.summary, 
+              c(min(Body.Weight.mean, na.rm=T)-max(Body.Weight.se, na.rm=T), 
+               c(max(Body.Weight.mean, na.rm=T)+max(Body.Weight.se, na.rm=T))))
+plot <- with(subset(combined.summary, Diet==levels(Diet)[1]), 
+             plot(Weeks, Body.Weight.mean, type="l", ylim=yaxes,
+                  las=1, ylab="Body Weight (g)", col=palette()[1]))
+with(subset(combined.summary, Diet==levels(Diet)[2]), 
+             lines(Weeks, Body.Weight.mean, col=palette()[2]))
+
+with(subset(combined.summary, Diet==levels(Diet)[1]&Weeks<=12), 
+             superpose.eb(Weeks, Body.Weight.mean, Body.Weight.se, col=palette()[1]))
+with(subset(combined.summary, Diet==levels(Diet)[2]&Weeks<=12), 
+             superpose.eb(Weeks, Body.Weight.mean, Body.Weight.se, col=palette()[2]))
+legend("topleft", levels(combined.summary$Diet), col=palette()[1:2], lty=1, bty='n')
+
+```
 
 ```{r diagnostics-body-weight}
 #statistics
 library(lme4)
-weight.cd.hpd.lme <- lmer(Body.Weight~age + Diet:age + Diet + (1|animal.id) + (age-1|animal.id), data=subset(weight.data, Treatment=='Water'), REML=F)
-weight.cd.hpd.lme.null <- lmer(Body.Weight~age + Diet + (1|animal.id) + (age-1|animal.id), data=subset(weight.data, Treatment=='Water'), REML=F)
+weight.cd.hpd.lme <- lmer(Body.Weight~age + Diet:age + Diet + (1|animal.id) + (age-1|animal.id), data=weight.data, REML=F)
+weight.cd.hpd.lme.null <- lmer(Body.Weight~age + Diet + (1|animal.id) + (age-1|animal.id), data=weight.data, REML=F)
 #using 
 library(influence.ME)
 infl <- influence(weight.cd.hpd.lme, group='animal.id')
@@ -139,252 +119,142 @@ barplot(cooks.distance(infl), las=2, names.arg=rownames(cooks.distance(infl)),
 
 Based on linear fixed effects models, allowing for uncorrelated intercepts and slopes for the animals, within the water group, the High Protein Diet animals gained `r fixef(weight.cd.hpd.lme)['age:DietHigh Protein Diet']*7`g  weight per week, or `r fixef(weight.cd.hpd.lme)['age:DietHigh Protein Diet']*7*12`g over the experiment.  This is a `r fixef(weight.cd.hpd.lme)['age:DietHigh Protein Diet']/fixef(weight.cd.hpd.lme)['age']*100`% change in body weight gain.  This effect was significant with a p-value of `r anova(weight.cd.hpd.lme, weight.cd.hpd.lme.null)$"Pr(>Chisq)"[2]`.  The residuals of this model **did not meet** the presumption of normality via a Shapiro-Wilk test (p=`r shapiro.test(residuals(weight.cd.hpd.lme))$p.value`).
 
-## Effects of Dexamethasone on Body Weight (Control Diet Only)
-
-```{r cooks-distance-dex}
-weight.dex.lme <- lmer(Body.Weight~age + Treatment:age + Treatment + (1|animal.id) + (age-1|animal.id), data=subset(weight.data, Diet=='Control Diet'), REML=F)
-weight.dex.lme.null <- lmer(Body.Weight~age + Treatment + (1|animal.id) + (age-1|animal.id), data=subset(weight.data, Diet=='Control Diet'), REML=F)
-infl <- influence(weight.dex.lme, group='animal.id')
-par(mfrow=c(1,3))
-plot(density(residuals(weight.dex.lme)), main="Effects of Dexamethasone", las=1)
-plot(fitted(weight.dex.lme),residuals(weight.dex.lme),  
-     ylab="Residuals", xlab="Fitted Values (g)", pch=19, las=1)
-abline(h=0, lty=2, col='red')
-barplot(cooks.distance(infl), las=2, names.arg=rownames(cooks.distance(infl)), 
-         beside=T, ylab="Cook's Distance", col='grey')
-```
-
-Based on linear fixed effects models, allowing for uncorrelated intercepts and slopes for the animals, within the control diet group, the dexamethasone-treated animals gained `r fixef(weight.dex.lme)['age:TreatmentDexamethasone']*7`g  weight per week, or `r fixef(weight.dex.lme)['age:TreatmentDexamethasone']*7*12`g over the experiment.  This is a `r fixef(weight.dex.lme)['age:TreatmentDexamethasone']/fixef(weight.dex.lme)['age']*100`% change in body weight gain.  This effect was significant with a p-value of `r anova(weight.dex.lme, weight.dex.lme.null)$"Pr(>Chisq)"[2]`.  The residuals of this model met the presumption of normality via a Shapiro-Wilk test (p=`r shapiro.test(residuals(weight.dex.lme))$p.value`).
-
-# Combined Analysis
-
-```{r cooks-distance-combined}
-weight.all.lme <- lmer(Body.Weight~age + Treatment:age + Treatment + Diet + Diet:Treatment + Diet:age + (1|animal.id) + (age-1|animal.id), data=weight.data, REML=F)
-weight.all.lme.null <- lmer(Body.Weight~age + Treatment + Diet + Diet:Treatment + Diet:age + (1|animal.id) + (age-1|animal.id), data=weight.data, REML=F)
-
-infl <- influence(weight.all.lme, group='animal.id')
-par(mfrow=c(1,3))
-plot(density(residuals(weight.dex.lme)), main="Effects of Dexamethasone - All Groups", las=1)
-plot(fitted(weight.all.lme),residuals(weight.all.lme),  
-     ylab="Residuals", xlab="Fitted Values (g)", pch=19, las=1)
-abline(h=0, lty=2, col='red')
-barplot(cooks.distance(infl), las=2, names.arg=rownames(cooks.distance(infl)), 
-         beside=T, ylab="Cook's Distance", col='grey')
-```
-
-Pooling both groups together, with a linear fixed effects models, allowing for uncorrelated intercepts and slopes for the animals, the dexamethasone-treated animals gained `r fixef(weight.all.lme)['age:TreatmentDexamethasone']*7`g  weight per week, or `r fixef(weight.all.lme)['age:TreatmentDexamethasone']*7*12`g over the experiment.  This is a `r fixef(weight.all.lme)['age:TreatmentDexamethasone']/fixef(weight.all.lme)['age']*100`% change in body weight gain.  This effect was significant with a p-value of `r anova(weight.all.lme, weight.all.lme.null)$"Pr(>Chisq)"[2]`.  The residuals of this model met the presumption of normality via a Shapiro-Wilk test (p=`r shapiro.test(residuals(weight.all.lme))$p.value`).
-
 # Lean Mass
 
 ```{r lean-mass-scatterplot}
 with(subset(weight.data, Diet == levels(Diet)[1]), plot(age, Lean.Mass,
-                       col=Treatment,
                        ylab="Total Lean Mass (g)",
                        xlab='Age (days)',
                         las=1, pch=19))
-with(subset(weight.data, Diet == levels(Diet)[2]&Treatment==levels(Treatment)[1]), 
-     points(age, Lean.Mass, col=palette()[3], pch=19))
-with(subset(weight.data, Diet == levels(Diet)[2]&Treatment==levels(Treatment)[2]), 
-     points(age, Lean.Mass, col=palette()[4], pch=19))
+with(subset(weight.data, Diet == levels(Diet)[2]),
+     points(age, Lean.Mass, col=palette()[2], pch=19))
 se <- function(x) sd(x)/sqrt(length(x))
 
-lines(with(subset(weight.data, Treatment==levels(Treatment)[1]&Diet == levels(Diet)[1]), 
+lines(with(subset(weight.data, Diet == levels(Diet)[1]), 
            loess.smooth(age,Lean.Mass)), col=palette()[1])
-lines(with(subset(weight.data, Treatment==levels(Treatment)[2]&Diet == levels(Diet)[1]), 
-           loess.smooth(age,Lean.Mass)), col=palette()[2], lty=2)
-lines(with(subset(weight.data, Treatment==levels(Treatment)[1]&Diet == levels(Diet)[2]), 
-           loess.smooth(age,Lean.Mass)), col=palette()[3])
-lines(with(subset(weight.data, Treatment==levels(Treatment)[2]&Diet == levels(Diet)[2]), 
-           loess.smooth(age,Lean.Mass)), col=palette()[4], lty=2)
+lines(with(subset(weight.data, Diet == levels(Diet)[2]), 
+           loess.smooth(age,Lean.Mass)), col=palette()[2])
 
+legend("topleft", levels(combined.summary$Diet), col=palette()[1:2], lty=1, bty='n')
 
-legend("bottomleft", do.call(paste, expand.grid(levels(weight.data$Treatment),'-',levels(weight.data$Diet))),
-       lty=c(1,2,1,2), col=palette()[1:4], bty='n', cex=1)
-
-yaxes <- with(subset(combined.summary, Treatment=="Water"), 
+yaxes <- with(combined.summary, 
               c(min(Lean.Mass.mean, na.rm=T)-max(Lean.Mass.se, na.rm=T), 
                c(max(Lean.Mass.mean, na.rm=T)+max(Lean.Mass.se, na.rm=T))))
-plot <- with(subset(combined.summary, 
-                    Treatment=="Water"&Diet=="Control Diet"), 
+plot <- with(subset(combined.summary, Diet==levels(Diet)[1]), 
              plot(Weeks, Lean.Mass.mean, type="l", ylim=yaxes,
                   las=1, ylab="Total Lean Mass (g)", col=palette()[1]))
-with(subset(combined.summary, 
-                    Treatment=="Water"&Diet=="High Protein Diet"), 
+with(subset(combined.summary, Diet==levels(Diet)[2]), 
              lines(Weeks, Lean.Mass.mean, col=palette()[2]))
 
-with(subset(combined.summary, 
-                    Treatment=="Water"&Diet=="Control Diet"&Weeks<=12), 
+with(subset(combined.summary, Diet==levels(Diet)[1]&Weeks<=12), 
              superpose.eb(Weeks, Lean.Mass.mean, Lean.Mass.se, col=palette()[1]))
-with(subset(combined.summary, 
-                    Treatment=="Water"&Diet=="High Protein Diet"), 
+with(subset(combined.summary, Diet==levels(Diet)[2]&Weeks<=12), 
              superpose.eb(Weeks, Lean.Mass.mean, Lean.Mass.se, col=palette()[2]))
 legend("topleft", levels(combined.summary$Diet), col=palette()[1:2], lty=1, bty='n')
 
 #statistics
 library(lme4)
-lean.lme <- lmer(Lean.Mass~age*Treatment*Diet + (1|animal.id), data=weight.data, REML=F)
-lean.lme.null <- lmer(Lean.Mass~age*Treatment + (1|animal.id), data=weight.data, REML=F)
+lean.lme <- lmer(Lean.Mass~age*Treatment*Diet + (1|animal.id) + (age-1|animal.id), data=weight.data, REML=F)
+lean.lme.null <- lmer(Lean.Mass~age*Treatment + (1|animal.id) + (age-1|animal.id), data=weight.data, REML=F)
 ```
+
+Based on a mixed linear model with a random slope and intercept for each animal, there was a significant decrease in the rate of lean mass gain with respect to time (Chisq = `r anova(lean.lme,lean.lme.null)$Chisq[2]`, p=`r anova(lean.lme,lean.lme.null)$"Pr(>Chisq)"[2]`).  This as an average difference of `r coefficients(summary(lean.lme))['age:DietHigh Protein Diet','Estimate']*7` +/- `r coefficients(summary(lean.lme))['age:DietHigh Protein Diet','Std. Error']*7` grams fat per week, or a total of `r coefficients(summary(lean.lme))['age:DietHigh Protein Diet','Estimate']*180` +/- `r coefficients(summary(lean.lme))['age:DietHigh Protein Diet','Std. Error']*180` over the course of the study.  This is a `r -coefficients(summary(lean.lme))['age:DietHigh Protein Diet','Estimate']/coefficients(summary(lean.lme))['age','Estimate']*100`% reduction.
 
 # Fat Mass
 
 ```{r fat-mass-scatterplot}
 with(subset(weight.data, Diet == levels(Diet)[1]), plot(age, Total.Fat.Mass,
-                       col=Treatment,
                        ylab="Total Fat Mass (g)",
                        xlab='Age (days)',
                         las=1, pch=19))
-with(subset(weight.data, Diet == levels(Diet)[2]&Treatment==levels(Treatment)[1]), 
-     points(age, Total.Fat.Mass, col=palette()[3], pch=19))
-with(subset(weight.data, Diet == levels(Diet)[2]&Treatment==levels(Treatment)[2]), 
-     points(age, Total.Fat.Mass, col=palette()[4], pch=19))
+with(subset(weight.data, Diet == levels(Diet)[2]),
+     points(age, Total.Fat.Mass, col=palette()[2], pch=19))
 
-lines(with(subset(weight.data, Treatment==levels(Treatment)[1]&Diet == levels(Diet)[1]), 
+lines(with(subset(weight.data, Diet == levels(Diet)[1]), 
            loess.smooth(age,Total.Fat.Mass)), col=palette()[1])
-lines(with(subset(weight.data, Treatment==levels(Treatment)[2]&Diet == levels(Diet)[1]), 
-           loess.smooth(age,Total.Fat.Mass)), col=palette()[2], lty=2)
-lines(with(subset(weight.data, Treatment==levels(Treatment)[1]&Diet == levels(Diet)[2]), 
-           loess.smooth(age,Total.Fat.Mass)), col=palette()[3])
-lines(with(subset(weight.data, Treatment==levels(Treatment)[2]&Diet == levels(Diet)[2]), 
-           loess.smooth(age,Total.Fat.Mass)), col=palette()[4], lty=2)
+lines(with(subset(weight.data, Diet == levels(Diet)[2]), 
+           loess.smooth(age,Total.Fat.Mass)), col=palette()[2])
 
+legend("topleft", levels(combined.summary$Diet), col=palette()[1:2], lty=1, bty='n')
 
-legend("bottomleft", do.call(paste, expand.grid(levels(weight.data$Treatment),'-',levels(weight.data$Diet))),
-       lty=c(1,2,1,2), col=palette()[1:4], bty='n', cex=1)
-
-yaxes <- with(subset(combined.summary, Treatment=="Water"), 
+yaxes <- with(combined.summary, 
               c(min(Total.Fat.Mass.mean, na.rm=T)-max(Total.Fat.Mass.se, na.rm=T), 
                c(max(Total.Fat.Mass.mean, na.rm=T)+max(Total.Fat.Mass.se, na.rm=T))))
-plot <- with(subset(combined.summary, 
-                    Treatment=="Water"&Diet=="Control Diet"), 
+plot <- with(subset(combined.summary, Diet==levels(Diet)[1]), 
              plot(Weeks, Total.Fat.Mass.mean, type="l", ylim=yaxes,
                   las=1, ylab="Total Fat Mass (g)", col=palette()[1]))
-with(subset(combined.summary, 
-                    Treatment=="Water"&Diet=="High Protein Diet"), 
+with(subset(combined.summary, Diet==levels(Diet)[2]), 
              lines(Weeks, Total.Fat.Mass.mean, col=palette()[2]))
 
-with(subset(combined.summary, 
-                    Treatment=="Water"&Diet=="Control Diet"), 
+with(subset(combined.summary, Diet==levels(Diet)[1]&Weeks<=12), 
              superpose.eb(Weeks, Total.Fat.Mass.mean, Total.Fat.Mass.se, col=palette()[1]))
-with(subset(combined.summary, 
-                    Treatment=="Water"&Diet=="High Protein Diet"), 
+with(subset(combined.summary, Diet==levels(Diet)[2]&Weeks<=12), 
              superpose.eb(Weeks, Total.Fat.Mass.mean, Total.Fat.Mass.se, col=palette()[2]))
 legend("topleft", levels(combined.summary$Diet), col=palette()[1:2], lty=1, bty='n')
 
 #statistics
-library(lme4)
-fat.lme <- lmer(Total.Fat.Mass~age*Treatment*Diet + (1|animal.id), data=weight.data, REML=F)
-fat.lme.null <- lmer(Total.Fat.Mass~age*Treatment + (1|animal.id), data=weight.data, REML=F)
+fat.lme <- lmer(Total.Fat.Mass~age*Diet + (1|animal.id) + (age-1|animal.id), data=weight.data, REML=F)
+fat.lme.null <- lmer(Total.Fat.Mass~age + (1|animal.id) + (age-1|animal.id), data=weight.data, REML=F)
 ```
 
 
 ```{r hpd-fat-mass-scatterplot-uthsc}
-plot <- with(subset(combined.summary, 
-                    Treatment=="Water"&Diet=="Control Diet"), 
+plot <- with(subset(combined.summary, Diet=="Control Diet"), 
              plot(Weeks, Total.Fat.Mass.mean, type="l", ylim=yaxes,
                   cex.names=1.5,cex.lab=1.5,
                   las=1, ylab="Total Fat Mass (g)", col=color.set[1]))
-with(subset(combined.summary, 
-                    Treatment=="Water"&Diet=="High Protein Diet"), 
+with(subset(combined.summary, Diet=="High Protein Diet"), 
              lines(Weeks, Total.Fat.Mass.mean, col=color.set[2]))
 
-with(subset(combined.summary, 
-                    Treatment=="Water"&Diet=="Control Diet"), 
+with(subset(combined.summary, Diet=="Control Diet"), 
              superpose.eb(Weeks, Total.Fat.Mass.mean, Total.Fat.Mass.se, col=color.set[1]))
-with(subset(combined.summary, 
-                    Treatment=="Water"&Diet=="High Protein Diet"), 
+with(subset(combined.summary, Diet=="High Protein Diet"), 
              superpose.eb(Weeks, Total.Fat.Mass.mean, Total.Fat.Mass.se, col=color.set[2]))
 legend("topleft", levels(combined.summary$Diet), col=color.set, lty=1, bty='n', cex=1.5)
 ```
 
-# Percent Fat Mass
+Based on a mixed linear model with a random slope and intercept for each animal, there was a significant decrease in the rate of fat mass gain with respect to time (Chisq = `r anova(fat.lme,fat.lme.null)$Chisq[2]`, p=`r anova(fat.lme,fat.lme.null)$"Pr(>Chisq)"[2]`).  This as an average difference of `r coefficients(summary(fat.lme))['age:DietHigh Protein Diet','Estimate']*7` +/- `r coefficients(summary(fat.lme))['age:DietHigh Protein Diet','Std. Error']*7` grams fat per week, or a total of `r coefficients(summary(fat.lme))['age:DietHigh Protein Diet','Estimate']*180` +/- `r coefficients(summary(fat.lme))['age:DietHigh Protein Diet','Std. Error']*180` over the course of the study.  This is a `r -coefficients(summary(fat.lme))['age:DietHigh Protein Diet','Estimate']/coefficients(summary(fat.lme))['age','Estimate']*100`% reduction.
 
-```{r percent-fat-mass-scatterplot}
-with(subset(weight.data, Diet == levels(Diet)[1]), plot(age, Percent.Fat.Mass,
-                       col=Treatment,
-                       ylab="Percent Fat Mass",
-                       xlab='Age (days)',
-                        las=1, pch=19))
-with(subset(weight.data, Diet == levels(Diet)[2]&Treatment==levels(Treatment)[1]), 
-     points(age, Percent.Fat.Mass, col=palette()[3], pch=19))
-with(subset(weight.data, Diet == levels(Diet)[2]&Treatment==levels(Treatment)[2]), 
-     points(age, Percent.Fat.Mass, col=palette()[4], pch=19))
-se <- function(x) sd(x)/sqrt(length(x))
-
-lines(with(subset(weight.data, Treatment==levels(Treatment)[1]&Diet == levels(Diet)[1]), 
-           loess.smooth(age,Percent.Fat.Mass)), col=palette()[1])
-lines(with(subset(weight.data, Treatment==levels(Treatment)[2]&Diet == levels(Diet)[1]), 
-           loess.smooth(age,Percent.Fat.Mass)), col=palette()[2], lty=2)
-lines(with(subset(weight.data, Treatment==levels(Treatment)[1]&Diet == levels(Diet)[2]), 
-           loess.smooth(age,Percent.Fat.Mass)), col=palette()[3])
-lines(with(subset(weight.data, Treatment==levels(Treatment)[2]&Diet == levels(Diet)[2]), 
-           loess.smooth(age,Percent.Fat.Mass)), col=palette()[4], lty=2)
-
-
-legend("bottomleft", do.call(paste, expand.grid(levels(weight.data$Treatment),'-',levels(weight.data$Diet))),
-       lty=c(1,2,1,2), col=palette()[1:4], bty='n', cex=1)
-
-#statistics
-library(lme4)
-pct.fat.lme <- lmer(Percent.Fat.Mass~age*Treatment*Diet + (1|animal.id), data=weight.data, REML=F)
-pct.fat.lme.null <- lmer(Percent.Fat.Mass~age*Treatment + (1|animal.id), data=weight.data, REML=F)
-```
-
-# Effects of High Protein Diet Only
 
 ## Percent Fat Mass
 
-```{r percent-fat-mass-scatterplot-hpd}
-water.data <- droplevels(subset(weight.data, Treatment=="Water"))
-with(subset(water.data, Diet == levels(Diet)[1]), plot(age, Percent.Fat.Mass,
-                       col=Treatment,
+```{r pct-fat-mass-scatterplot}
+with(subset(weight.data, Diet == levels(Diet)[1]), plot(age, Percent.Fat.Mass,
                        ylab="Percent Fat Mass",
                        xlab='Age (days)',
                         las=1, pch=19))
-with(subset(water.data, Diet == levels(Diet)[2]), 
+with(subset(weight.data, Diet == levels(Diet)[2]),
      points(age, Percent.Fat.Mass, col=palette()[2], pch=19))
 
-lines(with(subset(water.data, Diet== levels(Diet)[1]), 
+lines(with(subset(weight.data, Diet == levels(Diet)[1]), 
            loess.smooth(age,Percent.Fat.Mass)), col=palette()[1])
-lines(with(subset(water.data, Diet==levels(Diet)[2]), 
+lines(with(subset(weight.data, Diet == levels(Diet)[2]), 
            loess.smooth(age,Percent.Fat.Mass)), col=palette()[2])
 
-legend("topleft", levels(water.data$Diet),
-       lty=1, col=palette()[1:2], bty='n', cex=1)
+legend("topleft", levels(combined.summary$Diet), col=palette()[1:2], lty=1, bty='n')
+
+yaxes <- with(combined.summary, 
+              c(min(Percent.Fat.Mass.mean, na.rm=T)-max(Percent.Fat.Mass.se, na.rm=T), 
+               c(max(Percent.Fat.Mass.mean, na.rm=T)+max(Percent.Fat.Mass.se, na.rm=T))))
+plot <- with(subset(combined.summary, Diet==levels(Diet)[1]), 
+             plot(Weeks, Percent.Fat.Mass.mean, type="l", ylim=yaxes,
+                  las=1, ylab="Percent Fat Mass", col=palette()[1]))
+with(subset(combined.summary, Diet==levels(Diet)[2]), 
+             lines(Weeks, Percent.Fat.Mass.mean, col=palette()[2]))
+
+with(subset(combined.summary, Diet==levels(Diet)[1]&Weeks<=12), 
+             superpose.eb(Weeks, Percent.Fat.Mass.mean, Percent.Fat.Mass.se, col=palette()[1]))
+with(subset(combined.summary, Diet==levels(Diet)[2]&Weeks<=12), 
+             superpose.eb(Weeks, Percent.Fat.Mass.mean, Percent.Fat.Mass.se, col=palette()[2]))
+legend("topleft", levels(combined.summary$Diet), col=palette()[1:2], lty=1, bty='n')
 
 #statistics
-pct.fat.hpd.lme <- lmer(Percent.Fat.Mass~age*Diet + (1|animal.id) + (age-1|animal.id), data=water.data, REML=F)
-pct.fat.hpd.lme.null <- lmer(Percent.Fat.Mass~age + (1|animal.id) + (age-1|animal.id), data=water.data, REML=F)
+pct.fat.lme <- lmer(Percent.Fat.Mass~age*Diet + (1|animal.id) + (age-1|animal.id), data=weight.data, REML=F)
+pct.fat.lme.null <- lmer(Percent.Fat.Mass~age + (1|animal.id) + (age-1|animal.id), data=weight.data, REML=F)
 ```
 
-Based on a mixed linear model with a random slope and intercept for each animal, there was a significant decrease in the rate of percent fat mass with respect to time (Chisq = `r anova(pct.fat.hpd.lme,pct.fat.hpd.lme.null)$Chisq[2]`, p=`r anova(pct.fat.hpd.lme,pct.fat.hpd.lme.null)$"Pr(>Chisq)"[2]`).  This as an average difference of `r coefficients(summary(pct.fat.hpd.lme))['age:DietHigh Protein Diet','Estimate']*7` +/- `r coefficients(summary(pct.fat.hpd.lme))['age:DietHigh Protein Diet','Std. Error']*7` percent fat per week, or a total of `r coefficients(summary(pct.fat.hpd.lme))['age:DietHigh Protein Diet','Estimate']*180` +/- `r coefficients(summary(pct.fat.hpd.lme))['age:DietHigh Protein Diet','Std. Error']*180` over the course of the study.  This is a `r -coefficients(summary(pct.fat.hpd.lme))['age:DietHigh Protein Diet','Estimate']/coefficients(summary(pct.fat.hpd.lme))['age','Estimate']*100`% reduction.
+Based on a mixed linear model with a random slope and intercept for each animal, there was a significant decrease in the rate of percent fat mass with respect to time (Chisq = `r anova(pct.fat.lme,pct.fat.lme.null)$Chisq[2]`, p=`r anova(pct.fat.lme,pct.fat.lme.null)$"Pr(>Chisq)"[2]`).  This as an average difference of `r coefficients(summary(pct.fat.lme))['age:DietHigh Protein Diet','Estimate']*7` +/- `r coefficients(summary(pct.fat.lme))['age:DietHigh Protein Diet','Std. Error']*7` percent fat per week, or a total of `r coefficients(summary(pct.fat.lme))['age:DietHigh Protein Diet','Estimate']*180` +/- `r coefficients(summary(pct.fat.lme))['age:DietHigh Protein Diet','Std. Error']*180` over the course of the study.  This is a `r -coefficients(summary(pct.fat.lme))['age:DietHigh Protein Diet','Estimate']/coefficients(summary(pct.fat.lme))['age','Estimate']*100`% reduction.
 
-## Total Fat Mass
-
-```{r total-fat-mass-scatterplot-hpd}
-water.data <- droplevels(subset(weight.data, Treatment=="Water"))
-with(subset(water.data, Diet == levels(Diet)[1]), plot(age, Total.Fat.Mass,
-                       col=Treatment,
-                       ylab="Total Fat Mass (g)",
-                       xlab='Age (days)',
-                        las=1, pch=19))
-with(subset(water.data, Diet == levels(Diet)[2]), 
-     points(age, Total.Fat.Mass, col=palette()[2], pch=19))
-
-lines(with(subset(water.data, Diet== levels(Diet)[1]), 
-           loess.smooth(age,Total.Fat.Mass)), col=palette()[1])
-lines(with(subset(water.data, Diet==levels(Diet)[2]), 
-           loess.smooth(age,Total.Fat.Mass)), col=palette()[2])
-
-legend("topleft", levels(water.data$Diet),
-       lty=1, col=palette()[1:2], bty='n', cex=1)
-
-#statistics
-fat.hpd.lme <- lmer(Total.Fat.Mass~age*Diet + (1|animal.id) + (age-1|animal.id), data=water.data, REML=F)
-fat.hpd.lme.null <- lmer(Total.Fat.Mass~age + (1|animal.id) + (age-1|animal.id), data=water.data, REML=F)
-```
-
-Based on a mixed linear model with a random slope and intercept for each animal, there was a significant decrease in the rate of percent fat mass with respect to time (Chisq = `r anova(fat.hpd.lme,fat.hpd.lme.null)$Chisq[2]`, p=`r anova(fat.hpd.lme,fat.hpd.lme.null)$"Pr(>Chisq)"[2]`).  This as an average difference of `r coefficients(summary(fat.hpd.lme))['age:DietHigh Protein Diet','Estimate']*7` +/- `r coefficients(summary(fat.hpd.lme))['age:DietHigh Protein Diet','Std. Error']*7` percent fat per week, or a total of `r coefficients(summary(fat.hpd.lme))['age:DietHigh Protein Diet','Estimate']*11*7` +/- `r coefficients(summary(fat.hpd.lme))['age:DietHigh Protein Diet','Std. Error']*11*7` over the course of the study.  This is a `r -coefficients(summary(fat.hpd.lme))['age:DietHigh Protein Diet','Estimate']/coefficients(summary(fat.hpd.lme))['age','Estimate']*100`% reduction.
 
 # Session Information
 ```{r sessionInfo}

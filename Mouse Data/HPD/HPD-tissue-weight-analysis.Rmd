@@ -27,11 +27,11 @@ This data uses the input file `r filename`.  This script was most recently run o
 
 # Adipose Tissue
 
-The iWAT and eWAT values are the sum of the left and right fat pads for each mouse.
+The iWAT and eWAT values are the right fat pads for each mouse.
 
 ```{r hpd-wat}
-data$eWAT <- data$Right.EWAT + data$Left.EWAT
-data$iWAT <- data$Right.IWAT + data$Left.IWAT
+data$eWAT <- data$Right.EWAT
+data$iWAT <- data$Right.IWAT
 
 se <- function(x) sd(x, na.rm=T)/sqrt(length(x))
 library(dplyr)
@@ -59,7 +59,7 @@ ewat.summary <-
 library(car)
 ```
 
-We tested whether normality can be assumed for eWAT and iWAT by a Shapiro-Wilk test.  The p-values for this were all greater than `r min(ewat.summary$Shapiro, iwat.summary$Shapiro)`.  For summary statistics see below.
+We tested whether normality can be assumed for eWAT and iWAT by a Shapiro-Wilk test.  The p-values for this were all greater than `r min(ewat.summary$Shapiro, iwat.summary$Shapiro)`.  There was a reduction of `r with(iwat.summary, (Average[1]-Average[2])/Average[1])*100`% for iWAT and `r with(ewat.summary, (Average[1]-Average[2])/Average[1])*100`% for eWAT.  For summary statistics see below.  
 
 ```{r adipose-summary-tables}
 kable(iwat.summary, caption="Inguinal Fat Pads (mg)")
@@ -94,15 +94,15 @@ superpose.eb(plot,
 legend('topleft', levels(data$Diet), fill=color.set, bty="n",cex=1.5)
 ```
 
-We next tested whether equal variance can be assumed via Levene's test.  For iWAT the p-value was `r leveneTest(iWAT~Diet, data=data)$"Pr(>F)"[1]` and for eWAT the p-value was `r leveneTest(eWAT~Diet, data=data)$"Pr(>F)"[1]`.  Therefore in both cases, equal variance can not be assumed and Welch's *t* tests were performed.  These p-values were **`r t.test(iWAT~Diet, var.equal=F, data=data)$p.value`** for iWAT and **`r t.test(eWAT~Diet, var.equal=F, data=data)$p.value`** for eWAT.
+We next tested whether equal variance can be assumed via Levene's test.  For iWAT the p-value was `r leveneTest(iWAT~Diet, data=data)$"Pr(>F)"[1]` and for eWAT the p-value was `r leveneTest(eWAT~Diet, data=data)$"Pr(>F)"[1]`.  Therefore in both cases, equal variance can be assumed and Student's *t* tests were performed.  These p-values were **`r t.test(iWAT~Diet, var.equal=T, data=data)$p.value`** for iWAT and **`r t.test(eWAT~Diet, var.equal=T, data=data)$p.value`** for eWAT.
 
 # Muscle Tissues
 
-The TS and Quadriceps values are the sum of the left and right fat pads for each mouse.
+The TS and Quadriceps values is the right fat pad for each mouse.
 
 ```{r hpd-muscle}
-data$Quad <- data$Right.Quad + data$Left.Quad
-data$TS <- data$TS.Right + data$TS.Left
+data$Quad <-data$Right.Quad
+data$TS <- data$TS.Right
 
 ts.summary <- 
   data %>%

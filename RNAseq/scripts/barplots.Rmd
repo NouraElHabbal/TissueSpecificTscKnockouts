@@ -120,7 +120,7 @@ ribosomes <- c('RPL7','RPL13A','RPL34','RPS28','RPS24','RPS5','FAU','RPS6','RPS1
 #convert to mouse gene format
 ribosomes <- capitalize(tolower(ribosomes))
 
-gene.data.name <- c('tsc_isoforms','glycogen_genes','pp1_regulatory_subunits','interleukins','srebp','linoleate_metabolism','myokines','tg_synthesis','lipolysis','oglnac_metabolisn','ribosomes','ppar_isoforms','b_oxidation','ppard_targets','myosin_heavy_chain','myosin_heavy_chain_main','slow_twitch_genes','fast_twitch_genes','myotubular_degradation','muscle_differentiation','autophagy','mitochondrial_genes','fatty_acid_uptake','fatty_acid_uptake_no_FABP3','fabp_cd36','cb_receptors','oxidative_markers_rosenbaum','oxidative_markers_rosenbaum_2','serca','uncouplers','Jnk_related_genes','aa_transporters','aa_transporters_up','jnk_activators','hippo','guridi_genes','guridi_genes_2','FGF21_related','transporters_up','ca_cycling')
+gene.data.name <- c('tsc_isoforms','glycogen_genes','pp1_regulatory_subunits','interleukins','srebp','linoleate_metabolism','myokines','tg_synthesis','lipolysis','oglnac_metabolisn','ribosomes','ppar_isoforms','b_oxidation','ppard_targets','myosin_heavy_chain','myosin_heavy_chain_main','slow_twitch_genes','fast_twitch_genes','myotubular_degradation','muscle_differentiation','autophagy','mitochondrial_genes','fatty_acid_uptake','fatty_acid_uptake_no_FABP3','fabp_cd36','cb_receptors','oxidative_markers_rosenbaum','serca','uncouplers','Jnk_related_genes','aa_transporters','aa_transporters_up','jnk_activators','hippo','guridi_genes','guridi_genes_2','FGF21_related')
 
 for (name in gene.data.name){
   #name <- as.name(name) #convert string to variable name

@@ -82,7 +82,7 @@ myokines <- c('Igf1','Il4','Il6','Il7','Il8','Il15','Fndc5','Fgf2','Fgf21','Serp
 lipolysis <- c('Lpl','Lipe','Pnpla2','Abhd5')
 oglnac_metabolisn <- c('Oga','Ogt','Uap1','Uap1l1','Pgm1','Pgm2','Pgm3','Gnpnat1','Amdhd2','Gfpt1','Gfpt2','Gnpda1','Gnpda2','Gpi1','Mpi','Hk1','Hk2','Hk3','Gck')
 ppar_isoforms <- c('Ppara','Pparb','Pparg','Ppargc1a','Ppargc1b')
-b_oxidation <- c('Acsl1','Acsl3','Acsl4','Acsl5','Acsl6','Cpt1','Cpt2','Acox1','Acox2','Acox3','Acadm','Acadl','Acadvl','Ehhadh','Hadh','Hadha','Acaa1a','Acaa1b','Acaa2','Acaca','Acacb')
+b_oxidation <- c('Acsl1','Acsl3','Acsl4','Acsl5','Acsl6','Cpt1a','Cpt1b','Cpt1c','Cpt2','Slc25a20','Crat','Acox1','Acox2','Acox3','Acadm','Acadl','Acadvl','Ehhadh','Hadh','Hadha','Hadhb','Echs1','Acaa1a','Acaa1b','Acaa2','Acaca','Acacb')
 ppard_targets <- c('Ppard','Ehhadh','Cyp4a10','Acaa1a','Acaa1b','Scp2','Acox1','Acox2','Acox3','Cpt1a','Cpt1b','Cpt2','Acadl','Acadm')
 #for fibre type
 myosin_heavy_chain <- c('Myh1','Myh2','Myh3','Myh4','Myh5','Myh6','Myh7','Myh7b','Myh8','Myh9','Myh10','Myh11','Myh12','Myh13','Myh14','Myh15','Myhn3','Myhn4','Myhs')

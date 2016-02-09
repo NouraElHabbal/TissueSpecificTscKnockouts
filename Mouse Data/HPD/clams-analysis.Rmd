@@ -1,76 +1,47 @@
 ---
-title: "Post High Protein Diet CLAMS"
-author: "Innocence Harvey and Dave Bridges"
-date: "May 29, 2015"
+title: "HPD CLAMS, end of study"
+author: "Dave Bridges, JeAnna Redd and Innocence Harvey"
+date: "August 18, 2015"
 output:
-  pdf_document:
-    keep_tex: yes
   html_document:
     keep_md: yes
+  pdf_document:
+    fig_caption: yes
+    keep_tex: yes
 ---
 
 ```{r global_options, include=FALSE}
 library(knitr)
 opts_chunk$set(fig.path='figures/',
                echo=FALSE, warning=FALSE, message=FALSE,dev=c('png','pdf'))
-options(scipen=3,digits =4)
+options(scipen=55,digits=3)
 ```
+
+This experiment used the animals at the end of 12 weeks of CD/HPD.  
 
 ```{r data-entry}
-library(xlsx)
-mri_data_file <- 'CLAMS MRI Data.xlsx'
-mri_data <- read.xlsx2(mri_data_file, sheetIndex=1)
-mri_data$Treatment <- relevel(mri_data$Treatment, ref='Control Diet')
-mri_data$Lean <- as.numeric(as.character(mri_data$Lean))
-mri_data$Fat <- as.numeric(as.character(mri_data$Fat))
-mri_data$Weight <- as.numeric(as.character(mri_data$Weight))
+cohort.1.input <- 'CLAMS Merged Data - Cohort 1.csv'
+cohort.1.data <- read.csv(cohort.1.input)
+cohort.1.data$Gender <- rep("M", dim(cohort.1.data)[1])
 
-clams_data_file2 <- 'oxymax data part 2.csv'
-  data <- read.csv('oxymax data.csv')
-  data2 <- read.csv(clams_data_file2)
-  data2$Interval <- data2$Interval + max(data$Interval)
-  all.data <- rbind(data, data2)
+cohort.2.input <- 'CLAMS Merged Data - Cohort 2.csv'
+cohort.2.data <- read.csv(cohort.2.input)
+#rename treatment for consistency
+library(plyr)
+cohort.2.data$Treatment <- revalue(cohort.2.data$Treatment, c("CD"="Control Diet", "HPD"="High Protein Diet"))
+detach("package:plyr", unload=TRUE)
+merged_data <- rbind(cohort.1.data,cohort.2.data)
+#remove females
+merged_data <- droplevels(subset(merged_data, Gender=="M"))
 
-all.data$Subject <- as.factor(all.data$Subject)
-remove.intervals <- 20
-remove.mice <- c()
-all.data.clean <- subset(all.data, Interval>remove.intervals)
-all.data.clean <- subset(all.data.clean, Event.Log=='')
-#remove first run's extra data
-#remove bad data
-
-library(dplyr)
-merged_data <- 
-  all.data.clean %>%
-  inner_join(mri_data, by=c('Subject'='Label')) %>%
-  select(Subject,Interval,Date.Time, Light.Dark,Volume.O2, RER,Heat,Feed.Weight.1,
-         X.Ambulatory,Y.Ambulatory,
-         Treatment, Fat, Lean) %>%
-  mutate(Total.Weight = Lean + Fat,
-         VO2 = Volume.O2 * Total.Weight/1000,
-         Percent.Fat.Mass = Fat/Total.Weight*100,
-         Total.Activity = X.Ambulatory)
-
-merged_data$Time <- sapply(strsplit(as.character(merged_data$Date.Time), " "), "[[", 2)
 library(lubridate)
-merged_data$Time <- as.numeric(hms(merged_data$Time))
-merged_data$Time.Interval <- cut(merged_data$Time, 48)
-merged_data$Date.Time <- mdy_hms(as.character(merged_data$Date.Time))
+merged_data$Date.Time <- ymd_hms(merged_data$Date.Time)
+merged_data$Time <- hour(merged_data$Date.Time)
 ```
-
-The input files were `r mri_data_file` for the echoMRI data.  This script was most recently updated on `r date()` and includes the following number of animals.
-
-The following animals/data were removed from this analysis due to data that was either not collected (ie measurements after the run was complete) or data that was clearly incorrect (airflow problems):
+The input files were `r cohort.1.input` for cohort 1 data and `r cohort.2.input` for the cohort 2 data.  These data can be found in `r getwd()`.  This script was most recently updated on `r date()` and includes the following number of animals:
 
 ```{r summary-table, results='asis'}
-library(xtable)
-
-mri_table <- 
-  mri_data %>%
-  distinct(Label) %>%
-  group_by(Treatment) %>%
-  summarise(Males = length(Treatment))
-
+library(dplyr)
 summary_table <- 
   merged_data %>%
   distinct(Subject) %>%
@@ -79,39 +50,47 @@ summary_table <-
 kable(summary_table)
 ```
 
+
 ```{r analysis}
-library(reshape2)
 se <- function(x) sd(x)/sqrt(length(x))
 
 animal.time.course <-
   merged_data %>%
-  group_by(Treatment,Interval, Time, Light.Dark) %>%
+  group_by(Treatment,Time, Light.Dark) %>%
   summarize(VO2 = mean(VO2),
+            Heat = mean(Heat)*1000,
             RER = mean(RER),
             Total.Activity = mean(Total.Activity),
             Lean.Mass = mean(Lean),
             Fat.Mass = mean(Fat),
             Percent.Fat.Mass = mean(Percent.Fat.Mass),
             Body.Weight = mean(Total.Weight)) %>%
-  mutate(VO2.lbm = VO2/Lean.Mass)
+  mutate(VO2.lbm = VO2/Lean.Mass,
+         Heat.lbm = Heat/Lean.Mass)
 
 animal.summary <-
   merged_data %>%
-  group_by(Subject,Treatment,Light.Dark) %>%
+  group_by(Treatment,Light.Dark, Subject) %>%
   summarize(VO2 = mean(VO2),
+            Heat = mean(Heat)*1000,
             RER = mean(RER),
             Total.Activity = mean(Total.Activity),
             Lean.Mass = mean(Lean),
             Fat.Mass = mean(Fat),
             Percent.Fat.Mass = mean(Percent.Fat.Mass),
             Body.Weight = mean(Total.Weight)) %>%
-  mutate(VO2.lbm = VO2/Lean.Mass)
+  mutate(VO2.lbm = VO2/Lean.Mass,
+         Heat.lbm = Heat/Lean.Mass)
+write.csv(animal.summary, "Animal Summary Data.csv")
+#kable(animal.summary, caption="Animal Level Summary")
 
 grouped.summary <-
   animal.summary %>%
   group_by(Treatment,Light.Dark) %>%
   summarize(VO2 = mean(VO2),
             VO2.lbm = mean(VO2.lbm),
+            Heat = mean(Heat),
+            Heat.lbm = mean(Heat.lbm),
             RER = mean(RER),
             Total.Activity = mean(Total.Activity),
             Lean.Mass = mean(Lean.Mass),
@@ -125,6 +104,8 @@ grouped.summary.se <-
   group_by(Treatment,Light.Dark) %>%
   summarize(VO2 = se(VO2),
             VO2.lbm = se(VO2.lbm),
+            Heat = se(Heat),
+            Heat.lbm = se(Heat.lbm),
             RER = se(RER),
             Total.Activity = se(Total.Activity),
             Lean.Mass = se(Lean.Mass),
@@ -136,56 +117,47 @@ grouped.summary.se <-
 
 # Resting Metabolic Rate
 
-The VO2 levels were first merged to average over light and dark cycles, removing the first `r remove.intervals` measurements.  To analyse these data we performed an ANCOVA analysis using lean body mass as the primary covariate. 
+The proxy for energy consumption is the volume of oxygen consumed.  This is best presented in proportion to the amount of lean body mass, since fat mass does not appreciably consume oxygen.  Resting metabolic rate should be high in the evening (when mice are active) and low during the day.  The interpretation of changes in VO2 also requires looking at the levels of physical activity, since more physically active animals will consume more oxygen.
 
-```{r VO2-by-lean}
+The VO2 levels were first merged to average over light and dark cycles, To analyse these data we performed an ANCOVA analysis using lean body mass as the primary covariate, and removing the NCD animals.  This analysis presumes that the effect of lean body mass on VO2 is the same for each group.
+
+```{r VO2-by-lean, fig.cap="Effects of Treatment on VO2.  The lines represent the results of an ANCOVA analysis accounting for the effects of lean mass."}
 superpose.eb <- function (x, y, ebl, ebu = ebl, length = 0.08, ...)
   arrows(x, y + ebu, x, y - ebl, angle = 90, code = 3,
   length = length, ...)
 
 par(mfrow=c(1,2))
 plot.data <- subset(animal.summary,Light.Dark=='Dark')
-with(plot.data, plot(Lean.Mass, VO2,pch=19, las=1, ylab="VO2", main='Dark', col=Treatment))
-legend("bottomright", levels(merged_data$Treatment), pch=19, col=palette()[1:2], lty=1, bty='n')
+with(plot.data, plot(Lean.Mass, VO2,pch=19, las=1, 
+                     ylab="VO2 (mL/h)", xlab="Lean Mass (g)", 
+                     main='Dark - Males',
+                     col=Treatment, ylim=c(min(animal.summary$VO2), max(animal.summary$VO2))))
+legend("bottomright", levels(merged_data$Treatment), pch=19, col=palette()[1:3], lty=1, bty='n')
 #calculate best fit lines
 dark.none.lm <- lm(VO2~Lean.Mass+Treatment, data=plot.data )
 dark.none.hfd.aov <- aov(VO2~Lean.Mass+Treatment, data=plot.data )
 #draw lines
-abline(a=coefficients(dark.none.lm)[1],
-       b=coefficients(dark.none.lm)[2], col=palette()[1])
-abline(a=coefficients(dark.none.lm)[1]+coefficients(dark.none.lm)['TreatmentHigh Protein Diet'],
-       b=coefficients(dark.none.lm)[2], col=palette()[2])
-
+abline(a=coefficients(dark.none.lm)['(Intercept)'],
+       b=coefficients(dark.none.lm)['Lean.Mass'], col=palette()[1])
+abline(a=coefficients(dark.none.lm)['(Intercept)']+coefficients(dark.none.lm)['TreatmentHigh Protein Diet'],
+       b=coefficients(dark.none.lm)['Lean.Mass'], col=palette()[2])
 
 plot.data <- subset(animal.summary,Light.Dark=='Light')
-with(plot.data, plot(Lean.Mass, VO2, pch=19, las=1, ylab="VO2", main='Light', col=Treatment))
-legend("bottomright", levels(merged_data$Treatment), pch=19, col=palette()[1:2], lty=1, bty='n')
+with(plot.data, plot(Lean.Mass, VO2, pch=19, las=1, 
+                     ylab="VO2 (mL/h)", xlab="Lean Mass (g)", 
+                     main='Light - Males', col=Treatment, ylim=c(min(animal.summary$VO2), max(animal.summary$VO2))))
+legend("topleft", levels(merged_data$Treatment), pch=19, col=palette()[1:3], lty=1, bty='n')
 #calculate best fit lines
 light.none.lm <- lm(VO2~Lean.Mass+Treatment, data=plot.data )
 light.none.hfd.aov <- aov(VO2~Lean.Mass+Treatment, data=plot.data )
 #draw lines
-abline(a=coefficients(light.none.lm)[1],
-       b=coefficients(light.none.lm)[2], col=palette()[1])
-abline(a=coefficients(light.none.lm)[1]+coefficients(dark.none.lm)['TreatmentHigh Protein Diet'],
-       b=coefficients(light.none.lm)[2], col=palette()[2])
+abline(a=coefficients(light.none.lm)['(Intercept)'],
+       b=coefficients(light.none.lm)['Lean.Mass'], col=palette()[1])
+abline(a=coefficients(light.none.lm)['(Intercept)']+coefficients(light.none.lm)['TreatmentHigh Protein Diet'],
+       b=coefficients(light.none.lm)['Lean.Mass'], col=palette()[2])
 ```
 
-```{r vo2-barplot}
-vo2.dataset <- subset(grouped.summary, Light.Dark=='Dark') %>%
-  group_by(Treatment) 
-vo2.dataset.se <- subset(grouped.summary.se, Light.Dark=='Dark') %>%
-  group_by(Treatment)
-
-ymax = max(vo2.dataset$VO2.lbm, na.rm=T) + max(vo2.dataset.se$VO2.lbm, na.rm=T)
-plot <- barplot(vo2.dataset$VO2.lbm, 
-        beside=T, col=palette()[1:2], las=1,
-        names.arg=vo2.dataset$Treatment,
-        ylab="Oxygen Consumption (VO2/mL/h/g lean mass)", ylim=c(0,ymax))
-superpose.eb(plot, vo2.dataset$VO2.lbm, vo2.dataset.se$VO2.lbm)
-
-```
-
-```{r vo2-diagnostic-plots}
+```{r vo2-diagnostic-plots, fig.cap="Diagnostic model plots for effects of diet treatment on VO2.  ."}
 
 library(lme4)
 vo2.lme <- lmer(VO2 ~ Light.Dark + Lean + Treatment + (1|Subject), data=merged_data, REML=F)
@@ -205,25 +177,174 @@ We first checked whether normality was maintained in the residuals from the ANCO
 #omnibus ANOVA
 vo2.aov <-  aov(VO2~Lean.Mass+Light.Dark + Treatment, data=animal.summary)
 vo2.lm <-  lm(VO2~Lean.Mass+Light.Dark + Treatment, data=animal.summary)
-kable(summary(vo2.aov)[[1]], caption='ANCOVA Analysis for Effect of Diet on VO2')
+kable(summary(vo2.aov)[[1]], caption='ANCOVA Analysis for Effect of Diet on VO2.', digits=8)
 library(car)
+
+predict.vo2.cd <- predict(vo2.lm, newdata=list(Light.Dark="Light", Lean.Mass=mean(animal.summary$Lean.Mass), Treatment="Control Diet"))
+predict.vo2.hpd <- predict(vo2.lm, newdata=list(Light.Dark="Light", Lean.Mass=mean(animal.summary$Lean.Mass), Treatment="High Protein Diet"))
 ```
 
-```{r vo2-time-course}
-with(subset(animal.time.course, Treatment=="Control Diet"), plot(Interval,VO2, type="l", las=1, ylim=c(min(VO2), max(VO2))))
-with(subset(animal.time.course, Treatment=="High Protein Diet"), lines(Interval,VO2, col=palette()[2]))
+```{r vo2-time-course, fig.cap="Oxygen consumption over time."}
+with(subset(animal.time.course, Treatment==levels(merged_data$Treatment)[1]), 
+     plot(Time,VO2, type="l", ylab="VO2 (mL/h)", xlab="Time (hours)", 
+          las=1, ylim=c(min(animal.time.course$VO2), max(animal.time.course$VO2))))
+with(subset(animal.time.course, Treatment==levels(merged_data$Treatment)[2]), 
+     lines(Time,VO2, col=palette()[2]))
+
 legend("topleft", levels(animal.time.course$Treatment), bty="n", lty=1, col=palette()[1:2])
 ```
 
-The residuals of this model were normally distributed (p=`r shapiro.test(residuals(vo2.aov))$p.value`) via a Shapiro-Wilk Test.  According to this ANCOVA, the double knockouts have `r coef(vo2.aov)['TreatmentHigh Protein Diet']` higher VO2, a reduction of `r (predict(vo2.aov, newdata=list(Lean.Mass=30, Light.Dark='Dark',Treatment="High Protein Diet"))-predict(vo2.aov, newdata=list(Lean.Mass=30, Light.Dark='Dark',Treatment="Control Diet")))/predict(vo2.aov, newdata=list(Lean.Mass=30, Light.Dark='Dark',Treatment="Control Diet"))*100`%
+```{r vo2-lbm-time-course, fig.cap="Oxygen consumption over time."}
+with(subset(animal.time.course, Treatment==levels(merged_data$Treatment)[1]), 
+     plot(Time,VO2.lbm, type="l", ylab="VO2 (mL/h/g FFM)", xlab="Time (hours)", 
+          las=1, ylim=c(min(animal.time.course$VO2.lbm), max(animal.time.course$VO2.lbm))))
+with(subset(animal.time.course, Treatment==levels(merged_data$Treatment)[2]), 
+     lines(Time,VO2.lbm, col=palette()[2]))
 
-Alternatively we used a mixed linear model, with non-interacting covariates for the Light cycle, the lean mass and the diet.  A Chi-squared test comparing a model with or without the Diet term yielded a p-value of `r  anova(vo2.lme,vo2.lme.null)$"Pr(>Chisq)"[2]` for the males.  The residuals of this model were **not normally distributed** (`r shapiro.test(residuals(vo2.lme))$p.value5` via Shapiro-Wilk Test).
+legend("topleft", levels(animal.time.course$Treatment), bty="n", lty=1, col=palette()[1:2])
+```
+
+The residuals of this model were normally distributed (p=`r shapiro.test(residuals(vo2.aov))$p.value`) via a Shapiro-Wilk Test. The oxygen consumption rate was increased by High Protein Diet in this model by `r (predict.vo2.hpd-predict.vo2.cd)/predict.vo2.cd*100`% (p=`r summary(vo2.aov)[[1]]$"Pr(>F)"[3]`)
+
+Alternatively we used a mixed linear model, with non-interacting covariates for the Light cycle, the lean mass and the treatment  A Chi-squared test comparing a model with or without the Treatment term yielded a p-value of `r  anova(vo2.lme,vo2.lme.null)$"Pr(>Chisq)"[2]` for the mice.  The residuals of this mixed linear model were **not normally distributed** (`r shapiro.test(residuals(vo2.lme))$p.value` via Shapiro-Wilk Test).  
+
+```{r vo2-barplot, fig.cap="The oxygen consumption rate summarized by light/dark cycle."}
+library(tidyr)
+VO2.dataset <- grouped.summary %>%
+  group_by(Treatment, Light.Dark) %>%
+  select(Light.Dark,Treatment,VO2.lbm) %>%
+  spread(Light.Dark, VO2.lbm)
+VO2.dataset.se <- grouped.summary.se %>%
+  group_by(Treatment, Light.Dark) %>%
+  select(Light.Dark,Treatment,VO2.lbm) %>%
+  spread(Light.Dark, VO2.lbm)
+
+plot <- barplot(as.matrix(VO2.dataset[2:3]), 
+        beside=T, col=palette()[1:2], las=1,
+        ylab="VO2 (mL/h/g FFM)",
+        ylim=c(0,max(VO2.dataset[2:3]) + max(VO2.dataset.se[2:3])))
+
+superpose.eb(plot, as.matrix(VO2.dataset[2:3]), as.matrix(VO2.dataset.se[2:3]))
+legend("topright", levels(VO2.dataset$Treatment), bty="n", fill=palette()[1:2])
+```
+
+## Heat Production
+
+Heat production is calculated from the formula $(3.815 + 1.232 * RER)*VO2$, also known as the Lusk equation.
+
+```{r Heat-by-lean, fig.cap="Effects of Treatment on Heat.  The lines represent the results of an ANCOVA analysis accounting for the effects of lean mass."}
+superpose.eb <- function (x, y, ebl, ebu = ebl, length = 0.08, ...)
+  arrows(x, y + ebu, x, y - ebl, angle = 90, code = 3,
+  length = length, ...)
+
+par(mfrow=c(1,2))
+plot.data <- subset(animal.summary,Light.Dark=='Dark')
+with(plot.data, plot(Lean.Mass, Heat,pch=19, las=1, 
+                     ylab="Heat (cal/h)", xlab="Lean Mass (g)", 
+                     main='Dark - Males',
+                     col=Treatment, ylim=c(min(animal.summary$Heat), max(animal.summary$Heat))))
+legend("bottomright", levels(merged_data$Treatment), pch=19, col=palette()[1:3], lty=1, bty='n')
+#calculate best fit lines
+dark.none.lm <- lm(Heat~Lean.Mass+Treatment, data=plot.data )
+dark.none.hfd.aov <- aov(Heat~Lean.Mass+Treatment, data=plot.data )
+#draw lines
+abline(a=coefficients(dark.none.lm)['(Intercept)'],
+       b=coefficients(dark.none.lm)['Lean.Mass'], col=palette()[1])
+abline(a=coefficients(dark.none.lm)['(Intercept)']+coefficients(dark.none.lm)['TreatmentHigh Protein Diet'],
+       b=coefficients(dark.none.lm)['Lean.Mass'], col=palette()[2])
+
+plot.data <- subset(animal.summary,Light.Dark=='Light')
+with(plot.data, plot(Lean.Mass, Heat, pch=19, las=1, 
+                     ylab="Heat (cal/h)", xlab="Lean Mass (g)", 
+                     main='Light - Males', col=Treatment, ylim=c(min(animal.summary$Heat), max(animal.summary$Heat))))
+legend("topleft", levels(merged_data$Treatment), pch=19, col=palette()[1:3], lty=1, bty='n')
+#calculate best fit lines
+light.none.lm <- lm(Heat~Lean.Mass+Treatment, data=plot.data )
+light.none.hfd.aov <- aov(Heat~Lean.Mass+Treatment, data=plot.data )
+#draw lines
+abline(a=coefficients(light.none.lm)['(Intercept)'],
+       b=coefficients(light.none.lm)['Lean.Mass'], col=palette()[1])
+abline(a=coefficients(light.none.lm)['(Intercept)']+coefficients(light.none.lm)['TreatmentHigh Protein Diet'],
+       b=coefficients(light.none.lm)['Lean.Mass'], col=palette()[2])
+```
+
+```{r Heat-diagnostic-plots, fig.cap="Diagnostic model plots for effects of diet treatment on Heat."}
+
+library(lme4)
+Heat.lme <- lmer(Heat ~ Light.Dark + Lean + Treatment + (1|Subject), data=merged_data, REML=F)
+Heat.lme.null <- lmer(Heat ~ Light.Dark + Lean + (1|Subject), data=merged_data, REML=F)
+library(influence.ME)
+par(mfrow=c(1,3))
+infl <- influence(Heat.lme, group='Subject')
+barplot(cooks.distance(infl), main="Cook's Distance", 
+        beside=T, col='grey',las=2, names.arg=rownames(cooks.distance(infl)))
+plot(density(residuals(Heat.lme)), main="Residuals")
+plot(fitted(Heat.lme), residuals(Heat.lme), xlab="Predicted Heat", ylab="Residuals", main="Residuals vs Predicted")
+```
+
+We first checked whether normality was maintained in the residuals from the ANCOVA.  These results are summarized below:
+
+```{r Heat-ancova-summary, results='asis'}
+#omnibus ANOVA
+Heat.aov <-  aov(Heat~Lean.Mass+Light.Dark + Treatment, data=animal.summary)
+Heat.lm <-  lm(Heat~Lean.Mass+Light.Dark + Treatment, data=animal.summary)
+
+predict.Heat.cd <- predict(Heat.lm, newdata=list(Light.Dark="Light", Lean.Mass=mean(animal.summary$Lean.Mass), Treatment="Control Diet"))
+predict.Heat.hpd <- predict(Heat.lm, newdata=list(Light.Dark="Light", Lean.Mass=mean(animal.summary$Lean.Mass), Treatment="High Protein Diet"))
+kable(summary(Heat.aov)[[1]], caption='ANCOVA Analysis for Effect of Diet on Heat.', digits=8)
+library(car)
+```
+
+```{r Heat-time-course, fig.cap="Heat Production over time."}
+with(subset(animal.time.course, Treatment==levels(merged_data$Treatment)[1]), 
+     plot(Time,Heat, type="l", ylab="Heat (cal/h)", xlab="Time (hours)", 
+          las=1, ylim=c(min(animal.time.course$Heat), max(animal.time.course$Heat))))
+with(subset(animal.time.course, Treatment==levels(merged_data$Treatment)[2]), 
+     lines(Time,Heat, col=palette()[2]))
+
+legend("topleft", levels(animal.time.course$Treatment), bty="n", lty=1, col=palette()[1:2])
+```
+
+```{r Heat-lbm-time-course, fig.cap="Heat production over time, normalized to lean body mass"}
+with(subset(animal.time.course, Treatment==levels(merged_data$Treatment)[1]), 
+     plot(Time,Heat.lbm, type="l", ylab="Heat (cal/h/g FFM)", xlab="Time (hours)", 
+          las=1, ylim=c(min(animal.time.course$Heat.lbm), max(animal.time.course$Heat.lbm))))
+with(subset(animal.time.course, Treatment==levels(merged_data$Treatment)[2]), 
+     lines(Time,Heat.lbm, col=palette()[2]))
+
+legend("topleft", levels(animal.time.course$Treatment), bty="n", lty=1, col=palette()[1:2])
+```
+
+The residuals of this model were normally distributed (p=`r shapiro.test(residuals(Heat.aov))$p.value`) via a Shapiro-Wilk Test. The heat production rate was increased by High Protein Diet in this model by `r (predict.Heat.hpd-predict.Heat.cd)/predict.Heat.cd*100`% (p=`r summary(Heat.aov)[[1]]$"Pr(>F)"[3]`)
+
+Alternatively we used a mixed linear model, with non-interacting covariates for the Light cycle, the lean mass and the treatment  A Chi-squared test comparing a model with or without the Treatment term yielded a p-value of `r  anova(Heat.lme,Heat.lme.null)$"Pr(>Chisq)"[2]` for the mice.  The residuals of this mixed linear model were **not normally distributed** (`r shapiro.test(residuals(Heat.lme))$p.value` via Shapiro-Wilk Test).  
+
+```{r Heat-barplot, fig.cap="The heat production rate summarized by light/dark cycle."}
+library(tidyr)
+Heat.dataset <- grouped.summary %>%
+  group_by(Treatment, Light.Dark) %>%
+  select(Light.Dark,Treatment,Heat.lbm) %>%
+  spread(Light.Dark, Heat.lbm)
+Heat.dataset.se <- grouped.summary.se %>%
+  group_by(Treatment, Light.Dark) %>%
+  select(Light.Dark,Treatment,Heat.lbm) %>%
+  spread(Light.Dark, Heat.lbm)
+
+plot <- barplot(as.matrix(Heat.dataset[2:3]), 
+        beside=T, col=palette()[1:2], las=1,
+        ylab="Heat (cal/h/g FFM)",
+        ylim=c(0,max(Heat.dataset[2:3]) + max(Heat.dataset.se[2:3])))
+
+superpose.eb(plot, as.matrix(Heat.dataset[2:3]), as.matrix(Heat.dataset.se[2:3]))
+legend("topright", levels(Heat.dataset$Treatment), bty="n", fill=palette()[1:2])
+```
 
 
+\newpage
 
 # Body Weights and Composition
 
-```{r body-composition-no-treatment}
+```{r body-composition, fig.cap="Body consumption summarized barplots."}
 
 par(mfrow=c(2,2))
 library(tidyr)
@@ -236,25 +357,33 @@ bw.dataset.se <- subset(grouped.summary.se, Light.Dark=='Dark') %>%
 ymax = max(bw.dataset$Body.Weight, na.rm=T) + max(bw.dataset.se$Body.Weight, na.rm=T)
 plot <- barplot(bw.dataset$Body.Weight, 
         beside=T, col=palette()[1:2], las=1,
-        ylab="Weight (g)", ylim=c(0,ymax))
+        ylab="Weight (g)", ylim=c(0,ymax),
+        names.arg=bw.dataset$Treatment,
+        cex.names=0.6)
 superpose.eb(plot, bw.dataset$Body.Weight, bw.dataset.se$Body.Weight)
 
 ymax = max(bw.dataset$Lean.Mass, na.rm=T) + max(bw.dataset.se$Lean.Mass, na.rm=T)
 plot <- barplot(bw.dataset$Lean.Mass, 
         beside=T, col=palette()[1:2], las=1,
-        ylab="Lean Mass (g)", ylim=c(0,ymax))
+        ylab="Lean Mass (g)", ylim=c(0,ymax),
+        names.arg=bw.dataset$Treatment,
+        cex.names=0.6)
 superpose.eb(plot, bw.dataset$Lean.Mass, bw.dataset.se$Lean.Mass)
 
 ymax = max(bw.dataset$Fat.Mass, na.rm=T) + max(bw.dataset.se$Fat.Mass, na.rm=T)
 plot <- barplot(bw.dataset$Fat.Mass, 
         beside=T, col=palette()[1:2], las=1,
-        ylab="Fat Mass (g)", ylim=c(0,ymax))
+        ylab="Fat Mass (g)", ylim=c(0,ymax),
+        names.arg=bw.dataset$Treatment,
+        cex.names=0.6)
 superpose.eb(plot, bw.dataset$Fat.Mass, bw.dataset.se$Fat.Mass)
 
 ymax = max(bw.dataset$Percent.Fat.Mass, na.rm=T) + max(bw.dataset.se$Percent.Fat.Mass, na.rm=T)
 plot <- barplot(bw.dataset$Percent.Fat.Mass, 
         beside=T, col=palette()[1:2], las=1,
-        ylab="Percent Fat Mass", ylim=c(0,ymax))
+        ylab="Percent Fat Mass", ylim=c(0,ymax),
+        names.arg=bw.dataset$Treatment,
+        cex.names=0.6)
 superpose.eb(plot, bw.dataset$Percent.Fat.Mass, bw.dataset.se$Percent.Fat.Mass)
 ```
 
@@ -299,9 +428,13 @@ statistics.summary['Lean Mass', 'Student'] <- t.test(Lean.Mass~Treatment, data=c
 kable(statistics.summary, caption="Statistical Tests for Body Composition")
 ```
 
+\newpage
+
 # Respiratory Exchange Rate
 
-```{r rer-barplot}
+The respiratory exchange ratio is an indicator of substrate preference.  A high RER indicates preferential utilization of carbohydrates for energy, while a low RER indicates preferential use of lipids.  The normal range of these values are 0.7 (nearly exclusivley lipid) to 1.0 (nearly exclusively carbohydrate).  Lipid utilization (low RER) is increased during sleep (day cycle for mice).
+
+```{r rer-barplot, fig.cap="The respiratory exchange ratio summarized by light/dark cycle."}
 rer.dataset <- grouped.summary %>%
   group_by(Treatment, Light.Dark) %>%
   select(Light.Dark,Treatment,RER) %>%
@@ -312,23 +445,25 @@ rer.dataset.se <- grouped.summary.se %>%
   spread(Light.Dark, RER)
 
 plot <- barplot(as.matrix(rer.dataset[2:3]), 
-        beside=T, col=rer.dataset$Treatment, las=1,
-        ylab="Respiratory Exchange Ratio", ylim=c(0.6,1),
+        beside=T, col=palette()[1:2], las=1,
+        ylab="Respiratory Exchange Ratio", ylim=c(0.7,1),
         main="RER",xpd=FALSE)
 axis(side=1,at=plot, labels=FALSE, tick=FALSE)
 superpose.eb(plot, as.matrix(rer.dataset[2:3]), as.matrix(rer.dataset.se[2:3]))
 legend("topright", levels(rer.dataset$Treatment), bty="n", fill=palette()[1:2])
 ```
 
-```{r rer-time-course}
-with(subset(animal.time.course, Treatment=="Control Diet"), plot(Interval,RER, type="l", las=1, ylim=c(0.6,1)))
-with(subset(animal.time.course, Treatment=="High Protein Diet"), lines(Interval,RER, col=palette()[2]))
-legend("bottomright", levels(rer.dataset$Treatment), bty="n", lty=1, col=palette()[1:2])
+```{r rer-time-course, fig.cap="The respiratory exchange ratio over time."}
+with(subset(animal.time.course, Treatment==levels(merged_data$Treatment)[1]), plot(Time,RER, type="l", xlab="Time (h)", las=1, ylim=c(0.7,1)))
+with(subset(animal.time.course, Treatment==levels(merged_data$Treatment)[2]), lines(Time,RER, col=palette()[2]))
+
+
+legend("bottomright", levels(rer.dataset$Treatment), bty="n", lty=1, col=palette()[1:3])
 ```
 
-```{r rer-statistics-untreated}
-rer.lme <- lmer(RER~Light.Dark + Treatment + (1|Subject), data=merged_data, REML=F)
-rer.lme.null <- lmer(RER~Light.Dark + (1|Subject), data=merged_data, REML=F)
+```{r rer-statistics-untreated, fig.cap="Diagnostic model plots for mixed linear model analysis of RER."}
+rer.lme <- lmer(RER~Light.Dark + Treatment + (1|Subject), data=subset(merged_data, Treatment!="NCD + Vehicle"), REML=F)
+rer.lme.null <- lmer(RER~Light.Dark + (1|Subject), data=subset(merged_data, Treatment!="NCD + Vehicle"), REML=F)
 
 par(mfrow=c(1,3))
 infl <- influence(rer.lme, group='Subject')
@@ -338,13 +473,15 @@ plot(density(residuals(rer.lme)), main="Residuals")
 plot(fitted(rer.lme), residuals(rer.lme), xlab="Predicted RER", ylab="Residuals", main="Residuals vs Predicted")
 ```
 
-Alternatively we used a mixed linear model, with non-interacting covariates for the Light cycle and the diet.  A Chi-squared test comparing a model with or without the diet term yielded a p-value of `r anova(rer.lme,rer.lme.null)$"Pr(>Chisq)"[2]` for the males.
+We used a mixed linear model, with non-interacting covariates for the Light cycle and the treatment.  A Chi-squared test comparing a model with or without the treatment term yielded a p-value of `r anova(rer.lme,rer.lme.null)$"Pr(>Chisq)"[2]` for the mice.  
 
-
+\newpage
 
 # Activity Data
 
-```{r activity}
+Physical activity is determined via the number of beam brakes in the X or Y direction (not vertically).  These numbers are high when the mice are awake (dark cycle) and low during the light cycle.  The beam breaks are converted into ambulatory counts based on consecutive breaks of beams, indicating movement.  These counts data are not normally distributed and as such are typically analysed with generalized linear models.
+
+```{r activity, fig.cap="Activity counts summarized by light cycle and treatment group."}
 activity.dataset <- grouped.summary %>%
   group_by(Treatment, Light.Dark) %>%
   select(Light.Dark,Treatment,Total.Activity) %>%
@@ -356,16 +493,16 @@ activity.dataset.se <- grouped.summary.se %>%
 
 ymax <- max(as.matrix(activity.dataset[2:3])) + max(as.matrix(activity.dataset.se[2:3]))
 plot <- barplot(as.matrix(activity.dataset[2:3]), 
-        beside=T, col=activity.dataset$Treatment, las=1,
+        beside=T, col=palette()[1:2], las=1,
         ylab="Ambulatory Movement", ylim=c(0,ymax),
         main="Activity")
 superpose.eb(plot, as.matrix(activity.dataset[2:3]), as.matrix(activity.dataset.se[2:3]))
 legend("topright", levels(activity.dataset$Treatment), bty="n", fill=palette()[1:2])
 ```
 
-```{r activity-statistics}
-activity.lme <- glmer(Total.Activity~Light.Dark + Treatment + (1|Subject), data=merged_data, family='poisson', REML=F)
-activity.lme.null <- glmer(Total.Activity~Light.Dark + (1|Subject), data=merged_data, family='poisson', REML=F)
+```{r activity-statistics, fig.cap="Model diagnostic plots for generalized linear models of physical activity."}
+activity.lme <- glmer(Total.Activity~Light.Dark + Treatment + (1|Subject), data=merged_data, family='poisson')
+activity.lme.null <- glmer(Total.Activity~Light.Dark + (1|Subject), data=merged_data, family='poisson')
 
 par(mfrow=c(1,3))
 infl <- influence(activity.lme, group='Subject')
@@ -375,7 +512,7 @@ plot(density(residuals(activity.lme)), main="Residuals")
 plot(fitted(activity.lme), residuals(activity.lme), xlab="Predicted Activity", ylab="Residuals", main="Residuals vs Predicted")
 ```
 
-Alternatively we used a mixed linear model, with non-interacting covariates for the Light cycle and the diet.  A Chi-squared test comparing a model with or without the Genotype term yielded a p-value of `r anova(activity.lme,activity.lme.null)$"Pr(>Chisq)"[2]` for the males.
+We used a generalized mixed linear model, with non-interacting covariates for the Light cycle and the treatment  A Chi-squared test comparing a model with or without the Genotype term yielded a p-value of `r anova(activity.lme,activity.lme.null)$"Pr(>Chisq)"[2]` for the mice.  This analysis used a generalized mixed linear model (Poission).
 
 # Session Information
 

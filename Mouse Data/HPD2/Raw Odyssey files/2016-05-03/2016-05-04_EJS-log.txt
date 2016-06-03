@@ -1,0 +1,35 @@
+May  3 12:08:40 argus1 scand: INFO **** BEGIN-SCAN: GROUP='Bridges', SCAN='2016-05-04_EJS' **** 
+May  3 12:08:40 argus1 scand: INFO Serial Number: ODY-0244 
+May  3 12:08:40 argus1 scand: INFO Microscope Serial Number: 1234567890 
+May  3 12:08:40 argus1 scand: INFO Software Version: 2.1.15 
+May  3 12:08:40 argus1 scand: INFO New doc is: <new><in><scangroup>Bridges</scangroup><scan>2016-05-04_EJS</scan><channel>700 800</channel><focus>0</focus><resolution>84</resolution><quality>medium</quality><intensity700>1</intensity700><intensity800>1</intensity800><size><x0>0</x0><y0>0</y0><x1>16</x1><y1>6</y1></size><comment/></in></new> 
+May  3 12:08:40 argus1 scand: INFO res='2', speed='2' 
+May  3 12:08:40 argus1 scand: INFO ScandScanner: bandwidth=1200Hz 
+May  3 12:08:40 argus1 scand: INFO ScandScanner: filter_filename=/usr/local/licor/dsp1200Hz_rev1.hex 
+May  3 12:08:40 argus1 scand: INFO DSPDriver::SetMargin: left=0, right=640 
+May  3 12:08:40 argus1 scand: INFO XYZScanStrategy::Init: initialize analog driver 
+May  3 12:08:40 argus1 scand: INFO XYZScanStrategy::Init: initialize DSP driver ... left=0, right=7560 
+May  3 12:08:40 argus1 scand: INFO DSPDriver::SetMargin: left=0, right=7560 
+May  3 12:08:40 argus1 scand: INFO XYZScanStrategy::Init:  left=-387 right=7949 top=0 bottom=2837 
+May  3 12:08:40 argus1 scand: INFO XYZScanStrategy::Init : gain700=0 volts700=78.457 gain800=0 volts800=77.7734 
+May  3 12:08:40 argus1 scand: INFO ScandScanner::do_scan: two channels 
+May  3 12:08:40 argus1 paneld: INFO testState: transition from 'init' to 'pause' 
+May  3 12:08:41 argus1 python:  INFO ageOffDataFiles:  Space Requested:  10485760L  Space Available:  64239484928L
+May  3 12:08:43 argus1 scand: INFO Scan paused. 
+May  3 12:08:43 argus1 paneld: INFO testState: transition from 'pause' to 'scan' 
+May  3 12:08:43 argus1 paneld: INFO testState: transition from 'scan' to 'pause' 
+May  3 12:19:54 argus1 scand: INFO cmd='/usr/local/bin/plot-laser-log-file' 
+May  3 12:19:55 argus1 scand: INFO plot-laser-log-file: sn='1234567890' 
+May  3 12:19:55 argus1 scand: INFO plot-laser-log-file: laser data file='/home/laserlog/laser' 
+May  3 12:19:55 argus1 scand: INFO plot-laser-log-file: laser graphic file='/home/laserlog/laser.png' 
+May  3 12:19:55 argus1 scand: INFO plot-laser-log-file: max current: 700=70, 800=60 
+May  3 12:19:55 argus1 scand: INFO plot-laser-log-file: MAX: X=950931, YMin=0, YMax=77 
+May  3 12:19:55 argus1 scand: INFO plot-laser-log-file::plot: hours=264.1 
+May  3 12:19:55 argus1 scand: INFO plot-laser-log-file::plot: X as hours=265 
+May  3 12:19:55 argus1 scand: INFO plot-laser-log-file::plot: exponent=2.42324587393681 
+May  3 12:19:55 argus1 scand: INFO plot-laser-log-file::plot: ceil exponent=3 
+May  3 12:19:55 argus1 scand: INFO plot-laser-log-file::plot: NX=3, XX=1000 
+May  3 12:19:55 argus1 scand: INFO plot-laser-log-file::plot: left=59, top=366, right=1061, bottom=64 
+May  3 12:19:55 argus1 scand: INFO  
+May  3 12:19:55 argus1 scand: INFO Laser graphic generation required 1 seconds 
+May  3 12:19:55 argus1 scand: INFO **** END-SCAN: GROUP='Bridges', SCAN='2016-05-04_EJS' **** 

@@ -115,6 +115,7 @@ guridi_genes <- c('Ucp2','Ppargc1b','Pdk4','Fasn','Bdh1','Oxct1','Hmgcs2','Acat1
 guridi_genes_2 <- c('Ucp2','Ppargc1b','Fasn','Bdh1','Oxct1','Hmgcs2','Acat1','Klb','Fgf21','Ddit3','Hspa5','Xbp1','Trib3')
 FGF21_related <- c('Fgf21','Klb','Fgfr1','Fgfr2','Fgfr3','Frs2','Hmgcs2','Sirt1','Sirt3','Mapk1','Mapk3')
 ca_cycling <- c('Atp2a2','Atp2a3','Sln','Pln','Ryr1','Ryr2','Ryr3')
+ca_reuptake <- c('Stim1','Stim2')
 FGF21_related <- c('Fgf21','Klb','Fgfr1','Fgfr2','Fgfr3','Frs2','Hmgcs2','Sirt1','Sirt3','Mapk1','Mapk3')
 MitochondrialCalcium_genes <- c('Mcu','Micu1','Micu2','Micu3','Slc8a1','Scl8a2','Slc8a3','Letm1','Letm2','Ryr1','Ryr2','Ryr3')
 
@@ -124,7 +125,7 @@ ribosomes <- c('RPL7','RPL13A','RPL34','RPS28','RPS24','RPS5','FAU','RPS6','RPS1
 ribosomes <- capitalize(tolower(ribosomes))
 
 
-gene.data.name <- c('tsc_isoforms','glycogen_genes','pp1_regulatory_subunits','interleukins','srebp','linoleate_metabolism','myokines','tg_synthesis','lipolysis','oglnac_metabolisn','ribosomes','ppar_isoforms','b_oxidation','ppard_targets','myosin_heavy_chain','myosin_heavy_chain_main','slow_twitch_genes','fast_twitch_genes','myotubular_degradation','muscle_differentiation','autophagy','mitochondrial_genes','fatty_acid_uptake','fatty_acid_uptake_no_FABP3','fabp_cd36','cb_receptors','oxidative_markers_rosenbaum','serca','uncouplers','Jnk_related_genes','aa_transporters','aa_transporters_up','jnk_activators','hippo','guridi_genes','guridi_genes_2','FGF21_related','MitochondrialCalcium_genes','mitofusins')
+gene.data.name <- c('tsc_isoforms','glycogen_genes','pp1_regulatory_subunits','interleukins','srebp','linoleate_metabolism','myokines','tg_synthesis','lipolysis','oglnac_metabolisn','ribosomes','ppar_isoforms','b_oxidation','ppard_targets','myosin_heavy_chain','myosin_heavy_chain_main','slow_twitch_genes','fast_twitch_genes','myotubular_degradation','muscle_differentiation','autophagy','mitochondrial_genes','fatty_acid_uptake','fatty_acid_uptake_no_FABP3','fabp_cd36','cb_receptors','oxidative_markers_rosenbaum','serca','uncouplers','Jnk_related_genes','aa_transporters','aa_transporters_up','jnk_activators','hippo','guridi_genes','guridi_genes_2','FGF21_related','MitochondrialCalcium_genes','mitofusins','ca_reuptake')
 
 for (name in gene.data.name){
   #name <- as.name(name) #convert string to variable name

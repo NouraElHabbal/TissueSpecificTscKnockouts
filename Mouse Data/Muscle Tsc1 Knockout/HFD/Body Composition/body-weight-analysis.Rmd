@@ -1,0 +1,662 @@
+---
+title: Longitudinal Body Composition Analysis of Muscle Tsc1 Knockout Mice on a High
+  Fat Diet
+author: "Erin Stephenson and Dave Bridges"
+date: "March 31, 2016"
+output:
+  html_document:
+    keep_md: yes
+  pdf_document:
+    keep_tex: yes
+---
+
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.path='figures/',
+               echo=FALSE, warning=FALSE, message=FALSE,dev=c('png','pdf'))
+options(scipen = 2, digits = 3)
+
+
+knitr::knit_hooks$set(inline = function(x) {
+  knitr:::format_sci(x, 'md')
+})
+palette( c("blue4","dodgerblue", "deeppink4","pink2"))
+```
+
+# Data Entry
+This was from combined weights over several measurements of mice all placed on a high fat diet from October 2015-February 2016.  Some animals may appear multiple times in this analysis.  Data is downloaded  from the mousedb website.  This includes only fed weights.  This cohort includes both male and female mice.
+
+```{r data-entry}
+raw_data_file <- "Raw Data.csv"
+data <- read.csv(raw_data_file, row.names='X')
+data$Gender <- relevel(data$animal.Gender, ref="M")
+data$Genotype <- relevel(data$animal.Genotype, ref='fl/fl; Tg/+')
+data$Knockout <- data$animal.Genotype == 'fl/fl; Tg/+'
+data$age.from.start <- data$age - 66
+#remove ITT
+data <- droplevels(subset(data,experiment.feeding_state=='fed'&assay.assay!='Grip Strength (4 Paw'&assay.assay!='Plasma Glucose'))
+data$Weight <- as.numeric(as.character(data$values))/1000
+
+library(dplyr)
+library(tidyr)
+weight.data <-
+  subset(data, age>=67) %>%
+  select(assay.assay,animal.id,age,Gender,Genotype,Knockout,Weight) %>%
+  distinct(animal.id,assay.assay,age) %>%
+  spread(assay.assay, Weight) %>%
+  mutate(`Percent Fat Mass` = `Total Fat Mass`/`Body Weight`*100)
+#convert column names to real names
+colnames(weight.data) <- make.names(colnames(weight.data))
+
+#remove outliers
+#NEED TO REMOVE DATA FROM WEEK 2 OF HFD- MICE WERE GIVEN A POST-CLAMS RECOVERY WEEK AND THEREFORE NOT MANY WERE MEASURED DURING THIS TIMEPOINT
+
+
+#mouse 4197 died in cage of unknown causes and was partially eaten by cagemates very early into HFD enrollment
+weight.data <-subset(weight.data, !(animal.id==9219))
+#mouse 4508 was likely sick (lost weight rapidly and died very early into HFD enrollment)
+weight.data <- subset(weight.data, !(animal.id==9503))
+#removed 4470 as it had mangled ears and was euthanized early on in the study
+weight.data <- subset(weight.data, !(animal.id==9494))
+
+
+se <- function(x) sd(x, na.rm=T)/sqrt(length(x))
+combined.summary <-
+  subset(weight.data, age>=67) %>%
+  mutate(Weeks = round((age-67)/7)) %>%
+  group_by(Weeks,Gender,Knockout) %>%
+  distinct(Weeks,animal.id) %>%
+  summarise(Body.Weight.mean = mean(Body.Weight, na.rm=T),
+            Body.Weight.se = se(Body.Weight),
+            Total.Fat.Mass.mean = mean(Total.Fat.Mass, na.rm=T),
+            Total.Fat.Mass.se = se(Total.Fat.Mass),
+            Lean.Mass.mean = mean(Lean.Mass, na.rm=T),
+            Lean.Mass.se = se(Lean.Mass),
+            Percent.Fat.Mass.mean = mean(Percent.Fat.Mass, na.rm=T),
+            Percent.Fat.Mass.se = se(Percent.Fat.Mass))
+
+combined.summary <- subset(combined.summary, Weeks!=1)
+```
+
+Data was downloaded from MouseDB then aand the data is saved as `r raw_data_file`.  These data are located in `r getwd()` and was most recently updated on `r date()`.
+
+# Enrollment
+
+```{r enrollment}
+counts.genotype <- 
+  weight.data %>%
+  group_by(Genotype,Gender) %>%
+  distinct(animal.id) %>%
+  summarize(Number = length(age))
+kable(counts.genotype, caption="Total Animals Enrolled in Study by Genotype")
+
+counts.knockout <- 
+  weight.data %>%
+  group_by(Knockout,Gender) %>%
+  distinct(animal.id) %>%
+  summarize(Number = length(age))
+kable(counts.knockout, caption="Total Animals Enrolled in Study by Knockout Status")
+```
+
+# Body Weights
+
+```{r weights-scatterplot}
+ymin = min(weight.data$Body.Weight, na.rm=T)
+ymax = max(weight.data$Body.Weight, na.rm=T)
+
+with(subset(weight.data, Knockout == TRUE&Gender==levels(Gender)[1]), 
+     plot(age, Body.Weight,
+                       col=palette()[1],
+                       ylab="Body Weight (g)",
+                       xlab='Age (days)',
+                       ylim=c(ymin,ymax),
+                        las=1, pch=19))
+with(subset(weight.data, Knockout == FALSE&Gender==levels(Gender)[1]), 
+     points(age, Body.Weight, col=palette()[2], pch=19))
+with(subset(weight.data, Knockout == TRUE&Gender==levels(Gender)[2]), 
+     points(age, Body.Weight, col=palette()[3], pch=19))
+with(subset(weight.data, Knockout == FALSE&Gender==levels(Gender)[2]), 
+     points(age, Body.Weight, col=palette()[4], pch=19))
+
+lines(with(subset(weight.data, Gender==levels(Gender)[1]&Knockout == TRUE), 
+           loess.smooth(age,Body.Weight)), col=palette()[1])
+lines(with(subset(weight.data, Gender==levels(Gender)[1]&Knockout == FALSE), 
+           loess.smooth(age,Body.Weight)), col=palette()[2])
+lines(with(subset(weight.data, Gender==levels(Gender)[2]&Knockout == TRUE), 
+           loess.smooth(age,Body.Weight)), col=palette()[3])
+lines(with(subset(weight.data, Gender==levels(Gender)[2]&Knockout == FALSE), 
+           loess.smooth(age,Body.Weight)), col=palette()[4])
+
+
+legend("topleft", do.call(paste, expand.grid(c("Knockout","Wild-Type"),'-',levels(weight.data$Gender))),
+       lty=1, col=palette()[1:4], bty='n', cex=1)
+
+yaxes <- with(combined.summary, 
+             c(min(Body.Weight.mean, na.rm=T)-max(Body.Weight.se, na.rm=T), 
+             c(max(Body.Weight.mean, na.rm=T)+max(Body.Weight.se, na.rm=T))))
+plot <- with(subset(combined.summary, 
+                   Gender==levels(Gender)[1]&Knockout == TRUE), 
+             plot(Weeks, Body.Weight.mean, type="l", ylim=yaxes,
+                  las=1, ylab="Body Weight (g)", col=palette()[1]))
+with(subset(combined.summary, 
+                    Gender==levels(Gender)[1]&Knockout == FALSE), 
+             lines(Weeks, Body.Weight.mean, col=palette()[2]))
+with(subset(combined.summary, 
+                    Gender==levels(Gender)[2]&Knockout == TRUE), 
+             lines(Weeks, Body.Weight.mean, col=palette()[3]))
+with(subset(combined.summary, 
+                    Gender==levels(Gender)[2]&Knockout == FALSE), 
+             lines(Weeks, Body.Weight.mean, col=palette()[4]))
+
+superpose.eb <- function (x, y, ebl, ebu = ebl, length = 0.08, ...)
+  arrows(x, y + ebu, x, y - ebl, angle = 90, code = 3,
+  length = length, ...)
+
+with(subset(combined.summary, 
+                  Gender==levels(Gender)[1]&Knockout == TRUE), 
+            superpose.eb(Weeks, Body.Weight.mean, Body.Weight.se, col=palette()[1]))
+with(subset(combined.summary, 
+                   Gender==levels(Gender)[1]&Knockout == FALSE), 
+             superpose.eb(Weeks, Body.Weight.mean, Body.Weight.se, col=palette()[2]))
+with(subset(combined.summary, 
+                   Gender==levels(Gender)[2]&Knockout == TRUE), 
+             superpose.eb(Weeks, Body.Weight.mean, Body.Weight.se, col=palette()[3]))
+with(subset(combined.summary, 
+                   Gender==levels(Gender)[2]&Knockout == FALSE), 
+             superpose.eb(Weeks, Body.Weight.mean, Body.Weight.se, col=palette()[4]))
+
+legend("topleft", do.call(paste, expand.grid(c("Knockout","Wild-Type"),'-',levels(weight.data$Gender))),
+       lty=1, col=palette()[1:4], bty='n', cex=1)
+
+#only up to 12w
+yaxes <- with(subset(combined.summary,Weeks<12), 
+             c(min(Body.Weight.mean, na.rm=T)-max(Body.Weight.se, na.rm=T), 
+             c(max(Body.Weight.mean, na.rm=T)+max(Body.Weight.se, na.rm=T))))
+plot <- with(subset(combined.summary, 
+                   Gender==levels(Gender)[1]&Knockout == TRUE&Weeks<12), 
+             plot(Weeks, Body.Weight.mean, type="l", ylim=yaxes,
+                  las=1, ylab="Body Weight (g)", col=palette()[1]))
+with(subset(combined.summary, 
+                    Gender==levels(Gender)[1]&Knockout == FALSE&Weeks<12), 
+             lines(Weeks, Body.Weight.mean, col=palette()[2]))
+with(subset(combined.summary, 
+                    Gender==levels(Gender)[2]&Knockout == TRUE&Weeks<12), 
+             lines(Weeks, Body.Weight.mean, col=palette()[3]))
+with(subset(combined.summary, 
+                    Gender==levels(Gender)[2]&Knockout == FALSE&Weeks<12), 
+             lines(Weeks, Body.Weight.mean, col=palette()[4]))
+
+with(subset(combined.summary, 
+                  Gender==levels(Gender)[1]&Knockout == TRUE&Weeks<12), 
+            superpose.eb(Weeks, Body.Weight.mean, Body.Weight.se, col=palette()[1]))
+with(subset(combined.summary, 
+                   Gender==levels(Gender)[1]&Knockout == FALSE&Weeks<12), 
+             superpose.eb(Weeks, Body.Weight.mean, Body.Weight.se, col=palette()[2]))
+with(subset(combined.summary, 
+                   Gender==levels(Gender)[2]&Knockout == TRUE&Weeks<12), 
+             superpose.eb(Weeks, Body.Weight.mean, Body.Weight.se, col=palette()[3]))
+with(subset(combined.summary, 
+                   Gender==levels(Gender)[2]&Knockout == FALSE&Weeks<12), 
+             superpose.eb(Weeks, Body.Weight.mean, Body.Weight.se, col=palette()[4]))
+
+legend("topleft", do.call(paste, expand.grid(c("Knockout","Wild-Type"),'-',levels(weight.data$Gender))),
+       lty=1, col=palette()[1:4], bty='n', cex=1)
+
+#statistics
+library(lme4)
+weight.lme <- lmer(Body.Weight~age*Gender*Knockout + (1|animal.id) + (age-1|animal.id), data=subset(weight.data,age<12*7+70), REML=F)
+weight.lme.null <- lmer(Body.Weight~age*Gender + (1|animal.id) + (age-1|animal.id), data=subset(weight.data,age<12*7+70), REML=F)
+
+wt.predict.m <- predict(weight.lme, newdata=list(age=7*12+70, Gender="M", Knockout=FALSE, animal.id=weight.data$animal.id[1]))
+ko.predict.m <- predict(weight.lme, newdata=list(age=7*12+70, Gender="M", Knockout=TRUE, animal.id=weight.data$animal.id[1]))
+
+wt.predict.f <- predict(weight.lme, newdata=list(age=7*12+70, Gender="F", Knockout=FALSE, animal.id=weight.data$animal.id[1]))
+ko.predict.f <- predict(weight.lme, newdata=list(age=7*12+70, Gender="F", Knockout=TRUE, animal.id=weight.data$animal.id[1]))
+
+```
+
+To test whether these groups are different we constructed a linear model with the following formula:
+
+Weight ~ `r as.character(formula(weight.lme))[3]`
+
+Based on this formula the knockout caused a `r wt.predict.m-ko.predict.m`g increase in body weight for males and a `r wt.predict.f-ko.predict.f`g increase for females (p=`r anova(weight.lme, weight.lme.null)$"Pr(>Chisq)"[2]` via a Chi-squared test).
+
+The full results are shown below:
+
+```{r weight-lmer-results}
+coefs <- data.frame(coef(summary(weight.lme)))
+coefs$p.z <- 2 * (1 - pnorm(abs(coefs$t.value)))
+kable(coefs, caption="Estimates and p-values from mixed linear models.")
+```
+```
+
+
+```{r diagnostics-body-weight}
+#statistics
+library(lme4)
+weight.cd.hpd.lme <- lmer(Body.Weight ~ age * Gender * Knockout + (1|animal.id) + (age-1|animal.id), data=weight.data, REML=F)
+weight.cd.hpd.lme.null <- lmer(Body.Weight ~ age * Gender + (1|animal.id) + (age-1|animal.id), data=weight.data, REML=F)
+#using 
+library(influence.ME)
+infl <- influence(weight.cd.hpd.lme, group='animal.id')
+par(mfrow=c(1,3))
+#plot(density(residuals(weight.cd.hpd.lme)), main="Effects of High Protein Knockout", las=1)
+#plot(fitted(weight.cd.hpd.lme),residuals(weight.cd.hpd.lme),  ylab="Residuals", xlab="Fitted Values (g)", pch=19, las=1)
+#abline(h=0, lty=2, col='red')
+#barplot(cooks.distance(infl), las=2, names.arg=rownames(cooks.distance(infl)),  beside=T, ylab="Cook's Distance", col='grey')
+```
+
+# Lean Mass
+
+```{r lean-mass-scatterplot}
+ymin = min(weight.data$Lean.Mass, na.rm=T)
+ymax = max(weight.data$Lean.Mass, na.rm=T)
+
+with(subset(weight.data, Gender==levels(Gender)[1]&Knockout == TRUE)
+     , plot(age, Lean.Mass,
+                       col=palette()[1],
+                      ylim=c(ymin,ymax),
+                       ylab="Total Lean Mass (g)",
+                       xlab='Age (days)',
+                        las=1, pch=19))
+with(subset(weight.data, Gender==levels(Gender)[1]&Knockout == FALSE), 
+     points(age, Lean.Mass, col=palette()[2], pch=19))
+with(subset(weight.data, Gender==levels(Gender)[2]&Knockout == TRUE), 
+     points(age, Lean.Mass, col=palette()[3], pch=19))
+with(subset(weight.data, Gender==levels(Gender)[2]&Knockout == FALSE), 
+     points(age, Lean.Mass, col=palette()[4], pch=19))
+
+lines(with(subset(weight.data, Gender==levels(Gender)[1]&Knockout == TRUE), 
+           loess.smooth(age,Lean.Mass)), col=palette()[1])
+lines(with(subset(weight.data, Gender==levels(Gender)[1]&Knockout == FALSE), 
+           loess.smooth(age,Lean.Mass)), col=palette()[2])
+lines(with(subset(weight.data, Gender==levels(Gender)[2]&Knockout == TRUE), 
+           loess.smooth(age,Lean.Mass)), col=palette()[3])
+lines(with(subset(weight.data, Gender==levels(Gender)[2]&Knockout == FALSE), 
+           loess.smooth(age,Lean.Mass)), col=palette()[4])
+
+
+legend("topleft", do.call(paste, expand.grid(c("Knockout","Wild-Type"),'-',levels(weight.data$Gender))),
+       lty=1, col=palette()[1:4], bty='n', cex=1)
+
+yaxes <- with(combined.summary, 
+              c(min(Lean.Mass.mean, na.rm=T)-max(Lean.Mass.se, na.rm=T), 
+               c(max(Lean.Mass.mean, na.rm=T)+max(Lean.Mass.se, na.rm=T))))
+plot <- with(subset(combined.summary, 
+                    Gender==levels(Gender)[1]&Knockout == TRUE), 
+             plot(Weeks, Lean.Mass.mean, type="l", ylim=yaxes,
+                  las=1, ylab="Total Lean Mass (g)", col=palette()[1]))
+with(subset(combined.summary, 
+                    Gender==levels(Gender)[1]&Knockout == FALSE), 
+             lines(Weeks, Lean.Mass.mean, col=palette()[2]))
+with(subset(combined.summary, 
+                    Gender==levels(Gender)[2]&Knockout == TRUE), 
+             lines(Weeks, Lean.Mass.mean, col=palette()[3]))
+with(subset(combined.summary, 
+                    Gender==levels(Gender)[2]&Knockout == FALSE), 
+             lines(Weeks, Lean.Mass.mean, col=palette()[4]))
+
+with(subset(combined.summary, 
+                  Gender==levels(Gender)[1]&Knockout == TRUE), 
+            superpose.eb(Weeks, Lean.Mass.mean, Lean.Mass.se, col=palette()[1]))
+with(subset(combined.summary, 
+                   Gender==levels(Gender)[1]&Knockout == FALSE), 
+             superpose.eb(Weeks, Lean.Mass.mean, Lean.Mass.se, col=palette()[2]))
+with(subset(combined.summary, 
+                   Gender==levels(Gender)[2]&Knockout == TRUE), 
+             superpose.eb(Weeks, Lean.Mass.mean, Lean.Mass.se, col=palette()[3]))
+with(subset(combined.summary, 
+                   Gender==levels(Gender)[2]&Knockout == FALSE), 
+             superpose.eb(Weeks, Lean.Mass.mean, Lean.Mass.se, col=palette()[4]))
+
+legend("topleft", do.call(paste, expand.grid(c("Knockout","Wild-Type"),'-',levels(weight.data$Gender))),
+       lty=1, col=palette()[1:4], bty='n', cex=1)
+
+#up to 12 w only
+
+yaxes <- with(subset(combined.summary, Weeks<12),
+              c(min(Lean.Mass.mean, na.rm=T)-max(Lean.Mass.se, na.rm=T), 
+               c(max(Lean.Mass.mean, na.rm=T)+max(Lean.Mass.se, na.rm=T))))
+plot <- with(subset(combined.summary, 
+                    Gender==levels(Gender)[1]&Knockout == TRUE&Weeks<12), 
+             plot(Weeks, Lean.Mass.mean, type="l", ylim=yaxes,
+                  las=1, ylab="Total Lean Mass (g)", col=palette()[1]))
+with(subset(combined.summary, 
+                    Gender==levels(Gender)[1]&Knockout == FALSE&Weeks<12), 
+             lines(Weeks, Lean.Mass.mean, col=palette()[2]))
+with(subset(combined.summary, 
+                    Gender==levels(Gender)[2]&Knockout == TRUE&Weeks<12), 
+             lines(Weeks, Lean.Mass.mean, col=palette()[3]))
+with(subset(combined.summary, 
+                    Gender==levels(Gender)[2]&Knockout == FALSE&Weeks<12), 
+             lines(Weeks, Lean.Mass.mean, col=palette()[4]))
+
+with(subset(combined.summary, 
+                  Gender==levels(Gender)[1]&Knockout == TRUE&Weeks<12), 
+            superpose.eb(Weeks, Lean.Mass.mean, Lean.Mass.se, col=palette()[1]))
+with(subset(combined.summary, 
+                   Gender==levels(Gender)[1]&Knockout == FALSE&Weeks<12), 
+             superpose.eb(Weeks, Lean.Mass.mean, Lean.Mass.se, col=palette()[2]))
+with(subset(combined.summary, 
+                   Gender==levels(Gender)[2]&Knockout == TRUE&Weeks<12), 
+             superpose.eb(Weeks, Lean.Mass.mean, Lean.Mass.se, col=palette()[3]))
+with(subset(combined.summary, 
+                   Gender==levels(Gender)[2]&Knockout == FALSE&Weeks<12), 
+             superpose.eb(Weeks, Lean.Mass.mean, Lean.Mass.se, col=palette()[4]))
+
+legend("topleft", do.call(paste, expand.grid(c("Knockout","Wild-Type"),'-',levels(weight.data$Gender))),
+       lty=1, col=palette()[1:4], bty='n', cex=1)
+
+#statistics
+lean.lme <- lmer(Lean.Mass~age*Gender*Knockout + (1|animal.id) + (age-1|animal.id), data=subset(weight.data,age<12*7+70), REML=F)
+lean.lme.null <- lmer(Lean.Mass~age*Gender + (1|animal.id) + (age-1|animal.id), data=subset(weight.data,age<12*7+70), REML=F)
+
+wt.predict.m <- predict(lean.lme, newdata=list(age=7*12+70, Gender="M", Knockout=FALSE, animal.id=weight.data$animal.id[1]))
+ko.predict.m <- predict(lean.lme, newdata=list(age=7*12+70, Gender="M", Knockout=TRUE, animal.id=weight.data$animal.id[1]))
+
+wt.predict.f <- predict(lean.lme, newdata=list(age=7*12+70, Gender="F", Knockout=FALSE, animal.id=weight.data$animal.id[1]))
+ko.predict.f <- predict(lean.lme, newdata=list(age=7*12+70, Gender="F", Knockout=TRUE, animal.id=weight.data$animal.id[1]))
+
+```
+
+To test whether these groups are different we constructed a linear model with the following formula:
+
+Lean Mass ~ `r as.character(formula(lean.lme))[3]`
+
+Based on this formula the knockout caused a `r wt.predict.m-ko.predict.m`g increase in lean mass for males and a `r wt.predict.f-ko.predict.f`g increase for females (p=`r anova(lean.lme, lean.lme.null)$"Pr(>Chisq)"[2]` via a Chi-squared test).
+
+The full results are shown below:
+
+```{r lean-lmer-results}
+coefs <- data.frame(coef(summary(lean.lme)))
+coefs$p.z <- 2 * (1 - pnorm(abs(coefs$t.value)))
+kable(coefs, caption="Estimates and p-values from mixed linear models.")
+```
+
+# Fat Mass
+
+```{r fat-mass-scatterplot}
+with(subset(weight.data, Knockout == TRUE&Gender==levels(Gender)[1]), 
+     plot(age, Total.Fat.Mass,ylim=c(0,15),
+                       col=palette()[1],
+                       ylab="Total Fat Mass (g)",
+                       xlab='Age (days)',
+                        las=1, pch=19))
+with(subset(weight.data, Knockout == FALSE&Gender==levels(Gender)[1]), 
+     points(age, Total.Fat.Mass, col=palette()[2], pch=19))
+with(subset(weight.data, Knockout == TRUE&Gender==levels(Gender)[2]), 
+     points(age, Total.Fat.Mass, col=palette()[3], pch=19))
+with(subset(weight.data, Knockout == FALSE&Gender==levels(Gender)[2]), 
+     points(age, Total.Fat.Mass, col=palette()[4], pch=19))
+
+lines(with(subset(weight.data, Gender==levels(Gender)[1]&Knockout == TRUE), 
+           loess.smooth(age,Total.Fat.Mass)), col=palette()[1])
+lines(with(subset(weight.data, Gender==levels(Gender)[1]&Knockout == FALSE), 
+           loess.smooth(age,Total.Fat.Mass)), col=palette()[2])
+lines(with(subset(weight.data, Gender==levels(Gender)[2]&Knockout == TRUE), 
+           loess.smooth(age,Total.Fat.Mass)), col=palette()[3])
+lines(with(subset(weight.data, Gender==levels(Gender)[2]&Knockout == FALSE), 
+           loess.smooth(age,Total.Fat.Mass)), col=palette()[4])
+
+
+legend("topleft", do.call(paste, expand.grid(c("Knockout","Wild-Type"),'-',levels(weight.data$Gender))),
+       lty=1, col=palette()[1:4], bty='n', cex=1)
+
+yaxes <- with(combined.summary, 
+              c(min(Total.Fat.Mass.mean, na.rm=T)-max(Total.Fat.Mass.se, na.rm=T), 
+               c(max(Total.Fat.Mass.mean, na.rm=T)+max(Total.Fat.Mass.se, na.rm=T))))
+plot <- with(subset(combined.summary, 
+             Gender==levels(Gender)[1]&Knockout == TRUE),
+             plot(Weeks, Total.Fat.Mass.mean, type="l", ylim=yaxes,
+                  las=1, ylab="Total Fat Mass (g)", col=palette()[1]))
+with(subset(combined.summary, 
+             Gender==levels(Gender)[1]&Knockout == FALSE),
+             lines(Weeks, Total.Fat.Mass.mean, col=palette()[2]))
+with(subset(combined.summary, 
+             Gender==levels(Gender)[2]&Knockout == TRUE),
+             lines(Weeks, Total.Fat.Mass.mean, col=palette()[3]))
+with(subset(combined.summary, 
+             Gender==levels(Gender)[2]&Knockout == FALSE),
+           lines(Weeks, Total.Fat.Mass.mean, col=palette()[4]))
+
+with(subset(combined.summary, 
+             Gender==levels(Gender)[1]&Knockout == TRUE),
+             superpose.eb(Weeks, Total.Fat.Mass.mean, Total.Fat.Mass.se, col=palette()[1]))
+with(subset(combined.summary, 
+             Gender==levels(Gender)[1]&Knockout == FALSE),
+            superpose.eb(Weeks, Total.Fat.Mass.mean, Total.Fat.Mass.se, col=palette()[2]))
+with(subset(combined.summary, 
+             Gender==levels(Gender)[2]&Knockout == TRUE),
+             superpose.eb(Weeks, Total.Fat.Mass.mean, Total.Fat.Mass.se, col=palette()[3]))
+with(subset(combined.summary, 
+             Gender==levels(Gender)[2]&Knockout == FALSE),
+             superpose.eb(Weeks, Total.Fat.Mass.mean, Total.Fat.Mass.se, col=palette()[4]))
+
+legend("topleft", do.call(paste, expand.grid(c("Knockout","Wild-Type"),'-',levels(weight.data$Gender))),
+       lty=1, col=palette()[1:4], bty='n', cex=1)
+
+#after 12w only
+
+yaxes <- with(subset(combined.summary, Weeks<12),
+              c(min(Total.Fat.Mass.mean, na.rm=T)-max(Total.Fat.Mass.se, na.rm=T), 
+               c(max(Total.Fat.Mass.mean, na.rm=T)+max(Total.Fat.Mass.se, na.rm=T))))
+plot <- with(subset(combined.summary, 
+             Gender==levels(Gender)[1]&Knockout == TRUE& Weeks<12),
+             plot(Weeks, Total.Fat.Mass.mean, type="l", ylim=yaxes,
+                  las=1, ylab="Total Fat Mass (g)", col=palette()[1]))
+with(subset(combined.summary, 
+             Gender==levels(Gender)[1]&Knockout == FALSE& Weeks<12),
+             lines(Weeks, Total.Fat.Mass.mean, col=palette()[2]))
+with(subset(combined.summary, 
+             Gender==levels(Gender)[2]&Knockout == TRUE& Weeks<12),
+             lines(Weeks, Total.Fat.Mass.mean, col=palette()[3]))
+with(subset(combined.summary, 
+             Gender==levels(Gender)[2]&Knockout == FALSE& Weeks<12),
+           lines(Weeks, Total.Fat.Mass.mean, col=palette()[4]))
+
+with(subset(combined.summary, 
+             Gender==levels(Gender)[1]&Knockout == TRUE& Weeks<12),
+             superpose.eb(Weeks, Total.Fat.Mass.mean, Total.Fat.Mass.se, col=palette()[1]))
+with(subset(combined.summary, 
+             Gender==levels(Gender)[1]&Knockout == FALSE& Weeks<12),
+            superpose.eb(Weeks, Total.Fat.Mass.mean, Total.Fat.Mass.se, col=palette()[2]))
+with(subset(combined.summary, 
+             Gender==levels(Gender)[2]&Knockout == TRUE& Weeks<12),
+             superpose.eb(Weeks, Total.Fat.Mass.mean, Total.Fat.Mass.se, col=palette()[3]))
+with(subset(combined.summary, 
+             Gender==levels(Gender)[2]&Knockout == FALSE& Weeks<12),
+             superpose.eb(Weeks, Total.Fat.Mass.mean, Total.Fat.Mass.se, col=palette()[4]))
+
+legend("topleft", do.call(paste, expand.grid(c("Knockout","Wild-Type"),'-',levels(weight.data$Gender))),
+       lty=1, col=palette()[1:4], bty='n', cex=1)
+
+#statistics
+fat.lme <- lmer(Total.Fat.Mass~age*Gender*Knockout + (1|animal.id) + (age-1|animal.id), data=subset(weight.data,age<12*7+70), REML=F)
+fat.lme.null <- lmer(Total.Fat.Mass~age*Gender + (1|animal.id) + (age-1|animal.id), data=subset(weight.data,age<12*7+70), REML=F)
+
+wt.predict.m <- predict(fat.lme, newdata=list(age=7*12+70, Gender="M", Knockout=FALSE, animal.id=weight.data$animal.id[1]))
+ko.predict.m <- predict(fat.lme, newdata=list(age=7*12+70, Gender="M", Knockout=TRUE, animal.id=weight.data$animal.id[1]))
+
+wt.predict.f <- predict(fat.lme, newdata=list(age=7*12+70, Gender="F", Knockout=FALSE, animal.id=weight.data$animal.id[1]))
+ko.predict.f <- predict(fat.lme, newdata=list(age=7*12+70, Gender="F", Knockout=TRUE, animal.id=weight.data$animal.id[1]))
+
+```
+
+To test whether these groups are different we constructed a linear model with the following formula:
+
+Fat Mass ~ Weight ~ `r as.character(formula(fat.lme))[3]`
+
+Based on this formula the knockout caused a `r wt.predict.m-ko.predict.m`g increase in fat mass for males and a `r wt.predict.f-ko.predict.f`g increase for females (p=`r anova(fat.lme, fat.lme.null)$"Pr(>Chisq)"[2]` via a Chi-squared test).
+
+The full results are shown below:
+
+```{r fat-lmer-results}
+coefs <- data.frame(coef(summary(fat.lme)))
+coefs$p.z <- 2 * (1 - pnorm(abs(coefs$t.value)))
+kable(coefs, caption="Estimates and p-values from mixed linear models.")
+```
+
+
+# Percent Fat Mass
+
+```{r percent-fat-mass-scatterplot}
+with(subset(weight.data, Knockout == TRUE&Gender==levels(Gender)[1]), 
+plot(age, Percent.Fat.Mass,ylim=c(0,35),
+                       col=Gender,
+                       ylab="Percent Fat Mass",
+                       xlab='Age (days)',
+                        las=1, pch=19))
+
+with(subset(weight.data, Knockout == FALSE&Gender==levels(Gender)[1]), 
+     points(age, Percent.Fat.Mass, col=palette()[2], pch=19))
+with(subset(weight.data, Knockout == TRUE&Gender==levels(Gender)[2]), 
+     points(age, Percent.Fat.Mass, col=palette()[3], pch=19))
+with(subset(weight.data, Knockout == FALSE&Gender==levels(Gender)[2]), 
+     points(age, Percent.Fat.Mass, col=palette()[4], pch=19))
+
+lines(with(subset(weight.data, Gender==levels(Gender)[1]&Knockout == TRUE), 
+           loess.smooth(age,Percent.Fat.Mass)), col=palette()[1])
+lines(with(subset(weight.data, Gender==levels(Gender)[1]&Knockout == FALSE), 
+           loess.smooth(age,Percent.Fat.Mass)), col=palette()[2])
+lines(with(subset(weight.data, Gender==levels(Gender)[2]&Knockout == TRUE), 
+           loess.smooth(age,Percent.Fat.Mass)), col=palette()[3])
+lines(with(subset(weight.data, Gender==levels(Gender)[2]&Knockout == FALSE), 
+           loess.smooth(age,Percent.Fat.Mass)), col=palette()[4])
+
+legend("topleft", do.call(paste, expand.grid(c("Knockout","Wild-Type"),'-',levels(weight.data$Gender))),
+       lty=1, col=palette()[1:4], bty='n', cex=1)
+
+#percent fat mass with error bars
+yaxes <- with(combined.summary, 
+              c(min(Percent.Fat.Mass.mean, na.rm=T)-max(Percent.Fat.Mass.se, na.rm=T), 
+               c(max(Percent.Fat.Mass.mean, na.rm=T)+max(Percent.Fat.Mass.se, na.rm=T))))
+plot <- with(subset(combined.summary, 
+                    Gender==levels(Gender)[1]&Knockout == TRUE), 
+             plot(Weeks, Percent.Fat.Mass.mean, type="l", ylim=yaxes,
+                  las=1, ylab="Percent Fat Mass", col=palette()[1]))
+with(subset(combined.summary, 
+                    Gender==levels(Gender)[1]&Knockout == FALSE), 
+             lines(Weeks, Percent.Fat.Mass.mean, col=palette()[2]))
+with(subset(combined.summary, 
+                    Gender==levels(Gender)[2]&Knockout == TRUE), 
+             lines(Weeks, Percent.Fat.Mass.mean, col=palette()[3]))
+with(subset(combined.summary, 
+                    Gender==levels(Gender)[2]&Knockout == FALSE), 
+             lines(Weeks, Percent.Fat.Mass.mean, col=palette()[4]))
+
+with(subset(combined.summary, 
+                    Gender=="M"&Knockout=="Control Knockout"), 
+             superpose.eb(Weeks, Percent.Fat.Mass.mean, Percent.Fat.Mass.se, col=palette()[1]))
+with(subset(combined.summary, 
+                    Gender=="M"&Knockout=="High Protein Knockout"), 
+             superpose.eb(Weeks, Percent.Fat.Mass.mean, Percent.Fat.Mass.se, col=palette()[2]))
+with(subset(combined.summary, 
+                    Gender=="F"&Knockout=="Control Knockout"), 
+             superpose.eb(Weeks, Percent.Fat.Mass.mean, Percent.Fat.Mass.se, col=palette()[3]))
+with(subset(combined.summary, 
+                    Gender=="F"&Knockout=="High Protein Knockout"), 
+             superpose.eb(Weeks, Percent.Fat.Mass.mean, Percent.Fat.Mass.se, col=palette()[4]))
+
+with(subset(combined.summary, 
+                  Gender==levels(Gender)[1]&Knockout == TRUE), 
+            superpose.eb(Weeks, Percent.Fat.Mass.mean, Percent.Fat.Mass.se, col=palette()[1]))
+with(subset(combined.summary, 
+                   Gender==levels(Gender)[1]&Knockout == FALSE), 
+             superpose.eb(Weeks, Percent.Fat.Mass.mean, Percent.Fat.Mass.se, col=palette()[2]))
+with(subset(combined.summary, 
+                   Gender==levels(Gender)[2]&Knockout == TRUE), 
+             superpose.eb(Weeks, Percent.Fat.Mass.mean, Percent.Fat.Mass.se, col=palette()[3]))
+with(subset(combined.summary, 
+                   Gender==levels(Gender)[2]&Knockout == FALSE), 
+             superpose.eb(Weeks, Percent.Fat.Mass.mean, Percent.Fat.Mass.se, col=palette()[4]))
+
+legend("topleft", do.call(paste, expand.grid(c("Knockout","Wild-Type"),'-',levels(weight.data$Gender))),
+       lty=1, col=palette()[1:4], bty='n', cex=1)
+
+#up to 12w only
+
+yaxes <- with(subset(combined.summary, Weeks<12),
+              c(min(Percent.Fat.Mass.mean, na.rm=T)-max(Percent.Fat.Mass.se, na.rm=T), 
+               c(max(Percent.Fat.Mass.mean, na.rm=T)+max(Percent.Fat.Mass.se, na.rm=T))))
+plot <- with(subset(combined.summary, 
+                    Gender==levels(Gender)[1]&Knockout == TRUE & Weeks<12), 
+             plot(Weeks, Percent.Fat.Mass.mean, type="l", ylim=yaxes,
+                  las=1, ylab="Percent Fat Mass", col=palette()[1]))
+with(subset(combined.summary, 
+                    Gender==levels(Gender)[1]&Knockout == FALSE & Weeks<12), 
+             lines(Weeks, Percent.Fat.Mass.mean, col=palette()[2]))
+with(subset(combined.summary, 
+                    Gender==levels(Gender)[2]&Knockout == TRUE & Weeks<12), 
+             lines(Weeks, Percent.Fat.Mass.mean, col=palette()[3]))
+with(subset(combined.summary, 
+                    Gender==levels(Gender)[2]&Knockout == FALSE& Weeks<12), 
+             lines(Weeks, Percent.Fat.Mass.mean, col=palette()[4]))
+
+with(subset(combined.summary, 
+                  Gender==levels(Gender)[1]&Knockout == TRUE& Weeks<12), 
+            superpose.eb(Weeks, Percent.Fat.Mass.mean, Percent.Fat.Mass.se, col=palette()[1]))
+with(subset(combined.summary, 
+                   Gender==levels(Gender)[1]&Knockout == FALSE& Weeks<12), 
+             superpose.eb(Weeks, Percent.Fat.Mass.mean, Percent.Fat.Mass.se, col=palette()[2]))
+with(subset(combined.summary, 
+                   Gender==levels(Gender)[2]&Knockout == TRUE& Weeks<12), 
+             superpose.eb(Weeks, Percent.Fat.Mass.mean, Percent.Fat.Mass.se, col=palette()[3]))
+with(subset(combined.summary, 
+                   Gender==levels(Gender)[2]&Knockout == FALSE& Weeks<12), 
+             superpose.eb(Weeks, Percent.Fat.Mass.mean, Percent.Fat.Mass.se, col=palette()[4]))
+
+legend("topleft", do.call(paste, expand.grid(c("Knockout","Wild-Type"),'-',levels(weight.data$Gender))),
+       lty=1, col=palette()[1:4], bty='n', cex=1)
+
+
+pct.fat.lme <- lmer(Percent.Fat.Mass~age*Gender*Knockout + (1|animal.id) + (age-1|animal.id), data=subset(weight.data,age<12*7+70), REML=F)
+pct.fat.lme.null <- lmer(Percent.Fat.Mass~age*Gender + (1|animal.id) + (age-1|animal.id), data=subset(weight.data,age<12*7+70), REML=F)
+
+wt.predict.m <- predict(pct.fat.lme, newdata=list(age=7*12+70, Gender="M", Knockout=FALSE, animal.id=weight.data$animal.id[1]))
+ko.predict.m <- predict(pct.fat.lme, newdata=list(age=7*12+70, Gender="M", Knockout=TRUE, animal.id=weight.data$animal.id[1]))
+
+wt.predict.f <- predict(pct.fat.lme, newdata=list(age=7*12+70, Gender="F", Knockout=FALSE, animal.id=weight.data$animal.id[1]))
+ko.predict.f <- predict(pct.fat.lme, newdata=list(age=7*12+70, Gender="F", Knockout=TRUE, animal.id=weight.data$animal.id[1]))
+
+```
+
+To test whether these groups are different we constructed a linear model with the following formula:
+
+Percent Fat Mass~ `r as.character(formula(pct.fat.lme))[3]`
+
+Based on this formula the knockout caused a `r wt.predict.m-ko.predict.m` increase in percent fat mass for males and a `r wt.predict.f-ko.predict.f` increaes for females (p=`r anova(pct.fat.lme, pct.fat.lme.null)$"Pr(>Chisq)"[2]` via a Chi-squared test).
+
+The full results are shown below:
+
+```{r pct-fat-results}
+coefs <- data.frame(coef(summary(pct.fat.lme)))
+coefs$p.z <- 2 * (1 - pnorm(abs(coefs$t.value)))
+kable(coefs, caption="Estimates and p-values from mixed linear models.")
+```
+
+# End of Study Summary
+
+The following animals have completed the study (age is >`r  67+7*12-7` days):
+
+```{r end-of-study}
+summary.census <-
+   subset(weight.data, age >= 67+7*12-7) %>%
+   group_by(Genotype,Gender) %>%
+   distinct(animal.id) %>%
+   summarize(Number = length(age))
+kable(summary.census, caption="Animals which have completed the study")
+
+summary.end <- 
+  subset(weight.data, age >= 67+7*12-7) %>%
+  group_by(Gender, Knockout) %>%
+  distinct(animal.id) %>%
+  select(-Genotype, -animal.id, -age) %>%
+  summarise_each(funs(mean,se))
+kable(t(summary.end), caption="Body composition of animals which have completed the study")
+```
+
+# Session Information
+```{r sessionInfo}
+sessionInfo()
+```
+

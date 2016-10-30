@@ -123,6 +123,7 @@ irx_genes <- c('Irx3','Irx5')
 ketosis_muscle <- c('Oxct1','Bdh1','Slc16a1','Slc16a7')
 ketosis_receptors <- c('Hcar2','Ffar3')
 ketone_body_generation <- c('Hmgcs2','Hmgcl','Bdh1','Slc16a6')
+pfk_2_isoforms <- c('Pfkfb1', 'Pfkfb2', 'Pfkfb3', 'Pfkfb4')
 
 library(Hmisc)
 ribosomes <- c('RPL7','RPL13A','RPL34','RPS28','RPS24','RPS5','FAU','RPS6','RPS11','RPS15A','RPS17','RPL31','RPL19','RPS25','RPL39','RPL27','RPL38','RPL21','RPS12','RPL14','RPL27A','RPS18','RPL15','RPS10','RPL28','RPL7A','RPS26','RPS23','RPL35','RPL22','RPS7','RPL4','RPL5','RPLP2','RPL18A','RPL13','RPL30','RPL3L','RPL8','RPL26','RPS4X','RPL23A','RPS8','RPS27','RPL29')
@@ -130,7 +131,7 @@ ribosomes <- c('RPL7','RPL13A','RPL34','RPS28','RPS24','RPS5','FAU','RPS6','RPS1
 ribosomes <- capitalize(tolower(ribosomes))
 
 
-gene.data.name <- c('tsc_isoforms','glycogen_genes','pp1_regulatory_subunits','interleukins','srebp','linoleate_metabolism','myokines','tg_synthesis','lipolysis','oglnac_metabolisn','ribosomes','ppar_isoforms','b_oxidation','ppard_targets','myosin_heavy_chain','myosin_heavy_chain_main','slow_twitch_genes','fast_twitch_genes','myotubular_degradation','muscle_differentiation','autophagy','mitochondrial_genes','fatty_acid_uptake','fatty_acid_uptake_no_FABP3','fabp_cd36','cb_receptors','oxidative_markers_rosenbaum','serca','uncouplers','Jnk_related_genes','aa_transporters','aa_transporters_up','jnk_activators','hippo','guridi_genes','guridi_genes_2','FGF21_related','MitochondrialCalcium_genes','mitofusins','ca_reuptake','er_stress','irx_genes','ketosis_muscle','ketone_body_generation','ketosis_receptors')
+gene.data.name <- c('tsc_isoforms','glycogen_genes','pp1_regulatory_subunits','interleukins','srebp','linoleate_metabolism','myokines','tg_synthesis','lipolysis','oglnac_metabolisn','ribosomes','ppar_isoforms','b_oxidation','ppard_targets','myosin_heavy_chain','myosin_heavy_chain_main','slow_twitch_genes','fast_twitch_genes','myotubular_degradation','muscle_differentiation','autophagy','mitochondrial_genes','fatty_acid_uptake','fatty_acid_uptake_no_FABP3','fabp_cd36','cb_receptors','oxidative_markers_rosenbaum','serca','uncouplers','Jnk_related_genes','aa_transporters','aa_transporters_up','jnk_activators','hippo','guridi_genes','guridi_genes_2','FGF21_related','MitochondrialCalcium_genes','mitofusins','ca_reuptake','er_stress','irx_genes','ketosis_muscle','ketone_body_generation','ketosis_receptors','pfk_2_isoforms')
 
 for (name in gene.data.name){
   #name <- as.name(name) #convert string to variable name

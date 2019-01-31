@@ -6,7 +6,7 @@ output:
   html_document:
     highlight: tango
     keep_md: yes
-    number_sections: yes
+    number_sections: no
     toc: yes
   pdf_document:
     highlight: tango
@@ -74,11 +74,12 @@ library(readr)
 library(lubridate)
 baseline.data <-  lapply(baseline.files, read_csv) %>% 
   bind_rows() %>%
-  select(Subject, Interval, `Date/Time`, `Light/Dark`, `Volume O2`, RER, Heat) %>%
+  select(Subject, Interval, `Date/Time`, `Light/Dark`, `Volume O2`, RER, Heat, `X Ambulatory`, `Y Ambulatory`) %>%
   right_join(key.data, by=c('Subject'='Mouse'))  %>% #merged with annotation file
   mutate(Date.Time = mdy_hms(`Date/Time`)) %>% #parsed datetime
   mutate(Time = hour(Date.Time)) %>% #extracted the hour 
-  mutate(Zeitgerber.Time = Time-7) # converted to ZT
+  mutate(Zeitgerber.Time = Time-7) %>% # converted to ZT
+  mutate(Activity = `X Ambulatory` + `Y Ambulatory`)
 
 baseline.data %>%
   group_by(Genotype,Sex) %>%
@@ -94,18 +95,19 @@ baseline.data %>%
 
 ```
 
-## VO2 Summary
+## VO2 Analysis
 
-```{r vo2-analysis}
+```{r vo2-analysis-light-dark, fig.cap="VO2 Summary Light/Dark Boxplot"}
 animal.data.ld <-
   baseline.data %>%
-  filter(Interval<100) %>% #removed first 20 intervals
-  filter(`Volume O2`>500) %>%
-  filter(`Volume O2`<10000) %>% #removed biologically implausible values
+  filter(Interval>100) %>% #removed first 20 intervals
+  filter(RER>0.5) %>%
+  filter(RER<1.2) %>% #removed biologically implausible values
   group_by(Subject,Genotype,Knockout,Sex, `Light/Dark`) %>% #calculated average hour/animal level data
-  summarize(RER = mean(RER),
-            VO2 = mean(`Volume O2`),
-            Heat = mean(Heat)) 
+  summarize(RER = mean(RER,na.rm=T),
+            VO2 = mean(`Volume O2`,na.rm=T),
+            Activity = mean(Activity, na.rm=T),
+            Heat = mean(Heat,na.rm=T)) 
 library(ggplot2)
 
 ggplot(animal.data.ld,
@@ -114,18 +116,32 @@ ggplot(animal.data.ld,
   geom_boxplot(width=0.75) +
   geom_jitter(position=position_dodge(width=0.75)) +
   facet_grid(~Sex)
+```
 
-
-
+```{r vo2-analysis-linegraph, fig,cap="Mouse level VO2 levels"}
 animal.data <-
   baseline.data %>%
-  filter(Interval<100) %>% #removed first 100 intervals
-  filter(`Volume O2`>500) %>%
-  filter(`Volume O2`<10000) %>% #removed biologically implausible values
+  filter(Interval>100) %>% #removed first 100 intervals
+  filter(RER>0.5) %>%
+  filter(RER<1.2) %>% #removed biologically implausible values
   group_by(Subject,Genotype,Knockout,Sex, Zeitgerber.Time) %>% #calculated average hour/animal level data
-  summarize(RER = mean(RER),
-            VO2 = mean(`Volume O2`),
-            Heat = mean(Heat)) 
+  summarize(RER = mean(RER,na.rm=T),
+            Activity = mean(Activity, na.rm=T),
+            VO2 = mean(`Volume O2`, na.rm=T),
+            Heat = mean(Heat,na.rm=T)) 
+
+ggplot(animal.data,
+       aes(y=VO2, x=Zeitgerber.Time,
+           group=Subject,
+           col=Knockout)) +
+  geom_line() +
+  facet_grid(~Sex)
+
+```
+
+### VO2 Summary Data
+
+```{r vo2-summarized-data, fig.cap="Linegraph of VO2 Data"}
 
 summary.data <-
   animal.data %>%
@@ -144,8 +160,80 @@ ggplot(summary.data,
   geom_line() +
   geom_errorbar() +
   labs(y="VO2", x="Zeitgerber Time") 
+```
+
+## RER Analysis
+
+```{r rer-analysis-light-dark, fig.cap="RER Summary Light/Dark Boxplot"}
+ggplot(animal.data.ld,
+       aes(y=RER,x=`Light/Dark`,
+           col=Knockout)) +
+  geom_boxplot(width=0.75) +
+  geom_jitter(position=position_dodge(width=0.75)) +
+  facet_grid(~Sex)
+```
+
+```{r rer-analysis-linegraph, fig,cap="Mouse level RER levels"}
+ggplot(animal.data,
+       aes(y=RER, x=Zeitgerber.Time,
+           group=Subject,
+           col=Knockout)) +
+  geom_line() +
+  facet_grid(~Sex)
 
 ```
+
+### RER Summary Data
+
+```{r rer-summarized-data, fig.cap="Linegraph of RER Data"}
+ggplot(summary.data,
+       aes(y=RER_mean,
+           ymin=RER_mean-RER_se,
+           ymax=RER_mean+RER_se,
+           x=Zeitgerber.Time,
+           col=Sex,
+           lty=Knockout)) +
+  geom_line() +
+  geom_errorbar() +
+  labs(y="Respiratory Exchange Ratio", x="Zeitgerber Time") 
+```
+
+## Activity Analysis
+
+```{r activity-analysis-light-dark, fig.cap="Activity Summary Light/Dark Boxplot"}
+ggplot(animal.data.ld,
+       aes(y=Activity,x=`Light/Dark`,
+           col=Knockout)) +
+  geom_boxplot(width=0.75) +
+  geom_jitter(position=position_dodge(width=0.75)) +
+  facet_grid(~Sex)
+```
+
+```{r activity-analysis-linegraph, fig,cap="Mouse level Activity levels"}
+ggplot(animal.data,
+       aes(y=Activity, x=Zeitgerber.Time,
+           group=Subject,
+           col=Knockout)) +
+  geom_line() +
+  facet_grid(~Sex)
+
+```
+
+### Activity Summary Data
+
+```{r activity-summarized-data, fig.cap="Linegraph of Activity Data"}
+ggplot(summary.data,
+       aes(y=Activity_mean,
+           ymin=Activity_mean-Activity_se,
+           ymax=Activity_mean+Activity_se,
+           x=Zeitgerber.Time,
+           col=Sex,
+           lty=Knockout)) +
+  geom_line() +
+  geom_errorbar() +
+  labs(y="Ambulatory Activity", x="Zeitgerber Time") 
+```
+
 
 # Interpretation
 

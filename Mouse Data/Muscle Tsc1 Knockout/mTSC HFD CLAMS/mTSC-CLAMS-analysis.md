@@ -6,7 +6,7 @@ output:
   html_document:
     highlight: tango
     keep_md: yes
-    number_sections: yes
+    number_sections: no
     toc: yes
   pdf_document:
     highlight: tango
@@ -19,7 +19,7 @@ output:
 
 # Purpose
 
-To evaluate energy expenditure and other parameters in muscle _Tsc1_ knockout mice.  This script was most recently updated on **Thu Jan 31 14:39:11 2019**.
+To evaluate energy expenditure and other parameters in muscle _Tsc1_ knockout mice.  This script was most recently updated on **Thu Jan 31 15:11:13 2019**.
 
 # Experimental Details
 
@@ -62,9 +62,36 @@ Control    Male      33
 Knockout   Female    18
 Knockout   Male      11
 
-## VO2 Summary
+## VO2 Analysis
 
-![](figures/vo2-analysis-1.png)<!-- -->![](figures/vo2-analysis-2.png)<!-- -->
+![VO2 Summary Light/Dark Boxplot](figures/vo2-analysis-light-dark-1.png)
+
+![](figures/vo2-analysis-linegraph, fig-1.png)<!-- -->
+
+### VO2 Summary Data
+
+![Linegraph of VO2 Data](figures/vo2-summarized-data-1.png)
+
+## RER Analysis
+
+![RER Summary Light/Dark Boxplot](figures/rer-analysis-light-dark-1.png)
+
+![](figures/rer-analysis-linegraph, fig-1.png)<!-- -->
+
+### RER Summary Data
+
+![Linegraph of RER Data](figures/rer-summarized-data-1.png)
+
+## Activity Analysis
+
+![Activity Summary Light/Dark Boxplot](figures/activity-analysis-light-dark-1.png)
+
+![](figures/activity-analysis-linegraph, fig-1.png)<!-- -->
+
+### Activity Summary Data
+
+![Linegraph of Activity Data](figures/activity-summarized-data-1.png)
+
 
 # Interpretation
 

@@ -220,12 +220,12 @@ ncd.data <-
   summarize(VO2.mean = mean(VO2),
             VO2.se = se(VO2))
 
-tmp <- list(HFD=FALSE,Treatment="None", Dark=ncd.data$VO2.mean[1], Light=ncd.data$VO2.mean[1])
+tmp <- list(HFD=FALSE,Treatment="None", Dark=ncd.data$VO2.mean[1], Light=ncd.data$VO2.mean[2])
 plotted.data <- data.frame(rbind(tmp, plot.data)[,3:4])
 plotted.data$Dark <- as.numeric(plotted.data$Dark)
 plotted.data$Light <- as.numeric(plotted.data$Light)
 
-tmp <- list(HFD=FALSE,Treatment="None", Dark=ncd.data$VO2.se[1], Light=ncd.data$VO2.se[1])
+tmp <- list(HFD=FALSE,Treatment="None", Dark=ncd.data$VO2.se[1], Light=ncd.data$VO2.se[2])
 plotted.data.se <- data.frame(rbind(tmp, plot.data.se)[,3:4])
 plotted.data.se$Dark <- as.numeric(plotted.data.se$Dark)
 plotted.data.se$Light <- as.numeric(plotted.data.se$Light)
@@ -324,12 +324,12 @@ ncd.data <-
   summarize(Total.Activity.mean = mean(Total.Activity),
             Total.Activity.se = se(Total.Activity))
 
-tmp <- list(HFD=FALSE,Treatment="None", Dark=ncd.data$Total.Activity.mean[1], Light=ncd.data$Total.Activity.mean[1])
+tmp <- list(HFD=FALSE,Treatment="None", Dark=ncd.data$Total.Activity.mean[1], Light=ncd.data$Total.Activity.mean[2])
 plotted.data <- data.frame(rbind(tmp, plot.data)[,3:4])
 plotted.data$Dark <- as.numeric(plotted.data$Dark)
 plotted.data$Light <- as.numeric(plotted.data$Light)
 
-tmp <- list(HFD=FALSE,Treatment="None", Dark=ncd.data$Total.Activity.se[1], Light=ncd.data$Total.Activity.se[1])
+tmp <- list(HFD=FALSE,Treatment="None", Dark=ncd.data$Total.Activity.se[1], Light=ncd.data$Total.Activity.se[2])
 plotted.data.se <- data.frame(rbind(tmp, plot.data.se)[,3:4])
 plotted.data.se$Dark <- as.numeric(plotted.data.se$Dark)
 plotted.data.se$Light <- as.numeric(plotted.data.se$Light)

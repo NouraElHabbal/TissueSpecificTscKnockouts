@@ -1,0 +1,96 @@
+---
+title: "Analysis of mTSC1 Knockout CLAMS Experiments"
+author: "Erin Stephenson and Dave Bridges"
+date: "January 31, 2019"
+output:
+  html_document:
+    highlight: tango
+    keep_md: yes
+    number_sections: yes
+    toc: yes
+  pdf_document:
+    highlight: tango
+    keep_tex: yes
+    number_sections: yes
+    toc: yes
+---
+
+```{r global_options, include=FALSE}
+library(knitr)
+#figures makde will go to directory called figures, will make them as both png and pdf files 
+opts_chunk$set(fig.path='figures/',
+               echo=FALSE, warning=FALSE, message=FALSE,dev=c('png','pdf'))
+options(scipen = 2, digits = 3)
+# set echo and message to TRUE if you want to display code blocks and code output respectively
+
+knitr::knit_hooks$set(inline = function(x) {
+  knitr:::format_sci(x, 'md')
+})
+
+
+superpose.eb <- function (x, y, ebl, ebu = ebl, length = 0.08, ...)
+  arrows(x, y + ebu, x, y - ebl, angle = 90, code = 3,
+  length = length, ...)
+
+  
+se <- function(x) sd(x, na.rm=T)/sqrt(length(x))
+
+#load these packages, nearly always needed
+library(tidyr)
+library(dplyr)
+
+# sets maize and blue color scheme
+color.scheme <- c('#00274c', '#ffcb05')
+```
+
+# Purpose
+
+# Experimental Details
+
+Link to the protocol used (permalink preferred) for the experiment and include any notes relevant to your analysis.  This might include specifics not in the general protocol such as cell lines, treatment doses etc.
+
+# Raw Data
+
+## Sample Key
+
+```{r data-input}
+library(readxl) #loads the readr package
+key.filename <- 'mTSC-HFD_CLAMS_Experiment_Key.xlsx' #make this a separate line, you can use any variable you want
+key.data <- read_excel(key.filename, sheet = 'Sheet1')
+```
+
+## Oxymax Input
+
+There are two batches of data, baseline and after 3 months of diet.
+
+### Baseline Data
+
+```{r baseline-data-input}
+baseline.files <- list.files(path="Oxymax/Oxymax files by time period/Baseline", pattern="*.csv", full.names=T)
+library(readr)
+baseline.data <-  lapply(baseline.files, read_csv) %>% 
+  bind_rows() %>%
+  select(Subject, Interval, `Date/Time`, `Light/Dark`, `Volume O2`, RER, Heat) %>%
+  right_join(key.data, by=c('Subject'='Mouse'))
+
+```
+
+This script was most recently updated on **`r date()`**.
+
+# Analysis
+
+Describe the analysis as you intersperse code chunks
+
+# Interpretation
+
+A brief summary of what the interpretation of these results were
+
+# Session Information
+
+```{r session-information, echo=T}
+sessionInfo()
+```
+
+# References
+
+If needed, using Rmarkdown citation tools (see this link for more information: http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)

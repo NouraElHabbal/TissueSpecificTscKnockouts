@@ -347,29 +347,54 @@ with(subset(combined.summary,
 
 legend("topleft", do.call(paste, expand.grid(c("Knockout","Wild-Type"),'-',levels(weight.data$Gender))),
        lty=1, col=palette()[1:4], bty='n', cex=1)
+```
 
-#statistics
-lean.lme <- lmer(Lean.Mass~age*Gender*Knockout + (1|animal.id) + (age-1|animal.id), data=subset(weight.data,age<12*7+70), REML=F)
-lean.lme.null <- lmer(Lean.Mass~age*Gender + (1|animal.id) + (age-1|animal.id), data=subset(weight.data,age<12*7+70), REML=F)
+## Lean Mass Statistics
 
-#wt.predict.m <- predict(lean.lme, newdata=list(age=7*12+70, Gender="M", Knockout=FALSE, animal.id=weight.data$animal.id[1]))
-#ko.predict.m <- predict(lean.lme, newdata=list(age=7*12+70, Gender="M", Knockout=TRUE, animal.id=weight.data$animal.id[1]))
+```{r lean-mass-stats}
+#base model
+lean.lme.base <- lmer(Lean.Mass~age + (1|animal.id) + (age-1|animal.id), data=subset(weight.data,age<12*7+70), REML=F)
 
-#wt.predict.f <- predict(lean.lme, newdata=list(age=7*12+70, Gender="F", Knockout=FALSE, animal.id=weight.data$animal.id[1]))
-#ko.predict.f <- predict(lean.lme, newdata=list(age=7*12+70, Gender="F", Knockout=TRUE, animal.id=weight.data$animal.id[1]))
+#is there an effect of sex
+lean.lme.sex <- lmer(Lean.Mass~age + Gender + age:Gender+ (1|animal.id) + (age-1|animal.id), data=subset(weight.data,age<12*7+70), REML=F)
+
+#is there an effect of knockout (adding interaction with age to account for slope effects)
+lean.lme.sex.ko <- lmer(Lean.Mass~age + 
+                         Gender + 
+                         age:Gender + 
+                         Knockout + 
+                         Knockout:age + 
+                         (1|animal.id) + (age-1|animal.id), 
+                       data=subset(weight.data,age<12*7+70), REML=F)
+
+#is there an interaction of knockout with sex
+lean.lme.sex.ko.int <- lmer(Lean.Mass~age + 
+                             Gender + 
+                             age:Gender + 
+                             Knockout + 
+                             Knockout:age + 
+                             Gender:Knockout + 
+                             Gender:age:Knockout + 
+                             (1|animal.id) + (age-1|animal.id), data=subset(weight.data,age<12*7+70), REML=F)
+
+
+lean.lme.null <- lmer(Lean.Mass~age + Gender + age:Gender + (1|animal.id) + (age-1|animal.id), data=subset(weight.data,age<12*7+70), REML=F)
 
 ```
 
 To test whether these groups are different we constructed a linear model with the following formula:
 
-Lean Mass ~ `r as.character(formula(lean.lme))[3]`
+Fat-Free Mass ~ `r as.character(formula(lean.lme.sex.ko.int))[3]`.  
 
-Based on this formula the knockout caused an increase for females (p=`r anova(lean.lme, lean.lme.null)$"Pr(>Chisq)"[2]` via a Chi-squared test).
+We used this model because the base model was that Lean Mass changes with age.  We asked if sex modified the age dependent effect, and it did (p=`r anova(lean.lme.base, lean.lme.sex)$"Pr(>Chisq)"[2]`).  We next added knockout to the modified sex-modified model, by adding both a knockout and knockout:age term and it was not significant (p=`r anova(lean.lme.sex, lean.lme.sex.ko)$"Pr(>Chisq)"[2]`).  
+
+
+Based on this formula the knockout caused significant reductions in lean mass, via a Chi-squared test with a model not including genotype (p=`r anova(lean.lme.sex.ko, lean.lme.null)$"Pr(>Chisq)"[2]`).
 
 The full results are shown below:
 
 ```{r lean-lmer-results}
-coefs <- data.frame(coef(summary(lean.lme)))
+coefs <- data.frame(coef(summary(lean.lme.sex.ko)))
 coefs$p.z <- 2 * (1 - pnorm(abs(coefs$t.value)))
 kable(coefs, caption="Estimates and p-values from mixed linear models.")
 ```

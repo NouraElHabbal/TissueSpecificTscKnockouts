@@ -17,7 +17,7 @@ This was from combined weights over several measurements of mice all placed on a
 
 
 
-Data was downloaded from MouseDB then aand the data is saved as Raw Data.csv.  These data are located in /Users/davebrid/Documents/GitHub/TissueSpecificTscKnockouts/Mouse Data/Muscle Tsc1 Knockout/HFD/Body Composition and was most recently updated on Thu Jan 31 11:29:23 2019.
+Data was downloaded from MouseDB then aand the data is saved as Raw Data.csv.  These data are located in /Users/davebrid/Documents/GitHub/TissueSpecificTscKnockouts/Mouse Data/Muscle Tsc1 Knockout/HFD/Body Composition and was most recently updated on Thu Jan 31 11:39:03 2019.
 
 # Enrollment
 
@@ -80,27 +80,32 @@ age:GenderF:KnockoutTRUE       0.017        0.016     1.088   0.276
 
 ![](figures/lean-mass-scatterplot-1.png)<!-- -->![](figures/lean-mass-scatterplot-2.png)<!-- -->![](figures/lean-mass-scatterplot-3.png)<!-- -->
 
+## Lean Mass Statistics
+
+
+
 To test whether these groups are different we constructed a linear model with the following formula:
 
-Lean Mass ~ age * Gender * Knockout + (1 | animal.id) + (age - 1 | animal.id)
+Fat-Free Mass ~ age + Gender + age:Gender + Knockout + Knockout:age + Gender:Knockout + Gender:age:Knockout + (1 | animal.id) + (age - 1 | animal.id).  
 
-Based on this formula the knockout caused an increase for females (p=0.006 via a Chi-squared test).
+We used this model because the base model was that Lean Mass changes with age.  We asked if sex modified the age dependent effect, and it did (p=4.197&times; 10^-12^).  We next added knockout to the modified sex-modified model, by adding both a knockout and knockout:age term and it was not significant (p=0.941).  
+
+
+Based on this formula the knockout caused significant reductions in lean mass, via a Chi-squared test with a model not including genotype (p=0.941).
 
 The full results are shown below:
 
 
 Table: Estimates and p-values from mixed linear models.
 
-                            Estimate   Std..Error   t.value     p.z
--------------------------  ---------  -----------  --------  ------
-(Intercept)                   19.148        0.454    42.184   0.000
-age                            0.041        0.004     9.300   0.000
-GenderF                       -4.897        0.563    -8.693   0.000
-KnockoutTRUE                  -2.502        0.869    -2.879   0.004
-age:GenderF                   -0.009        0.005    -1.708   0.088
-age:KnockoutTRUE               0.008        0.008     0.951   0.342
-GenderF:KnockoutTRUE           4.098        1.074     3.818   0.000
-age:GenderF:KnockoutTRUE      -0.013        0.010    -1.273   0.203
+                    Estimate   Std..Error   t.value     p.z
+-----------------  ---------  -----------  --------  ------
+(Intercept)           18.418        0.440    41.833   0.000
+age                    0.043        0.004    10.682   0.000
+GenderF               -3.771        0.513    -7.346   0.000
+KnockoutTRUE           0.181        0.546     0.332   0.740
+age:GenderF           -0.013        0.005    -2.746   0.006
+age:KnockoutTRUE      -0.001        0.005    -0.144   0.886
 
 # Fat Mass
 

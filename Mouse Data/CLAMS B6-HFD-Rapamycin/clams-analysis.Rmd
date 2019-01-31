@@ -174,23 +174,15 @@ vo2.lme <- lmer(VO2 ~ Light.Dark +
                   Lean + 
                   Exp.Time + 
                   Treatment + 
-                  Treatment:Exp.Time + 
+                  HFD +
+                  Treatment:HFD + 
                   (1|Subject), data=subset(merged_data, Exp.Time>=0), REML=F)
 
 vo2.lme.null <- lmer(VO2 ~ Light.Dark + 
                        Lean + 
                        Exp.Time + 
-                       Treatment + 
+                       HFD + 
                        (1|Subject), data=subset(merged_data, Exp.Time>=0), REML=F)
-
-vehicle.newdata <- list(Light.Dark = levels(merged_data$Light.Dark)[1], 
-                        Lean = mean(merged_data$Lean), 
-                        Exp.Time=14*24, Treatment=levels(merged_data$Treatment)[1],
-                        Subject = merged_data$Subject[3])
-drug.newdata <- list(Light.Dark = levels(merged_data$Light.Dark)[1], 
-                        Lean = mean(merged_data$Lean), 
-                        Exp.Time=14*24, Treatment=levels(merged_data$Treatment)[2],
-                        Subject = merged_data$Subject[3])
 ```
 
 We first checked whether normality was maintained in the residuals from the ANCOVA.  These results are summarized below:
@@ -240,14 +232,22 @@ superpose.eb(plot,
 legend("topright", c("NCD", "HFD-Vehicle", "HFD-Rapamycin"), bty="n", fill=c("grey",palette()[1:2]))
 ```
 
+## VO2 Statistics
+
+For the vehicle treated animals we noted a `r (plotted.data[2,1]-plotted.data[1,1])/plotted.data[1,1]*100`% increase in the volume of oxygen consumed during the dark phase, and a `r (plotted.data[2,2]-plotted.data[1,2])/plotted.data[1,2]*100`% increase in the light phase.
+
 Alternatively we used a mixed linear model, with non-interacting covariates for the Light cycle, the lean mass and the treatment  A Chi-squared test comparing a model with or without the Treatment term yielded a p-value of `r  format(anova(vo2.lme,vo2.lme.null)$"Pr(>Chisq)"[2], scientific=T)` for the mice.  This analysis excluded the chow fed animals, and only compares HFD vehicle to HFD drug.
 
-Based on our model, we predict the average VO2 after 14 days would be an increase of ` (predict(vo2.lme, newdata=drug.newdata)-predict(vo2.lme, newdata=vehicle.newdata))` or ` (predict(vo2.lme, newdata=drug.newdata)-predict(vo2.lme, newdata=vehicle.newdata))/predict(vo2.lme, newdata=vehicle.newdata)*100`%.  The model coefficients are:
+The model coefficients are:
 
 ```{r vo2-lme-table}
 library(arm)
 library(car)
 kable(data.frame(Coefficent=fixef(vo2.lme), SE = se.fixef(vo2.lme)), caption="Model Coefficients for VO2 Mixed Linear Model")
+
+coefs <- data.frame(coef(summary(vo2.lme)))
+coefs$p.z <- 2 * (1 - pnorm(abs(coefs$t.value)))
+kable(coefs, caption="Estimates and p-values from mixed linear models.")
 ```
 
 

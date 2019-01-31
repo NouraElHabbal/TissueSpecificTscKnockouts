@@ -17,7 +17,7 @@ output:
 After having been acclimitized in the CLAMS at the normal temperature (25C) for 2 days then treatment and diet started simulataneously. 
 
 
-The input files were 2015-10-07-C57BL6J-Rapa-HFD-PreCLAMSEchoMRI.XLSX for the echoMRI data and 2015-10-07-C57BL6J-Rapa-HFD-OxymaxDataFile1.csv  and 2015-10-07-C57BL6J-Rapa-HFD-OxymaxDataFile2.csv for the CLAMS data.  These data can be found in /Users/davebrid/Documents/GitHub/TissueSpecificTscKnockouts/Mouse Data/CLAMS B6-HFD-Rapamycin.  This script was most recently updated on Thu Jan 31 15:44:47 2019 and includes the following number of animals:
+The input files were 2015-10-07-C57BL6J-Rapa-HFD-PreCLAMSEchoMRI.XLSX for the echoMRI data and 2015-10-07-C57BL6J-Rapa-HFD-OxymaxDataFile1.csv  and 2015-10-07-C57BL6J-Rapa-HFD-OxymaxDataFile2.csv for the CLAMS data.  These data can be found in /Users/davebrid/Documents/GitHub/TissueSpecificTscKnockouts/Mouse Data/CLAMS B6-HFD-Rapamycin.  This script was most recently updated on Thu Jan 31 16:32:13 2019 and includes the following number of animals:
 
 
 Treatment    Males
@@ -49,21 +49,40 @@ This data was averaged for the VO2 before the HFD switch and after the HFD switc
 
 ![Energy Expenditure Before and After High Fat Diet Treatment](figures/vo2-barplot-1.png)
 
-Alternatively we used a mixed linear model, with non-interacting covariates for the Light cycle, the lean mass and the treatment  A Chi-squared test comparing a model with or without the Treatment term yielded a p-value of 6.5e-05 for the mice.  This analysis excluded the chow fed animals, and only compares HFD vehicle to HFD drug.
+## VO2 Statistics
 
-Based on our model, we predict the average VO2 after 14 days would be an increase of ` (predict(vo2.lme, newdata=drug.newdata)-predict(vo2.lme, newdata=vehicle.newdata))` or ` (predict(vo2.lme, newdata=drug.newdata)-predict(vo2.lme, newdata=vehicle.newdata))/predict(vo2.lme, newdata=vehicle.newdata)*100`%.  The model coefficients are:
+For the vehicle treated animals we noted a 7.887% increase in the volume of oxygen consumed during the dark phase, and a 6.702% increase in the light phase.
+
+Alternatively we used a mixed linear model, with non-interacting covariates for the Light cycle, the lean mass and the treatment  A Chi-squared test comparing a model with or without the Treatment term yielded a p-value of 1.24e-05 for the mice.  This analysis excluded the chow fed animals, and only compares HFD vehicle to HFD drug.
+
+The model coefficients are:
 
 
 Table: Model Coefficients for VO2 Mixed Linear Model
 
-                               Coefficent      SE
-----------------------------  -----------  ------
-(Intercept)                       134.070   8.664
-Light.DarkLight                    -8.650   0.569
-Lean                               -1.839   0.342
-Exp.Time                            0.107   0.007
-TreatmentRapamycin                 -3.334   1.742
-Exp.Time:TreatmentRapamycin        -0.040   0.010
+                              Coefficent      SE
+---------------------------  -----------  ------
+(Intercept)                      135.408   8.672
+Light.DarkLight                   -8.756   0.571
+Lean                              -1.839   0.342
+Exp.Time                           0.095   0.007
+TreatmentRapamycin                -4.506   1.786
+HFDTRUE                           -0.092   1.259
+TreatmentRapamycin:HFDTRUE        -3.959   1.440
+
+
+
+Table: Estimates and p-values from mixed linear models.
+
+                              Estimate   Std..Error   t.value     p.z
+---------------------------  ---------  -----------  --------  ------
+(Intercept)                    135.408        8.672    15.615   0.000
+Light.DarkLight                 -8.756        0.571   -15.335   0.000
+Lean                            -1.839        0.342    -5.380   0.000
+Exp.Time                         0.095        0.007    13.934   0.000
+TreatmentRapamycin              -4.506        1.786    -2.522   0.012
+HFDTRUE                         -0.092        1.259    -0.073   0.942
+TreatmentRapamycin:HFDTRUE      -3.959        1.440    -2.750   0.006
 
 
 ## Respiratory Exchange Rate

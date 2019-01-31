@@ -6,6 +6,9 @@ This document indicates where the raw data for each Figure panel can be found, a
 | Figure | Script | Figure |
 |--------|--------|--------|
 
+| Figure 1A | NA | NA (Schematic) |
+| Figure 1B | ⁨Mouse Data⁩/CLAMS B6-HFD-Rapamycin/clams-analysis.Rmd | activity-barplot-1.pdf
+| Figure 1B | ⁨Mouse Data⁩/CLAMS B6-HFD-Rapamycin/clams-analysis.Rmd | vo2-barplot-1.pdf
 | Figure 2A |
 | Figure 2B |
 | Figure 2C | 

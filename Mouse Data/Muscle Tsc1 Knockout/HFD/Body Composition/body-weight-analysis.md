@@ -1,6 +1,14 @@
-# Longitudinal Body Composition Analysis of Muscle Tsc1 Knockout Mice on a High Fat Diet
-Erin Stephenson and Dave Bridges  
-March 31, 2016  
+---
+title: Longitudinal Body Composition Analysis of Muscle Tsc1 Knockout Mice on a High
+  Fat Diet
+author: "Erin Stephenson and Dave Bridges"
+date: "March 31, 2016"
+output:
+  html_document:
+    keep_md: yes
+  pdf_document:
+    keep_tex: yes
+---
 
 
 
@@ -9,7 +17,7 @@ This was from combined weights over several measurements of mice all placed on a
 
 
 
-Data was downloaded from MouseDB then aand the data is saved as Raw Data.csv.  These data are located in /Users/davebrid/Documents/GitHub/TissueSpecificTscKnockouts/Mouse Data/Muscle Tsc1 Knockout/HFD/Body Composition and was most recently updated on Sun Jul 24 07:54:01 2016.
+Data was downloaded from MouseDB then aand the data is saved as Raw Data.csv.  These data are located in /Users/davebrid/Documents/GitHub/TissueSpecificTscKnockouts/Mouse Data/Muscle Tsc1 Knockout/HFD/Body Composition and was most recently updated on Thu Jan 31 11:29:23 2019.
 
 # Enrollment
 
@@ -46,7 +54,7 @@ To test whether these groups are different we constructed a linear model with th
 
 Weight ~ age * Gender * Knockout + (1 | animal.id) + (age - 1 | animal.id)
 
-Based on this formula the knockout caused a 6.193g increase in body weight for males and a 2.322g increase for females (p=7.518&times; 10^-11^ via a Chi-squared test).
+The knockout caused a s (p=7.518&times; 10^-11^ via a Chi-squared test).
 
 The full results are shown below:
 
@@ -63,7 +71,7 @@ age:GenderF                   -0.041        0.008    -4.839   0.000
 age:KnockoutTRUE              -0.059        0.013    -4.550   0.000
 GenderF:KnockoutTRUE           1.192        1.262     0.944   0.345
 age:GenderF:KnockoutTRUE       0.017        0.016     1.088   0.276
-```
+
 
 
 
@@ -76,7 +84,7 @@ To test whether these groups are different we constructed a linear model with th
 
 Lean Mass ~ age * Gender * Knockout + (1 | animal.id) + (age - 1 | animal.id)
 
-Based on this formula the knockout caused a 1.265g increase in lean mass for males and a -0.786g increase for females (p=0.006 via a Chi-squared test).
+Based on this formula the knockout caused an increase for females (p=0.006 via a Chi-squared test).
 
 The full results are shown below:
 
@@ -98,11 +106,19 @@ age:GenderF:KnockoutTRUE      -0.013        0.010    -1.273   0.203
 
 ![](figures/fat-mass-scatterplot-1.png)<!-- -->![](figures/fat-mass-scatterplot-2.png)<!-- -->![](figures/fat-mass-scatterplot-3.png)<!-- -->
 
+## Statistics for Fat Mass 
+
+
+
 To test whether these groups are different we constructed a linear model with the following formula:
 
-Fat Mass ~ Weight ~ age * Gender * Knockout + (1 | animal.id) + (age - 1 | animal.id)
+Fat Mass ~ age + Gender + age:Gender + Knockout + Knockout:age + Gender:Knockout + Gender:age:Knockout + (1 | animal.id) + (age - 1 | animal.id).  
 
-Based on this formula the knockout caused a 5.086g increase in fat mass for males and a 3.256g increase for females (p=1.03&times; 10^-13^ via a Chi-squared test).
+We used this model because the base model was that Fat Mass changes with age.  We asked if sex modified the age dependent effect, and it did (p=0.01).  We next added knockout to the modified sex-modified model, by adding both a knockout and knockout:age term and it too was significant (p=1.005&times; 10^-13^).  
+
+Finally we asked if sex modified that last model by adding Gender:Knockout and Gender:age:Knockout terms.  This ANOVA yielded a p-value of 0.03, which was also significant.
+
+Based on this formula the knockout caused significant reductions in mass, via a Chi-squared test with a model not including genotype (p=1.03&times; 10^-13^).
 
 The full results are shown below:
 
@@ -129,7 +145,7 @@ To test whether these groups are different we constructed a linear model with th
 
 Percent Fat Mass~ age * Gender * Knockout + (1 | animal.id) + (age - 1 | animal.id)
 
-Based on this formula the knockout caused a 12.052 increase in percent fat mass for males and a 11.095 increaes for females (p=1.262&times; 10^-15^ via a Chi-squared test).
+Based on this formula the knockout caused a increaes for females (p=1.262&times; 10^-15^ via a Chi-squared test).
 
 The full results are shown below:
 
@@ -152,7 +168,7 @@ age:GenderF:KnockoutTRUE       0.049        0.036     1.358   0.174
 The following animals have completed the study (age is >144 days):
 
 
-Table: Animals which have completed the study
+Table: Animals which have completed the study by genotype
 
 Genotype      Gender    Number
 ------------  -------  -------
@@ -164,6 +180,17 @@ fl/fl; Tg/+   F             17
 +/+; Tg/+     F             11
 fl/fl; +/+    M              5
 fl/fl; +/+    F             17
+
+
+
+Table: Animals which have completed the study, by knockout status
+
+Knockout   Gender    Number
+---------  -------  -------
+FALSE      M             23
+FALSE      F             44
+TRUE       M              9
+TRUE       F             17
 
 
 
@@ -182,12 +209,32 @@ Total.Fat.Mass_se       0.909   0.319   0.443   0.122
 Percent.Fat.Mass_se     1.912   0.978   1.224   0.589 
 ----------------------  ------  ------  ------  ------
 
+
+
+Table: Effects at the end of the study
+
+Gender   Variable                 FALSE    TRUE   Difference   Difference.pct
+-------  ----------------------  ------  ------  -----------  ---------------
+M        Body.Weight_mean         34.55   27.88       -6.670           -19.31
+M        Lean.Mass_mean           24.99   23.44       -1.545            -6.18
+M        Percent.Fat.Mass_mean    22.83   11.94      -10.884           -47.68
+M        Total.Fat.Mass_mean       8.26    3.34       -4.922           -59.57
+F        Body.Weight_mean         25.21   22.64       -2.572           -10.20
+F        Lean.Mass_mean           18.72   19.24        0.517             2.76
+F        Percent.Fat.Mass_mean    20.77   10.31      -10.454           -50.34
+F        Total.Fat.Mass_mean       5.47    2.32       -3.155           -57.67
+
+
 # Session Information
 
 ```
-## R version 3.3.0 (2016-05-03)
-## Platform: x86_64-apple-darwin13.4.0 (64-bit)
-## Running under: OS X 10.11.5 (El Capitan)
+## R version 3.5.0 (2018-04-23)
+## Platform: x86_64-apple-darwin15.6.0 (64-bit)
+## Running under: macOS  10.14.2
+## 
+## Matrix products: default
+## BLAS: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRblas.0.dylib
+## LAPACK: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRlapack.dylib
 ## 
 ## locale:
 ## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
@@ -196,15 +243,18 @@ Percent.Fat.Mass_se     1.912   0.978   1.224   0.589
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-## [1] influence.ME_0.9-6 lme4_1.1-12        Matrix_1.2-6      
-## [4] tidyr_0.4.1        dplyr_0.4.3        knitr_1.13        
+## [1] influence.ME_0.9-9 lme4_1.1-19        Matrix_1.2-15     
+## [4] bindrcpp_0.2.2     tidyr_0.8.2        dplyr_0.7.8       
+## [7] knitr_1.21        
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] Rcpp_0.12.5     magrittr_1.5    splines_3.3.0   MASS_7.3-45    
-##  [5] lattice_0.20-33 R6_2.1.2        minqa_1.2.4     stringr_1.0.0  
-##  [9] highr_0.6       tools_3.3.0     parallel_3.3.0  grid_3.3.0     
-## [13] nlme_3.1-128    DBI_0.4-1       htmltools_0.3.5 yaml_2.1.13    
-## [17] lazyeval_0.1.10 assertthat_0.1  digest_0.6.9    nloptr_1.0.4   
-## [21] formatR_1.4     evaluate_0.9    rmarkdown_0.9.6 stringi_1.1.1
+##  [1] Rcpp_1.0.0       bindr_0.1.1      magrittr_1.5     MASS_7.3-51.1   
+##  [5] splines_3.5.0    tidyselect_0.2.5 lattice_0.20-38  R6_2.3.0        
+##  [9] rlang_0.3.1      minqa_1.2.4      stringr_1.3.1    highr_0.7       
+## [13] tools_3.5.0      grid_3.5.0       nlme_3.1-137     xfun_0.4        
+## [17] htmltools_0.3.6  yaml_2.2.0       assertthat_0.2.0 digest_0.6.18   
+## [21] tibble_2.0.0     crayon_1.3.4     nloptr_1.2.1     purrr_0.2.5     
+## [25] glue_1.3.0       evaluate_0.12    rmarkdown_1.11   stringi_1.2.4   
+## [29] compiler_3.5.0   pillar_1.3.1     pkgconfig_2.0.2
 ```
 

@@ -3,11 +3,11 @@ title: "Effects of Rapamycin on the Early Stages of HFD Increased Energy Expendi
 author: "Erin Stephenson and Dave Bridges"
 date: "September 18, 2015"
 output:
+  html_document:
+    keep_md: yes
   pdf_document:
     fig_caption: yes
     keep_tex: yes
-  html_document:
-    keep_md: yes
 ---
 
 ```{r global_options, include=FALSE}
@@ -22,13 +22,14 @@ options(scipen=5,digits =3)
 drug_start <- 0
 diet_start <- 88
 library(tidyr)
-library(xlsx)
+library(readxl)
 mri_data_file <- '2015-10-07-C57BL6J-Rapa-HFD-PreCLAMSEchoMRI.XLSX'
-mri_data <- read.xlsx2(mri_data_file, sheetName="ExtractedScans")
-mri_data$Treatment <- relevel(mri_data$Treatment, ref='Vehicle')
+mri_data <- read_excel(mri_data_file, sheet="ExtractedScans")
+mri_data$Treatment <- relevel(as.factor(mri_data$Treatment), ref='Vehicle')
 mri_data$Lean <- as.numeric(as.character(mri_data$Lean))
 mri_data$Fat <- as.numeric(as.character(mri_data$Fat))
 mri_data$Weight <- as.numeric(as.character(mri_data$Weight))
+mri_data$Label <- as.factor(mri_data$Label)
 
 clams_data_file_1 <- '2015-10-07-C57BL6J-Rapa-HFD-OxymaxDataFile1.csv'
 clams_data_file_2 <- '2015-10-07-C57BL6J-Rapa-HFD-OxymaxDataFile2.csv'
@@ -67,11 +68,12 @@ merged_data <-
          Total.Activity = X.Ambulatory)
 
 merged_data$Subject <- as.factor(merged_data$Subject)
-merged_data$Time <- sapply(strsplit(as.character(merged_data$Date.Time), " "), "[[", 2)
+#merged_data$Time <- sapply(strsplit(as.character(merged_data$Date.Time), " "), "[[", 2)
 library(lubridate)
-merged_data$Time <- hms(merged_data$Time)
-merged_data$Time.Interval <- merged_data$Time$hour
+#merged_data$Time <- hms(merged_data$Time)
+#merged_data$Time.Interval <- merged_data$Time$hour
 merged_data$Date.Time <- mdy_hms(as.character(merged_data$Date.Time))
+merged_data$Time <- hour(merged_data$Date.Time)
 #calculate time for one interval
 interval_time <- as.numeric( difftime(merged_data$Date.Time[2], merged_data$Date.Time[1], units="hours"))
 
@@ -87,13 +89,15 @@ The input files were `r mri_data_file` for the echoMRI data and `r clams_data_fi
 ```{r summary-table, results='asis'}
 mri_table <- 
   mri_data %>%
-  distinct(Label) %>%
+  distinct(Label, .keep_all = T) %>%
+  select(Label,Treatment) %>%
   group_by(Treatment) %>%
   summarise(Males = length(Treatment))
 
 summary_table <- 
   merged_data %>%
-  distinct(Subject) %>%
+  select(Subject,Treatment) %>%
+  distinct(Subject, .keep_all = T) %>%
   group_by(Treatment) %>%
   summarise(Males = length(Treatment))
 kable(summary_table)
@@ -166,15 +170,18 @@ The VO2 levels were first merged to average over light and dark cycles, removing
 ```{r vo2-diagnostic-plots, fig.cap="Diagnostic model plots for effects of drug treatment on VO2.  This analysis only includes HFD fed animals."}
 
 library(lme4)
-vo2.lme <- lmer(VO2 ~ Light.Dark + Lean + Exp.Time + Treatment + Treatment:Exp.Time + (1|Subject), data=subset(merged_data, Exp.Time>=0), REML=F)
-vo2.lme.null <- lmer(VO2 ~ Light.Dark + Lean + Exp.Time + Treatment + (1|Subject), data=subset(merged_data, Exp.Time>=0), REML=F)
-library(influence.ME)
-par(mfrow=c(1,3))
-infl <- influence(vo2.lme, group='Subject')
-barplot(cooks.distance(infl), main="Cook's Distance", 
-        beside=T, col='grey',las=2, names.arg=rownames(cooks.distance(infl)))
-plot(density(residuals(vo2.lme)), main="Residuals")
-plot(fitted(vo2.lme), residuals(vo2.lme), xlab="Predicted VO2", ylab="Residuals", main="Residuals vs Predicted")
+vo2.lme <- lmer(VO2 ~ Light.Dark + 
+                  Lean + 
+                  Exp.Time + 
+                  Treatment + 
+                  Treatment:Exp.Time + 
+                  (1|Subject), data=subset(merged_data, Exp.Time>=0), REML=F)
+
+vo2.lme.null <- lmer(VO2 ~ Light.Dark + 
+                       Lean + 
+                       Exp.Time + 
+                       Treatment + 
+                       (1|Subject), data=subset(merged_data, Exp.Time>=0), REML=F)
 
 vehicle.newdata <- list(Light.Dark = levels(merged_data$Light.Dark)[1], 
                         Lean = mean(merged_data$Lean), 
@@ -213,11 +220,13 @@ ncd.data <-
   summarize(VO2.mean = mean(VO2),
             VO2.se = se(VO2))
 
-plotted.data <- data.frame(rbind(c(FALSE,'None',ncd.data$VO2.mean), plot.data)[,3:4])
+tmp <- list(HFD=FALSE,Treatment="None", Dark=ncd.data$VO2.mean[1], Light=ncd.data$VO2.mean[1])
+plotted.data <- data.frame(rbind(tmp, plot.data)[,3:4])
 plotted.data$Dark <- as.numeric(plotted.data$Dark)
 plotted.data$Light <- as.numeric(plotted.data$Light)
 
-plotted.data.se <- data.frame(rbind(c(FALSE,'None',ncd.data$VO2.se), plot.data.se)[,3:4])
+tmp <- list(HFD=FALSE,Treatment="None", Dark=ncd.data$VO2.se[1], Light=ncd.data$VO2.se[1])
+plotted.data.se <- data.frame(rbind(tmp, plot.data.se)[,3:4])
 plotted.data.se$Dark <- as.numeric(plotted.data.se$Dark)
 plotted.data.se$Light <- as.numeric(plotted.data.se$Light)
 
@@ -233,7 +242,7 @@ legend("topright", c("NCD", "HFD-Vehicle", "HFD-Rapamycin"), bty="n", fill=c("gr
 
 Alternatively we used a mixed linear model, with non-interacting covariates for the Light cycle, the lean mass and the treatment  A Chi-squared test comparing a model with or without the Treatment term yielded a p-value of `r  format(anova(vo2.lme,vo2.lme.null)$"Pr(>Chisq)"[2], scientific=T)` for the mice.  This analysis excluded the chow fed animals, and only compares HFD vehicle to HFD drug.
 
-Based on our model, we predict the average VO2 after 14 days would be an increase of `r (predict(vo2.lme, newdata=drug.newdata)-predict(vo2.lme, newdata=vehicle.newdata))` or `r (predict(vo2.lme, newdata=drug.newdata)-predict(vo2.lme, newdata=vehicle.newdata))/predict(vo2.lme, newdata=vehicle.newdata)*100`%.  The model coefficients are:
+Based on our model, we predict the average VO2 after 14 days would be an increase of ` (predict(vo2.lme, newdata=drug.newdata)-predict(vo2.lme, newdata=vehicle.newdata))` or ` (predict(vo2.lme, newdata=drug.newdata)-predict(vo2.lme, newdata=vehicle.newdata))/predict(vo2.lme, newdata=vehicle.newdata)*100`%.  The model coefficients are:
 
 ```{r vo2-lme-table}
 library(arm)
@@ -315,11 +324,13 @@ ncd.data <-
   summarize(Total.Activity.mean = mean(Total.Activity),
             Total.Activity.se = se(Total.Activity))
 
-plotted.data <- data.frame(rbind(c(FALSE,'None',ncd.data$Total.Activity.mean), plot.data)[,3:4])
+tmp <- list(HFD=FALSE,Treatment="None", Dark=ncd.data$Total.Activity.mean[1], Light=ncd.data$Total.Activity.mean[1])
+plotted.data <- data.frame(rbind(tmp, plot.data)[,3:4])
 plotted.data$Dark <- as.numeric(plotted.data$Dark)
 plotted.data$Light <- as.numeric(plotted.data$Light)
 
-plotted.data.se <- data.frame(rbind(c(FALSE,'None',ncd.data$Total.Activity.se), plot.data.se)[,3:4])
+tmp <- list(HFD=FALSE,Treatment="None", Dark=ncd.data$Total.Activity.se[1], Light=ncd.data$Total.Activity.se[1])
+plotted.data.se <- data.frame(rbind(tmp, plot.data.se)[,3:4])
 plotted.data.se$Dark <- as.numeric(plotted.data.se$Dark)
 plotted.data.se$Light <- as.numeric(plotted.data.se$Light)
 

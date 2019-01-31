@@ -5,15 +5,13 @@ This document indicates where the raw data for each Figure panel can be found, a
 
 | Figure | Script | Figure |
 |--------|--------|--------|
-| Figure 1A | HPD/body-weight-analysis.Rmd  |  HPD/figures/weights-scatterplot-2.pdf  |
-| Figure 1B | HPD/body-weight-analysis.Rmd  |  HPD/figures/lean-mass-scatterplot-2.pdf  |
-| Figure 1C | HPD/body-weight-analysis.Rmd  |  HPD/figures/fat-mass-scatterplot-2.pdf  |
-| Figure 1D | HPD/HPD-tissue-weight-analysis.Rmd |HPD/figures/hpd-adipose-weights-1.pdf |
-| Figure 1E | HPD/HPD-food-intake-analysis.Rmd |HPD/figures/hpd-food-intake-kcal-1.pdf |
-| Figure 1F | HPD/HPD-food-intake-analysis.Rmd |HPD/figures/hpd-food-intake-kcal-cumulative-1.pdf |
-| Figure 2C | NA | HPD Quadriceps Blot Summary.png |
-| Figure 2D | HPD/quadriceps-western-quantification.Rmd | HPD/figures/s6k-analysis-1.pdf |
-| Figure 2D | HPD/quadriceps-western-quantification.Rmd | HPD/figures/akt-analysis-1.pdf |
+
+| Figure 2A |
+| Figure 2B |
+| Figure 2C | 
+| Figure 2D |
+| Figure 2E | body-weight-analysis.Rmd | fat-mass-scatterplot-3.pdf
+| Figure 2E | body-weight-analysis.Rmd | lean-mass-scatterplot-3.pdf
 
 | Figure 3A | NA |
 | Figure 3B | | quadriceps-pGS-ratio-1.pdf | 

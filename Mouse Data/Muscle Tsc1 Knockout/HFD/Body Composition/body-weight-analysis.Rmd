@@ -388,7 +388,6 @@ Fat-Free Mass ~ `r as.character(formula(lean.lme.sex.ko.int))[3]`.
 
 We used this model because the base model was that Lean Mass changes with age.  We asked if sex modified the age dependent effect, and it did (p=`r anova(lean.lme.base, lean.lme.sex)$"Pr(>Chisq)"[2]`).  We next added knockout to the modified sex-modified model, by adding both a knockout and knockout:age term and it was not significant (p=`r anova(lean.lme.sex, lean.lme.sex.ko)$"Pr(>Chisq)"[2]`).  
 
-
 Based on this formula the knockout caused significant reductions in lean mass, via a Chi-squared test with a model not including genotype (p=`r anova(lean.lme.sex.ko, lean.lme.null)$"Pr(>Chisq)"[2]`).
 
 The full results are shown below:

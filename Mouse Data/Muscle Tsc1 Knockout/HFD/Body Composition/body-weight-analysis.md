@@ -17,7 +17,7 @@ This was from combined weights over several measurements of mice all placed on a
 
 
 
-Data was downloaded from MouseDB then aand the data is saved as Raw Data.csv.  These data are located in /Users/davebrid/Documents/GitHub/TissueSpecificTscKnockouts/Mouse Data/Muscle Tsc1 Knockout/HFD/Body Composition and was most recently updated on Thu Jan 31 11:39:03 2019.
+Data was downloaded from MouseDB then aand the data is saved as Raw Data.csv.  These data are located in /Users/davebrid/Documents/GitHub/TissueSpecificTscKnockouts/Mouse Data/Muscle Tsc1 Knockout/HFD/Body Composition and was most recently updated on Thu Jan 31 13:33:06 2019.
 
 # Enrollment
 
@@ -89,7 +89,6 @@ To test whether these groups are different we constructed a linear model with th
 Fat-Free Mass ~ age + Gender + age:Gender + Knockout + Knockout:age + Gender:Knockout + Gender:age:Knockout + (1 | animal.id) + (age - 1 | animal.id).  
 
 We used this model because the base model was that Lean Mass changes with age.  We asked if sex modified the age dependent effect, and it did (p=4.197&times; 10^-12^).  We next added knockout to the modified sex-modified model, by adding both a knockout and knockout:age term and it was not significant (p=0.941).  
-
 
 Based on this formula the knockout caused significant reductions in lean mass, via a Chi-squared test with a model not including genotype (p=0.941).
 

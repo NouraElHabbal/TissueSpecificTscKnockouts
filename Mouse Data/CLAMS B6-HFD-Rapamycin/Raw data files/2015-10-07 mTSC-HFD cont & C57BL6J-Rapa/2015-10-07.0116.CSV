@@ -1,0 +1,27 @@
+Oxymax CSV File 
+
+CSV Generation Date,10/7/2015 2:59:58 PM 
+Experiment Started,10/5/2015 4:24:15 PM 
+Data Filename,C:\Users\Clams\Desktop\Data\BridgesLab\2015-10-07 mTSC-HFD cont & C57BL6J-Rapa\2015-10-07.CDTA
+
+Group/Cage,0116
+O2 Calibration Date,10/5/2015 4:17:47 PM
+CO2 Calibration Date,10/5/2015 4:23:55 PM
+Subject ID,4374
+Subject Mass (G), 22.9 
+
+Reference Settle Time (s), 55 
+Reference Measure Time (s), 5 
+Cage Settle Time (s), 55 
+Cage Measure Time (s), 5 
+Reference Method,EVRYNN=16
+Heat Calculation Method,STD_0
+
+
+:DATA
+===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,
+INTERVAL,CHAN,DATE/TIME,VO2,O2IN,O2OUT,DO2,ACCO2,VCO2,CO2IN,CO2OUT,DCO2,ACCCO2,RER,HEAT,FLOW,STATUS1,FEED1,FEED1 ACC,XTOT,XAMB,YTOT,YAMB,WHEEL,WHEEL ACC,ENCLOSURE TEMP,ENCLOSURE SETPOINT,
+#,,,ml/kg/hr,%,%,,l,ml/kg/hr,%,%,,l,,kcal/hr,LPM,,GRAMS,GRAMS,COUNTS,COUNTS,COUNTS,COUNTS,COUNTS,COUNTS,degC,degC,
+===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,===============,
+
+:EVENTS

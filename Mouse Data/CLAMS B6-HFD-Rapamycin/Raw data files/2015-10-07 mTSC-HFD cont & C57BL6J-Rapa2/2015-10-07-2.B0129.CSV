@@ -1,0 +1,16 @@
+Oxymax Feeding Bouts CSV File 
+
+CSV FILE CREATION:10/12/2015 10:23:32 AM
+DATA FILENAME:C:\Users\Clams\Desktop\Data\BridgesLab\2015-10-07 mTSC-HFD cont & C57BL6J-Rapa2\2015-10-07-2.BDTA
+
+GROUP/CAGE:0129
+SUBJECT ID:4570
+SUBJECT MASS:30.15 grams
+
+
+
+:DATA
+===============,===============,===============,===============,===============,===============,===============,===============,===============,
+COUNT,INTERVAL,CHANNEL,DATE,START,END,DURATION,WEIGHT,ACCUM,
+#,#,#,,,,seconds,grams,grams,
+===============,===============,===============,===============,===============,===============,===============,===============,===============,

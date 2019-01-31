@@ -1,0 +1,340 @@
+---
+title: "Effects of Rapamycin on the Early Stages of HFD Increased Energy Expenditure - Dont trust the statistics in this version"
+author: "Erin Stephenson and Dave Bridges"
+date: "September 18, 2015"
+output:
+  pdf_document:
+    fig_caption: yes
+    keep_tex: yes
+  html_document:
+    keep_md: yes
+---
+
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.path='figures/',
+               echo=FALSE, warning=FALSE, message=FALSE,dev=c('png','pdf'))
+options(scipen=5,digits =3)
+```
+
+```{r data-entry}
+#drug/diet treatment started at interval 125
+drug_start <- 0
+diet_start <- 88
+library(tidyr)
+library(xlsx)
+mri_data_file <- '2015-10-07-C57BL6J-Rapa-HFD-PreCLAMSEchoMRI.XLSX'
+mri_data <- read.xlsx2(mri_data_file, sheetName="ExtractedScans")
+mri_data$Treatment <- relevel(mri_data$Treatment, ref='Vehicle')
+mri_data$Lean <- as.numeric(as.character(mri_data$Lean))
+mri_data$Fat <- as.numeric(as.character(mri_data$Fat))
+mri_data$Weight <- as.numeric(as.character(mri_data$Weight))
+
+clams_data_file_1 <- '2015-10-07-C57BL6J-Rapa-HFD-OxymaxDataFile1.csv'
+clams_data_file_2 <- '2015-10-07-C57BL6J-Rapa-HFD-OxymaxDataFile2.csv'
+clams_data_file_3 <- '2015-10-07-C57BL6J-Rapa-HFD-OxymaxDataFile3.csv'
+
+data.1 <- read.csv(clams_data_file_1)
+end.interval <- max(data.1$Interval)
+data.2 <- read.csv(clams_data_file_2)
+data.2$Interval <- data.2$Interval + end.interval
+end.interval.2 <- max(data.2$Interval)
+data.3 <- read.csv(clams_data_file_3)
+data.3$Interval <- data.3$Interval + end.interval.2
+
+all.data <- rbind(data.1, data.2,data.3)
+
+all.data$Subject <- as.factor(all.data$Subject)
+remove.intervals <- 20
+remove.mice <- c(4572)
+all.data.clean <- subset(all.data, Interval>remove.intervals)
+all.data.clean <- subset(all.data.clean, Event.Log=='')
+
+#remve runted mice
+all.data.clean <- subset(all.data.clean, !(Subject %in% remove.mice))
+
+#remove bad data, this was an injection that ran through two intervals
+bad.intervals <- c()
+all.data.clean <- subset(all.data.clean, !(Interval %in% bad.intervals))
+
+library(dplyr)
+merged_data <- 
+  all.data.clean %>%
+  inner_join(mri_data, by=c('Subject'='Label')) %>%
+  mutate(Total.Weight = Lean + Fat,
+         VO2 = Volume.O2 * Total.Weight/1000,
+         Percent.Fat.Mass = Fat/Total.Weight*100,
+         Total.Activity = X.Ambulatory)
+
+merged_data$Subject <- as.factor(merged_data$Subject)
+merged_data$Time <- sapply(strsplit(as.character(merged_data$Date.Time), " "), "[[", 2)
+library(lubridate)
+merged_data$Time <- hms(merged_data$Time)
+merged_data$Time.Interval <- merged_data$Time$hour
+merged_data$Date.Time <- mdy_hms(as.character(merged_data$Date.Time))
+#calculate time for one interval
+interval_time <- as.numeric( difftime(merged_data$Date.Time[2], merged_data$Date.Time[1], units="hours"))
+
+merged_data$Exp.Time <- (merged_data$Interval - drug_start)*interval_time
+merged_data <- droplevels(merged_data)
+```
+
+After having been acclimitized in the CLAMS at the normal temperature (25C) for 2 days then treatment and diet started simulataneously. 
+
+
+The input files were `r mri_data_file` for the echoMRI data and `r clams_data_file_1`  and `r clams_data_file_2` for the CLAMS data.  These data can be found in `r getwd()`.  This script was most recently updated on `r date()` and includes the following number of animals:
+
+```{r summary-table, results='asis'}
+mri_table <- 
+  mri_data %>%
+  distinct(Label) %>%
+  group_by(Treatment) %>%
+  summarise(Males = length(Treatment))
+
+summary_table <- 
+  merged_data %>%
+  distinct(Subject) %>%
+  group_by(Treatment) %>%
+  summarise(Males = length(Treatment))
+kable(summary_table)
+```
+
+This study was done coincident with diet/drug treatment, using male mice only.  The first day was on NCD then animals were switched to HFD and randomized into drug/vehicle.
+
+# Effects of the Drug at 25C
+
+```{r analysis}
+se <- function(x) sd(x)/sqrt(length(x))
+
+animal.time.course <-
+  merged_data %>%
+  group_by(Treatment,Interval, Time, Light.Dark) %>%
+  summarize(VO2 = mean(VO2),
+            RER = mean(RER),
+            Total.Activity = mean(Total.Activity),
+            Lean.Mass = mean(Lean),
+            Fat.Mass = mean(Fat),
+            Percent.Fat.Mass = mean(Percent.Fat.Mass),
+            Body.Weight = mean(Total.Weight)) %>%
+  mutate(Time.Elapsed = Interval*interval_time)
+
+merged_data$HFD <- merged_data$Interval > diet_start
+animal.summary <-
+  merged_data %>%
+  group_by(Subject,HFD, Treatment,Light.Dark) %>%
+  summarize(VO2 = mean(VO2),
+            RER = mean(RER),
+            Total.Activity = mean(Total.Activity),
+            Lean.Mass = mean(Lean),
+            Fat.Mass = mean(Fat),
+            Percent.Fat.Mass = mean(Percent.Fat.Mass),
+            Body.Weight = mean(Total.Weight))
+write.csv(animal.summary, "Animal Summary Data.csv")
+
+grouped.summary <-
+  animal.summary %>%
+  group_by(HFD, Treatment,Light.Dark) %>%
+  summarize(VO2 = mean(VO2),
+            RER = mean(RER),
+            Total.Activity = mean(Total.Activity),
+            Lean.Mass = mean(Lean.Mass),
+            Fat.Mass = mean(Fat.Mass),
+            Percent.Fat.Mass = mean(Percent.Fat.Mass),
+            Body.Weight = mean(Body.Weight)) %>%
+  rename(Light.Dark=Light.Dark)
+
+grouped.summary.se <-
+  animal.summary %>%
+  group_by(HFD, Treatment,Light.Dark) %>%
+  summarize(VO2 = se(VO2),
+            RER = se(RER),
+            Total.Activity = se(Total.Activity),
+            Lean.Mass = se(Lean.Mass),
+            Fat.Mass = se(Fat.Mass),
+            Percent.Fat.Mass = se(Percent.Fat.Mass),
+            Body.Weight = se(Body.Weight)) %>%
+  rename(Light.Dark=Light.Dark)
+```
+
+## Resting Metabolic Rate
+
+The proxy for energy consumption is the volume of oxygen consumed.  This is best presented in proportion to the amount of lean body mass, since fat mass does not appreciably consume oxygen.  Resting metabolic rate should be high in the evening (when mice are active) and low during the day.  The interpretation of changes in VO2 also requires looking at the levels of physical activity, since more physically active animals will consume more oxygen.
+
+The VO2 levels were first merged to average over light and dark cycles, removing the first `r remove.intervals` measurements.  
+
+
+```{r vo2-diagnostic-plots, fig.cap="Diagnostic model plots for effects of drug treatment on VO2.  This analysis only includes HFD fed animals."}
+
+library(lme4)
+vo2.lme <- lmer(VO2 ~ Light.Dark + Lean + Exp.Time + Treatment + Treatment:Exp.Time + (1|Subject), data=subset(merged_data, Exp.Time>=0), REML=F)
+vo2.lme.null <- lmer(VO2 ~ Light.Dark + Lean + Exp.Time + Treatment + (1|Subject), data=subset(merged_data, Exp.Time>=0), REML=F)
+library(influence.ME)
+par(mfrow=c(1,3))
+infl <- influence(vo2.lme, group='Subject')
+barplot(cooks.distance(infl), main="Cook's Distance", 
+        beside=T, col='grey',las=2, names.arg=rownames(cooks.distance(infl)))
+plot(density(residuals(vo2.lme)), main="Residuals")
+plot(fitted(vo2.lme), residuals(vo2.lme), xlab="Predicted VO2", ylab="Residuals", main="Residuals vs Predicted")
+
+vehicle.newdata <- list(Light.Dark = levels(merged_data$Light.Dark)[1], 
+                        Lean = mean(merged_data$Lean), 
+                        Exp.Time=14*24, Treatment=levels(merged_data$Treatment)[1],
+                        Subject = merged_data$Subject[3])
+drug.newdata <- list(Light.Dark = levels(merged_data$Light.Dark)[1], 
+                        Lean = mean(merged_data$Lean), 
+                        Exp.Time=14*24, Treatment=levels(merged_data$Treatment)[2],
+                        Subject = merged_data$Subject[3])
+```
+
+We first checked whether normality was maintained in the residuals from the ANCOVA.  These results are summarized below:
+
+
+```{r vo2-time-course, fig.cap="Oxygen consumption over time."}
+with(subset(animal.time.course, Treatment==levels(merged_data$Treatment)[1]), plot(Time.Elapsed,VO2, type="l", ylab="VO2 (mL/h)", xlab="Time (hours)", las=1, ylim=c(min(animal.time.course$VO2), max(animal.time.course$VO2))))
+with(subset(animal.time.course, Treatment==levels(merged_data$Treatment)[2]), lines(Time.Elapsed,VO2, col=palette()[2]))
+legend("topleft", levels(animal.time.course$Treatment), bty="n", lty=1, col=palette()[1:2])
+```
+
+This data was averaged for the VO2 before the HFD switch and after the HFD switch
+
+```{r vo2-barplot, fig.cap="Energy Expenditure Before and After High Fat Diet Treatment"}
+superpose.eb <- function (x, y, ebl, ebu = ebl, length = 0.08, ...)
+  arrows(x, y + ebu, x, y - ebl, angle = 90, code = 3,
+  length = length, ...)
+
+ylimits <- c(min(grouped.summary$VO2) - max(grouped.summary.se$VO2), max(grouped.summary$VO2) + max(grouped.summary.se$VO2))
+
+plot.data <- grouped.summary %>% filter(HFD==T) %>% select(Treatment, Light.Dark, VO2) %>% spread(Light.Dark,VO2)
+plot.data.se <- grouped.summary.se %>% filter(HFD==T) %>% select(Treatment, Light.Dark, VO2) %>% spread(Light.Dark,VO2)
+
+ncd.data <- 
+  animal.summary %>%
+  group_by(Light.Dark) %>%
+  summarize(VO2.mean = mean(VO2),
+            VO2.se = se(VO2))
+
+plotted.data <- data.frame(rbind(c(FALSE,'None',ncd.data$VO2.mean), plot.data)[,3:4])
+plotted.data$Dark <- as.numeric(plotted.data$Dark)
+plotted.data$Light <- as.numeric(plotted.data$Light)
+
+plotted.data.se <- data.frame(rbind(c(FALSE,'None',ncd.data$VO2.se), plot.data.se)[,3:4])
+plotted.data.se$Dark <- as.numeric(plotted.data.se$Dark)
+plotted.data.se$Light <- as.numeric(plotted.data.se$Light)
+
+plot <- barplot(as.matrix(plotted.data), 
+                beside=T, ylim=ylimits, 
+                ylab="VO2 (mL/h)",
+                col=c("grey", palette()[1:2]), xpd=F, las=1)
+superpose.eb(plot,
+             as.matrix(plotted.data),
+             as.matrix(plotted.data.se))
+legend("topright", c("NCD", "HFD-Vehicle", "HFD-Rapamycin"), bty="n", fill=c("grey",palette()[1:2]))
+```
+
+Alternatively we used a mixed linear model, with non-interacting covariates for the Light cycle, the lean mass and the treatment  A Chi-squared test comparing a model with or without the Treatment term yielded a p-value of `r  format(anova(vo2.lme,vo2.lme.null)$"Pr(>Chisq)"[2], scientific=T)` for the mice.  This analysis excluded the chow fed animals, and only compares HFD vehicle to HFD drug.
+
+Based on our model, we predict the average VO2 after 14 days would be an increase of `r (predict(vo2.lme, newdata=drug.newdata)-predict(vo2.lme, newdata=vehicle.newdata))` or `r (predict(vo2.lme, newdata=drug.newdata)-predict(vo2.lme, newdata=vehicle.newdata))/predict(vo2.lme, newdata=vehicle.newdata)*100`%.  The model coefficients are:
+
+```{r vo2-lme-table}
+library(arm)
+library(car)
+kable(data.frame(Coefficent=fixef(vo2.lme), SE = se.fixef(vo2.lme)), caption="Model Coefficients for VO2 Mixed Linear Model")
+```
+
+
+## Respiratory Exchange Rate
+
+The respiratory exchange ratio is an indicator of substrate preference.  A high RER indicates preferential utilization of carbohydrates for energy, while a low RER indicates preferential use of lipids.  The normal range of these values are 0.7 (nearly exclusivley lipid) to 1.0 (nearly exclusively carbohydrate).  Lipid utilization (low RER) is increased during sleep (day cycle for mice).
+
+
+
+```{r rer-time-course, fig.cap="The respiratory exchange ratio over time."}
+with(subset(animal.time.course, Treatment==levels(merged_data$Treatment)[1]), plot(Time.Elapsed,RER, type="l", xlab="Time (h)", las=1, ylim=c(0.7,1)))
+with(subset(animal.time.course, Treatment==levels(merged_data$Treatment)[2]), lines(Time.Elapsed,RER, col=palette()[2]))
+with(subset(animal.time.course, Treatment==levels(merged_data$Treatment)[3]), lines(Time.Elapsed,RER, col=palette()[3]))
+legend("topright", levels(merged_data$Treatment), bty="n", lty=1, col=palette()[1:2])
+```
+
+```{r rer-statistics-untreated, fig.cap="Diagnostic model plots for mixed linear model analysis of RER."}
+rer.lme <- lmer(RER~Light.Dark  + Exp.Time + Treatment + Treatment:Exp.Time + (1|Subject), data=subset(merged_data, Exp.Time>=0), REML=F)
+rer.lme.null <- lmer(RER~Light.Dark + Exp.Time + Treatment + (1|Subject), data=subset(merged_data, Exp.Time>=0), REML=F)
+
+par(mfrow=c(1,3))
+infl <- influence(rer.lme, group='Subject')
+barplot(cooks.distance(infl), main="Cook's Distance", 
+        beside=T, col='grey',las=2, names.arg=rownames(cooks.distance(infl)))
+plot(density(residuals(rer.lme)), main="Residuals")
+plot(fitted(rer.lme), residuals(rer.lme), xlab="Predicted RER", ylab="Residuals", main="Residuals vs Predicted")
+```
+
+We used a mixed linear model, with non-interacting covariates for the Light cycle and the treatment.  A Chi-squared test comparing a model with or without the treatment term yielded a p-value of `r format(anova(rer.lme,rer.lme.null)$"Pr(>Chisq)"[2], scientific=T)` for the mice.  This only is comparing the differnce between HFD and HFD + Drug mice.
+
+```{r rer-lme-table}
+kable(data.frame(Coefficent=fixef(rer.lme), SE = se.fixef(rer.lme)), caption="Model Coefficients for RER Mixed Linear Model", digits=6)
+```
+
+
+## Activity Data
+
+Physical activity is determined via the number of beam brakes in the X or Y direction (not vertically).  These numbers are high when the mice are awake (dark cycle) and low during the light cycle.  The beam breaks are converted into ambulatory counts based on consecutive breaks of beams, indicating movement.  These counts data are not normally distributed and as such are typically analysed with generalized linear models.
+
+
+```{r activity-statistics, fig.cap="Model diagnostic plots for generalized linear models of physical activity."}
+activity.lme <- glmer(Total.Activity~Light.Dark + Lean + Exp.Time + Treatment + Treatment:Exp.Time + (1|Subject), data=subset(merged_data, Exp.Time>=0), family='poisson')
+activity.lme.null <- glmer(Total.Activity~Light.Dark + Lean + Exp.Time + Treatment + Treatment:Exp.Time + (1|Subject), data=subset(merged_data, Exp.Time>=0), family='poisson')
+
+par(mfrow=c(1,3))
+infl <- influence(activity.lme, group='Subject')
+barplot(cooks.distance(infl), main="Cook's Distance", 
+        beside=T, col='grey',las=2, names.arg=rownames(cooks.distance(infl)))
+plot(density(residuals(activity.lme)), main="Residuals")
+plot(fitted(activity.lme), residuals(activity.lme), xlab="Predicted Activity", ylab="Residuals", main="Residuals vs Predicted")
+```
+
+We used a generalized mixed linear model, with non-interacting covariates for the Light cycle and the treatment  A Chi-squared test comparing a model with or without the Genotype term yielded a p-value of `r format(anova(activity.lme,activity.lme.null)$"Pr(>Chisq)"[2], scientific=T)` for the mice.  This analysis used a generalized mixed linear model (Poission) and only compares HFD to HFD + Drug.
+
+
+```{r activity-time-course, fig.cap="The activity over time."}
+with(subset(animal.time.course, Treatment==levels(merged_data$Treatment)[1]), plot(Time.Elapsed,Total.Activity, type="l", 
+                                                                                   ylab="Ambulatory Activity", xlab="Time (h)", las=1))
+with(subset(animal.time.course, Treatment==levels(merged_data$Treatment)[2]), lines(Time.Elapsed,Total.Activity, col=palette()[2]))
+
+legend("topright", levels(merged_data$Treatment), bty="n", lty=1, col=palette()[1:2])
+```
+
+
+```{r activity-barplot, fig.cap="Physical Activity Before and After High Fat Diet Treatment"}
+ylimits <- c(min(grouped.summary$Total.Activity) - max(grouped.summary.se$Total.Activity), max(grouped.summary$Total.Activity) + max(grouped.summary.se$Total.Activity))
+
+select <- dplyr::select
+plot.data <- grouped.summary %>% filter(HFD==T) %>% select(Treatment, Light.Dark, Total.Activity) %>% spread(Light.Dark,Total.Activity)
+plot.data.se <- grouped.summary.se %>% filter(HFD==T) %>% select(Treatment, Light.Dark, Total.Activity) %>% spread(Light.Dark,Total.Activity)
+ncd.data <- 
+  animal.summary %>%
+  group_by(Light.Dark) %>%
+  summarize(Total.Activity.mean = mean(Total.Activity),
+            Total.Activity.se = se(Total.Activity))
+
+plotted.data <- data.frame(rbind(c(FALSE,'None',ncd.data$Total.Activity.mean), plot.data)[,3:4])
+plotted.data$Dark <- as.numeric(plotted.data$Dark)
+plotted.data$Light <- as.numeric(plotted.data$Light)
+
+plotted.data.se <- data.frame(rbind(c(FALSE,'None',ncd.data$Total.Activity.se), plot.data.se)[,3:4])
+plotted.data.se$Dark <- as.numeric(plotted.data.se$Dark)
+plotted.data.se$Light <- as.numeric(plotted.data.se$Light)
+
+plot <- barplot(as.matrix(plotted.data), 
+                beside=T, ylim=ylimits, 
+                ylab="Ambulatory Movement",
+                col=c("grey", palette()[1:2]), las=1)
+superpose.eb(plot,
+             as.matrix(plotted.data),
+             as.matrix(plotted.data.se))
+legend("topright", c("NCD", "HFD-Vehicle", "HFD-Rapamycin"), bty="n", fill=c("grey",palette()[1:2]))
+```
+
+# Session Information
+
+```{r session-info, echo=FALSE, message=FALSE}
+sessionInfo()
+```

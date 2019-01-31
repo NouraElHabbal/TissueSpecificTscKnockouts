@@ -45,9 +45,11 @@ color.scheme <- c('#00274c', '#ffcb05')
 
 # Purpose
 
+To evaluate energy expenditure and other parameters in muscle _Tsc1_ knockout mice.  This script was most recently updated on **`r date()`**.
+
 # Experimental Details
 
-Link to the protocol used (permalink preferred) for the experiment and include any notes relevant to your analysis.  This might include specifics not in the general protocol such as cell lines, treatment doses etc.
+Mice were run in the CLAMS in several batches, and combined.
 
 # Raw Data
 
@@ -56,7 +58,8 @@ Link to the protocol used (permalink preferred) for the experiment and include a
 ```{r data-input}
 library(readxl) #loads the readr package
 key.filename <- 'mTSC-HFD_CLAMS_Experiment_Key.xlsx' #make this a separate line, you can use any variable you want
-key.data <- read_excel(key.filename, sheet = 'Sheet1')
+key.data <- read_excel(key.filename, sheet = 'Sheet1') %>%
+  mutate(Knockout = if_else(Genotype=='fl/fl; Tg/+', 'Knockout','Control'))
 ```
 
 ## Oxymax Input
@@ -68,18 +71,81 @@ There are two batches of data, baseline and after 3 months of diet.
 ```{r baseline-data-input}
 baseline.files <- list.files(path="Oxymax/Oxymax files by time period/Baseline", pattern="*.csv", full.names=T)
 library(readr)
+library(lubridate)
 baseline.data <-  lapply(baseline.files, read_csv) %>% 
   bind_rows() %>%
   select(Subject, Interval, `Date/Time`, `Light/Dark`, `Volume O2`, RER, Heat) %>%
-  right_join(key.data, by=c('Subject'='Mouse'))
+  right_join(key.data, by=c('Subject'='Mouse'))  %>% #merged with annotation file
+  mutate(Date.Time = mdy_hms(`Date/Time`)) %>% #parsed datetime
+  mutate(Time = hour(Date.Time)) %>% #extracted the hour 
+  mutate(Zeitgerber.Time = Time-7) # converted to ZT
+
+baseline.data %>%
+  group_by(Genotype,Sex) %>%
+  distinct(Subject,.keep_all=T) %>%
+  count %>%
+  kable(caption="Total animals tested by genotype")
+
+baseline.data %>%
+  group_by(Knockout,Sex) %>%
+  distinct(Subject,.keep_all=T) %>%
+  count %>%
+  kable(caption="Total animals tested by knockout")
 
 ```
 
-This script was most recently updated on **`r date()`**.
+## VO2 Summary
 
-# Analysis
+```{r vo2-analysis}
+animal.data.ld <-
+  baseline.data %>%
+  filter(Interval<100) %>% #removed first 20 intervals
+  filter(`Volume O2`>500) %>%
+  filter(`Volume O2`<10000) %>% #removed biologically implausible values
+  group_by(Subject,Genotype,Knockout,Sex, `Light/Dark`) %>% #calculated average hour/animal level data
+  summarize(RER = mean(RER),
+            VO2 = mean(`Volume O2`),
+            Heat = mean(Heat)) 
+library(ggplot2)
 
-Describe the analysis as you intersperse code chunks
+ggplot(animal.data.ld,
+       aes(y=VO2,x=`Light/Dark`,
+           col=Knockout)) +
+  geom_boxplot(width=0.75) +
+  geom_jitter(position=position_dodge(width=0.75)) +
+  facet_grid(~Sex)
+
+
+
+animal.data <-
+  baseline.data %>%
+  filter(Interval<100) %>% #removed first 100 intervals
+  filter(`Volume O2`>500) %>%
+  filter(`Volume O2`<10000) %>% #removed biologically implausible values
+  group_by(Subject,Genotype,Knockout,Sex, Zeitgerber.Time) %>% #calculated average hour/animal level data
+  summarize(RER = mean(RER),
+            VO2 = mean(`Volume O2`),
+            Heat = mean(Heat)) 
+
+summary.data <-
+  animal.data %>%
+  ungroup %>%
+  select(-Subject, -Genotype) %>% #removed subject column
+  group_by(Knockout,Sex,Zeitgerber.Time) %>%
+  summarize_all(c('mean','se'))
+  
+ggplot(summary.data,
+       aes(y=VO2_mean,
+           ymin=VO2_mean-VO2_se,
+           ymax=VO2_mean+VO2_se,
+           x=Zeitgerber.Time,
+           col=Sex,
+           lty=Knockout)) +
+  geom_line() +
+  geom_errorbar() +
+  labs(y="VO2", x="Zeitgerber Time") 
+
+```
 
 # Interpretation
 
@@ -90,7 +156,3 @@ A brief summary of what the interpretation of these results were
 ```{r session-information, echo=T}
 sessionInfo()
 ```
-
-# References
-
-If needed, using Rmarkdown citation tools (see this link for more information: http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)

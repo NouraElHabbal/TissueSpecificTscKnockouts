@@ -19,7 +19,7 @@ output:
 
 # Purpose
 
-To evaluate energy expenditure and other parameters in muscle _Tsc1_ knockout mice.  This script was most recently updated on **Thu Jan 31 15:11:13 2019**.
+To evaluate energy expenditure and other parameters in muscle _Tsc1_ knockout mice.  This script was most recently updated on **Mon Feb  4 15:09:10 2019**.
 
 # Experimental Details
 
@@ -70,7 +70,7 @@ Knockout   Male      11
 
 ### VO2 Summary Data
 
-![Linegraph of VO2 Data](figures/vo2-summarized-data-1.png)
+![Linegraph of VO2 Data](figures/vo2-summarized-data-1.png)![Linegraph of VO2 Data](figures/vo2-summarized-data-2.png)
 
 ## RER Analysis
 

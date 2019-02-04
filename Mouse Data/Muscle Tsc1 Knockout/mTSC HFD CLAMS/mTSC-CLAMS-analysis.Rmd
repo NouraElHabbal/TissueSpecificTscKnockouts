@@ -160,6 +160,23 @@ ggplot(summary.data,
   geom_line() +
   geom_errorbar() +
   labs(y="VO2", x="Zeitgerber Time") 
+
+ggplot(summary.data,
+       aes(y=VO2_mean,
+           ymin=VO2_mean-VO2_se,
+           ymax=VO2_mean+VO2_se,
+           x=Zeitgerber.Time,
+           col=Knockout)) +
+  geom_line() +
+  geom_errorbar() +
+    facet_grid(~Sex) +
+  labs(y="Volume O2 Consumed (mL/h)", x="Zeitgerber Time") +
+    theme(legend.position = c(0.15, 0.9),
+        legend.background = element_rect(fill=alpha(0.1)),
+        legend.text=element_text(size=14),
+        axis.text=element_text(size=14),
+        axis.title=element_text(size=14),
+        legend.title=element_blank())
 ```
 
 ## RER Analysis

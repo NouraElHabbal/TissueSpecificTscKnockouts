@@ -17,7 +17,7 @@ This was from combined weights over several measurements of mice all placed on a
 
 
 
-Data was downloaded from MouseDB then aand the data is saved as Raw Data.csv.  These data are located in /Users/davebrid/Documents/GitHub/TissueSpecificTscKnockouts/Mouse Data/Muscle Tsc1 Knockout/HFD/Body Composition and was most recently updated on Thu Jan 31 13:33:06 2019.
+Data was downloaded from MouseDB then aand the data is saved as Raw Data.csv.  These data are located in /Users/davebrid/Documents/GitHub/TissueSpecificTscKnockouts/Mouse Data/Muscle Tsc1 Knockout/HFD/Body Composition and was most recently updated on Mon Feb  4 15:19:40 2019.
 
 # Enrollment
 
@@ -108,7 +108,7 @@ age:KnockoutTRUE      -0.001        0.005    -0.144   0.886
 
 # Fat Mass
 
-![](figures/fat-mass-scatterplot-1.png)<!-- -->![](figures/fat-mass-scatterplot-2.png)<!-- -->![](figures/fat-mass-scatterplot-3.png)<!-- -->
+![](figures/fat-mass-scatterplot-1.png)<!-- -->![](figures/fat-mass-scatterplot-2.png)<!-- -->![](figures/fat-mass-scatterplot-3.png)<!-- -->![](figures/fat-mass-scatterplot-4.png)<!-- -->
 
 ## Statistics for Fat Mass 
 
@@ -247,18 +247,20 @@ F        Total.Fat.Mass_mean       5.47    2.32       -3.155           -57.67
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-## [1] influence.ME_0.9-9 lme4_1.1-19        Matrix_1.2-15     
-## [4] bindrcpp_0.2.2     tidyr_0.8.2        dplyr_0.7.8       
-## [7] knitr_1.21        
+## [1] forcats_0.3.0      ggplot2_3.1.0      influence.ME_0.9-9
+## [4] lme4_1.1-19        Matrix_1.2-15      bindrcpp_0.2.2    
+## [7] tidyr_0.8.2        dplyr_0.7.8        knitr_1.21        
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] Rcpp_1.0.0       bindr_0.1.1      magrittr_1.5     MASS_7.3-51.1   
-##  [5] splines_3.5.0    tidyselect_0.2.5 lattice_0.20-38  R6_2.3.0        
-##  [9] rlang_0.3.1      minqa_1.2.4      stringr_1.3.1    highr_0.7       
-## [13] tools_3.5.0      grid_3.5.0       nlme_3.1-137     xfun_0.4        
-## [17] htmltools_0.3.6  yaml_2.2.0       assertthat_0.2.0 digest_0.6.18   
-## [21] tibble_2.0.0     crayon_1.3.4     nloptr_1.2.1     purrr_0.2.5     
-## [25] glue_1.3.0       evaluate_0.12    rmarkdown_1.11   stringi_1.2.4   
-## [29] compiler_3.5.0   pillar_1.3.1     pkgconfig_2.0.2
+##  [1] Rcpp_1.0.0       plyr_1.8.4       pillar_1.3.1     compiler_3.5.0  
+##  [5] nloptr_1.2.1     highr_0.7        bindr_0.1.1      tools_3.5.0     
+##  [9] digest_0.6.18    evaluate_0.12    tibble_2.0.0     nlme_3.1-137    
+## [13] gtable_0.2.0     lattice_0.20-38  pkgconfig_2.0.2  rlang_0.3.1     
+## [17] yaml_2.2.0       xfun_0.4         withr_2.1.2      stringr_1.3.1   
+## [21] grid_3.5.0       tidyselect_0.2.5 glue_1.3.0       R6_2.3.0        
+## [25] rmarkdown_1.11   minqa_1.2.4      reshape2_1.4.3   purrr_0.2.5     
+## [29] magrittr_1.5     scales_1.0.0     htmltools_0.3.6  splines_3.5.0   
+## [33] MASS_7.3-51.1    assertthat_0.2.0 colorspace_1.3-2 labeling_0.3    
+## [37] stringi_1.2.4    lazyeval_0.2.1   munsell_0.5.0    crayon_1.3.4
 ```
 

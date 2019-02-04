@@ -494,6 +494,29 @@ with(subset(combined.summary,
 
 legend("topleft", do.call(paste, expand.grid(c("Knockout","Wild-Type"),'-',levels(weight.data$Gender))),
        lty=1, col=palette()[1:4], bty='n', cex=1)
+
+library(ggplot2)
+library(forcats)
+ggplot(filter(combined.summary, Weeks<12) %>%
+         mutate(Knockout = factor(Knockout==1, labels=c("Control", "Knockout")),
+                Sex = relevel(Gender, ref="F")) %>%
+         mutate(Sex = fct_recode(Sex, "Female"="F", "Male"="M")),
+       aes(y=Total.Fat.Mass.mean,
+                             ymin=Total.Fat.Mass.mean-Total.Fat.Mass.se,
+                             ymax=Total.Fat.Mass.mean+Total.Fat.Mass.se,
+                             x=Weeks,
+                             col=Knockout)) +
+  geom_line() +
+  geom_errorbar() +
+  facet_grid(~Sex) +
+  labs(y="Fat Mass (g)",
+       x="Weeks on HFD") +
+      theme(legend.position = c(0.15, 0.9),
+        legend.background = element_rect(fill=alpha(0.1)),
+        legend.text=element_text(size=14),
+        axis.text=element_text(size=14),
+        axis.title=element_text(size=14),
+        legend.title=element_blank())
 ```
 
 ## Statistics for Fat Mass 

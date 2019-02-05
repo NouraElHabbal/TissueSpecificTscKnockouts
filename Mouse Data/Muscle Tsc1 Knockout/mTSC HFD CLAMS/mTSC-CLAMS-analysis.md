@@ -19,7 +19,7 @@ output:
 
 # Purpose
 
-To evaluate energy expenditure and other parameters in muscle _Tsc1_ knockout mice.  This script was most recently updated on **Tue Feb  5 15:19:53 2019**.
+To evaluate energy expenditure and other parameters in muscle _Tsc1_ knockout mice.  This script was most recently updated on **Tue Feb  5 15:30:49 2019**.
 
 # Experimental Details
 
@@ -87,7 +87,7 @@ $$(3.815 + 1.232 * RER)*VO2$$
 ## Heat Production Statistics
 
 
-Table: Average changes in heat production form wt to knockout
+Table: Average changes in heat production comparing wt to knockout
 
 Sex      Light/Dark    Control   Knockout   Change   Pct.Change
 -------  -----------  --------  ---------  -------  -----------
@@ -124,7 +124,7 @@ KnockoutKnockout                         2.148        0.737      2.92   0.004
 
 ### RER Summary Data
 
-![Linegraph of RER Data](figures/rer-summarized-data-1.png)
+![Linegraph of RER Data](figures/rer-summarized-data-1.png)![Linegraph of RER Data](figures/rer-summarized-data-2.png)
 
 ## Activity Analysis
 
@@ -134,7 +134,7 @@ KnockoutKnockout                         2.148        0.737      2.92   0.004
 
 ### Activity Summary Data
 
-![Linegraph of Activity Data](figures/activity-summarized-data-1.png)
+![Linegraph of Activity Data](figures/activity-summarized-data-1.png)![Linegraph of Activity Data](figures/activity-summarized-data-2.png)
 
 
 # Interpretation

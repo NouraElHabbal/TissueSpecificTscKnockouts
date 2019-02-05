@@ -19,7 +19,7 @@ output:
 
 # Purpose
 
-To evaluate energy expenditure and other parameters in muscle _Tsc1_ knockout mice.  This script was most recently updated on **Mon Feb  4 15:09:10 2019**.
+To evaluate energy expenditure and other parameters in muscle _Tsc1_ knockout mice.  This script was most recently updated on **Tue Feb  5 11:10:24 2019**.
 
 # Experimental Details
 
@@ -50,6 +50,7 @@ fl/fl; +/+    Female    17
 fl/fl; +/+    Male       8
 fl/fl; Tg/+   Female    18
 fl/fl; Tg/+   Male      11
+NA            NA         7
 
 
 
@@ -61,6 +62,9 @@ Control    Female    44
 Control    Male      33
 Knockout   Female    18
 Knockout   Male      11
+NA         NA         7
+
+The baseline raw data files can be found in Oxymax/Oxymax files by time period/Baseline.  The MRI data can be found in EchoMRI.
 
 ## VO2 Analysis
 

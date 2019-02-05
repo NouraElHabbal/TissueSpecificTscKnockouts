@@ -69,17 +69,38 @@ There are two batches of data, baseline and after 3 months of diet.
 ### Baseline Data
 
 ```{r baseline-data-input}
-baseline.files <- list.files(path="Oxymax/Oxymax files by time period/Baseline", pattern="*.csv", full.names=T)
+baseline.folder <- "Oxymax/Oxymax files by time period/Baseline"
+baseline.files <- list.files(path=baseline.folder, pattern="*.csv", full.names=T)
+
+mri.folder <- "EchoMRI"
+mri.files <- list.files(path=mri.folder, pattern="*.xlsx", full.names=T)
+
 library(readr)
 library(lubridate)
-baseline.data <-  lapply(baseline.files, read_csv) %>% 
+library(readxl)
+
+mri.data <- read_excel(mri.files[1]) %>% mutate(Label = as.factor(Label))
+for (file in mri.files[2:length(mri.files)]) {
+  mri.data <- bind_rows(mri.data, read_excel(file) %>% mutate(Label = as.factor(Label)))
+}
+
+#remove repeated mri measurements
+mri.data.unique <-
+  mri.data %>%
+  distinct(Label, .keep_all = T) %>%
+  select(Label,Fat,Lean,Weight)
+
+baseline.data <-  
+  lapply(baseline.files, read_csv) %>% 
   bind_rows() %>%
   select(Subject, Interval, `Date/Time`, `Light/Dark`, `Volume O2`, RER, Heat, `X Ambulatory`, `Y Ambulatory`) %>%
   right_join(key.data, by=c('Subject'='Mouse'))  %>% #merged with annotation file
   mutate(Date.Time = mdy_hms(`Date/Time`)) %>% #parsed datetime
   mutate(Time = hour(Date.Time)) %>% #extracted the hour 
   mutate(Zeitgerber.Time = Time-7) %>% # converted to ZT
-  mutate(Activity = `X Ambulatory` + `Y Ambulatory`)
+  mutate(Activity = `X Ambulatory` + `Y Ambulatory`) %>%
+  mutate(Subject = as.factor(Subject)) %>%
+  full_join(mri.data.unique, by=c('Subject'='Label')) #merged in mri data
 
 baseline.data %>%
   group_by(Genotype,Sex) %>%
@@ -94,6 +115,8 @@ baseline.data %>%
   kable(caption="Total animals tested by knockout")
 
 ```
+
+The baseline raw data files can be found in `r baseline.folder`.  The MRI data can be found in `r mri.folder`.
 
 ## VO2 Analysis
 
@@ -171,7 +194,7 @@ ggplot(summary.data,
   geom_errorbar() +
     facet_grid(~Sex) +
   labs(y="Volume O2 Consumed (mL/h)", x="Zeitgerber Time") +
-    theme(legend.position = c(0.15, 0.9),
+  theme(legend.position = c(0.15, 0.9),
         legend.background = element_rect(fill=alpha(0.1)),
         legend.text=element_text(size=14),
         axis.text=element_text(size=14),

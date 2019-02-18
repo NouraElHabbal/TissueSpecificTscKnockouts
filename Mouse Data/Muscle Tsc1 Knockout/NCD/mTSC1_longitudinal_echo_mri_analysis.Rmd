@@ -1,0 +1,278 @@
+---
+title: "Analysis of Body Weights for Muscle Tsc1 Knockouts"
+author: "Erin Stephenson, Matt Peloquin and Dave Bridges"
+date: "February 23, 2015"
+output:
+  html_document:
+    keep_md: yes
+  pdf_document:
+    keep_tex: yes
+---
+
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.path='figures/',
+               echo=FALSE, warning=FALSE, message=FALSE,dev=c('png','pdf'))
+```
+
+
+# Normal Chow Fed Animals
+
+```{r data-entry}
+output_file <- "mTSC1 Raw EchoMRI Data.csv"
+
+
+all.data <- read.csv(output_file, row.names="X")
+all.data$Genotype <- relevel(all.data$animal.Genotype, ref="fl/fl; Tg/+")
+mri_data <- subset(all.data, assay.assay %in% c('Body Weight','Lean Mass', 'Total Fat Mass'))
+tested_genotypes <- c('fl/fl; Tg/+','fl/fl; +/+', '+/+; Tg/+', '+/+; +/+')
+mri_data <- droplevels(subset(mri_data, animal.Genotype%in%tested_genotypes&animal.Gender=="M"))
+mri_data$Weight <- mri_data$values/1000
+```
+
+This retrieved `r dim(mri_data)[1]` measurements.
+
+```{r scatterplot-Body-weight}
+library(RColorBrewer)
+genotype.colors <- brewer.pal(length(levels(mri_data$animal.Genotype)),"Set2")
+palette(genotype.colors)
+with(subset(mri_data, experiment.feeding_state=='fed'&assay.assay=='Body Weight'),
+                   plot(age, values/1000,
+                   pch=19, las=1, cex=0.5,
+                   ylab ="Body Weight (g)",
+                   xlab ="Age (days)",
+                   xlim=c(0,max(age)),
+                   col=animal.Genotype))
+legend("topleft", levels(mri_data$animal.Genotype), bty="n", pch=19, col=genotype.colors, lty=1)
+
+for (n in seq(1, length(levels(mri_data$animal.Genotype)))){
+with(mri_data[mri_data$animal.Genotype == levels(mri_data$animal.Genotype)[n]&mri_data$assay.assay=="Body Weight",], lines(smooth.spline(values/1000~age, spar=0.9), col=genotype.colors[n]))
+}
+```
+
+```{r scatterplot-lean-mass}
+library(RColorBrewer)
+genotype.colors <- brewer.pal(length(levels(mri_data$animal.Genotype)),"Set2")
+palette(genotype.colors)
+with(subset(mri_data, experiment.feeding_state=='fed'&assay.assay=='Lean Mass'),
+                   plot(age, values/1000,
+                   pch=19, las=1, cex=0.5,
+                   ylab ="Lean Mass (g)",
+                   xlab ="Age (days)",
+                   xlim=c(0,max(age)),
+                   col=animal.Genotype))
+legend("topleft", levels(mri_data$animal.Genotype), bty="n", pch=19, col=genotype.colors, lty=1)
+
+for (n in seq(1, length(levels(mri_data$animal.Genotype)))){
+with(mri_data[mri_data$animal.Genotype == levels(mri_data$animal.Genotype)[n]&mri_data$assay.assay=="Lean Mass",], lines(smooth.spline(values/1000~age, spar=0.9), col=genotype.colors[n]))
+}
+```
+
+```{r scatterplot-fat-mass}
+library(RColorBrewer)
+genotype.colors <- brewer.pal(length(levels(mri_data$animal.Genotype)),"Set2")
+palette(genotype.colors)
+with(subset(mri_data, experiment.feeding_state=='fed'&assay.assay=='Total Fat Mass'&age<250),
+                   plot(age, values/1000,
+                   pch=19, las=1, cex=0.5,
+                   ylab ="Total Fat Mass (g)",
+                   xlab ="Age (days)",
+                   xlim=c(0,max(age)),
+                   col=animal.Genotype))
+legend("topleft", levels(mri_data$animal.Genotype), bty="n", pch=19, col=genotype.colors, lty=1)
+
+for (n in seq(1, length(levels(mri_data$animal.Genotype)))){
+with(mri_data[mri_data$animal.Genotype == levels(mri_data$animal.Genotype)[n]&mri_data$assay.assay=="Total Fat Mass",], lines(smooth.spline(values/1000~age, spar=0.9), col=genotype.colors[n]))
+}
+```
+
+```{r scatterplot-fat-mass-weekly}
+library(RColorBrewer)
+genotype.colors <- brewer.pal(length(levels(mri_data$animal.Genotype)),"Set2")
+palette(genotype.colors)
+mri_data$Knockout <- mri_data$Genotype == 'fl/fl; Tg/+'
+mri_data$Week <- round(mri_data$age/7)
+library(dplyr)
+se <- function(x) sd(x, na.rm=T)/sqrt(length(x))
+mri_data_summary <-
+  subset(mri_data, assay.assay=="Total Fat Mass") %>%
+  group_by(Week, Knockout) %>%
+  summarize(Fat.Mass = mean(Weight),
+            Fat.Mass.se = se(Weight))
+
+
+with(subset(mri_data_summary, Week<30&Knockout==F),
+                   plot(Week, Fat.Mass,
+                   pch=19, las=1, cex=0.5,type="p",
+                   ylab ="Total Fat Mass (g)",
+                   xlab ="Age (Weeks)",
+                   xlim=c(0,max(Week)),
+                   ylim=c(0,max(Fat.Mass+Fat.Mass.se)),
+                   col=palette()[1]))
+
+
+ superpose.eb <-
+ function (x, y, ebl, ebu = ebl, length = 0.08, ...)
+ arrows(x, y + ebu, x, y - ebl, angle = 90, code = 3,
+ length = length, ...)
+ 
+ 
+with(subset(mri_data_summary, Week<30&Knockout==F), superpose.eb(Week,Fat.Mass,Fat.Mass.se, col=palette()[1]))
+with(subset(mri_data_summary, Week<30&Knockout==T), superpose.eb(Week,Fat.Mass,Fat.Mass.se, col=palette()[2]))
+
+with(subset(mri_data_summary, Week<30&Knockout==T), points(Week,Fat.Mass, col=palette()[2], pch=19, cex=0.5))
+legend("topleft", c("Wild-Type","Knockout"), bty="n", pch=19, col=palette()[1:2], lty=1)
+
+with(subset(mri_data_summary, Week<30&Knockout==F), lines(smooth.spline(Fat.Mass ~ Week, spar=0.9), col=palette()[1]))
+with(subset(mri_data_summary, Week<30&Knockout==T), lines(smooth.spline(Fat.Mass ~ Week, spar=0.9), col=palette()[2]))
+```
+
+# Summary
+
+```{r summary}
+age.range <- c(125,175)
+library(tidyr)
+#get a summarized value for each animal in that range
+weight.data <-
+  subset(mri_data, age>age.range[1]&age<age.range[2]) %>%
+  select(assay.assay,animal.id,age,Genotype,Weight) %>%
+    distinct(animal.id,assay.assay,age,.keep_all = T) %>%
+  spread(assay.assay, Weight) %>%
+  rename(Total.Fat.Mass = `Total Fat Mass`,
+         Body.Weight = `Body Weight`,
+         Lean.Mass = `Lean Mass`) %>%
+  mutate(Percent.Fat.Mass = Total.Fat.Mass/Body.Weight*100)
+
+weight.summary <-
+  weight.data %>%
+  group_by(Genotype) %>%
+  summarize(Body.Weight = mean(Body.Weight, na.rm=T),
+            Total.Fat.Mass = mean(Total.Fat.Mass, na.rm=T),
+            Lean.Mass = mean(Lean.Mass, na.rm=T),
+            Percent.Fat.Mass = mean(Percent.Fat.Mass, na.rm=T))
+
+weight.summary.se <-
+  weight.data %>%
+  group_by(Genotype) %>%
+  summarize(Body.Weight = se(Body.Weight),
+            Total.Fat.Mass = se(Total.Fat.Mass),
+            Lean.Mass = se(Lean.Mass),
+            Percent.Fat.Mass = se(Percent.Fat.Mass))
+
+par(mfrow=c(2,2))
+ymax <- max(weight.summary$Body.Weight + weight.summary.se$Body.Weight)
+plot <- with(weight.summary, barplot(Body.Weight, las=1, names.arg=Genotype, main="Body Weight", ylim=c(0,ymax)))
+superpose.eb(plot, weight.summary$Body.Weight, weight.summary.se$Body.Weight)
+
+ymax <- max(weight.summary$Lean.Mass + weight.summary.se$Lean.Mass)
+plot <- with(weight.summary, barplot(Lean.Mass, las=1, names.arg=Genotype, main="Lean Mass", ylim=c(0,ymax)))
+superpose.eb(plot, weight.summary$Lean.Mass, weight.summary.se$Lean.Mass)
+
+ymax <- max(weight.summary$Total.Fat.Mass + weight.summary.se$Total.Fat.Mass)
+plot <- with(weight.summary, barplot(Total.Fat.Mass, las=1, names.arg=Genotype, main="Total Fat Mass", ylim=c(0,ymax)))
+superpose.eb(plot, weight.summary$Total.Fat.Mass, weight.summary.se$Total.Fat.Mass)
+
+ymax <- max(weight.summary$Percent.Fat.Mass + weight.summary.se$Percent.Fat.Mass)
+plot <- with(weight.summary, barplot(Percent.Fat.Mass, las=1, names.arg=Genotype, main="Percent Fat Mass", ylim=c(0,ymax)))
+superpose.eb(plot, weight.summary$Percent.Fat.Mass, weight.summary.se$Percent.Fat.Mass)
+
+```
+
+This analysis uses measurements between `r age.range`, with only one measurement per animal.
+
+## Statistics
+
+First, we tested whether there was a difference between the control animals.  The p-values for these tests are below:
+
+```{r statistics, results='asis'}
+control.statistics <- data.frame()
+
+control.statistics['Total.Fat.Mass','Shapiro'] <- shapiro.test(residuals(aov(Total.Fat.Mass~Genotype, data=subset(weight.data, Genotype !='fl/fl; Tg/+'))))$p.value
+control.statistics['Percent.Fat.Mass','Shapiro'] <- shapiro.test(residuals(aov(Percent.Fat.Mass~Genotype, data=subset(weight.data, Genotype !='fl/fl; Tg/+'))))$p.value
+control.statistics['Body.Weight','Shapiro'] <- shapiro.test(residuals(aov(Body.Weight~Genotype, data=subset(weight.data, Genotype !='fl/fl; Tg/+'))))$p.value
+control.statistics['Lean.Mass','Shapiro'] <- shapiro.test(residuals(aov(Lean.Mass~Genotype, data=subset(weight.data, Genotype !='fl/fl; Tg/+'))))$p.value
+#run ANOVAs
+control.statistics['Total.Fat.Mass','ANOVA'] <- summary(aov(Total.Fat.Mass~Genotype, data=subset(weight.data, Genotype !='fl/fl; Tg/+')))[[1]]$"Pr(>F)"[1]
+control.statistics['Percent.Fat.Mass','ANOVA'] <- summary(aov(Percent.Fat.Mass~Genotype, data=subset(weight.data, Genotype !='fl/fl; Tg/+')))[[1]]$"Pr(>F)"[1]
+control.statistics['Body.Weight','ANOVA'] <- summary(aov(Body.Weight~Genotype, data=subset(weight.data, Genotype !='fl/fl; Tg/+')))[[1]]$"Pr(>F)"[1]
+control.statistics['Lean.Mass','ANOVA'] <- summary(aov(Lean.Mass~Genotype, data=subset(weight.data, Genotype !='fl/fl; Tg/+')))[[1]]$"Pr(>F)"[1]
+
+library(xtable)
+print(xtable(control.statistics, digits=3, caption='Statistical tests for control strains'))
+```
+
+These tests suggest that it is appropriate to combine the controls and compare to the knockouts.  These tests are shown below:
+
+```{r ko-statistics, results='asis'}
+weight.data$Knockout <- weight.data$Genotype == 'fl/fl; Tg/+'
+weight.summary <-
+  weight.data %>%
+  group_by(Knockout) %>%
+  summarize(Body.Weight = mean(Body.Weight, na.rm=T),
+            Total.Fat.Mass = mean(Total.Fat.Mass, na.rm=T),
+            Lean.Mass = mean(Lean.Mass, na.rm=T),
+            Percent.Fat.Mass = mean(Percent.Fat.Mass, na.rm=T))
+
+weight.summary.se <-
+  weight.data %>%
+  group_by(Knockout) %>%
+  summarize(Body.Weight = se(Body.Weight),
+            Total.Fat.Mass = se(Total.Fat.Mass),
+            Lean.Mass = se(Lean.Mass),
+            Percent.Fat.Mass = se(Percent.Fat.Mass))
+
+par(mfrow=c(2,2))
+ymax <- max(weight.summary$Body.Weight + weight.summary.se$Body.Weight)
+plot <- with(weight.summary, barplot(Body.Weight, las=1, names.arg=c("Wild-Type","Knockout"), main="Body Weight", ylim=c(0,ymax)))
+superpose.eb(plot, weight.summary$Body.Weight, weight.summary.se$Body.Weight)
+
+ymax <- max(weight.summary$Lean.Mass + weight.summary.se$Lean.Mass)
+plot <- with(weight.summary, barplot(Lean.Mass, las=1, names.arg=c("Wild-Type","Knockout"), main="Lean Mass", ylim=c(0,ymax)))
+superpose.eb(plot, weight.summary$Lean.Mass, weight.summary.se$Lean.Mass)
+
+ymax <- max(weight.summary$Total.Fat.Mass + weight.summary.se$Total.Fat.Mass)
+plot <- with(weight.summary, barplot(Total.Fat.Mass, las=1, names.arg=c("Wild-Type","Knockout"), main="Total Fat Mass", ylim=c(0,ymax)))
+superpose.eb(plot, weight.summary$Total.Fat.Mass, weight.summary.se$Total.Fat.Mass)
+
+ymax <- max(weight.summary$Percent.Fat.Mass + weight.summary.se$Percent.Fat.Mass)
+plot <- with(weight.summary, barplot(Percent.Fat.Mass, las=1, names.arg=c("Wild-Type","Knockout"), main="Percent Fat Mass", ylim=c(0,ymax)))
+superpose.eb(plot, weight.summary$Percent.Fat.Mass, weight.summary.se$Percent.Fat.Mass)
+
+ko.statistics <- data.frame()
+
+ko.statistics['Total.Fat.Mass','Shapiro'] <- shapiro.test(residuals(aov(Total.Fat.Mass~Knockout, data=subset(weight.data, Genotype !='fl/fl; Tg/+'))))$p.value
+ko.statistics['Percent.Fat.Mass','Shapiro'] <- shapiro.test(residuals(aov(Percent.Fat.Mass~Knockout, data=subset(weight.data, Genotype !='fl/fl; Tg/+'))))$p.value
+ko.statistics['Body.Weight','Shapiro'] <- shapiro.test(residuals(aov(Body.Weight~Knockout, data=subset(weight.data, Genotype !='fl/fl; Tg/+'))))$p.value
+ko.statistics['Lean.Mass','Shapiro'] <- shapiro.test(residuals(aov(Lean.Mass~Knockout, data=subset(weight.data, Genotype !='fl/fl; Tg/+'))))$p.value
+#run Levenes
+library(car)
+ko.statistics['Total.Fat.Mass','Levene'] <- leveneTest(Total.Fat.Mass~Knockout, data=weight.data)$"Pr(>F)"[1]
+ko.statistics['Percent.Fat.Mass','Levene'] <- leveneTest(Percent.Fat.Mass~Knockout, data=weight.data)$"Pr(>F)"[1]
+ko.statistics['Body.Weight','Levene'] <- leveneTest(Body.Weight~Knockout, data=weight.data)$"Pr(>F)"[1]
+ko.statistics['Lean.Mass','Levene'] <- leveneTest(Lean.Mass~Knockout, data=weight.data)$"Pr(>F)"[1]
+
+for (row in rownames(ko.statistics)) {
+if (ko.statistics[row,'Shapiro'] < 0.05){
+  ko.statistics[row,'Test'] <- 'Wilcoxon'
+}
+else
+  if (ko.statistics[row,'Levene'] < 0.05) {
+    ko.statistics[row,'Test'] <- "Welch's"
+  }
+else
+  ko.statistics[row,'Test'] <- "Student's"
+}
+
+ko.statistics['Total.Fat.Mass','pval'] <- wilcox.test(Total.Fat.Mass~Knockout, data=weight.data)$p.value
+ko.statistics['Percent.Fat.Mass','pval'] <- t.test(Percent.Fat.Mass~Knockout, data=weight.data, var.equal=F)$p.value
+ko.statistics['Body.Weight','pval'] <- t.test(Lean.Mass~Knockout, data=weight.data, var.equal=F)$p.value
+ko.statistics['Lean.Mass','pval'] <- t.test(Lean.Mass~Knockout, data=weight.data, var.equal=T)$p.value
+print(xtable(ko.statistics, digits=c(0,3,3,0,12), caption="Pairwise tests for body composition, after combining the controls"))
+```
+
+The total fat mass was reduced by `r (1-weight.summary[2, 'Total.Fat.Mass']/weight.summary[1, 'Total.Fat.Mass'])*100`% wheras the percent fat mass was reduced by `r (1-weight.summary[2, 'Percent.Fat.Mass']/weight.summary[1, 'Percent.Fat.Mass'])*100`%.
+
+# Session Information
+```{r sessionInfo}
+sessionInfo()
+```

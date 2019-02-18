@@ -13,8 +13,8 @@ This document indicates where the raw data for each Figure panel can be found, a
 | Figure 1E | Mouse Data⁩/Muscle Tsc1 Knockout⁩/mTSC HFD CLAMS⁩mTSC-CLAMS-analysis.Rmd | activity-summarized-data-2.pdf |
 | Figure 1F | Mouse Data⁩/Muscle Tsc1 Knockout⁩/mTSC HFD CLAMS⁩mTSC-CLAMS-analysis.Rmd | rer-summarized-data-2.pdf |
 | Figure 1G | 
-| Figure 2A |
-| Figure 2B |
+| Figure 2A | ⁨Mouse Data⁩/⁨Muscle Tsc1 Knockout/⁨NCD/mTSC1_longitudinal_echo_mri_analysis.Rmd | scatterplot-fat-mass-weekly-1⁩
+| Figure 2B | Mouse Data⁩/⁨Muscle Tsc1 Knockout/⁨NCD/mTSC1_longitudinal_echo_mri_analysis.Rmd | scatterplot-lean-mass-weekly-1⁩
 | Figure 2C | 
 | Figure 2D |
 | Figure 2E | body-weight-analysis.Rmd | fat-mass-scatterplot-3.pdf |

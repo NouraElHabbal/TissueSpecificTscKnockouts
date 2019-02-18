@@ -294,7 +294,7 @@ ko.statistics['Total.Fat.Mass','pval'] <- wilcox.test(Total.Fat.Mass~Knockout, d
 ko.statistics['Percent.Fat.Mass','pval'] <- t.test(Percent.Fat.Mass~Knockout, data=weight.data, var.equal=F)$p.value
 ko.statistics['Body.Weight','pval'] <- t.test(Lean.Mass~Knockout, data=weight.data, var.equal=F)$p.value
 ko.statistics['Lean.Mass','pval'] <- t.test(Lean.Mass~Knockout, data=weight.data, var.equal=T)$p.value
-print(xtable(ko.statistics, digits=c(0,3,3,0,12), caption="Pairwise tests for body composition, after combining the controls"))
+kable(ko.statistics, caption="Pairwise tests for body composition, after combining the controls")
 ```
 
 The total fat mass was reduced by `r (1-weight.summary[2, 'Total.Fat.Mass']/weight.summary[1, 'Total.Fat.Mass'])*100`% wheras the percent fat mass was reduced by `r (1-weight.summary[2, 'Percent.Fat.Mass']/weight.summary[1, 'Percent.Fat.Mass'])*100`%.

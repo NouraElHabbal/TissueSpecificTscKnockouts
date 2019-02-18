@@ -13,6 +13,10 @@ output:
 library(knitr)
 opts_chunk$set(fig.path='figures/',
                echo=FALSE, warning=FALSE, message=FALSE,dev=c('png','pdf'))
+knitr::knit_hooks$set(inline = function(x) {
+  knitr:::format_sci(x, 'md')
+})
+
 ```
 
 
@@ -311,7 +315,7 @@ fat.mass.lme %>% tidy %>% kable(caption="Model covariates for mixed linear model
 anova(fat.mass.lme,fat.mass.lme.null) %>% tidy %>% kable(caption="Mixed linear model for fat mass modified by knockout status")
 ```
 
-Based on a mixed linear model there was a significant effect of knockout reducing the accretion of fat mass (p=`r anova(fat.mass.lme,fat.mass.lme.null)$"Pr(>Chisq)"[2]`).
+Based on a mixed linear model there was a significant effect of knockout reducing the accretion of fat mass (p=`r anova(fat.mass.lme,fat.mass.lme.null)$"Pr(>Chisq)"[2]`).  Comparing the slopes of the lines there was an `r (1-(fixef(fat.mass.lme)[['age']]+fixef(fat.mass.lme)[['age:KnockoutTRUE']])/fixef(fat.mass.lme)[['age']])*100` reduction in fat mass gain.
 
 # Session Information
 ```{r sessionInfo}

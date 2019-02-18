@@ -32,7 +32,7 @@ This retrieved 1934 measurements.
 
 ![](figures/summary-1.png)<!-- -->
 
-This analysis uses measurements between 125, 175, with only one measurement per animal.
+This analysis uses measurements between 125175, with only one measurement per animal.
 
 ## Statistics
 
@@ -86,7 +86,7 @@ term                 df        AIC        BIC      logLik   deviance   statistic
 fat.mass.lme.null     4   8009.375   8025.978   -4000.688   8001.375          NA       NA        NA
 fat.mass.lme          6   7968.427   7993.331   -3978.213   7956.427    44.94859        2         0
 
-Based on a mixed linear model there was a significant effect of knockout reducing the accretion of fat mass (p=1.7359526\times 10^{-10}).
+Based on a mixed linear model there was a significant effect of knockout reducing the accretion of fat mass (p=1.7359526&times; 10^-10^).  Comparing the slopes of the lines there was an 83.8219239 reduction in fat mass gain.
 
 # Session Information
 

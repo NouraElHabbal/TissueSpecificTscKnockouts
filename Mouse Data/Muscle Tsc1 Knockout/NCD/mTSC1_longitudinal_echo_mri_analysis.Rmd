@@ -127,6 +127,33 @@ with(subset(mri_data_summary, Week<30&Knockout==F), lines(smooth.spline(Fat.Mass
 with(subset(mri_data_summary, Week<30&Knockout==T), lines(smooth.spline(Fat.Mass ~ Week, spar=0.9), col=palette()[2]))
 ```
 
+```{r scatterplot-lean-mass-weekly}
+mri_data_summary <-
+  subset(mri_data, assay.assay=="Lean Mass") %>%
+  group_by(Week, Knockout) %>%
+  summarize(Fat.Mass = mean(Weight),
+            Fat.Mass.se = se(Weight))
+
+
+with(subset(mri_data_summary, Week<30&Knockout==F),
+                   plot(Week, Fat.Mass,
+                   pch=19, las=1, cex=0.5,type="p",
+                   ylab ="Total Fat Mass (g)",
+                   xlab ="Age (Weeks)",
+                   xlim=c(0,max(Week)),
+                   ylim=c(0,max(Fat.Mass+Fat.Mass.se)),
+                   col=palette()[1]))
+
+with(subset(mri_data_summary, Week<30&Knockout==F), superpose.eb(Week,Fat.Mass,Fat.Mass.se, col=palette()[1]))
+with(subset(mri_data_summary, Week<30&Knockout==T), superpose.eb(Week,Fat.Mass,Fat.Mass.se, col=palette()[2]))
+
+with(subset(mri_data_summary, Week<30&Knockout==T), points(Week,Fat.Mass, col=palette()[2], pch=19, cex=0.5))
+legend("topleft", c("Wild-Type","Knockout"), bty="n", pch=19, col=palette()[1:2], lty=1)
+
+with(subset(mri_data_summary, Week<30&Knockout==F), lines(smooth.spline(Fat.Mass ~ Week, spar=0.6), col=palette()[1]))
+with(subset(mri_data_summary, Week<30&Knockout==T), lines(smooth.spline(Fat.Mass ~ Week, spar=0.6), col=palette()[2]))
+```
+
 # Summary
 
 ```{r summary}

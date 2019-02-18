@@ -26,6 +26,8 @@ This retrieved 1934 measurements.
 
 ![](figures/scatterplot-fat-mass-weekly-1.png)<!-- -->
 
+![](figures/scatterplot-lean-mass-weekly-1.png)<!-- -->
+
 # Summary
 
 ![](figures/summary-1.png)<!-- -->
@@ -37,7 +39,7 @@ This analysis uses measurements between 125, 175, with only one measurement per 
 First, we tested whether there was a difference between the control animals.  The p-values for these tests are below:
 
 % latex table generated in R 3.5.0 by xtable 1.8-3 package
-% Mon Feb 18 14:35:04 2019
+% Mon Feb 18 14:39:27 2019
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrr}
@@ -56,7 +58,7 @@ Total.Fat.Mass & 0.083 & 0.378 \\
 These tests suggest that it is appropriate to combine the controls and compare to the knockouts.  These tests are shown below:
 
 ![](figures/ko-statistics-1.png)<!-- -->% latex table generated in R 3.5.0 by xtable 1.8-3 package
-% Mon Feb 18 14:35:04 2019
+% Mon Feb 18 14:39:27 2019
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrlr}

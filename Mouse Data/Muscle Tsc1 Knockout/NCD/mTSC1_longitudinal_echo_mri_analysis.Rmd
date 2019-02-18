@@ -224,8 +224,7 @@ control.statistics['Percent.Fat.Mass','ANOVA'] <- summary(aov(Percent.Fat.Mass~G
 control.statistics['Body.Weight','ANOVA'] <- summary(aov(Body.Weight~Genotype, data=subset(weight.data, Genotype !='fl/fl; Tg/+')))[[1]]$"Pr(>F)"[1]
 control.statistics['Lean.Mass','ANOVA'] <- summary(aov(Lean.Mass~Genotype, data=subset(weight.data, Genotype !='fl/fl; Tg/+')))[[1]]$"Pr(>F)"[1]
 
-library(xtable)
-print(xtable(control.statistics, digits=3, caption='Statistical tests for control strains'))
+kable(control.statistics,  caption='Statistical tests for control strains')
 ```
 
 These tests suggest that it is appropriate to combine the controls and compare to the knockouts.  These tests are shown below:
@@ -298,6 +297,21 @@ kable(ko.statistics, caption="Pairwise tests for body composition, after combini
 ```
 
 The total fat mass was reduced by `r (1-weight.summary[2, 'Total.Fat.Mass']/weight.summary[1, 'Total.Fat.Mass'])*100`% wheras the percent fat mass was reduced by `r (1-weight.summary[2, 'Percent.Fat.Mass']/weight.summary[1, 'Percent.Fat.Mass'])*100`%.
+
+## Mixed Linear Model
+
+```{r lme-fat-mass}
+library(lme4)
+all.data$Knockout <- all.data$Genotype == 'fl/fl; Tg/+'
+fat.mass.lme.null <- lmer(values~age + (1|animal.id), data=filter(all.data,assay.assay=='Total Fat Mass'), REML=F)
+fat.mass.lme <- lmer(values~age + Knockout + Knockout:age + (1|animal.id), data=filter(all.data,assay.assay=='Total Fat Mass'), REML=F)
+
+library(broom)
+fat.mass.lme %>% tidy %>% kable(caption="Model covariates for mixed linear model of fat mass")
+anova(fat.mass.lme,fat.mass.lme.null) %>% tidy %>% kable(caption="Mixed linear model for fat mass modified by knockout status")
+```
+
+Based on a mixed linear model there was a significant effect of knockout reducing the accretion of fat mass (p=`r anova(fat.mass.lme,fat.mass.lme.null)$"Pr(>Chisq)"[2]`).
 
 # Session Information
 ```{r sessionInfo}

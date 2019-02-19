@@ -1,0 +1,212 @@
+---
+title: "Tissue Weights for Muscle Tsc1 Knockout Mice"
+author: "Dave Bridges and Erin Stephenson"
+date: "2019-02-08"
+output:
+  pdf_document:
+    highlight: tango
+    keep_tex: yes
+    number_sections: yes
+    toc: yes
+  html_document:
+    highlight: tango
+    keep_md: yes
+    number_sections: yes
+    toc: yes
+---
+
+```{r global_options, include=FALSE}
+library(knitr)
+#figures makde will go to directory called figures, will make them as both png and pdf files 
+opts_chunk$set(fig.path='figures/',
+               echo=FALSE, warning=FALSE, message=FALSE,dev=c('png','pdf'))
+options(scipen = 2, digits = 3)
+# set echo and message to TRUE if you want to display code blocks and code output respectively
+
+knitr::knit_hooks$set(inline = function(x) {
+  knitr:::format_sci(x, 'md')
+})
+
+
+superpose.eb <- function (x, y, ebl, ebu = ebl, length = 0.08, ...)
+  arrows(x, y + ebu, x, y - ebl, angle = 90, code = 3,
+  length = length, ...)
+
+  
+se <- function(x) sd(x, na.rm=T)/sqrt(length(x))
+
+#load these packages, nearly always needed
+library(tidyr)
+library(dplyr)
+
+# sets maize and blue color scheme
+color.scheme <- c('#00274c', '#ffcb05')
+```
+
+# Purpose
+
+To determine tissue weights at sacrifice for fat pads and muscle tissues
+
+# Experimental Details
+
+At sacrifice, after a 16h fast data were entered and collected in the raw data sheet
+
+
+```{r data-input}
+library(readr) #loads the readr package
+filename <- 'Sacrifice Data.csv' #make this a separate line, you can use any variable you want
+
+#this loads whatever the file is into a dataframe called exp.data if it exists
+if(filename %in% dir()){
+  exp.data <- read_csv(filename,
+                       col_types = cols(Genotype= col_factor(levels=NULL),
+                                        Sex = col_factor(levels=NULL)))
+}
+```
+
+These data can be found in **`r getwd()`** in a file named **`r ifelse(filename %in% dir(), filename, "no file found")`**.  This script was most recently updated on **`r date()`**.
+
+# Analysis
+
+```{r summary-data}
+mean.na <- function(x) mean(x, na.rm=T)
+shapiro.p <- function(x) shapiro.test(x)$p.value
+
+summary.data <-
+  exp.data %>%
+  select(Genotype,Sex,GonadalWAT,InguinalWAT,Quadriceps,TricepsSurae,Heart) %>%
+  mutate(Knockout = Genotype == 'fl/fl; Tg/+') %>%
+  group_by(Sex,Knockout) %>%
+  summarize_if(is.numeric, funs(mean.na,se,length)) %>%
+  filter(!(is.na(Knockout))) %>%
+  filter(!(is.na(Sex)))
+
+
+kable(summary.data %>% select(ends_with('mean.na')))
+kable(summary.data %>% select(ends_with('length')))
+
+```
+
+## Fat Pad Weights
+
+```{r wat-weights, fig.cap="Weights of Fat Pads at Sacrifice"}
+library(RColorBrewer)
+genotype.colors <- brewer.pal(2,"Set2")
+
+library(ggplot2)
+library(gridExtra)
+gWAT <- ggplot(summary.data,
+       aes(y=GonadalWAT_mean.na,
+           ymax=GonadalWAT_mean.na+GonadalWAT_se,
+           ymin=GonadalWAT_mean.na-GonadalWAT_se,
+           x=Sex,
+           group=Knockout,
+           fill=Knockout)) +
+  geom_bar(stat='identity',position='dodge',width=0.75) +
+  geom_errorbar(position=position_dodge(width=0.75),width=0.5) +
+  labs(y="Weight (g)",
+          title="Gonadal WAT") +
+  scale_fill_manual(values=genotype.colors,labels=c("Wild-Type","Knockout")) +
+        theme(legend.position = c(0.25, 0.9),
+        legend.background = element_rect(fill=alpha(0.1)),
+        legend.text=element_text(size=14),
+        axis.text=element_text(size=14),
+        axis.title=element_text(size=14),
+        legend.title=element_blank())
+
+iWAT <- ggplot(summary.data,
+       aes(y=InguinalWAT_mean.na,
+           ymax=InguinalWAT_mean.na+InguinalWAT_se,
+           ymin=InguinalWAT_mean.na-InguinalWAT_se,
+           x=Sex,
+           group=Knockout,
+           fill=Knockout)) +
+  geom_bar(stat='identity',position='dodge',width=0.75) +
+  geom_errorbar(position=position_dodge(width=0.75),width=0.5) +
+  labs(y="Weight (g)",
+          title="Inguinal WAT") +
+  scale_fill_manual(values=genotype.colors,labels=c("Wild-Type","Knockout")) +
+        theme(legend.position = c(0.25, 0.9),
+        legend.background = element_rect(fill=alpha(0.1)),
+        legend.text=element_text(size=14),
+        axis.text=element_text(size=14),
+        axis.title=element_text(size=14),
+        legend.title=element_blank())
+
+grid.arrange(gWAT,iWAT,ncol=2)
+```
+
+## Muscle Weights
+
+```{r muscle-weights, fig.cap="Weights of Muscle Depots at Sacrifice"}
+library(RColorBrewer)
+genotype.colors <- brewer.pal(2,"Set2")
+
+library(ggplot2)
+library(gridExtra)
+Heart <- ggplot(summary.data,
+       aes(y=Heart_mean.na,
+           ymax=Heart_mean.na+Heart_se,
+           ymin=Heart_mean.na-Heart_se,
+           x=Sex,
+           group=Knockout,
+           fill=Knockout)) +
+  geom_bar(stat='identity',position='dodge',width=0.75) +
+  geom_errorbar(position=position_dodge(width=0.75),width=0.5) +
+  labs(y="Weight (g)",
+          title="Heart") +
+  scale_fill_manual(values=genotype.colors,labels=c("Wild-Type","Knockout")) +
+        theme(legend.position = c(0.25, 0.9),
+        legend.background = element_rect(fill=alpha(0.1)),
+        legend.text=element_text(size=14),
+        axis.text=element_text(size=14),
+        axis.title=element_text(size=14),
+        legend.title=element_blank())
+
+Quad <- ggplot(summary.data,
+       aes(y=Quadriceps_mean.na,
+           ymax=Quadriceps_mean.na+Quadriceps_se,
+           ymin=Quadriceps_mean.na-Quadriceps_se,
+           x=Sex,
+           group=Knockout,
+           fill=Knockout)) +
+  geom_bar(stat='identity',position='dodge',width=0.75) +
+  geom_errorbar(position=position_dodge(width=0.75),width=0.5) +
+  labs(y="Weight (g)",
+          title="Quadriceps") +
+  scale_fill_manual(values=genotype.colors,labels=c("Wild-Type","Knockout")) +
+        theme(legend.position = c(0.25, 0.9),
+        legend.background = element_rect(fill=alpha(0.1)),
+        legend.text=element_text(size=14),
+        axis.text=element_text(size=14),
+        axis.title=element_text(size=14),
+        legend.title=element_blank())
+
+TS <- ggplot(summary.data,
+       aes(y=TricepsSurae_mean.na,
+           ymax=TricepsSurae_mean.na+TricepsSurae_se,
+           ymin=TricepsSurae_mean.na-TricepsSurae_se,
+           x=Sex,
+           group=Knockout,
+           fill=Knockout)) +
+  geom_bar(stat='identity',position='dodge',width=0.75) +
+  geom_errorbar(position=position_dodge(width=0.75),width=0.5) +
+  labs(y="Weight (g)",
+          title="Triceps Surae") +
+  scale_fill_manual(values=genotype.colors,labels=c("Wild-Type","Knockout")) +
+        theme(legend.position = c(0.25, 0.9),
+        legend.background = element_rect(fill=alpha(0.1)),
+        legend.text=element_text(size=14),
+        axis.text=element_text(size=14),
+        axis.title=element_text(size=14),
+        legend.title=element_blank())
+
+grid.arrange(Heart,Quad, TS,ncol=3)
+
+```
+
+# Session Information
+
+```{r session-information, echo=T}
+sessionInfo()
+```

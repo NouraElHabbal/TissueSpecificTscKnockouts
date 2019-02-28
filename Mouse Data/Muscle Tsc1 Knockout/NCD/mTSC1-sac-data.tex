@@ -145,8 +145,8 @@ raw data sheet
 These data can be found in
 \textbf{/Users/davebrid/Documents/GitHub/TissueSpecificTscKnockouts/Mouse
 Data/Muscle Tsc1 Knockout/NCD} in a file named \textbf{Sacrifice
-Data.csv}. This script was most recently updated on \textbf{Mon Feb 18
-16:53:14 2019}.
+Data.csv}. This script was most recently updated on \textbf{Thu Feb 28
+13:58:44 2019}.
 
 \section{Analysis}\label{analysis}
 
@@ -178,11 +178,96 @@ Male & 7 & 7 & 7 & 7 & 7\tabularnewline
 
 \subsection{Fat Pad Weights}\label{fat-pad-weights}
 
-\begin{figure}
-\centering
 \includegraphics{figures/wat-weights-1.png}
-\caption{Weights of Fat Pads at Sacrifice}
-\end{figure}
+\includegraphics{figures/wat-weights-2.png}
+
+For the male mice, the fat pads were reduced in weight:
+
+\begin{longtable}[]{@{}lrrrr@{}}
+\caption{Changes in Gonadal Fat Pad Weights}\tabularnewline
+\toprule
+Sex & Wild-Type & Knockout & Difference & Pct.Difference\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+Sex & Wild-Type & Knockout & Difference & Pct.Difference\tabularnewline
+\midrule
+\endhead
+Female & 0.492 & 0.101 & 0.391 & 79.5\tabularnewline
+Male & 0.792 & 0.181 & 0.611 & 77.1\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{longtable}[]{@{}lrrrr@{}}
+\caption{Changes in Inguinal Fat Pad Weights}\tabularnewline
+\toprule
+Sex & Wild-Type & Knockout & Difference & Pct.Difference\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+Sex & Wild-Type & Knockout & Difference & Pct.Difference\tabularnewline
+\midrule
+\endhead
+Female & 0.316 & 0.076 & 0.240 & 75.9\tabularnewline
+Male & 0.574 & 0.116 & 0.458 & 79.8\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{longtable}[]{@{}llrr@{}}
+\caption{Shapiro-Wilk Tests for each group}\tabularnewline
+\toprule
+Sex & Knockout & InguinalWAT\_shapiro.p &
+GonadalWAT\_shapiro.p\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+Sex & Knockout & InguinalWAT\_shapiro.p &
+GonadalWAT\_shapiro.p\tabularnewline
+\midrule
+\endhead
+Female & FALSE & 0.000 & 0.000\tabularnewline
+Female & TRUE & 0.703 & 0.975\tabularnewline
+Male & FALSE & 0.400 & 0.172\tabularnewline
+Male & TRUE & 0.856 & 0.319\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{longtable}[]{@{}lrrrr@{}}
+\caption{Pairwise tests for effects of knockout on Inguinal WAT
+weights.}\tabularnewline
+\toprule
+Sex & Levene & Mann.Whitney & Welch & Student\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+Sex & Levene & Mann.Whitney & Welch & Student\tabularnewline
+\midrule
+\endhead
+Female & 0.018 & 0.001 & 0 & 0.007\tabularnewline
+Male & 0.008 & 0.000 & 0 & 0.002\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{longtable}[]{@{}lrrrr@{}}
+\caption{Pairwise tests for effects of knockout on Gonadal WAT
+weights.}\tabularnewline
+\toprule
+Sex & Levene & Mann.Whitney & Welch & Student\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+Sex & Levene & Mann.Whitney & Welch & Student\tabularnewline
+\midrule
+\endhead
+Female & 0.016 & 0 & 0 & 0.007\tabularnewline
+Male & 0.009 & 0 & 0 & 0.000\tabularnewline
+\bottomrule
+\end{longtable}
+
+For the male mice, normality can be assumed, but not equal variance, so
+a Welch's t-test is used, which had a p-value of 9.802×
+10\textsuperscript{-7} for inguinal WAT and 4.917×
+10\textsuperscript{-8} for gonadal WAT.
 
 \subsection{Muscle Weights}\label{muscle-weights}
 
@@ -216,20 +301,28 @@ Male & 7 & 7 & 7 & 7 & 7\tabularnewline
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-## [1] gridExtra_2.3      ggplot2_3.1.0      RColorBrewer_1.1-2
-## [4] bindrcpp_0.2.2     readr_1.3.1        dplyr_0.7.8       
-## [7] tidyr_0.8.2        knitr_1.21        
+##  [1] car_3.0-2          carData_3.0-2      forcats_0.3.0     
+##  [4] gridExtra_2.3      ggplot2_3.1.0      RColorBrewer_1.1-2
+##  [7] bindrcpp_0.2.2     readr_1.3.1        dplyr_0.7.8       
+## [10] tidyr_0.8.2        knitr_1.21        
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] Rcpp_1.0.0       pillar_1.3.1     compiler_3.5.0   highr_0.7       
-##  [5] plyr_1.8.4       bindr_0.1.1      tools_3.5.0      digest_0.6.18   
-##  [9] evaluate_0.12    tibble_2.0.0     gtable_0.2.0     pkgconfig_2.0.2 
-## [13] rlang_0.3.1      yaml_2.2.0       xfun_0.4         withr_2.1.2     
-## [17] stringr_1.3.1    hms_0.4.2        grid_3.5.0       tidyselect_0.2.5
-## [21] glue_1.3.0       R6_2.3.0         rmarkdown_1.11   purrr_0.2.5     
-## [25] magrittr_1.5     scales_1.0.0     htmltools_0.3.6  assertthat_0.2.0
-## [29] colorspace_1.3-2 labeling_0.3     stringi_1.2.4    lazyeval_0.2.1  
-## [33] munsell_0.5.0    crayon_1.3.4
+##  [1] zip_1.0.0         Rcpp_1.0.0        cellranger_1.1.0 
+##  [4] pillar_1.3.1      compiler_3.5.0    highr_0.7        
+##  [7] plyr_1.8.4        bindr_0.1.1       tools_3.5.0      
+## [10] digest_0.6.18     evaluate_0.12     tibble_2.0.0     
+## [13] gtable_0.2.0      pkgconfig_2.0.2   rlang_0.3.1      
+## [16] openxlsx_4.1.0    cli_1.0.1         curl_3.2         
+## [19] yaml_2.2.0        haven_2.0.0       xfun_0.4         
+## [22] rio_0.5.16        withr_2.1.2       stringr_1.3.1    
+## [25] hms_0.4.2         grid_3.5.0        tidyselect_0.2.5 
+## [28] data.table_1.11.8 glue_1.3.0        R6_2.3.0         
+## [31] fansi_0.4.0       readxl_1.2.0      foreign_0.8-71   
+## [34] rmarkdown_1.11    purrr_0.2.5       magrittr_1.5     
+## [37] scales_1.0.0      htmltools_0.3.6   abind_1.4-5      
+## [40] assertthat_0.2.0  colorspace_1.3-2  labeling_0.3     
+## [43] utf8_1.1.4        stringi_1.2.4     lazyeval_0.2.1   
+## [46] munsell_0.5.0     crayon_1.3.4
 \end{verbatim}
 
 

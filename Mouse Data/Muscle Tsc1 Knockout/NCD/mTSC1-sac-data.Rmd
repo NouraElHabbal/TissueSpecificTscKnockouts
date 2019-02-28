@@ -76,8 +76,9 @@ summary.data <-
   exp.data %>%
   select(Genotype,Sex,GonadalWAT,InguinalWAT,Quadriceps,TricepsSurae,Heart) %>%
   mutate(Knockout = Genotype == 'fl/fl; Tg/+') %>%
+    filter(!(is.na(Genotype))) %>%
   group_by(Sex,Knockout) %>%
-  summarize_if(is.numeric, funs(mean.na,se,length)) %>%
+  summarize_if(is.numeric, funs(mean.na,se,length,shapiro.p)) %>%
   filter(!(is.na(Knockout))) %>%
   filter(!(is.na(Sex)))
 
@@ -134,7 +135,119 @@ iWAT <- ggplot(summary.data,
         legend.title=element_blank())
 
 grid.arrange(gWAT,iWAT,ncol=2)
+
+par(mfrow=c(1,2))
+plot.data <- 
+  summary.data %>%
+    filter(Sex == "Male") %>%
+  select(Sex, Knockout, InguinalWAT_mean.na) %>%
+  spread(value=InguinalWAT_mean.na, key=Knockout) 
+
+plot.data.se <- 
+  summary.data %>%
+  filter(Sex == "Male") %>%
+  select(Knockout, InguinalWAT_se) %>%
+  spread(value=InguinalWAT_se, key=Knockout)   
+
+ymax <- max(plot.data[2:3]) + max(plot.data.se[2:3])
+
+plot <- barplot(as.matrix(plot.data[2:3]),
+                las=1,
+                names.arg=c("Wild-Type","Knockout"),
+                ylab="Weight (g)",
+                main="Inguinal WAT",
+                ylim=c(0,ymax))
+
+superpose.eb(plot,
+             as.matrix(plot.data[2:3]),
+             as.matrix(plot.data.se[2:3]))
+
+plot.data <- 
+  summary.data %>%
+    filter(Sex == "Male") %>%
+  select(Sex, Knockout, GonadalWAT_mean.na) %>%
+  spread(value=GonadalWAT_mean.na, key=Knockout) 
+
+plot.data.se <- 
+  summary.data %>%
+  filter(Sex == "Male") %>%
+  select(Knockout, GonadalWAT_se) %>%
+  spread(value=GonadalWAT_se, key=Knockout)   
+
+ymax <- max(plot.data[2:3]) + max(plot.data.se[2:3])
+
+plot <- barplot(as.matrix(plot.data[2:3]),
+                las=1,
+                names.arg=c("Wild-Type","Knockout"),
+                ylab="Weight (g)",
+                main="Gonadal WAT",
+                ylim=c(0,ymax))
+
+superpose.eb(plot,
+             as.matrix(plot.data[2:3]),
+             as.matrix(plot.data.se[2:3]))
+
 ```
+
+For the male mice, the fat pads were reduced in weight:
+
+```{r wat-differences}
+library(forcats)
+summary.data %>%
+  select(Sex, Knockout, GonadalWAT_mean.na) %>%
+  mutate(Knockout = factor(Knockout, labels=c("Wild-Type","Knockout"))) %>%
+  spread(value=GonadalWAT_mean.na, key=Knockout) %>%
+  mutate(Difference = `Wild-Type`-Knockout,
+         Pct.Difference = Difference/`Wild-Type`*100) %>%
+  kable(caption="Changes in Gonadal Fat Pad Weights")
+
+
+summary.data %>%
+  select(Sex, Knockout, InguinalWAT_mean.na) %>%
+  mutate(Knockout = factor(Knockout, labels=c("Wild-Type","Knockout"))) %>%
+  spread(value=InguinalWAT_mean.na, key=Knockout) %>%
+  mutate(Difference = `Wild-Type`-Knockout,
+         Pct.Difference = Difference/`Wild-Type`*100) %>%
+  kable(caption="Changes in Inguinal Fat Pad Weights")
+  
+```
+
+```{r male-stats}
+summary.data %>%
+  select(Sex,
+         Knockout,
+         InguinalWAT_shapiro.p,
+         GonadalWAT_shapiro.p) %>%
+  kable(caption="Shapiro-Wilk Tests for each group")
+
+library(car)
+stats.ing <- 
+  exp.data %>%
+  mutate(Knockout = factor(if_else(Genotype != 'fl/fl; Tg/+', "Wild-Type", "Knockout"))) %>%
+  group_by(Sex) %>%
+  filter(!(is.na(Genotype))) %>%
+  summarize(
+    Levene = leveneTest(InguinalWAT~Knockout)$"Pr(>F)"[1],
+    Mann.Whitney = wilcox.test(InguinalWAT~Knockout)$p.value,
+    Welch = t.test(InguinalWAT~Knockout, var.equal=F)$p.value,
+    Student = t.test(InguinalWAT~Knockout, var.equal=T)$p.value)
+
+stats.gon <- 
+  exp.data %>%
+  mutate(Knockout = factor(if_else(Genotype != 'fl/fl; Tg/+', "Wild-Type", "Knockout"))) %>%
+  group_by(Sex) %>%
+  filter(!(is.na(Genotype))) %>%
+  summarize(
+    Levene = leveneTest(GonadalWAT~Knockout)$"Pr(>F)"[1],
+    Mann.Whitney = wilcox.test(GonadalWAT~Knockout)$p.value,
+    Welch = t.test(GonadalWAT~Knockout, var.equal=F)$p.value,
+    Student = t.test(GonadalWAT~Knockout, var.equal=T)$p.value)
+
+  kable(stats.ing, caption="Pairwise tests for effects of knockout on Inguinal WAT weights.")
+    kable(stats.gon, caption="Pairwise tests for effects of knockout on Gonadal WAT weights.")
+```
+
+For the male mice, normality can be assumed, but not equal variance, so a Welch's t-test is used, which had a p-value of `r stats.ing[2,'Welch']` for inguinal WAT and `r stats.gon[2,'Welch']` for gonadal WAT.
 
 ## Muscle Weights
 

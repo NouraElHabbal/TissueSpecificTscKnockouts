@@ -1,0 +1,248 @@
+---
+title: "ITT for mTSC1-HFD mice"
+author: "Erin Stephenson and Dave Bridges"
+date: "March 8, 2016"
+output:
+  html_document:
+    highlight: tango
+    keep_md: yes
+    number_sections: yes
+    toc: yes
+  pdf_document:
+    highlight: tango
+    keep_tex: yes
+    number_sections: yes
+    toc: yes
+---
+
+```{r global_options, include=FALSE}
+library(knitr)
+#figures makde will go to directory called figures, will make them as both png and pdf files 
+opts_chunk$set(fig.path='figures/',
+               echo=TRUE, warning=FALSE, message=FALSE,dev=c('png','pdf'))
+options(scipen = 2, digits = 3)
+# set echo and message to TRUE if you want to display code blocks and code output respectively
+
+knitr::knit_hooks$set(inline = function(x) {
+  knitr:::format_sci(x, 'md')
+})
+
+
+superpose.eb <- function (x, y, ebl, ebu = ebl, length = 0.08, ...)
+  arrows(x, y + ebu, x, y - ebl, angle = 90, code = 3,
+  length = length, ...)
+
+  
+se <- function(x) sd(x, na.rm=T)/sqrt(length(x))
+
+#load these packages, nearly always needed
+library(tidyr)
+library(dplyr)
+```
+
+# Data Entry
+
+```{r data-entry}
+library(rjson)
+library(RCurl)
+#download data from experiment 1417
+itt_url <- 'http://bridgeslab.sph.umich.edu/mousedb/api/v1/data/?format=json&username=davebridges&api_key=fce3fde2a9a2e5dc9e04c20aad90120a621c50b3&limit=0&experiment=1417'
+itt.json <- fromJSON(getURL(itt_url))
+library(plyr)
+#parse json data into data frame
+itt.data <-  rbind(ldply(lapply(itt.json[[2]],function(x) do.call(c,unlist(x,r=F))),as.data.frame))
+#figure out which mice are mTSC1-KO
+
+#set fl/fl;Tg/+ as the reference level
+itt.data$genotype <- relevel(as.factor(itt.data$animal.Genotype), ref='fl/fl; Tg/+')
+itt.data$Sex <- relevel(as.factor(itt.data$animal.Gender), ref='F')
+itt.data <-
+  itt.data %>%
+  mutate(Knockout = factor(if_else(genotype!='fl/fl; Tg/+', "Wild-Type", "Knockout")))
+
+itt.glucose <- itt.data[itt.data$assay.assay=='Plasma Glucose',]                   
+#separate comma separated list into values
+s <- strsplit(as.character(itt.glucose$values), split = ",")
+#paste values into new colunms
+itt.glucose <- cbind(itt.glucose, as.data.frame(rbind.fill.matrix(lapply(s, t))))
+#convert all values to numbers, put in new columns
+itt.glucose$t0 <- as.numeric(as.character(itt.glucose$`1`))
+itt.glucose$t15 <- as.numeric(as.character(itt.glucose$`2`))
+itt.glucose$t30 <- as.numeric(as.character(itt.glucose$`3`))
+itt.glucose$t45 <- as.numeric(as.character(itt.glucose$`4`))
+itt.glucose$t60 <- as.numeric(as.character(itt.glucose$`5`))
+itt.glucose$t75 <- as.numeric(as.character(itt.glucose$`6`))
+itt.glucose$t90 <- as.numeric(as.character(itt.glucose$`7`))
+itt.glucose$t105 <- as.numeric(as.character(itt.glucose$`8`))
+itt.glucose$t120 <- as.numeric(as.character(itt.glucose$`9`))
+
+color.palette <- c("blue4","dodgerblue", "deeppink4","pink2")
+
+library(readr)
+write_csv(itt.glucose, "ITT Data.csv")
+```
+
+```{r glucose-levels, dev=c('png','pdf')}
+itt.glucose <- read_csv("ITT Data.csv")
+library(dplyr)
+#generate averages/se/n/shapiro test for each time point
+se <- function(x) sd(x, na.rm=T)/sqrt(length(x))
+itt.summary.means <- 
+  itt.glucose %>%
+  dplyr::group_by(Sex,Knockout) %>%
+  dplyr::summarize(
+    t0 = mean(t0, na.rm=T),
+    t15 = mean(t15, na.rm=T),
+    t30 = mean(t30, na.rm=T),
+    t45 = mean(t45, na.rm=T),
+    t60 = mean(t60, na.rm=T),
+    t75 = mean(t75, na.rm=T),
+    t90 = mean(t90, na.rm=T),
+    t105 = mean(t105, na.rm=T),
+    t120 = mean(t120, na.rm=T))
+
+itt.summary.se <- 
+  itt.glucose %>%
+  dplyr::group_by(Sex,Knockout) %>%
+  dplyr::summarize(
+    t0 = se(t0),
+    t15 = se(t15),
+    t30 = se(t30),
+    t45 = se(t45),
+    t60 = se(t60),
+    t75 = se(t75),
+    t90 = se(t90),
+    t105 = se(t105),
+    t120 = se(t120))
+
+times <- seq(0,120,15)
+ymax <- max(itt.summary.means[,3:dim(itt.summary.means)[2]]) + max(itt.summary.se[,3:dim(itt.summary.se)[2]])
+
+par(mfrow=c(1,2))
+plot <- plot(times,
+     as.numeric(itt.summary.means[itt.summary.means$Knockout=='Wild-Type'&itt.summary.means$Sex=="M",3:dim(itt.summary.means)[2]]), 
+     las=1, ylim=c(0,ymax), 
+     ylab="Blood Glucose (mg/dL)", 
+     xlab="Time post-insulin (min)", 
+     type="l",
+     col=color.palette[1],
+     main="Male Mice")
+#add ko line
+lines(times, as.numeric(itt.summary.means[itt.summary.means$Knockout=='Knockout'&itt.summary.means$Sex=="M",3:dim(itt.summary.means)[2]]), col=color.palette[2])
+#add error bars
+superpose.eb <- function (x, y, ebl, ebu = ebl, length = 0.08, ...)
+arrows(x, y + ebu, x, y - ebl, angle = 90, code = 3,
+length = length, ...)
+
+#add error bars for wt and ko
+superpose.eb(times,
+             as.numeric(itt.summary.means[itt.summary.means$Knockout=='Wild-Type'&itt.summary.means$Sex=="M",3:dim(itt.summary.means)[2]]),
+             as.numeric(itt.summary.se[itt.summary.se$Knockout=='Wild-Type'&itt.summary.se$Sex=="M",3:dim(itt.summary.se)[2]]),
+             col=color.palette[1])
+superpose.eb(times,
+             as.numeric(itt.summary.means[itt.summary.means$Knockout=='Knockout'&itt.summary.means$Sex=="M",3:dim(itt.summary.means)[2]]),
+             as.numeric(itt.summary.se[itt.summary.se$Knockout=='Knockout'&itt.summary.se$Sex=="M",3:dim(itt.summary.se)[2]]),
+             col=color.palette[2])
+#add legend
+legend("bottomleft",c("Wild-Type",'Knockout'), col=color.palette[1:2], lty=1, bty='n')
+
+
+plot <- plot(times,
+     as.numeric(itt.summary.means[itt.summary.means$Knockout=='Wild-Type'&itt.summary.means$Sex=="F",3:dim(itt.summary.means)[2]]), 
+     las=1, ylim=c(0,ymax), 
+     ylab="Blood Glucose (mg/dL)", 
+     xlab="Time post-insulin (min)", 
+     type="l",
+     col=color.palette[3],
+     main="Female Mice")
+#add ko line
+lines(times, as.numeric(itt.summary.means[itt.summary.means$Knockout=='Knockout'&itt.summary.means$Sex=="F",3:dim(itt.summary.means)[2]]), col=color.palette[4])
+#add error bars for wt and ko
+superpose.eb(times,
+             as.numeric(itt.summary.means[itt.summary.means$Knockout=='Wild-Type'&itt.summary.means$Sex=="F",3:dim(itt.summary.means)[2]]),
+             as.numeric(itt.summary.se[itt.summary.se$Knockout=='Wild-Type'&itt.summary.se$Sex=="F",3:dim(itt.summary.se)[2]]),
+             col=color.palette[3])
+superpose.eb(times,
+             as.numeric(itt.summary.means[itt.summary.means$Knockout=='Knockout'&itt.summary.means$Sex=="F",3:dim(itt.summary.means)[2]]),
+             as.numeric(itt.summary.se[itt.summary.se$Knockout=='Knockout'&itt.summary.se$Sex=="F",3:dim(itt.summary.se)[2]]),
+             col=color.palette[4])
+#add legend
+legend("bottomleft",c("Wild-Type",'Knockout'), col=color.palette[3:4], lty=1, bty='n')
+
+```
+
+```{r normalized}
+
+#normalized means and errors to 100%
+itt.summary.means.norm <- sweep(itt.summary.means[3:dim(itt.summary.means)[2]], 1, itt.summary.means$t0, "/")*100
+itt.summary.se.norm <- sweep(itt.summary.se[3:dim(itt.summary.se)[2]], 1, itt.summary.means$t0, "/")*100
+
+par(mfrow=c(1,2))
+plot <- plot(times,
+     as.numeric(itt.summary.means.norm[3,1:dim(itt.summary.means.norm)[2]]), 
+     las=1, ylim=c(0,ymax), 
+     ylab="Blood Glucose (% of fasted)", 
+     xlab="Time post-insulin (min)", 
+     type="l",
+     col=color.palette[1],
+     main="Male Mice")
+#add ko line
+lines(times, as.numeric(itt.summary.means.norm[4,1:dim(itt.summary.means.norm)[2]]), col=color.palette[2])
+
+#add error bars for wt and ko
+superpose.eb(times,
+             as.numeric(itt.summary.means.norm[3,1:dim(itt.summary.means.norm)[2]]),
+             as.numeric(itt.summary.se.norm[3,1:dim(itt.summary.se.norm)[2]]),
+             col=color.palette[1])
+superpose.eb(times,
+             as.numeric(itt.summary.means.norm[4,1:dim(itt.summary.means.norm)[2]]),
+             as.numeric(itt.summary.se.norm[4,1:dim(itt.summary.se.norm)[2]]),
+             col=color.palette[2])
+#add legend
+legend("bottomleft",c("Wild-Type",'Knockout'), col=color.palette[1:2], lty=1, bty='n')
+
+
+plot <- plot(times,
+     as.numeric(itt.summary.means.norm[1,1:dim(itt.summary.means.norm)[2]]), 
+     las=1, ylim=c(0,ymax), 
+     ylab="Blood Glucose (% of fasted)", 
+     xlab="Time post-insulin (min)", 
+     type="l",
+     col=color.palette[3],
+     main="Female Mice")
+#add ko line
+lines(times, as.numeric(itt.summary.means.norm[2,1:dim(itt.summary.means.norm)[2]]), col=color.palette[4])
+#add error bars for wt and ko
+superpose.eb(times,
+             as.numeric(itt.summary.means.norm[1,1:dim(itt.summary.means.norm)[2]]),
+             as.numeric(itt.summary.se.norm[1,1:dim(itt.summary.se.norm)[2]]),
+             col=color.palette[3])
+superpose.eb(times,
+             as.numeric(itt.summary.means.norm[2,1:dim(itt.summary.means.norm)[2]]),
+             as.numeric(itt.summary.se.norm[2,1:dim(itt.summary.se.norm)[2]]),
+             col=color.palette[4])
+#add legend
+legend("bottomleft",c("Wild-Type",'Knockout'), col=color.palette[3:4], lty=1, bty='n')
+```
+
+
+# Statistics
+
+```{r statistics}
+#mixed linear model
+library(lme4)
+library(reshape2)
+melted.data <- melt(itt.glucose[,c('animal.id','genotype',paste("t", seq(0,120,15), sep=""))],
+                    id.vars=c('genotype','animal.id'), value.name="glucose", variable.name='time')
+fit.lme <- lmer(glucose~time*genotype+(1|animal.id), data=melted.data, REML=F)
+fit.no.genotype <- lmer(glucose~time+(1|animal.id), data=melted.data, REML=F)
+```
+
+We also did a mixed linear model of these data.  From a test between a model with an interacting time:genotype term and a model without any genotype data, we found a Chi-squared value of `r anova(fit.lme, fit.no.genotype)$"Chisq"[2]` and a p-value of from a Chi-squared value of  `r anova(fit.lme, fit.no.genotype)[,'Pr(>Chisq)'][2]`.
+
+
+## Session Information
+
+```{r session-info}
+sessionInfo()
+```

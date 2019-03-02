@@ -15,8 +15,7 @@ This document indicates where the raw data for each Figure panel can be found, a
 | Figure 1G | |
 | Figure 2A | ⁨Mouse Data⁩/⁨Muscle Tsc1 Knockout/⁨NCD/mTSC1_longitudinal_echo_mri_analysis.Rmd | scatterplot-fat-mass-weekly-1⁩.pdf |
 | Figure 2B | Mouse Data⁩/⁨Muscle Tsc1 Knockout/⁨NCD/mTSC1_longitudinal_echo_mri_analysis.Rmd | scatterplot-lean-mass-weekly-1⁩.pdf |
-| Figure 2C | Mouse Data⁩/Muscle Tsc1 Knockout⁩/NCD⁩/mTSC1-sac-data.Rmd | wat-weights-2.pdf⁩ |
-| Figure 2D | NA | Example Fat Pad Image.jpg |
+| Figure 2C | Mouse Data⁩/Muscle Tsc1 Knockout⁩/NCD⁩/mTSC1-sac-data.Rmd | wat-weights-1.pdf⁩ |
 | Figure 3A | Mouse Data⁩/Muscle Tsc1 Knockout⁩/HFD/Body Composition/body-weight-analysis.Rmd | fat-mass-scatterplot-3.pdf |
 | Figure 3B | Mouse Data⁩/Muscle Tsc1 Knockout⁩/HFD/Body Composition/body-weight-analysis.Rmd | lean-mass-scatterplot-3.pdf |
 | Figure 4A | ⁨RNAseq⁩/scripts⁩/deseq.Rmd/ma-plots-1.pdf |

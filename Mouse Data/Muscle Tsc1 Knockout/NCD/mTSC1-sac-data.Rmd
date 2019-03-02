@@ -1,16 +1,16 @@
 ---
-title: "Tissue Weights for Muscle Tsc1 Knockout Mice"
+title: "Tissue Weights for Muscle Tsc1 Knockout Mice on a Normal Chow Diet"
 author: "Dave Bridges and Erin Stephenson"
 date: "2019-02-08"
 output:
-  pdf_document:
-    highlight: tango
-    keep_tex: yes
-    number_sections: yes
-    toc: yes
   html_document:
     highlight: tango
     keep_md: yes
+    number_sections: yes
+    toc: yes
+  pdf_document:
+    highlight: tango
+    keep_tex: yes
     number_sections: yes
     toc: yes
 ---
@@ -53,15 +53,12 @@ At sacrifice, after a 16h fast data were entered and collected in the raw data s
 
 
 ```{r data-input}
-library(readr) #loads the readr package
-filename <- 'Sacrifice Data.csv' #make this a separate line, you can use any variable you want
+library(readxl) #loads the readr package
+filename <- 'NCD Sacrifice Data.xlsx' #make this a separate line, you can use any variable you want
 
 #this loads whatever the file is into a dataframe called exp.data if it exists
-if(filename %in% dir()){
-  exp.data <- read_csv(filename,
-                       col_types = cols(Genotype= col_factor(levels=NULL),
-                                        Sex = col_factor(levels=NULL)))
-}
+exp.data <- read_excel(filename,
+                       sheet="TissueWeights")
 ```
 
 These data can be found in **`r getwd()`** in a file named **`r ifelse(filename %in% dir(), filename, "no file found")`**.  This script was most recently updated on **`r date()`**.
@@ -74,13 +71,16 @@ shapiro.p <- function(x) shapiro.test(x)$p.value
 
 summary.data <-
   exp.data %>%
-  select(Genotype,Sex,GonadalWAT,InguinalWAT,Quadriceps,TricepsSurae,Heart) %>%
+  rename(Genotype = Genotype..2) %>%
+  mutate(Quadriceps = as.numeric(Quadriceps),
+         TricepsSurae = as.numeric(TricepsSurae),
+         Heart = as.numeric(Heart)) %>%
+  select(Genotype,EWAT,IWAT,Quadriceps,TricepsSurae,Heart) %>%
   mutate(Knockout = Genotype == 'fl/fl; Tg/+') %>%
     filter(!(is.na(Genotype))) %>%
-  group_by(Sex,Knockout) %>%
+  group_by(Knockout) %>%
   summarize_if(is.numeric, funs(mean.na,se,length,shapiro.p)) %>%
-  filter(!(is.na(Knockout))) %>%
-  filter(!(is.na(Sex)))
+  filter(!(is.na(Knockout)))
 
 
 kable(summary.data %>% select(ends_with('mean.na')))
@@ -91,121 +91,72 @@ kable(summary.data %>% select(ends_with('length')))
 ## Fat Pad Weights
 
 ```{r wat-weights, fig.cap="Weights of Fat Pads at Sacrifice"}
-library(RColorBrewer)
-genotype.colors <- brewer.pal(2,"Set2")
-
-library(ggplot2)
-library(gridExtra)
-gWAT <- ggplot(summary.data,
-       aes(y=GonadalWAT_mean.na,
-           ymax=GonadalWAT_mean.na+GonadalWAT_se,
-           ymin=GonadalWAT_mean.na-GonadalWAT_se,
-           x=Sex,
-           group=Knockout,
-           fill=Knockout)) +
-  geom_bar(stat='identity',position='dodge',width=0.75) +
-  geom_errorbar(position=position_dodge(width=0.75),width=0.5) +
-  labs(y="Weight (g)",
-          title="Gonadal WAT") +
-  scale_fill_manual(values=genotype.colors,labels=c("Wild-Type","Knockout")) +
-        theme(legend.position = c(0.25, 0.9),
-        legend.background = element_rect(fill=alpha(0.1)),
-        legend.text=element_text(size=14),
-        axis.text=element_text(size=14),
-        axis.title=element_text(size=14),
-        legend.title=element_blank())
-
-iWAT <- ggplot(summary.data,
-       aes(y=InguinalWAT_mean.na,
-           ymax=InguinalWAT_mean.na+InguinalWAT_se,
-           ymin=InguinalWAT_mean.na-InguinalWAT_se,
-           x=Sex,
-           group=Knockout,
-           fill=Knockout)) +
-  geom_bar(stat='identity',position='dodge',width=0.75) +
-  geom_errorbar(position=position_dodge(width=0.75),width=0.5) +
-  labs(y="Weight (g)",
-          title="Inguinal WAT") +
-  scale_fill_manual(values=genotype.colors,labels=c("Wild-Type","Knockout")) +
-        theme(legend.position = c(0.25, 0.9),
-        legend.background = element_rect(fill=alpha(0.1)),
-        legend.text=element_text(size=14),
-        axis.text=element_text(size=14),
-        axis.title=element_text(size=14),
-        legend.title=element_blank())
-
-grid.arrange(gWAT,iWAT,ncol=2)
-
 par(mfrow=c(1,2))
 plot.data <- 
   summary.data %>%
-    filter(Sex == "Male") %>%
-  select(Sex, Knockout, InguinalWAT_mean.na) %>%
-  spread(value=InguinalWAT_mean.na, key=Knockout) 
+  select(Knockout, IWAT_mean.na) %>%
+  spread(value=IWAT_mean.na, key=Knockout) 
 
 plot.data.se <- 
   summary.data %>%
-  filter(Sex == "Male") %>%
-  select(Knockout, InguinalWAT_se) %>%
-  spread(value=InguinalWAT_se, key=Knockout)   
+  select(Knockout, IWAT_se) %>%
+  spread(value=IWAT_se, key=Knockout)   
 
-ymax <- max(plot.data[2:3]) + max(plot.data.se[2:3])
+ymax <- max(plot.data) + max(plot.data.se)
 
-plot <- barplot(as.matrix(plot.data[2:3]),
+plot <- barplot(as.matrix(plot.data),
                 las=1,
                 names.arg=c("Wild-Type","Knockout"),
-                ylab="Weight (g)",
+                ylab="Weight (mg)",
                 main="Inguinal WAT",
                 ylim=c(0,ymax))
 
 superpose.eb(plot,
-             as.matrix(plot.data[2:3]),
-             as.matrix(plot.data.se[2:3]))
+             as.matrix(plot.data),
+             as.matrix(plot.data.se))
 
 plot.data <- 
   summary.data %>%
-    filter(Sex == "Male") %>%
-  select(Sex, Knockout, GonadalWAT_mean.na) %>%
-  spread(value=GonadalWAT_mean.na, key=Knockout) 
+  select(Knockout, EWAT_mean.na) %>%
+  spread(value=EWAT_mean.na, key=Knockout) 
 
 plot.data.se <- 
   summary.data %>%
-  filter(Sex == "Male") %>%
-  select(Knockout, GonadalWAT_se) %>%
-  spread(value=GonadalWAT_se, key=Knockout)   
+  select(Knockout, EWAT_se) %>%
+  spread(value=EWAT_se, key=Knockout)   
 
-ymax <- max(plot.data[2:3]) + max(plot.data.se[2:3])
+ymax <- max(plot.data) + max(plot.data.se)
 
-plot <- barplot(as.matrix(plot.data[2:3]),
+plot <- barplot(as.matrix(plot.data),
                 las=1,
                 names.arg=c("Wild-Type","Knockout"),
-                ylab="Weight (g)",
-                main="Gonadal WAT",
+                ylab="Weight (mg)",
+                main="Epididymal WAT",
                 ylim=c(0,ymax))
 
 superpose.eb(plot,
-             as.matrix(plot.data[2:3]),
-             as.matrix(plot.data.se[2:3]))
+             as.matrix(plot.data),
+             as.matrix(plot.data.se))
 
 ```
 
-For the male mice, the fat pads were reduced in weight:
+For the chow-fed mice, the fat pads were reduced in weight:
 
 ```{r wat-differences}
 library(forcats)
 summary.data %>%
-  select(Sex, Knockout, GonadalWAT_mean.na) %>%
+  select(Knockout, EWAT_mean.na) %>%
   mutate(Knockout = factor(Knockout, labels=c("Wild-Type","Knockout"))) %>%
-  spread(value=GonadalWAT_mean.na, key=Knockout) %>%
+  spread(value=EWAT_mean.na, key=Knockout) %>%
   mutate(Difference = `Wild-Type`-Knockout,
          Pct.Difference = Difference/`Wild-Type`*100) %>%
-  kable(caption="Changes in Gonadal Fat Pad Weights")
+  kable(caption="Changes in Epididymal Fat Pad Weights")
 
 
 summary.data %>%
-  select(Sex, Knockout, InguinalWAT_mean.na) %>%
+  select(Knockout, IWAT_mean.na) %>%
   mutate(Knockout = factor(Knockout, labels=c("Wild-Type","Knockout"))) %>%
-  spread(value=InguinalWAT_mean.na, key=Knockout) %>%
+  spread(value=IWAT_mean.na, key=Knockout) %>%
   mutate(Difference = `Wild-Type`-Knockout,
          Pct.Difference = Difference/`Wild-Type`*100) %>%
   kable(caption="Changes in Inguinal Fat Pad Weights")
@@ -214,40 +165,37 @@ summary.data %>%
 
 ```{r male-stats}
 summary.data %>%
-  select(Sex,
-         Knockout,
-         InguinalWAT_shapiro.p,
-         GonadalWAT_shapiro.p) %>%
+  select(Knockout,
+         IWAT_shapiro.p,
+         EWAT_shapiro.p) %>%
   kable(caption="Shapiro-Wilk Tests for each group")
 
 library(car)
 stats.ing <- 
   exp.data %>%
-  mutate(Knockout = factor(if_else(Genotype != 'fl/fl; Tg/+', "Wild-Type", "Knockout"))) %>%
-  group_by(Sex) %>%
-  filter(!(is.na(Genotype))) %>%
+  mutate(Knockout = factor(if_else(Genotype..2 != 'fl/fl; Tg/+', "Wild-Type", "Knockout"))) %>%
+  filter(!(is.na(Genotype..2))) %>%
   summarize(
-    Levene = leveneTest(InguinalWAT~Knockout)$"Pr(>F)"[1],
-    Mann.Whitney = wilcox.test(InguinalWAT~Knockout)$p.value,
-    Welch = t.test(InguinalWAT~Knockout, var.equal=F)$p.value,
-    Student = t.test(InguinalWAT~Knockout, var.equal=T)$p.value)
+    Levene = leveneTest(IWAT~Knockout)$"Pr(>F)"[1],
+    Mann.Whitney = wilcox.test(IWAT~Knockout)$p.value,
+    Welch = t.test(IWAT~Knockout, var.equal=F)$p.value,
+    Student = t.test(IWAT~Knockout, var.equal=T)$p.value)
 
 stats.gon <- 
   exp.data %>%
-  mutate(Knockout = factor(if_else(Genotype != 'fl/fl; Tg/+', "Wild-Type", "Knockout"))) %>%
-  group_by(Sex) %>%
-  filter(!(is.na(Genotype))) %>%
+  mutate(Knockout = factor(if_else(Genotype..2 != 'fl/fl; Tg/+', "Wild-Type", "Knockout"))) %>%
+  filter(!(is.na(Genotype..2))) %>%
   summarize(
-    Levene = leveneTest(GonadalWAT~Knockout)$"Pr(>F)"[1],
-    Mann.Whitney = wilcox.test(GonadalWAT~Knockout)$p.value,
-    Welch = t.test(GonadalWAT~Knockout, var.equal=F)$p.value,
-    Student = t.test(GonadalWAT~Knockout, var.equal=T)$p.value)
+    Levene = leveneTest(EWAT~Knockout)$"Pr(>F)"[1],
+    Mann.Whitney = wilcox.test(EWAT~Knockout)$p.value,
+    Welch = t.test(EWAT~Knockout, var.equal=F)$p.value,
+    Student = t.test(EWAT~Knockout, var.equal=T)$p.value)
 
   kable(stats.ing, caption="Pairwise tests for effects of knockout on Inguinal WAT weights.")
     kable(stats.gon, caption="Pairwise tests for effects of knockout on Gonadal WAT weights.")
 ```
 
-For the male mice, normality can be assumed, but not equal variance, so a Welch's t-test is used, which had a p-value of `r stats.ing[2,'Welch']` for inguinal WAT and `r stats.gon[2,'Welch']` for gonadal WAT.
+For the chow-fed mice, normality can not be assumed, but not equal variance, so a Mann-Whitney t-test wsa used, which had a p-value of `r format(stats.ing$Mann.Whitney,digits=2, format='e')` for inguinal WAT and `r format(stats.gon$Mann.Whitney,digits=2, format='e')` for epididymal WAT.
 
 ## Muscle Weights
 
@@ -261,9 +209,7 @@ Heart <- ggplot(summary.data,
        aes(y=Heart_mean.na,
            ymax=Heart_mean.na+Heart_se,
            ymin=Heart_mean.na-Heart_se,
-           x=Sex,
-           group=Knockout,
-           fill=Knockout)) +
+           x=Knockout)) +
   geom_bar(stat='identity',position='dodge',width=0.75) +
   geom_errorbar(position=position_dodge(width=0.75),width=0.5) +
   labs(y="Weight (g)",
@@ -280,9 +226,7 @@ Quad <- ggplot(summary.data,
        aes(y=Quadriceps_mean.na,
            ymax=Quadriceps_mean.na+Quadriceps_se,
            ymin=Quadriceps_mean.na-Quadriceps_se,
-           x=Sex,
-           group=Knockout,
-           fill=Knockout)) +
+           x=Knockout)) +
   geom_bar(stat='identity',position='dodge',width=0.75) +
   geom_errorbar(position=position_dodge(width=0.75),width=0.5) +
   labs(y="Weight (g)",
@@ -299,9 +243,7 @@ TS <- ggplot(summary.data,
        aes(y=TricepsSurae_mean.na,
            ymax=TricepsSurae_mean.na+TricepsSurae_se,
            ymin=TricepsSurae_mean.na-TricepsSurae_se,
-           x=Sex,
-           group=Knockout,
-           fill=Knockout)) +
+           x=Knockout)) +
   geom_bar(stat='identity',position='dodge',width=0.75) +
   geom_errorbar(position=position_dodge(width=0.75),width=0.5) +
   labs(y="Weight (g)",

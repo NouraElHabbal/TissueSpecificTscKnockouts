@@ -76,7 +76,7 @@ Diagnostic Plots
 ----------------
 
 ```{r ma-plots, echo=FALSE, dev=c('png','pdf')}
-plotMA(res.binary, ylim=c(-4,4), main="MA Plot for Binary Comparison")
+plotMA(res.binary, ylim=c(-4,4), main="")
 ```
 
 ```{r heatmap, echo=FALSE, dev=c('png','pdf')}

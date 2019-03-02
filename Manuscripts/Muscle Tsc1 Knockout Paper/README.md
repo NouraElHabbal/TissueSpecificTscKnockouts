@@ -4,7 +4,7 @@ Figure Key
 This document indicates where the raw data for each Figure panel can be found, and which script was used to generate the data.  Figures were typically made using Rmarkdown files and modified if needed in Adobe Illustrator.  The figures listed below are the raw figure, finalized figures are in the combined illustrator file in this folder.
 
 | Figure | Script | Figure |
-|--------|--------|--------|
+| ------ | ------ | ------ |
 
 | Figure 1A | NA | NA (Schematic) |
 | Figure 1B | ⁨Mouse Data⁩/CLAMS B6-HFD-Rapamycin/clams-analysis.Rmd | activity-barplot-1.pdf |

@@ -1,0 +1,400 @@
+---
+title: "Western Blot Quantification from Muscle Tsc1 Knockout Quadriceps"
+author: "Dave Bridges"
+date: "December 14, 2015"
+output:
+  pdf_document:
+    fig_caption: yes
+  html_document: default
+---
+
+
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.path='figures/',
+               echo=FALSE, warning=FALSE, message=FALSE,dev=c('pdf','png'))
+
+options(scipen=8, digits=3)
+```
+
+# Data Entry and Calculations
+
+
+```{r data-entry,  fig.cap="Normalized mTORC1 Activity in Quadriceps"}
+datafile <- 'Quantification.csv'
+data <- read.csv(datafile)
+data$Genotype <- relevel(data$Genotype, ref="Wild-Type")
+```
+
+These data are found in `r getwd()` and were most recently updated on `r date()`.  It reads from the input quantification file named `r datafile`.
+
+```{r calculations}
+library(dplyr)
+library(tidyr)
+data.wide <- 
+  data %>%
+  select(Signal, Protein, Genotype, Sample) %>%
+  spread(Protein,Signal) %>%
+  mutate(pS6K.Ratio = pS6K/S6K,
+         pS6.Ratio = pS6/S6,
+         pJNK.Ratio = pJNK/JNK,
+         LC3.Ratio = `LC3-II`/`LC3-I`,
+         CD36.Ratio = CD36/GAPDH,
+         NDUF88.Ratio = `CI-NDUF88`/GAPDH,
+         SDHB.Ratio = `CII-SDHB`/GAPDH,
+         UQCRC2.Ratio = `CIII-UQCRC2`/GAPDH,
+         MTCO1.Ratio = `CIV-MTCO1`/GAPDH,
+         ATP5A.Ratio = `CV-ATP5A`/GAPDH,
+         LAT1.Ratio = LAT1/GAPDH,
+         Sarcolipin.Ratio = Sarcolipin/GAPDH,
+         `4F2hc.Ratio` = `4F2hc`/GAPDH) %>%
+  mutate(pS6K.norm = pS6K.Ratio/mean(pS6K.Ratio[1:5], na.rm=T),
+         pS6.norm = pS6.Ratio/mean(pS6.Ratio[1:5], na.rm=T),
+         pJNK.norm = pJNK.Ratio/mean(pJNK.Ratio[1:5], na.rm=T),
+         LC3.norm = LC3.Ratio,
+         CD36.norm = CD36.Ratio/mean(CD36.Ratio[1:5]),
+         NDUF88.norm = NDUF88.Ratio/mean(NDUF88.Ratio[1:5]),
+         SDHB.norm = SDHB.Ratio/mean(SDHB.Ratio[1:5]),
+         UQCRC2.norm = UQCRC2.Ratio/mean(UQCRC2.Ratio[1:5]),
+         MTCO1.norm = MTCO1.Ratio/mean(MTCO1.Ratio[1:5]),
+         ATP5A.norm = ATP5A.Ratio/mean(ATP5A.Ratio[1:5]),
+         LAT1.norm = LAT1.Ratio/mean(LAT1.Ratio[1:5]),
+         `4F2hc.norm` = `4F2hc.Ratio`/mean(`4F2hc.Ratio`[1:5]),
+         Sarcolipin.norm = Sarcolipin.Ratio/mean(Sarcolipin.Ratio[1:5]))
+
+kable(t(data.wide %>% select(1:10)), caption="Raw Quantification Data", digits=2)
+kable(t(data.wide %>% select(Sample,Genotype,ends_with('Ratio'))), caption="Summarized Ratios", digits=2)
+kable(t(data.wide %>% select(Sample,Genotype,ends_with('norm'))), caption="Summarized Normalized Ratios", digits=2)
+
+superpose.eb <- function (x, y, ebl, ebu = ebl, length = 0.08, ...)
+  arrows(x, y + ebu, x, y - ebl, angle = 90, code = 3,
+  length = length, ...)
+
+se <- function(x) sd(x)/sqrt(length(x))
+
+summary <- 
+  data.wide %>%
+  select(Genotype,ends_with('norm')) %>%
+  group_by(Genotype) %>%
+  summarize_each(funs(mean, se))
+
+kable(t(summary), caption="Summarized Values")
+
+statistics <- data.frame()
+library(car)
+
+statistics['pS6K','Shapiro-WT'] <- shapiro.test(subset(data.wide, Genotype=="Wild-Type")$pS6K.Ratio)$p.value
+statistics['pS6K','Shapiro-KO'] <- shapiro.test(subset(data.wide, Genotype=="Knockout")$pS6K.Ratio)$p.value
+statistics['pS6K','Wilcoxon'] <- wilcox.test(pS6K.Ratio~Genotype, data=data.wide)$p.value
+statistics['pS6K','Levene'] <- leveneTest(pS6K.Ratio~Genotype, data=data.wide)$"Pr(>F)"[1]
+statistics['pS6K','Welch'] <- t.test(pS6K.Ratio~Genotype, data=data.wide, var.equal=F)$p.value
+statistics['pS6K','Student'] <- t.test(pS6K.Ratio~Genotype, data=data.wide, var.equal=T)$p.value
+
+statistics['pS6','Shapiro-WT'] <- shapiro.test(subset(data.wide, Genotype=="Wild-Type")$pS6.Ratio)$p.value
+statistics['pS6','Shapiro-KO'] <- shapiro.test(subset(data.wide, Genotype=="Knockout")$pS6.Ratio)$p.value
+statistics['pS6','Wilcoxon'] <- wilcox.test(pS6.Ratio~Genotype, data=data.wide)$p.value
+statistics['pS6','Levene'] <- leveneTest(pS6.Ratio~Genotype, data=data.wide)$"Pr(>F)"[1]
+statistics['pS6','Welch'] <- t.test(pS6.Ratio~Genotype, data=data.wide, var.equal=F)$p.value
+statistics['pS6','Student'] <- t.test(pS6.Ratio~Genotype, data=data.wide, var.equal=T)$p.value
+
+statistics['pJNK','Shapiro-WT'] <- shapiro.test(subset(data.wide, Genotype=="Wild-Type")$pJNK.Ratio)$p.value
+statistics['pJNK','Shapiro-KO'] <- shapiro.test(subset(data.wide, Genotype=="Knockout")$pJNK.Ratio)$p.value
+statistics['pJNK','Wilcoxon'] <- wilcox.test(pJNK.Ratio~Genotype, data=data.wide)$p.value
+statistics['pJNK','Levene'] <- leveneTest(pJNK.Ratio~Genotype, data=data.wide)$"Pr(>F)"[1]
+statistics['pJNK','Welch'] <- t.test(pJNK.Ratio~Genotype, data=data.wide, var.equal=F)$p.value
+statistics['pJNK','Student'] <- t.test(pJNK.Ratio~Genotype, data=data.wide, var.equal=T)$p.value
+
+statistics['LC3','Shapiro-WT'] <- shapiro.test(subset(data.wide, Genotype=="Wild-Type")$LC3.Ratio)$p.value
+statistics['LC3','Shapiro-KO'] <- shapiro.test(subset(data.wide, Genotype=="Knockout")$LC3.Ratio)$p.value
+statistics['LC3','Wilcoxon'] <- wilcox.test(LC3.Ratio~Genotype, data=data.wide)$p.value
+statistics['LC3','Levene'] <- leveneTest(LC3.Ratio~Genotype, data=data.wide)$"Pr(>F)"[1]
+statistics['LC3','Welch'] <- t.test(LC3.Ratio~Genotype, data=data.wide, var.equal=F)$p.value
+statistics['LC3','Student'] <- t.test(LC3.Ratio~Genotype, data=data.wide, var.equal=T)$p.value
+
+statistics['ATP5A','Shapiro-WT'] <- shapiro.test(subset(data.wide, Genotype=="Wild-Type")$ATP5A.Ratio)$p.value
+statistics['ATP5A','Shapiro-KO'] <- shapiro.test(subset(data.wide, Genotype=="Knockout")$ATP5A.Ratio)$p.value
+statistics['ATP5A','Wilcoxon'] <- wilcox.test(ATP5A.Ratio~Genotype, data=data.wide)$p.value
+statistics['ATP5A','Levene'] <- leveneTest(ATP5A.Ratio~Genotype, data=data.wide)$"Pr(>F)"[1]
+statistics['ATP5A','Welch'] <- t.test(ATP5A.Ratio~Genotype, data=data.wide, var.equal=F)$p.value
+statistics['ATP5A','Student'] <- t.test(ATP5A.Ratio~Genotype, data=data.wide, var.equal=T)$p.value
+
+statistics['UQCRC2','Shapiro-WT'] <- shapiro.test(subset(data.wide, Genotype=="Wild-Type")$UQCRC2.Ratio)$p.value
+statistics['UQCRC2','Shapiro-KO'] <- shapiro.test(subset(data.wide, Genotype=="Knockout")$UQCRC2.Ratio)$p.value
+statistics['UQCRC2','Wilcoxon'] <- wilcox.test(UQCRC2.Ratio~Genotype, data=data.wide)$p.value
+statistics['UQCRC2','Levene'] <- leveneTest(UQCRC2.Ratio~Genotype, data=data.wide)$"Pr(>F)"[1]
+statistics['UQCRC2','Welch'] <- t.test(UQCRC2.Ratio~Genotype, data=data.wide, var.equal=F)$p.value
+statistics['UQCRC2','Student'] <- t.test(UQCRC2.Ratio~Genotype, data=data.wide, var.equal=T)$p.value
+
+statistics['MTCO1','Shapiro-WT'] <- shapiro.test(subset(data.wide, Genotype=="Wild-Type")$MTCO1.Ratio)$p.value
+statistics['MTCO1','Shapiro-KO'] <- shapiro.test(subset(data.wide, Genotype=="Knockout")$MTCO1.Ratio)$p.value
+statistics['MTCO1','Wilcoxon'] <- wilcox.test(MTCO1.Ratio~Genotype, data=data.wide)$p.value
+statistics['MTCO1','Levene'] <- leveneTest(MTCO1.Ratio~Genotype, data=data.wide)$"Pr(>F)"[1]
+statistics['MTCO1','Welch'] <- t.test(MTCO1.Ratio~Genotype, data=data.wide, var.equal=F)$p.value
+statistics['MTCO1','Student'] <- t.test(MTCO1.Ratio~Genotype, data=data.wide, var.equal=T)$p.value
+
+statistics['SDHB','Shapiro-WT'] <- shapiro.test(subset(data.wide, Genotype=="Wild-Type")$SDHB.Ratio)$p.value
+statistics['SDHB','Shapiro-KO'] <- shapiro.test(subset(data.wide, Genotype=="Knockout")$SDHB.Ratio)$p.value
+statistics['SDHB','Wilcoxon'] <- wilcox.test(SDHB.Ratio~Genotype, data=data.wide)$p.value
+statistics['SDHB','Levene'] <- leveneTest(SDHB.Ratio~Genotype, data=data.wide)$"Pr(>F)"[1]
+statistics['SDHB','Welch'] <- t.test(SDHB.Ratio~Genotype, data=data.wide, var.equal=F)$p.value
+statistics['SDHB','Student'] <- t.test(SDHB.Ratio~Genotype, data=data.wide, var.equal=T)$p.value
+
+statistics['NDUF88','Shapiro-WT'] <- shapiro.test(subset(data.wide, Genotype=="Wild-Type")$NDUF88.Ratio)$p.value
+statistics['NDUF88','Shapiro-KO'] <- shapiro.test(subset(data.wide, Genotype=="Knockout")$NDUF88.Ratio)$p.value
+statistics['NDUF88','Wilcoxon'] <- wilcox.test(NDUF88.Ratio~Genotype, data=data.wide)$p.value
+statistics['NDUF88','Levene'] <- leveneTest(NDUF88.Ratio~Genotype, data=data.wide)$"Pr(>F)"[1]
+statistics['NDUF88','Welch'] <- t.test(NDUF88.Ratio~Genotype, data=data.wide, var.equal=F)$p.value
+statistics['NDUF88','Student'] <- t.test(NDUF88.Ratio~Genotype, data=data.wide, var.equal=T)$p.value
+
+statistics['Sarcolipin','Shapiro-WT'] <- shapiro.test(subset(data.wide, Genotype=="Wild-Type")$Sarcolipin.Ratio)$p.value
+statistics['Sarcolipin','Shapiro-KO'] <- shapiro.test(subset(data.wide, Genotype=="Knockout")$Sarcolipin.Ratio)$p.value
+statistics['Sarcolipin','Wilcoxon'] <- wilcox.test(Sarcolipin.Ratio~Genotype, data=data.wide)$p.value
+statistics['Sarcolipin','Levene'] <- leveneTest(Sarcolipin.Ratio~Genotype, data=data.wide)$"Pr(>F)"[1]
+statistics['Sarcolipin','Welch'] <- t.test(Sarcolipin.Ratio~Genotype, data=data.wide, var.equal=F)$p.value
+statistics['Sarcolipin','Student'] <- t.test(Sarcolipin.Ratio~Genotype, data=data.wide, var.equal=T)$p.value
+
+statistics['CD36','Shapiro-WT'] <- shapiro.test(subset(data.wide, Genotype=="Wild-Type")$CD36.Ratio)$p.value
+statistics['CD36','Shapiro-KO'] <- shapiro.test(subset(data.wide, Genotype=="Knockout")$CD36.Ratio)$p.value
+statistics['CD36','Wilcoxon'] <- wilcox.test(CD36.Ratio~Genotype, data=data.wide)$p.value
+statistics['CD36','Levene'] <- leveneTest(CD36.Ratio~Genotype, data=data.wide)$"Pr(>F)"[1]
+statistics['CD36','Welch'] <- t.test(CD36.Ratio~Genotype, data=data.wide, var.equal=F)$p.value
+statistics['CD36','Student'] <- t.test(CD36.Ratio~Genotype, data=data.wide, var.equal=T)$p.value
+```
+
+
+```{r s6k-quantification, fig.cap="Normalized mTORC1 Activity in Quadriceps"}
+ymax <- max(summary$pS6K.norm_mean + summary$pS6K.norm_se, na.rm=T)
+plot <- with(summary, barplot(pS6K.norm_mean,
+                      names.arg=Genotype,
+                      ylim=c(0,ymax),
+                      las=1,
+                      main="S6K Phosphorylation",
+                      ylab=("Relative Phosphorylation")))
+with(summary, superpose.eb(
+  plot,
+  pS6K.norm_mean,
+  pS6K.norm_se
+))
+```
+
+```{r s6-quantification, fig.cap="Normalized S6K Activity in Quadriceps"}
+ymax <- max(summary$pS6.norm_mean + summary$pS6.norm_se, na.rm=T)
+plot <- with(summary, barplot(pS6.norm_mean,
+                      names.arg=Genotype,
+                      ylim=c(0,ymax),
+                      las=1,
+                      main="S6 Phosphorylation",
+                      ylab=("Relative Phosphorylation")))
+with(summary, superpose.eb(
+  plot,
+  pS6.norm_mean,
+  pS6.norm_se
+))
+```
+
+```{r mTORC1-quantification, fig.cap="Normalized mTORC1 Activity in Quadriceps"}
+par(mfrow=c(1,2))
+ymax <- max(summary$pS6K.norm_mean + summary$pS6K.norm_se, na.rm=T)
+plot <- with(summary, barplot(pS6K.norm_mean,
+                      names.arg=Genotype,
+                      ylim=c(0,ymax),
+                      las=1,
+                      main="S6K Phosphorylation",
+                      ylab=("Relative Phosphorylation")))
+with(summary, superpose.eb(
+  plot,
+  pS6K.norm_mean,
+  pS6K.norm_se
+))
+
+ymax <- max(summary$pS6.norm_mean + summary$pS6.norm_se, na.rm=T)
+plot <- with(summary, barplot(pS6.norm_mean,
+                      names.arg=Genotype,
+                      ylim=c(0,ymax),
+                      las=1,
+                      main="S6 Phosphorylation",
+                      ylab=("Relative Phosphorylation")))
+with(summary, superpose.eb(
+  plot,
+  pS6.norm_mean,
+  pS6.norm_se
+))
+```
+
+```{r jnk-quantification, fig.cap="Normalized JNK Phosphorylation in Quadriceps"}
+ymax <- max(summary$pJNK.norm_mean + summary$pJNK.norm_se, na.rm=T)
+plot <- with(summary, barplot(pJNK.norm_mean,
+                      names.arg=Genotype,
+                      ylim=c(0,ymax),
+                      las=1,
+                      main="JNK Phosphorylation",
+                      ylab=("Relative Phosphorylation")))
+with(summary, superpose.eb(
+  plot,
+  pJNK.norm_mean,
+  pJNK.norm_se
+))
+```
+
+```{r lc3-quantification, fig.cap="Normalized LC3 Processing in Quadriceps"}
+ymax <- max(summary$LC3.norm_mean + summary$LC3.norm_se, na.rm=T)
+plot <- with(summary, barplot(LC3.norm_mean,
+                      names.arg=Genotype,
+                      ylim=c(0,ymax),
+                      las=1,
+                      main="LC3 Processing",
+                      ylab=("LC3-II/LC3-I Ratio")))
+with(summary, superpose.eb(
+  plot,
+  LC3.norm_mean,
+  LC3.norm_se
+))
+```
+
+
+```{r mitoprofile-quantification, fig.cap="Normalized Mitochondrial Protein Levels in Quadriceps"}
+par(mfrow=c(1,5))
+ymax <- max(summary$ATP5A.norm_mean + summary$ATP5A.norm_se, na.rm=T)
+plot <- with(summary, barplot(ATP5A.norm_mean,
+                      names.arg=Genotype,
+                      ylim=c(0,ymax),
+                      las=2,
+                      main="CV-ATP5A",
+                      ylab=("ATP5A/GAPDH Levels")))
+with(summary, superpose.eb(
+  plot,
+  ATP5A.norm_mean,
+  ATP5A.norm_se
+))
+
+ymax <- max(summary$UQCRC2.norm_mean + summary$UQCRC2.norm_se, na.rm=T)
+plot <- with(summary, barplot(UQCRC2.norm_mean,
+                      names.arg=Genotype,
+                      ylim=c(0,ymax),
+                      las=2,
+                      main="CIII-UQCRC2",
+                      ylab=("UQCRC2/GAPDH Levels")))
+with(summary, superpose.eb(
+  plot,
+  UQCRC2.norm_mean,
+  UQCRC2.norm_se
+))
+
+ymax <- max(summary$MTCO1.norm_mean + summary$MTCO1.norm_se, na.rm=T)
+plot <- with(summary, barplot(MTCO1.norm_mean,
+                      names.arg=Genotype,
+                      ylim=c(0,ymax),
+                      las=2,
+                      main="CIV-MTCO1",
+                      ylab=("MTCO1/GAPDH Levels")))
+with(summary, superpose.eb(
+  plot,
+  MTCO1.norm_mean,
+  MTCO1.norm_se
+))
+
+ymax <- max(summary$SDHB.norm_mean + summary$SDHB.norm_se, na.rm=T)
+plot <- with(summary, barplot(SDHB.norm_mean,
+                      names.arg=Genotype,
+                      ylim=c(0,ymax),
+                      las=2,
+                      main="CII-SDHB",
+                      ylab=("SDHB/GAPDH Levels")))
+with(summary, superpose.eb(
+  plot,
+  SDHB.norm_mean,
+  SDHB.norm_se
+))
+
+
+
+ymax <- max(summary$NDUF88.norm_mean + summary$NDUF88.norm_se, na.rm=T)
+plot <- with(summary, barplot(NDUF88.norm_mean,
+                      names.arg=Genotype,
+                      ylim=c(0,ymax),
+                      las=2,
+                      main="CV-NDUF88",
+                      ylab=("NDUF88/GAPDH Levels")))
+with(summary, superpose.eb(
+  plot,
+  NDUF88.norm_mean,
+  NDUF88.norm_se
+))
+```
+
+
+```{r cd36-quantification, fig.cap="Normalized CD36 Levels in Quadriceps"}
+ymax <- max(summary$CD36.norm_mean + summary$CD36.norm_se, na.rm=T)
+plot <- with(summary, barplot(CD36.norm_mean,
+                      names.arg=Genotype,
+                      ylim=c(0,ymax),
+                      las=1,
+                      main="CD36 Levels",
+                      ylab=("CD36/GAPDH Levels")))
+with(summary, superpose.eb(
+  plot,
+  CD36.norm_mean,
+  CD36.norm_se
+))
+```
+
+```{r lat1-quantification, fig.cap="Normalized LAT1 Protein Levels in Quadriceps"}
+par(mfrow=c(1,2))
+ymax <- max(summary$LAT1.norm_mean + summary$LAT1.norm_se, na.rm=T)
+plot <- with(summary, barplot(LAT1.norm_mean,
+                      names.arg=Genotype,
+                      ylim=c(0,ymax),
+                      las=2,
+                      main="LAT1",
+                      ylab=("LAT1/GAPDH Levels")))
+with(summary, superpose.eb(
+  plot,
+  LAT1.norm_mean,
+  LAT1.norm_se
+))
+
+ymax <- max(summary$`4F2hc.norm_mean` + summary$`4F2hc.norm_se`, na.rm=T)
+plot <- with(summary, barplot(`4F2hc.norm_mean`,
+                      names.arg=Genotype,
+                      ylim=c(0,ymax),
+                      las=2,
+                      main="4F2hc",
+                      ylab=("4F2hc/GAPDH Levels")))
+with(summary, superpose.eb(
+  plot,
+  `4F2hc.norm_mean`,
+  `4F2hc.norm_se`
+))
+
+
+```
+
+
+```{r sarcolipin-quantification}
+ymax <- max(summary$Sarcolipin.norm_mean + summary$Sarcolipin.norm_se, na.rm=T)
+plot <- with(summary, barplot(Sarcolipin.norm_mean,
+                      names.arg=Genotype,
+                      ylim=c(0,ymax),
+                      las=1,
+                      main="Sarcolipin",
+                      ylab=("Sarcolipin/GAPDH Levels")))
+with(summary, superpose.eb(
+  plot,
+  Sarcolipin.norm_mean,
+  Sarcolipin.norm_se
+))
+```
+
+
+# Statistics
+
+```{r statistics}
+kable(statistics, caption="Statistical Summary")
+```
+
+Sarcolipin is upregulated `r summary$Sarcolipin.norm_mean[2]` fold, p=`r statistics['Sarcolipin','Student']` from a Student's *t*-test.
+
+# Session Information
+```{r sessionInfo, results='asis'}
+toLatex(sessionInfo())
+```

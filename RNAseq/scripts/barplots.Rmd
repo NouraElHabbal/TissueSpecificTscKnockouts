@@ -91,6 +91,7 @@ myosin_heavy_chain_main <- c('Myh1','Myh2','Myh4','Myh7')
 slow_twitch_genes <- c('Mb','Tnni1','Ppp3ca','Ckmt2','Ppargc1a','Myh7','Atp2a2')
 oxidative_markers_rosenbaum <- c('Myh7','Atp2a2')
 oxidative_markers_rosenbaum_2 <- c('Myh1','Myh7','Atp2a2','Sln')
+fiber_markers <- c('Myh7','Atp2a2','Myh4','Atp2a1')
 fast_twitch_genes <- c('Pvalb','Tnni2','Ckm','Myh4','Myh1')
 myotubular_degradation <- c('Trim63','Fbxo32')
 muscle_differentiation <- c('Cdkn1a','Myog','Myod1','Myf4','Myf5','Myf6','Mef2c')
@@ -113,6 +114,7 @@ jnk_activators <- c('Map3k1','Map3k4','Map3k9','Map3k10','Map3k11','Map3k5','Map
 hippo <- c('Yap1','Taz','Tead1','Tead2','Tead3','Tead4','Lats1','Lats2')
 guridi_genes <- c('Ucp2','Ppargc1b','Pdk4','Fasn','Bdh1','Oxct1','Hmgcs2','Acat1','Klb','Fgf21','Ddit3','Hspa5','Xbp1','Trib3')
 guridi_genes_2 <- c('Ucp2','Ppargc1b','Fasn','Bdh1','Oxct1','Hmgcs2','Acat1','Klb','Fgf21','Ddit3','Hspa5','Xbp1','Trib3')
+sln <- c('Sln')
 FGF21_related <- c('Fgf21','Klb','Fgfr1','Fgfr2','Fgfr3','Frs2','Hmgcs2','Sirt1','Sirt3','Mapk1','Mapk3')
 ca_cycling <- c('Atp2a2','Atp2a3','Sln','Pln','Ryr1','Ryr2','Ryr3')
 ca_reuptake <- c('Stim1','Stim2')
@@ -136,7 +138,7 @@ ribosomes <- c('RPL7','RPL13A','RPL34','RPS28','RPS24','RPS5','FAU','RPS6','RPS1
 ribosomes <- capitalize(tolower(ribosomes))
 
 
-gene.data.name <- c('tsc_isoforms','glycogen_genes','pp1_regulatory_subunits','interleukins','srebp','linoleate_metabolism','myokines','tg_synthesis','lipolysis','oglnac_metabolisn','ribosomes','ppar_isoforms','b_oxidation','ppard_targets','myosin_heavy_chain','myosin_heavy_chain_main','slow_twitch_genes','fast_twitch_genes','myotubular_degradation','muscle_differentiation','autophagy','mitochondrial_genes','fatty_acid_uptake','fatty_acid_uptake_no_FABP3','fabp_cd36','cb_receptors','oxidative_markers_rosenbaum','serca','uncouplers','Jnk_related_genes','aa_transporters','aa_transporters_up','jnk_activators','hippo','guridi_genes','guridi_genes_2','FGF21_related','MitochondrialCalcium_genes','mitofusins','ca_reuptake','er_stress','irx_genes','ketosis_muscle','ketone_body_generation','ketosis_receptors','pfk_2_isoforms','er_stress_select','gdf_isoforms','tgf_beta_superfamily')
+gene.data.name <- c('tsc_isoforms','glycogen_genes','pp1_regulatory_subunits','interleukins','srebp','linoleate_metabolism','myokines','tg_synthesis','lipolysis','oglnac_metabolisn','ribosomes','ppar_isoforms','b_oxidation','ppard_targets','myosin_heavy_chain','myosin_heavy_chain_main','slow_twitch_genes','fast_twitch_genes','myotubular_degradation','muscle_differentiation','autophagy','mitochondrial_genes','fatty_acid_uptake','fatty_acid_uptake_no_FABP3','fabp_cd36','cb_receptors','oxidative_markers_rosenbaum','serca','uncouplers','Jnk_related_genes','aa_transporters','aa_transporters_up','jnk_activators','hippo','guridi_genes','guridi_genes_2','FGF21_related','MitochondrialCalcium_genes','mitofusins','ca_reuptake','er_stress','irx_genes','ketosis_muscle','ketone_body_generation','ketosis_receptors','pfk_2_isoforms','er_stress_select','gdf_isoforms','tgf_beta_superfamily','fiber_markers','sln')
 
 for (name in gene.data.name){
   #name <- as.name(name) #convert string to variable name

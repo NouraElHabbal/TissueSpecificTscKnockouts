@@ -3,14 +3,14 @@ title: "mTSC Food Intake Analysis"
 author: "Dave Bridges, Molly C. Mulcahy, and Detrick Snyder"
 date: "October 2019"
 output:
-  pdf_document:
-    highlight: tango
-    keep_tex: yes
-    number_sections: yes
-    toc: yes
   html_document:
     highlight: tango
     keep_md: yes
+    number_sections: yes
+    toc: yes
+  pdf_document:
+    highlight: tango
+    keep_tex: yes
     number_sections: yes
     toc: yes
 ---
@@ -185,12 +185,11 @@ ggplot(cage.summary.data,
            x=HFD)) +
   geom_bar(stat='identity',position='dodge',width=0.75) +
   geom_errorbar(position=position_dodge(width=0.75), width=0.5) +
-  facet_grid(~Sex)+ labs(x="Diet",y="average kcals consumed per mouse per day")+
-  ggtitle("Average Caloric Intake")
+  facet_grid(~Sex)+ labs(x="Diet",y="Food Intake (kcal/Day)")
 #p-values for interaction terms were >0.1, so interaction terms were left out of final analysis
 cage.aov<-aov(Average ~ Sex + HFD + Genotype, data = cage.summary.data)
-
-summary(cage.aov)
+library(broom)
+cage.aov %>% tidy %>% kable(caption="ANOVA for diet and genotype Effects on averaged food intake")
 
 ```
 
@@ -225,22 +224,22 @@ library(lmerTest)
 #building model from the bottom up
 intake.null <- lmer(calorie.intake ~ 1 + (1|Cage), data=exp.data.22)
 intake.lme.hfd <- lmer(calorie.intake ~ HFD + (1|Cage), data=exp.data.22)
-anova(intake.null, intake.lme.hfd)#Diet assignment will be included in final model
+anova(intake.null, intake.lme.hfd) %>% kable (caption="Chi squared test comparing a model with and without diet as a covariate") #Diet assignment will be included in final model
 
 intake.lme.age <- lmer(calorie.intake ~ HFD + age + (1|Cage), data=exp.data.22)
-anova(intake.lme.hfd, intake.lme.age)#age will be inlcuded in final model
+anova(intake.lme.hfd, intake.lme.age) %>% kable (caption="Chi squared test comparing a model with age and HFD to a model with HFD") #age will be inlcuded in final model 
 
 intake.lme.sex <- lmer(calorie.intake ~ HFD + age + Sex + (1|Cage), data=exp.data.22) 
-anova(intake.lme.sex, intake.lme.age)#Although sex isn't significant, it will be included in the final model, as it was part of the research question
+anova(intake.lme.sex, intake.lme.age) %>% kable (caption="Chi squared test comparing a model with age and HFD those and sex as a covariate") #Although sex isn't significant, it will be included in the final model, as it was part of the research question
 
 library(broom)
 #final model
 intake.lme.geno <- lmer(calorie.intake ~ HFD + age + Sex + Genotype + (1|Cage), data=exp.data.22) 
-anova(intake.lme.sex, intake.lme.geno) %>% kable
+anova(intake.lme.sex, intake.lme.geno) %>% kable(caption="Chi squared test for effect of genotype in a model with age, diet and sex as covariates.  This is the final model used.")
 
-intake.lme.geno %>% anova %>% kable #Statistical significance of the final model
+intake.lme.geno %>% anova %>% kable(caption="ANOVA of final model with coefficient p-values") #Statistical significance of the final model
 
-intake.lme.geno %>% fixef %>% kable #generates the effect estimates of the full model
+intake.lme.geno %>% fixef %>% kable(caption="Coefficients from final model") #generates the effect estimates of the full model
 
 ls_means(intake.lme.geno, pairwise=T) %>% 
   select(c(1,2,3,4,7)) %>% 

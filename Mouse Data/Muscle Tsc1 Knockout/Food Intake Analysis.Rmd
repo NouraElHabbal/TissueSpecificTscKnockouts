@@ -1,0 +1,265 @@
+---
+title: "mTSC Food Intake Analysis"
+author: "Dave Bridges, Molly C. Mulcahy, and Detrick Snyder"
+date: "October 2019"
+output:
+  pdf_document:
+    highlight: tango
+    keep_tex: yes
+    number_sections: yes
+    toc: yes
+  html_document:
+    highlight: tango
+    keep_md: yes
+    number_sections: yes
+    toc: yes
+---
+
+```{r global_options, include=FALSE}
+library(knitr)
+library(tidyr)
+#figures makde will go to directory called figures, will make them as both png and pdf files 
+opts_chunk$set(fig.path='figures/',
+               echo=FALSE, warning=FALSE, message=FALSE,dev=c('png','pdf'))
+options(scipen = 2, digits = 3)
+# set echo and message to TRUE if you want to display code blocks and code output respectively
+
+knitr::knit_hooks$set(inline = function(x) {
+  knitr:::format_sci(x, 'md')
+})
+
+
+superpose.eb <- function (x, y, ebl, ebu = ebl, length = 0.08, ...)
+  arrows(x, y + ebu, x, y - ebl, angle = 90, code = 3,
+  length = length, ...)
+
+  
+se <- function(x) sd(x, na.rm=T)/sqrt(length(x))
+
+#load these packages, nearly always needed
+library(tidyr)
+library(dplyr)
+
+# sets maize and blue color scheme
+color.scheme <- c('#00274c', '#ffcb05')
+```
+
+
+# Raw Data
+
+```{r data-input}
+library(readr) #loads the readr package
+downloaded_file <- "Food Intake Log.csv"
+
+#this loads the file into a dataframe called exp.data 
+exp.data <- read_csv(downloaded_file, col_types = 
+                       cols(Food.Intake = col_double()))
+                      
+exp.data$cage.size<-as.numeric(exp.data$`cage.size`)
+exp.data <-
+  exp.data %>%
+  mutate(Food.Intake=`food eaten per mouse`) %>%
+  rename(HFD = `HFD (Y/N)`) %>%
+  rename(age = `age (weeks)`)%>%
+  select(genotype, Cage, sex, age, Food.Intake, HFD, Notes, "ear tag", "calorie.intake", cage.size)
+#calorie intake is a metric entered at the level of the spreadsheet where the calories eaten per cage is divided by the number of animals in each cage and multiplied by the utilizable energy in each diet (HFD= 4.73 kcal/g, NCD=2.91 kcal/g).
+library(forcats)
+exp.data$Genotype <- 
+  fct_recode(as.factor(exp.data$genotype), 
+              'fl/fl; +/+' = 'fl/fl;+/+',
+              'fl/fl; Tg/+'='fl/fl;tg/+',
+              'fl/fl; Tg/+'='fl/fl;Tg/+')
+
+exp.data$HFD <- 
+  fct_recode(as.factor(exp.data$HFD), 
+              'HFD' = 'y',
+             'HFD'='Y',
+              'NCD'='n',
+             'NCD'='N')
+ 
+exp.data$Sex <- 
+  fct_recode(as.factor(exp.data$sex), 
+              'Female' = 'f',
+             'Female' = 'F',
+              'Male'='M',
+             'Male'='m')
+
+exp.data.filtered <- 
+  exp.data %>% 
+  mutate(Cage=as.factor(Cage),
+         Genotype=as.factor(Genotype),
+         Food.Intake = as.numeric(Food.Intake),
+         calorie.intake= as.numeric(calorie.intake)/7,#this will result in food intake being an average daily metric
+         HFD = as.factor(HFD))%>%
+  filter(!(is.na(Genotype))) %>%
+  filter(!(is.na(Sex))) %>%
+  filter(!(is.na(Food.Intake)))
+```
+
+
+```{r data-manipulation}
+library(dplyr)
+library(knitr)
+library(ggplot2)
+library(nlme) 
+#Observations were food intake per cage is <10 grams per week were exluded as it indicated that animal technicians have added food without the lab's knowlegde. Food intake >60 grams per week were noted to have either minor '*' or major'**'food shredding during measurement of food data. These were excluded for making food intake artificially much higher than what was consumed. 
+chewers<- c("*","**")
+exp.data.filtered <- filter(exp.data.filtered,!(Notes %in% chewers))
+
+#only use observations from ages 2-26 weeks, 22 weeks was used because compared to 12,16, and 25 weeks, this provided the clearest figures of patterns for food intake
+exp.data.22<-filter(exp.data.filtered, !(age>22))
+exp.data.22<-filter(exp.data.filtered, !(age<2))
+
+#create a grouped variable with 3 components
+exp.data.22$group<- with(exp.data.22, paste0(Sex, HFD, Genotype))
+#combine only needed variables into data set for use
+exp.data.22<-exp.data.22%>%
+  select(Genotype, Sex, calorie.intake, cage.size, Cage, Food.Intake, `ear tag`, age, HFD, group)
+
+#average data by 3-component group variable and age of animals
+avg.data.22 <-
+  exp.data.22 %>%
+  group_by(HFD, age, Genotype, Sex)%>%
+  select (calorie.intake)%>%
+  summarize_all(.funs = funs(mean, se))%>%
+  na.omit()
+```
+
+```{r intake-graphs}
+#average food intake per animal per day
+ggplot(data = avg.data.22, aes(x=age, y=mean, color=Genotype))+
+  geom_line()+
+facet_grid(Sex~HFD)+
+  geom_errorbar(aes(ymin= mean-se,
+                ymax= mean+se), width=0.1)+
+  labs(x="age in weeks", y="mean calories per animal/day")+
+  ggtitle("Average Weekly Food Intake")
+```
+These data can be found in **`r getwd()`** in a file named **`r ifelse(downloaded_file %in% dir(), downloaded_file, "no file found")`**.  This script was most recently updated on **`r date()`**.
+# Analysis
+
+```{r weekly-intake-plots}
+library(ggplot2)
+#lineplot of weekly food intake for each Sex and Diet
+lineplot <- ggplot(filter(exp.data.22, !(is.na(Sex))), 
+                          aes(y=Food.Intake,
+                                  x=age,
+                                  col=Genotype)) +geom_smooth()+
+  labs(x="Age in weeks", y="Average food intake per day")+
+  ggtitle("Food intake by Genotype")
+lineplot
+lineplot + geom_point() +
+  geom_smooth(se=F, method='lm') +
+  facet_grid(Sex~HFD) +
+  labs(y='Food Intake (g/week/mouse)',
+       x='Age (weeks)')+
+  ggtitle("Food intake per mouse")
+#Average intake data by each cage
+cage.data <-
+  exp.data.22 %>%
+  group_by(Sex,Genotype,HFD,Cage) %>%
+  summarize(Cage.mean = mean(calorie.intake,na.rm=T),
+            Cage.se =se(calorie.intake)) #error accros weeks
+
+ggplot(cage.data,
+       aes(y=Cage.mean,
+           x=Cage,
+           fill=Genotype)) +
+  geom_bar(stat='identity',position='dodge') +
+  facet_grid(Sex~HFD)+
+  labs(x="Age in Weeks", y="average food consumed")+
+  ggtitle("Averages per cage per week")
+
+cage.summary.data <-
+  cage.data %>%
+  group_by(Sex,HFD,Genotype) %>%
+  summarize(Average = mean(Cage.mean,na.rm=T),
+            Error = se(Cage.mean),
+            n = length(Cage.mean))
+#barplot of the mean ofweekly cage averages for each diet, genotype, and sex 
+ggplot(cage.summary.data,
+       aes(y=Average,
+           ymin=Average-Error,
+           ymax=Average+Error,
+           fill=Genotype,
+           x=HFD)) +
+  geom_bar(stat='identity',position='dodge',width=0.75) +
+  geom_errorbar(position=position_dodge(width=0.75), width=0.5) +
+  facet_grid(~Sex)+ labs(x="Diet",y="average kcals consumed per mouse per day")+
+  ggtitle("Average Caloric Intake")
+#p-values for interaction terms were >0.1, so interaction terms were left out of final analysis
+cage.aov<-aov(Average ~ Sex + HFD + Genotype, data = cage.summary.data)
+
+summary(cage.aov)
+
+```
+
+
+
+```{r weekly-lineplot-food-intake-by-cage}
+lineplot <- ggplot(filter(exp.data.22, !(is.na(Sex))),
+aes(y=Food.Intake,
+ x=age,
+col=Genotype,
+group=Cage))
+
+lineplot + geom_point() +
+  geom_line() +
+  facet_grid(Sex~HFD) +
+  labs(y='Food Intake (g/week/mouse)',
+       x='Age (weeks)',
+      title="Food Intake grouped by Cage")
+```
+
+
+
+
+## Statistics
+
+```{r lme-stats}
+library(car)
+library(dbplyr)
+library(lme4)
+library(lmerTest)
+
+#building model from the bottom up
+intake.null <- lmer(calorie.intake ~ 1 + (1|Cage), data=exp.data.22)
+intake.lme.hfd <- lmer(calorie.intake ~ HFD + (1|Cage), data=exp.data.22)
+anova(intake.null, intake.lme.hfd)#Diet assignment will be included in final model
+
+intake.lme.age <- lmer(calorie.intake ~ HFD + age + (1|Cage), data=exp.data.22)
+anova(intake.lme.hfd, intake.lme.age)#age will be inlcuded in final model
+
+intake.lme.sex <- lmer(calorie.intake ~ HFD + age + Sex + (1|Cage), data=exp.data.22) 
+anova(intake.lme.sex, intake.lme.age)#Although sex isn't significant, it will be included in the final model, as it was part of the research question
+
+library(broom)
+#final model
+intake.lme.geno <- lmer(calorie.intake ~ HFD + age + Sex + Genotype + (1|Cage), data=exp.data.22) 
+anova(intake.lme.sex, intake.lme.geno) %>% kable
+
+intake.lme.geno %>% anova %>% kable #Statistical significance of the final model
+
+intake.lme.geno %>% fixef %>% kable #generates the effect estimates of the full model
+
+ls_means(intake.lme.geno, pairwise=T) %>% 
+  select(c(1,2,3,4,7)) %>% 
+  kable(caption="Pairwise contrasts from mixed linear model, for females on NCD.  The random effect is the cage.",row.names=F)
+```
+
+```{r counts}
+#recruitment table
+exp.data.filtered %>% 
+  filter(age>2&age<22) %>%
+  group_by(Sex,HFD,Genotype) %>%
+  distinct(Cage) %>%
+  count %>%
+  kable
+```
+
+
+# Session Information
+
+```{r session-information, echo=T}
+sessionInfo()
+```

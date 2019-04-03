@@ -26,7 +26,7 @@ output:
 
 
 ![](figures/intake-graphs-1.png)<!-- -->
-These data can be found in **/Users/davebrid/Documents/GitHub/TissueSpecificTscKnockouts/Mouse Data/Muscle Tsc1 Knockout** in a file named **Food Intake Log.csv**.  This script was most recently updated on **Wed Apr  3 15:42:42 2019**.
+These data can be found in **/Users/davebrid/Documents/GitHub/TissueSpecificTscKnockouts/Mouse Data/Muscle Tsc1 Knockout** in a file named **Food Intake Log.csv**.  This script was most recently updated on **Wed Apr  3 15:56:48 2019**.
 # Analysis
 
 ![](figures/weekly-intake-plots-1.png)<!-- -->![](figures/weekly-intake-plots-2.png)<!-- -->![](figures/weekly-intake-plots-3.png)<!-- -->![](figures/weekly-intake-plots-4.png)<!-- -->

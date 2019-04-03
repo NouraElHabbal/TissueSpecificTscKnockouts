@@ -185,7 +185,14 @@ ggplot(cage.summary.data,
            x=HFD)) +
   geom_bar(stat='identity',position='dodge',width=0.75) +
   geom_errorbar(position=position_dodge(width=0.75), width=0.5) +
-  facet_grid(~Sex)+ labs(x="Diet",y="Food Intake (kcal/Day)")
+  facet_grid(~Sex)+ labs(x="Diet",y="Food Intake (kcal/Day)") +
+  scale_fill_hue(labels = c("Controls", "Knockout")) +
+  theme(legend.position = c(0.15, 0.9),
+        legend.background = element_rect(fill=alpha(0.1)),
+        legend.text=element_text(size=14),
+        axis.text=element_text(size=14),
+        axis.title=element_text(size=14),
+        legend.title=element_blank())
 #p-values for interaction terms were >0.1, so interaction terms were left out of final analysis
 cage.aov<-aov(Average ~ Sex + HFD + Genotype, data = cage.summary.data)
 library(broom)

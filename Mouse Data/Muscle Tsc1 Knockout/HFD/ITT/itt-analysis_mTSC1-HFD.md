@@ -219,10 +219,41 @@ melted.data <- melt(itt.glucose[,c('animal.id','genotype',paste("t", seq(0,120,1
                     id.vars=c('genotype','animal.id'), value.name="glucose", variable.name='time')
 fit.lme <- lmer(glucose~time*genotype+(1|animal.id), data=melted.data, REML=F)
 fit.no.genotype <- lmer(glucose~time+(1|animal.id), data=melted.data, REML=F)
+
+#calculated AUC
+auc.data <-
+  itt.glucose %>%
+  select(Knockout,Sex,animal.MouseID,t0:t120) %>%
+  mutate(AUC = t0+t15+t30+t45+t60+t75+t90+t105+t120) 
+
+auc.summary <-
+  auc.data %>%
+  group_by(Sex,Knockout) %>%
+  summarize_at('AUC', .funs=funs(mean(.,na.rm=T), se, shapiro.test(.)$p.value))
+
+kable(auc.summary, caption="Summary statistics for AUC")
+```
+
+
+
+Table: Summary statistics for AUC
+
+Sex   Knockout     mean      se       $
+----  ----------  -----  ------  ------
+F     Knockout      394    33.9   0.690
+F     Wild-Type     590    51.3   0.036
+M     Knockout      484    30.9   0.395
+M     Wild-Type     891   118.9   0.230
+
+```r
+auc.f <- auc.summary %>% filter(Sex=="F") %>% pull(mean)
+auc.m <- auc.summary %>% filter(Sex=="M") %>% pull(mean)
+library(car)
 ```
 
 We also did a mixed linear model of these data.  From a test between a model with an interacting time:genotype term and a model without any genotype data, we found a Chi-squared value of 79.077 and a p-value of from a Chi-squared value of  5.208&times; 10^-7^.
 
+We calculated the AUC and found a 33.22 improvement in insulin sensitivity in females (**p=0.049** from a Mann-Whitney test) and a 45.679 improvement in male mice (levene Test p=0.001; Welch's *t* test **p=0.014**).
 
 ## Session Information
 
@@ -234,7 +265,7 @@ sessionInfo()
 ```
 ## R version 3.5.0 (2018-04-23)
 ## Platform: x86_64-apple-darwin15.6.0 (64-bit)
-## Running under: macOS  10.14.2
+## Running under: macOS  10.14.4
 ## 
 ## Matrix products: default
 ## BLAS: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRblas.0.dylib
@@ -247,17 +278,25 @@ sessionInfo()
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-##  [1] reshape2_1.4.3  lme4_1.1-19     Matrix_1.2-15   bindrcpp_0.2.2 
-##  [5] readr_1.3.1     plyr_1.8.4      RCurl_1.95-4.11 bitops_1.0-6   
-##  [9] rjson_0.2.20    dplyr_0.7.8     tidyr_0.8.2     knitr_1.21     
+##  [1] car_3.0-2       carData_3.0-2   reshape2_1.4.3  lme4_1.1-19    
+##  [5] Matrix_1.2-15   bindrcpp_0.2.2  readr_1.3.1     plyr_1.8.4     
+##  [9] RCurl_1.95-4.11 bitops_1.0-6    rjson_0.2.20    dplyr_0.7.8    
+## [13] tidyr_0.8.2     knitr_1.21     
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] Rcpp_1.0.0       nloptr_1.2.1     pillar_1.3.1     compiler_3.5.0  
-##  [5] bindr_0.1.1      tools_3.5.0      digest_0.6.18    evaluate_0.12   
-##  [9] tibble_2.0.0     nlme_3.1-137     lattice_0.20-38  pkgconfig_2.0.2 
-## [13] rlang_0.3.1      yaml_2.2.0       xfun_0.4         stringr_1.3.1   
-## [17] hms_0.4.2        grid_3.5.0       tidyselect_0.2.5 glue_1.3.0      
-## [21] R6_2.3.0         rmarkdown_1.11   minqa_1.2.4      purrr_0.2.5     
-## [25] magrittr_1.5     htmltools_0.3.6  splines_3.5.0    MASS_7.3-51.1   
-## [29] assertthat_0.2.0 stringi_1.2.4    crayon_1.3.4
+##  [1] zip_1.0.0         Rcpp_1.0.0        cellranger_1.1.0 
+##  [4] highr_0.7         nloptr_1.2.1      pillar_1.3.1     
+##  [7] compiler_3.5.0    bindr_0.1.1       forcats_0.3.0    
+## [10] tools_3.5.0       digest_0.6.18     evaluate_0.12    
+## [13] tibble_2.0.0      nlme_3.1-137      lattice_0.20-38  
+## [16] pkgconfig_2.0.2   rlang_0.3.1       openxlsx_4.1.0   
+## [19] curl_3.2          yaml_2.2.0        haven_2.0.0      
+## [22] xfun_0.4          rio_0.5.16        stringr_1.3.1    
+## [25] hms_0.4.2         grid_3.5.0        tidyselect_0.2.5 
+## [28] data.table_1.11.8 glue_1.3.0        R6_2.3.0         
+## [31] readxl_1.2.0      foreign_0.8-71    rmarkdown_1.11   
+## [34] minqa_1.2.4       purrr_0.2.5       magrittr_1.5     
+## [37] htmltools_0.3.6   splines_3.5.0     MASS_7.3-51.1    
+## [40] abind_1.4-5       assertthat_0.2.0  stringi_1.2.4    
+## [43] crayon_1.3.4
 ```

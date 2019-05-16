@@ -236,10 +236,28 @@ melted.data <- melt(itt.glucose[,c('animal.id','genotype',paste("t", seq(0,120,1
                     id.vars=c('genotype','animal.id'), value.name="glucose", variable.name='time')
 fit.lme <- lmer(glucose~time*genotype+(1|animal.id), data=melted.data, REML=F)
 fit.no.genotype <- lmer(glucose~time+(1|animal.id), data=melted.data, REML=F)
+
+#calculated AUC
+auc.data <-
+  itt.glucose %>%
+  select(Knockout,Sex,animal.MouseID,t0:t120) %>%
+  mutate(AUC = t0+t15+t30+t45+t60+t75+t90+t105+t120) 
+
+auc.summary <-
+  auc.data %>%
+  group_by(Sex,Knockout) %>%
+  summarize_at('AUC', .funs=funs(mean(.,na.rm=T), se, shapiro.test(.)$p.value))
+
+kable(auc.summary, caption="Summary statistics for AUC")
+
+auc.f <- auc.summary %>% filter(Sex=="F") %>% pull(mean)
+auc.m <- auc.summary %>% filter(Sex=="M") %>% pull(mean)
+library(car)
 ```
 
 We also did a mixed linear model of these data.  From a test between a model with an interacting time:genotype term and a model without any genotype data, we found a Chi-squared value of `r anova(fit.lme, fit.no.genotype)$"Chisq"[2]` and a p-value of from a Chi-squared value of  `r anova(fit.lme, fit.no.genotype)[,'Pr(>Chisq)'][2]`.
 
+We calculated the AUC and found a `r -(auc.f[1]-auc.f[2])/auc.f[2]*100` improvement in insulin sensitivity in females (**p=`r wilcox.test(AUC~Knockout, data=auc.data %>% filter(Sex=="F"))$p.value`** from a Mann-Whitney test) and a `r -(auc.m[1]-auc.m[2])/auc.m[2]*100` improvement in male mice (levene Test p=`r leveneTest(AUC~Knockout, data=auc.data %>% filter(Sex=="M"))$"Pr(>F)"[1]`; Welch's *t* test **p=`r t.test(AUC~Knockout, var.equal=F, data=auc.data %>% filter(Sex=="F"))$p.value`**).
 
 ## Session Information
 

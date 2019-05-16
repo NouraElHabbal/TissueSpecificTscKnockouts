@@ -234,8 +234,32 @@ library(lme4)
 library(reshape2)
 melted.data <- melt(itt.glucose[,c('animal.id','genotype',paste("t", seq(0,120,15), sep=""))],
                     id.vars=c('genotype','animal.id'), value.name="glucose", variable.name='time')
-fit.lme <- lmer(glucose~time*genotype+(1|animal.id), data=melted.data, REML=F)
-fit.no.genotype <- lmer(glucose~time+(1|animal.id), data=melted.data, REML=F)
+
+long.data <- 
+  itt.glucose %>%
+  select(Knockout,Sex,animal.MouseID,t0:t120) %>%
+  group_by(Knockout,Sex, animal.MouseID) %>%
+  gather(key=Time, value=Glucose, -Knockout, -Sex, -animal.MouseID)
+
+fit.null <- lmer(Glucose~Time+(1|animal.MouseID), data=long.data, REML=F)
+fit.null.sex <- lmer(Glucose~Time+Sex+(1|animal.MouseID), data=long.data, REML=F) # was significantly improved
+fit.null.sex.int <- lmer(Glucose~Time+Sex+Sex:Time+(1|animal.MouseID), 
+                         data=long.data, REML=F) -> fit.null #was also significantly improved, used as null model
+fit.ko <- lmer(Glucose~Time+Sex+Sex:Time+Knockout+(1|animal.MouseID), 
+                         data=long.data, REML=F) #was significant relative to null
+
+fit.ko.int.time <- lmer(Glucose~Time+Sex+Sex:Time+Knockout+Knockout:Time+(1|animal.MouseID), 
+                         data=long.data, REML=F) #was significant relative to fit.ko
+
+fit.ko.int.time <- lmer(Glucose~Time+Sex+Sex:Time+Knockout+Knockout:Time+(1|animal.MouseID), 
+                         data=long.data, REML=F) #was significant relative to fit.ko
+
+fit.ko.sex <- lmer(Glucose~Time + Knockout + Knockout:Time * Sex +(1|animal.MouseID), 
+                         data=long.data, REML=F) #suggests significant modifying effect of sex over model without sex
+fit.ko.sex.null <- lmer(Glucose~Time + Knockout + Knockout:Time + Sex + (1|animal.MouseID), 
+                         data=long.data, REML=F) 
+library(broom)
+anova(fit.ko.sex, fit.ko.sex.null) %>% tidy() %>% kable(caption="Model testing for moderating effect of sex")
 
 #calculated AUC
 auc.data <-
@@ -254,8 +278,6 @@ auc.f <- auc.summary %>% filter(Sex=="F") %>% pull(mean)
 auc.m <- auc.summary %>% filter(Sex=="M") %>% pull(mean)
 library(car)
 ```
-
-We also did a mixed linear model of these data.  From a test between a model with an interacting time:genotype term and a model without any genotype data, we found a Chi-squared value of `r anova(fit.lme, fit.no.genotype)$"Chisq"[2]` and a p-value of from a Chi-squared value of  `r anova(fit.lme, fit.no.genotype)[,'Pr(>Chisq)'][2]`.
 
 We calculated the AUC and found a `r -(auc.f[1]-auc.f[2])/auc.f[2]*100` improvement in insulin sensitivity in females (**p=`r wilcox.test(AUC~Knockout, data=auc.data %>% filter(Sex=="F"))$p.value`** from a Mann-Whitney test) and a `r -(auc.m[1]-auc.m[2])/auc.m[2]*100` improvement in male mice (levene Test p=`r leveneTest(AUC~Knockout, data=auc.data %>% filter(Sex=="M"))$"Pr(>F)"[1]`; Welch's *t* test **p=`r t.test(AUC~Knockout, var.equal=F, data=auc.data %>% filter(Sex=="F"))$p.value`**).
 

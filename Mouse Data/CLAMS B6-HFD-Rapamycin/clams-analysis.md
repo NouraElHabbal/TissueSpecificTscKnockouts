@@ -17,7 +17,7 @@ output:
 After having been acclimitized in the CLAMS at the normal temperature (25C) for 2 days then treatment and diet started simulataneously. 
 
 
-The input files were 2015-10-07-C57BL6J-Rapa-HFD-PreCLAMSEchoMRI.XLSX for the echoMRI data and 2015-10-07-C57BL6J-Rapa-HFD-OxymaxDataFile1.csv  and 2015-10-07-C57BL6J-Rapa-HFD-OxymaxDataFile2.csv for the CLAMS data.  These data can be found in /Users/davebrid/Documents/GitHub/TissueSpecificTscKnockouts/Mouse Data/CLAMS B6-HFD-Rapamycin.  This script was most recently updated on Fri May 17 13:07:02 2019 and includes the following number of animals:
+The input files were 2015-10-07-C57BL6J-Rapa-HFD-PreCLAMSEchoMRI.XLSX for the echoMRI data and 2015-10-07-C57BL6J-Rapa-HFD-OxymaxDataFile1.csv  and 2015-10-07-C57BL6J-Rapa-HFD-OxymaxDataFile2.csv for the CLAMS data.  These data can be found in /Users/davebrid/Documents/GitHub/TissueSpecificTscKnockouts/Mouse Data/CLAMS B6-HFD-Rapamycin.  This script was most recently updated on Fri May 17 13:16:44 2019 and includes the following number of animals:
 
 
 Treatment    Males
@@ -49,11 +49,10 @@ This data was averaged for the VO2 before the HFD switch and after the HFD switc
 
 ![Energy Expenditure Before and After High Fat Diet Treatment](figures/vo2-barplot-1.png)
 
-![Thermogenesis Before and After High Fat Diet Treatment](figures/heat-barplot-1.png)
 
 ## VO2 Statistics
 
-For the vehicle treated animals we noted a 11.08% increase in the volume of oxygen consumed during the dark phase, and a 9.21% increase in the light phase.
+For the vehicle treated animals we noted a 7.887% increase in the volume of oxygen consumed during the dark phase, and a 6.702% increase in the light phase.
 
 Alternatively we used a mixed linear model, with non-interacting covariates for the Light cycle, the lean mass and the treatment  A Chi-squared test comparing a model with or without the Treatment term yielded a p-value of 1.24e-05 for the mice.  This analysis excluded the chow fed animals, and only compares HFD vehicle to HFD drug.
 
@@ -86,6 +85,46 @@ TreatmentRapamycin              -4.506        1.786    -2.522   0.012
 HFDTRUE                         -0.092        1.259    -0.073   0.942
 TreatmentRapamycin:HFDTRUE      -3.959        1.440    -2.750   0.006
 
+## Heat
+
+![Thermogenesis Before and After High Fat Diet Treatment](figures/heat-barplot-1.png)
+
+
+
+## Heat Statistics
+
+For the vehicle treated animals we noted a 11.08% increase in the heat produced during the dark phase, and a 9.21% increase in the light phase.
+
+Alternatively we used a mixed linear model, with non-interacting covariates for the Light cycle, the lean mass and the treatment  A Chi-squared test comparing a model with or without the Treatment term yielded a p-value of 4.69e-05 for the mice.  This analysis excluded the chow fed animals, and only compares HFD vehicle to HFD drug.
+
+The model coefficients are:
+
+
+Table: Model Coefficients for VO2 Mixed Linear Model
+
+                              Coefficent      SE
+---------------------------  -----------  ------
+(Intercept)                        6.402   1.252
+Light.DarkLight                   -1.263   0.075
+Lean                               0.226   0.049
+Exp.Time                           0.011   0.001
+TreatmentRapamycin                -0.526   0.249
+HFDTRUE                            0.191   0.166
+TreatmentRapamycin:HFDTRUE        -0.519   0.190
+
+
+
+Table: Estimates and p-values from mixed linear models for heat production.
+
+                              Estimate   Std..Error   t.value     p.z
+---------------------------  ---------  -----------  --------  ------
+(Intercept)                      6.402        1.252      5.11   0.000
+Light.DarkLight                 -1.263        0.075    -16.79   0.000
+Lean                             0.226        0.049      4.58   0.000
+Exp.Time                         0.011        0.001     12.56   0.000
+TreatmentRapamycin              -0.526        0.249     -2.11   0.035
+HFDTRUE                          0.191        0.166      1.15   0.249
+TreatmentRapamycin:HFDTRUE      -0.519        0.190     -2.73   0.006
 
 ## Respiratory Exchange Rate
 

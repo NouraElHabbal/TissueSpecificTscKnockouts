@@ -238,12 +238,33 @@ superpose.eb(plot,
 legend("topright", c("NCD", "HFD-Vehicle", "HFD-Rapamycin"), bty="n", fill=c("grey",palette()[1:2]))
 ```
 
+
+## VO2 Statistics
+
+For the vehicle treated animals we noted a `r (plotted.data[2,1]-plotted.data[1,1])/plotted.data[1,1]*100`% increase in the volume of oxygen consumed during the dark phase, and a `r (plotted.data[2,2]-plotted.data[1,2])/plotted.data[1,2]*100`% increase in the light phase.
+
+Alternatively we used a mixed linear model, with non-interacting covariates for the Light cycle, the lean mass and the treatment  A Chi-squared test comparing a model with or without the Treatment term yielded a p-value of `r  format(anova(vo2.lme,vo2.lme.null)$"Pr(>Chisq)"[2], scientific=T)` for the mice.  This analysis excluded the chow fed animals, and only compares HFD vehicle to HFD drug.
+
+The model coefficients are:
+
+```{r vo2-lme-table}
+library(arm)
+library(car)
+kable(data.frame(Coefficent=fixef(vo2.lme), SE = se.fixef(vo2.lme)), caption="Model Coefficients for VO2 Mixed Linear Model")
+
+coefs <- data.frame(coef(summary(vo2.lme)))
+coefs$p.z <- 2 * (1 - pnorm(abs(coefs$t.value)))
+kable(coefs, caption="Estimates and p-values from mixed linear models.")
+```
+
+## Heat
+
 ```{r heat-barplot, fig.cap="Thermogenesis Before and After High Fat Diet Treatment"}
 
 ylimits <- c(min(grouped.summary$Heat) - max(grouped.summary.se$Heat), max(grouped.summary$Heat) + max(grouped.summary.se$Heat))
 
-plot.data <- grouped.summary %>% filter(HFD==T) %>% select(Treatment, Light.Dark, Heat) %>% spread(Light.Dark,Heat)
-plot.data.se <- grouped.summary.se %>% filter(HFD==T) %>% select(Treatment, Light.Dark, Heat) %>% spread(Light.Dark,Heat)
+plot.data <- grouped.summary %>% filter(HFD==T) %>% dplyr::select(Treatment, Light.Dark, Heat) %>% spread(Light.Dark,Heat)
+plot.data.se <- grouped.summary.se %>% filter(HFD==T) %>% dplyr::select(Treatment, Light.Dark, Heat) %>% spread(Light.Dark,Heat)
 
 ncd.data <- 
   animal.summary %>%
@@ -271,24 +292,40 @@ superpose.eb(plot,
 legend("topright", c("NCD", "HFD-Vehicle", "HFD-Rapamycin"), bty="n", fill=c("grey",palette()[1:2]))
 ```
 
-## VO2 Statistics
+```{r heat-diagnostic-plots, fig.cap="Diagnostic model plots for effects of drug treatment on thermogenesis  This analysis only includes HFD fed animals."}
 
-For the vehicle treated animals we noted a `r (plotted.data[2,1]-plotted.data[1,1])/plotted.data[1,1]*100`% increase in the volume of oxygen consumed during the dark phase, and a `r (plotted.data[2,2]-plotted.data[1,2])/plotted.data[1,2]*100`% increase in the light phase.
+heat.lme <- lmer(Heat ~ Light.Dark + 
+                  Lean + 
+                  Exp.Time + 
+                  Treatment + 
+                  HFD +
+                  Treatment:HFD + 
+                  (1|Subject), data=subset(merged_data, Exp.Time>=0), REML=F)
 
-Alternatively we used a mixed linear model, with non-interacting covariates for the Light cycle, the lean mass and the treatment  A Chi-squared test comparing a model with or without the Treatment term yielded a p-value of `r  format(anova(vo2.lme,vo2.lme.null)$"Pr(>Chisq)"[2], scientific=T)` for the mice.  This analysis excluded the chow fed animals, and only compares HFD vehicle to HFD drug.
+heat.lme.null <- lmer(Heat ~ Light.Dark + 
+                       Lean + 
+                       Exp.Time + 
+                       HFD + 
+                       (1|Subject), data=subset(merged_data, Exp.Time>=0), REML=F)
+```
+
+## Heat Statistics
+
+For the vehicle treated animals we noted a `r (plotted.data[2,1]-plotted.data[1,1])/plotted.data[1,1]*100`% increase in the heat produced during the dark phase, and a `r (plotted.data[2,2]-plotted.data[1,2])/plotted.data[1,2]*100`% increase in the light phase.
+
+Alternatively we used a mixed linear model, with non-interacting covariates for the Light cycle, the lean mass and the treatment  A Chi-squared test comparing a model with or without the Treatment term yielded a p-value of `r  format(anova(heat.lme,heat.lme.null)$"Pr(>Chisq)"[2], scientific=T)` for the mice.  This analysis excluded the chow fed animals, and only compares HFD vehicle to HFD drug.
 
 The model coefficients are:
 
-```{r vo2-lme-table}
+```{r heat-lme-table}
 library(arm)
 library(car)
-kable(data.frame(Coefficent=fixef(vo2.lme), SE = se.fixef(vo2.lme)), caption="Model Coefficients for VO2 Mixed Linear Model")
+kable(data.frame(Coefficent=fixef(heat.lme), SE = se.fixef(heat.lme)), caption="Model Coefficients for VO2 Mixed Linear Model")
 
-coefs <- data.frame(coef(summary(vo2.lme)))
+coefs <- data.frame(coef(summary(heat.lme)))
 coefs$p.z <- 2 * (1 - pnorm(abs(coefs$t.value)))
-kable(coefs, caption="Estimates and p-values from mixed linear models.")
+kable(coefs, caption="Estimates and p-values from mixed linear models for heat production.")
 ```
-
 
 ## Respiratory Exchange Rate
 

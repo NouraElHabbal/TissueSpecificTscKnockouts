@@ -62,12 +62,12 @@ library(dplyr)
 merged_data <- 
   all.data.clean %>%
   inner_join(mri_data, by=c('Subject'='Label')) %>%
-  rename(Heat.bw = Heat) %>%
+  rename(Heat.kcal = Heat) %>%
   mutate(Total.Weight = Lean + Fat,
          VO2 = Volume.O2 * Total.Weight/1000,
-         Heat = Heat.bw * Total.Weight/1000*1000,
+         Heat = Heat.kcal*1.163, #heat is in kCal/h originally, converted to Watts
          Percent.Fat.Mass = Fat/Total.Weight*100,
-         Total.Activity = X.Ambulatory)
+         Total.Activity = X.Ambulatory+Y.Ambulatory)
 
 merged_data$Subject <- as.factor(merged_data$Subject)
 #merged_data$Time <- sapply(strsplit(as.character(merged_data$Date.Time), " "), "[[", 2)
@@ -284,7 +284,7 @@ plotted.data.se$Light <- as.numeric(plotted.data.se$Light)
 
 plot <- barplot(as.matrix(plotted.data), 
                 beside=T, ylim=ylimits, 
-                ylab="Heat (kW)",
+                ylab="Heat Production (W)",
                 col=c("grey", palette()[1:2]), xpd=F, las=1)
 superpose.eb(plot,
              as.matrix(plotted.data),
@@ -419,6 +419,15 @@ superpose.eb(plot,
              as.matrix(plotted.data.se))
 legend("topright", c("NCD", "HFD-Vehicle", "HFD-Rapamycin"), bty="n", fill=c("grey",palette()[1:2]))
 ```
+
+# Substrate Use
+
+Equations from Frayn (1983) J Appl Physiol Respir Environ Exerc Physiol. and assume negligible protein oxidation
+
+Fat oxidation: (1.695 g/L * VO2 L/min) - (1.701 g/L * VCO2 L/min) = FA ox in g/min
+
+CHO oxidation is (4.585 * VCO2) - (3.226 * VO2)
+
 
 # Session Information
 

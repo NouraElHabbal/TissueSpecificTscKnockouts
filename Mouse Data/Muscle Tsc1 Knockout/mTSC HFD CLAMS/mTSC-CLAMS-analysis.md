@@ -19,7 +19,7 @@ output:
 
 # Purpose
 
-To evaluate energy expenditure and other parameters in muscle _Tsc1_ knockout mice.  This script was most recently updated on **Tue Feb  5 15:30:49 2019**.
+To evaluate energy expenditure and other parameters in muscle _Tsc1_ knockout mice.  This script was most recently updated on **Fri May 17 18:07:23 2019**.
 
 # Experimental Details
 
@@ -91,18 +91,18 @@ Table: Average changes in heat production comparing wt to knockout
 
 Sex      Light/Dark    Control   Knockout   Change   Pct.Change
 -------  -----------  --------  ---------  -------  -----------
-Female   Dark             23.7       25.5    1.767        7.451
-Female   Light            21.9       22.0    0.066        0.302
-Male     Dark             18.5       21.6    3.139       17.008
-Male     Light            17.0       18.8    1.755       10.319
+Female   Dark            0.470      0.502    0.032        6.777
+Female   Light           0.434      0.432   -0.003       -0.613
+Male     Dark            0.471      0.504    0.033        6.989
+Male     Light           0.435      0.439    0.004        0.815
 
 To test whether these groups are different we constructed a linear model with the following formula:
 
 Fat Mass ~ as.factor(Time) + Lean + Sex + `Light/Dark` + Knockout + Knockout:`Light/Dark` + (1 | Subject).  
 
-We used this model because the base model was that Heat production changes over the day.  We asked if lean mass modified the time dependent effect, and it did (p=4.403&times; 10^-10^).  After adjusting for lean mass, we asked if there was any additional benefit to including the light/dark cycle in addition to the time of day, and found that there was no significant effect, so that was not included in the model (p=1).  we added sex as a covariate which had no significant effect 0.076. We chose to keep sex in the model though as it was borderline significant.  We next added knockout to the model and found no significant effect 0.147.  Finally we asked if Sex modified the effect of the knockout and found no significant effect 0.413.
+We used this model because the base model was that Heat production changes over the day.  We asked if lean mass modified the time dependent effect, and it did (p=0.008).  After adjusting for lean mass, we asked if there was any additional benefit to including the light/dark cycle in addition to the time of day, and found that there was no significant effect, so that was not included in the model (p=1).  we added sex as a covariate which had no significant effect 0.01. We chose to keep sex in the model though as it was borderline significant.  We next added knockout to the model and found no significant effect 0.518.  Finally we asked if Sex modified the effect of the knockout and found no significant effect 0.238.
 
-Since it appears from the figures that the elevation in energy expenditure is restricted to the awake cycle, we next asked if there was an *interaction* between genotype and the Light/Dark cycle.  Adding this interaction was highly significant 1.033&times; 10^-117^.  This represents a 
+Since it appears from the figures that the elevation in energy expenditure is restricted to the awake cycle, we next asked if there was an *interaction* between genotype and the Light/Dark cycle.  Adding this interaction was highly significant 1.743&times; 10^-114^.  This represents a 
 
 The full results are shown below:
 
@@ -111,10 +111,10 @@ Table: Estimates and p-values from mixed linear models, excluding time of day.
 
                                       Estimate   Std..Error   t.value     p.z
 -----------------------------------  ---------  -----------  --------  ------
-Lean                                    -0.507        0.178     -2.85   0.004
-SexMale                                 -1.972        1.091     -1.81   0.071
-KnockoutKnockout                         2.148        0.737      2.92   0.004
-`Light/Dark`Light:KnockoutKnockout      -2.200        0.095    -23.24   0.000
+Lean                                     0.013        0.003      3.80   0.000
+SexMale                                 -0.054        0.021     -2.61   0.009
+KnockoutKnockout                         0.031        0.014      2.22   0.027
+`Light/Dark`Light:KnockoutKnockout      -0.045        0.002    -22.95   0.000
 
 ## RER Analysis
 
@@ -151,7 +151,7 @@ sessionInfo()
 ```
 ## R version 3.5.0 (2018-04-23)
 ## Platform: x86_64-apple-darwin15.6.0 (64-bit)
-## Running under: macOS  10.14.2
+## Running under: macOS  10.14.4
 ## 
 ## Matrix products: default
 ## BLAS: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRblas.0.dylib

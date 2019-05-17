@@ -93,14 +93,15 @@ mri.data.unique <-
 baseline.data <-  
   lapply(baseline.files, read_csv) %>% 
   bind_rows() %>%
-  select(Subject, Interval, `Date/Time`, `Light/Dark`, `Volume O2`, RER, `X Ambulatory`, `Y Ambulatory`,`Volume CO2`) %>%
+  select(Subject, Interval, `Date/Time`, `Light/Dark`, `Volume O2`, RER, `X Ambulatory`, `Y Ambulatory`,`Volume CO2`,Heat) %>%
   right_join(key.data, by=c('Subject'='Mouse'))  %>% #merged with annotation file
   mutate(Date.Time = mdy_hms(`Date/Time`)) %>% #parsed datetime
   mutate(Time = hour(Date.Time)) %>% #extracted the hour 
   mutate(Zeitgerber.Time = Time-7) %>% # converted to ZT
   mutate(Activity = `X Ambulatory` + `Y Ambulatory`) %>%
   mutate(Subject = as.factor(Subject)) %>%
-  mutate(Heat = (3.815 + 1.232*RER)*`Volume O2`*1.163/1000) %>% #from Lusk Equation, and converted to kW
+  rename(Heat.kw = Heat) %>% #heat is originally in Kcal/h
+  mutate(Heat = Heat.kw*1.163) %>% #heat is in kCal/h originally, converted to Watts)
   full_join(mri.data.unique, by=c('Subject'='Label')) #merged in mri data
 
 baseline.data %>%
@@ -261,7 +262,7 @@ ggplot(summary.data,
            lty=Knockout)) +
   geom_line() +
   geom_errorbar() +
-  labs(y="Heat Production (kW)", x="Zeitgerber Time") 
+  labs(y="Heat Production (W)", x="Zeitgerber Time") 
 
 ggplot(summary.data,
        aes(y=Heat_mean,
@@ -272,7 +273,7 @@ ggplot(summary.data,
   geom_line() +
   geom_errorbar() +
     facet_grid(~Sex) +
-  labs(y="Heat Production (kW)", x="Zeitgerber Time") +
+  labs(y="Heat Production (W)", x="Zeitgerber Time") +
   theme(legend.position = c(0.15, 0.9),
         legend.background = element_rect(fill=alpha(0.1)),
         legend.text=element_text(size=14),
@@ -440,7 +441,7 @@ ggplot(summary.data,
            lty=Knockout)) +
   geom_line() +
   geom_errorbar() +
-  labs(y="Ambulatory Activity", x="Zeitgerber Time") 
+  labs(y="Ambulatory Movement", x="Zeitgerber Time") 
 
 ggplot(summary.data,
        aes(y=Activity_mean,
@@ -450,7 +451,7 @@ ggplot(summary.data,
            col=Knockout)) +
   geom_line() +
   geom_errorbar() +
-  labs(y="Ambulatory Activity", x="Zeitgerber Time") +
+  labs(y="Ambulatory Movement", x="Zeitgerber Time") +
   facet_grid(~Sex) +
   theme(legend.position = c(0.15, 0.9),
         legend.background = element_rect(fill=alpha(0.1)),

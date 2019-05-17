@@ -62,8 +62,10 @@ library(dplyr)
 merged_data <- 
   all.data.clean %>%
   inner_join(mri_data, by=c('Subject'='Label')) %>%
+  rename(Heat.bw = Heat) %>%
   mutate(Total.Weight = Lean + Fat,
          VO2 = Volume.O2 * Total.Weight/1000,
+         Heat = Heat.bw * Total.Weight/1000*1000,
          Percent.Fat.Mass = Fat/Total.Weight*100,
          Total.Activity = X.Ambulatory)
 
@@ -115,6 +117,7 @@ animal.time.course <-
   group_by(Treatment,Interval, Time, Light.Dark) %>%
   summarize(VO2 = mean(VO2),
             RER = mean(RER),
+            HEAT = mean(Heat),
             Total.Activity = mean(Total.Activity),
             Lean.Mass = mean(Lean),
             Fat.Mass = mean(Fat),
@@ -128,6 +131,7 @@ animal.summary <-
   group_by(Subject,HFD, Treatment,Light.Dark) %>%
   summarize(VO2 = mean(VO2),
             RER = mean(RER),
+            Heat = mean(Heat),
             Total.Activity = mean(Total.Activity),
             Lean.Mass = mean(Lean),
             Fat.Mass = mean(Fat),
@@ -140,6 +144,7 @@ grouped.summary <-
   group_by(HFD, Treatment,Light.Dark) %>%
   summarize(VO2 = mean(VO2),
             RER = mean(RER),
+            Heat = mean(Heat),
             Total.Activity = mean(Total.Activity),
             Lean.Mass = mean(Lean.Mass),
             Fat.Mass = mean(Fat.Mass),
@@ -152,6 +157,7 @@ grouped.summary.se <-
   group_by(HFD, Treatment,Light.Dark) %>%
   summarize(VO2 = se(VO2),
             RER = se(RER),
+            Heat = se(Heat),
             Total.Activity = se(Total.Activity),
             Lean.Mass = se(Lean.Mass),
             Fat.Mass = se(Fat.Mass),
@@ -225,6 +231,39 @@ plotted.data.se$Light <- as.numeric(plotted.data.se$Light)
 plot <- barplot(as.matrix(plotted.data), 
                 beside=T, ylim=ylimits, 
                 ylab="VO2 (mL/h)",
+                col=c("grey", palette()[1:2]), xpd=F, las=1)
+superpose.eb(plot,
+             as.matrix(plotted.data),
+             as.matrix(plotted.data.se))
+legend("topright", c("NCD", "HFD-Vehicle", "HFD-Rapamycin"), bty="n", fill=c("grey",palette()[1:2]))
+```
+
+```{r heat-barplot, fig.cap="Thermogenesis Before and After High Fat Diet Treatment"}
+
+ylimits <- c(min(grouped.summary$Heat) - max(grouped.summary.se$Heat), max(grouped.summary$Heat) + max(grouped.summary.se$Heat))
+
+plot.data <- grouped.summary %>% filter(HFD==T) %>% select(Treatment, Light.Dark, Heat) %>% spread(Light.Dark,Heat)
+plot.data.se <- grouped.summary.se %>% filter(HFD==T) %>% select(Treatment, Light.Dark, Heat) %>% spread(Light.Dark,Heat)
+
+ncd.data <- 
+  animal.summary %>%
+  group_by(Light.Dark) %>%
+  summarize(Heat.mean = mean(Heat),
+            Heat.se = se(Heat))
+
+tmp <- list(HFD=FALSE,Treatment="None", Dark=ncd.data$Heat.mean[1], Light=ncd.data$Heat.mean[2])
+plotted.data <- data.frame(rbind(tmp, plot.data)[,3:4])
+plotted.data$Dark <- as.numeric(plotted.data$Dark)
+plotted.data$Light <- as.numeric(plotted.data$Light)
+
+tmp <- list(HFD=FALSE,Treatment="None", Dark=ncd.data$Heat.se[1], Light=ncd.data$Heat.se[2])
+plotted.data.se <- data.frame(rbind(tmp, plot.data.se)[,3:4])
+plotted.data.se$Dark <- as.numeric(plotted.data.se$Dark)
+plotted.data.se$Light <- as.numeric(plotted.data.se$Light)
+
+plot <- barplot(as.matrix(plotted.data), 
+                beside=T, ylim=ylimits, 
+                ylab="Heat (kW)",
                 col=c("grey", palette()[1:2]), xpd=F, las=1)
 superpose.eb(plot,
              as.matrix(plotted.data),

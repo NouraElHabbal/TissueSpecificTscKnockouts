@@ -17,7 +17,7 @@ output:
 After having been acclimitized in the CLAMS at the normal temperature (25C) for 2 days then treatment and diet started simulataneously. 
 
 
-The input files were 2015-10-07-C57BL6J-Rapa-HFD-PreCLAMSEchoMRI.XLSX for the echoMRI data and 2015-10-07-C57BL6J-Rapa-HFD-OxymaxDataFile1.csv  and 2015-10-07-C57BL6J-Rapa-HFD-OxymaxDataFile2.csv for the CLAMS data.  These data can be found in /Users/davebrid/Documents/GitHub/TissueSpecificTscKnockouts/Mouse Data/CLAMS B6-HFD-Rapamycin.  This script was most recently updated on Thu Jan 31 16:32:13 2019 and includes the following number of animals:
+The input files were 2015-10-07-C57BL6J-Rapa-HFD-PreCLAMSEchoMRI.XLSX for the echoMRI data and 2015-10-07-C57BL6J-Rapa-HFD-OxymaxDataFile1.csv  and 2015-10-07-C57BL6J-Rapa-HFD-OxymaxDataFile2.csv for the CLAMS data.  These data can be found in /Users/davebrid/Documents/GitHub/TissueSpecificTscKnockouts/Mouse Data/CLAMS B6-HFD-Rapamycin.  This script was most recently updated on Fri May 17 13:07:02 2019 and includes the following number of animals:
 
 
 Treatment    Males
@@ -49,9 +49,11 @@ This data was averaged for the VO2 before the HFD switch and after the HFD switc
 
 ![Energy Expenditure Before and After High Fat Diet Treatment](figures/vo2-barplot-1.png)
 
+![Thermogenesis Before and After High Fat Diet Treatment](figures/heat-barplot-1.png)
+
 ## VO2 Statistics
 
-For the vehicle treated animals we noted a 7.887% increase in the volume of oxygen consumed during the dark phase, and a 6.702% increase in the light phase.
+For the vehicle treated animals we noted a 11.08% increase in the volume of oxygen consumed during the dark phase, and a 9.21% increase in the light phase.
 
 Alternatively we used a mixed linear model, with non-interacting covariates for the Light cycle, the lean mass and the treatment  A Chi-squared test comparing a model with or without the Treatment term yielded a p-value of 1.24e-05 for the mice.  This analysis excluded the chow fed animals, and only compares HFD vehicle to HFD drug.
 
@@ -130,7 +132,7 @@ We used a generalized mixed linear model, with non-interacting covariates for th
 ```
 ## R version 3.5.0 (2018-04-23)
 ## Platform: x86_64-apple-darwin15.6.0 (64-bit)
-## Running under: macOS  10.14.2
+## Running under: macOS  10.14.4
 ## 
 ## Matrix products: default
 ## BLAS: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRblas.0.dylib

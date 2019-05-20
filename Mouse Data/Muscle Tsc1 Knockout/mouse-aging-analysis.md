@@ -12,7 +12,7 @@ output:
 
 # Data Entry
 
-These data are accumulated from the database.  The analysis includes all alive animals, animals which were sacrificed and animals which died of natural causes (denoted in the database as "Unknown").  Animals which died with an estimated death date are excluded from the analysis.  We are testing the effects of age on death by natural causes.  This script is located in /Users/davebrid/Documents/GitHub/TissueSpecificTscKnockouts/Mouse Data/Muscle Tsc1 Knockout and was most recently run on Wed Aug 15 12:58:25 2018.
+These data are accumulated from the database.  The analysis includes all alive animals, animals which were sacrificed and animals which died of natural causes (denoted in the database as "Unknown").  Animals which died with an estimated death date are excluded from the analysis.  We are testing the effects of age on death by natural causes.  This script is located in /Users/davebrid/Documents/GitHub/TissueSpecificTscKnockouts/Mouse Data/Muscle Tsc1 Knockout and was most recently run on Mon May 20 08:40:01 2019.
 
 
 
@@ -66,7 +66,9 @@ Genotype+/+; Tg/+     -1.46   0.232   -2.48   -0.440   0.004996
 Genotypefl/fl; +/+    -1.30   0.273   -2.04   -0.561   0.000565
 
 # Comparing Floxed to Knockout
+
 This section only compares fl/fl;+/+ to fl/fl;Tg/+.
+
 
 
 The chi-squared test for comparing the two genotypes is significant, with a p-value of 0.002.  The results of these tests are in the table below.  The effects of each genotype, relative to the knockout strains are in the table below. These results are presented graphically in the figure below.  This means that the knockout mice are 3.277 times more likely to die at any given time.
@@ -522,7 +524,7 @@ KnockoutTRUE    -1.43   0.24   -2.08   -0.771   0.0000202
 ```
 ## R version 3.5.0 (2018-04-23)
 ## Platform: x86_64-apple-darwin15.6.0 (64-bit)
-## Running under: macOS High Sierra 10.13.6
+## Running under: macOS  10.14.4
 ## 
 ## Matrix products: default
 ## BLAS: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRblas.0.dylib
@@ -535,30 +537,29 @@ KnockoutTRUE    -1.43   0.24   -2.08   -0.771   0.0000202
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-##  [1] bibtex_0.4.2       survminer_0.4.3    ggpubr_0.1.7      
+##  [1] bibtex_0.4.2       survminer_0.4.3    ggpubr_0.2        
 ##  [4] magrittr_1.5       RColorBrewer_1.1-2 ggfortify_0.4.5   
-##  [7] ggplot2_3.0.0      xtable_1.8-2       coin_1.2-2        
-## [10] survival_2.42-4    knitr_1.20        
+##  [7] ggplot2_3.1.0      xtable_1.8-3       coin_1.2-2        
+## [10] survival_2.43-3    knitr_1.21        
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] Rcpp_0.12.17      mvtnorm_1.0-8     lattice_0.20-35  
-##  [4] tidyr_0.8.1       zoo_1.8-2         assertthat_0.2.0 
-##  [7] rprojroot_1.3-2   digest_0.6.15     psych_1.8.4      
-## [10] R6_2.2.2          plyr_1.8.4        backports_1.1.2  
-## [13] stats4_3.5.0      evaluate_0.10.1   highr_0.7        
-## [16] pillar_1.2.3      rlang_0.2.1       lazyeval_0.2.1   
-## [19] multcomp_1.4-8    data.table_1.11.4 Matrix_1.2-14    
-## [22] rmarkdown_1.10    labeling_0.3      splines_3.5.0    
-## [25] stringr_1.3.1     foreign_0.8-70    munsell_0.5.0    
-## [28] broom_0.4.5       compiler_3.5.0    pkgconfig_2.0.1  
-## [31] mnormt_1.5-5      htmltools_0.3.6   tidyselect_0.2.4 
-## [34] tibble_1.4.2      gridExtra_2.3     km.ci_0.5-2      
-## [37] codetools_0.2-15  dplyr_0.7.6       withr_2.1.2      
-## [40] MASS_7.3-50       grid_3.5.0        nlme_3.1-137     
-## [43] gtable_0.2.0      KMsurv_0.1-5      scales_0.5.0     
-## [46] stringi_1.2.3     reshape2_1.4.3    bindrcpp_0.2.2   
-## [49] survMisc_0.5.5    sandwich_2.4-0    TH.data_1.0-8    
-## [52] tools_3.5.0       cmprsk_2.2-7      glue_1.2.0       
-## [55] purrr_0.2.5       parallel_3.5.0    yaml_2.1.19      
-## [58] colorspace_1.3-2  bindr_0.1.1       modeltools_0.2-21
+##  [1] zoo_1.8-4         modeltools_0.2-22 tidyselect_0.2.5 
+##  [4] xfun_0.4          purrr_0.2.5       splines_3.5.0    
+##  [7] lattice_0.20-38   generics_0.0.2    colorspace_1.3-2 
+## [10] htmltools_0.3.6   stats4_3.5.0      yaml_2.2.0       
+## [13] survMisc_0.5.5    rlang_0.3.1       pillar_1.3.1     
+## [16] glue_1.3.0        withr_2.1.2       bindrcpp_0.2.2   
+## [19] multcomp_1.4-8    plyr_1.8.4        bindr_0.1.1      
+## [22] stringr_1.3.1     munsell_0.5.0     gtable_0.2.0     
+## [25] mvtnorm_1.0-8     codetools_0.2-16  evaluate_0.12    
+## [28] labeling_0.3      highr_0.7         broom_0.5.1      
+## [31] TH.data_1.0-9     Rcpp_1.0.0        backports_1.1.3  
+## [34] scales_1.0.0      cmprsk_2.2-7      km.ci_0.5-2      
+## [37] gridExtra_2.3     digest_0.6.18     stringi_1.2.4    
+## [40] dplyr_0.7.8       KMsurv_0.1-5      grid_3.5.0       
+## [43] tools_3.5.0       sandwich_2.5-0    lazyeval_0.2.1   
+## [46] tibble_2.0.0      crayon_1.3.4      tidyr_0.8.2      
+## [49] pkgconfig_2.0.2   MASS_7.3-51.1     Matrix_1.2-15    
+## [52] data.table_1.11.8 assertthat_0.2.0  rmarkdown_1.11   
+## [55] R6_2.3.0          nlme_3.1-137      compiler_3.5.0
 ```

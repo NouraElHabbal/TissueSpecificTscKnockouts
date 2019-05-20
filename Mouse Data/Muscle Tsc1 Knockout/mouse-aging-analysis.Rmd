@@ -100,7 +100,9 @@ kable(res, digits=c(3,3,3,3,6), caption = "Muscle TSC1 Knockout Coefficients, re
 ```
 
 # Comparing Floxed to Knockout
+
 This section only compares fl/fl;+/+ to fl/fl;Tg/+.
+
 ```{r wt_ko}
 #for wt v ko
 survobj.mck.ko <- with(data.known.mck.ko, Surv(age,Cause_of_Death=="Unknown"))
@@ -222,8 +224,8 @@ ggsurvplot(
   ncensor.plot = F,      # plot the number of censored subjects at time t
   conf.int.style = "step",  # customize style of confidence intervals
   surv.median.line = "hv",  # add the median survival pointer.
-  legend.labs = c("Knockout","Controls"),    # change legend labels.
-  #palette = c("#E7B800", "#2E9FDF") # custom color palettes.
+  legend.labs = c("Knockout","Wild-Type"),    # change legend labels.
+  palette = grey.colors(2), # custom color palettes.
   risk.table.fontsize = 4,
   legend.title = "Genotype",
   fun="pct",

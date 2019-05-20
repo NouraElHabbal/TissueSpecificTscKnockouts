@@ -25,4 +25,4 @@ This document indicates where the raw data for each Figure panel can be found, a
 | Figure 4E | RNAseq⁩/scripts⁩/barplots.Rmd |  | 
 | Figure 4F | RNAseq⁩/scripts⁩/barplots.Rmd |  | 
 | Figure 4C | RNAseq⁩/scripts⁩/barplots.Rmd | Sln-barplot.pdf | 
-| Figure 5 |  |  | 
+| Figure 5 | Mouse Data⁩/Muscle Tsc1 Knockout/mouse-aging-analysis.Rmd | fitting-mck-controls-combined-ggsurvplot-1.pdf | 

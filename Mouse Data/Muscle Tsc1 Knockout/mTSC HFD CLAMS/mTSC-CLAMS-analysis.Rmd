@@ -97,7 +97,7 @@ baseline.data <-
   right_join(key.data, by=c('Subject'='Mouse'))  %>% #merged with annotation file
   mutate(Date.Time = mdy_hms(`Date/Time`)) %>% #parsed datetime
   mutate(Time = hour(Date.Time)) %>% #extracted the hour 
-  mutate(Zeitgerber.Time = Time-7) %>% # converted to ZT
+  mutate(Zeitgeber.Time = Time-7) %>% # converted to ZT
   mutate(Activity = `X Ambulatory` + `Y Ambulatory`) %>%
   mutate(Subject = as.factor(Subject)) %>%
   rename(Heat.kw = Heat) %>% #heat is originally in Kcal/h
@@ -181,7 +181,7 @@ animal.data <-
   filter(RER>0.5) %>%
   filter(RER<1.2) %>% #removed biologically implausible values
   filter(Subject!='4762') %>% #removed outlier sample
-  group_by(Subject,Genotype,Knockout,Sex, Zeitgerber.Time) %>% #calculated average hour/animal level data
+  group_by(Subject,Genotype,Knockout,Sex, Zeitgeber.Time) %>% #calculated average hour/animal level data
   summarize(RER = mean(RER,na.rm=T),
             Activity = mean(Activity, na.rm=T),
             VO2 = mean(`Volume O2`, na.rm=T),
@@ -189,7 +189,7 @@ animal.data <-
             Lean = mean(Lean,na.rm=T)) 
 
 ggplot(animal.data,
-       aes(y=VO2, x=Zeitgerber.Time,
+       aes(y=VO2, x=Zeitgeber.Time,
            group=Subject,
            col=Knockout)) +
   geom_line() +
@@ -205,30 +205,30 @@ summary.data <-
   animal.data %>%
   ungroup %>%
   select(-Subject, -Genotype) %>% #removed subject column
-  group_by(Knockout,Sex,Zeitgerber.Time) %>%
+  group_by(Knockout,Sex,Zeitgeber.Time) %>%
   summarize_all(c('mean','se'))
   
 ggplot(summary.data,
        aes(y=VO2_mean,
            ymin=VO2_mean-VO2_se,
            ymax=VO2_mean+VO2_se,
-           x=Zeitgerber.Time,
+           x=Zeitgeber.Time,
            col=Sex,
            lty=Knockout)) +
   geom_line() +
   geom_errorbar() +
-  labs(y="VO2", x="Zeitgerber Time") 
+  labs(y="VO2", x="Zeitgeber Time") 
 
 ggplot(summary.data,
        aes(y=VO2_mean,
            ymin=VO2_mean-VO2_se,
            ymax=VO2_mean+VO2_se,
-           x=Zeitgerber.Time,
+           x=Zeitgeber.Time,
            col=Knockout)) +
   geom_line() +
   geom_errorbar() +
     facet_grid(~Sex) +
-  labs(y="Volume O2 Consumed (mL/h)", x="Zeitgerber Time") +
+  labs(y="Volume O2 Consumed (mL/h)", x="Zeitgeber Time") +
   theme(legend.position = c(0.15, 0.9),
         legend.background = element_rect(fill=alpha(0.1)),
         legend.text=element_text(size=14),
@@ -250,30 +250,30 @@ summary.data <-
   animal.data %>%
   ungroup %>%
   select(-Subject, -Genotype) %>% #removed subject column
-  group_by(Knockout,Sex,Zeitgerber.Time) %>%
+  group_by(Knockout,Sex,Zeitgeber.Time) %>%
   summarize_all(c('mean','se'))
   
 ggplot(summary.data,
        aes(y=Heat_mean,
            ymin=Heat_mean-Heat_se,
            ymax=Heat_mean+Heat_se,
-           x=Zeitgerber.Time,
+           x=Zeitgeber.Time,
            col=Sex,
            lty=Knockout)) +
   geom_line() +
   geom_errorbar() +
-  labs(y="Heat Production (W)", x="Zeitgerber Time") 
+  labs(y="Heat Production (W)", x="Zeitgeber Time") 
 
 ggplot(summary.data,
        aes(y=Heat_mean,
            ymin=Heat_mean-Heat_se,
            ymax=Heat_mean+Heat_se,
-           x=Zeitgerber.Time,
+           x=Zeitgeber.Time,
            col=Knockout)) +
   geom_line() +
   geom_errorbar() +
     facet_grid(~Sex) +
-  labs(y="Heat Production (W)", x="Zeitgerber Time") +
+  labs(y="Heat Production (W)", x="Zeitgeber Time") +
   theme(legend.position = c(0.15, 0.9),
         legend.background = element_rect(fill=alpha(0.1)),
         legend.text=element_text(size=14),
@@ -368,7 +368,7 @@ ggplot(animal.data.ld,
 
 ```{r rer-analysis-linegraph, fig,cap="Mouse level RER levels"}
 ggplot(animal.data,
-       aes(y=RER, x=Zeitgerber.Time,
+       aes(y=RER, x=Zeitgeber.Time,
            group=Subject,
            col=Knockout)) +
   geom_line() +
@@ -383,22 +383,22 @@ ggplot(summary.data,
        aes(y=RER_mean,
            ymin=RER_mean-RER_se,
            ymax=RER_mean+RER_se,
-           x=Zeitgerber.Time,
+           x=Zeitgeber.Time,
            col=Sex,
            lty=Knockout)) +
   geom_line() +
   geom_errorbar() +
-  labs(y="Respiratory Exchange Ratio", x="Zeitgerber Time") 
+  labs(y="Respiratory Exchange Ratio", x="Zeitgeber Time") 
 
 ggplot(summary.data,
        aes(y=RER_mean,
            ymin=RER_mean-RER_se,
            ymax=RER_mean+RER_se,
-           x=Zeitgerber.Time,
+           x=Zeitgeber.Time,
            col=Knockout)) +
   geom_line() +
   geom_errorbar() +
-  labs(y="Respiratory Exchange Ratio", x="Zeitgerber Time") +
+  labs(y="Respiratory Exchange Ratio", x="Zeitgeber Time") +
   facet_grid(~Sex) +
   theme(legend.position = c(0.15, 0.9),
         legend.background = element_rect(fill=alpha(0.1)),
@@ -421,7 +421,7 @@ ggplot(animal.data.ld,
 
 ```{r activity-analysis-linegraph, fig,cap="Mouse level Activity levels"}
 ggplot(animal.data,
-       aes(y=Activity, x=Zeitgerber.Time,
+       aes(y=Activity, x=Zeitgeber.Time,
            group=Subject,
            col=Knockout)) +
   geom_line() +
@@ -436,22 +436,22 @@ ggplot(summary.data,
        aes(y=Activity_mean,
            ymin=Activity_mean-Activity_se,
            ymax=Activity_mean+Activity_se,
-           x=Zeitgerber.Time,
+           x=Zeitgeber.Time,
            col=Sex,
            lty=Knockout)) +
   geom_line() +
   geom_errorbar() +
-  labs(y="Ambulatory Movement", x="Zeitgerber Time") 
+  labs(y="Ambulatory Movement", x="Zeitgeber Time") 
 
 ggplot(summary.data,
        aes(y=Activity_mean,
            ymin=Activity_mean-Activity_se,
            ymax=Activity_mean+Activity_se,
-           x=Zeitgerber.Time,
+           x=Zeitgeber.Time,
            col=Knockout)) +
   geom_line() +
   geom_errorbar() +
-  labs(y="Ambulatory Movement", x="Zeitgerber Time") +
+  labs(y="Ambulatory Movement", x="Zeitgeber Time") +
   facet_grid(~Sex) +
   theme(legend.position = c(0.15, 0.9),
         legend.background = element_rect(fill=alpha(0.1)),

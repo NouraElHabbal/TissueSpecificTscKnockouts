@@ -22,7 +22,7 @@ This document indicates where the raw data for each Figure panel can be found, a
 | Figure 4B | RNAseq⁩/scripts⁩/barplots.Rmd | fabp_cd36-barplot.pdf |
 | Figure 4C | RNAseq⁩/scripts⁩/barplots.Rmd | fiber_markers-barplot.pdf | 
 | Figure 4D | NA | Image | 
-| Figure 4E | RNAseq⁩/scripts⁩/barplots.Rmd |  | 
-| Figure 4F | RNAseq⁩/scripts⁩/barplots.Rmd |  | 
+| Figure 4E | RNAseq⁩/scripts⁩/barplots.Rmd | ca-cycling.pdf | 
+| Figure 4F | NA | Image | 
 | Figure 4C | RNAseq⁩/scripts⁩/barplots.Rmd | Sln-barplot.pdf | 
 | Figure 5 | Mouse Data⁩/Muscle Tsc1 Knockout/mouse-aging-analysis.Rmd | fitting-mck-controls-combined-ggsurvplot-1.pdf | 

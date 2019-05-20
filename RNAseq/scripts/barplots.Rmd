@@ -116,7 +116,7 @@ guridi_genes <- c('Ucp2','Ppargc1b','Pdk4','Fasn','Bdh1','Oxct1','Hmgcs2','Acat1
 guridi_genes_2 <- c('Ucp2','Ppargc1b','Fasn','Bdh1','Oxct1','Hmgcs2','Acat1','Klb','Fgf21','Ddit3','Hspa5','Xbp1','Trib3')
 sln <- c('Sln')
 FGF21_related <- c('Fgf21','Klb','Fgfr1','Fgfr2','Fgfr3','Frs2','Hmgcs2','Sirt1','Sirt3','Mapk1','Mapk3')
-ca_cycling <- c('Atp2a2','Atp2a3','Sln','Pln','Ryr1','Ryr2','Ryr3')
+ca_cycling <- c('Atp2a2','Atp2a3','Sln','Pln','Ryr1','Ryr2','Ryr3','Casq2','Calm1','Calm2','Calm3','Ora1','Stim1')
 ca_reuptake <- c('Stim1','Stim2')
 FGF21_related <- c('Fgf21','Klb','Fgfr1','Fgfr2','Fgfr3','Frs2','Hmgcs2','Sirt1','Sirt3','Mapk1','Mapk3')
 MitochondrialCalcium_genes <- c('Mcu','Micu1','Micu2','Micu3','Slc8a1','Scl8a2','Slc8a3','Letm1','Letm2','Ryr1','Ryr2','Ryr3')

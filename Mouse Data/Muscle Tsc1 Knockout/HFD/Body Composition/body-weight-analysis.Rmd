@@ -257,7 +257,7 @@ with(subset(weight.data, Gender==levels(Gender)[1]&Knockout == TRUE)
      , plot(age, Lean.Mass,
                        col=palette()[1],
                       ylim=c(ymin,ymax),
-                       ylab="Total Lean Mass (g)",
+                       ylab="Lean Mass (g)",
                        xlab='Age (days)',
                         las=1, pch=19))
 with(subset(weight.data, Gender==levels(Gender)[1]&Knockout == FALSE), 
@@ -286,7 +286,7 @@ yaxes <- with(combined.summary,
 plot <- with(subset(combined.summary, 
                     Gender==levels(Gender)[1]&Knockout == TRUE), 
              plot(Weeks, Lean.Mass.mean, type="l", ylim=yaxes,
-                  las=1, ylab="Total Lean Mass (g)", col=palette()[1]))
+                  las=1, ylab="Lean Mass (g)", col=palette()[1]))
 with(subset(combined.summary, 
                     Gender==levels(Gender)[1]&Knockout == FALSE), 
              lines(Weeks, Lean.Mass.mean, col=palette()[2]))
@@ -321,7 +321,7 @@ yaxes <- with(subset(combined.summary, Weeks<12),
 plot <- with(subset(combined.summary, 
                     Gender==levels(Gender)[1]&Knockout == TRUE&Weeks<12), 
              plot(Weeks, Lean.Mass.mean, type="l", ylim=yaxes,
-                  las=1, ylab="Total Lean Mass (g)", col=palette()[1]))
+                  las=1, ylab="Lean Mass (g)", col=palette()[1]))
 with(subset(combined.summary, 
                     Gender==levels(Gender)[1]&Knockout == FALSE&Weeks<12), 
              lines(Weeks, Lean.Mass.mean, col=palette()[2]))

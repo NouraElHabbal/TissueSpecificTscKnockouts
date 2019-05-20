@@ -286,7 +286,10 @@ yaxes <- with(combined.summary,
 plot <- with(subset(combined.summary, 
                     Gender==levels(Gender)[1]&Knockout == TRUE), 
              plot(Weeks, Lean.Mass.mean, type="l", ylim=yaxes,
-                  las=1, ylab="Lean Mass (g)", col=palette()[1]))
+                  las=1, 
+                  xlab="Weeks on HFD",
+                  ylab="Lean Mass (g)", 
+                  col=palette()[1]))
 with(subset(combined.summary, 
                     Gender==levels(Gender)[1]&Knockout == FALSE), 
              lines(Weeks, Lean.Mass.mean, col=palette()[2]))
@@ -321,7 +324,10 @@ yaxes <- with(subset(combined.summary, Weeks<12),
 plot <- with(subset(combined.summary, 
                     Gender==levels(Gender)[1]&Knockout == TRUE&Weeks<12), 
              plot(Weeks, Lean.Mass.mean, type="l", ylim=yaxes,
-                  las=1, ylab="Lean Mass (g)", col=palette()[1]))
+                  las=1,
+                  xlab="Weeks on HFD",
+                  ylab="Lean Mass (g)",
+                  col=palette()[1]))
 with(subset(combined.summary, 
                     Gender==levels(Gender)[1]&Knockout == FALSE&Weeks<12), 
              lines(Weeks, Lean.Mass.mean, col=palette()[2]))
@@ -468,7 +474,10 @@ yaxes <- with(subset(combined.summary, Weeks<12),
 plot <- with(subset(combined.summary, 
              Gender==levels(Gender)[1]&Knockout == TRUE& Weeks<12),
              plot(Weeks, Total.Fat.Mass.mean, type="l", ylim=yaxes,
-                  las=1, ylab="Total Fat Mass (g)", col=palette()[1]))
+                  las=1, 
+                  ylab="Total Fat Mass (g)", 
+                  xlab="Weeks on HFD",
+                  col=palette()[1]))
 with(subset(combined.summary, 
              Gender==levels(Gender)[1]&Knockout == FALSE& Weeks<12),
              lines(Weeks, Total.Fat.Mass.mean, col=palette()[2]))
@@ -654,7 +663,10 @@ yaxes <- with(subset(combined.summary, Weeks<12),
 plot <- with(subset(combined.summary, 
                     Gender==levels(Gender)[1]&Knockout == TRUE & Weeks<12), 
              plot(Weeks, Percent.Fat.Mass.mean, type="l", ylim=yaxes,
-                  las=1, ylab="Percent Fat Mass", col=palette()[1]))
+                  las=1, 
+                  ylab="Percent Fat Mass", 
+                  xlab="Weeks on HFD",
+                  col=palette()[1]))
 with(subset(combined.summary, 
                     Gender==levels(Gender)[1]&Knockout == FALSE & Weeks<12), 
              lines(Weeks, Percent.Fat.Mass.mean, col=palette()[2]))

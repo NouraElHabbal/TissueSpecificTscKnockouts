@@ -159,6 +159,7 @@ plot <- barplot(as.matrix(plot.data[2:3]),
 superpose.eb(plot,
              as.matrix(plot.data[2:3]),
              as.matrix(plot.data.se[2:3]))
+legend("topright", c("Wild-Type", "Knockout"), fill=grey.colors(2), bty="n")
 
 plot.data <- 
   summary.data %>%
@@ -174,7 +175,7 @@ ymax <- max(plot.data[2:3]) + max(plot.data.se[2:3])
 
 plot <- barplot(as.matrix(plot.data[2:3]),
                 las=1,
-                names.arg=c("Wild-Type","Knockout"),
+                names.arg=c("Male","Female"),
                 ylab="Weight (g)",
                 beside=T,
                 main="Gonadal WAT",
@@ -183,6 +184,7 @@ plot <- barplot(as.matrix(plot.data[2:3]),
 superpose.eb(plot,
              as.matrix(plot.data[2:3]),
              as.matrix(plot.data.se[2:3]))
+legend("topright", c("Wild-Type", "Knockout"), fill=grey.colors(2), bty="n")
 
 ```
 

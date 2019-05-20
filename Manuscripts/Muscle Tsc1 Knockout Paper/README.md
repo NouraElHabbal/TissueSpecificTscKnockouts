@@ -21,4 +21,7 @@ This document indicates where the raw data for each Figure panel can be found, a
 | Figure 4B | RNAseq⁩/scripts⁩/barplots.Rmd | fabp_cd36-barplot.pdf |
 | Figure 4C | RNAseq⁩/scripts⁩/barplots.Rmd | fiber_markers-barplot.pdf | 
 | Figure 4D | NA | Image | 
+| Figure 4E | RNAseq⁩/scripts⁩/barplots.Rmd |  | 
+| Figure 4F | RNAseq⁩/scripts⁩/barplots.Rmd |  | 
 | Figure 4C | RNAseq⁩/scripts⁩/barplots.Rmd | Sln-barplot.pdf | 
+| Figure 5 |  |  | 

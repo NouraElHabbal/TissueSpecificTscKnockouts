@@ -381,7 +381,7 @@ We used a generalized mixed linear model, with non-interacting covariates for th
 
 ```{r activity-time-course, fig.cap="The activity over time."}
 with(subset(animal.time.course, Treatment==levels(merged_data$Treatment)[1]), plot(Time.Elapsed,Total.Activity, type="l", 
-                                                                                   ylab="Ambulatory Activity", xlab="Time (h)", las=1))
+                                                                                   ylab="Ambulatory Activity (Beam Breaks)", xlab="Time (h)", las=1))
 with(subset(animal.time.course, Treatment==levels(merged_data$Treatment)[2]), lines(Time.Elapsed,Total.Activity, col=palette()[2]))
 
 legend("topright", levels(merged_data$Treatment), bty="n", lty=1, col=palette()[1:2])
@@ -412,7 +412,7 @@ plotted.data.se$Light <- as.numeric(plotted.data.se$Light)
 
 plot <- barplot(as.matrix(plotted.data), 
                 beside=T, ylim=ylimits, 
-                ylab="Ambulatory Movement",
+                ylab="Ambulatory Activity (Beam Breaks)",
                 col=c("grey", palette()[1:2]), las=1)
 superpose.eb(plot,
              as.matrix(plotted.data),

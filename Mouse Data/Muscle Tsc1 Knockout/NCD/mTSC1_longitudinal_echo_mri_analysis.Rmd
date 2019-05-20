@@ -142,7 +142,7 @@ mri_data_summary <-
 with(subset(mri_data_summary, Week<30&Knockout==F),
                    plot(Week, Fat.Mass,
                    pch=19, las=1, cex=0.5,type="p",
-                   ylab ="Total Fat Mass (g)",
+                   ylab ="Lean Mass (g)",
                    xlab ="Age (Weeks)",
                    xlim=c(0,max(Week)),
                    ylim=c(0,max(Fat.Mass+Fat.Mass.se)),

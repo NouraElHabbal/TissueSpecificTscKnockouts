@@ -71,7 +71,7 @@ shapiro.p <- function(x) shapiro.test(x)$p.value
 
 summary.data <-
   exp.data %>%
-  rename(Genotype = Genotype..2) %>%
+  rename(Genotype = `Genotype...2`) %>%
   mutate(Quadriceps = as.numeric(Quadriceps),
          TricepsSurae = as.numeric(TricepsSurae),
          Heart = as.numeric(Heart)) %>%
@@ -173,8 +173,8 @@ summary.data %>%
 library(car)
 stats.ing <- 
   exp.data %>%
-  mutate(Knockout = factor(if_else(Genotype..2 != 'fl/fl; Tg/+', "Wild-Type", "Knockout"))) %>%
-  filter(!(is.na(Genotype..2))) %>%
+  mutate(Knockout = factor(if_else(Genotype...2 != 'fl/fl; Tg/+', "Wild-Type", "Knockout"))) %>%
+  filter(!(is.na(Genotype...2))) %>%
   summarize(
     Levene = leveneTest(IWAT~Knockout)$"Pr(>F)"[1],
     Mann.Whitney = wilcox.test(IWAT~Knockout)$p.value,
@@ -183,8 +183,8 @@ stats.ing <-
 
 stats.gon <- 
   exp.data %>%
-  mutate(Knockout = factor(if_else(Genotype..2 != 'fl/fl; Tg/+', "Wild-Type", "Knockout"))) %>%
-  filter(!(is.na(Genotype..2))) %>%
+  mutate(Knockout = factor(if_else(Genotype...2 != 'fl/fl; Tg/+', "Wild-Type", "Knockout"))) %>%
+  filter(!(is.na(Genotype...2))) %>%
   summarize(
     Levene = leveneTest(EWAT~Knockout)$"Pr(>F)"[1],
     Mann.Whitney = wilcox.test(EWAT~Knockout)$p.value,

@@ -26,7 +26,7 @@ output:
 
 
 ![](figures/intake-graphs-1.png)<!-- -->
-These data can be found in **/Users/davebrid/Documents/GitHub/TissueSpecificTscKnockouts/Mouse Data/Muscle Tsc1 Knockout** in a file named **Food Intake Log.csv**.  This script was most recently updated on **Wed Apr  3 15:56:48 2019**.
+These data can be found in **/Users/davebrid/Documents/GitHub/TissueSpecificTscKnockouts/Mouse Data/Muscle Tsc1 Knockout** in a file named **Food Intake Log.csv**.  This script was most recently updated on **Mon Jun 24 09:28:04 2019**.
 # Analysis
 
 ![](figures/weekly-intake-plots-1.png)<!-- -->![](figures/weekly-intake-plots-2.png)<!-- -->![](figures/weekly-intake-plots-3.png)<!-- -->![](figures/weekly-intake-plots-4.png)<!-- -->
@@ -140,7 +140,7 @@ sessionInfo()
 ```
 ## R version 3.5.0 (2018-04-23)
 ## Platform: x86_64-apple-darwin15.6.0 (64-bit)
-## Running under: macOS  10.14.2
+## Running under: macOS  10.14.5
 ## 
 ## Matrix products: default
 ## BLAS: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRblas.0.dylib
@@ -153,28 +153,28 @@ sessionInfo()
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-##  [1] lmerTest_3.0-1 lme4_1.1-19    Matrix_1.2-15  dbplyr_1.3.0  
-##  [5] car_3.0-2      carData_3.0-2  broom_0.5.1    nlme_3.1-137  
-##  [9] ggplot2_3.1.0  bindrcpp_0.2.2 forcats_0.3.0  readr_1.3.1   
-## [13] dplyr_0.7.8    tidyr_0.8.2    knitr_1.21    
+##  [1] lmerTest_3.1-0 lme4_1.1-21    Matrix_1.2-17  dbplyr_1.4.1  
+##  [5] car_3.0-3      carData_3.0-2  broom_0.5.2    nlme_3.1-140  
+##  [9] ggplot2_3.1.1  forcats_0.4.0  readr_1.3.1    dplyr_0.8.1   
+## [13] tidyr_0.8.3    knitr_1.23    
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] tidyselect_0.2.5  xfun_0.4          purrr_0.2.5      
-##  [4] reshape2_1.4.3    splines_3.5.0     haven_2.0.0      
-##  [7] lattice_0.20-38   colorspace_1.3-2  generics_0.0.2   
-## [10] htmltools_0.3.6   yaml_2.2.0        rlang_0.3.1      
-## [13] nloptr_1.2.1      pillar_1.3.1      DBI_1.0.0        
-## [16] foreign_0.8-71    glue_1.3.0        withr_2.1.2      
-## [19] readxl_1.2.0      bindr_0.1.1       plyr_1.8.4       
-## [22] stringr_1.3.1     munsell_0.5.0     gtable_0.2.0     
-## [25] cellranger_1.1.0  zip_1.0.0         evaluate_0.12    
-## [28] labeling_0.3      rio_0.5.16        curl_3.2         
-## [31] highr_0.7         Rcpp_1.0.0        scales_1.0.0     
-## [34] backports_1.1.3   abind_1.4-5       hms_0.4.2        
-## [37] digest_0.6.18     stringi_1.2.4     openxlsx_4.1.0   
-## [40] numDeriv_2016.8-1 grid_3.5.0        tools_3.5.0      
-## [43] magrittr_1.5      lazyeval_0.2.1    tibble_2.0.0     
-## [46] crayon_1.3.4      pkgconfig_2.0.2   MASS_7.3-51.1    
-## [49] data.table_1.11.8 minqa_1.2.4       assertthat_0.2.0 
-## [52] rmarkdown_1.11    R6_2.3.0          compiler_3.5.0
+##  [1] tidyselect_0.2.5    xfun_0.7            reshape2_1.4.3     
+##  [4] purrr_0.3.2         splines_3.5.0       haven_2.1.0        
+##  [7] lattice_0.20-38     colorspace_1.4-1    generics_0.0.2     
+## [10] htmltools_0.3.6     yaml_2.2.0          rlang_0.3.4        
+## [13] nloptr_1.2.1        pillar_1.4.1        foreign_0.8-71     
+## [16] glue_1.3.1          withr_2.1.2         DBI_1.0.0          
+## [19] readxl_1.3.1        plyr_1.8.4          stringr_1.4.0      
+## [22] munsell_0.5.0       gtable_0.3.0        cellranger_1.1.0   
+## [25] zip_2.0.2           evaluate_0.14       labeling_0.3       
+## [28] rio_0.5.16          curl_3.3            highr_0.8          
+## [31] Rcpp_1.0.1          scales_1.0.0        backports_1.1.4    
+## [34] abind_1.4-5         hms_0.4.2           digest_0.6.19      
+## [37] stringi_1.4.3       openxlsx_4.1.0.1    numDeriv_2016.8-1.1
+## [40] grid_3.5.0          tools_3.5.0         magrittr_1.5       
+## [43] lazyeval_0.2.2      tibble_2.1.3        crayon_1.3.4       
+## [46] pkgconfig_2.0.2     MASS_7.3-51.4       data.table_1.12.2  
+## [49] minqa_1.2.4         assertthat_0.2.1    rmarkdown_1.13     
+## [52] boot_1.3-22         R6_2.4.0            compiler_3.5.0
 ```

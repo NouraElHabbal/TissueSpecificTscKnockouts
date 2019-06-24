@@ -103,6 +103,7 @@ baseline.data <-
   rename(Heat.kw = Heat) %>% #heat is originally in Kcal/h
   mutate(Heat = Heat.kw*1.163) %>% #heat is in kCal/h originally, converted to Watts)
   full_join(mri.data.unique, by=c('Subject'='Label')) %>% #merged in mri data
+  mutate(Weight = if_else(Weight == 0, Fat+Lean, Weight)) %>%
   mutate(`Volume O2` = `Volume O2`*Weight/1000,
          `Volume CO2` = `Volume CO2`*Weight/1000) #initially Volume O2 and CO2 is in mL/kg/h, converted to mL/h
 
@@ -140,18 +141,20 @@ animal.data.ld <-
   filter(RER<1.2) %>% #removed biologically implausible values
   filter(Subject!='4762') %>% #removed outlier sample
   mutate(CHO.Ox = (4.585 * `Volume CO2`*60/1000) - (3.226 * `Volume O2`*60/1000)) %>% #converted gas rates from mL/h to L/min to get this in g/min
+  mutate(Lipid.Ox = (1.695 * `Volume O2`*60/1000) - (1.701 * `Volume CO2`*60/1000)) %>% #converted gas rates from mL/h to L/min to get this in g/min
   group_by(Subject,Genotype,Knockout,Sex, `Light/Dark`) %>% #calculated average hour/animal level data
   summarize(RER = mean(RER,na.rm=T),
             VO2 = mean(`Volume O2`/1000*60,na.rm=T), #mL/h to L/min
             VCO2 = mean(`Volume CO2`/1000*60, na.rm=T), #mL/h to L/min
             Activity = mean(Activity, na.rm=T),
             CHO.Oxidation = mean(CHO.Ox, na.rm=T),
+            Lipid.Oxidation = mean(Lipid.Ox, na.rm=T),
             Heat = mean(Heat,na.rm=T)) 
 
 animal.data.ld.summary <-
   animal.data.ld %>%
   group_by(Knockout,Sex,`Light/Dark`) %>%
-  summarize_if(is.numeric, .funs=funs(mean,se))
+  summarize_if(is.numeric, .funs=funs(mean(.,na.rm=T),se))
 
 library(ggplot2)
 
@@ -186,14 +189,16 @@ animal.data <-
   filter(RER<1.2) %>% #removed biologically implausible values
   filter(Subject!='4762') %>% #removed outlier sample
   group_by(Subject,Genotype,Knockout,Sex, Zeitgeber.Time) %>% #calculated average hour/animal level data
-  mutate(CHO.Ox = (4.585 * `Volume CO2`) - (3.226 * `Volume O2`)) %>% # to get this in g/min
+  mutate(CHO.Ox = (4.585 * `Volume CO2`*60/1000) - (3.226 * `Volume O2`*60/1000)) %>% #converted gas rates from mL/h to L/min to get this in g/min
+  mutate(Lipid.Ox = (1.695 *`Volume O2`*60/1000) - (1.701 * `Volume CO2`*60/1000)) %>% #converted gas rates from mL/h to L/min to get this in g/min
   summarize(RER = mean(RER,na.rm=T),
             Activity = mean(Activity, na.rm=T),
             VO2 = mean(`Volume O2`, na.rm=T),
             VCO2 = mean(`Volume CO2`, na.rm=T),
             Heat = mean(Heat,na.rm=T),
             Lean = mean(Lean,na.rm=T),
-            CHO.Oxidation = mean(CHO.Ox))
+            CHO.Oxidation = mean(CHO.Ox, na.rm=T),
+            Lipid.Oxidation = mean(Lipid.Ox, na.rm=T))
 
 ggplot(animal.data,
        aes(y=VO2, x=Zeitgeber.Time,
@@ -213,7 +218,7 @@ summary.data <-
   ungroup %>%
   dplyr::select(-Subject, -Genotype) %>% #removed subject column
   group_by(Knockout,Sex,Zeitgeber.Time) %>%
-  summarize_all(c('mean','se'))
+  summarize_all(.funs=funs(mean(.,na.rm=T),se))
   
 ggplot(summary.data,
        aes(y=VO2_mean,
@@ -253,15 +258,6 @@ Another way to present these data is to evaluate this by heat instead of VO2. We
 $$(3.815 + 1.232 * RER)*VO2$$
 
 ```{r heat-production, fig.cap="Linegraph of Heat Data"}
-
-
-summary.data <-
-  animal.data %>%
-  ungroup %>%
-  dplyr::select(-Subject, -Genotype) %>% #removed subject column
-  group_by(Knockout,Sex,Zeitgeber.Time) %>%
-  summarize_all(c('mean','se'))
-  
 ggplot(summary.data,
        aes(y=Heat_mean,
            ymin=Heat_mean-Heat_se,
@@ -435,7 +431,7 @@ ggplot(animal.data.ld,
   labs(y='Carbohydrate Oxidation (g/min)')
 ```
 
-```{r cho-analysis-linegraph, fig,cap="Mouse level RER levels"}
+```{r cho-analysis-linegraph, fig,cap="Mouse level carbohydrate oxidation levels"}
 ggplot(animal.data,
        aes(y=CHO.Oxidation, x=Zeitgeber.Time,
            group=Subject,
@@ -448,7 +444,7 @@ ggplot(animal.data,
 
 ### Carbohydrate Oxidation Summary Data
 
-```{r cho-summarized-data, fig.cap="Linegraph of RER Data"}
+```{r cho-summarized-data, fig.cap="Linegraph of carbohydrate oxidation data"}
 
 
 ggplot(summary.data,
@@ -482,6 +478,68 @@ ggplot(summary.data,
         legend.title=element_blank()) +
   labs(y='Carbohydrate Oxidation (g/min)')
 ```
+
+## Lipid Oxidation Analysis
+
+Calculated as $Lipid\ oxidation = (1.695 * vO_2) - (1.701 * vCO_2)$ where both units are in L/min and the output is in g/min
+
+```{r lipid-analysis-light-dark, fig.cap="Lipid Oxidation Summary Light/Dark Boxplot"}
+ggplot(animal.data.ld,
+       aes(y=Lipid.Oxidation,x=`Light/Dark`,
+           col=Knockout)) +
+  geom_boxplot(width=0.75) +
+  geom_jitter(position=position_dodge(width=0.75)) +
+  facet_grid(~Sex) +
+  labs(y='Lipid Oxidation (g/min)')
+```
+
+```{r lipid-analysis-linegraph, fig,cap="Mouse level lipid oxidation levels"}
+ggplot(animal.data,
+       aes(y=Lipid.Oxidation, x=Zeitgeber.Time,
+           group=Subject,
+           col=Knockout)) +
+  geom_line() +
+  facet_grid(~Sex) +
+  labs(y='Lipid Oxidation (g/min)')
+
+```
+
+### Lipid Oxidation Summary Data
+
+```{r lipid-summarized-data, fig.cap="Linegraph of Lipid Oxidation Data"}
+
+
+ggplot(summary.data,
+       aes(y=Lipid.Oxidation_mean,
+           ymin=Lipid.Oxidation_mean-Lipid.Oxidation_se,
+           ymax=Lipid.Oxidation_mean+Lipid.Oxidation_se,
+           x=Zeitgeber.Time,
+           col=Sex,
+           lty=Knockout)) +
+  geom_line() +
+  geom_errorbar()  +
+  labs(y='Lipid Oxidation (g/min)')
+
+ggplot(summary.data,
+       aes(y=Lipid.Oxidation_mean,
+           ymin=Lipid.Oxidation_mean-Lipid.Oxidation_se,
+           ymax=Lipid.Oxidation_mean+Lipid.Oxidation_se,
+           x=Zeitgeber.Time,
+           col=Knockout)) +
+  geom_line() +
+  geom_errorbar() +
+  labs(y="Lipid Oxidation (g/min)", x="Zeitgeber Time") +
+  facet_grid(~Sex) +
+  theme_classic() +
+  scale_color_manual(labels = c("Wild-Type", "Knockout"), values=c("#6CBE45","#FAC917")) +
+  theme(legend.position = c(0.15, 0.9),
+        legend.background = element_rect(fill=alpha(0.1)),
+        legend.text=element_text(size=14),
+        axis.text=element_text(size=14),
+        axis.title=element_text(size=14),
+        legend.title=element_blank()) 
+```
+
 
 ## Activity Analysis
 

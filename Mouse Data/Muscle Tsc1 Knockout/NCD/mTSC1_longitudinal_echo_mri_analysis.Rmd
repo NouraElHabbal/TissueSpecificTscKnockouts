@@ -112,7 +112,7 @@ with(subset(mri_data_summary, Week<30&Knockout==F),
                    xlab ="Age (Weeks)",
                    xlim=c(0,max(Week)),
                    ylim=c(0,max(Fat.Mass+Fat.Mass.se)),
-                   col=palette()[1]))
+                   col=c("#6CBE45","#FAC917")))
 
 
  superpose.eb <-
@@ -121,14 +121,14 @@ with(subset(mri_data_summary, Week<30&Knockout==F),
  length = length, ...)
  
  
-with(subset(mri_data_summary, Week<30&Knockout==F), superpose.eb(Week,Fat.Mass,Fat.Mass.se, col=palette()[1]))
-with(subset(mri_data_summary, Week<30&Knockout==T), superpose.eb(Week,Fat.Mass,Fat.Mass.se, col=palette()[2]))
+with(subset(mri_data_summary, Week<30&Knockout==F), superpose.eb(Week,Fat.Mass,Fat.Mass.se, col=c("#6CBE45","#FAC917")[1]))
+with(subset(mri_data_summary, Week<30&Knockout==T), superpose.eb(Week,Fat.Mass,Fat.Mass.se, col=c("#6CBE45","#FAC917")[2]))
 
 with(subset(mri_data_summary, Week<30&Knockout==T), points(Week,Fat.Mass, col=palette()[2], pch=19, cex=0.5))
-legend("topleft", c("Wild-Type","Knockout"), bty="n", pch=19, col=palette()[1:2], lty=1)
+legend("topleft", c("Wild-Type","Knockout"), bty="n", pch=19, col=c("#6CBE45","#FAC917"), lty=1)
 
-with(subset(mri_data_summary, Week<30&Knockout==F), lines(smooth.spline(Fat.Mass ~ Week, spar=0.9), col=palette()[1]))
-with(subset(mri_data_summary, Week<30&Knockout==T), lines(smooth.spline(Fat.Mass ~ Week, spar=0.9), col=palette()[2]))
+with(subset(mri_data_summary, Week<30&Knockout==F), lines(smooth.spline(Fat.Mass ~ Week, spar=0.9), col=c("#6CBE45","#FAC917")[1]))
+with(subset(mri_data_summary, Week<30&Knockout==T), lines(smooth.spline(Fat.Mass ~ Week, spar=0.9), col=c("#6CBE45","#FAC917")[2]))
 ```
 
 ```{r scatterplot-lean-mass-weekly}
@@ -146,16 +146,16 @@ with(subset(mri_data_summary, Week<30&Knockout==F),
                    xlab ="Age (Weeks)",
                    xlim=c(0,max(Week)),
                    ylim=c(0,max(Fat.Mass+Fat.Mass.se)),
-                   col=palette()[1]))
+                   col=c("#6CBE45","#FAC917")))
 
-with(subset(mri_data_summary, Week<30&Knockout==F), superpose.eb(Week,Fat.Mass,Fat.Mass.se, col=palette()[1]))
-with(subset(mri_data_summary, Week<30&Knockout==T), superpose.eb(Week,Fat.Mass,Fat.Mass.se, col=palette()[2]))
+with(subset(mri_data_summary, Week<30&Knockout==F), superpose.eb(Week,Fat.Mass,Fat.Mass.se, col=c("#6CBE45","#FAC917")[1]))
+with(subset(mri_data_summary, Week<30&Knockout==T), superpose.eb(Week,Fat.Mass,Fat.Mass.se, col=c("#6CBE45","#FAC917")[2]))
 
 with(subset(mri_data_summary, Week<30&Knockout==T), points(Week,Fat.Mass, col=palette()[2], pch=19, cex=0.5))
-legend("topleft", c("Wild-Type","Knockout"), bty="n", pch=19, col=palette()[1:2], lty=1)
+legend("topleft", c("Wild-Type","Knockout"), bty="n", pch=19, col=c("#6CBE45","#FAC917"), lty=1)
 
-with(subset(mri_data_summary, Week<30&Knockout==F), lines(smooth.spline(Fat.Mass ~ Week, spar=0.6), col=palette()[1]))
-with(subset(mri_data_summary, Week<30&Knockout==T), lines(smooth.spline(Fat.Mass ~ Week, spar=0.6), col=palette()[2]))
+with(subset(mri_data_summary, Week<30&Knockout==F), lines(smooth.spline(Fat.Mass ~ Week, spar=0.6), col=c("#6CBE45","#FAC917")[1]))
+with(subset(mri_data_summary, Week<30&Knockout==T), lines(smooth.spline(Fat.Mass ~ Week, spar=0.6), col=c("#6CBE45","#FAC917")[2]))
 ```
 
 # Summary

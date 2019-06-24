@@ -227,7 +227,9 @@ ggplot(summary.data,
            col=Knockout)) +
   geom_line() +
   geom_errorbar() +
-    facet_grid(~Sex) +
+  facet_grid(~Sex) +
+  theme_classic() +
+  scale_color_manual(labels = c("Wild-Type", "Knockout"), values=c("#6CBE45","#FAC917")) +
   labs(y="Volume O2 Consumed (mL/h)", x="Zeitgeber Time") +
   theme(legend.position = c(0.15, 0.9),
         legend.background = element_rect(fill=alpha(0.1)),
@@ -272,7 +274,9 @@ ggplot(summary.data,
            col=Knockout)) +
   geom_line() +
   geom_errorbar() +
-    facet_grid(~Sex) +
+  theme_classic() +
+  scale_color_manual(labels = c("Wild-Type", "Knockout"), values=c("#6CBE45","#FAC917")) +
+  facet_grid(~Sex) +
   labs(y="Heat Production (W)", x="Zeitgeber Time") +
   theme(legend.position = c(0.15, 0.9),
         legend.background = element_rect(fill=alpha(0.1)),
@@ -400,6 +404,8 @@ ggplot(summary.data,
   geom_errorbar() +
   labs(y="Respiratory Exchange Ratio", x="Zeitgeber Time") +
   facet_grid(~Sex) +
+  theme_classic() +
+  scale_color_manual(labels = c("Wild-Type", "Knockout"), values=c("#6CBE45","#FAC917")) +
   theme(legend.position = c(0.15, 0.9),
         legend.background = element_rect(fill=alpha(0.1)),
         legend.text=element_text(size=14),
@@ -453,6 +459,8 @@ ggplot(summary.data,
   geom_errorbar() +
   labs(y="Ambulatory Movement", x="Zeitgeber Time") +
   facet_grid(~Sex) +
+  theme_classic() +
+  scale_color_manual(labels = c("Wild-Type", "Knockout"), values=c("#6CBE45","#FAC917")) +
   theme(legend.position = c(0.15, 0.9),
         legend.background = element_rect(fill=alpha(0.1)),
         legend.text=element_text(size=14),

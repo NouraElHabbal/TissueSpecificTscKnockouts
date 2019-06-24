@@ -88,12 +88,12 @@ for (file in mri.files[2:length(mri.files)]) {
 mri.data.unique <-
   mri.data %>%
   distinct(Label, .keep_all = T) %>%
-  select(Label,Fat,Lean,Weight)
+  dplyr::select(Label,Fat,Lean,Weight)
 
 baseline.data <-  
   lapply(baseline.files, read_csv) %>% 
   bind_rows() %>%
-  select(Subject, Interval, `Date/Time`, `Light/Dark`, `Volume O2`, RER, `X Ambulatory`, `Y Ambulatory`,`Volume CO2`,Heat) %>%
+  dplyr::select(Subject, Interval, `Date/Time`, `Light/Dark`, `Volume O2`, RER, `X Ambulatory`, `Y Ambulatory`,`Volume CO2`,Heat) %>%
   right_join(key.data, by=c('Subject'='Mouse'))  %>% #merged with annotation file
   mutate(Date.Time = mdy_hms(`Date/Time`)) %>% #parsed datetime
   mutate(Time = hour(Date.Time)) %>% #extracted the hour 
@@ -102,7 +102,9 @@ baseline.data <-
   mutate(Subject = as.factor(Subject)) %>%
   rename(Heat.kw = Heat) %>% #heat is originally in Kcal/h
   mutate(Heat = Heat.kw*1.163) %>% #heat is in kCal/h originally, converted to Watts)
-  full_join(mri.data.unique, by=c('Subject'='Label')) #merged in mri data
+  full_join(mri.data.unique, by=c('Subject'='Label')) %>% #merged in mri data
+  mutate(`Volume O2` = `Volume O2`*Weight/1000,
+         `Volume CO2` = `Volume CO2`*Weight/1000) #initially Volume O2 and CO2 is in mL/kg/h, converted to mL/h
 
 baseline.data %>%
   group_by(Genotype,Sex) %>%
@@ -120,7 +122,7 @@ baseline.data %>%
 #wrote out the census data, showing one line for each animals
 baseline.data %>%
   distinct(Subject,Sex,Genotype, .keep_all = T) %>%
-  select(Subject,Sex,Genotype,Date.Time,Lean,Fat,`Volume O2`) %>%
+  dplyr::select(Subject,Sex,Genotype,Date.Time,Lean,Fat,`Volume O2`) %>%
   arrange(-Lean) %>%
   write_csv("Baseline Data.csv")
 
@@ -136,12 +138,14 @@ animal.data.ld <-
   filter(Interval>100) %>% #removed first 20 intervals
   filter(RER>0.5) %>%
   filter(RER<1.2) %>% #removed biologically implausible values
-    filter(Subject!='4762') %>% #removed outlier sample
+  filter(Subject!='4762') %>% #removed outlier sample
+  mutate(CHO.Ox = (4.585 * `Volume CO2`*60/1000) - (3.226 * `Volume O2`*60/1000)) %>% #converted gas rates from mL/h to L/min to get this in g/min
   group_by(Subject,Genotype,Knockout,Sex, `Light/Dark`) %>% #calculated average hour/animal level data
   summarize(RER = mean(RER,na.rm=T),
-            VO2 = mean(`Volume O2`,na.rm=T),
-            VCO2 = mean(`Volume CO2`),
+            VO2 = mean(`Volume O2`/1000*60,na.rm=T), #mL/h to L/min
+            VCO2 = mean(`Volume CO2`/1000*60, na.rm=T), #mL/h to L/min
             Activity = mean(Activity, na.rm=T),
+            CHO.Oxidation = mean(CHO.Ox, na.rm=T),
             Heat = mean(Heat,na.rm=T)) 
 
 animal.data.ld.summary <-
@@ -182,11 +186,14 @@ animal.data <-
   filter(RER<1.2) %>% #removed biologically implausible values
   filter(Subject!='4762') %>% #removed outlier sample
   group_by(Subject,Genotype,Knockout,Sex, Zeitgeber.Time) %>% #calculated average hour/animal level data
+  mutate(CHO.Ox = (4.585 * `Volume CO2`) - (3.226 * `Volume O2`)) %>% # to get this in g/min
   summarize(RER = mean(RER,na.rm=T),
             Activity = mean(Activity, na.rm=T),
             VO2 = mean(`Volume O2`, na.rm=T),
+            VCO2 = mean(`Volume CO2`, na.rm=T),
             Heat = mean(Heat,na.rm=T),
-            Lean = mean(Lean,na.rm=T)) 
+            Lean = mean(Lean,na.rm=T),
+            CHO.Oxidation = mean(CHO.Ox))
 
 ggplot(animal.data,
        aes(y=VO2, x=Zeitgeber.Time,
@@ -204,7 +211,7 @@ ggplot(animal.data,
 summary.data <-
   animal.data %>%
   ungroup %>%
-  select(-Subject, -Genotype) %>% #removed subject column
+  dplyr::select(-Subject, -Genotype) %>% #removed subject column
   group_by(Knockout,Sex,Zeitgeber.Time) %>%
   summarize_all(c('mean','se'))
   
@@ -251,7 +258,7 @@ $$(3.815 + 1.232 * RER)*VO2$$
 summary.data <-
   animal.data %>%
   ungroup %>%
-  select(-Subject, -Genotype) %>% #removed subject column
+  dplyr::select(-Subject, -Genotype) %>% #removed subject column
   group_by(Knockout,Sex,Zeitgeber.Time) %>%
   summarize_all(c('mean','se'))
   
@@ -412,6 +419,68 @@ ggplot(summary.data,
         axis.text=element_text(size=14),
         axis.title=element_text(size=14),
         legend.title=element_blank())
+```
+
+## Carbohydrate Oxidation Analysis
+
+Calculated as $Carbohydrate\ oxidation = (4.585 * vCO_2) - (3.226 * vO_2)$ where both units are in L/min and the output is in g/min
+
+```{r cho-analysis-light-dark, fig.cap="Carbohydrate Oxidation Summary Light/Dark Boxplot"}
+ggplot(animal.data.ld,
+       aes(y=CHO.Oxidation,x=`Light/Dark`,
+           col=Knockout)) +
+  geom_boxplot(width=0.75) +
+  geom_jitter(position=position_dodge(width=0.75)) +
+  facet_grid(~Sex) +
+  labs(y='Carbohydrate Oxidation (g/min)')
+```
+
+```{r cho-analysis-linegraph, fig,cap="Mouse level RER levels"}
+ggplot(animal.data,
+       aes(y=CHO.Oxidation, x=Zeitgeber.Time,
+           group=Subject,
+           col=Knockout)) +
+  geom_line() +
+  facet_grid(~Sex) +
+  labs(y='Carbohydrate Oxidation (g/min)')
+
+```
+
+### Carbohydrate Oxidation Summary Data
+
+```{r cho-summarized-data, fig.cap="Linegraph of RER Data"}
+
+
+ggplot(summary.data,
+       aes(y=CHO.Oxidation_mean,
+           ymin=CHO.Oxidation_mean-CHO.Oxidation_se,
+           ymax=CHO.Oxidation_mean+CHO.Oxidation_se,
+           x=Zeitgeber.Time,
+           col=Sex,
+           lty=Knockout)) +
+  geom_line() +
+  geom_errorbar()  +
+  labs(y='Carbohydrate Oxidation (g/min)')
+
+ggplot(summary.data,
+       aes(y=CHO.Oxidation_mean,
+           ymin=CHO.Oxidation_mean-CHO.Oxidation_se,
+           ymax=CHO.Oxidation_mean+CHO.Oxidation_se,
+           x=Zeitgeber.Time,
+           col=Knockout)) +
+  geom_line() +
+  geom_errorbar() +
+  labs(y="Respiratory Exchange Ratio", x="Zeitgeber Time") +
+  facet_grid(~Sex) +
+  theme_classic() +
+  scale_color_manual(labels = c("Wild-Type", "Knockout"), values=c("#6CBE45","#FAC917")) +
+  theme(legend.position = c(0.15, 0.9),
+        legend.background = element_rect(fill=alpha(0.1)),
+        legend.text=element_text(size=14),
+        axis.text=element_text(size=14),
+        axis.title=element_text(size=14),
+        legend.title=element_blank()) +
+  labs(y='Carbohydrate Oxidation (g/min)')
 ```
 
 ## Activity Analysis

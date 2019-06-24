@@ -19,7 +19,7 @@ output:
 
 # Purpose
 
-To evaluate energy expenditure and other parameters in muscle _Tsc1_ knockout mice.  This script was most recently updated on **Mon Jun 24 09:33:44 2019**.
+To evaluate energy expenditure and other parameters in muscle _Tsc1_ knockout mice.  This script was most recently updated on **Mon Jun 24 10:31:05 2019**.
 
 # Experimental Details
 
@@ -125,6 +125,18 @@ KnockoutKnockout                         0.031        0.014      2.22   0.027
 ### RER Summary Data
 
 ![Linegraph of RER Data](figures/rer-summarized-data-1.png)![Linegraph of RER Data](figures/rer-summarized-data-2.png)
+
+## Carbohydrate Oxidation Analysis
+
+Calculated as $Carbohydrate\ oxidation = (4.585 * vCO_2) - (3.226 * vO_2)$ where both units are in L/min and the output is in g/min
+
+![Carbohydrate Oxidation Summary Light/Dark Boxplot](figures/cho-analysis-light-dark-1.png)
+
+![](figures/cho-analysis-linegraph, fig-1.png)<!-- -->
+
+### Carbohydrate Oxidation Summary Data
+
+![Linegraph of RER Data](figures/cho-summarized-data-1.png)![Linegraph of RER Data](figures/cho-summarized-data-2.png)
 
 ## Activity Analysis
 

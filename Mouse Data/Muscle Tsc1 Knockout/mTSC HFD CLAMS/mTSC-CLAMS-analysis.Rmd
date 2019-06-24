@@ -540,6 +540,19 @@ ggplot(summary.data,
         legend.title=element_blank()) 
 ```
 
+### Lipid versus CHO Oxidation
+
+```{r lipid-cho-oxidation, fig.cap="Comparason of lipid and carbohydrate oxidation rates in wild-type mice"}
+ggplot(animal.data.ld %>% filter(Knockout=="Control"),
+       aes(y=CHO.Oxidation, x=Lipid.Oxidation, col=Sex)) +
+  geom_point() +
+  geom_smooth(method="lm") +
+  facet_grid(~`Light/Dark`) +
+  labs(title="Relationship between fat and lipid oxidation",
+       y="Carbohydrate oxidation (g/min)",
+       x="Lipid oxidation (g/min)")
+
+```
 
 ## Activity Analysis
 

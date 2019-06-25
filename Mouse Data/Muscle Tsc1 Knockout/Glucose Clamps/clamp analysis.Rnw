@@ -1,0 +1,262 @@
+\documentclass{article}
+
+\usepackage{fullpage}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage[tableposition=top]{caption}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\title{Insulin Clamp Study on Mck-TSC1 Mice}
+\author{Dave Bridges and Nathan Qi}
+\date{March 21, 2012}
+\maketitle
+
+\section*{Experiment Summary}
+
+<<data files echo=FALSE>>=
+setwd('C:/Documents and Settings/davebrid/My Documents/Research/Mouse Work/Muscle TSC1/Insulin Clamp')
+data_file <- "clamp summary.csv"
+data <- read.csv(data_file)
+@
+
+<<label=data-tables,echo=FALSE,results=tex>>=
+library(xtable)
+print(xtable(data[order(data$Genotype),], caption = "All Data", label = "tab:one"))
+@
+
+\section*{Data Summary}
+<<data-summary, echo=FALSE>>=
+library(plyr)
+means <- ddply(data,~Genotype,summarise,GIR=mean(Clamp.AUC, na.rm=TRUE),Basal.HGP=mean(Basal.HGP, na.rm=TRUE),Clamp.HGP=mean(Clamp.HGP, na.rm=TRUE),sHGP=mean(Clamp.sHGP, na.rm=TRUE),Clearance.Basal=mean(Clearance.Basal, na.rm=TRUE),Clearance.Clamp=mean(Clearance.Clamp, na.rm=TRUE),Insulin=mean(Insulin.Basal, na.rm=TRUE),Gastroc=mean(Gastroc, na.rm=TRUE),V.fat=mean(V.fat, na.rm=TRUE),S.fat=mean(S.fat, na.rm=TRUE),BAT=mean(BAT, na.rm=TRUE),Heart=mean(Heart, na.rm=TRUE))
+means <- means[c(2,1), ]
+se <- ddply(data,~Genotype,summarise,
+            GIR=sd(Clamp.AUC, na.rm=TRUE)/sqrt(length(Clamp.AUC)),
+            Basal.HGP=sd(Basal.HGP, na.rm=TRUE)/sqrt(length(Basal.HGP)),
+            Clamp.HGP=sd(Clamp.HGP, na.rm=TRUE)/sqrt(length(Clamp.HGP)),
+            sHGP=sd(Clamp.sHGP,na.rm=TRUE)/sqrt(length(Clamp.sHGP)),
+            Clearance.Basal=sd(Clearance.Basal,na.rm=TRUE)/sqrt(length(Clearance.Basal)),
+            Clearance.Clamp=sd(Clearance.Clamp, na.rm=TRUE)/sqrt(length(Clearance.Clamp)),
+            Insulin=sd(Insulin.Basal, na.rm=TRUE)/sqrt(length(Insulin.Basal)),
+            Gastroc=sd(Gastroc, na.rm=TRUE)/sqrt(length(Gastroc)),
+            V.fat=sd(V.fat, na.rm=TRUE)/sqrt(length(V.fat)), 
+            S.fat=sd(S.fat, na.rm=TRUE)/sqrt(length(S.fat)), 
+            BAT=sd(BAT, na.rm=TRUE)/sqrt(length(BAT)),
+            Heart=sd(Heart, na.rm=TRUE)/sqrt(length(Heart)))
+se <- se[c(2,1),]
+@
+The mean data is compiled in \ref{tab:two} with the standard errors in \ref{tab:three}
+
+\section*{Statistics}
+<<data-analysis, echo=FALSE>>=
+Clamp.GIR.fit <- t.test(Clamp.GIR~Genotype, data=data)
+Clamp.AUC.fit <- t.test(Clamp.AUC~Genotype, data=data)
+Basal.HGP.fit <- t.test(Basal.HGP~Genotype, data=data)
+Clamp.HGP.fit <- t.test(Clamp.HGP~Genotype, data=data)
+sHGP.fit <- t.test(Clamp.sHGP~Genotype, data=data)
+Clearance.Basal.fit <- t.test(Clearance.Basal~Genotype, data=data)
+Clearance.Clamp.fit <- t.test(Clearance.Clamp~Genotype, data=data)
+Insulin.fit <- t.test(Insulin.Basal~Genotype, data=data)
+Gastroc.fit <- t.test(Gastroc~Genotype, data=data)
+V.fat.fit <- t.test(V.fat~Genotype, data=data)
+S.fat.fit <- t.test(S.fat~Genotype, data=data)
+BAT.fit <- t.test(BAT~Genotype, data=data)
+Heart.fit <- t.test(Heart~Genotype, data=data)
+t.tests <- data.frame(Clamp.GIR = Clamp.GIR.fit$p.value,
+                      Clamp.AUC = Clamp.AUC.fit$p.value,
+                      Basal.HGP = Basal.HGP.fit$p.value,
+                      Clamp.HGP = Clamp.HGP.fit$p.value,
+                      sHGP = sHGP.fit$p.value,
+                      Clearance.Basal = Clearance.Basal.fit$p.value,
+                      Clearance.Clamp = Clearance.Clamp.fit$p.value,
+                      Insulin = Insulin.fit$p.value,
+                      Gastroc =  Gastroc.fit$p.value,
+                      V.fat = V.fat.fit$p.value,
+                      S.fat = S.fat.fit$p.value,
+                      BAT = BAT.fit$p.value,
+                      Heart.fit = Heart.fit$p.value)
+@
+
+<<advanced-statistics, echo=TRUE>>=
+
+@
+
+<<label=avg-tables,echo=FALSE,results=tex>>=
+print(xtable(means, caption = "Averaged Data", label = "tab:two"), include.rownames = FALSE)
+print(xtable(se, caption = "Standard Error", label = "tab:three"), include.rownames = FALSE)
+@
+\pagebreak
+\section*{T-Test Analysis}
+<<label=t-tests,echo=FALSE,results=tex>>=
+print(xtable(t.tests, caption = "T-Tests, Unadjusted", digits=c(rep(3,14))), include.rownames = TRUE)
+print(xtable(as.data.frame(p.adjust(t.tests, "BH",13)), caption = "Benjamini-Hochberg Adjusted T-Tests"), include.rownames = TRUE)
+@
+\pagebreak
+
+
+\section*{Graphs}
+
+<<label=gir, include=FALSE, echo=FALSE>>=
+plot <- barplot(means$GIR, 
+                names.arg=(means$Genotype),  
+                ylab="Area Under Curve",
+                main="Glucose Infusion Rate",
+                ylim=c(0,3300))
+superpose.eb <- function (x, y, ebl, ebu = ebl, length = 0.08, ...)
+arrows(x, y + ebu, x, y - ebl, angle = 90, code = 3,
+length = length, ...)
+superpose.eb(plot, means$GIR, se$GIR)
+@
+
+\begin{figure}
+\begin{center}
+<<label=gir,fig=TRUE,echo=FALSE>>=
+<<gir>>
+@
+\end{center}
+\caption{Glucose Infusion Rate}
+\label{fig:one}
+\end{figure}
+
+
+<<label=sHGP, include=FALSE, echo=FALSE>>=
+plot <- barplot(means$sHGP, 
+                names.arg=(means$Genotype),  
+                ylab="Suppression of Hepatic Glucose Production (%)",
+                main="Suppression of Hepatic Glucose Production",
+                ylim=c(0,100))
+superpose.eb(plot, means$sHGP, se$sHGP)
+@
+
+\begin{figure}
+\begin{center}
+<<label=sHGP,fig=TRUE,echo=FALSE>>=
+<<sHGP>>
+@
+\end{center}
+\caption{Suppression of Hepatic Glucose Production}
+\label{fig:two}
+\end{figure}
+
+<<label=insulin, include=FALSE, echo=FALSE>>=
+plot <- barplot(means$Insulin, 
+                names.arg=(means$Genotype),  
+                ylab="Insulin (uU/mL)",
+                main="Insulin Levels",
+                ylim=c(0,15))
+superpose.eb(plot, means$Insulin, se$Insulin)
+@
+
+\begin{figure}
+\begin{center}
+<<label=insulin,fig=TRUE,echo=FALSE>>=
+<<insulin>>
+@
+\end{center}
+\caption{Insulin Levels}
+\label{fig:three}
+\end{figure}
+
+<<label=gastroc, include=FALSE, echo=FALSE>>=
+plot <- barplot(means$Gastroc, 
+                names.arg=(means$Genotype),  
+                ylab="Glucose Uptake (ug/g/min)",
+                main="Gastrocnemius",
+                ylim=c(0,17))
+superpose.eb(plot, means$Gastroc, se$Gastroc)
+@
+
+\begin{figure}
+\begin{center}
+<<label=gastroc,fig=TRUE,echo=FALSE>>=
+<<gastroc>>
+@
+\end{center}
+\caption{Gastrocnemius Glucose Uptake}
+\label{fig:four}
+\end{figure}
+
+
+<<label=v-fat, include=FALSE, echo=FALSE>>=
+plot <- barplot(means$V.fat, 
+                names.arg=(means$Genotype),  
+                ylab="Glucose Uptake (ug/g/min)",
+                main="Visceral Fat",
+                ylim=c(0,9))
+superpose.eb(plot, means$V.fat, se$V.fat)
+@
+
+\begin{figure}
+\begin{center}
+<<label=v-fat,fig=TRUE,echo=FALSE>>=
+<<v-fat>>
+@
+\end{center}
+\caption{Visceral Fat Glucose Uptake}
+\label{fig:five}
+\end{figure}
+
+<<label=s-fat, include=FALSE, echo=FALSE>>=
+plot <- barplot(means$S.fat, 
+                names.arg=(means$Genotype),  
+                ylab="Glucose Uptake (ug/g/min)",
+                main="Subcutaneous Fat",
+                ylim=c(0,30))
+superpose.eb(plot, means$S.fat, se$S.fat)
+@
+
+\begin{figure}
+\begin{center}
+<<label=s-fat,fig=TRUE,echo=FALSE>>=
+<<s-fat>>
+@
+\end{center}
+\caption{Subcutaneous Fat Glucose Uptake}
+\label{fig:six}
+\end{figure}
+
+<<label=heart, include=FALSE, echo=FALSE>>=
+plot <- barplot(means$Heart, 
+                names.arg=(means$Genotype),  
+                ylab="Glucose Uptake (ug/g/min)",
+                main="Heart",
+                ylim=c(0,500))
+superpose.eb(plot, means$Heart, se$Heart)
+@
+
+\begin{figure}
+\begin{center}
+<<label=heart,fig=TRUE,echo=FALSE>>=
+<<heart>>
+@
+\end{center}
+\caption{Heart Glucose Uptake}
+\label{fig:seven}
+\end{figure}
+
+<<label=bat, include=FALSE, echo=FALSE>>=
+plot <- barplot(means$BAT, 
+                names.arg=(means$Genotype),  
+                ylab="Glucose Uptake (ug/g/min)",
+                main="BAT",
+                ylim=c(0,300))
+superpose.eb(plot, means$BAT, se$BAT)
+@
+
+\begin{figure}
+\begin{center}
+<<label=bat,fig=TRUE,echo=FALSE>>=
+<<bat>>
+@
+\end{center}
+\caption{Brown Adipose Tissue Glucose Uptake}
+\label{fig:eight}
+\end{figure}
+
+\section*{Session Information}
+<<sessionInfo, results=tex, echo=F>>=
+toLatex(sessionInfo())
+@
+
+
+\end{document}

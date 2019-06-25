@@ -1,0 +1,139 @@
+---
+title: "Insulin Tolerance Tests on Mck-TSC1 Mice"
+author: "Dave Bridges"
+date: "April 11, 2011"
+output:
+  html_document:
+    highlight: tango
+    keep_md: yes
+    number_sections: yes
+    toc: yes
+  pdf_document:
+    highlight: tango
+    keep_tex: yes
+    number_sections: yes
+    toc: yes
+---
+
+```{r global_options, include=FALSE}
+library(knitr)
+library(tidyr)
+#figures makde will go to directory called figures, will make them as both png and pdf files 
+opts_chunk$set(fig.path='figures/',
+               echo=FALSE, warning=FALSE, message=FALSE,dev=c('png','pdf'))
+options(scipen = 2, digits = 3)
+# set echo and message to TRUE if you want to display code blocks and code output respectively
+
+knitr::knit_hooks$set(inline = function(x) {
+  knitr:::format_sci(x, 'md')
+})
+
+
+superpose.eb <- function (x, y, ebl, ebu = ebl, length = 0.08, ...)
+  arrows(x, y + ebu, x, y - ebl, angle = 90, code = 3,
+  length = length, ...)
+
+  
+se <- function(x) sd(x, na.rm=T)/sqrt(length(x))
+
+#load these packages, nearly always needed
+library(tidyr)
+library(dplyr)
+
+# sets maize and blue color scheme
+color.scheme <- c('#00274c', '#ffcb05')
+```
+
+```{r data-input}
+data <- read.csv(file="data.csv", stringsAsFactors=T, header=T)
+data.no.unk <- data[data$Genotype != "Unknown", ]
+
+library(ggplot2)
+library(plyr)
+auc.anova <- aov(auc~Genotype, data=data.no.unk)
+summary(auc.anova)
+TukeyHSD(auc.anova)
+with(data.no.unk, pairwise.t.test(auc, Genotype, p.adj="bonferroni", paired=F))
+
+means <- ddply(data.no.unk,~Genotype,summarise,	X0=mean(X0,na.rm = TRUE ),X15=mean(X15, na.rm = TRUE),X30=mean(X30, na.rm = TRUE),X45=mean(X45, na.rm = TRUE),X60=mean(X60, na.rm = TRUE),X75=mean(X75, na.rm = TRUE),X90=mean(X90, na.rm = TRUE),X105=mean(X105, na.rm = TRUE),X120=mean(X120, na.rm = TRUE))
+se <- ddply(data.no.unk,~Genotype,summarise,X0=sd(X0 ,na.rm = TRUE )/sqrt(length(X0)),X15=sd(X15,na.rm = TRUE )/sqrt(length(X0)),X30=sd(X30,na.rm = TRUE )/sqrt(length(X0)),X45=sd(X45,na.rm = TRUE )/sqrt(length(X0)),X60=sd(X60,na.rm = TRUE )/sqrt(length(X0)),X75=sd(X75,na.rm = TRUE )/sqrt(length(X0)),X90=sd(X90,na.rm = TRUE )/sqrt(length(X0)),X105=sd(X105,na.rm = TRUE )/sqrt(length(X0)),X120=sd(X120,na.rm = TRUE )/sqrt(length(X0)))
+
+values <- as.matrix(means[2:10])
+values.se <- as.matrix(se[2:10])
+values.se[2,] <- values.se[2,]/sqrt(8)
+values.se[1,] <- values.se[1,]/sqrt(10)
+
+values.norm <- values/values[,1] * 100
+values.se.norm <- values.se/values[,1] * 100
+
+
+
+superpose.eb <- function (x, y, ebl, ebu = ebl, length = 0.08, ...)
+arrows(x, y + ebu, x, y - ebl, angle = 90, code = 3,
+length = length, ...)
+
+time <- c(0,15,30,45,60,75,90,105,120)
+```
+
+# ITT Plots
+
+```{r itt-lineplot, fig.cap="Line plot of ITT data"}
+plot(time,values[1,], type="o", pch=1, ylab="Blood Glucose (mg/dL)", xlab="Time After Insulin Injection (min)", ylim=c(0,150), frame.plot=F)
+lines(time,values[2,], lty=3)
+points(time,values[2,], pch=20)
+superpose.eb(time,values[2,],ebl=values.se[2,])
+superpose.eb(time,values[1,],ebl=values.se[1,])
+leg.txt = c("Wild-Type", "Muscle TSC1 Knockout")
+legend("topright", leg.txt, lty=c(3,1), pch=c(20,1), bty="n")
+```
+
+```{r itt-lineplot-norm, fig.cap="Line plot of normalized ITT data"}
+plot(time,values.norm[1,], type="o", pch=1, ylab="Blood Glucose (Percent of Initial)", xlab="Time After Insulin Injection (min)", ylim=c(0,120), frame.plot=F)
+lines(time,values.norm[2,], lty=3)
+points(time,values.norm[2,], pch=20)
+superpose.eb(time,values.norm[2,],ebl=values.se.norm[2,])
+superpose.eb(time,values.norm[1,],ebl=values.se.norm[1,])
+leg.txt = c("Wild-Type", "Muscle TSC1 Knockout")
+legend("topright", leg.txt, lty=c(3,1), pch=c(20,1), bty="n")
+
+
+summary.means <- ddply(data.no.unk,~Genotype,summarise,weight=mean(Weight),auc=mean(auc, na.rm=T), fasting=mean(X0))
+summary.se <- ddply(data.no.unk,~Genotype,summarise,weight=sd(Weight)/sqrt(length(Weight)), auc=sd(auc, na.rm=T)/sqrt(length(auc)), fasting=sd(X0)/sqrt(length(X0)))
+```
+
+## ITT Statistics
+
+```{r itt-stats}
+library(lme4)
+data.long <- 
+  data %>% 
+  select(-Cage, -auc, -Age) %>% 
+  gather(key=Time, value=Glucose, -Genotype,-Mouse)
+  
+itt.lme.null <- lmer(Glucose ~ Time + (1|Mouse), data=data.long)
+itt.lme.geno <- lmer(Glucose ~ Time + Genotype + (1|Mouse), data=data.long)  
+anova(itt.lme.null, itt.lme.geno) %>% kable(caption="Mixed linear model for effect of genotype on ITT values")
+
+library(broom)
+aov.all <- aov(auc~Age+Weight+Genotype, data=data.no.unk)
+TukeyHSD(aov.all, "Genotype") %>% tidy %>% kable(caption="Tukey test of AUC with age and weight as covariates")
+lm(auc~Age+Weight+Genotype, data=data.no.unk) %>% tidy %>% kable(caption="Linear model of AUC after accounting for age and genotype")
+```
+
+```{r fasting-glucose, fig.cap="Fasting Glucose Levels"}
+plot <- barplot(summary.means$fasting, names.arg=summary.means$Genotype, ylab="Fasting Glucose (mg/dL)", ylim=c(0,150))
+superpose.eb(plot, summary.means$fasting,ebl=summary.se$fasting)
+````
+
+## Area Under Curve
+
+```{r area-under-curve}
+plot <- barplot(summary.means$auc, names.arg=summary.means$Genotype, ylab="Area Under Curve (mg/dL * min)", ylim=c(0,600))
+superpose.eb(plot, summary.means$auc,ebl=summary.se$auc)
+```
+
+# Session Information
+
+```{r session-information, echo=T}
+sessionInfo()
+```

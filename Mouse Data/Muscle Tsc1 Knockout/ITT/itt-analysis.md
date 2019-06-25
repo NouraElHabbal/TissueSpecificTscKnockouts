@@ -49,7 +49,7 @@ output:
 
 # ITT Plots
 
-![Line plot of ITT data](figures/itt-lineplot-1.png)
+![Line plot of ITT data](figures/itt-lineplot-1.png)![Line plot of ITT data](figures/itt-lineplot-2.png)
 
 ![Line plot of normalized ITT data](figures/itt-lineplot-norm-1.png)
 

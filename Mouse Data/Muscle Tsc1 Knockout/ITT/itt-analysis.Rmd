@@ -85,6 +85,23 @@ superpose.eb(time,values[2,],ebl=values.se[2,])
 superpose.eb(time,values[1,],ebl=values.se[1,])
 leg.txt = c("Wild-Type", "Muscle TSC1 Knockout")
 legend("topright", leg.txt, lty=c(3,1), pch=c(20,1), bty="n")
+
+color.scheme <- c("#6CBE45","#FAC917")
+
+plot(time,values[1,], 
+     type="o", 
+     pch=1, 
+     ylab="Blood Glucose (mg/dL)", xlab="Time After Insulin Injection (min)", 
+     ylim=c(0,150), 
+     las=1,
+     col=color.scheme[1],
+     frame.plot=F)
+lines(time,values[2,], col=color.scheme[2])
+points(time,values[2,], pch=1, col=color.scheme[2])
+superpose.eb(time,values[2,],ebl=values.se[2,], col=color.scheme[1])
+superpose.eb(time,values[1,],ebl=values.se[1,], col=color.scheme[2])
+leg.txt = c("Wild-Type", "Knockout")
+legend("topright", leg.txt, col=color.scheme, pch=1, lty=1, bty="n")
 ```
 
 ```{r itt-lineplot-norm, fig.cap="Line plot of normalized ITT data"}

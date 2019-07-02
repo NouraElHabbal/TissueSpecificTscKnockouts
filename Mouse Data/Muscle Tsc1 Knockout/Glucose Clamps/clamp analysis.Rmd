@@ -130,7 +130,7 @@ kable(t(p.adjust(t.tests)) , caption = "Nominal and Benjamini-Hochberg Adjusted 
 plot <- barplot(summary.data$Clamp.GIR_mean, 
                 names.arg=(summary.data$Genotype),  
                 ylab="Glucose Infusion Rate",
-                main="Clamp Glucose Infusion Rate",
+                main="Glucose Infusion Rate (mg/kg/min)",
                 ylim=c(0,32),
                 las=1)
 superpose.eb(plot, summary.data$Clamp.GIR_mean, summary.data$Clamp.GIR_se)
@@ -167,6 +167,49 @@ plot <- barplot(as.matrix(plot.data[2:3]),
                 main="Endogenous Glucose Production",
                 names.arg=c("Basal","Insulin"),
                 ylim=c(0,60),
+                las=1)
+superpose.eb(plot, as.matrix(plot.data[2:3]), as.matrix(plot.data[4:5]))
+legend("topleft", levels(summary.data$Genotype), bty="n",fill=grey.colors(2),)
+```
+
+## Clamp Summary
+
+```{r clamp-summary}
+par(mfrow=c(1,3))
+
+plot <- barplot(summary.data$Clamp.GIR_mean, 
+                names.arg=(summary.data$Genotype),  
+                ylab="Glucose Infusion Rate (mg/kg/min)",
+                main="Glucose Infusion Rate \nDuring Clamp",
+                ylim=c(0,32),
+                las=1,
+                col=grey.colors(2))
+superpose.eb(plot, summary.data$Clamp.GIR_mean, summary.data$Clamp.GIR_se)
+
+plot.data <-
+  summary.data %>%
+  select(Genotype, contains('Gtr'))
+
+plot <- barplot(as.matrix(plot.data[2:3]), 
+                beside=T,  
+                ylab="Glucose Turnover (mg/kg/min)",
+                main="Glucose Turnover Rate",
+                names.arg=c("Basal","Insulin"),
+                ylim=c(0,60),
+                las=1)
+superpose.eb(plot, as.matrix(plot.data[2:3]), as.matrix(plot.data[4:5]))
+legend("topleft", levels(summary.data$Genotype), bty="n",fill=grey.colors(2),)
+
+plot.data <-
+  summary.data %>%
+  select(Genotype, contains('.HGP'))
+
+plot <- barplot(as.matrix(plot.data[2:3]), 
+                beside=T,  
+                ylab="Glucose Production (mg/kg/min)",
+                main="Endogenous Glucose Production",
+                names.arg=c("Basal","Insulin"),
+                ylim=c(0,40),
                 las=1)
 superpose.eb(plot, as.matrix(plot.data[2:3]), as.matrix(plot.data[4:5]))
 legend("topleft", levels(summary.data$Genotype), bty="n",fill=grey.colors(2),)
@@ -286,10 +329,19 @@ plot <- barplot(summary.data$BAT_mean,
 superpose.eb(plot, summary.data$BAT_mean, summary.data$BAT_se)
 ```
 
-## Adipose Tissue Glucose Uptake
+##  Tissue Glucose Uptake Summary
 
-```{r adipose}
-par(mfrow=c(1,3))
+```{r tissue-glucose-uptake-summary}
+par(mfrow=c(1,4))
+
+plot <- barplot(summary.data$Gastroc_mean, 
+                names.arg=(summary.data$Genotype),  
+                ylab="2-Deoxyglucose Uptake (ug/g/min)",
+                main="Gastrocnemius",
+                ylim=c(0,17),
+                las=1,
+                col=grey.colors(2))
+superpose.eb(plot, summary.data$Gastroc_mean, summary.data$Gastroc_se)
 
 plot <- barplot(summary.data$BAT_mean, 
                 names.arg=summary.data$Genotype,  

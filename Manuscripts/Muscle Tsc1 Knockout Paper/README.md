@@ -15,6 +15,9 @@ This document indicates where the raw data for each Figure panel can be found, a
 | Figure 2A | ⁨Mouse Data⁩/⁨Muscle Tsc1 Knockout/⁨NCD/mTSC1_longitudinal_echo_mri_analysis.Rmd | scatterplot-fat-mass-weekly-1⁩.pdf |
 | Figure 2B | Mouse Data⁩/⁨Muscle Tsc1 Knockout/⁨NCD/mTSC1_longitudinal_echo_mri_analysis.Rmd | scatterplot-lean-mass-weekly-1⁩.pdf |
 | Figure 2C | Mouse Data⁩/Muscle Tsc1 Knockout⁩/NCD⁩/mTSC1-sac-data.Rmd | wat-weights-1.pdf⁩ |
+| Figure 2D |  |
+| Figure 2E | Mouse Data/Muscle Tsc1 Knockout/Glucose Clamps.Rmd | clamp-summary-1.pdf⁩ |
+| Figure 2F | Mouse Data/Muscle Tsc1 Knockout/Glucose Clamps.Rmd | tissue-glucose-uptake-summary-1.pdf⁩ |
 | Figure 3A | Mouse Data⁩/Muscle Tsc1 Knockout⁩/HFD/Body Composition/body-weight-analysis.Rmd | fat-mass-scatterplot-3.pdf |
 | Figure 3B | Mouse Data⁩/Muscle Tsc1 Knockout⁩/HFD/Body Composition/body-weight-analysis.Rmd | lean-mass-scatterplot-3.pdf |
 | Figure 3C | Mouse Data⁩/Muscle Tsc1 Knockout⁩/HFD⁩/Sacrifice Analysis⁩m/TSC1-sac-data.Rmd | wat-weights-2.pdf |

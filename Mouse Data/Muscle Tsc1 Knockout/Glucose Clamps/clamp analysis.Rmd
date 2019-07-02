@@ -54,12 +54,13 @@ kable(data[order(data$Genotype),], caption = "All Data")
 ```
 
 ## Data Summary
-```{r data-summary}
-library(plyr)
 
+```{r data-summary}
+library(dplyr)
 se <- function(x) sd(x, na.rm=T)/sqrt(length(x))
 summary.data <- 
   data %>%
+  mutate(Genotype = relevel(Genotype,ref="Wild-Type")) %>%
   group_by(Genotype) %>%
   summarize_at(.vars=vars(Basal.Glucose:Heart),.funs=funs(mean(.,na.rm=T),se))
 ```
@@ -115,9 +116,9 @@ avg.table %>%
   kable(caption="Summary statistics for each measurement")
 ```
 
-```{r T-Test Analysis}
-kable(t.tests, caption = "T-Tests, Unadjusted", digits=c(rep(3,14)))
-kable(bind_rows(t.tests, p.adjust(t.tests)) , caption = "Nominal and Benjamini-Hochberg Adjusted T-Tests")
+```{r t-tests}
+kable(t(t.tests), caption = "T-Tests, Unadjusted")
+kable(t(p.adjust(t.tests)) , caption = "Nominal and Benjamini-Hochberg Adjusted T-Tests")
 ```
 
 
@@ -285,7 +286,38 @@ plot <- barplot(summary.data$BAT_mean,
 superpose.eb(plot, summary.data$BAT_mean, summary.data$BAT_se)
 ```
 
+## Adipose Tissue Glucose Uptake
 
+```{r adipose}
+par(mfrow=c(1,3))
+
+plot <- barplot(summary.data$BAT_mean, 
+                names.arg=summary.data$Genotype,  
+                ylab="2-Deoxyglucose Uptake (ug/g/min)",
+                main="Brown Adipose",
+                ylim=c(0,300),
+                las=1,
+                col=grey.colors(2))
+superpose.eb(plot, summary.data$BAT_mean, summary.data$BAT_se)
+
+plot <- barplot(summary.data$S.fat_mean, 
+                names.arg=summary.data$Genotype,  
+                ylab="2-Deoxyglucose Uptake (ug/g/min)",
+                main="Subcutaneous Adipose",
+                ylim=c(0,26),
+                las=1,
+                col=grey.colors(2))
+superpose.eb(plot, summary.data$S.fat_mean, summary.data$S.fat_se)
+
+plot <- barplot(summary.data$V.fat_mean, 
+                names.arg=summary.data$Genotype,  
+                ylab="2-Deoxyglucose Uptake (ug/g/min)",
+                main="Visceral Adipose",
+                ylim=c(0,9),
+                las=1,
+                col=grey.colors(2))
+superpose.eb(plot, summary.data$V.fat_mean, summary.data$V.fat_se)
+```
 
 # Session Information
 

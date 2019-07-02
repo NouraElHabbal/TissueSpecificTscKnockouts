@@ -466,7 +466,7 @@ ggplot(summary.data,
            col=Knockout)) +
   geom_line() +
   geom_errorbar() +
-  labs(y="Respiratory Exchange Ratio", x="Zeitgeber Time") +
+  labs(y='Carbohydrate Oxidation (g/min)', x="Zeitgeber Time",) +
   facet_grid(~Sex) +
   theme_classic() +
   scale_color_manual(labels = c("Wild-Type", "Knockout"), values=c("#6CBE45","#FAC917")) +
@@ -475,8 +475,7 @@ ggplot(summary.data,
         legend.text=element_text(size=14),
         axis.text=element_text(size=14),
         axis.title=element_text(size=14),
-        legend.title=element_blank()) +
-  labs(y='Carbohydrate Oxidation (g/min)')
+        legend.title=element_blank()) 
 ```
 
 ## Lipid Oxidation Analysis

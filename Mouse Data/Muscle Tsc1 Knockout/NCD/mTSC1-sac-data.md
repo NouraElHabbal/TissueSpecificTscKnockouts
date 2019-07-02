@@ -28,7 +28,7 @@ At sacrifice, after a 16h fast data were entered and collected in the raw data s
 
 
 
-These data can be found in **/Users/davebrid/Documents/GitHub/TissueSpecificTscKnockouts/Mouse Data/Muscle Tsc1 Knockout/NCD** in a file named **NCD Sacrifice Data.xlsx**.  This script was most recently updated on **Mon Jun 24 09:45:20 2019**.
+These data can be found in **/Users/davebrid/Documents/GitHub/TissueSpecificTscKnockouts/Mouse Data/Muscle Tsc1 Knockout/NCD** in a file named **NCD Sacrifice Data.xlsx**.  This script was most recently updated on **Tue Jul  2 15:42:19 2019**.
 
 # Analysis
 

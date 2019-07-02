@@ -109,7 +109,8 @@ plot <- barplot(as.matrix(plot.data),
                 names.arg=c("Wild-Type","Knockout"),
                 ylab="Weight (mg)",
                 main="Inguinal WAT",
-                ylim=c(0,ymax))
+                ylim=c(0,ymax),
+                col=grey.colors(2))
 
 superpose.eb(plot,
              as.matrix(plot.data),
@@ -132,7 +133,8 @@ plot <- barplot(as.matrix(plot.data),
                 names.arg=c("Wild-Type","Knockout"),
                 ylab="Weight (mg)",
                 main="Epididymal WAT",
-                ylim=c(0,ymax))
+                ylim=c(0,ymax),
+                col=grey.colors(2))
 
 superpose.eb(plot,
              as.matrix(plot.data),

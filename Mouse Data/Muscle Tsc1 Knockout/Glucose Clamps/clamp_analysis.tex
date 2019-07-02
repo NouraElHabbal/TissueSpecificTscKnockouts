@@ -232,45 +232,38 @@ The mean data is compiled with the standard errors
 
 \subsection{Statistics}\label{statistics}
 
-\begin{longtable}[]{@{}llrrrrrrrrrrrr@{}}
-\caption{Averaged Data}\tabularnewline
+\begin{longtable}[]{@{}rrlrr@{}}
+\caption{Summary statistics for each measurement}\tabularnewline
 \toprule
-& Genotype & GIR & Basal.HGP & Clamp.HGP & sHGP & Clearance.Basal &
-Clearance.Clamp & Insulin & Gastroc & V.fat & S.fat & BAT &
-Heart\tabularnewline
+WT & KO & Measurement & Difference & Pct.Difference\tabularnewline
 \midrule
 \endfirsthead
 \toprule
-& Genotype & GIR & Basal.HGP & Clamp.HGP & sHGP & Clearance.Basal &
-Clearance.Clamp & Insulin & Gastroc & V.fat & S.fat & BAT &
-Heart\tabularnewline
+WT & KO & Measurement & Difference & Pct.Difference\tabularnewline
 \midrule
 \endhead
-2 & Wild-Type & 2633 & 29.5 & 27.3 & 7.37 & 16.4 & 27.3 & 11.22 & 13.0 &
-2.69 & 6.52 & 250 & 445\tabularnewline
-1 & Knockout & 3065 & 28.6 & 25.3 & 16.95 & 16.5 & 33.3 & 3.41 & 13.1 &
-6.60 & 21.75 & 195 & 342\tabularnewline
-\bottomrule
-\end{longtable}
-
-\begin{longtable}[]{@{}llrrrrrrrrrrrr@{}}
-\caption{Standard Error}\tabularnewline
-\toprule
-& Genotype & GIR & Basal.HGP & Clamp.HGP & sHGP & Clearance.Basal &
-Clearance.Clamp & Insulin & Gastroc & V.fat & S.fat & BAT &
-Heart\tabularnewline
-\midrule
-\endfirsthead
-\toprule
-& Genotype & GIR & Basal.HGP & Clamp.HGP & sHGP & Clearance.Basal &
-Clearance.Clamp & Insulin & Gastroc & V.fat & S.fat & BAT &
-Heart\tabularnewline
-\midrule
-\endhead
-2 & Wild-Type & 162 & 2.73 & 3.25 & 4.8 & 1.38 & 1.49 & 2.210 & 1.55 &
-0.347 & 1.03 & 34.0 & 57.2\tabularnewline
-1 & Knockout & 335 & 4.04 & 6.76 & 12.0 & 1.74 & 4.87 & 0.668 & 2.05 &
-1.400 & 3.96 & 45.3 & 27.8\tabularnewline
+110.88 & 130.11 & Basal.Glucose\_mean & 19.236 & 17.349\tabularnewline
+119.48 & 123.67 & Clamp.Glucose\_mean & 4.188 & 3.505\tabularnewline
+28.10 & 24.26 & Clamp.GIR\_mean & -3.848 & -13.694\tabularnewline
+3064.68 & 2633.34 & Clamp.AUC\_mean & -431.333 & -14.074\tabularnewline
+192649.32 & 126094.59 & Basal.SA\_mean & -66554.729 &
+-34.547\tabularnewline
+194547.40 & 141370.92 & Clamp.SA\_mean & -53176.476 &
+-27.333\tabularnewline
+28.61 & 29.54 & Basal.Gtr\_mean & 0.930 & 3.251\tabularnewline
+53.36 & 51.55 & Clamp.Gtr\_mean & -1.803 & -3.378\tabularnewline
+28.61 & 29.54 & Basal.HGP\_mean & 0.930 & 3.251\tabularnewline
+25.25 & 27.29 & Clamp.HGP\_mean & 2.034 & 8.053\tabularnewline
+16.95 & 7.37 & Clamp.sHGP\_mean & -9.586 & -56.542\tabularnewline
+16.49 & 16.35 & Clearance.Basal\_mean & -0.133 & -0.805\tabularnewline
+33.34 & 27.32 & Clearance.Clamp\_mean & -6.029 & -18.081\tabularnewline
+3.41 & 11.22 & Insulin.Basal\_mean & 7.813 & 229.270\tabularnewline
+14.78 & 21.29 & Insulin.Clamp\_mean & 6.513 & 44.078\tabularnewline
+13.08 & 13.03 & Gastroc\_mean & -0.051 & -0.392\tabularnewline
+6.60 & 2.69 & V.fat\_mean & -3.912 & -59.296\tabularnewline
+21.75 & 6.52 & S.fat\_mean & -15.228 & -70.010\tabularnewline
+194.63 & 250.50 & BAT\_mean & 55.867 & 28.704\tabularnewline
+341.70 & 445.18 & Heart\_mean & 103.473 & 30.282\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -293,29 +286,24 @@ Heart.fit\tabularnewline
 \bottomrule
 \end{longtable}
 
-\begin{longtable}[]{@{}lr@{}}
-\caption{Benjamini-Hochberg Adjusted T-Tests}\tabularnewline
+\begin{longtable}[]{@{}rrrrrrrrrrrrr@{}}
+\caption{Nominal and Benjamini-Hochberg Adjusted T-Tests}\tabularnewline
 \toprule
-& p.adjust(t.tests, ``BH'', 13)\tabularnewline
+Clamp.GIR & Clamp.AUC & Basal.HGP & Clamp.HGP & sHGP & Clearance.Basal &
+Clearance.Clamp & Insulin & Gastroc & V.fat & S.fat & BAT &
+Heart.fit\tabularnewline
 \midrule
 \endfirsthead
 \toprule
-& p.adjust(t.tests, ``BH'', 13)\tabularnewline
+Clamp.GIR & Clamp.AUC & Basal.HGP & Clamp.HGP & sHGP & Clearance.Basal &
+Clearance.Clamp & Insulin & Gastroc & V.fat & S.fat & BAT &
+Heart.fit\tabularnewline
 \midrule
 \endhead
-Clamp.GIR & 0.555\tabularnewline
-Clamp.AUC & 0.555\tabularnewline
-Basal.HGP & 0.984\tabularnewline
-Clamp.HGP & 0.984\tabularnewline
-sHGP & 0.688\tabularnewline
-Clearance.Basal & 0.984\tabularnewline
-Clearance.Clamp & 0.555\tabularnewline
-Insulin & 0.049\tabularnewline
-Gastroc & 0.984\tabularnewline
-V.fat & 0.117\tabularnewline
-S.fat & 0.049\tabularnewline
-BAT & 0.555\tabularnewline
-Heart.fit & 0.426\tabularnewline
+0.325 & 0.272 & 0.852 & 0.792 & 0.477 & 0.953 & 0.269 & 0.008 & 0.984 &
+0.027 & 0.006 & 0.341 & 0.131\tabularnewline
+1.000 & 1.000 & 1.000 & 1.000 & 1.000 & 1.000 & 1.000 & 0.090 & 1.000 &
+0.297 & 0.077 & 1.000 & 1.000\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -325,14 +313,31 @@ Heart.fit & 0.426\tabularnewline
 
 \includegraphics{figures/gir-1.png}
 
-\subsection{Suppression of Hepatic Glucose
-Output}\label{suppression-of-hepatic-glucose-output}
+\subsection{Glucose Turnover}\label{glucose-turnover}
+
+\includegraphics{figures/glucose-turnover-1.png}
+
+\subsection{Endogenous Glucose
+Production}\label{endogenous-glucose-production}
+
+\includegraphics{figures/glucose-production-1.png}
+
+\subsubsection{Suppression of Endogenous Glucose
+Production}\label{suppression-of-endogenous-glucose-production}
 
 \includegraphics{figures/sHGP-1.png}
 
 \subsection{Insulin Levels}\label{insulin-levels}
 
 \includegraphics{figures/insulin-1.png}
+
+\section{Glucose Clearance Rate}\label{glucose-clearance-rate}
+
+Blood glucose clearance
+
+\includegraphics{figures/glucose-clearance-1.png}
+
+\section{Tissue Glucose Clearance}\label{tissue-glucose-clearance}
 
 \subsection{Gasctrocnemius Gluose Uptake During
 Clamp}\label{gasctrocnemius-gluose-uptake-during-clamp}
@@ -383,7 +388,7 @@ Clamp}\label{brown-adipose-tissue-gluose-uptake-during-clamp}
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-## [1] plyr_1.8.4  dplyr_0.8.1 tidyr_0.8.3 knitr_1.23 
+## [1] tibble_2.1.3 plyr_1.8.4   dplyr_0.8.1  tidyr_0.8.3  knitr_1.23  
 ## 
 ## loaded via a namespace (and not attached):
 ##  [1] Rcpp_1.0.1       assertthat_0.2.1 crayon_1.3.4     digest_0.6.19   
@@ -391,7 +396,7 @@ Clamp}\label{brown-adipose-tissue-gluose-uptake-during-clamp}
 ##  [9] pillar_1.4.1     rlang_0.3.4      stringi_1.4.3    rmarkdown_1.13  
 ## [13] tools_3.5.0      stringr_1.4.0    glue_1.3.1       purrr_0.3.2     
 ## [17] xfun_0.7         yaml_2.2.0       compiler_3.5.0   pkgconfig_2.0.2 
-## [21] htmltools_0.3.6  tidyselect_0.2.5 tibble_2.1.3
+## [21] htmltools_0.3.6  tidyselect_0.2.5
 \end{verbatim}
 
 

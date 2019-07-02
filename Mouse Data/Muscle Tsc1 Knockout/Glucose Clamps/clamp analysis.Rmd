@@ -127,7 +127,7 @@ kable(bind_rows(t.tests, p.adjust(t.tests)) , caption = "Nominal and Benjamini-H
 
 ```{r gir}
 plot <- barplot(summary.data$Clamp.GIR_mean, 
-                names.arg=(means$Genotype),  
+                names.arg=(summary.data$Genotype),  
                 ylab="Glucose Infusion Rate",
                 main="Clamp Glucose Infusion Rate",
                 ylim=c(0,32),
@@ -155,7 +155,7 @@ legend("topleft", levels(summary.data$Genotype), bty="n",fill=grey.colors(2),)
 
 ## Endogenous Glucose Production
 
-```{r glucose-turnover}
+```{r glucose-production}
 plot.data <-
   summary.data %>%
   select(Genotype, contains('.HGP'))
@@ -176,7 +176,7 @@ legend("topleft", levels(summary.data$Genotype), bty="n",fill=grey.colors(2),)
 ```{r sHGP}
 
 plot <- barplot(summary.data$Clamp.sHGP_mean, 
-                names.arg=(means$Genotype),  
+                names.arg=(summary.data$Genotype),  
                 ylab="Percent Suppression by Insulin",
                 main="Suppression of Endogenous Glucose Production",
                 ylim=c(0,100),
@@ -187,73 +187,102 @@ superpose.eb(plot, summary.data$Clamp.sHGP_mean, summary.data$Clamp.sHGP_se)
 ## Insulin Levels
 
 ```{r insulin}
-plot <- barplot(means$Insulin, 
-                names.arg=(means$Genotype),  
-                ylab="Insulin (uU/mL)",
-                main="Insulin Levels",
-                ylim=c(0,15),
+plot.data <-
+  summary.data %>%
+  select(Genotype, contains('Insuli'))
+
+plot <- barplot(as.matrix(plot.data[2:3]), 
+                beside=T,  
+                ylab="Insulin Levels (uU/mL)",
+                main="Insulin During Clamp",
+                names.arg=c("Basal","Insulin"),
+                ylim=c(0,25),
                 las=1)
-superpose.eb(plot, means$Insulin, se$Insulin)
+superpose.eb(plot, as.matrix(plot.data[2:3]), as.matrix(plot.data[4:5]))
+legend("topleft", levels(summary.data$Genotype), bty="n",fill=grey.colors(2),)
 ```
+
+# Glucose Clearance Rate
+
+Blood glucose clearance
+
+```{r glucose-clearance}
+plot.data <-
+  summary.data %>%
+  select(Genotype, contains('Clearance'))
+
+plot <- barplot(as.matrix(plot.data[2:3]), 
+                beside=T,  
+                ylab="Glucose Clearance (mL/kg/min)",
+                main="Glucose Clearance Rate ",
+                names.arg=c("Basal","Insulin"),
+                ylim=c(0,40),
+                las=1)
+superpose.eb(plot, as.matrix(plot.data[2:3]), as.matrix(plot.data[4:5]))
+legend("topleft", levels(summary.data$Genotype), bty="n",fill=grey.colors(2),)
+```
+
+# Tissue Glucose Clearance
 
 ## Gasctrocnemius Gluose Uptake During Clamp
 
 ```{r gastroc}
-plot <- barplot(means$Gastroc, 
-                names.arg=(means$Genotype),  
-                ylab="Glucose Uptake (ug/g/min)",
+
+plot <- barplot(summary.data$Gastroc_mean, 
+                names.arg=(summary.data$Genotype),  
+                ylab="2-Deoxyglucose Uptake (ug/g/min)",
                 main="Gastrocnemius",
                 ylim=c(0,17),
                 las=1)
-superpose.eb(plot, means$Gastroc, se$Gastroc)
+superpose.eb(plot, summary.data$Gastroc_mean, summary.data$Gastroc_se)
 ```
 
 ## Visceral Fat Gluose Uptake During Clamp
 
 ```{r v-fat}
-plot <- barplot(means$V.fat, 
-                names.arg=(means$Genotype),  
-                ylab="Glucose Uptake (ug/g/min)",
-                main="Visceral Fat",
-                ylim=c(0,9),
+plot <- barplot(summary.data$V.fat_mean, 
+                names.arg=summary.data$Genotype,  
+                ylab="2-Deoxyglucose Uptake (ug/g/min)",
+                main="Visceral Adipose",
+                ylim=c(0,8),
                 las=1)
-superpose.eb(plot, means$V.fat, se$V.fat)
+superpose.eb(plot, summary.data$V.fat_mean, summary.data$V.fat_se)
 ```
 
 ## Subcutaneous Fat Gluose Uptake During Clamp
 
 ```{r s-fat}
-plot <- barplot(means$S.fat, 
-                names.arg=(means$Genotype),  
-                ylab="Glucose Uptake (ug/g/min)",
-                main="Subcutaneous Fat",
+plot <- barplot(summary.data$S.fat_mean, 
+                names.arg=summary.data$Genotype,  
+                ylab="2-Deoxyglucose Uptake (ug/g/min)",
+                main="Subcutaneous Adipose",
                 ylim=c(0,30),
                 las=1)
-superpose.eb(plot, means$S.fat, se$S.fat)
+superpose.eb(plot, summary.data$S.fat_mean, summary.data$S.fat_se)
 ```
 
 ## Heart Gluose Uptake During Clamp
 
 ```{r heart}
-plot <- barplot(means$Heart, 
-                names.arg=(means$Genotype),  
-                ylab="Glucose Uptake (ug/g/min)",
+plot <- barplot(summary.data$Heart_mean, 
+                names.arg=summary.data$Genotype,  
+                ylab="2-Deoxyglucose Uptake (ug/g/min)",
                 main="Heart",
                 ylim=c(0,550),
                 las=1)
-superpose.eb(plot, means$Heart, se$Heart)
+superpose.eb(plot, summary.data$Heart_mean, summary.data$Heart_se)
 ```
 
 ## Brown Adipose Tissue Gluose Uptake During Clamp
 
 ```{r bat}
-plot <- barplot(means$BAT, 
-                names.arg=(means$Genotype),  
-                ylab="Glucose Uptake (ug/g/min)",
-                main="BAT",
+plot <- barplot(summary.data$BAT_mean, 
+                names.arg=summary.data$Genotype,  
+                ylab="2-Deoxyglucose Uptake (ug/g/min)",
+                main="Brown Adipose",
                 ylim=c(0,300),
                 las=1)
-superpose.eb(plot, means$BAT, se$BAT)
+superpose.eb(plot, summary.data$BAT_mean, summary.data$BAT_se)
 ```
 
 

@@ -109,14 +109,15 @@ avg.table <-
 
 colnames(avg.table) <- c('WT',"KO","Measurement")
 avg.table %>%
-  mutate(Difference = WT-KO,
-         Pct.Difference = Difference/WT*100) %>%
+  mutate(Difference = KO-WT,
+         Pct.Difference = Difference/WT*100) %>% 
+  filter(WT >0) %>%
   kable(caption="Summary statistics for each measurement")
 ```
 
 ```{r T-Test Analysis}
 kable(t.tests, caption = "T-Tests, Unadjusted", digits=c(rep(3,14)))
-kable(as.data.frame(p.adjust(t.tests, "BH",13)), caption = "Benjamini-Hochberg Adjusted T-Tests")
+kable(bind_rows(t.tests, p.adjust(t.tests)) , caption = "Nominal and Benjamini-Hochberg Adjusted T-Tests")
 ```
 
 
@@ -152,16 +153,35 @@ superpose.eb(plot, as.matrix(plot.data[2:3]), as.matrix(plot.data[4:5]))
 legend("topleft", levels(summary.data$Genotype), bty="n",fill=grey.colors(2),)
 ```
 
-## Suppression of Hepatic Glucose Output
+## Endogenous Glucose Production
+
+```{r glucose-turnover}
+plot.data <-
+  summary.data %>%
+  select(Genotype, contains('.HGP'))
+
+plot <- barplot(as.matrix(plot.data[2:3]), 
+                beside=T,  
+                ylab="Glucose Production (mg/kg/min)",
+                main="Endogenous Glucose Production",
+                names.arg=c("Basal","Insulin"),
+                ylim=c(0,60),
+                las=1)
+superpose.eb(plot, as.matrix(plot.data[2:3]), as.matrix(plot.data[4:5]))
+legend("topleft", levels(summary.data$Genotype), bty="n",fill=grey.colors(2),)
+```
+
+### Suppression of Endogenous Glucose Production
 
 ```{r sHGP}
-plot <- barplot(means$sHGP, 
+
+plot <- barplot(summary.data$Clamp.sHGP_mean, 
                 names.arg=(means$Genotype),  
-                ylab="Suppression of Hepatic Glucose Production (%)",
-                main="Suppression of Hepatic Glucose Production",
-                ylim=c(0,30),
+                ylab="Percent Suppression by Insulin",
+                main="Suppression of Endogenous Glucose Production",
+                ylim=c(0,100),
                 las=1)
-superpose.eb(plot, means$sHGP, se$sHGP)
+superpose.eb(plot, summary.data$Clamp.sHGP_mean, summary.data$Clamp.sHGP_se)
 ```
 
 ## Insulin Levels

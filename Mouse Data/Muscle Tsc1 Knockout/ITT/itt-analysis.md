@@ -96,9 +96,9 @@ sessionInfo()
 ```
 
 ```
-## R version 3.5.0 (2018-04-23)
+## R version 3.5.2 (2018-12-20)
 ## Platform: x86_64-apple-darwin15.6.0 (64-bit)
-## Running under: macOS  10.14.5
+## Running under: OS X El Capitan 10.11.6
 ## 
 ## Matrix products: default
 ## BLAS: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRblas.0.dylib
@@ -112,17 +112,17 @@ sessionInfo()
 ## 
 ## other attached packages:
 ## [1] broom_0.5.2   lme4_1.1-21   Matrix_1.2-17 plyr_1.8.4    ggplot2_3.1.1
-## [6] dplyr_0.8.1   tidyr_0.8.3   knitr_1.23   
+## [6] dplyr_0.8.0.1 tidyr_0.8.3   knitr_1.22   
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] Rcpp_1.0.1       nloptr_1.2.1     pillar_1.4.1     compiler_3.5.0  
-##  [5] highr_0.8        tools_3.5.0      boot_1.3-22      digest_0.6.19   
-##  [9] nlme_3.1-140     evaluate_0.14    tibble_2.1.3     gtable_0.3.0    
+##  [1] Rcpp_1.0.1       nloptr_1.2.1     pillar_1.3.1     compiler_3.5.2  
+##  [5] highr_0.8        tools_3.5.2      boot_1.3-20      digest_0.6.18   
+##  [9] nlme_3.1-139     evaluate_0.13.1  tibble_2.1.1     gtable_0.3.0    
 ## [13] lattice_0.20-38  pkgconfig_2.0.2  rlang_0.3.4      yaml_2.2.0      
-## [17] xfun_0.7         withr_2.1.2      stringr_1.4.0    generics_0.0.2  
-## [21] grid_3.5.0       tidyselect_0.2.5 glue_1.3.1       R6_2.4.0        
-## [25] rmarkdown_1.13   minqa_1.2.4      purrr_0.3.2      magrittr_1.5    
-## [29] backports_1.1.4  scales_1.0.0     htmltools_0.3.6  splines_3.5.0   
+## [17] xfun_0.6         withr_2.1.2      stringr_1.4.0    generics_0.0.2  
+## [21] grid_3.5.2       tidyselect_0.2.5 glue_1.3.1       R6_2.4.0        
+## [25] rmarkdown_1.12   minqa_1.2.4      purrr_0.3.2      magrittr_1.5    
+## [29] backports_1.1.4  scales_1.0.0     htmltools_0.3.6  splines_3.5.2   
 ## [33] MASS_7.3-51.4    assertthat_0.2.1 colorspace_1.4-1 stringi_1.4.3   
 ## [37] lazyeval_0.2.2   munsell_0.5.0    crayon_1.3.4
 ```

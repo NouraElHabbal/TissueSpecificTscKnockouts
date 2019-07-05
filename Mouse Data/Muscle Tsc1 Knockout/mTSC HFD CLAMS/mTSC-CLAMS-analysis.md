@@ -19,7 +19,7 @@ output:
 
 # Purpose
 
-To evaluate energy expenditure and other parameters in muscle _Tsc1_ knockout mice.  This script was most recently updated on **Mon Jun 24 11:23:57 2019**.
+To evaluate energy expenditure and other parameters in muscle _Tsc1_ knockout mice.  This script was most recently updated on **Fri Jul  5 16:20:41 2019**.
 
 # Experimental Details
 
@@ -42,7 +42,7 @@ Table: Total animals tested by genotype
 
 Genotype      Sex        n
 ------------  -------  ---
-NA            NA        24
+NA            NA         7
 +/+; +/+      Female    16
 +/+; +/+      Male      17
 +/+; Tg/+     Female    11
@@ -58,7 +58,7 @@ Table: Total animals tested by knockout
 
 Knockout   Sex        n
 ---------  -------  ---
-NA         NA        24
+NA         NA         7
 Control    Female    44
 Control    Male      33
 Knockout   Female    18
@@ -100,9 +100,9 @@ To test whether these groups are different we constructed a linear model with th
 
 Fat Mass ~ as.factor(Time) + Lean + Sex + `Light/Dark` + Knockout + Knockout:`Light/Dark` + (1 | Subject).  
 
-We used this model because the base model was that Heat production changes over the day.  We asked if lean mass modified the time dependent effect, and it did (p=0.008).  After adjusting for lean mass, we asked if there was any additional benefit to including the light/dark cycle in addition to the time of day, and found that there was no significant effect, so that was not included in the model (p=1).  we added sex as a covariate which had no significant effect 0.01. We chose to keep sex in the model though as it was borderline significant.  We next added knockout to the model and found no significant effect 0.518.  Finally we asked if Sex modified the effect of the knockout and found no significant effect 0.238.
+We used this model because the base model was that Heat production changes over the day.  We asked if lean mass modified the time dependent effect, and it did (p=0.482).  After adjusting for lean mass, we asked if there was any additional benefit to including the light/dark cycle in addition to the time of day, and found that there was no significant effect, so that was not included in the model (p=1).  we added sex as a covariate which had no significant effect 0.033. We chose to keep sex in the model though as it was borderline significant.  We next added knockout to the model and found no significant effect 0.766.  Finally we asked if Sex modified the effect of the knockout and found no significant effect 0.53.
 
-Since it appears from the figures that the elevation in energy expenditure is restricted to the awake cycle, we next asked if there was an *interaction* between genotype and the Light/Dark cycle.  Adding this interaction was highly significant 1.743&times; 10^-114^.  This represents a 
+Since it appears from the figures that the elevation in energy expenditure is restricted to the awake cycle, we next asked if there was an *interaction* between genotype and the Light/Dark cycle.  Adding this interaction was highly significant 1.178&times; 10^-107^.  This represents a 
 
 The full results are shown below:
 
@@ -111,10 +111,10 @@ Table: Estimates and p-values from mixed linear models, excluding time of day.
 
                                       Estimate   Std..Error   t.value     p.z
 -----------------------------------  ---------  -----------  --------  ------
-Lean                                     0.013        0.003      3.80   0.000
-SexMale                                 -0.054        0.021     -2.61   0.009
-KnockoutKnockout                         0.031        0.014      2.22   0.027
-`Light/Dark`Light:KnockoutKnockout      -0.045        0.002    -22.95   0.000
+Lean                                     0.007        0.003      2.10   0.035
+SexMale                                 -0.045        0.021     -2.18   0.029
+KnockoutKnockout                         0.020        0.014      1.39   0.164
+`Light/Dark`Light:KnockoutKnockout      -0.049        0.002    -22.27   0.000
 
 ## RER Analysis
 
@@ -177,9 +177,9 @@ sessionInfo()
 ```
 
 ```
-## R version 3.5.0 (2018-04-23)
+## R version 3.5.2 (2018-12-20)
 ## Platform: x86_64-apple-darwin15.6.0 (64-bit)
-## Running under: macOS  10.14.5
+## Running under: OS X El Capitan 10.11.6
 ## 
 ## Matrix products: default
 ## BLAS: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRblas.0.dylib
@@ -195,19 +195,19 @@ sessionInfo()
 ##  [1] multcomp_1.4-10   TH.data_1.0-10    MASS_7.3-51.4    
 ##  [4] survival_2.44-1.1 mvtnorm_1.0-10    lme4_1.1-21      
 ##  [7] Matrix_1.2-17     ggplot2_3.1.1     lubridate_1.7.4  
-## [10] readr_1.3.1       readxl_1.3.1      dplyr_0.8.1      
-## [13] tidyr_0.8.3       knitr_1.23       
+## [10] readr_1.3.1       readxl_1.3.1      dplyr_0.8.0.1    
+## [13] tidyr_0.8.3       knitr_1.22       
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] Rcpp_1.0.1       nloptr_1.2.1     cellranger_1.1.0 pillar_1.4.1    
-##  [5] compiler_3.5.0   highr_0.8        plyr_1.8.4       tools_3.5.0     
-##  [9] boot_1.3-22      digest_0.6.19    nlme_3.1-140     lattice_0.20-38 
-## [13] evaluate_0.14    tibble_2.1.3     gtable_0.3.0     pkgconfig_2.0.2 
-## [17] rlang_0.3.4      yaml_2.2.0       xfun_0.7         withr_2.1.2     
-## [21] stringr_1.4.0    hms_0.4.2        grid_3.5.0       tidyselect_0.2.5
-## [25] glue_1.3.1       R6_2.4.0         rmarkdown_1.13   minqa_1.2.4     
+##  [1] Rcpp_1.0.1       nloptr_1.2.1     cellranger_1.1.0 pillar_1.3.1    
+##  [5] compiler_3.5.2   highr_0.8        plyr_1.8.4       tools_3.5.2     
+##  [9] boot_1.3-20      digest_0.6.18    nlme_3.1-139     lattice_0.20-38 
+## [13] evaluate_0.13.1  tibble_2.1.1     gtable_0.3.0     pkgconfig_2.0.2 
+## [17] rlang_0.3.4      yaml_2.2.0       xfun_0.6         withr_2.1.2     
+## [21] stringr_1.4.0    hms_0.4.2        grid_3.5.2       tidyselect_0.2.5
+## [25] glue_1.3.1       R6_2.4.0         rmarkdown_1.12   minqa_1.2.4     
 ## [29] purrr_0.3.2      reshape2_1.4.3   magrittr_1.5     codetools_0.2-16
-## [33] splines_3.5.0    scales_1.0.0     htmltools_0.3.6  assertthat_0.2.1
+## [33] splines_3.5.2    scales_1.0.0     htmltools_0.3.6  assertthat_0.2.1
 ## [37] colorspace_1.4-1 labeling_0.3     sandwich_2.5-1   stringi_1.4.3   
-## [41] lazyeval_0.2.2   munsell_0.5.0    crayon_1.3.4     zoo_1.8-6
+## [41] lazyeval_0.2.2   munsell_0.5.0    crayon_1.3.4     zoo_1.8-5
 ```

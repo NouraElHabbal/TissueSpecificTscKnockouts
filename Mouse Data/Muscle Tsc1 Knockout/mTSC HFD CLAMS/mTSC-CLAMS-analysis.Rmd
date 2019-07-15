@@ -137,8 +137,8 @@ The baseline raw data files can be found in `r baseline.folder`.  The MRI data c
 animal.data.ld <-
   baseline.data %>%
   filter(Interval>100) %>% #removed first 20 intervals
-  filter(RER>0.5) %>%
-  filter(RER<1.2) %>% #removed biologically implausible values
+  filter(RER>0.65) %>%
+  filter(RER<1.1) %>% #removed biologically implausible values
   filter(Subject!='4762') %>% #removed outlier sample
   mutate(CHO.Ox = (4.585 * (`Volume CO2`/60)) - (3.226 * (`Volume O2`/60))) %>% #converted gas rates from mL/h to mL/min to get this in mg/min
   mutate(Lipid.Ox = (1.695 * (`Volume O2`/60)) - (1.701 * (`Volume CO2`/60))) %>% #converted gas rates from mL/h to mL/min to get this in mg/min
@@ -185,8 +185,8 @@ ggplot(animal.data.ld,
 animal.data <-
   baseline.data %>%
   filter(Interval>100) %>% #removed first 100 intervals
-  filter(RER>0.5) %>%
-  filter(RER<1.2) %>% #removed biologically implausible values
+  filter(RER>0.65) %>%
+  filter(RER<1.1) %>% #removed biologically implausible values
   filter(Subject!='4762') %>% #removed outlier sample
   group_by(Subject,Genotype,Knockout,Sex, Zeitgeber.Time) %>% #calculated average hour/animal level data
   mutate(CHO.Ox = (4.585 * (`Volume CO2`/60)) - (3.226 * (`Volume O2`/60))) %>% #converted gas rates from mL/h to L/min to get this in g/min
@@ -250,7 +250,123 @@ ggplot(summary.data,
         axis.title=element_text(size=14),
         legend.title=element_blank())
 ```
+## VCO2 Analysis
+```{r vco2-analysis-light-dark, fig.cap="VCO2 Summary Light/Dark Boxplot"}
+animal.data.ld <-
+  baseline.data %>%
+  filter(Interval>100) %>% #removed first 20 intervals
+  filter(RER>0.65) %>%
+  filter(RER<1.1) %>% #removed biologically implausible values
+  filter(Subject!='4762') %>% #removed outlier sample
+  mutate(CHO.Ox = (4.585 * (`Volume CO2`/60)) - (3.226 * (`Volume O2`/60))) %>% #converted gas rates from mL/h to mL/min to get this in mg/min
+  mutate(Lipid.Ox = (1.695 * (`Volume O2`/60)) - (1.701 * (`Volume CO2`/60))) %>% #converted gas rates from mL/h to mL/min to get this in mg/min
+  group_by(Subject,Genotype,Knockout,Sex, `Light/Dark`) %>% #calculated average hour/animal level data
+  summarize(RER = mean(RER,na.rm=T),
+            VO2 = mean((`Volume O2`/1000)*60,na.rm=T), #mL/h to L/min
+            VCO2 = mean((`Volume CO2`/1000)*60, na.rm=T), #mL/h to L/min
+            Activity = mean(Activity, na.rm=T),
+            CHO.Oxidation = mean(CHO.Ox, na.rm=T),
+            Lipid.Oxidation = mean(Lipid.Ox, na.rm=T),
+            Heat = mean(Heat,na.rm=T)) 
 
+animal.data.ld.summary <-
+  animal.data.ld %>%
+  group_by(Knockout,Sex,`Light/Dark`) %>%
+  summarize_if(is.numeric, .funs=funs(mean(.,na.rm=T),se))
+
+library(ggplot2)
+
+ggplot(animal.data.ld.summary,
+       aes(y=VCO2_mean,
+           ymin=VCO2_mean-VO2_se,
+           ymax=VCO2_mean+VO2_se,
+           x=`Light/Dark`,
+           fill=`Knockout`)) +
+  geom_bar(stat='identity', position='dodge', width=0.75) +
+  geom_errorbar(position=position_dodge(width=0.75),aes(group=Knockout), width=0.5) +
+  labs(y="CO2 Production (L/h)",
+       x="Time") +
+  facet_grid(~Sex)
+
+
+library(ggplot2)
+
+ggplot(animal.data.ld,
+       aes(y=VCO2,x=`Light/Dark`,
+           col=Knockout)) +
+  geom_boxplot(width=0.75) +
+  geom_jitter(position=position_dodge(width=0.75)) +
+  facet_grid(~Sex)
+```
+
+```{r vco2-analysis-linegraph, fig,cap="Mouse level VCO2 levels"}
+animal.data <-
+  baseline.data %>%
+  filter(Interval>100) %>% #removed first 100 intervals
+  filter(RER>0.65) %>%
+  filter(RER<1.1) %>% #removed biologically implausible values
+  filter(Subject!='4762') %>% #removed outlier sample
+  group_by(Subject,Genotype,Knockout,Sex, Zeitgeber.Time) %>% #calculated average hour/animal level data
+  mutate(CHO.Ox = (4.585 * (`Volume CO2`/60)) - (3.226 * (`Volume O2`/60))) %>% #converted gas rates from mL/h to L/min to get this in g/min
+  mutate(Lipid.Ox = (1.695 *(`Volume O2`/60)) - (1.701 * (`Volume CO2`/60))) %>% #converted gas rates from mL/h to L/min to get this in g/min
+  summarize(RER = mean(RER,na.rm=T),
+            Activity = mean(Activity, na.rm=T),
+            VO2 = mean(`Volume O2`, na.rm=T),
+            VCO2 = mean(`Volume CO2`, na.rm=T),
+            Heat = mean(Heat,na.rm=T),
+            Lean = mean(Lean,na.rm=T),
+            CHO.Oxidation = mean(CHO.Ox, na.rm=T),
+            Lipid.Oxidation = mean(Lipid.Ox, na.rm=T))
+
+ggplot(animal.data,
+       aes(y=VCO2, x=Zeitgeber.Time,
+           group=Subject,
+           col=Knockout)) +
+  geom_line() +
+  facet_grid(Sex~Subject=='4762'|Subject=='4387')
+
+```
+
+### VCO2 Summary Data
+```{r vco2-summarized-data, fig.cap="Linegraph of VCO2 Data"}
+
+summary.data <-
+  animal.data %>%
+  ungroup %>%
+  dplyr::select(-Subject, -Genotype) %>% #removed subject column
+  group_by(Knockout,Sex,Zeitgeber.Time) %>%
+  summarize_all(.funs=funs(mean(.,na.rm=T),se))
+  
+ggplot(summary.data,
+       aes(y=VCO2_mean,
+           ymin=VCO2_mean-VCO2_se,
+           ymax=VCO2_mean+VCO2_se,
+           x=Zeitgeber.Time,
+           col=Sex,
+           lty=Knockout)) +
+  geom_line() +
+  geom_errorbar() +
+  labs(y="VCO2", x="Zeitgeber Time") 
+
+ggplot(summary.data,
+       aes(y=VCO2_mean,
+           ymin=VCO2_mean-VCO2_se,
+           ymax=VCO2_mean+VCO2_se,
+           x=Zeitgeber.Time,
+           col=Knockout)) +
+  geom_line() +
+  geom_errorbar() +
+  facet_grid(~Sex) +
+  theme_classic() +
+  scale_color_manual(labels = c("Wild-Type", "Knockout"), values=c("#fa8072","#00ced1")) +
+  labs(y="Volume CO2 Consumed (mL/h)", x="Zeitgeber Time") +
+  theme(legend.position = c(0.15, 0.9),
+        legend.background = element_rect(fill=alpha(0.1)),
+        legend.text=element_text(size=14),
+        axis.text=element_text(size=14),
+        axis.title=element_text(size=14),
+        legend.title=element_blank())
+```
 # Heat Production
 
 Another way to present these data is to evaluate this by heat instead of VO2. We calculated this manually from VO2 data.  The equation for Heat production from the CLAMS is the Lusk Equation:
@@ -267,7 +383,7 @@ ggplot(summary.data,
            lty=Knockout)) +
   geom_line() +
   geom_errorbar() +
-  labs(y="Heat Production (W)", x="Zeitgeber Time") 
+  labs(y="Heat (W)", x="Zeitgeber Time") 
 
 ggplot(summary.data,
        aes(y=Heat_mean,
@@ -280,7 +396,7 @@ ggplot(summary.data,
   theme_classic() +
   scale_color_manual(labels = c("Wild-Type", "Knockout"), values=c("#fa8072","#00ced1")) +
   facet_grid(~Sex) +
-  labs(y="Heat Production (W)", x="Zeitgeber Time") +
+  labs(y="Heat (W)", x="Zeitgeber Time") +
   theme(legend.position = c(0.15, 0.9),
         legend.background = element_rect(fill=alpha(0.1)),
         legend.text=element_text(size=14),
@@ -289,14 +405,14 @@ ggplot(summary.data,
         legend.title=element_blank())
 ```
 
-## Heat Production Statistics
+## Heat Statistics
 
 ```{r heat-stats}
 model.data <-   
   baseline.data %>%
   filter(Interval>100) %>% #removed first 20 intervals
-  filter(RER>0.5) %>%
-  filter(RER<1.2) %>%
+  filter(RER>0.65) %>%
+  filter(RER<1.1) %>%
   filter(!is.na(Lean))
 
 library(lme4)

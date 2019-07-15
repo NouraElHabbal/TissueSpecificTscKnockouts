@@ -19,7 +19,7 @@ output:
 
 # Purpose
 
-To evaluate energy expenditure and other parameters in muscle _Tsc1_ knockout mice.  This script was most recently updated on **Fri Jul  5 16:20:41 2019**.
+To evaluate energy expenditure and other parameters in muscle _Tsc1_ knockout mice.  This script was most recently updated on **Mon Jul 15 15:38:26 2019**.
 
 # Experimental Details
 
@@ -75,7 +75,13 @@ The baseline raw data files can be found in Oxymax/Oxymax files by time period/B
 ### VO2 Summary Data
 
 ![Linegraph of VO2 Data](figures/vo2-summarized-data-1.png)![Linegraph of VO2 Data](figures/vo2-summarized-data-2.png)
+## VCO2 Analysis
+![VCO2 Summary Light/Dark Boxplot](figures/vco2-analysis-light-dark-1.png)![VCO2 Summary Light/Dark Boxplot](figures/vco2-analysis-light-dark-2.png)
 
+![](figures/vco2-analysis-linegraph, fig-1.png)<!-- -->
+
+### VCO2 Summary Data
+![Linegraph of VCO2 Data](figures/vco2-summarized-data-1.png)![Linegraph of VCO2 Data](figures/vco2-summarized-data-2.png)
 # Heat Production
 
 Another way to present these data is to evaluate this by heat instead of VO2. We calculated this manually from VO2 data.  The equation for Heat production from the CLAMS is the Lusk Equation:
@@ -84,15 +90,15 @@ $$(3.815 + 1.232 * RER)*VO2$$
 
 ![Linegraph of Heat Data](figures/heat-production-1.png)![Linegraph of Heat Data](figures/heat-production-2.png)
 
-## Heat Production Statistics
+## Heat Statistics
 
 
 Table: Average changes in heat production comparing wt to knockout
 
 Sex      Light/Dark    Control   Knockout   Change   Pct.Change
 -------  -----------  --------  ---------  -------  -----------
-Female   Dark            0.470      0.502    0.032        6.777
-Female   Light           0.434      0.432   -0.003       -0.613
+Female   Dark            0.470      0.504    0.034        7.221
+Female   Light           0.434      0.433   -0.001       -0.173
 Male     Dark            0.471      0.504    0.033        6.989
 Male     Light           0.435      0.439    0.004        0.815
 
@@ -100,9 +106,9 @@ To test whether these groups are different we constructed a linear model with th
 
 Fat Mass ~ as.factor(Time) + Lean + Sex + `Light/Dark` + Knockout + Knockout:`Light/Dark` + (1 | Subject).  
 
-We used this model because the base model was that Heat production changes over the day.  We asked if lean mass modified the time dependent effect, and it did (p=0.482).  After adjusting for lean mass, we asked if there was any additional benefit to including the light/dark cycle in addition to the time of day, and found that there was no significant effect, so that was not included in the model (p=1).  we added sex as a covariate which had no significant effect 0.033. We chose to keep sex in the model though as it was borderline significant.  We next added knockout to the model and found no significant effect 0.766.  Finally we asked if Sex modified the effect of the knockout and found no significant effect 0.53.
+We used this model because the base model was that Heat production changes over the day.  We asked if lean mass modified the time dependent effect, and it did (p=0.51).  After adjusting for lean mass, we asked if there was any additional benefit to including the light/dark cycle in addition to the time of day, and found that there was no significant effect, so that was not included in the model (p=1).  we added sex as a covariate which had no significant effect 0.031. We chose to keep sex in the model though as it was borderline significant.  We next added knockout to the model and found no significant effect 0.848.  Finally we asked if Sex modified the effect of the knockout and found no significant effect 0.476.
 
-Since it appears from the figures that the elevation in energy expenditure is restricted to the awake cycle, we next asked if there was an *interaction* between genotype and the Light/Dark cycle.  Adding this interaction was highly significant 1.178&times; 10^-107^.  This represents a 
+Since it appears from the figures that the elevation in energy expenditure is restricted to the awake cycle, we next asked if there was an *interaction* between genotype and the Light/Dark cycle.  Adding this interaction was highly significant 1.011&times; 10^-108^.  This represents a 
 
 The full results are shown below:
 
@@ -111,10 +117,10 @@ Table: Estimates and p-values from mixed linear models, excluding time of day.
 
                                       Estimate   Std..Error   t.value     p.z
 -----------------------------------  ---------  -----------  --------  ------
-Lean                                     0.007        0.003      2.10   0.035
-SexMale                                 -0.045        0.021     -2.18   0.029
-KnockoutKnockout                         0.020        0.014      1.39   0.164
-`Light/Dark`Light:KnockoutKnockout      -0.049        0.002    -22.27   0.000
+Lean                                     0.007        0.003      2.08   0.037
+SexMale                                 -0.045        0.020     -2.20   0.028
+KnockoutKnockout                         0.021        0.014      1.51   0.132
+`Light/Dark`Light:KnockoutKnockout      -0.049        0.002    -22.38   0.000
 
 ## RER Analysis
 
@@ -177,9 +183,9 @@ sessionInfo()
 ```
 
 ```
-## R version 3.5.2 (2018-12-20)
+## R version 3.5.1 (2018-07-02)
 ## Platform: x86_64-apple-darwin15.6.0 (64-bit)
-## Running under: OS X El Capitan 10.11.6
+## Running under: macOS High Sierra 10.13.6
 ## 
 ## Matrix products: default
 ## BLAS: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRblas.0.dylib
@@ -192,22 +198,21 @@ sessionInfo()
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-##  [1] multcomp_1.4-10   TH.data_1.0-10    MASS_7.3-51.4    
-##  [4] survival_2.44-1.1 mvtnorm_1.0-10    lme4_1.1-21      
-##  [7] Matrix_1.2-17     ggplot2_3.1.1     lubridate_1.7.4  
-## [10] readr_1.3.1       readxl_1.3.1      dplyr_0.8.0.1    
-## [13] tidyr_0.8.3       knitr_1.22       
+##  [1] multcomp_1.4-10 TH.data_1.0-10  MASS_7.3-51.1   survival_2.43-3
+##  [5] mvtnorm_1.0-11  lme4_1.1-21     Matrix_1.2-14   ggplot2_3.1.0  
+##  [9] lubridate_1.7.4 readr_1.3.1     readxl_1.3.1    dplyr_0.8.0.1  
+## [13] tidyr_0.8.3     knitr_1.22     
 ## 
 ## loaded via a namespace (and not attached):
 ##  [1] Rcpp_1.0.1       nloptr_1.2.1     cellranger_1.1.0 pillar_1.3.1    
-##  [5] compiler_3.5.2   highr_0.8        plyr_1.8.4       tools_3.5.2     
-##  [9] boot_1.3-20      digest_0.6.18    nlme_3.1-139     lattice_0.20-38 
-## [13] evaluate_0.13.1  tibble_2.1.1     gtable_0.3.0     pkgconfig_2.0.2 
-## [17] rlang_0.3.4      yaml_2.2.0       xfun_0.6         withr_2.1.2     
-## [21] stringr_1.4.0    hms_0.4.2        grid_3.5.2       tidyselect_0.2.5
+##  [5] compiler_3.5.1   highr_0.8        plyr_1.8.4       tools_3.5.1     
+##  [9] boot_1.3-20      digest_0.6.18    nlme_3.1-137     lattice_0.20-38 
+## [13] evaluate_0.13    tibble_2.1.1     gtable_0.2.0     pkgconfig_2.0.2 
+## [17] rlang_0.3.2      yaml_2.2.0       xfun_0.5         withr_2.1.2     
+## [21] stringr_1.4.0    hms_0.4.2        grid_3.5.1       tidyselect_0.2.5
 ## [25] glue_1.3.1       R6_2.4.0         rmarkdown_1.12   minqa_1.2.4     
 ## [29] purrr_0.3.2      reshape2_1.4.3   magrittr_1.5     codetools_0.2-16
-## [33] splines_3.5.2    scales_1.0.0     htmltools_0.3.6  assertthat_0.2.1
+## [33] splines_3.5.1    scales_1.0.0     htmltools_0.3.6  assertthat_0.2.1
 ## [37] colorspace_1.4-1 labeling_0.3     sandwich_2.5-1   stringi_1.4.3   
-## [41] lazyeval_0.2.2   munsell_0.5.0    crayon_1.3.4     zoo_1.8-5
+## [41] lazyeval_0.2.2   munsell_0.5.0    crayon_1.3.4     zoo_1.8-6
 ```

@@ -94,7 +94,8 @@ baseline.data <-
   lapply(baseline.files, read_csv) %>% 
   bind_rows() %>%
   dplyr::select(Subject, Interval, `Date/Time`, `Light/Dark`, `Volume O2`, RER, `X Ambulatory`, `Y Ambulatory`,`Volume CO2`,Heat) %>%
-  right_join(key.data, by=c('Subject'='Mouse'))  %>% #merged with annotation file
+  right_join(key.data, by=c('Subject'='Mouse'))  %>% #merged with annotation file %>%
+  filter(!Subject %in% c(4791)) %>% #no MRI data for 4791
   mutate(Date.Time = mdy_hms(`Date/Time`)) %>% #parsed datetime
   mutate(Time = hour(Date.Time)) %>% #extracted the hour 
   mutate(Zeitgeber.Time = Time-7) %>% # converted to ZT
@@ -188,7 +189,7 @@ animal.data <-
   filter(RER>0.65) %>%
   filter(RER<1.1) %>% #removed biologically implausible values
   filter(Subject!='4762') %>% #removed outlier sample
-  group_by(Subject,Genotype,Knockout,Sex, Zeitgeber.Time) %>% #calculated average hour/animal level data
+  group_by(Subject,Genotype,Knockout,Sex, Zeitgeber.Time,`Light/Dark`) %>% #calculated average hour/animal level data
   mutate(CHO.Ox = (4.585 * (`Volume CO2`/60)) - (3.226 * (`Volume O2`/60))) %>% #converted gas rates from mL/h to L/min to get this in g/min
   mutate(Lipid.Ox = (1.695 *(`Volume O2`/60)) - (1.701 * (`Volume CO2`/60))) %>% #converted gas rates from mL/h to L/min to get this in g/min
   summarize(RER = mean(RER,na.rm=T),
@@ -250,7 +251,9 @@ ggplot(summary.data,
         axis.title=element_text(size=14),
         legend.title=element_blank())
 ```
+
 ## VCO2 Analysis
+
 ```{r vco2-analysis-light-dark, fig.cap="VCO2 Summary Light/Dark Boxplot"}
 animal.data.ld <-
   baseline.data %>%
@@ -306,7 +309,7 @@ animal.data <-
   filter(RER>0.65) %>%
   filter(RER<1.1) %>% #removed biologically implausible values
   filter(Subject!='4762') %>% #removed outlier sample
-  group_by(Subject,Genotype,Knockout,Sex, Zeitgeber.Time) %>% #calculated average hour/animal level data
+  group_by(Subject,Genotype,Knockout,Sex, Zeitgeber.Time,`Light/Dark`) %>% #calculated average hour/animal level data
   mutate(CHO.Ox = (4.585 * (`Volume CO2`/60)) - (3.226 * (`Volume O2`/60))) %>% #converted gas rates from mL/h to L/min to get this in g/min
   mutate(Lipid.Ox = (1.695 *(`Volume O2`/60)) - (1.701 * (`Volume CO2`/60))) %>% #converted gas rates from mL/h to L/min to get this in g/min
   summarize(RER = mean(RER,na.rm=T),
@@ -408,31 +411,24 @@ ggplot(summary.data,
 ## Heat Statistics
 
 ```{r heat-stats}
-model.data <-   
-  baseline.data %>%
-  filter(Interval>100) %>% #removed first 20 intervals
-  filter(RER>0.65) %>%
-  filter(RER<1.1) %>%
-  filter(!is.na(Lean))
-
 library(lme4)
 # bascic model
-heat.lme.base <- lmer(Heat ~ as.factor(Time) + (1|Subject), data=model.data, REML=F)
+heat.lme.base <- lmer(Heat ~ as.factor(Zeitgeber.Time) + (1|Subject), data=animal.data, REML=F)
 
 # added lean mass as a covariate
-heat.lme.lean <- lmer(Heat ~ as.factor(Time) + Lean + (1|Subject), data=model.data, REML=F)
+heat.lme.lean <- lmer(Heat ~ as.factor(Zeitgeber.Time) + Lean + (1|Subject), data=animal.data, REML=F)
 
 # added light/dark cycle
-heat.lme.ld <- lmer(Heat ~ as.factor(Time) + Lean + `Light/Dark` + (1|Subject), data=model.data, REML=F)
+heat.lme.ld <- lmer(Heat ~ as.factor(Zeitgeber.Time) + Lean + `Light/Dark` + (1|Subject), data=animal.data, REML=F)
 
 # is there a additive effect of sex
-heat.lme.sex <- lmer(Heat ~ as.factor(Time) + Lean + Sex  + (1|Subject), data=model.data, REML=F)
-heat.lme.ko <- lmer(Heat ~ as.factor(Time) + Lean + Sex + Knockout + (1|Subject), data=model.data, REML=F)
+heat.lme.sex <- lmer(Heat ~ as.factor(Zeitgeber.Time) + Lean + Sex  + (1|Subject), data=animal.data, REML=F)
+heat.lme.ko <- lmer(Heat ~ as.factor(Zeitgeber.Time) + Lean + Sex + Knockout + (1|Subject), data=animal.data, REML=F)
 
-heat.lme.ko.sex.int <- lmer(Heat ~ as.factor(Time) + Lean + Sex + Knockout + Knockout:Sex + (1|Subject), data=model.data, REML=F)
+heat.lme.ko.sex.int <- lmer(Heat ~ as.factor(Zeitgeber.Time) + Lean + Sex + Knockout + Knockout:Sex + (1|Subject), data=animal.data, REML=F)
 
-heat.lme.ko.lc <- lmer(Heat ~ as.factor(Time) + Lean + Sex + `Light/Dark` + Knockout + Knockout:`Light/Dark` + (1|Subject), data=model.data, REML=F)
-heat.lme.ko.lc.null <- lmer(Heat ~ as.factor(Time) + Lean + Sex + `Light/Dark` + (1|Subject), data=model.data, REML=F)
+heat.lme.ko.lc <- lmer(Heat ~ as.factor(Zeitgeber.Time) + Lean + Sex + `Light/Dark` + Knockout + Knockout:`Light/Dark` + (1|Subject), data=animal.data, REML=F)
+heat.lme.ko.lc.null <- lmer(Heat ~ as.factor(Zeitgeber.Time) + Lean + Sex + `Light/Dark` + (1|Subject), data=animal.data, REML=F)
 
 heat.lme <- heat.lme.ko.lc
 heat.lme.null <- heat.lme.ko.lc.null
@@ -447,11 +443,11 @@ animal.data.ld.summary %>%
 
 To test whether these groups are different we constructed a linear model with the following formula:
 
-Fat Mass ~ `r as.character(formula(heat.lme))[3]`.  
+Heat ~ `r as.character(formula(heat.lme))[3]`.  
 
 We used this model because the base model was that Heat production changes over the day.  We asked if lean mass modified the time dependent effect, and it did (p=`r anova(heat.lme.base,heat.lme.lean)$"Pr(>Chisq)"[2]`).  After adjusting for lean mass, we asked if there was any additional benefit to including the light/dark cycle in addition to the time of day, and found that there was no significant effect, so that was not included in the model (p=`r anova(heat.lme.ld,heat.lme.lean)$"Pr(>Chisq)"[2]`).  we added sex as a covariate which had no significant effect `r anova(heat.lme.sex,heat.lme.lean)$"Pr(>Chisq)"[2]`. We chose to keep sex in the model though as it was borderline significant.  We next added knockout to the model and found no significant effect `r anova(heat.lme.sex,heat.lme.ko)$"Pr(>Chisq)"[2]`.  Finally we asked if Sex modified the effect of the knockout and found no significant effect `r anova(heat.lme.ko,heat.lme.ko.sex.int)$"Pr(>Chisq)"[2]`.
 
-Since it appears from the figures that the elevation in energy expenditure is restricted to the awake cycle, we next asked if there was an *interaction* between genotype and the Light/Dark cycle.  Adding this interaction was highly significant `r anova(heat.lme.ko.lc,heat.lme.ko.lc.null)$"Pr(>Chisq)"[2]`.  This represents a 
+Since it appears from the figures that the elevation in energy expenditure is restricted to the awake cycle, we next asked if there was an *interaction* between genotype and the Light/Dark cycle.  Adding this interaction was highly significant `r anova(heat.lme.ko.lc,heat.lme.ko.lc.null)$"Pr(>Chisq)"[2]`.  
 
 The full results are shown below:
 
@@ -463,22 +459,9 @@ library(multcomp)
 coefs <- data.frame(coef(summary(heat.lme)))
 coefs$p.z <- 2 * (1 - pnorm(abs(coefs$t.value)))
 kable(coefs[25:28,], caption="Estimates and p-values from mixed linear models, excluding time of day.")
-
-
-
-
-# library(influence.ME)
-# infl <- influence(heat.lme, group='Subject')
-# par(mfrow=c(1,3))
-# plot(density(residuals(heat.lme)), las=1)
-# plot(fitted(heat.lme),residuals(heat.lme),  
-#      ylab="Residuals", xlab="Fitted Values (kW)", pch=19, las=1)
-# abline(h=0, lty=2, col='red')
-# barplot(cooks.distance(infl), las=2, names.arg=rownames(cooks.distance(infl)), 
-#          beside=T, ylab="Cook's Distance", col='grey')
 ```
 
-## RER Analysis
+# RER Analysis
 
 ```{r rer-analysis-light-dark, fig.cap="RER Summary Light/Dark Boxplot"}
 ggplot(animal.data.ld,
@@ -533,7 +516,7 @@ ggplot(summary.data,
         legend.title=element_blank())
 ```
 
-## Carbohydrate Oxidation Analysis
+# Carbohydrate Oxidation Analysis
 
 Calculated as $Carbohydrate\ oxidation = (4.585 * vCO_2) - (3.226 * vO_2)$ where both units are in L/min and the output is in g/min
 
@@ -594,7 +577,59 @@ ggplot(summary.data,
         legend.title=element_blank()) 
 ```
 
-## Lipid Oxidation Analysis
+### Carbohydrate Oxidation Statistics
+
+```{r cho-stats}
+#basic model
+cho.ox.lme.base <- lmer(CHO.Oxidation ~ as.factor(Zeitgeber.Time) + (1|Subject), data=animal.data, REML=F)
+
+# added lean mass as a covariate
+cho.ox.lme.lean <- lmer(CHO.Oxidation ~ as.factor(Zeitgeber.Time) + Lean + (1|Subject), data=animal.data, REML=F)
+
+# added light/dark cycle
+cho.ox.lme.ld <- lmer(CHO.Oxidation ~ as.factor(Zeitgeber.Time) + Lean + `Light/Dark` + (1|Subject), data=animal.data, REML=F) #no effect of including light dark in addition to time of day
+
+# is there a additive effect of sex
+cho.ox.lme.sex <- lmer(CHO.Oxidation ~ as.factor(Zeitgeber.Time) + Lean + Sex  + (1|Subject), data=animal.data, REML=F) #no sex effects so kept in the model
+cho.ox.lme.ko <- lmer(CHO.Oxidation ~ as.factor(Zeitgeber.Time) + Lean + Sex + Knockout + (1|Subject), data=animal.data, REML=F)
+
+cho.ox.lme.ko.sex.int <- lmer(CHO.Oxidation ~ as.factor(Zeitgeber.Time) + Lean + Sex + Knockout + Knockout:Sex + (1|Subject), data=animal.data, REML=F) #sex moderation of knockout effect
+
+cho.ox.lme.ko.lc <- lmer(CHO.Oxidation ~ as.factor(Zeitgeber.Time) + Lean + Sex + `Light/Dark` + Knockout + Knockout:`Light/Dark` + (1|Subject), data=animal.data, REML=F) #including light/dark
+cho.ox.lme.ko.lc.null <- lmer(CHO.Oxidation ~ as.factor(Zeitgeber.Time) + Lean + Sex + `Light/Dark` + (1|Subject), data=animal.data, REML=F) #excluding light/dark
+
+cho.ox.lme <- cho.ox.lme.ko.lc
+cho.ox.lme.null <- cho.ox.lme.ko.lc.null
+
+animal.data.ld.summary %>% 
+  dplyr::select(Knockout,Sex,`Light/Dark`,CHO.Oxidation_mean) %>% 
+  spread(key=Knockout,value=CHO.Oxidation_mean) %>%
+  mutate(Change = Knockout - Control,
+         Pct.Change = Change/Control*100) %>%
+  kable(caption="Average changes in carbohydrate production comparing wt to knockout")
+```
+
+To test whether these groups are different we constructed a linear model with the following formula:
+
+CHO Oxidation ~ `r as.character(formula(cho.ox.lme))[3]`.  
+
+We used this model because the base model was that carbohydrate oxidation changes over the day.  We asked if lean mass modified the time dependent effect, and it did (p=`r anova(cho.ox.lme.base,cho.ox.lme.lean)$"Pr(>Chisq)"[2]`).  After adjusting for lean mass, we asked if there was any additional benefit to including the light/dark cycle in addition to the time of day, and found that there was no significant effect, so that was not included in the model (p=`r anova(cho.ox.lme.ld,cho.ox.lme.lean)$"Pr(>Chisq)"[2]`).  We added sex as a covariate which had no significant effect `r anova(cho.ox.lme.sex,cho.ox.lme.lean)$"Pr(>Chisq)"[2]`. We chose to keep sex in the model though.  We next added knockout to the model and found no significant effect `r anova(cho.ox.lme.sex,cho.ox.lme.ko)$"Pr(>Chisq)"[2]`.  Finally we asked if Sex modified the effect of the knockout and found no significant effect `r anova(cho.ox.lme.ko,cho.ox.lme.ko.sex.int)$"Pr(>Chisq)"[2]`.
+
+Since it appears from the figures that the elevation in energy expenditure is restricted to the awake cycle, we next asked if there was an *interaction* between genotype and the Light/Dark cycle.  Adding this interaction was highly significant `r anova(cho.ox.lme.ko.lc,cho.ox.lme.ko.lc.null)$"Pr(>Chisq)"[2]`.  
+
+The full results are shown below:
+
+```{r cho-model}
+library(multcomp)
+#glht(cho.ox.lme, infct=mcp(Particulate.Treatment='Dunnett')) %>% summary
+
+
+coefs <- data.frame(coef(summary(cho.ox.lme)))
+coefs$p.z <- 2 * (1 - pnorm(abs(coefs$t.value)))
+kable(coefs[25:28,], caption="Estimates and p-values from mixed linear models, excluding time of day.")
+```
+
+# Lipid Oxidation Analysis
 
 Calculated as $Lipid\ oxidation = (1.695 * vO_2) - (1.701 * vCO_2)$ where both units are in L/min and the output is in g/min
 

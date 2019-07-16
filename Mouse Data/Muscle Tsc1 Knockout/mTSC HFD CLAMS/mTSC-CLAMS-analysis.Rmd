@@ -606,7 +606,7 @@ animal.data.ld.summary %>%
   spread(key=Knockout,value=CHO.Oxidation_mean) %>%
   mutate(Change = Knockout - Control,
          Pct.Change = Change/Control*100) %>%
-  kable(caption="Average changes in carbohydrate production comparing wt to knockout")
+  kable(caption="Average changes in carbohydrate oxidation comparing wt to knockout")
 ```
 
 To test whether these groups are different we constructed a linear model with the following formula:
@@ -688,6 +688,56 @@ ggplot(summary.data,
         axis.text=element_text(size=14),
         axis.title=element_text(size=14),
         legend.title=element_blank()) 
+```
+
+### Lipid Oxidation Statistics
+
+```{r lipid-stats}
+#basic model
+lipid.ox.lme.base <- lmer(Lipid.Oxidation ~ as.factor(Zeitgeber.Time) + (1|Subject), data=animal.data, REML=F)
+
+# added lean mass as a covariate
+lipid.ox.lme.lean <- lmer(Lipid.Oxidation ~ as.factor(Zeitgeber.Time) + Lean + (1|Subject), data=animal.data, REML=F)
+
+# added light/dark cycle
+lipid.ox.lme.ld <- lmer(Lipid.Oxidation ~ as.factor(Zeitgeber.Time) + Lean + `Light/Dark` + (1|Subject), data=animal.data, REML=F) #no effect of including light dark in addition to time of day
+
+# is there a additive effect of sex
+lipid.ox.lme.sex <- lmer(Lipid.Oxidation ~ as.factor(Zeitgeber.Time) + Lean + Sex  + (1|Subject), data=animal.data, REML=F) #no sex effects so kept in the model
+lipid.ox.lme.ko <- lmer(Lipid.Oxidation ~ as.factor(Zeitgeber.Time) + Lean + Sex + Knockout + (1|Subject), data=animal.data, REML=F)
+
+lipid.ox.lme.ko.sex.int <- lmer(Lipid.Oxidation ~ as.factor(Zeitgeber.Time) + Lean + Sex + Knockout + Knockout:Sex + (1|Subject), data=animal.data, REML=F) #sex moderation of knockout effect
+
+lipid.ox.lme.ko.lc <- lmer(Lipid.Oxidation ~ as.factor(Zeitgeber.Time) + Lean + Sex + `Light/Dark` + Knockout + Knockout:`Light/Dark` + (1|Subject), data=animal.data, REML=F) #including light/dark
+lipid.ox.lme.ko.lc.null <- lmer(Lipid.Oxidation ~ as.factor(Zeitgeber.Time) + Lean + Sex + `Light/Dark` + (1|Subject), data=animal.data, REML=F) #excluding light/dark
+
+lipid.ox.lme <- lipid.ox.lme.ko.lc
+lipid.ox.lme.null <- lipid.ox.lme.ko.lc.null
+
+animal.data.ld.summary %>% 
+  dplyr::select(Knockout,Sex,`Light/Dark`,Lipid.Oxidation_mean) %>% 
+  spread(key=Knockout,value=Lipid.Oxidation_mean) %>%
+  mutate(Change = Knockout - Control,
+         Pct.Change = Change/Control*100) %>%
+  kable(caption="Average changes in lipid oxidation comparing wt to knockout")
+```
+
+To test whether these groups are different we constructed a linear model with the following formula:
+
+Lipid Oxidation ~ `r as.character(formula(lipid.ox.lme))[3]`.  
+
+We used this model because the base model was that lipid oxidation changes over the day.  We asked if lean mass modified the time dependent effect, but it did not (p=`r anova(lipid.ox.lme.base,lipid.ox.lme.lean)$"Pr(>Chisq)"[2]`).  We kept it in the model to be consistent with the carbohydrate oxidation.  After adjusting for lean mass, we asked if there was any additional benefit to including the light/dark cycle in addition to the time of day, and found that there was no significant effect, so that was not included in the initial model (p=`r anova(lipid.ox.lme.ld,lipid.ox.lme.lean)$"Pr(>Chisq)"[2]`).  We added sex as a covariate which had a highly significant effect `r anova(lipid.ox.lme.sex,lipid.ox.lme.lean)$"Pr(>Chisq)"[2]`. We next added knockout to the model and found no significant effect `r anova(lipid.ox.lme.sex,lipid.ox.lme.ko)$"Pr(>Chisq)"[2]`.  Finally we asked if Sex modified the effect of the knockout and found no significant effect `r anova(lipid.ox.lme.ko,lipid.ox.lme.ko.sex.int)$"Pr(>Chisq)"[2]`.
+
+The full results are shown below:
+
+```{r lipid-model}
+library(multcomp)
+#glht(lipid.ox.lme, infct=mcp(Particulate.Treatment='Dunnett')) %>% summary
+
+
+coefs <- data.frame(coef(summary(lipid.ox.lme)))
+coefs$p.z <- 2 * (1 - pnorm(abs(coefs$t.value)))
+kable(coefs[25:28,], caption="Estimates and p-values from mixed linear models, excluding time of day.")
 ```
 
 ### Lipid versus CHO Oxidation

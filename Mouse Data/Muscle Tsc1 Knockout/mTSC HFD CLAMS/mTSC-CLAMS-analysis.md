@@ -19,7 +19,7 @@ output:
 
 # Purpose
 
-To evaluate energy expenditure and other parameters in muscle _Tsc1_ knockout mice.  This script was most recently updated on **Tue Jul 16 08:46:14 2019**.
+To evaluate energy expenditure and other parameters in muscle _Tsc1_ knockout mice.  This script was most recently updated on **Tue Jul 16 08:53:10 2019**.
 
 # Experimental Details
 
@@ -149,7 +149,7 @@ Calculated as $Carbohydrate\ oxidation = (4.585 * vCO_2) - (3.226 * vO_2)$ where
 ### Carbohydrate Oxidation Statistics
 
 
-Table: Average changes in carbohydrate production comparing wt to knockout
+Table: Average changes in carbohydrate oxidation comparing wt to knockout
 
 Sex      Light/Dark    Control   Knockout   Change   Pct.Change
 -------  -----------  --------  ---------  -------  -----------
@@ -189,6 +189,36 @@ Calculated as $Lipid\ oxidation = (1.695 * vO_2) - (1.701 * vCO_2)$ where both u
 ### Lipid Oxidation Summary Data
 
 ![Linegraph of Lipid Oxidation Data](figures/lipid-summarized-data-1.png)![Linegraph of Lipid Oxidation Data](figures/lipid-summarized-data-2.png)
+
+### Lipid Oxidation Statistics
+
+
+Table: Average changes in lipid oxidation comparing wt to knockout
+
+Sex      Light/Dark    Control   Knockout   Change   Pct.Change
+-------  -----------  --------  ---------  -------  -----------
+Female   Dark            0.346      0.345   -0.001       -0.207
+Female   Light           0.338      0.355    0.018        5.225
+Male     Dark            0.282      0.299    0.018        6.253
+Male     Light           0.318      0.341    0.023        7.377
+
+To test whether these groups are different we constructed a linear model with the following formula:
+
+Lipid Oxidation ~ as.factor(Zeitgeber.Time) + Lean + Sex + `Light/Dark` + Knockout + Knockout:`Light/Dark` + (1 | Subject).  
+
+We used this model because the base model was that lipid oxidation changes over the day.  We asked if lean mass modified the time dependent effect, but it did not (p=0.806).  We kept it in the model to be consistent with the carbohydrate oxidation.  After adjusting for lean mass, we asked if there was any additional benefit to including the light/dark cycle in addition to the time of day, and found that there was no significant effect, so that was not included in the initial model (p=1).  We added sex as a covariate which had a highly significant effect 1.264&times; 10^-6^. We next added knockout to the model and found no significant effect 0.311.  Finally we asked if Sex modified the effect of the knockout and found no significant effect 0.235.
+
+The full results are shown below:
+
+
+Table: Estimates and p-values from mixed linear models, excluding time of day.
+
+                                      Estimate   Std..Error   t.value     p.z
+-----------------------------------  ---------  -----------  --------  ------
+Lean                                     0.013        0.003     3.940   0.000
+SexMale                                 -0.103        0.020    -5.167   0.000
+KnockoutKnockout                         0.007        0.014     0.489   0.625
+`Light/Dark`Light:KnockoutKnockout       0.014        0.005     2.782   0.005
 
 ### Lipid versus CHO Oxidation
 

@@ -40,7 +40,7 @@ library(tidyr)
 library(dplyr)
 
 # sets color scheme
-color.scheme <- c('#fa8072', '#00ced1')
+color.scheme <- grey.colors(2)
 ```
 
 # Purpose
@@ -110,7 +110,7 @@ plot <- barplot(as.matrix(plot.data),
                 ylab="Weight (mg)",
                 main="Inguinal WAT",
                 ylim=c(0,ymax),
-                col=grey.colors(2))
+                col=color.scheme)
 
 superpose.eb(plot,
              as.matrix(plot.data),
@@ -134,7 +134,7 @@ plot <- barplot(as.matrix(plot.data),
                 ylab="Weight (mg)",
                 main="Epididymal WAT",
                 ylim=c(0,ymax),
-                col=grey.colors(2))
+                col=color.scheme)
 
 superpose.eb(plot,
              as.matrix(plot.data),

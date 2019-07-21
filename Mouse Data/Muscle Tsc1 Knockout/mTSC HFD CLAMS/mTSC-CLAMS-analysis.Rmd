@@ -157,6 +157,12 @@ animal.data.ld.summary <-
   group_by(Knockout,Sex,`Light/Dark`) %>%
   summarize_if(is.numeric, .funs=funs(mean(.,na.rm=T),se))
 
+
+animal.data.summary <-
+  animal.data.ld %>%
+  group_by(Knockout,Sex) %>%
+  summarize_if(is.numeric, .funs=funs(mean(.,na.rm=T),se))
+
 library(ggplot2)
 
 ggplot(animal.data.ld.summary,
@@ -460,6 +466,22 @@ coefs <- data.frame(coef(summary(heat.lme)))
 coefs$p.z <- 2 * (1 - pnorm(abs(coefs$t.value)))
 kable(coefs[25:28,], caption="Estimates and p-values from mixed linear models, excluding time of day.")
 ```
+
+### How would this relate to energy balance?
+
+```{r energy-balance-calculations}
+heat.summary <- 
+  animal.data.summary %>% 
+  dplyr::select(Knockout,Sex,Heat_mean) %>% 
+  spread(key=Knockout,value=Heat_mean) %>%
+  mutate(Change = Knockout - Control,
+         Pct.Change = Change/Control*100)
+kable(heat.summary, caption="Average changes in heat production comparing wt to knockout")
+
+daily.kcal.increase <- heat.summary$Change %>% mean * 60 * 60 * 24 * 0.000239006
+```
+
+Based on these calculations, we detected a `r heat.summary$Change %>% mean * 1000`mW increase in energy expenditure.  This corresponds to `r daily.kcal.increase`kcal increase in calories consumed per day.  Over the course of 30 weeks (the NCD study) this accumulates to `r daily.kcal.increase *  7 * 30`kcal which converts to `r daily.kcal.increase *  7 * 30/9`g of fat mass if there are no other adaptations.  For the HFD studies, this corresponds to a decrease over 11 weeks of `r daily.kcal.increase *  7 * 11`kcal which converts to `r daily.kcal.increase *  7 * 11/9`g of fat mass.
 
 # RER Analysis
 

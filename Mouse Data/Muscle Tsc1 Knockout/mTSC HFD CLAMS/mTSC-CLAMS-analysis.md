@@ -19,7 +19,7 @@ output:
 
 # Purpose
 
-To evaluate energy expenditure and other parameters in muscle _Tsc1_ knockout mice.  This script was most recently updated on **Tue Jul 16 10:46:43 2019**.
+To evaluate energy expenditure and other parameters in muscle _Tsc1_ knockout mice.  This script was most recently updated on **Sun Jul 21 10:03:54 2019**.
 
 # Experimental Details
 
@@ -42,7 +42,6 @@ Table: Total animals tested by genotype
 
 Genotype      Sex        n
 ------------  -------  ---
-NA            NA        24
 +/+; +/+      Female    16
 +/+; +/+      Male      16
 +/+; Tg/+     Female    11
@@ -51,6 +50,7 @@ fl/fl; +/+    Female    17
 fl/fl; +/+    Male       8
 fl/fl; Tg/+   Female    18
 fl/fl; Tg/+   Male      11
+NA            NA        24
 
 
 
@@ -58,11 +58,11 @@ Table: Total animals tested by knockout
 
 Knockout   Sex        n
 ---------  -------  ---
-NA         NA        24
 Control    Female    44
 Control    Male      32
 Knockout   Female    18
 Knockout   Male      11
+NA         NA        24
 
 The baseline raw data files can be found in Oxymax/Oxymax files by time period/Baseline.  The MRI data can be found in EchoMRI.
 
@@ -123,6 +123,18 @@ Lean                                     0.013        0.003      4.24   0.000
 SexMale                                 -0.061        0.020     -3.11   0.002
 KnockoutKnockout                         0.035        0.013      2.64   0.008
 `Light/Dark`Light:KnockoutKnockout      -0.032        0.004     -8.28   0.000
+
+### How would this relate to energy balance?
+
+
+Table: Average changes in heat production comparing wt to knockout
+
+Sex       Control   Knockout   Change   Pct.Change
+-------  --------  ---------  -------  -----------
+Female      0.452      0.469    0.017         3.67
+Male        0.455      0.472    0.016         3.61
+
+Based on these calculations, we detected a 16.512mW increase in energy expenditure.  This corresponds to 0.341kcal increase in calories consumed per day.  Over the course of 30 weeks (the NCD study) this accumulates to 71.605kcal which converts to 7.956g of fat mass if there are no other adaptations.  For the HFD studies, this corresponds to a decrease over 11 weeks of 26.255kcal which converts to 2.917g of fat mass.
 
 # RER Analysis
 
@@ -265,19 +277,20 @@ sessionInfo()
 ##  [1] multcomp_1.4-10   TH.data_1.0-10    MASS_7.3-51.4    
 ##  [4] survival_2.44-1.1 mvtnorm_1.0-10    lme4_1.1-21      
 ##  [7] Matrix_1.2-17     ggplot2_3.1.1     lubridate_1.7.4  
-## [10] readr_1.3.1       readxl_1.3.1      dplyr_0.8.1      
-## [13] tidyr_0.8.3       knitr_1.23       
+## [10] readr_1.3.1       readxl_1.3.1      dplyr_0.8.3      
+## [13] tidyr_0.8.3.9000  knitr_1.23       
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] Rcpp_1.0.1       nloptr_1.2.1     cellranger_1.1.0 pillar_1.4.1    
-##  [5] compiler_3.5.0   highr_0.8        plyr_1.8.4       tools_3.5.0     
-##  [9] boot_1.3-22      digest_0.6.19    nlme_3.1-140     lattice_0.20-38 
-## [13] evaluate_0.14    tibble_2.1.3     gtable_0.3.0     pkgconfig_2.0.2 
-## [17] rlang_0.3.4      yaml_2.2.0       xfun_0.7         withr_2.1.2     
-## [21] stringr_1.4.0    hms_0.4.2        grid_3.5.0       tidyselect_0.2.5
-## [25] glue_1.3.1       R6_2.4.0         rmarkdown_1.13   minqa_1.2.4     
-## [29] purrr_0.3.2      reshape2_1.4.3   magrittr_1.5     codetools_0.2-16
-## [33] splines_3.5.0    scales_1.0.0     htmltools_0.3.6  assertthat_0.2.1
-## [37] colorspace_1.4-1 labeling_0.3     sandwich_2.5-1   stringi_1.4.3   
-## [41] lazyeval_0.2.2   munsell_0.5.0    crayon_1.3.4     zoo_1.8-6
+##  [1] zoo_1.8-6        tidyselect_0.2.5 xfun_0.7         purrr_0.3.2     
+##  [5] reshape2_1.4.3   splines_3.5.0    lattice_0.20-38  colorspace_1.4-1
+##  [9] vctrs_0.2.0      htmltools_0.3.6  yaml_2.2.0       rlang_0.4.0     
+## [13] pillar_1.4.2     nloptr_1.2.1     glue_1.3.1       withr_2.1.2     
+## [17] plyr_1.8.4       stringr_1.4.0    munsell_0.5.0    gtable_0.3.0    
+## [21] cellranger_1.1.0 codetools_0.2-16 evaluate_0.14    labeling_0.3    
+## [25] highr_0.8        Rcpp_1.0.1       scales_1.0.0     backports_1.1.4 
+## [29] hms_0.4.2        digest_0.6.20    stringi_1.4.3    grid_3.5.0      
+## [33] tools_3.5.0      sandwich_2.5-1   magrittr_1.5     lazyeval_0.2.2  
+## [37] tibble_2.1.3     crayon_1.3.4     pkgconfig_2.0.2  zeallot_0.1.0   
+## [41] assertthat_0.2.1 minqa_1.2.4      rmarkdown_1.13   R6_2.4.0        
+## [45] boot_1.3-22      nlme_3.1-140     compiler_3.5.0
 ```

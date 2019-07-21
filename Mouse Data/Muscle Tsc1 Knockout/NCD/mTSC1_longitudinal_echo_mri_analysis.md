@@ -20,6 +20,8 @@ This retrieved 1934 measurements.
 
 ![](figures/scatterplot-Body-weight-1.png)<!-- -->
 
+![](figures/scatterplot-body-weight-weekly-1.png)<!-- -->
+
 ![](figures/scatterplot-lean-mass-1.png)<!-- -->
 
 ![](figures/scatterplot-fat-mass-1.png)<!-- -->
@@ -60,6 +62,15 @@ Total.Fat.Mass      0.0197057   0.0001100  Wilcoxon     0.0000013
 Percent.Fat.Mass    0.5344418   0.0006355  Welch's      0.0000000
 Body.Weight         0.4466816   0.0061261  Welch's      0.6995812
 Lean.Mass           0.1831920   0.1821235  Student's    0.7438294
+
+
+
+Table: 
+
+Knockout    Body.Weight   Total.Fat.Mass   Lean.Mass   Percent.Fat.Mass
+---------  ------------  ---------------  ----------  -----------------
+FALSE          30.49802         4.725479    23.73904          14.952979
+TRUE           28.89293         2.745789    23.56737           9.559524
 
 The total fat mass was reduced by 41.8939496% wheras the percent fat mass was reduced by 36.0694359%.
 
@@ -107,24 +118,24 @@ Based on a mixed linear model there was a significant effect of knockout reducin
 ## 
 ## other attached packages:
 ## [1] broom_0.5.2        lme4_1.1-21        Matrix_1.2-17     
-## [4] car_3.0-3          carData_3.0-2      tidyr_0.8.3       
-## [7] dplyr_0.8.1        RColorBrewer_1.1-2 knitr_1.23        
+## [4] car_3.0-3          carData_3.0-2      tidyr_0.8.3.9000  
+## [7] dplyr_0.8.3        RColorBrewer_1.1-2 knitr_1.23        
 ## 
 ## loaded via a namespace (and not attached):
 ##  [1] zip_2.0.2         Rcpp_1.0.1        plyr_1.8.4       
-##  [4] nloptr_1.2.1      pillar_1.4.1      compiler_3.5.0   
-##  [7] cellranger_1.1.0  highr_0.8         forcats_0.4.0    
-## [10] tools_3.5.0       boot_1.3-22       digest_0.6.19    
-## [13] nlme_3.1-140      lattice_0.20-38   evaluate_0.14    
-## [16] tibble_2.1.3      pkgconfig_2.0.2   rlang_0.3.4      
-## [19] openxlsx_4.1.0.1  curl_3.3          yaml_2.2.0       
-## [22] haven_2.1.0       xfun_0.7          rio_0.5.16       
-## [25] stringr_1.4.0     generics_0.0.2    hms_0.4.2        
-## [28] grid_3.5.0        tidyselect_0.2.5  glue_1.3.1       
-## [31] data.table_1.12.2 R6_2.4.0          readxl_1.3.1     
-## [34] foreign_0.8-71    rmarkdown_1.13    minqa_1.2.4      
-## [37] purrr_0.3.2       magrittr_1.5      backports_1.1.4  
-## [40] MASS_7.3-51.4     splines_3.5.0     htmltools_0.3.6  
-## [43] assertthat_0.2.1  abind_1.4-5       stringi_1.4.3    
-## [46] crayon_1.3.4
+##  [4] nloptr_1.2.1      cellranger_1.1.0  pillar_1.4.2     
+##  [7] compiler_3.5.0    highr_0.8         forcats_0.4.0    
+## [10] tools_3.5.0       boot_1.3-22       zeallot_0.1.0    
+## [13] digest_0.6.20     nlme_3.1-140      lattice_0.20-38  
+## [16] evaluate_0.14     tibble_2.1.3      pkgconfig_2.0.2  
+## [19] rlang_0.4.0       openxlsx_4.1.0.1  curl_3.3         
+## [22] yaml_2.2.0        haven_2.1.0       xfun_0.7         
+## [25] rio_0.5.16        stringr_1.4.0     generics_0.0.2   
+## [28] vctrs_0.2.0       hms_0.4.2         grid_3.5.0       
+## [31] tidyselect_0.2.5  glue_1.3.1        data.table_1.12.2
+## [34] R6_2.4.0          readxl_1.3.1      foreign_0.8-71   
+## [37] rmarkdown_1.13    minqa_1.2.4       purrr_0.3.2      
+## [40] magrittr_1.5      MASS_7.3-51.4     splines_3.5.0    
+## [43] backports_1.1.4   htmltools_0.3.6   abind_1.4-5      
+## [46] assertthat_0.2.1  stringi_1.4.3     crayon_1.3.4
 ```

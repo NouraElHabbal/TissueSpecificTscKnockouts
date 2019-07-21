@@ -54,6 +54,43 @@ with(mri_data[mri_data$animal.Genotype == levels(mri_data$animal.Genotype)[n]&mr
 }
 ```
 
+```{r scatterplot-body-weight-weekly}
+library(dplyr)
+library(RColorBrewer)
+genotype.colors <- brewer.pal(length(levels(mri_data$animal.Genotype)),"Set2")
+mri_data$Knockout <- mri_data$Genotype == 'fl/fl; Tg/+'
+mri_data$Week <- round(mri_data$age/7)
+se <- function(x) sd(x, na.rm=T)/length(x)
+mri_data_summary <-
+  subset(mri_data, assay.assay=="Body Weight") %>%
+  group_by(Week, Knockout) %>%
+  dplyr::summarize(Body.Weight = mean(Weight),
+            Body.Weight.se = se(Weight))
+
+
+with(subset(mri_data_summary, Week<30&Knockout==F),
+                   plot(Week, Body.Weight,
+                   pch=19, las=1, cex=0.5,type="p",
+                   ylab ="Body Weight (g)",
+                   xlab ="Age (Weeks)",
+                   xlim=c(0,max(Week)),
+                   ylim=c(0,max(Body.Weight+Body.Weight.se)),
+                   col=grey.colors(6)))
+
+ superpose.eb <-
+ function (x, y, ebl, ebu = ebl, length = 0.08, ...)
+ arrows(x, y + ebu, x, y - ebl, angle = 90, code = 3,
+ length = length, ...)
+
+with(subset(mri_data_summary, Week<30&Knockout==F), superpose.eb(Week,Body.Weight,Body.Weight.se, col=c('black','grey50')[1]))
+with(subset(mri_data_summary, Week<30&Knockout==T), superpose.eb(Week,Body.Weight,Body.Weight.se, col=c('black','grey50')[2]))
+
+legend("topleft", c("Wild-Type","Knockout"), bty="n", pch=19, col=c('black','grey50'), lty=1)
+
+with(subset(mri_data_summary, Week<30&Knockout==F), lines(smooth.spline(Body.Weight ~ Week, spar=0.6),col=c('black','grey50')[1]))
+with(subset(mri_data_summary, Week<30&Knockout==T), lines(smooth.spline(Body.Weight ~ Week, spar=0.6), col=c('black','grey50')[2]))
+```
+
 ```{r scatterplot-lean-mass}
 library(RColorBrewer)
 genotype.colors <- brewer.pal(length(levels(mri_data$animal.Genotype)),"Set2")
@@ -91,13 +128,7 @@ with(mri_data[mri_data$animal.Genotype == levels(mri_data$animal.Genotype)[n]&mr
 ```
 
 ```{r scatterplot-fat-mass-weekly}
-library(RColorBrewer)
-genotype.colors <- brewer.pal(length(levels(mri_data$animal.Genotype)),"Set2")
-palette(genotype.colors)
-mri_data$Knockout <- mri_data$Genotype == 'fl/fl; Tg/+'
-mri_data$Week <- round(mri_data$age/7)
-library(dplyr)
-se <- function(x) sd(x, na.rm=T)/sqrt(length(x))
+
 mri_data_summary <-
   subset(mri_data, assay.assay=="Total Fat Mass") %>%
   group_by(Week, Knockout) %>%
@@ -112,23 +143,16 @@ with(subset(mri_data_summary, Week<30&Knockout==F),
                    xlab ="Age (Weeks)",
                    xlim=c(0,max(Week)),
                    ylim=c(0,max(Fat.Mass+Fat.Mass.se)),
-                   col=c("#6CBE45","#FAC917")))
-
-
- superpose.eb <-
- function (x, y, ebl, ebu = ebl, length = 0.08, ...)
- arrows(x, y + ebu, x, y - ebl, angle = 90, code = 3,
- length = length, ...)
+                   col=c('black','grey50')))
  
  
-with(subset(mri_data_summary, Week<30&Knockout==F), superpose.eb(Week,Fat.Mass,Fat.Mass.se, col=c("#6CBE45","#FAC917")[1]))
-with(subset(mri_data_summary, Week<30&Knockout==T), superpose.eb(Week,Fat.Mass,Fat.Mass.se, col=c("#6CBE45","#FAC917")[2]))
+with(subset(mri_data_summary, Week<30&Knockout==F), superpose.eb(Week,Fat.Mass,Fat.Mass.se, col=c('black','grey50')[1]))
+with(subset(mri_data_summary, Week<30&Knockout==T), superpose.eb(Week,Fat.Mass,Fat.Mass.se, col=c('black','grey50')[2]))
 
-with(subset(mri_data_summary, Week<30&Knockout==T), points(Week,Fat.Mass, col=palette()[2], pch=19, cex=0.5))
-legend("topleft", c("Wild-Type","Knockout"), bty="n", pch=19, col=c("#6CBE45","#FAC917"), lty=1)
+legend("topleft", c("Wild-Type","Knockout"), bty="n", pch=19, col=c('black','grey50'), lty=1)
 
-with(subset(mri_data_summary, Week<30&Knockout==F), lines(smooth.spline(Fat.Mass ~ Week, spar=0.9), col=c("#6CBE45","#FAC917")[1]))
-with(subset(mri_data_summary, Week<30&Knockout==T), lines(smooth.spline(Fat.Mass ~ Week, spar=0.9), col=c("#6CBE45","#FAC917")[2]))
+with(subset(mri_data_summary, Week<30&Knockout==F), lines(smooth.spline(Fat.Mass ~ Week, spar=0.9), col=c('black','grey50')[1]))
+with(subset(mri_data_summary, Week<30&Knockout==T), lines(smooth.spline(Fat.Mass ~ Week, spar=0.9), col=c('black','grey50')[2]))
 ```
 
 ```{r scatterplot-lean-mass-weekly}
@@ -146,16 +170,15 @@ with(subset(mri_data_summary, Week<30&Knockout==F),
                    xlab ="Age (Weeks)",
                    xlim=c(0,max(Week)),
                    ylim=c(0,max(Fat.Mass+Fat.Mass.se)),
-                   col=c("#6CBE45","#FAC917")))
+                   col=c('black','grey50')))
 
-with(subset(mri_data_summary, Week<30&Knockout==F), superpose.eb(Week,Fat.Mass,Fat.Mass.se, col=c("#6CBE45","#FAC917")[1]))
-with(subset(mri_data_summary, Week<30&Knockout==T), superpose.eb(Week,Fat.Mass,Fat.Mass.se, col=c("#6CBE45","#FAC917")[2]))
+with(subset(mri_data_summary, Week<30&Knockout==F), superpose.eb(Week,Fat.Mass,Fat.Mass.se, col=c('black','grey50')[1]))
+with(subset(mri_data_summary, Week<30&Knockout==T), superpose.eb(Week,Fat.Mass,Fat.Mass.se, col=c('black','grey50')[2]))
 
-with(subset(mri_data_summary, Week<30&Knockout==T), points(Week,Fat.Mass, col=palette()[2], pch=19, cex=0.5))
-legend("topleft", c("Wild-Type","Knockout"), bty="n", pch=19, col=c("#6CBE45","#FAC917"), lty=1)
+legend("topleft", c("Wild-Type","Knockout"), bty="n", pch=19, col=c('black','grey50'), lty=1)
 
-with(subset(mri_data_summary, Week<30&Knockout==F), lines(smooth.spline(Fat.Mass ~ Week, spar=0.6), col=c("#6CBE45","#FAC917")[1]))
-with(subset(mri_data_summary, Week<30&Knockout==T), lines(smooth.spline(Fat.Mass ~ Week, spar=0.6), col=c("#6CBE45","#FAC917")[2]))
+with(subset(mri_data_summary, Week<30&Knockout==F), lines(smooth.spline(Fat.Mass ~ Week, spar=0.6), col=c('black','grey50')[1]))
+with(subset(mri_data_summary, Week<30&Knockout==T), lines(smooth.spline(Fat.Mass ~ Week, spar=0.6), col=c('black','grey50')[2]))
 ```
 
 # Summary
@@ -298,6 +321,8 @@ ko.statistics['Percent.Fat.Mass','pval'] <- t.test(Percent.Fat.Mass~Knockout, da
 ko.statistics['Body.Weight','pval'] <- t.test(Lean.Mass~Knockout, data=weight.data, var.equal=F)$p.value
 ko.statistics['Lean.Mass','pval'] <- t.test(Lean.Mass~Knockout, data=weight.data, var.equal=T)$p.value
 kable(ko.statistics, caption="Pairwise tests for body composition, after combining the controls")
+
+weight.summary %>% kable(caption="")
 ```
 
 The total fat mass was reduced by `r (1-weight.summary[2, 'Total.Fat.Mass']/weight.summary[1, 'Total.Fat.Mass'])*100`% wheras the percent fat mass was reduced by `r (1-weight.summary[2, 'Percent.Fat.Mass']/weight.summary[1, 'Percent.Fat.Mass'])*100`%.

@@ -21,9 +21,11 @@ This document indicates where the raw data for each Figure panel can be found, a
 | Figure 2E | Mouse Data⁩/⁨Muscle Tsc1 Knockout⁩/ITT/itt-analysis.Rmd | itt-lineplot-2.pdf |
 | Figure 2F | Mouse Data/Muscle Tsc1 Knockout/Glucose Clamps.Rmd | clamp-summary-1.pdf⁩ |
 | Figure 2G | Mouse Data/Muscle Tsc1 Knockout/Glucose Clamps.Rmd | tissue-glucose-uptake-summary-1.pdf⁩ |
-| Figure 3A | Mouse Data⁩/Muscle Tsc1 Knockout⁩/HFD/Body Composition/body-weight-analysis.Rmd | fat-mass-scatterplot-3.pdf |
-| Figure 3B | Mouse Data⁩/Muscle Tsc1 Knockout⁩/HFD/Body Composition/body-weight-analysis.Rmd | lean-mass-scatterplot-3.pdf |
-| Figure 3C | Mouse Data⁩/Muscle Tsc1 Knockout⁩/HFD⁩/Sacrifice Analysis⁩m/TSC1-sac-data.Rmd | wat-weights-2.pdf |
+| Figure 3A | Mouse Data⁩/Muscle Tsc1 Knockout⁩/HFD/Body Composition/body-weight-analysis.Rmd | body-weight-scatterplot-3.pdf |
+| Figure 3B | Mouse Data⁩/Muscle Tsc1 Knockout⁩/HFD/Body Composition/body-weight-analysis.Rmd | fat-mass-scatterplot-3.pdf |
+| Figure 3C | Mouse Data⁩/Muscle Tsc1 Knockout⁩/HFD/Body Composition/body-weight-analysis.Rmd | lean-mass-scatterplot-3.pdf |
+| Figure 3D | Mouse Data⁩/Muscle Tsc1 Knockout⁩/HFD⁩/Sacrifice Analysis⁩m/TSC1-sac-data.Rmd | wat-weights-2.pdf |
+| Figure 3E | Mouse Data⁩/Muscle Tsc1 Knockout⁩/HFD⁩/ITT/itt-analysis_mTSC1-HFD.Rmd | wat-weights-2.pdf |
 | Figure 4A | ⁨RNAseq⁩/scripts⁩/barplots.Rmd | aa_transporters-barplot.pdf |
 | Figure 4B | RNAseq⁩/scripts⁩/barplots.Rmd | fabp_cd36-barplot.pdf |
 | Figure 4C | RNAseq⁩/scripts⁩/barplots.Rmd | fiber_markers-barplot.pdf | 

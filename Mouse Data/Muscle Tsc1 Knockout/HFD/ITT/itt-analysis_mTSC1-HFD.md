@@ -102,7 +102,7 @@ plot <- plot(times,
      as.numeric(itt.summary.means[itt.summary.means$Knockout=='Wild-Type'&itt.summary.means$Sex=="M",3:dim(itt.summary.means)[2]]), 
      las=1, ylim=c(0,ymax), 
      ylab="Blood Glucose (mg/dL)", 
-     xlab="Time post-insulin (min)", 
+     xlab="Time After Insulin Injection (min)", 
      type="l",
      col=color.palette[1],
      main="Male Mice")
@@ -130,7 +130,7 @@ plot <- plot(times,
      as.numeric(itt.summary.means[itt.summary.means$Knockout=='Wild-Type'&itt.summary.means$Sex=="F",3:dim(itt.summary.means)[2]]), 
      las=1, ylim=c(0,ymax), 
      ylab="Blood Glucose (mg/dL)", 
-     xlab="Time post-insulin (min)", 
+     xlab="Time After Insulin Injection (min)", 
      type="l",
      col=color.palette[3],
      main="Female Mice")
@@ -162,7 +162,7 @@ plot <- plot(times,
      as.numeric(itt.summary.means.norm[3,1:dim(itt.summary.means.norm)[2]]), 
      las=1, ylim=c(0,ymax), 
      ylab="Blood Glucose (% of fasted)", 
-     xlab="Time post-insulin (min)", 
+     xlab="Time After Insulin Injection (min)", 
      type="l",
      col=color.palette[1],
      main="Male Mice")
@@ -186,7 +186,7 @@ plot <- plot(times,
      as.numeric(itt.summary.means.norm[1,1:dim(itt.summary.means.norm)[2]]), 
      las=1, ylim=c(0,ymax), 
      ylab="Blood Glucose (% of fasted)", 
-     xlab="Time post-insulin (min)", 
+     xlab="Time After Insulin Injection (min)", 
      type="l",
      col=color.palette[3],
      main="Female Mice")
@@ -298,7 +298,7 @@ sessionInfo()
 ```
 ## R version 3.5.0 (2018-04-23)
 ## Platform: x86_64-apple-darwin15.6.0 (64-bit)
-## Running under: macOS  10.14.4
+## Running under: macOS  10.14.5
 ## 
 ## Matrix products: default
 ## BLAS: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRblas.0.dylib
@@ -311,25 +311,26 @@ sessionInfo()
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-##  [1] car_3.0-2       carData_3.0-2   broom_0.5.1     reshape2_1.4.3 
-##  [5] lme4_1.1-19     Matrix_1.2-15   bindrcpp_0.2.2  readr_1.3.1    
-##  [9] plyr_1.8.4      RCurl_1.95-4.11 bitops_1.0-6    rjson_0.2.20   
-## [13] dplyr_0.7.8     tidyr_0.8.2     knitr_1.21     
+##  [1] car_3.0-3        carData_3.0-2    broom_0.5.2      reshape2_1.4.3  
+##  [5] lme4_1.1-21      Matrix_1.2-17    readr_1.3.1      plyr_1.8.4      
+##  [9] RCurl_1.95-4.12  bitops_1.0-6     rjson_0.2.20     dplyr_0.8.3     
+## [13] tidyr_0.8.3.9000 knitr_1.23      
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] tidyselect_0.2.5  xfun_0.4          purrr_0.2.5      
-##  [4] splines_3.5.0     haven_2.0.0       lattice_0.20-38  
-##  [7] generics_0.0.2    htmltools_0.3.6   yaml_2.2.0       
-## [10] rlang_0.3.1       pillar_1.3.1      nloptr_1.2.1     
-## [13] foreign_0.8-71    glue_1.3.0        readxl_1.2.0     
-## [16] bindr_0.1.1       stringr_1.3.1     cellranger_1.1.0 
-## [19] zip_1.0.0         evaluate_0.12     rio_0.5.16       
-## [22] forcats_0.3.0     curl_3.2          highr_0.7        
-## [25] Rcpp_1.0.0        backports_1.1.3   abind_1.4-5      
-## [28] hms_0.4.2         digest_0.6.18     stringi_1.2.4    
-## [31] openxlsx_4.1.0    grid_3.5.0        tools_3.5.0      
-## [34] magrittr_1.5      tibble_2.0.0      crayon_1.3.4     
-## [37] pkgconfig_2.0.2   MASS_7.3-51.1     data.table_1.11.8
-## [40] assertthat_0.2.0  minqa_1.2.4       rmarkdown_1.11   
-## [43] R6_2.3.0          nlme_3.1-137      compiler_3.5.0
+##  [1] tidyselect_0.2.5  xfun_0.7          purrr_0.3.2      
+##  [4] splines_3.5.0     haven_2.1.0       lattice_0.20-38  
+##  [7] vctrs_0.2.0       generics_0.0.2    htmltools_0.3.6  
+## [10] yaml_2.2.0        rlang_0.4.0       pillar_1.4.2     
+## [13] nloptr_1.2.1      foreign_0.8-71    glue_1.3.1       
+## [16] readxl_1.3.1      stringr_1.4.0     cellranger_1.1.0 
+## [19] zip_2.0.2         evaluate_0.14     rio_0.5.16       
+## [22] forcats_0.4.0     curl_3.3          highr_0.8        
+## [25] Rcpp_1.0.1        backports_1.1.4   abind_1.4-5      
+## [28] hms_0.4.2         digest_0.6.20     stringi_1.4.3    
+## [31] openxlsx_4.1.0.1  grid_3.5.0        tools_3.5.0      
+## [34] magrittr_1.5      tibble_2.1.3      crayon_1.3.4     
+## [37] pkgconfig_2.0.2   zeallot_0.1.0     MASS_7.3-51.4    
+## [40] ellipsis_0.2.0.1  data.table_1.12.2 assertthat_0.2.1 
+## [43] minqa_1.2.4       rmarkdown_1.13    R6_2.4.0         
+## [46] boot_1.3-22       nlme_3.1-140      compiler_3.5.0
 ```

@@ -1,3 +1,36 @@
+# Pre-submission to-do list.
+
+*1.* We need to complete a declaration of competing interests both in the manuscript file and on a separate form. 
+
+*2.* The title page requires the full postal addresses of each affiliation and, if available, current email addresses for each author. 
+
+*3.* On the title page, where your contact info is, they need a full postal address and telephone number. Please confirm the address I pulled from your UM facepage and add your office telephone number. 
+
+*4.* It also specifies the affiliations be given as the one where the work was done, and new/current affiliations be included as a footnote. I don't know how strict on this they are, but since the writing/editing has happened at all our current workplaces, I'm sure we can leave the affiliations section as-is. 
+
+*5.* The abstract guidelines are for a structured abstract with objective, methods, results and conclusions. I didn't change the abstract but was hoping we could get away with not changing it unless the journal explicitly asks. What are your thoughts? I'd hate to be triaged because of a formatting issue 
+
+*6.* A highlights section is mandatory. I've thrown a few bullet points together as a separate file (a separate highlights file with 3-5 bullet points of max 85 characters per point). Please edit and add things as you see fit.
+
+*7.* I added the keywords section. Please edit as you see fit.
+
+*8.* An abbreviation section is required for any non-standard abreviations. I left it out, but add it if you think we need to. 
+
+*9.* Manuscript sections should be numbered. i.e., 1. Introduction. And subsections should be numbered, i.e., 2. Methods, 2.1. Mice
+
+*10.* If we want, we can include a graphical abstract.
+
+*11.* Figures need to be in TIFF or JPEG with min 300dpi. Can also be PDF if vector drawings.
+
+*12.* We have the option of converting our supplementary data into a data article, a new kind of article that houses and describes the data, known as Data in Brief. It would be given a DOI and be publically available upon publication. Mol Metab encourages researchers to submit data as a Data in Brief as an additional file upon submission of the manuscript revision.
+
+#Things to keep in mind when preparing the submission cover letter
+"Molecular Metabolism publishes hypothesis driven research generated with the highest standards that paves the way to a mechanistic understanding of energy homeostasis-associated behavior, physiology and dysfunction."
+
+
+
+
+
 
 # First Submission ToDo List
 

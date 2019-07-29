@@ -412,7 +412,7 @@ plotted.data.se$Light <- as.numeric(plotted.data.se$Light)
 
 plot <- barplot(as.matrix(plotted.data), 
                 beside=T, ylim=ylimits, 
-                ylab="Ambulatory Activity (Beam Breaks)",
+                ylab="Ambulatory Activity (beam breaks)",
                 col=c("grey", palette()[1:2]), las=1)
 superpose.eb(plot,
              as.matrix(plotted.data),

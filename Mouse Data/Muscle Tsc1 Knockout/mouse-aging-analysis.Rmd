@@ -211,7 +211,7 @@ library(survminer)
 ggsurvplot(
    surv.fit.mck.combined,      # survfit object with calculated statistics.
    risk.table = TRUE,       # show risk table.
-   pval = TRUE,             # show p-value of log-rank test.
+   pval = F,             # show p-value of log-rank test.
    conf.int = F,            # show confidence intervals for 
                             # point estimates of survival curves.
    #xlim = c(0,1000),       # present narrower X axis, but not affect
@@ -225,7 +225,7 @@ ggsurvplot(
   conf.int.style = "step",  # customize style of confidence intervals
   surv.median.line = "hv",  # add the median survival pointer.
   legend.labs = c("Knockout","Wild-Type"),    # change legend labels.
-  palette = grey.colors(2), # custom color palettes.
+  palette = grey.colors(2)[2:1], # custom color palettes.
   risk.table.fontsize = 4,
   legend.title = "Genotype",
   fun="pct",

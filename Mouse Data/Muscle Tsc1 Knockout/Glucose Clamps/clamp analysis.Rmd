@@ -164,7 +164,7 @@ plot.data <-
 plot <- barplot(as.matrix(plot.data[2:3]), 
                 beside=T,  
                 ylab="Glucose Production (mg/kg/min)",
-                main="Endogenous Glucose Production",
+                main="Endogenous \nGlucose Production",
                 names.arg=c("Basal","Insulin"),
                 ylim=c(0,60),
                 las=1)
@@ -207,7 +207,7 @@ plot.data <-
 plot <- barplot(as.matrix(plot.data[2:3]), 
                 beside=T,  
                 ylab="Glucose Production (mg/kg/min)",
-                main="Endogenous Glucose Production",
+                main="Endogenous \nGlucose Production",
                 names.arg=c("Basal","Insulin"),
                 ylim=c(0,40),
                 las=1)
@@ -355,7 +355,7 @@ superpose.eb(plot, summary.data$BAT_mean, summary.data$BAT_se)
 plot <- barplot(summary.data$S.fat_mean, 
                 names.arg=summary.data$Genotype,  
                 ylab="2-Deoxyglucose Uptake (ug/g/min)",
-                main="Subcutaneous Adipose",
+                main="Subcutaneous\n Adipose",
                 ylim=c(0,26),
                 las=1,
                 col=grey.colors(2))

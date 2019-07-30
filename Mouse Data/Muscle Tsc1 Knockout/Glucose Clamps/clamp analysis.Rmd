@@ -3,14 +3,14 @@ title: "Insulin Clamp Study on Mck-TSC1 Mice"
 author: "Dave Bridges and Nathan Qi"
 date: "March 21, 2012"
 output:
-  pdf_document:
-    highlight: tango
-    keep_tex: yes
-    number_sections: yes
-    toc: yes
   html_document:
     highlight: tango
     keep_md: yes
+    number_sections: yes
+    toc: yes
+  pdf_document:
+    highlight: tango
+    keep_tex: yes
     number_sections: yes
     toc: yes
 ---

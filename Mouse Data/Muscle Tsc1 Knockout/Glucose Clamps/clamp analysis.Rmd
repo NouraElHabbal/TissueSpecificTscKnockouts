@@ -339,6 +339,7 @@ plot <- barplot(summary.data$Gastroc_mean,
                 ylab="2-Deoxyglucose Uptake (ug/g/min)",
                 main="Gastrocnemius",
                 ylim=c(0,17),
+                cex.names = 0.8,
                 las=1,
                 col=grey.colors(2))
 superpose.eb(plot, summary.data$Gastroc_mean, summary.data$Gastroc_se)
@@ -348,6 +349,7 @@ plot <- barplot(summary.data$BAT_mean,
                 ylab="2-Deoxyglucose Uptake (ug/g/min)",
                 main="Brown Adipose",
                 ylim=c(0,300),
+                cex.names = 0.8,
                 las=1,
                 col=grey.colors(2))
 superpose.eb(plot, summary.data$BAT_mean, summary.data$BAT_se)
@@ -357,6 +359,7 @@ plot <- barplot(summary.data$S.fat_mean,
                 ylab="2-Deoxyglucose Uptake (ug/g/min)",
                 main="Subcutaneous\n Adipose",
                 ylim=c(0,26),
+                cex.names = 0.8,
                 las=1,
                 col=grey.colors(2))
 superpose.eb(plot, summary.data$S.fat_mean, summary.data$S.fat_se)
@@ -366,6 +369,7 @@ plot <- barplot(summary.data$V.fat_mean,
                 ylab="2-Deoxyglucose Uptake (ug/g/min)",
                 main="Visceral Adipose",
                 ylim=c(0,9),
+                cex.names = 0.8,
                 las=1,
                 col=grey.colors(2))
 superpose.eb(plot, summary.data$V.fat_mean, summary.data$V.fat_se)

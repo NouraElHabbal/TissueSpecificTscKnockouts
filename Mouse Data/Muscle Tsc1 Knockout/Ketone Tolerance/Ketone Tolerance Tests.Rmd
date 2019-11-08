@@ -240,6 +240,26 @@ ggplot(aes(y=Average,
        y="Blood Ketones (% of initial)") 
 ```
 
+```{r ktt-lineplot-ms}
+ktt.data.long %>%
+  group_by(Time,Genotype, Sex) %>%
+  summarize(Average = mean(ketone),
+            Error = se(ketone)) %>%
+ggplot(aes(y=Average,
+           ymax=Average+Error,
+           ymin=Average-Error,
+           x=Time, col=Genotype)) +
+  geom_point() +
+  geom_line() +
+    facet_grid(.~Sex) +
+  geom_errorbar() +
+  labs(title="Ketone Tolerance Test",
+       y="Blood Ketones (mg/dL)") + 
+  theme_classic() + # to get the overall layout
+  theme(text = element_text(size=18)) # to increase font
+  
+```
+
 ```{r ktt-lineplot-r01, fig.cap="Ketone tolerance test of Tsc1 knockout females."}
 ktt.data.long %>%
   filter(Sex=="F", Time<=60) %>%
